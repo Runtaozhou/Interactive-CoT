@@ -32,10 +32,13 @@ mathematical problem.
 
 ## Quantative Results
 ![Figure 4](Figures/avg_time_by_format.png)
+
 Response time. Results show that participants were able to respond faster using iGraph.
 ![Figure 5](Figures/avg_verfication_accuracy_by_format.png)
+
 Verification accuracy. Results show that participants achieve the highest verification accuracy using iGraph
 ![Figure 6](Figures/avg_wrong_step_id_accuracy_by_format.png)
+
 Error localization. Results show that participants were able to detect the exact error step in the LLM’s explanation with higher accuracy using iGraph.
 
 
