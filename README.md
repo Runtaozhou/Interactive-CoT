@@ -15,7 +15,7 @@ interface enables users to verify the reasoning more efficiently via tools of (a
 and (b) colored highlights
 
 ### Project Pipline
-![Figure 2](Figures/overview.pdf)
+![Figure 2](Figures/overview.png)
 Our Explanation Generation pipeline consists of three stages: (A) Tagged Information Generation, where an LLM produces
 correct and erroneous GSM8K explanations annotated with reasoning tags; (B) Interface Template Design, where standardized
 HTML/CSS templates ensure consistent structure and interactivity across formats; and (C) Explanation Interface Generation, where
@@ -23,7 +23,7 @@ tagged data and templates are combined to create interactive explanations in iCo
 
 
 ### Interface Overiew
-![Figure 3](Figures/interface_display.pdf)
+![Figure 3](Figures/interface_display.png)
 Fig. 2. Examples of four explanation formats used in the study: (A) traditional Chain-of-Thought (CoT), (B) interactive Chain-of-
 Thought (iCoT), (C) interactive Program-of-Thought (iPoT), and (D) interactive Graph (iGraph). Each format presents the same
 reasoning steps in a different modality (textual, structured, code-like, or visual). For consistency, all four formats present the same
