@@ -44,7 +44,7 @@ Error localization. Results show that participants were able to detect the exact
 
 ## Qualitative Results
 ![Figure 7](Figures/survey_result.png)
-sPost SurveyQuestionnaire results for comparing different explanation formats using utility questions (G1-G5) and design-based
+Post Survey Questionnaire results for comparing different explanation formats using utility questions (G1-G5) and design-based
 questions for iPoT, iCoT, and iGraph (D1-D4). Results from the utility questions show that participants find the interactive formats more
 effective and engaging, reporting improvements in understanding, error detection, engagement, preference, and overall satisfaction
 (G1–G5) compared to the traditional CoT. Similarly, results from the design-based questions indicate that participants across all
