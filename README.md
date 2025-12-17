@@ -6,34 +6,37 @@ This repository summarizes the paper **Improving Human Verification of LLM Reaso
 Large Language Models often generate long chain-of-thought (CoT) explanations that overwhelm users.  
 This project introduces **interactive explanation formats**—iCoT, iPoT, and iGraph—to reduce cognitive load and improve reasoning verification.
 
-### Figure 1 – Static CoT vs Interactive Interface
-![Figure 1a](figures/figure1a.png)
-![Figure 1b](figures/figure1b.png)
+### Project Motivation
+![Figure 1](Figures/teaser.pdf)
+Given a GSM8K question, LLMs typically provide step-by-step reasoning followed by the final answer. However, such output
+presentation is often static and long, posing a higher cognitive load to users and leading to slower and more erroneous answer
+verification. In contrast, we prompt LLMs to generate an interactive HTML/JavaScript application wrapped around the reasoning. This
+interface enables users to verify the reasoning more efficiently via tools of (a) navigation buttons (inspired by those in common IDEs)
+and (b) colored highlights
 
-### Figure 2 – System Pipeline
-![Figure 2](figures/pipeline.png)
+### Project Pipline
+![Figure 2](Figures/overview.pdf)
+Our Explanation Generation pipeline consists of three stages: (A) Tagged Information Generation, where an LLM produces
+correct and erroneous GSM8K explanations annotated with reasoning tags; (B) Interface Template Design, where standardized
+HTML/CSS templates ensure consistent structure and interactivity across formats; and (C) Explanation Interface Generation, where
+tagged data and templates are combined to create interactive explanations in iCoT, iPoT, and iGraph formats for our user study
 
-### Figure 3 – Verification Accuracy
-![Figure 3](figures/accuracy.png)
 
-### Figure 4 – Error Localization Accuracy
-![Figure 4](figures/localization.png)
+### Interface Overiew
+![Figure 3](Figures/interface_display.pdf)
+Fig. 2. Examples of four explanation formats used in the study: (A) traditional Chain-of-Thought (CoT), (B) interactive Chain-of-
+Thought (iCoT), (C) interactive Program-of-Thought (iPoT), and (D) interactive Graph (iGraph). Each format presents the same
+reasoning steps in a different modality (textual, structured, code-like, or visual). For consistency, all four formats present the same
+mathematical problem. 
 
-### Figure 5 – Response Time
-![Figure 5](figures/time.png)
 
-### Figure 6 – User Survey Results
-![Figure 6](figures/survey.png)
+## Quantative Results
+![Figure 4](Figures/avg_time_by_format.pdf)
+![Figure 5](Figures/avg_verfication_accuracy_by_format.pdf)
+![Figure 6](Figures/avg_wrong_step_id_accuracy_by_format.pdf)
 
-### Figure 8 – Interactive CoT Interface
-![Figure 8](figures/icot.png)
-
-### Figure 9 – Interactive Program-of-Thought
-![Figure 9](figures/ipot.png)
-
-### Figure 10 – Interactive Graph
-![Figure 10](figures/igraph.png)
-
+## Qualitative Results
+![Figure 6](Figures/survey_result.pdf)
 
 ## Key Takeaways
 - Interactive reasoning significantly improves users’ ability to verify LLM reasoning.
@@ -41,9 +44,3 @@ This project introduces **interactive explanation formats**—iCoT, iPoT, and iG
 - Structured, interactive interfaces reduce cognitive load.
 - The approach generalizes to many reasoning domains.
 
----
-
-## Future Work
-- Adaptive interactive reasoning
-- Automatic error tagging
-- Expanding to scientific & legal domains
