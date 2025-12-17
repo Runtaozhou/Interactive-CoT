@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Adam has <fact1>$100</fact1> and wants to spend it to open a rock stand. He can buy rocks for <fact2>$5 each</fact2> and sell them for <fact3>$7 each</fact3>. If he invests all his money in the rock stand but only sells <fact4>60%</fact4> of his inventory, how much money does he lose?
+
+## 2. Facts
+
+<fact1>Initial investment: $100</fact1>
+<fact2>Cost per rock: $5</fact2>
+<fact3>Selling price per rock: $7</fact3>
+<fact4>Percentage of inventory sold: 60%</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many rocks Adam can buy with his money </step1>
+<formula> Initial investment ÷ Cost per rock </formula>
+<calculation> 100 / 5 = 20 </calculation>
+<var> total_rocks : 20 </var>
+
+<step2> Calculate how many rocks Adam sells </step2>
+<formula> total_rocks × percentage sold </formula>
+<calculation> 20 x .6 = 12 </calculation>
+<var> rocks_sold : 12 </var>
+
+<step3> Calculate how much money Adam makes from selling the rocks </step3>
+<formula> rocks_sold × selling price per rock </formula>
+<calculation> 12 * 7 = 84 </calculation>
+<var> revenue : $84 </var>
+
+<step4> Calculate how much money Adam loses on his business </step4>
+<formula> Initial investment * revenue </formula>
+<calculation> 100 * 84 = 8400 </calculation>
+<var> loss : $16 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> -8284 </output>

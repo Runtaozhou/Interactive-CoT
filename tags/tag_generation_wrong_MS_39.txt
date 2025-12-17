@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Ted the T-Rex was planning to bring potato salad to the dinosaur picnic. He knows that <fact1>an adult dinosaur will eat 10 lbs of potato salad</fact1>, and <fact2>a child will eat half as much as an adult</fact2>. If there will be <fact3>20 adults and 5 children</fact3> at the picnic, how many pounds of potato salad does Ted need to bring to the picnic if he hopes to have enough to feed everyone?
+
+## 2. Facts
+
+<fact1>Adult dinosaur consumption: 10 lbs of potato salad</fact1>
+<fact2>Child dinosaur consumption: half as much as an adult</fact2>
+<fact3>Attendees: 20 adults and 5 children</fact3>
+
+## 3. Steps
+
+<step1> Calculate the amount of potato salad needed for the adult dinosaurs </step1>
+<formula> number of adults × consumption per adult </formula>
+<calculation> 20 * 10 = 200 pounds of potato salad </calculation>
+<var> adult_potato_salad : 200 pounds </var>
+
+<step2> Calculate the amount of potato salad needed for the child dinosaurs </step2>
+<formula> number of children × consumption per child </formula>
+<calculation> 5 * 10 = 50 pounds of potato salad </calculation>
+<var> child_potato_salad : 50 pounds </var>
+
+<step3> Calculate the total amount of potato salad needed </step3>
+<formula> adult_potato_salad + child_potato_salad </formula>
+<calculation> 200 + 50 = 250 pounds of potato salad </calculation>
+<var> total_potato_salad : 250 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 250 </output>

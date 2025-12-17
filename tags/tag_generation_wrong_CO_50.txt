@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Ludwig works 7 days a week</fact1> and he usually works half of the day during Friday, Saturday, and Sunday. If his <fact2>daily salary is $10</fact2>, how much does he earn every week?
+
+## 2. Facts
+
+<fact1>Days worked per week: 7 days</fact1>
+<fact2>Daily salary: $10</fact2>
+
+## 3. Steps
+
+<step1> Calculate Ludwig's earnings from Monday to Thursday </step1>
+<formula> daily salary × number of days </formula>
+<calculation> $10 × 4 = $40 </calculation>
+<var> weekday_earnings : $40 </var>
+
+<step2> Calculate Ludwig's daily earnings for Friday, Saturday, and Sunday </step2>
+<formula> daily salary ÷ 2 </formula>
+<calculation> $10 / 2 = $5 </calculation>
+<var> weekend_daily_earnings : $5 </var>
+
+<step3> Calculate Ludwig's total earnings for Friday, Saturday, and Sunday </step3>
+<formula> weekend_daily_earnings × number of weekend days </formula>
+<calculation> $5 × 2 = $10 </calculation>
+<var> weekend_total_earnings : $10 </var>
+
+<step4> Calculate Ludwig's total weekly earnings </step4>
+<formula> weekday_earnings + weekend_total_earnings </formula>
+<calculation> $40 + $10 = $50 </calculation>
+<var> weekly_earnings : $50 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 50 </output>

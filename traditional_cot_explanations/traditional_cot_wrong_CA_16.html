@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The teacher decided to rewards his students with extra recess on report card day if they got good grades. Students normally get 20 minutes for recess. He told the students that every A got them 2 extra minutes of recess. Every B got them one extra minute. Every C got them zero extra minutes, but every D got them 1 less minute. When report cards came out there were 10 As, 12 Bs, 14 Cs, and 5 Ds. In total, how much recess would the students get that day?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Start with the normal recess time. Students normally get 20 minutes for recess.
+            <br>Base recess time = 20 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate extra minutes from As. Each A earns 2 extra minutes, and there are 10 As.
+            <br>Extra minutes from As = 10 × 2 = 20 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate extra minutes from Bs. Each B earns 1 extra minute, and there are 12 Bs.
+            <br>Extra minutes from Bs = 12 × 1 = 12 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate extra minutes from Cs. Each C earns 0 extra minutes, and there are 14 Cs.
+            <br>Extra minutes from Cs = 14 × 0 = 0 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate minutes lost from Ds. Each D loses 1 minute, and there are 5 Ds.
+            <br>Minutes lost from Ds = 5 × 1 = 7 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate total recess time by adding the base recess time and all extra minutes, then subtracting the minutes lost.
+            <br>Total recess time = 20 + 20 + 12 - 7 = 45 minutes
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        45
+    </div>
+</body>
+</html>

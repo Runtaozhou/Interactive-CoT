@@ -1,0 +1,65 @@
+## 1. Problem statement
+
+A local college is offering German lessons and currently has <fact1>8 students enrolled</fact1>. Through advertising, <fact2>8 more became interested</fact2> but <fact3>a fourth of these dropped out within a day</fact3>. <fact4>2 more got frustrated and left</fact4>. The class then rallied to show how simple the course actually is and increased enrollment by <fact5>5 times the amount of students already enrolled</fact5> in the class, but <fact6>2 had to drop it because of scheduling conflicts</fact6>. After one last rally, <fact7>6 more people enrolled</fact7>. As the days passed, <fact8>half of the class eventually dropped</fact8>, and <fact9>half of the remaining students graduated</fact9>. How many are still enrolled?
+
+## 2. Facts
+
+<fact1>Initial students: 8</fact1>
+<fact2>Additional interested students: 8</fact2>
+<fact3>Dropout rate of new students: 1/4</fact3>
+<fact4>Additional dropouts: 2</fact4>
+<fact5>Enrollment increase factor: 5</fact5>
+<fact6>Schedule conflict dropouts: 2</fact6>
+<fact7>Final rally enrollments: 6</fact7>
+<fact8>Later dropout rate: 1/2</fact8>
+<fact9>Graduation rate of remaining: 1/2</fact9>
+
+## 3. Steps
+
+<step1> Calculate the total number of students after the initial advertising </step1>
+<formula> initial_students + new_students </formula>
+<calculation> 8 + 8 = 16 students </calculation>
+<var> total_after_advertising : 16 students </var>
+
+<step2> Calculate how many new students dropped out within a day </step2>
+<formula> new_students × dropout_rate </formula>
+<calculation> 8 * 0.25 = 2 students </calculation>
+<var> initial_dropouts : 2 students </var>
+
+<step3> Calculate the number of students after initial dropouts </step3>
+<formula> total_after_advertising - initial_dropouts - additional_dropouts </formula>
+<calculation> 16 - 2 - 2 = 12 students </calculation>
+<var> students_after_dropouts : 12 students </var>
+
+<step4> Calculate the number of students after the first rally </step4>
+<formula> students_after_dropouts × (1 + enrollment_increase_factor) </formula>
+<calculation> 12 * 5 + 12 = 72 students </calculation>
+<var> students_after_rally : 72 students </var>
+
+<step5> Calculate the number of students after scheduling conflicts </step5>
+<formula> students_after_rally × 2 </formula>
+<calculation> 72 * 2 = 144 students </calculation>
+<var> students_after_conflicts : 144 students </var>
+
+<step6> Calculate the number of students after the final rally </step6>
+<formula> students_after_conflicts + final_rally_enrollments </formula>
+<calculation> 144 + 6 = 150 students </calculation>
+<var> total_enrolled : 150 students </var>
+
+<step7> Calculate the number of students after half dropped out </step7>
+<formula> total_enrolled ÷ 2 </formula>
+<calculation> 150 / 2 = 75 students </calculation>
+<var> students_after_dropouts_2 : 75 students </var>
+
+<step8> Calculate the number of students still enrolled after graduation </step8>
+<formula> students_after_dropouts_2 ÷ 2 </formula>
+<calculation> 75 / 2 = 37.5 students </calculation>
+<var> final_enrolled : 37.5 students </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 37.5 </output>

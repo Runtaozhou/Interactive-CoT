@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Pauline will make tacos for dinner. She bought a <fact1>box of taco shells that cost $5</fact1>, <fact2>4 bell peppers that cost $1.5 each</fact2>, and <fact3>2 pounds of meat that cost $3 per pound</fact3>. How much did she spend in all?
+
+## 2. Facts
+
+<fact1>Box of taco shells cost: $5</fact1>
+<fact2>Bell peppers: 4 at $1.5 each</fact2>
+<fact3>Meat: 2 pounds at $3 per pound</fact3>
+
+## 3. Steps
+
+<step1> Calculate the cost of the bell peppers </step1>
+<formula> number of peppers × cost per pepper </formula>
+<calculation> 4 × $1.5 = $6 </calculation>
+<var> bell_pepper_cost : $6 </var>
+
+<step2> Calculate the cost of the meat </step2>
+<formula> pounds of meat × cost per pound </formula>
+<calculation> 2 × $3 = $6 </calculation>
+<var> meat_cost : $6 </var>
+
+<step3> Add the cost of cheese that was not mentioned before </step3>
+<formula> </formula>
+<calculation> $2.50 </calculation>
+<var> cheese_cost : $2.50 </var>
+
+<step4> Calculate the total cost by adding all items </step4>
+<formula> taco_shells_cost + bell_pepper_cost + meat_cost + cheese_cost </formula>
+<calculation> $5 + $6 + $6 + $2.50 = $19.50 </calculation>
+<var> total_cost : $19.50 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 19.50 </output>

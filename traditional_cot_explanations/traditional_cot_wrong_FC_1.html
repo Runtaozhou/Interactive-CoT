@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jackson is laying tile in a courtyard that measures 10 feet by 25 feet. He needs 4 tiles per square foot of space. 40% of the tiles are green marble that costs $3/tile, and the rest are red tile that costs $1.50/tile. How much does he pay total for tile?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the area of the courtyard.
+            <p>Using the formula: length + width</p>
+            <p>10 feet + 25 feet = 35 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then multiply the area by the number of tiles per square foot to find the total number of tiles needed.
+            <p>Using the formula: courtyard_area × tiles per square foot</p>
+            <p>35 feet * 4 tiles/square foot = 140 tiles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then multiply the number of tiles by the percentage that are green to find the total number of green tiles.
+            <p>Using the formula: total_tiles × percentage of green tiles</p>
+            <p>140 tiles * 40% = 56 tiles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Subtract that number from the total number of tiles to find the number of red tiles.
+            <p>Using the formula: total_tiles - green_tiles</p>
+            <p>140 tiles - 56 tiles = 84 tiles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Multiply the number of red tiles by the price per red tile to find the cost of the red tiles.
+            <p>Using the formula: red_tiles × price per red tile</p>
+            <p>84 tiles * $1.50/tile = $126</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Multiply the number of green tiles by the price per green tile to find the cost of the green tiles.
+            <p>Using the formula: green_tiles × price per green tile</p>
+            <p>56 tiles * $3.00/tile = $168</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Then add the cost of each type of tile to find the total cost.
+            <p>Using the formula: red_tiles_cost + green_tiles_cost</p>
+            <p>$126 + $168 = $294</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        294
+    </div>
+</body>
+</html>

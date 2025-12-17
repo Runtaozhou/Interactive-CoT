@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+Adam's wardrobe is too crowded so he decides to donate some of his clothes to a charity shop. He takes out <fact1>4 pairs of pants</fact1>, <fact2>4 jumpers</fact2>, <fact3>4 pajama sets (top and bottom)</fact3>, and <fact4>20 t-shirts</fact4>, then asks his friends if they have anything they want to donate. <fact5>3 of his friends donate the same amount of clothing as Adam each</fact5>. Then he takes another look over his clothing and decides that he actually wants to keep <fact6>half of his clothes</fact6>. How many articles of clothing are being donated in total?
+
+## 2. Facts
+
+<fact1>Adam's pants: 4 pairs</fact1>
+<fact2>Adam's jumpers: 4</fact2>
+<fact3>Adam's pajama sets: 4 (top and bottom)</fact3>
+<fact4>Adam's t-shirts: 20</fact4>
+<fact5>Friends donating: 3 (same amount as Adam each)</fact5>
+<fact6>Adam keeps: half of his clothes</fact6>
+
+## 3. Steps
+
+<step1> Calculate how many articles of clothing the pajama sets represent </step1>
+<formula> pajama_sets × 2 </formula>
+<calculation> 4 pajama sets * 2 = 8 articles of clothing </calculation>
+<var> pajama_pieces : 8 </var>
+
+<step2> Calculate the total number of articles Adam is initially donating </step2>
+<formula> pants + jumpers + pajama_pieces + t-shirts </formula>
+<calculation> 4 pairs of pants + 4 jumpers + 8 pajama pieces + 20 t-shirts = 36 articles of clothing </calculation>
+<var> adam_initial_donation : 36 </var>
+
+<step3> Calculate the total number of articles donated by Adam's friends </step3>
+<formula> number_of_friends × articles_per_friend </formula>
+<calculation> 3 friends * 30 articles of clothing per friend = 90 articles of clothing </calculation>
+<var> friends_donation : 90 </var>
+
+<step4> Calculate Adam's final donation after he takes back half </step4>
+<formula> adam_initial_donation ÷ 2 </formula>
+<calculation> 36 / 2 = 18 articles of clothing </calculation>
+<var> adam_final_donation : 18 </var>
+
+<step5> Calculate the total number of articles being donated </step5>
+<formula> friends_donation + adam_final_donation </formula>
+<calculation> 90 + 18 = 108 articles of clothing </calculation>
+<var> total_donation : 108 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 108 </output>

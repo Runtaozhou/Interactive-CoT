@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+James is building a hall of mirrors. Three of the walls will be completed covered with glass. If <fact1>two of those walls are 30 feet by 12 feet</fact1> and <fact2>the third is 20 feet by 12 feet</fact2>, how many square feet of glass does he need?
+
+## 2. Facts
+
+<fact1>Two walls dimensions: 30 feet by 12 feet</fact1>
+<fact2>Third wall dimensions: 20 feet by 12 feet</fact2>
+
+## 3. Steps
+
+<step1> First find the area of one of the long walls </step1>
+<formula> length × width </formula>
+<calculation> 30 feet * 12 feet = 360 square feet </calculation>
+<var> long_wall_area : 360 square feet </var>
+
+<step2> Then double that amount since there are two walls </step2>
+<formula> long_wall_area × 2 </formula>
+<calculation> 360 square feet * 2 = 720 square feet </calculation>
+<var> two_long_walls_area : 720 square feet </var>
+
+<step3> Then find the area of the short wall </step3>
+<formula> perimeter calculation </formula>
+<calculation> 20 feet + 12 feet + 20 feet + 12 feet = 64 square feet </calculation>
+<var> short_wall_area : 64 square feet </var>
+
+<step4> Then add that area to the area of the two long walls to find the total area </step4>
+<formula> two_long_walls_area + short_wall_area </formula>
+<calculation> 720 square feet + 64 square feet = 784 square feet </calculation>
+<var> total_glass_area : 784 square feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 784 </output>

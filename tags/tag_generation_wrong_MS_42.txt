@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Mike watches TV for <fact1>4 hours every day</fact1>. On the days he plays video games he plays for <fact2>half as long as he watches TV</fact2>. If he plays video games <fact3>3 days a week</fact3> how long does he spend watching TV and playing video games?
+
+## 2. Facts
+
+<fact1>TV watching time: 4 hours per day</fact1>
+<fact2>Video game time: half of TV watching time</fact2>
+<fact3>Video game days: 3 days per week</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many hours Mike watches TV in a week </step1>
+<formula> daily TV hours × days in a week </formula>
+<calculation> 4 * 7 = 28 hours </calculation>
+<var> weekly_tv_hours : 28 hours </var>
+
+<step2> Calculate how many hours Mike plays video games in a week </step2>
+<formula> video game days × daily TV hours </formula>
+<calculation> 3 * 4 = 12 hours </calculation>
+<var> weekly_game_hours : 12 hours </var>
+
+<step3> Calculate the total time spent on both activities </step3>
+<formula> weekly_game_hours + weekly_tv_hours </formula>
+<calculation> 12 + 28 = 40 hours </calculation>
+<var> total_hours : 40 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 40 </output>

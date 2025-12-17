@@ -1,0 +1,53 @@
+## 1. Problem statement
+
+Anakin and Locsin went to the beach today. <fact1>Anakin caught 10 starfish, 6 sea horses, and 3 clownfish.</fact1> While <fact2>Locsin caught 5 fewer starfish than Anakin, 3 fewer sea horses than Anakin, and 2 more clownfish than Anakin.</fact2> How many fish were they able to catch?
+
+## 2. Facts
+
+<fact1>Anakin caught: 10 starfish, 6 sea horses, 3 clownfish</fact1>
+<fact2>Locsin caught: 5 fewer starfish than Anakin, 3 fewer sea horses than Anakin, 2 more clownfish than Anakin</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many starfish Locsin caught </step1>
+<formula> Anakin's starfish - 5 </formula>
+<calculation> 10 - 5 = 5 starfishes </calculation>
+<var> locsin_starfish : 5 </var>
+
+<step2> Calculate the total number of starfish caught </step2>
+<formula> Anakin's starfish + Locsin's starfish </formula>
+<calculation> 10 + 5 = 15 starfishes </calculation>
+<var> total_starfish : 15 </var>
+
+<step3> Calculate how many seahorses Locsin caught </step3>
+<formula> Anakin's seahorses * 3 </formula>
+<calculation> 6 * 3 = 18 seahorses </calculation>
+<var> locsin_seahorses : 18 </var>
+
+<step4> Calculate the total number of seahorses caught </step4>
+<formula> Anakin's seahorses + Locsin's seahorses </formula>
+<calculation> 6 + 18 = 24 seahorses </calculation>
+<var> total_seahorses : 24 </var>
+
+<step5> Calculate how many clownfish Locsin caught </step5>
+<formula> Anakin's clownfish + 2 </formula>
+<calculation> 3 + 2 = 5 clownfish </calculation>
+<var> locsin_clownfish : 5 </var>
+
+<step6> Calculate the total number of clownfish caught </step6>
+<formula> Anakin's clownfish + Locsin's clownfish </formula>
+<calculation> 3 + 5 = 8 clownfish </calculation>
+<var> total_clownfish : 8 </var>
+
+<step7> Calculate the total number of fish caught </step7>
+<formula> Total starfish + Total seahorses + Total clownfish </formula>
+<calculation> 15 + 24 + 8 = 47 fish </calculation>
+<var> total_fish : 47 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 47 </output>

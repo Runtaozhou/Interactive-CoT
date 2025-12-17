@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Adam goes to school every day. On Monday he had 6 lessons of 30 minutes each, and on Tuesday he had 3 lessons of 1 hour each. On Wednesday, Adam spent twice as much time at school as on Tuesday. How much time in total did Adam spend at school during these 3 days, in hours?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much time Adam spent at school on Monday in hours.
+            <p>To find this, we multiply the number of lessons by the minutes per lesson, then convert to hours:</p>
+            <p>6 lessons × 30 minutes per lesson = 180 minutes</p>
+            <p>180 minutes ÷ 60 = 3 hours</p>
+            <p>So Adam spent 3 hours at school on Monday.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much time Adam spent at school on Wednesday.
+            <p>According to the problem, Adam spent twice as much time at school on Wednesday as on Tuesday.</p>
+            <p>Tuesday time: 3 hours</p>
+            <p>Wednesday time: 3 ÷ 2 = 1.5 hours</p>
+            <p>So Adam spent 1.5 hours at school on Wednesday.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time Adam spent at school during the three days.
+            <p>We add up the hours from all three days:</p>
+            <p>Monday: 3 hours</p>
+            <p>Tuesday: 3 hours</p>
+            <p>Wednesday: 1.5 hours</p>
+            <p>Total time: 3 + 3 + 1.5 = 7.5 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        7.5
+    </div>
+</body>
+</html>

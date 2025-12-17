@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Linda's bag has 2 dimes, 6 quarters, and 5 nickels. Her mother gives her 2 more dimes, 10 quarters, and twice as many nickels as she has. How many coins does she have altogether?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of quarters after Linda's mother gives her more.
+            <p>Initial quarters + Additional quarters = 6 + 10 = 16 quarters</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many additional nickels Linda's mother gives her.
+            <p>Initial nickels × 2 = 5 × 2 = 10 nickels</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of nickels after Linda's mother gives her more.
+            <p>Initial nickels + Additional nickels = 5 + 10 = 15 nickels</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of coins without counting dimes.
+            <p>Total quarters + Total nickels = 16 + 15 = 31 coins</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total number of coins by adding the dimes.
+            <p>Coins without dimes + Initial dimes = 31 + 2 = 33 coins</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        33
+    </div>
+</body>
+</html>

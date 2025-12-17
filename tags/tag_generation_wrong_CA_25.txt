@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+The total number of lions in a park is twice the number of leopards in the same park. The number of elephants is half the combined number of lions and leopards. Calculate the total population of the three animals in the park if <fact1>the number of lions is 200</fact1>.
+
+## 2. Facts
+
+<fact1>Number of lions: 200</fact1>
+
+## 3. Steps
+
+<step1> Calculate the number of leopards based on the number of lions </step1>
+<formula> lions / 2 </formula>
+<calculation> 200/2 = 100 leopards </calculation>
+<var> leopards : 100 </var>
+
+<step2> Find the combined population of lions and leopards </step2>
+<formula> lions + leopards </formula>
+<calculation> 200 lions + 100 leopards = 300 </calculation>
+<var> lions_and_leopards : 300 </var>
+
+<step3> Calculate the number of elephants </step3>
+<formula> lions_and_leopards / 2 </formula>
+<calculation> 300/2 = 100 elephants </calculation>
+<var> elephants : 100 </var>
+
+<step4> Calculate the total population of all three animals </step4>
+<formula> elephants + lions_and_leopards </formula>
+<calculation> 100+300 = 400 animals </calculation>
+<var> total_population : 400 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 400 </output>

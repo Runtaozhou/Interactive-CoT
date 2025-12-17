@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Tobias went to a swimming pool for 3 hours. Swimming every 100 meters took him 5 minutes, but every 25 minutes he had to take a 5-minute pause. How many meters did Tobias swim during his visit to the swimming pool?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the duration of one sequence (swimming + pause)
+            <p>We need to find how long each swimming-pause cycle takes. Tobias swims for 25 minutes and then takes a 5-minute pause.</p>
+            <p>Sequence duration = Swimming time + Pause time = 25 minutes + 5 minutes = 30 minutes per sequence</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Convert hours to minutes and calculate the number of sequences
+            <p>First, let's convert the total time to minutes:</p>
+            <p>Total minutes = 3 hours × 50 minutes/hour = 150 minutes</p>
+            <p>Number of sequences = Total minutes ÷ Sequence duration = 150 minutes ÷ 30 minutes/sequence = 5 sequences</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent on pauses
+            <p>Since Tobias completes 5 sequences, he takes 5 pauses:</p>
+            <p>Total pause time = Number of pauses × Pause duration = 5 pauses × 5 minutes/pause = 25 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the actual swimming time
+            <p>To find how much time Tobias actually spent swimming, we subtract the pause time from the total time:</p>
+            <p>Swimming time = Total time - Pause time = 150 minutes - 25 minutes = 125 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many 100-meter segments Tobias could swim
+            <p>Since each 100-meter segment takes 5 minutes to swim:</p>
+            <p>Number of segments = Swimming time ÷ Time per 100 meters = 125 minutes ÷ 5 minutes/100 meters = 25 segments</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total distance swam
+            <p>Finally, we can calculate the total distance Tobias swam:</p>
+            <p>Total distance = Number of segments × Distance per segment = 25 segments × 100 meters/segment = 2500 meters</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2500
+    </div>
+</body>
+</html>

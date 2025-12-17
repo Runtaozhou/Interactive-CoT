@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+If <fact1>Patty's dress was $10 more than Ida's dress</fact1>, and <fact2>Ida's dress was $30 more than Jean's dress</fact2>, and <fact3>Jean's dress was $10 less than Pauline's dress</fact3>, and lastly <fact4>Pauline's dress was $30</fact4>, how much did all the ladies spend on dressed put together?
+
+## 2. Facts
+
+<fact1>Patty's dress: $10 more than Ida's dress</fact1>
+<fact2>Ida's dress: $30 more than Jean's dress</fact2>
+<fact3>Jean's dress: $10 less than Pauline's dress</fact3>
+<fact4>Pauline's dress: $30</fact4>
+
+## 3. Steps
+
+<step1> Calculate the cost of Jean's dress based on Pauline's dress </step1>
+<formula> Pauline's dress - $10 </formula>
+<calculation> 30 - 10 = 20 dollars </calculation>
+<var> jean_dress : $20 </var>
+
+<step2> Calculate the cost of Ida's dress based on Jean's dress </step2>
+<formula> Jean's dress + $30 </formula>
+<calculation> 30 + 30 = 60 dollars </calculation>
+<var> ida_dress : $60 </var>
+
+<step3> Calculate the cost of Patty's dress based on Ida's dress </step3>
+<formula> Ida's dress + $10 </formula>
+<calculation> 60 + 10 = 70 dollars </calculation>
+<var> patty_dress : $70 </var>
+
+<step4> Calculate the total cost of all four dresses </step4>
+<formula> Patty's dress + Ida's dress + Jean's dress + Pauline's dress </formula>
+<calculation> 70 + 60 + 20 + 30 = 180 dollars </calculation>
+<var> total_cost : $180 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 180 </output>

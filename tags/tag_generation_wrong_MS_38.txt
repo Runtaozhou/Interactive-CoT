@@ -1,0 +1,32 @@
+## 1. Problem statement
+
+In 5 years, Heath will be 3 times as old as Jude. If <fact1>Heath is 16 years old today</fact1>, how old is Jude today?
+
+## 2. Facts
+
+<fact1>Heath's current age: 16 years old</fact1>
+
+## 3. Steps
+
+<step1> Calculate Jude's age in 5 years by dividing Heath's future age by 3 </step1>
+<formula> Heath's future age ÷ 3 </formula>
+<calculation> 16 / 3 = 5.333333333333333 years old </calculation>
+<var> jude_future_age : 5.333333333333333 years </var>
+
+<step2> Find the difference in their ages </step2>
+<formula> Heath's current age - Jude's future age </formula>
+<calculation> 16 - 5.333333333333333 = 10.666666666666666 years </calculation>
+<var> age_difference : 10.666666666666666 years </var>
+
+<step3> Calculate Jude's current age by subtracting the age difference from Heath's current age </step3>
+<formula> Heath's current age - age difference </formula>
+<calculation> 16 - 10.666666666666666 = 5.333333333333334 years </calculation>
+<var> jude_current_age : 5.333333333333334 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5.333333333333334 </output>

@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Tim spends <fact1>6 hours each day at work answering phones</fact1>. It takes him <fact2>15 minutes to deal with a call</fact2>. How many calls does he deal with during his <fact3>5 day work week</fact3>?
+
+## 2. Facts
+
+<fact1>Daily work time: 6 hours</fact1>
+<fact2>Time per call: 15 minutes</fact2>
+<fact3>Work week: 5 days</fact3>
+
+## 3. Steps
+
+<step1> Convert hours to minutes to find total minutes spent on calls per day </step1>
+<formula> hours × 60 </formula>
+<calculation> 6*60=360 minutes </calculation>
+<var> daily_minutes : 360 minutes </var>
+
+<step2> Calculate how many calls Tim can handle per day </step2>
+<formula> daily_minutes ÷ minutes per call </formula>
+<calculation> 360/15=24 calls </calculation>
+<var> daily_calls : 24 calls </var>
+
+<step3> Calculate the total number of calls in a work week </step3>
+<formula> daily_calls × work days </formula>
+<calculation> 5*24=120 calls </calculation>
+<var> weekly_calls : 120 calls </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 120 </output>

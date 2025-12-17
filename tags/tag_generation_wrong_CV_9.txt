@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Jonathan ran 7.5 kilometers.</fact1> Mercedes ran twice that distance and <fact2>Davonte ran 2 kilometers farther than Mercedes.</fact2> How many kilometers did Mercedes and Davonte run in total?
+
+## 2. Facts
+
+<fact1>Jonathan's distance: 7.5 kilometers</fact1>
+<fact2>Davonte ran 2 kilometers farther than Mercedes</fact2>
+
+## 3. Steps
+
+<step1> Calculate how far Mercedes ran </step1>
+<formula> Jonathan's distance × 2 </formula>
+<calculation> 2 * 7 = 14 km </calculation>
+<var> mercedes_distance : 14 km </var>
+
+<step2> Calculate how far Davonte ran </step2>
+<formula> mercedes_distance + 2 </formula>
+<calculation> 14 + 2 = 16 km </calculation>
+<var> davonte_distance : 16 km </var>
+
+<step3> Calculate the total distance Mercedes and Davonte ran </step3>
+<formula> mercedes_distance + davonte_distance </formula>
+<calculation> 14 + 16 = 30 km </calculation>
+<var> total_distance : 30 km </var>
+
+<step4> State the final answer </step4>
+<formula></formula>
+<calculation></calculation>
+<var> final_answer : 30 km </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 30 </output>

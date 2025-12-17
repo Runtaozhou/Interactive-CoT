@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Harry decided to buy some balloons for his friend's birthday party. One balloon costs $0.5</fact1>, and <fact2>a pack of 10 balloons is cheaper and costs only $3</fact2>. Finally, <fact3>Harry wants to bring to the party exactly 14 balloons</fact3>. How much did he need to pay for them?
+
+## 2. Facts
+
+<fact1>Cost of one balloon: $0.5</fact1>
+<fact2>Cost of a pack of 10 balloons: $3</fact2>
+<fact3>Number of balloons needed: 14</fact3>
+
+## 3. Steps
+
+<step1> To buy 14 balloons, Harry should buy one pack of 10, and 14 - 10 = 4 separate balloons. </step1>
+<formula> 14 - 10 = 4 </formula>
+<calculation> 14 - 10 = 4 </calculation>
+<var>separate_balloons: 4</var>
+
+<step2> The price of 4 balloons is 4 * 0.5 = $2. </step2>
+<formula> 4 * 0.5 = 2 </formula>
+<calculation> 4 * 0.5 = $2 </calculation>
+<var>cost_of_separate_balloons: $2</var>
+
+<step3> In total, the pack and separate balloons would cost Harry in total 3 + 2 = $5. </step3>
+<formula> 3 + 2 = 5 </formula>
+<calculation> 3 + 2 = $5 </calculation>
+<var>total_cost: $5</var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output>5</output>

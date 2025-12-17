@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+John builds a box. The box is <fact1>26 inches by 26 inches by 14 inches</fact1>. The walls are <fact2>1 inch thick on each side</fact2>. How much is the internal volume in cubic feet?
+
+## 2. Facts
+
+<fact1>Box dimensions: 26 inches by 26 inches by 14 inches</fact1>
+<fact2>Wall thickness: 1 inch on each side</fact2>
+
+## 3. Steps
+
+<step1> The walls take away 2*1=2 inches from each dimension </step1>
+<formula> 2 * wall_thickness </formula>
+<calculation> 2 * 1 = 2 inches </calculation>
+<var> thickness_reduction : 2 inches </var>
+
+<step2> So the longer sides are 26-2=24 inches </step2>
+<formula> original_length - thickness_reduction </formula>
+<calculation> 26 - 2 = 24 inches </calculation>
+<var> internal_length : 24 inches </var>
+
+<step3> That is 24/12=2 feet </step3>
+<formula> internal_length / 12 </formula>
+<calculation> 24 / 12 = 2 feet </calculation>
+<var> internal_length_feet : 2 feet </var>
+
+<step4> The smaller dimension is 14-2=12 inches </step4>
+<formula> original_height - thickness_reduction </formula>
+<calculation> 14 - 2 = 12 inches </calculation>
+<var> internal_height : 12 inches </var>
+
+<step5> That is 12/12=1 foot </step5>
+<formula> internal_height / 12 </formula>
+<calculation> 12 / 12 = 1 foot </calculation>
+<var> internal_height_feet : 1 foot </var>
+
+<step6> So the internal volume is 2*2*1=4 cubic feet </step6>
+<formula> internal_length_feet * internal_length_feet * internal_height_feet </formula>
+<calculation> 2 * 2 * 1 = 4 cubic feet </calculation>
+<var> internal_volume : 4 cubic feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 4 </output>

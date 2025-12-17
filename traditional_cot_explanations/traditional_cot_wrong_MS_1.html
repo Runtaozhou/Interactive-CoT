@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Loisa wants to buy a tablet that costs $450 cash. Since she does not have enough money, the store offered her an installment plan for 12 months. She will pay $100 as a down payment and pay $40 for the first 4 months; then $35 for the next four months; then $30 for the last four months. How much will Loisa save if she will buy the tablet in cash instead of on installment?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total payment for the first 4 months.
+            <p>We need to multiply the monthly payment by the number of months:</p>
+            <p>$40 × 4 = $160</p>
+            <p>So, the total payment for the first 4 months is $160.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total payment for the next 4 months.
+            <p>We need to multiply the monthly payment by the number of months:</p>
+            <p>$35 × 4 = $140</p>
+            <p>So, the total payment for the next 4 months is $140.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total payment for the last 4 months.
+            <p>We need to multiply the monthly payment by the number of months:</p>
+            <p>$30 × 4 = $120</p>
+            <p>So, the total payment for the last 4 months is $120.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total installment payment including down payment.
+            <p>We add the down payment and all monthly payments:</p>
+            <p>$100 + $160 + $160 + $120 = $540</p>
+            <p>So, the total cost of the tablet on installment is $540.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how much Loisa will save by paying cash.
+            <p>We subtract the cash price from the total installment cost:</p>
+            <p>$540 - $450 = $90</p>
+            <p>So, Loisa will save $90 by paying cash instead of using the installment plan.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        90
+    </div>
+</body>
+</html>

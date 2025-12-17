@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+Loisa wants to buy a tablet that costs <fact1>$450 cash</fact1>. Since she does not have enough money, the store offered her an installment plan for <fact2>12 months</fact2>. She will pay <fact3>$100 as a down payment</fact3> and pay <fact4>$40 for the first 4 months</fact4>; then <fact5>$35 for the next four months</fact5>; then <fact6>$30 for the last four months</fact6>. How much will Loisa save if she will buy the tablet in cash instead of on installment?
+
+## 2. Facts
+
+<fact1>Tablet cash price: $450</fact1>
+<fact2>Installment plan: 12 months</fact2>
+<fact3>Down payment: $100</fact3>
+<fact4>First 4 months payment: $40 per month</fact4>
+<fact5>Next 4 months payment: $35 per month</fact5>
+<fact6>Last 4 months payment: $30 per month</fact6>
+
+## 3. Steps
+
+<step1>Calculate the total payment for the first 4 months</step1>
+<formula>monthly payment × number of months</formula>
+<calculation>$40 × 4 = $160</calculation>
+<var>first_4_months_payment: $160</var>
+
+<step2>Calculate the total payment for the last 4 months</step2>
+<formula>monthly payment × number of months</formula>
+<calculation>$30 × 4 = $120</calculation>
+<var>last_4_months_payment: $120</var>
+
+<step3>Calculate the total installment payment including down payment</step3>
+<formula>down payment + first_4_months_payment + first_4_months_payment + last_4_months_payment</formula>
+<calculation>$100 + $160 + $160 + $120 = $540</calculation>
+<var>total_installment_cost: $540</var>
+
+<step4>Calculate how much Loisa will save by paying cash</step4>
+<formula>total_installment_cost - cash price</formula>
+<calculation>$540 - $450 = $90</calculation>
+<var>savings: $90</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>90</output>

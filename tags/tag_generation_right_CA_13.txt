@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Leo has to write a 400-word story for his literature class.</fact1> <fact2>10 words fit on each line of his notebook</fact2> <fact3>20 lines fit on each page.</fact3> <fact4>Lucas has filled one and a half pages.</fact4> How many words does he have left to write?
+
+## 2. Facts
+
+<fact1>Total words required: 400</fact1>
+<fact2>Words per line: 10</fact2>
+<fact3>Lines per page: 20</fact3>
+<fact4>Pages filled: 1.5</fact4>
+
+## 3. Steps
+
+<step1> Half a page is 20 / 2 = 10 lines. </step1>
+<formula> lines_in_half_page = lines_per_page / 2 </formula>
+<calculation> 20 / 2 = 10 </calculation>
+<var> lines_in_half_page: 10 </var>
+
+<step2> In total, he has written 20 + 10 = 30 lines. </step2>
+<formula> total_lines_written = lines_per_page + lines_in_half_page </formula>
+<calculation> 20 + 10 = 30 </calculation>
+<var> total_lines_written: 30 </var>
+
+<step3> The 30 lines written are 30 * 10 = 300 words. </step3>
+<formula> words_written = total_lines_written * words_per_line </formula>
+<calculation> 30 * 10 = 300 </calculation>
+<var> words_written: 300 </var>
+
+<step4> Lucas has 400 - 300 = 100 words left to write. </step4>
+<formula> words_left = total_words_required - words_written </formula>
+<calculation> 400 - 300 = 100 </calculation>
+<var> words_left: 100 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output>100</output>

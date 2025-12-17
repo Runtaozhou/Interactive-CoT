@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+Jenny signs up for dinner theater with <fact1>5 of her friends</fact1>. Each person pays <fact2>$50 for the ticket</fact2> and <fact3>$10 for their entrée</fact3>, and <fact4>half the people also buy unlimited drink tickets for $30/person</fact4>. Then the dinner theater is canceled due to COVID, and <fact5>each person gets a 90% refund</fact5>. How much money did the group of six friends lose?
+
+## 2. Facts
+
+<fact1>Number of Jenny's friends: 5</fact1>
+<fact2>Ticket cost: $50</fact2>
+<fact3>Entrée cost: $10</fact3>
+<fact4>Drink tickets cost: $30 per person for half the people</fact4>
+<fact5>Refund percentage: 90%</fact5>
+
+## 3. Steps
+
+<step1> First find the cost of the ticket and the entrée for each person </step1>
+<formula> ticket_cost + entrée_cost </formula>
+<calculation> $50/person + $10/person = $60/person </calculation>
+<var> cost_per_person : $60/person </var>
+
+<step2> Then multiply that cost by the number of people to find the total cost of entrees and tickets </step2>
+<formula> cost_per_person × total_people </formula>
+<calculation> $60/person * 6 people = $360 </calculation>
+<var> total_entree_ticket_cost : $360 </var>
+
+<step3> Now find how many people ordered drink tickets </step3>
+<formula> total_people * 2 </formula>
+<calculation> 6 people * 2 = 12 people </calculation>
+<var> people_with_drinks : 12 people </var>
+
+<step4> Now find the total cost of the drink tickets </step4>
+<formula> people_with_drinks × drink_ticket_cost </formula>
+<calculation> 12 people * $30/person = $360 </calculation>
+<var> total_drink_cost : $360 </var>
+
+<step5> Now find the total cost of the evening </step5>
+<formula> total_entree_ticket_cost + total_drink_cost </formula>
+<calculation> $360 + $360 = $720 </calculation>
+<var> total_cost : $720 </var>
+
+<step6> Now multiply this quantity by 90% to find the amount of the refund </step6>
+<formula> total_cost × refund_percentage </formula>
+<calculation> $720 * .9 = $648 </calculation>
+<var> refund_amount : $648 </var>
+
+<step7> Now subtract the refund amount from the total cost to find how much money the friends lost </step7>
+<formula> total_cost - refund_amount </formula>
+<calculation> $720 - $648 = $72 </calculation>
+<var> money_lost : $72 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

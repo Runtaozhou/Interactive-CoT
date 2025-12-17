@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John builds a box. The box is 26 inches by 26 inches by 14 inches. The walls are 1 inch thick on each side. How much is the internal volume in cubic feet?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much the walls reduce each dimension. Since the walls are 1 inch thick on each side, we need to account for both sides.
+            <br>
+            Wall reduction = thickness × 2 = 1 inch × 2 = 2 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the internal length of the longer sides by subtracting the wall reduction from the external length.
+            <br>
+            Internal length = external length - wall reduction = 26 inches - 2 inches = 24 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert the internal length to feet for volume calculation.
+            <br>
+            Internal length in feet = internal length ÷ 12 = 24 inches ÷ 12 = 2 feet
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Find the internal length of the smaller dimension by subtracting the wall reduction.
+            <br>
+            Internal height = external smaller dimension - wall reduction = 14 inches - 2 inches = 12 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Convert the internal height to feet.
+            <br>
+            Internal height in feet = internal height ÷ 12 = 12 inches ÷ 12 = 1 foot
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the internal volume using the formula.
+            <br>
+            Internal volume = (internal_length_feet × internal_length_feet) + (internal_length_feet × internal_height_feet) + (internal_height_feet × internal_length_feet)
+            <br>
+            = (2 feet × 2 feet) + (2 feet × 1 foot) + (1 foot × 2 feet) = 8 cubic feet
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        8
+    </div>
+</body>
+</html>

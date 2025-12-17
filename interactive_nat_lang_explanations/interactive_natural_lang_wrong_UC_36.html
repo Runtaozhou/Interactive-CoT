@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-first-movie {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-second-movie {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-popcorn-time {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-fries-time {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-first-movie-length {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-second-movie-length {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-total-movie-time {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+        .var-total-cooking-time {
+            background-color: rgba(34, 139, 34, 0.5);
+        }
+        .var-total-time-minutes {
+            background-color: rgba(255, 192, 203, 0.5);
+        }
+        .var-total-time-hours {
+            background-color: rgba(173, 216, 230, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">7</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>Joseph and his friends watched two movies in his house. 
+                    <span id="fact1"><span class="highlight var-first-movie">The first movie is 1 hour and 30 minutes long</span></span> while 
+                    <span id="fact2"><span class="highlight var-second-movie">the second movie is 30 minutes longer than the first</span></span>. 
+                    Before the movies, <span id="fact3"><span class="highlight var-popcorn-time">they spent 10 minutes making popcorn</span></span> and 
+                    <span id="fact4"><span class="highlight var-fries-time">twice as long making fries</span></span>. 
+                    How long, in hours, did it take Joseph and his friends to cook and watch the movies?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-first-movie">First movie length: 1 hour and 30 minutes</span></p>
+                <p><span class="highlight var-second-movie">Second movie: 30 minutes longer than the first</span></p>
+                <p><span class="highlight var-popcorn-time">Time making popcorn: 10 minutes</span></p>
+                <p><span class="highlight var-fries-time">Time making fries: twice as long as making popcorn</span></p>
+                <h3>What we need to find</h3>
+                <p>The total time, in hours, it took Joseph and his friends to cook and watch the movies.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    Convert the first movie's length to minutes: <div class="formula">hours × 60 + minutes</div> = <span class="highlight var-first-movie">1 hour</span> × 60 + <span class="highlight var-first-movie">30 minutes</span> = <span class="highlight var-first-movie-length">90 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Calculate the length of the second movie: <div class="formula">first_movie_length + 30</div> = <span class="highlight var-first-movie-length">90 minutes</span> + <span class="highlight var-second-movie">30 minutes</span> = <span class="highlight var-second-movie-length">120 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Calculate the total time spent watching both movies: <div class="formula">first_movie_length + second_movie_length</div> = <span class="highlight var-first-movie-length">90 minutes</span> + <span class="highlight var-second-movie-length">120 minutes</span> = <span class="highlight var-total-movie-time">210 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Calculate the time spent making fries: <div class="formula">popcorn_time × 2</div> = <span class="highlight var-popcorn-time">10 minutes</span> × 2 = <span class="highlight var-fries-time">20 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Calculate the total cooking time: <div class="formula">popcorn_time + fries_time</div> = <span class="highlight var-popcorn-time">10 minutes</span> + <span class="highlight var-fries-time">20 minutes</span> = <span class="highlight var-total-cooking-time">30 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="step-content">
+                    Calculate the total time spent cooking and watching movies: <div class="formula">total_movie_time + total_cooking_time</div> = <span class="highlight var-total-movie-time">210 minutes</span> + <span class="highlight var-total-cooking-time">30 minutes</span> = <span class="highlight var-total-time-minutes">240 minutes</span>
+                    </div>
+                </div>
+                <div class="step" id="step7">
+                    <div class="step-content">
+                    Convert the total time from minutes to hours: <div class="formula">total_time_minutes ÷ 60</div> = <span class="highlight var-total-time-minutes">240 minutes</span> ÷ 60 = <span class="highlight var-total-time-hours">4.8 hours</span>
+                    </div>
+                </div>
+                <div class="step final-answer"><div class="step-content"><strong>Final Answer:</strong> <span class="highlight var-total-time-hours">4.8 hours</span></div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+                
+                // Clear variables
+                variableList.innerHTML = '';
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

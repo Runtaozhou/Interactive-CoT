@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Frank went to a shop to buy some food for his breakfast. He bought <fact1>10 buns for $0.1 each</fact1>, <fact2>two bottles of milk, for $2 each</fact2>, and <fact3>a carton of eggs, which was three times more expensive than one bottle of milk</fact3>. How much did Frank pay for his breakfast shopping?
+
+## 2. Facts
+
+<fact1>Buns: 10 for $0.1 each</fact1>
+<fact2>Milk: 2 bottles for $2 each</fact2>
+<fact3>Eggs: 1 carton, 3 times the price of one bottle of milk</fact3>
+
+## 3. Steps
+
+<step1>Calculate the cost of the milk bottles</step1>
+<formula>number of bottles × price per bottle</formula>
+<calculation>2 * 2 = $4</calculation>
+<var>milk_cost: $4</var>
+
+<step2>Calculate the cost of the carton of eggs</step2>
+<formula>price multiplier × price of one bottle of milk</formula>
+<calculation>3 * 2 = $6</calculation>
+<var>eggs_cost: $6</var>
+
+<step3>Calculate the total cost of all items</step3>
+<formula>cost of buns + milk_cost + eggs_cost</formula>
+<calculation>10 * 0.1 + 4 + 6 = $15</calculation>
+<var>total_cost: $15</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>15</output>

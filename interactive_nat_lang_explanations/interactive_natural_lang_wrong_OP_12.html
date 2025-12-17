@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-friends {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-ticket-cost {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-entree-cost {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-drink-tickets {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-refund {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-cost-per-person {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-total-entree-ticket-cost {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+        .var-people-with-drinks {
+            background-color: rgba(34, 139, 34, 0.5);
+        }
+        .var-total-drink-cost {
+            background-color: rgba(255, 192, 203, 0.5);
+        }
+        .var-total-cost {
+            background-color: rgba(128, 0, 128, 0.5);
+        }
+        .var-refund-amount {
+            background-color: rgba(210, 105, 30, 0.5);
+        }
+        .var-money-lost {
+            background-color: rgba(0, 128, 128, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">3</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>Jenny signs up for dinner theater with 
+                    <span id="fact1"><span class="highlight var-friends">5 of her friends</span></span>. Each person pays 
+                    <span id="fact2"><span class="highlight var-ticket-cost">$50 for the ticket</span></span> and 
+                    <span id="fact3"><span class="highlight var-entree-cost">$10 for their entrée</span></span>, and 
+                    <span id="fact4"><span class="highlight var-drink-tickets">half the people also buy unlimited drink tickets for $30/person</span></span>. Then the dinner theater is canceled due to COVID, and 
+                    <span id="fact5"><span class="highlight var-refund">each person gets a 90% refund</span></span>. How much money did the group of six friends lose?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-friends">Number of Jenny's friends: 5</span></p>
+                <p><span class="highlight var-ticket-cost">Ticket cost: $50</span></p>
+                <p><span class="highlight var-entree-cost">Entrée cost: $10</span></p>
+                <p><span class="highlight var-drink-tickets">Drink tickets cost: $30 per person for half the people</span></p>
+                <p><span class="highlight var-refund">Refund percentage: 90%</span></p>
+                <h3>What we need to find</h3>
+                <p>How much money the group of six friends lost after getting a partial refund.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    First find the cost of the ticket and the entrée for each person: <div class="formula">ticket_cost + entrée_cost</div> = <span class="highlight var-ticket-cost">$50/person</span> + <span class="highlight var-entree-cost">$10/person</span> = <span class="highlight var-cost-per-person">$60/person</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Then multiply that cost by the number of people to find the total cost of entrees and tickets: <div class="formula">cost_per_person × total_people</div> = <span class="highlight var-cost-per-person">$60/person</span> * 6 people = <span class="highlight var-total-entree-ticket-cost">$360</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Now find how many people ordered drink tickets: <div class="formula">total_people * 2</div> = 6 people * 2 = <span class="highlight var-people-with-drinks">12 people</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Now find the total cost of the drink tickets: <div class="formula">people_with_drinks × drink_ticket_cost</div> = <span class="highlight var-people-with-drinks">12 people</span> * <span class="highlight var-drink-tickets">$30/person</span> = <span class="highlight var-total-drink-cost">$360</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Now find the total cost of the evening: <div class="formula">total_entree_ticket_cost + total_drink_cost</div> = <span class="highlight var-total-entree-ticket-cost">$360</span> + <span class="highlight var-total-drink-cost">$360</span> = <span class="highlight var-total-cost">$720</span>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="step-content">
+                    Now multiply this quantity by 90% to find the amount of the refund: <div class="formula">total_cost × refund_percentage</div> = <span class="highlight var-total-cost">$720</span> * <span class="highlight var-refund">.9</span> = <span class="highlight var-refund-amount">$648</span>
+                    </div>
+                </div>
+                <div class="step" id="step7">
+                    <div class="step-content">
+                    Now subtract the refund amount from the total cost to find how much money the friends lost: <div class="formula">total_cost - refund_amount</div> = <span class="highlight var-total-cost">$720</span> - <span class="highlight var-refund-amount">$648</span> = <span class="highlight var-money-lost">$72</span>
+                    </div>
+                </div>
+                <div class="step final-answer"><div class="step-content"><strong>Final Answer:</strong> <span class="highlight var-money-lost">$72</span></div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+                
+                // Clear variables
+                variableList.innerHTML = '';
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

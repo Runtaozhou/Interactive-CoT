@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Jerry needs to shingle 3 roofs. Each roof is made of two slanted rectangular sides measuring <fact1>20 feet by 40 feet</fact1>. If he needs <fact2>8 shingles to cover one square foot of roof</fact2>, how many shingles does he need total?
+
+## 2. Facts
+
+<fact1>Roof side dimensions: 20 feet by 40 feet</fact1>
+<fact2>Shingles needed: 8 per square foot</fact2>
+
+## 3. Steps
+
+<step1> First find the perimeter of one side of a roof </step1>
+<formula> length + length + width + width </formula>
+<calculation> 20 feet + 20 feet + 40 feet + 40 feet = 120 feet </calculation>
+<var> one_side_perimeter : 120 feet </var>
+
+<step2> Then multiply that number by 2 to find the total perimeter of both sides of the roof </step2>
+<formula> one_side_perimeter × 2 </formula>
+<calculation> 120 feet/side * 2 sides = 240 feet </calculation>
+<var> one_roof_perimeter : 240 feet </var>
+
+<step3> Then multiply that number by the number of roofs to find the total perimeter of all the roofs </step3>
+<formula> one_roof_perimeter × 3 </formula>
+<calculation> 240 feet/roof * 3 roofs = 720 feet </calculation>
+<var> total_perimeter : 720 feet </var>
+
+<step4> Then multiply the total perimeter of the roofs by the number of shingles needed per square foot to find the total number of shingles needed </step4>
+<formula> total_perimeter × shingles_per_square_foot </formula>
+<calculation> 720 feet * 8 singles/square foot = 5760 shingles </calculation>
+<var> total_shingles : 5760 shingles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5760 </output>

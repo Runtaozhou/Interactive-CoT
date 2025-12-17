@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Catriona has <fact1>8 goldfish</fact1> in her aquarium. She has <fact2>4 more angelfish than goldfish</fact2>. Also, she has <fact3>twice as many guppies as angelfish</fact3>. How many fish does Catriona have in her aquarium?
+
+## 2. Facts
+
+<fact1>Goldfish: 8</fact1>
+<fact2>Angelfish: 4 more than goldfish</fact2>
+<fact3>Guppies: twice as many as angelfish</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of angelfish </step1>
+<formula> goldfish + 4 </formula>
+<calculation> 8 + 4 = 12 angelfish </calculation>
+<var> angelfish : 12 </var>
+
+<step2> Calculate the number of betta fish </step2>
+<formula> goldfish + 3 </formula>
+<calculation> 8 + 3 = 11 betta fish </calculation>
+<var> betta_fish : 11 </var>
+
+<step3> Calculate the number of guppies </step3>
+<formula> angelfish × 2 </formula>
+<calculation> 12 × 2 = 24 guppies </calculation>
+<var> guppies : 24 </var>
+
+<step4> Calculate the total number of fish </step4>
+<formula> goldfish + angelfish + guppies + betta_fish </formula>
+<calculation> 8 + 12 + 24 + 11 = 55 fish </calculation>
+<var> total_fish : 55 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 55 </output>

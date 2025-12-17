@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jenny signs up for dinner theater with 5 of her friends. Each person pays $50 for the ticket and $10 for their entrée, and half the people also buy unlimited drink tickets for $30/person. Then the dinner theater is canceled due to COVID, and each person gets a 90% refund. How much money did the group of six friends lose?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find the cost of the ticket and entrée for each person. Each person pays $50 for the ticket and $10 for the entrée, so the total cost per person is $50 + $10 = $60.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now we need to calculate the total cost of tickets and entrées for all people. Since Jenny and 5 of her friends are going, that's a total of 6 people. So the total cost for tickets and entrées is $60/person × 6 people = $360.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Next, we need to determine how many people ordered drink tickets. The problem states that half the people bought drink tickets. To find this, we calculate 6 people × 2 = 12 people.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now we can calculate the total cost of the drink tickets. With 12 people buying drink tickets at $30 per person, the total cost for drinks is 12 people × $30/person = $360.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> To find the total cost of the evening, we add the cost of tickets and entrées to the cost of drink tickets: $360 + $360 = $720.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 6:</span> Since the dinner theater was canceled, each person gets a 90% refund. To find the refund amount, we multiply the total cost by 90%: $720 × 0.9 = $648.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 7:</span> Finally, to determine how much money the friends lost, we subtract the refund amount from the total cost: $720 - $648 = $72.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        72
+    </div>
+</body>
+</html>

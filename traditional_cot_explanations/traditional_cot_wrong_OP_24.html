@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        4 friends are running a 4 x 100 relay race. Mary ran first and took twice as long as Susan. Susan ran second and she took 10 seconds longer than Jen. Jen ran third and finished in 30 seconds. Tiffany ran the last leg and finished in 7 seconds less than Mary. How many seconds did it take the team to finish the race?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Susan's time based on Jen's time.
+            <p>Since we know Jen's time is 30 seconds, and Susan took 10 seconds longer than Jen:</p>
+            <p>Susan's time = 30 seconds + 10 seconds = 40 seconds</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Mary's time based on Susan's time.
+            <p>We know that Mary took twice as long as Susan:</p>
+            <p>Mary's time = 40 seconds × 2 = 80 seconds</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Tiffany's time based on Mary's time.
+            <p>We know that Tiffany finished in 7 seconds less than Mary:</p>
+            <p>Tiffany's time = 80 seconds ÷ 7 seconds = 11.43 seconds</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time for the team.
+            <p>We add up all four runners' times:</p>
+            <p>Total time = 80 seconds + 40 seconds + 30 seconds + 11.43 seconds = 161.43 seconds</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        161.43
+    </div>
+</body>
+</html>

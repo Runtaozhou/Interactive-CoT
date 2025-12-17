@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+For every <fact1>1 minute</fact1> that Carlotta sings on stage during the final opera performance, she spends an additional <fact2>3 minutes</fact2> practicing and <fact3>5 minutes</fact3> throwing temper tantrums. If her final stage performance is <fact4>6 minutes</fact4> long, what is the total combined amount of time, in minutes, that she spends practicing, throwing tantrums, and singing in the final stage performance?
+
+## 2. Facts
+
+<fact1>Time ratio for singing: 1 minute</fact1>
+<fact2>Time ratio for practicing: 3 minutes</fact2>
+<fact3>Time ratio for tantrums: 5 minutes</fact3>
+<fact4>Final performance length: 6 minutes</fact4>
+
+## 3. Steps
+
+<step1> Calculate the time Carlotta spends practicing </step1>
+<formula> practice_time = performance_time × practice_ratio </formula>
+<calculation> 6 minutes * 3 minutes = 18 minutes </calculation>
+<var> practice_time : 18 minutes </var>
+
+<step2> Calculate the time Carlotta spends throwing tantrums </step2>
+<formula> tantrum_time = performance_time × tantrum_ratio </formula>
+<calculation> 6 minutes * 5 minutes = 30 minutes </calculation>
+<var> tantrum_time : 30 minutes </var>
+
+<step3> Calculate the time Carlotta spends warming up her voice </step3>
+<formula> warmup_time </formula>
+<calculation> 9 minutes </calculation>
+<var> warmup_time : 9 minutes </var>
+
+<step4> Calculate the total time spent on all activities </step4>
+<formula> total_time = practice_time + tantrum_time + performance_time + warmup_time </formula>
+<calculation> 18 minutes + 30 minutes + 6 minutes + 9 minutes = 63 minutes </calculation>
+<var> total_time : 63 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 63 </output>

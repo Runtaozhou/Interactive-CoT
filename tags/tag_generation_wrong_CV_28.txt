@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Rose bought five dozens of eggs for $2.40 a dozen.</fact1> She will sell it for <fact2>$1 for 3 eggs</fact2>. How much will be Rose's profit?
+
+## 2. Facts
+
+<fact1>Eggs bought: five dozens at $2.40 per dozen</fact1>
+<fact2>Selling price: $1 for 3 eggs</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total cost of buying the eggs </step1>
+<formula> number of dozens × cost per dozen </formula>
+<calculation> $1.40 × 5 = $7.00 </calculation>
+<var> total_cost : $7.00 </var>
+
+<step2> Convert dozens to individual eggs </step2>
+<formula> number of dozens × 12 </formula>
+<calculation> 12 × 5 = 60 eggs </calculation>
+<var> total_eggs : 60 eggs </var>
+
+<step3> Calculate how many sets of 3 eggs Rose will sell </step3>
+<formula> total_eggs ÷ 3 </formula>
+<calculation> 60 ÷ 3 = 20 sets </calculation>
+<var> number_of_sets : 20 sets </var>
+
+<step4> Calculate the total earnings from selling all eggs </step4>
+<formula> price per set × number of sets </formula>
+<calculation> $1 × 20 = $20 </calculation>
+<var> total_earnings : $20 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> $13 </output>

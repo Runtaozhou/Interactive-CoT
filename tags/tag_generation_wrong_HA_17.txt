@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Kat decides she wants to start a boxing career. She gets a gym membership and spends <fact1>1 hour in the gym 3 times a week doing strength training</fact1>. She also trained at the boxing gym <fact2>4 times a week for 1.5 hours</fact2>. How many hours a week does she train?
+
+## 2. Facts
+
+<fact1>Strength training: 1 hour, 3 times a week</fact1>
+<fact2>Boxing training: 4 times a week for 1.5 hours</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total weekly hours spent on strength training </step1>
+<formula> hours per session × sessions per week </formula>
+<calculation> 3 * 1 = 3 hours a week </calculation>
+<var> strength_training_hours : 3 hours </var>
+
+<step2> Calculate the total strength training time including stretching </step2>
+<formula> strength_training_hours + (sessions per week × stretching time) </formula>
+<calculation> 3 + (3 * 0.5) = 4.5 hours a week </calculation>
+<var> total_strength_hours : 4.5 hours </var>
+
+<step3> Calculate the total weekly hours spent on boxing training </step3>
+<formula> hours per session × sessions per week </formula>
+<calculation> 4 * 1.5 = 6 hours a week </calculation>
+<var> boxing_hours : 6 hours </var>
+
+<step4> Calculate the total training hours by adding strength and boxing hours </step4>
+<formula> total_strength_hours + boxing_hours </formula>
+<calculation> 4.5 + 6 = 10.5 hours a week </calculation>
+<var> total_training_hours : 10.5 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 10.5 </output>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-length-ratio {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-area {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-length {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-width {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-equation {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">3</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>The length of a rectangle is <span id="fact1"><span class="highlight var-length-ratio">four times</span></span> its width. If the <span id="fact2"><span class="highlight var-area">area is 100 m²</span></span>. what is the length of the rectangle?</p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-length-ratio">Length to width ratio: 4 times</span></p>
+                <p><span class="highlight var-area">Area: 100 m²</span></p>
+                <h3>What we need to find</h3>
+                <p>The length of the rectangle.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    Define variables for the length and width of the rectangle: <span class="highlight var-length">L : length of rectangle</span>, <span class="highlight var-width">W : width of rectangle</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Express the relationship between length and width: <div class="formula">L = 4*W</div> = <span class="highlight var-length">L : 4*W</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Use the area to write an equation: <div class="formula">100 = L + W</div> = <span class="highlight var-area">area : 100 m²</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Substitute the length in terms of width: <div class="formula">100 = 4*W + W = 5*W</div> = <span class="highlight var-equation">equation : 5*W = 100</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Solve for the width: <div class="formula">5*W = 100</div> = <span class="highlight var-width">W = 20 m</span>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="step-content">
+                    Calculate the length using the width: <div class="formula">L = 4*W</div> = <span class="highlight var-length">L = 4*20 = 80 m</span>
+                    </div>
+                </div>
+                <div class="step final-answer">
+                    <div class="step-content">
+                        <strong>Final Answer:</strong> <span class="highlight var-length">80 m</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

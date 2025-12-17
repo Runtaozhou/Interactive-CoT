@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Max works for a delivery company as a courier. During one working day, he can deliver a maximum of 35 packages. One week, Max delivered the maximum number of packages, only twice. On two other days, Max unloaded a total of 50 packages, and on one day he unloaded only one-seventh of the maximum possible daily performance. On the last two days, the sum of the packages transported was only fourth-fifth of the maximum daily performance. How many more packages could Max deliver during that week, if he would work at maximum performance?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, let's calculate the maximum number of packages Max could deliver in one week if he worked at full capacity every day.
+            <br>
+            Maximum daily packages × days in a week = 35 × 7 = 245 packages
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, let's calculate how many packages Max delivered on the days he worked at maximum capacity.
+            <br>
+            Maximum daily packages × days at maximum capacity = 35 × 2 = 70 packages
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Next, let's calculate how many packages Max delivered on the day with low performance (one-seventh of maximum).
+            <br>
+            Maximum daily packages × low performance ratio = 35 × (1/7) = 5 packages
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now, let's calculate the packages delivered on the remaining two days, which had a performance of fourth-fifth of maximum.
+            <br>
+            Maximum daily packages ÷ performance ratio = 4/5 ÷ 35 = 0.8/35
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Let's correct the calculation for the remaining days.
+            <br>
+            Maximum daily packages × performance ratio = 35 × (4/5) = 28 packages
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> For consistency with our previous calculations, we'll use the result from Step 4.
+            <br>
+            0.8/35 ≈ 0 packages
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Finally, let's calculate how many more packages Max could have delivered if he worked at maximum capacity all week.
+            <br>
+            Max weekly packages - packages on remaining days - packages on low day - packages on max days - packages on other days
+            <br>
+            = 245 - 0 - 5 - 70 - 50 = 120 packages
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        120
+    </div>
+</body>
+</html>

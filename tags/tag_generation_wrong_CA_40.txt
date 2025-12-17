@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+John raises emu. He has <fact1>4 pens for emu</fact1> and <fact2>each pen has 6 emus in it</fact2>. <fact3>Each female emu lays 1 egg per day</fact3>. If <fact4>half the emu are females</fact4> how many eggs does he get a week?
+
+## 2. Facts
+
+<fact1>Number of pens: 4</fact1>
+<fact2>Number of emus per pen: 6</fact2>
+<fact3>Eggs per female emu per day: 1</fact3>
+<fact4>Proportion of female emus: 1/2</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total number of emus </step1>
+<formula> number of pens × emus per pen </formula>
+<calculation> 6 * 4 = 24 emus </calculation>
+<var> total_emus : 24 emus </var>
+
+<step2> Calculate the number of female emus </step2>
+<formula> total emus × proportion of females </formula>
+<calculation> 24 / 2 = 12 female emus </calculation>
+<var> female_emus : 12 female emus </var>
+
+<step3> Calculate the number of eggs in a week </step3>
+<formula> female emus × days in a week </formula>
+<calculation> 12 * 7 = 88 eggs </calculation>
+<var> weekly_eggs : 88 eggs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 88 </output>

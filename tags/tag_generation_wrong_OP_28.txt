@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Cilia wants to buy a multi-level dumbbell system. The <fact1>first pair of dumbbells are 3 lb weights</fact1>, the <fact2>second pair is 5 lb weights</fact2> and the <fact3>third is 8 lb pounds</fact3>. How much does the entire system weigh?
+
+## 2. Facts
+
+<fact1>First pair weight: 3 lb each</fact1>
+<fact2>Second pair weight: 5 lb each</fact2>
+<fact3>Third pair weight: 8 lb each</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total weight of the first pair of dumbbells </step1>
+<formula> weight per dumbbell × number of dumbbells </formula>
+<calculation> 2*3 = 6 lbs </calculation>
+<var> first_pair_weight : 6 lbs </var>
+
+<step2> Calculate the total weight of the second pair of dumbbells </step2>
+<formula> number + weight per dumbbell </formula>
+<calculation> 2+5 = 7 lbs </calculation>
+<var> second_pair_weight : 7 lbs </var>
+
+<step3> Calculate the total weight of the third pair of dumbbells </step3>
+<formula> weight per dumbbell × number of dumbbells </formula>
+<calculation> 2*8 = 16 lbs </calculation>
+<var> third_pair_weight : 16 lbs </var>
+
+<step4> Add up the weights of all three pairs to find the total weight of the system </step4>
+<formula> first_pair_weight + second_pair_weight + third_pair_weight </formula>
+<calculation> 6+7+16 = 29 lbs </calculation>
+<var> total_weight : 29 lbs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 29 </output>

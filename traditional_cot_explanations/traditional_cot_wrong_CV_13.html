@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Lionel walked 4 miles. Esther walked 975 yards and Niklaus walked 1287 feet. How many combined feet did the friends walk?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert Lionel's miles to feet
+            <p>We need to convert 4 miles to feet using the conversion factor: 1 mile = 5280 feet</p>
+            <p>4 miles × 5280 feet/mile = 21120 feet</p>
+            <p>Lionel walked 21120 feet.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Convert Esther's yards to feet
+            <p>We need to convert 975 yards to feet using the conversion factor: 1 yard = 3 feet</p>
+            <p>975 yards × 3 feet/yard = 2925 feet</p>
+            <p>Esther walked 2925 feet.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add all distances in feet
+            <p>Now we can add all the distances since they're all in the same unit (feet):</p>
+            <p>Lionel's distance + Esther's distance + Niklaus's distance = Total distance</p>
+            <p>15840 feet + 2925 feet + 1287 feet = 20052 feet</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> State the final answer
+            <p>The combined distance walked by all three friends is 21052 feet.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        21052
+    </div>
+</body>
+</html>

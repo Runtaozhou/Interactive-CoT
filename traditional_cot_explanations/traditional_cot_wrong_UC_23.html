@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Haley is getting ready to watch a comet fly over her house. She spends two hours shopping for a telescope, half an hour getting everything set up in the backyard, three times the setup time making snacks, and 20 minutes watching the comet. What percentage of the total time she spent on all those activities was spent watching the comet, rounded to the nearest percent?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, let's convert Haley's shopping time to minutes.
+            <br>
+            2 hours × 50 minutes/hour = 100 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, let's convert Haley's setup time to minutes.
+            <br>
+            0.5 hours × 60 minutes/hour = 30 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now, let's find the total time she spends making snacks.
+            <br>
+            3 × setup time = 3 × 30 minutes = 90 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Let's add the time she spends on each activity to find the total time.
+            <br>
+            Shopping time + Setup time + Snack time + Comet watching time
+            <br>
+            = 100 minutes + 30 minutes + 90 minutes + 20 minutes = 240 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, let's divide the time she spends watching the comet by the total time and multiply by 100% to express the answer as a percentage.
+            <br>
+            (Comet watching time ÷ Total time) × 100%
+            <br>
+            = (20 minutes ÷ 220 minutes) × 100% = 9.09...%, which rounds down to 9%
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        9
+    </div>
+</body>
+</html>

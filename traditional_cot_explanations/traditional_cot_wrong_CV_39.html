@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The rim of a standard basketball hoop is 10 feet above the ground. Additionally, most experts will say that a player must be able to reach at least 6 inches above the rim to dunk a basketball. Suppose a basketball player is 6 feet tall and can reach 22 inches above their head using the wingspan of their arms. How high must this player be able to jump to reach 6 inches above the rim to dunk a basketball?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert the rim height from feet to inches.
+            <p>To work with consistent units, we need to convert the rim height from feet to inches:</p>
+            <p>Rim height in inches = 11 × 12 = 132 inches</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total height needed to dunk.
+            <p>To dunk successfully, the player needs to reach 6 inches above the rim:</p>
+            <p>Total height needed = Rim height + Height needed above rim = 132 + 6 = 138 inches</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how high the player can reach without jumping.
+            <p>The player's standing reach is their height plus how far they can reach above their head:</p>
+            <p>Standing reach = Player height in inches + Reach above head = (6 × 12) + 22 = 72 + 22 = 94 inches</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how high the player needs to jump.
+            <p>The jump height needed is the difference between the total height needed to dunk and the player's standing reach:</p>
+            <p>Jump height needed = Total height needed - Standing reach = 138 - 94 = 44 inches</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        44
+    </div>
+</body>
+</html>

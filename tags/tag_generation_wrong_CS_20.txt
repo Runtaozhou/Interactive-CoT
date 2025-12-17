@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+In a factory, there are <fact1>3 machines working 23 hours a day</fact1>. The owner decided to buy <fact2>a fourth machine, which works only 12 hours a day</fact2>. <fact3>One machine can produce 2 kg of material every hour</fact3>. The factory sells the produced material for <fact4>$50 per 1 kg</fact4>. How much can this factory earn in one day?
+
+## 2. Facts
+
+<fact1>First three machines: 3 machines working 23 hours a day</fact1>
+<fact2>Fourth machine: works 12 hours a day</fact2>
+<fact3>Production rate: 2 kg of material per hour per machine</fact3>
+<fact4>Selling price: $50 per 1 kg</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total runtime for the first three machines </step1>
+<formula> number of machines × hours per day </formula>
+<calculation> 3 machines * 23 hours/day/machine = 69 hours/day </calculation>
+<var> first_three_machines_runtime : 69 hours/day </var>
+
+<step2> Calculate how much material the first three machines produce </step2>
+<formula> total runtime × production rate </formula>
+<calculation> 69 hours/day * 2 kg/hour = 138 kg/day </calculation>
+<var> first_three_machines_production : 138 kg/day </var>
+
+<step3> Calculate how much material the fourth machine produces </step3>
+<formula> runtime × production rate </formula>
+<calculation> 12 hours/day * 2 kg/hour = 24 kg/day </calculation>
+<var> fourth_machine_production : 24 kg/day </var>
+
+<step4> Calculate the total production of all machines </step4>
+<formula> first three machines production + fourth machine production </formula>
+<calculation> 138 kg/day + 24 kg/day = 156 kg/day </calculation>
+<var> total_production : 156 kg/day </var>
+
+<step5> Calculate the total earnings </step5>
+<formula> total production × price per kg </formula>
+<calculation> 156 kg/day * $50/kg = $7800/day </calculation>
+<var> total_earnings : $7800/day </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 7800 </output>

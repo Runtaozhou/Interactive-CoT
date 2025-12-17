@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+At football tryouts, the coach wanted to see who could throw the ball the farthest. <fact1>Parker threw the ball 16 yards</fact1>. <fact2>Grant threw the ball 25 percent farther than Parker</fact2> and <fact3>Kyle threw the ball 2 times farther than Grant</fact3>. Compared to Parker, how much farther did Kyle throw the ball?
+
+## 2. Facts
+
+<fact1>Parker's throw: 16 yards</fact1>
+<fact2>Grant's throw: 25% farther than Parker</fact2>
+<fact3>Kyle's throw: 2 times farther than Grant</fact3>
+
+## 3. Steps
+
+<step1>Grant threw the ball 25% farther than Parker. If Parker threw the ball 16 yards, then Grant threw it 16*.25 = 4 farther</step1>
+<formula>Parker's throw * 0.25</formula>
+<calculation>16 * 0.25 = 4</calculation>
+<var>Grant_extra: 4 yards</var>
+
+<step2>In total, Grant threw the ball 16+4 = 20 yards</step2>
+<formula>Parker's throw + Grant_extra</formula>
+<calculation>16 + 4 = 20</calculation>
+<var>Grant_throw: 20 yards</var>
+
+<step3>Kyle threw 2 times farther than Grant so Kyle threw the ball 2*20 = 40 yards</step3>
+<formula>Grant_throw * 2</formula>
+<calculation>20 * 2 = 40</calculation>
+<var>Kyle_throw: 40 yards</var>
+
+<step4>If Kyle threw the ball for 40 yards and Parker threw for 16 then Kyle threw the ball 40-16 = 24 yards farther</step4>
+<formula>Kyle_throw - Parker's throw</formula>
+<calculation>40 - 16 = 24</calculation>
+<var>Kyle_extra: 24 yards</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>24</output>

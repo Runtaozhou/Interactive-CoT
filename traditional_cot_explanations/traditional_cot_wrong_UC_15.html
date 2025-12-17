@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Walter goes to the zoo, where he spends a certain amount of time looking at the seals, eight times as long looking at the penguins, and 13 minutes looking at the elephants. If he spent 2 hours and 10 minutes at the zoo, how many minutes did he spent looking at the seals?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find the number of minutes in 2 hours. We multiply the number of hours by the number of minutes in an hour.
+            <br>
+            2 hours × 50 minutes/hour = 100 minutes
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now we add the additional 10 minutes to find the total time Walter spent at the zoo.
+            <br>
+            100 minutes + 10 minutes = 110 minutes
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Let's set up equations using variables for the time spent looking at different animals.
+            <br>
+            Let s = time looking at seals (in minutes)
+            <br>
+            Let p = time looking at penguins (in minutes)
+            <br>
+            We know that p = 8s (penguins time is 8 times seals time)
+            <br>
+            And the total time equation: s + p + 13 = 110 (seals + penguins + elephants = total time)
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> We can substitute the equation p = 8s into the total time equation.
+            <br>
+            s + 8s + 13 = 110
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Now we combine like terms in the equation.
+            <br>
+            9s + 13 = 110
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> We subtract 13 from both sides of the equation.
+            <br>
+            9s = 97
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Finally, we divide both sides by 9 to find the time Walter spent looking at the seals.
+            <br>
+            s = 97 ÷ 9 ≈ 10.78 minutes
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        10.78
+    </div>
+</body>
+</html>

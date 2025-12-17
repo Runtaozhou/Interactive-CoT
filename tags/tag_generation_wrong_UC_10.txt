@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Some friends wanted to make a road trip from New York to Los Angeles. They drove at a constant speed of <fact1>62 miles/hour</fact1>, taking breaks of <fact2>30 minutes every 5 hours</fact2>. Once in the city, they looked for the hotel for <fact3>30 minutes</fact3>. If the trip took around <fact4>2,790 miles</fact4>, how many hours will they have to spend to complete the trip to the hotel?
+
+## 2. Facts
+
+<fact1>Speed: 62 miles/hour</fact1>
+<fact2>Breaks: 30 minutes every 5 hours</fact2>
+<fact3>Hotel search time: 30 minutes</fact3>
+<fact4>Trip distance: 2,790 miles</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total driving time without breaks </step1>
+<formula> distance ÷ speed </formula>
+<calculation> 2,790 miles / 62 miles/hour = 45 hours </calculation>
+<var> driving_time : 45 hours </var>
+
+<step2> Calculate the number of breaks needed </step2>
+<formula> driving_time ÷ hours_between_breaks </formula>
+<calculation> 45 hours / 5 hours/break = 9 breaks </calculation>
+<var> number_of_breaks : 9 breaks </var>
+
+<step3> Calculate the total time spent on breaks </step3>
+<formula> number_of_breaks × break_duration </formula>
+<calculation> 9 breaks x 50 minutes/break = 450 minutes </calculation>
+<var> break_time_minutes : 450 minutes </var>
+
+<step4> Convert break time from minutes to hours </step4>
+<formula> break_time_minutes ÷ minutes_per_hour </formula>
+<calculation> 450 minutes ÷ 60 minutes/hour = 7.5 hours </calculation>
+<var> break_time_hours : 7.5 hours </var>
+
+<step5> Convert hotel search time from minutes to hours </step5>
+<formula> hotel_search_minutes ÷ minutes_per_hour </formula>
+<calculation> 30 minutes ÷ 60 minutes/hour = 0.5 hours </calculation>
+<var> hotel_search_hours : 0.5 hours </var>
+
+<step6> Calculate the total trip time </step6>
+<formula> driving_time + break_time_hours + hotel_search_hours </formula>
+<calculation> 45 hours + 7.5 hours + 0.5 hours = 53 hours </calculation>
+<var> total_trip_time : 53 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 53 </output>

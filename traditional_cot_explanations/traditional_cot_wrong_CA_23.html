@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A pet store owner had 12 birds, 9 puppies, 5 cats, and 15 spiders. Half the birds were sold and 3 puppies were adopted. Then, someone left the spider enclosure open and 7 of them went loose. How many animals does the pet store owner have left?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many birds are left after half were sold.
+            <p>Initially, there were 12 birds. Since half of them were sold:</p>
+            <p>Birds left = 12 ÷ 2 = 6 birds</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many puppies are left after some were adopted.
+            <p>Initially, there were 9 puppies. After 3 puppies were adopted:</p>
+            <p>Puppies left = 9 - 3 = 6 puppies</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many spiders are left after some escaped.
+            <p>Initially, there were 15 spiders. After 7 spiders escaped:</p>
+            <p>Spiders left = 15 - 7 = 6 spiders</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Add up all remaining animals to find the total.
+            <p>We need to add the number of cats (which didn't change), birds left, puppies left, and spiders left:</p>
+            <p>Total animals left = 5 + 6 + 6 + 6 = 23 animals</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        23
+    </div>
+</body>
+</html>

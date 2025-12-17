@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+<fact1>Grace baked 4 whole pumpkin pies.</fact1> She sold <fact2>1 whole pumpkin pie</fact2> and gave <fact3>1 whole pumpkin pie</fact3> to her friend. The remaining whole pumpkin pies were each sliced into <fact4>6 pieces</fact4>. Her family ate <fact5>2/3 pieces</fact5>. How many pieces of pumpkin pie were left?
+
+## 2. Facts
+
+<fact1>Total pumpkin pies: 4</fact1>
+<fact2>Pumpkin pies sold: 1</fact2>
+<fact3>Pumpkin pies given away: 1</fact3>
+<fact4>Slices per pie: 6</fact4>
+<fact5>Fraction of pieces eaten: 2/3</fact5>
+
+## 3. Steps
+
+<step1>Calculate the total number of pies Grace gave away or sold</step1>
+<formula>pies_sold + pies_given</formula>
+<calculation>1 + 1 = 2</calculation>
+<var>pies_given_away: 2</var>
+
+<step2>Calculate how many whole pies remained with Grace's family</step2>
+<formula>total_pies - pies_given_away</formula>
+<calculation>4 - 2 = 2</calculation>
+<var>remaining_pies: 2</var>
+
+<step3>Calculate how many pieces were made from the remaining pies</step3>
+<formula>(remaining_pies - 1) × slices_per_pie</formula>
+<calculation>(2 - 1) × 6 = 6</calculation>
+<var>total_pieces: 6</var>
+
+<step4>Calculate how many pieces Grace's family ate</step4>
+<formula>total_pieces × fraction_eaten</formula>
+<calculation>6 × 2/3 = 4</calculation>
+<var>pieces_eaten: 4</var>
+
+<step5>Calculate how many pieces of pie were left</step5>
+<formula>total_pieces - pieces_eaten</formula>
+<calculation>6 - 4 = 2</calculation>
+<var>pieces_left: 2</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>2</output>

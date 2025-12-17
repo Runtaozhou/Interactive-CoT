@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+A <fact1>small, old, wooden bridge can hold up to 100 kilograms at once</fact1>. Mike, Megan, and Kelly are three children who decided to cross the bridge at the same time. <fact2>Kelly weighs 34 kilograms</fact2>, which is <fact3>15% less than Megan</fact3>. <fact4>Mike weighs 5 kilograms more than Megan</fact4>. How much too much do the three children weigh together to cross the bridge?
+
+## 2. Facts
+
+<fact1>Bridge weight limit: 100 kilograms</fact1>
+<fact2>Kelly's weight: 34 kilograms</fact2>
+<fact3>Kelly weighs 15% less than Megan</fact3>
+<fact4>Mike weighs 5 kilograms more than Megan</fact4>
+
+## 3. Steps
+
+<step1> Calculate what percentage of Megan's weight Kelly weighs </step1>
+<formula> 100% - 15% </formula>
+<calculation> 100 - 20 = 80% </calculation>
+<var> kelly_percentage : 80% </var>
+
+<step2> Calculate Megan's weight using Kelly's weight and the percentage </step2>
+<formula> Kelly's weight ÷ percentage </formula>
+<calculation> 34 / 0.80 = 42.5 kilograms </calculation>
+<var> megan_weight : 42.5 kilograms </var>
+
+<step3> Calculate Mike's weight using Megan's weight </step3>
+<formula> Megan's weight + 5 kilograms </formula>
+<calculation> 42.5 + 5 = 47.5 kilograms </calculation>
+<var> mike_weight : 47.5 kilograms </var>
+
+<step4> Calculate the total weight of all three children </step4>
+<formula> Kelly's weight + Megan's weight + Mike's weight </formula>
+<calculation> 34 + 42.5 + 47.5 = 124 kilograms </calculation>
+<var> total_weight : 124 kilograms </var>
+
+<step5> Calculate how much too much the children weigh for the bridge </step5>
+<formula> Total weight - bridge weight limit </formula>
+<calculation> 124 - 100 = 24 kilograms </calculation>
+<var> excess_weight : 24 kilograms </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 24 </output>

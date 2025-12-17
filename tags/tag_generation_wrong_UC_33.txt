@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Marissa's sunflower is <fact1>21 inches</fact1> taller than her little sister. If her sister is <fact2>4 feet 3 inches</fact2> tall, how tall is Marissa's sunflower in feet?
+
+## 2. Facts
+
+<fact1>Height difference: 21 inches</fact1>
+<fact2>Sister's height: 4 feet 3 inches</fact2>
+
+## 3. Steps
+
+<step1> Convert sister's height from feet to inches </step1>
+<formula> feet × 12 + inches </formula>
+<calculation> 4 × 10 = 40 inches </calculation>
+<var> sister_height_feet : 40 inches </var>
+
+<step2> Add the remaining inches to get total height of sister in inches </step2>
+<formula> sister_height_feet + remaining_inches </formula>
+<calculation> 40 + 3 = 43 inches </calculation>
+<var> sister_height_total : 43 inches </var>
+
+<step3> Add the height difference to find the sunflower's height in inches </step3>
+<formula> sister_height_total + height_difference </formula>
+<calculation> 43 + 21 = 64 inches </calculation>
+<var> sunflower_height_inches : 64 inches </var>
+
+<step4> Convert the sunflower's height from inches to feet </step4>
+<formula> sunflower_height_inches ÷ 12 </formula>
+<calculation> 64/12 = 5.33 feet </calculation>
+<var> sunflower_height_feet : 5.33 feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5.33 </output>

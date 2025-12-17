@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+<fact1>Wendi lives on a plot of land that is 200 feet by 900 feet of grassland.</fact1> She raises rabbits on her property by allowing the rabbits to graze on the grass that grows on her land. If <fact2>one rabbit can eat enough grass to clear ten square yards of lawn area per day</fact2>, and <fact3>Wendi owns 100 rabbits</fact3>, how many days would it take for Wendi's rabbits to clear all the grass off of her grassland property?
+
+## 2. Facts
+
+<fact1>Land dimensions: 200 feet by 900 feet</fact1>
+<fact2>Grass clearing rate: 10 square yards per rabbit per day</fact2>
+<fact3>Number of rabbits: 100</fact3>
+
+## 3. Steps
+
+<step1> Convert square yards to square feet </step1>
+<formula> 1 square yard = 3 feet × 3 feet </formula>
+<calculation> 3 * 3 = 9 square feet </calculation>
+<var> sq_feet_per_sq_yard : 9 square feet </var>
+
+<step2> Calculate how many square feet ten square yards is </step2>
+<formula> 10 square yards in square feet </formula>
+<calculation> 3 + 3 + 3 + 3 = 12 square feet </calculation>
+<var> ten_sq_yards_in_sq_feet : 12 square feet </var>
+
+<step3> Calculate how much area all rabbits can clear per day </step3>
+<formula> number of rabbits × area cleared per rabbit </formula>
+<calculation> 100 * 12 = 1,200 square feet </calculation>
+<var> daily_clearing_rate : 1,200 square feet </var>
+
+<step4> Calculate the total area of the grassland </step4>
+<formula> length × width </formula>
+<calculation> 200 * 900 = 180,000 square feet </calculation>
+<var> total_area : 180,000 square feet </var>
+
+<step5> Calculate how many days it will take to clear all the grass </step5>
+<formula> total area ÷ daily clearing rate </formula>
+<calculation> 180,000 / 1200 = 150 days </calculation>
+<var> days_to_clear : 150 days </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 150 </output>

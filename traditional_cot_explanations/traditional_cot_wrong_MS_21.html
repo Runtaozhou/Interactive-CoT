@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        If Patty's dress was $10 more than Ida's dress, and Ida's dress was $30 more than Jean's dress, and Jean's dress was $10 less than Pauline's dress, and lastly Pauline's dress was $30, how much did all the ladies spend on dressed put together?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the cost of Jean's dress based on Pauline's dress.
+            <p>We know that Pauline's dress costs $30 and Jean's dress is $10 less than Pauline's dress.</p>
+            <p>Jean's dress = Pauline's dress - $10 = $30 - $10 = $20</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the cost of Ida's dress based on Jean's dress.
+            <p>We know that Ida's dress is $30 more than Jean's dress.</p>
+            <p>Ida's dress = Jean's dress + $30 = $30 + $30 = $60</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the cost of Patty's dress based on Ida's dress.
+            <p>We know that Patty's dress is $10 more than Ida's dress.</p>
+            <p>Patty's dress = Ida's dress + $10 = $60 + $10 = $70</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total cost of all four dresses.
+            <p>Total cost = Patty's dress + Ida's dress + Jean's dress + Pauline's dress</p>
+            <p>Total cost = $70 + $60 + $20 + $30 = $180</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        180
+    </div>
+</body>
+</html>

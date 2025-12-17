@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        An organization trying to save endangered species of turtles has taken twice more hawksbill turtles than the number of green turtles into a conservation center. If the number of green turtles is 800, calculate the number of turtles that have been taken into the conservation center.
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many more hawksbill turtles there are than green turtles.
+            <p>Since the organization has taken twice more hawksbill turtles than green turtles, we multiply the number of green turtles by 2:</p>
+            <p>Number of hawksbill turtles = 2 × 800 = 1,600</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of loggerhead turtles.
+            <p>We divide the number of green turtles by 2:</p>
+            <p>Number of loggerhead turtles = 800 ÷ 2 = 400</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of hawksbill turtles.
+            <p>We add the number of green turtles to the number of additional hawksbill turtles:</p>
+            <p>Total hawksbill turtles = 800 + 1,600 = 2,400</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of turtles in the conservation center.
+            <p>We add all types of turtles together:</p>
+            <p>Total turtles = Hawksbill turtles + Green turtles + Loggerhead turtles</p>
+            <p>Total turtles = 2,400 + 800 + 400 = 3,600</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        3600
+    </div>
+</body>
+</html>

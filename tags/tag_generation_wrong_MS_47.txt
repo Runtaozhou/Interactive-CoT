@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Milly is figuring out how long she needs to spend studying. She knows that <fact1>her math homework will take 60 minutes</fact1>. <fact2>Her geography homework will take half as long as her math homework</fact2>, and <fact3>her science homework will take time equal to the mean amount of time she spent studying math and geography</fact3>. How many minutes does Milly spend studying?
+
+## 2. Facts
+
+<fact1>Math homework time: 60 minutes</fact1>
+<fact2>Geography homework time: half of math homework time</fact2>
+<fact3>Science homework time: mean of math and geography homework time</fact3>
+
+## 3. Steps
+
+<step1> Find the total amount of time Milly spent on math and geography </step1>
+<formula> math_time + geography_time </formula>
+<calculation> 60 minutes + (60 minutes / 2) = 90 minutes </calculation>
+<var> total_math_geography_time : 90 minutes </var>
+
+<step2> Calculate the mean amount of time Milly spends on math and geography </step2>
+<formula> total_math_geography_time / 2 </formula>
+<calculation> 90 minutes / 2 = 45 minutes </calculation>
+<var> science_time : 45 minutes </var>
+
+<step3> Add the time Milly spent on all three subjects to find the total </step3>
+<formula> science_time + geography_time + math_time </formula>
+<calculation> 45 minutes + (60 minutes / 2) + 60 minutes = 150 minutes </calculation>
+<var> total_study_time : 150 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 150 </output>

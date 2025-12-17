@@ -1,0 +1,57 @@
+## 1. Problem statement
+
+<fact1>Steve bought $25 worth of groceries.</fact1> He bought <fact2>a gallon of milk for $3</fact2>, <fact3>two boxes of cereal for $3.5 each</fact3>, <fact4>4 bananas for $.25 each</fact4>, <fact5>four apples that cost $.5 each</fact5> and a number of boxes of cookies. <fact6>The cookies cost twice as much per box as the gallon of milk.</fact6> How many boxes of cookies did he get?
+
+## 2. Facts
+
+<fact1>Total grocery cost: $25</fact1>
+<fact2>Milk cost: $3</fact2>
+<fact3>Cereal: 2 boxes at $3.5 each</fact3>
+<fact4>Bananas: 4 at $0.25 each</fact4>
+<fact5>Apples: 4 at $0.5 each</fact5>
+<fact6>Cookie cost per box: 2 times milk cost</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total cost of cereal </step1>
+<formula> 2 × $3.5 </formula>
+<calculation> 2 × 3.5 = 7 </calculation>
+<var> cereal_cost: $7 </var>
+
+<step2> Calculate the total cost of bananas </step2>
+<formula> 4 × $0.25 </formula>
+<calculation> 4 × 0.25 = 1 </calculation>
+<var> banana_cost: $1 </var>
+
+<step3> Calculate the total cost of apples </step3>
+<formula> 4 × $0.5 </formula>
+<calculation> 4 × 0.5 = 2 </calculation>
+<var> apple_cost: $2 </var>
+
+<step4> Calculate the cost of everything but cookies </step4>
+<formula> milk_cost + cereal_cost + banana_cost + apple_cost </formula>
+<calculation> 3 + 7 + 1 + 2 = 13 </calculation>
+<var> non_cookie_cost: $13 </var>
+
+<step5> Calculate the cost spent on cookies </step5>
+<formula> total_cost - non_cookie_cost </formula>
+<calculation> 25 - 13 = 12 </calculation>
+<var> cookie_cost: $12 </var>
+
+<step6> Calculate the cost of each box of cookies </step6>
+<formula> milk_cost × 2 </formula>
+<calculation> 3 × 2 = 6 </calculation>
+<var> cookie_box_cost: $6 </var>
+
+<step7> Calculate the number of cookie boxes </step7>
+<formula> cookie_cost ÷ cookie_box_cost </formula>
+<calculation> 12 ÷ 6 = 2 </calculation>
+<var> cookie_boxes: 2 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output>2</output>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Stefan goes to a restaurant to eat dinner with his family. They order an appetizer that costs $10 and 4 entrees that are $20 each. If they tip 20% of the total for the waiter, what is the total amount of money that they spend at the restaurant?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total cost of the entrees.
+            <p>We need to multiply the number of entrees by the cost per entree:</p>
+            <p>4 entrees × $20 per entree = $80</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total cost of the dinner before tip.
+            <p>We add the cost of the entrees to the cost of the appetizer:</p>
+            <p>$80 (entrees) + $10 (appetizer) = $90</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the tip amount.
+            <p>We multiply the dinner cost by the tip percentage:</p>
+            <p>$100 × 0.20 = $20</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total cost including tip.
+            <p>We add the dinner cost to the tip amount:</p>
+            <p>$90 (dinner cost) + $20 (tip) = $110</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        110
+    </div>
+</body>
+</html>

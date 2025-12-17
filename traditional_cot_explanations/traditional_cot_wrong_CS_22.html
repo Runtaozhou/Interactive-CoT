@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Adam's wardrobe is too crowded so he decides to donate some of his clothes to a charity shop. He takes out 4 pairs of pants, 4 jumpers, 4 pajama sets (top and bottom), and 20 t-shirts, then asks his friends if they have anything they want to donate. 3 of his friends donate the same amount of clothing as Adam each. Then he takes another look over his clothing and decides that he actually wants to keep half of his clothes. How many articles of clothing are being donated in total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to calculate how many individual clothing articles the pajama sets represent. Since each pajama set consists of a top and a bottom, we multiply the number of sets by 2.
+            <br>
+            4 pajama sets × 2 = 8 articles of clothing
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, let's calculate the total number of articles Adam is initially planning to donate.
+            <br>
+            4 pairs of pants + 4 jumpers + 8 pajama pieces + 20 t-shirts = 36 articles of clothing
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Next, we need to calculate the total number of articles donated by Adam's friends. Since 3 friends are donating the same amount as Adam, we multiply Adam's initial donation by 3.
+            <br>
+            3 friends × 30 articles of clothing per friend = 90 articles of clothing
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Adam decides to keep half of his clothes, so we need to calculate his final donation amount.
+            <br>
+            36 ÷ 2 = 18 articles of clothing
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, we calculate the total number of articles being donated by adding Adam's final donation to his friends' donations.
+            <br>
+            90 + 18 = 108 articles of clothing
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        108
+    </div>
+</body>
+</html>

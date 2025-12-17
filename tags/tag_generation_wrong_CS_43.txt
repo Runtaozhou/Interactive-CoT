@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+Alicia's clothes have to be sent to the dry cleaners weekly. Her weekly drop-off includes <fact1>5 blouses</fact1>, <fact2>2 pants</fact2> and <fact3>1 skirt</fact3>. If they charge her <fact4>$5.00 per blouse</fact4>, <fact5>$6.00 per skirt</fact5> and <fact6>$8.00 per pair of pants</fact6>, how much does she spend on dry-cleaning in <fact7>5 weeks</fact7>?
+
+## 2. Facts
+
+<fact1>Number of blouses: 5</fact1>
+<fact2>Number of pants: 2</fact2>
+<fact3>Number of skirts: 1</fact3>
+<fact4>Cost per blouse: $5.00</fact4>
+<fact5>Cost per skirt: $6.00</fact5>
+<fact6>Cost per pair of pants: $8.00</fact6>
+<fact7>Number of weeks: 5</fact7>
+
+## 3. Steps
+
+<step1> Calculate the cost of dry cleaning all blouses in one week </step1>
+<formula> number of blouses × cost per blouse </formula>
+<calculation> 5 * $5.00 = $25.00 </calculation>
+<var> weekly_blouse_cost : $25.00 </var>
+
+<step2> Determine the cost of dry cleaning the skirt in one week </step2>
+<formula> number of skirts × cost per skirt </formula>
+<calculation> 1 * $6.00 = $6.00 </calculation>
+<var> weekly_skirt_cost : $6.00 </var>
+
+<step3> Calculate the cost of dry cleaning all pants in one week </step3>
+<formula> number of pants × cost per pair of pants </formula>
+<calculation> 2 * $8.00 = $16.00 </calculation>
+<var> weekly_pants_cost : $16.00 </var>
+
+<step4> Find the total weekly dry cleaning cost </step4>
+<formula> weekly_blouse_cost + weekly_skirt_cost + weekly_pants_cost </formula>
+<calculation> $25.00 + $6.00 + $16.00 = $47.00 </calculation>
+<var> weekly_total_cost : $47.00 </var>
+
+<step5> Calculate the total cost for 5 weeks </step5>
+<formula> weekly_total_cost × number of weeks </formula>
+<calculation> 5 * $50.00 = $250.00 </calculation>
+<var> total_cost : $250.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 250 </output>

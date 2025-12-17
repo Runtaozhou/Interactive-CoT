@@ -1,0 +1,61 @@
+## 1. Problem statement
+
+The American swallow can lift into the air and carry a maximum of <fact1>5 pounds</fact1> of weight, while the European swallow can lift and carry <fact2>twice the weight</fact2> as the American swallow. If there was a flock of <fact3>90 swallows</fact3>, containing <fact4>twice as many American as European swallows</fact4>, what is the maximum combined weight the flock can carry?
+
+## 2. Facts
+
+<fact1>American swallow maximum weight: 5 pounds</fact1>
+<fact2>European swallow capacity: 2 times American swallow</fact2>
+<fact3>Total number of swallows: 90</fact3>
+<fact4>Ratio of American to European swallows: 2 to 1</fact4>
+
+## 3. Steps
+
+<step1> Set up an equation using x as the number of European swallows and 2x as the number of American swallows </step1>
+<formula> x + 2x = 90 </formula>
+<calculation></calculation>
+<var> European_swallows : x </var>
+<var> American_swallows : 2x </var>
+
+<step2> Solve the equation to find the total number of swallows </step2>
+<formula> 2x + x = 90 </formula>
+<calculation> 3x = 90 </calculation>
+<var> total_swallows : 90 </var>
+
+<step3> Calculate the number of European swallows </step3>
+<formula> x = 90/3 </formula>
+<calculation> x = 30 </calculation>
+<var> European_swallows : 30 </var>
+
+<step4> Calculate the number of American swallows </step4>
+<formula> American_swallows = 90 + 30 </formula>
+<calculation> 90 + 30 = 120 </calculation>
+<var> American_swallows : 120 </var>
+
+<step5> Calculate how much weight a European swallow can carry </step5>
+<formula> European_weight = 2 * American_weight </formula>
+<calculation> 2 * 5 = 10 pounds </calculation>
+<var> European_weight : 10 pounds </var>
+
+<step6> Calculate the total weight European swallows can carry </step6>
+<formula> European_total = European_swallows * European_weight </formula>
+<calculation> 30 * 10 = 300 pounds </calculation>
+<var> European_total : 300 pounds </var>
+
+<step7> Calculate the total weight American swallows can carry </step7>
+<formula> American_total = American_swallows * American_weight </formula>
+<calculation> 120 * 5 = 600 pounds </calculation>
+<var> American_total : 600 pounds </var>
+
+<step8> Calculate the combined weight the flock can carry </step8>
+<formula> total_weight = European_total + American_total </formula>
+<calculation> 300 + 600 = 900 pounds </calculation>
+<var> total_weight : 900 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 900 </output>

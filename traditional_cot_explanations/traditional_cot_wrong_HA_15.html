@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jim decides to open up a bike shop. The most common repair he does is fixing bike tires. He charges $20 for this and it cost him $5 in parts. In one month Jim does 300 of these repairs. He also does 2 more complex repairs for $300 each and cost $50 in parts. He also sells $2000 profit worth of things from his retail shop. If rent and other fixed expense for the shop is $4000 a month how much profit did the shop make?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the profit per tire repair.
+            <p>For each tire repair, Jim charges $20 and spends $5 on parts.</p>
+            <p>Profit per tire repair = $20 - $5 = $15</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total profit from tire repairs.
+            <p>Jim does 300 tire repairs in a month, each with a $15 profit.</p>
+            <p>Total profit from tire repairs = $15 × 300 = $4,500</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the profit per complex repair.
+            <p>For each complex repair, Jim charges $300 and spends $50 on parts.</p>
+            <p>Profit per complex repair = $300 - $50 = $250</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total profit from complex repairs.
+            <p>Jim does 2 complex repairs, each with a $250 profit.</p>
+            <p>Total profit from complex repairs = $250 × 2 = $500</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total profit from all sources including a parking fine.
+            <p>We need to add the profits from tire repairs, complex repairs, and retail sales, then subtract the fine.</p>
+            <p>Total income = $4,500 + $500 + $2,000 - $300 = $6,700</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the final profit after fixed expenses.
+            <p>We need to subtract the monthly fixed expenses from the total income.</p>
+            <p>Final profit = $6,700 - $4,000 = $2,700</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2700
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John has 3 boxes. Each box is 5 inches by 6 inches by 4 inches. The walls are 1 inch thick. What is the total inner volume of all 3 boxes?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much the walls subtract from each dimension. Since the walls are 1 inch thick on all sides, we need to subtract 2 inches (1 inch from each side) from each dimension.
+            <br>
+            Dimension reduction = 2 × wall thickness = 2 × 1 = 2 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the inner width of each box by subtracting the dimension reduction from the outer width.
+            <br>
+            Inner width = Width - Dimension reduction = 5 - 2 = 3 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the inner height of each box by subtracting the dimension reduction from the outer height.
+            <br>
+            Inner height = Height - Dimension reduction = 6 - 2 = 4 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the inner depth of each box by subtracting the dimension reduction from the outer depth.
+            <br>
+            Inner depth = Depth - Dimension reduction = 4 - 2 = 2 inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the inner volume of one box using the formula:
+            <br>
+            2×(inner_width+inner_height+inner_width+inner_height)+2×(inner_depth+inner_width+inner_depth+inner_width)+2×(inner_width+inner_depth+inner_width+inner_depth)
+            <br>
+            = 2×(3+4+3+4)+2×(4+2+4+2)+2×(3+2+3+2)
+            <br>
+            = 100 cubic inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total inner volume of all boxes by multiplying the number of boxes by the inner volume of one box.
+            <br>
+            Total inner volume = Number of boxes × Inner volume of one box = 3 × 100 = 300 cubic inches
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        300
+    </div>
+</body>
+</html>

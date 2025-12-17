@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Zion is 8 years old and his dad is 3 more than 4 times his age. In 10 years, how many years older is Zion's dad than him?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate four times Zion's age.
+            <p>Zion's age × 4 = 8 × 4 = 32 years</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Zion's dad's current age.
+            <p>Dad's age = Four times Zion's age + 3 = 32 + 3 = 35 years</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Zion's age in 10 years.
+            <p>Zion's future age = Zion's current age + 10 = 5 + 10 = 15 years</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate Zion's dad's age in 10 years.
+            <p>Dad's future age = Dad's current age + 10 = 35 + 10 = 45 years</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the age difference in 10 years.
+            <p>Future age difference = Dad's future age - Zion's future age = 45 - 15 = 30 years</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        30
+    </div>
+</body>
+</html>

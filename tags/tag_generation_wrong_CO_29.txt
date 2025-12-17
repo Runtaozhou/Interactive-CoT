@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+Mrs. Young makes bonnets for kids in the orphanage. On <fact1>Monday, she made 10 bonnets</fact1>, on <fact2>Tuesday and Wednesday combined she made twice more than on Monday</fact2>, while on <fact3>Thursday she made 5 more than on Monday</fact3>, and on <fact4>Friday she made 5 less than on Thursday</fact4>. Then, she <fact5>divided up the bonnets evenly and sent them to 5 orphanages</fact5>. How many bonnets did Mrs. Young send to each orphanage?
+
+## 2. Facts
+
+<fact1>Monday bonnets: 10</fact1>
+<fact2>Tuesday and Wednesday combined: twice more than Monday</fact2>
+<fact3>Thursday bonnets: 5 more than Monday</fact3>
+<fact4>Friday bonnets: 5 less than Thursday</fact4>
+<fact5>Number of orphanages: 5</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many bonnets Mrs. Young made on Tuesday and Wednesday combined </step1>
+<formula> Monday bonnets × 2 </formula>
+<calculation> 10 × 2 = 20 bonnets </calculation>
+<var> tuesday_wednesday_bonnets : 20 bonnets </var>
+
+<step2> Calculate how many bonnets Mrs. Young made on Thursday </step2>
+<formula> Monday bonnets + 5 </formula>
+<calculation> 10 + 5 = 15 bonnets </calculation>
+<var> thursday_bonnets : 15 bonnets </var>
+
+<step3> Calculate how many bonnets Mrs. Young made on Friday </step3>
+<formula> Thursday bonnets - 5 </formula>
+<calculation> 15 - 5 = 10 bonnets </calculation>
+<var> friday_bonnets : 10 bonnets </var>
+
+<step4> Calculate the total number of bonnets Mrs. Young made </step4>
+<formula> Monday bonnets + Tuesday and Wednesday bonnets + Thursday bonnets + Friday bonnets </formula>
+<calculation> 10 + 20 + 15 + 10 = 55 bonnets </calculation>
+<var> total_bonnets : 55 bonnets </var>
+
+<step5> Calculate how many bonnets Mrs. Young sent to each orphanage </step5>
+<formula> Total bonnets ÷ Number of orphanages </formula>
+<calculation> 55 ÷ 4 = 13.75 bonnets </calculation>
+<var> bonnets_per_orphanage : 13.75 bonnets </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 13.75 </output>

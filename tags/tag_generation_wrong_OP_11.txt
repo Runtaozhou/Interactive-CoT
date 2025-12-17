@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+<fact1>John had a son James when he was 19.</fact1> James is now twice as old as his sister Dora, who will <fact2>turn 12 in 3 years</fact2>. How old will John's youngest son, who was born <fact3>when John was 32</fact3>, be <fact4>in 3 years</fact4>?
+
+## 2. Facts
+
+<fact1>John's age when James was born: 19</fact1>
+<fact2>Dora will turn 12 in 3 years</fact2>
+<fact3>John's age when youngest son was born: 32</fact3>
+<fact4>Time period to calculate future age: 3 years</fact4>
+
+## 3. Steps
+
+<step1> Calculate Dora's current age </step1>
+<formula> Future age - Years until that age </formula>
+<calculation> 12 - 3 = 9 </calculation>
+<var> dora_current_age : 9 </var>
+
+<step2> Calculate James' current age based on Dora's age </step2>
+<formula> Dora's future age × 2 </formula>
+<calculation> 15 * 2 = 30 </calculation>
+<var> james_current_age : 30 </var>
+
+<step3> Calculate John's current age </step3>
+<formula> James' age + John's age when James was born </formula>
+<calculation> 30 + 19 = 49 </calculation>
+<var> john_current_age : 49 </var>
+
+<step4> Calculate the youngest son's current age </step4>
+<formula> John's current age - John's age when youngest son was born </formula>
+<calculation> 49 - 32 = 17 </calculation>
+<var> youngest_son_current_age : 17 </var>
+
+<step5> Calculate the youngest son's age in 3 years </step5>
+<formula> Youngest son's current age + 3 </formula>
+<calculation> 17 + 3 = 20 </calculation>
+<var> youngest_son_future_age : 20 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 20 </output>

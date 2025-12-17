@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Bill picked 50 apples from the orchard with his wife and two children. He sends each of his kids to school with 3 apples for their two favorite teachers. His wife Jill bakes two apple pies, using 10 apples per pie. How many apples does Bill have left?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many apples Bill gives to his children.
+            <p>Bill has 2 children, and each child gets 3 apples to take to school.</p>
+            <p>Number of apples for children = 3 × 2 = 6 apples</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many apples Jill uses for the pies.
+            <p>Jill bakes 2 pies, and each pie requires 10 apples.</p>
+            <p>Number of apples for pies = 10 × 2 = 20 apples</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of apples used.
+            <p>We need to add the apples given to children and the apples used for pies.</p>
+            <p>Total apples used = 20 + 6 = 26 apples</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many apples Bill has left.
+            <p>We subtract the apples used for pies from the starting number of apples.</p>
+            <p>Apples remaining = 50 - 20 = 30 apples</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        30
+    </div>
+</body>
+</html>

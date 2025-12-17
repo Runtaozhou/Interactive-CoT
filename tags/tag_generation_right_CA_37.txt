@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+<fact1>Florida is starting a promotion where every car that arrives gets one orange per passenger.</fact1> A family of <fact2>4</fact2> arrives and gets their oranges. They had planned to stop for a snack later where they would spend <fact3>$15</fact3> in total, but now that they have the oranges they don't have to buy them at the stop. When they get to the stop they see that the oranges would've cost <fact4>$1.5</fact4> each. What percentage of the money they planned to spend did they save instead?
+
+## 2. Facts
+
+<fact1>Oranges per passenger: 1</fact1>
+<fact2>Number of family members: 4</fact2>
+<fact3>Planned spending: $15</fact3>
+<fact4>Cost per orange: $1.5</fact4>
+
+## 3. Steps
+
+<step1> The oranges would've cost $6 because 4 x 1.5 = 6 </step1>
+<formula> Number of family members × Cost per orange </formula>
+<calculation> 4 × $1.5 = $6 </calculation>
+<var> total_orange_cost: $6 </var>
+
+<step2> The proportion of their original spending plan was .4 because 6 / 15 = .4 </step2>
+<formula> total_orange_cost ÷ Planned spending </formula>
+<calculation> $6 ÷ $15 = 0.4 </calculation>
+<var> proportion_saved: 0.4 </var>
+
+<step3> They saved 40% of the money they planned to spend because .4 x 100 = 40 </step3>
+<formula> proportion_saved × 100 </formula>
+<calculation> 0.4 × 100 = 40 </calculation>
+<var> percentage_saved: 40% </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output>40</output>

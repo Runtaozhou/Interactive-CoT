@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Trip wanted to watch the new action movie in theaters. <fact1>An evening ticket cost $10</fact1> and <fact2>a large popcorn & drink combo would cost him an additional $10</fact2>. He noticed on their website, they had a special offer. <fact3>From 12 noon to 3 pm, save 20% off tickets</fact3> and <fact4>50% off any food combos</fact4>. How much money could Trip save by going to the earlier movie?
+
+## 2. Facts
+
+<fact1>Evening ticket cost: $10</fact1>
+<fact2>Large popcorn & drink combo cost: $10</fact2>
+<fact3>Early show discount on tickets: 20% off</fact3>
+<fact4>Early show discount on food combos: 50% off</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total cost for an evening movie with food combo </step1>
+<formula> evening_ticket + food_combo </formula>
+<calculation> 10 + 10 = $20 </calculation>
+<var> evening_total_cost : $20 </var>
+
+<step2> Calculate the savings on the ticket for an earlier movie </step2>
+<formula> normal_ticket_price * discount_percentage </formula>
+<calculation> 15 * .20 = $3 </calculation>
+<var> ticket_savings : $3 </var>
+
+<step3> Calculate the savings on the food combo for an earlier movie </step3>
+<formula> food_combo_price * discount_percentage </formula>
+<calculation> 10 * .50 = $5 </calculation>
+<var> food_savings : $5 </var>
+
+<step4> Calculate the total savings by adding ticket and food savings </step4>
+<formula> ticket_savings + food_savings </formula>
+<calculation> 3 + 5 = $8 </calculation>
+<var> total_savings : $8 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 8 </output>

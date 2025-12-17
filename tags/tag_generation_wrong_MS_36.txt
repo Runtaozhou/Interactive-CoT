@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+When <fact1>Diane turns 30</fact1>, she will be half the age of Alex and twice as old as Allison. <fact2>Diane is 16 years old now</fact2>. What is the sum of the ages of Alex and Allison now?
+
+## 2. Facts
+
+<fact1>Diane's future age: 30 years</fact1>
+<fact2>Diane's current age: 16 years</fact2>
+
+## 3. Steps
+
+<step1> Calculate Alex's age when Diane turns 30 </step1>
+<formula> Diane's future age × 2 </formula>
+<calculation> 30 × 2 = 60 years old </calculation>
+<var> alex_future_age : 60 years </var>
+
+<step2> Calculate how many years until Diane turns 30 </step2>
+<formula> Diane's future age - Diane's current age </formula>
+<calculation> 30 - 16 = 14 years </calculation>
+<var> years_until_30 : 14 years </var>
+
+<step3> Calculate Alex's current age </step3>
+<formula> alex_future_age - years_until_30 </formula>
+<calculation> 60 - 14 = 46 </calculation>
+<var> alex_current_age : 46 years </var>
+
+<step4> Calculate Allison's current age </step4>
+<formula> Diane's future age - years_until_30 </formula>
+<calculation> 30 - 14 = 16 years old </calculation>
+<var> allison_current_age : 16 years </var>
+
+<step5> Calculate the sum of Alex and Allison's current ages </step5>
+<formula> alex_current_age + allison_current_age </formula>
+<calculation> 46 + 16 = 62 years old </calculation>
+<var> sum_of_ages : 62 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 62 </output>

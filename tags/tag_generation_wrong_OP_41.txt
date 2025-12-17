@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+Kendra tracks the different species of birds they spot on their birdwatching trip. On <fact1>Monday they visited 5 sites and saw an average of 7 birds at each site</fact1>. On <fact2>Tuesday, Kendra visited 5 sites and saw an average of 5 birds at each site</fact2>. On <fact3>Wednesday visited 10 sites and saw an average of 8 birds at each site</fact3>. On average, how many different birds did Kendra see on each site?
+
+## 2. Facts
+
+<fact1>Monday: 5 sites with average of 7 birds per site</fact1>
+<fact2>Tuesday: 5 sites with average of 5 birds per site</fact2>
+<fact3>Wednesday: 10 sites with average of 8 birds per site</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of birds seen on Monday </step1>
+<formula> sites × birds per site </formula>
+<calculation> 5 sites × 7 birds/site = 35 different birds </calculation>
+<var> monday_birds : 35 different birds </var>
+
+<step2> Calculate the total number of birds seen on Tuesday </step2>
+<formula> sites × birds per site </formula>
+<calculation> 5 sites × 5 birds/site = 25 different birds </calculation>
+<var> tuesday_birds : 25 different birds </var>
+
+<step3> Calculate the total number of birds seen on Wednesday </step3>
+<formula> sites × birds per site </formula>
+<calculation> 10 sites × 8 birds/site = 80 different birds </calculation>
+<var> wednesday_birds : 80 different birds </var>
+
+<step4> Calculate the total number of birds seen across all days </step4>
+<formula> monday_birds + tuesday_birds - wednesday_birds </formula>
+<calculation> 35 birds + 25 birds - 80 birds = -20 different birds </calculation>
+<var> total_birds : -20 different birds </var>
+
+<step5> Calculate the total number of sites visited </step5>
+<formula> monday_sites + tuesday_sites + wednesday_sites </formula>
+<calculation> 5 sites + 5 sites + 10 sites = 20 sites </calculation>
+<var> total_sites : 20 sites </var>
+
+<step6> Calculate the average number of birds seen per site </step6>
+<formula> total_birds ÷ total_sites </formula>
+<calculation> -20 birds ÷ 20 sites = -1 different birds at each site </calculation>
+<var> average_birds_per_site : -1 different birds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> -1 </output>

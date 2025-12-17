@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mary is making a model sailboat. She wants to add three sails: a rectangular sail that measures 5 inches by 8 inches and two right triangular sails, one that's 3 inches long at the bottom and 4 inches tall and one that's 4 inches long at the bottom and 6 inches tall. How many square inches of canvas does she need total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the area of the square sail. 
+            <p>To find the perimeter of the rectangular sail, we add all sides:</p>
+            <p>5 inches + 5 inches + 8 inches + 8 inches = 26 square inches</p>
+            <p>So the rectangular sail area is 26 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then find the area of a square sail with the same height and length as the first triangular sail.
+            <p>Using the formula length × height:</p>
+            <p>3 inches × 4 inches = 12 square inches</p>
+            <p>The area of a square with these dimensions would be 12 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then divide the area in two to find the area of the triangular sail.
+            <p>Using the formula square area ÷ 2:</p>
+            <p>12 square inches ÷ 2 = 6 square inches</p>
+            <p>So the first triangular sail has an area of 6 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then find the area of a square sail with the same height and length as the second triangular sail.
+            <p>Using the formula length × height:</p>
+            <p>4 inches × 6 inches = 24 square inches</p>
+            <p>The area of a square with these dimensions would be 24 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Then divide the area in two to find the area of the triangular sail.
+            <p>Using the formula square area ÷ 2:</p>
+            <p>24 square inches ÷ 2 = 12 square inches</p>
+            <p>So the second triangular sail has an area of 12 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Then add up the areas of all the sails to find the total amount of canvas needed.
+            <p>Adding all sail areas:</p>
+            <p>6 square inches + 12 square inches + 26 square inches = 44 square inches</p>
+            <p>The total canvas needed is 44 square inches.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        44
+    </div>
+</body>
+</html>

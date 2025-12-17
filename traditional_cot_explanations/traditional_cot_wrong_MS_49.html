@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Francis' family has 2 ukuleles, 4 guitars, and a certain number of violins. Each ukulele has 4 strings. Each guitar has 6 strings. Each violin has 4 strings. If the total number of strings among the ukuleles, guitars, and violins is 40 strings, how many violins does Francis' family have?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of strings from the guitars.
+            <p>We know there are 4 guitars, and each guitar has 6 strings.</p>
+            <p>Number of guitars × Strings per guitar = 4 × 6 = 24 strings</p>
+            <p>So, the guitars have a total of 24 strings.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the number of strings from the violins by subtracting guitar strings from the total.
+            <p>The total number of strings is 40, and the guitars account for 24 strings.</p>
+            <p>Total strings - Guitar strings = 40 - 24 = 16 strings</p>
+            <p>So, the violins have a total of 16 strings.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of violins by dividing the violin strings by strings per violin.
+            <p>Each violin has 4 strings, and we have 16 strings in total from violins.</p>
+            <p>Violin strings ÷ Strings per violin = 16 ÷ 4 = 4 violins</p>
+            <p>Therefore, Francis' family has 4 violins.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        4
+    </div>
+</body>
+</html>

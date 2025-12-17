@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Suzie and <fact1>5 of her friends</fact1> decide to rent an Airbnb at Lake Tahoe for <fact2>4 days from Thursday to Sunday</fact2>. The rental rate for weekdays is <fact3>$420 per day</fact3>. The weekend rental rate is <fact4>$540 per day</fact4>. They all decide to split the rental evenly. How much does each person have to pay?
+
+## 2. Facts
+
+<fact1>Number of friends: 5</fact1>
+<fact2>Number of days: 4</fact2>
+<fact3>Weekday rate: $420</fact3>
+<fact4>Weekend rate: $540</fact4>
+
+## 3. Steps
+
+<step1> Calculate the cost for weekdays (Thursday and Friday) </step1>
+<formula> weekday_rate × number_of_weekdays </formula>
+<calculation> $420 * 2 = $840 </calculation>
+<var> weekday_cost : $840 </var>
+
+<step2> Calculate the cost for weekend days (Saturday and Sunday) </step2>
+<formula> weekend_rate × number_of_weekend_days </formula>
+<calculation> $540 * 1 = $540 </calculation>
+<var> weekend_cost : $540 </var>
+
+<step3> Calculate the total cost of the rental </step3>
+<formula> weekday_cost + weekend_cost </formula>
+<calculation> $840 + $540 = $1380 </calculation>
+<var> total_cost : $1380 </var>
+
+<step4> Calculate the cost per person </step4>
+<formula> total_cost ÷ total_number_of_people </formula>
+<calculation> $1380 / 6 = $230 </calculation>
+<var> cost_per_person : $230 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 230 </output>

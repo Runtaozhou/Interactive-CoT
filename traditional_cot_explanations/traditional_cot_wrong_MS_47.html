@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Milly is figuring out how long she needs to spend studying. She knows that her math homework will take 60 minutes. Her geography homework will take half as long as her math homework, and her science homework will take time equal to the mean amount of time she spent studying math and geography. How many minutes does Milly spend studying?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Find the total amount of time Milly spent on math and geography.
+            <p>Math homework time = 60 minutes</p>
+            <p>Geography homework time = 60 minutes / 2 = 30 minutes</p>
+            <p>Total time for math and geography = 60 minutes + 30 minutes = 90 minutes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the mean amount of time Milly spends on math and geography.
+            <p>Mean time = Total time / 2 = 90 minutes / 2 = 45 minutes</p>
+            <p>This means science homework will take 45 minutes.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the time Milly spent on all three subjects to find the total.
+            <p>Total study time = Math time + Geography time + Science time</p>
+            <p>Total study time = 60 minutes + 30 minutes + 45 minutes = 135 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        150
+    </div>
+</body>
+</html>

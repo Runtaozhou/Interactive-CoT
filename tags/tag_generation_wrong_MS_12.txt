@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Alyssa took <fact1>100 photos</fact1> on vacation. She wants to put them in a photo album with <fact2>30 pages</fact2>. She can place <fact3>3 photos each on the first 10 pages</fact3>. Then she can place <fact4>4 photos each on the next 10 pages</fact4>. If she wants to put an equal number of photos on each of the remaining pages of the album, how many photos can she place on each page?
+
+## 2. Facts
+
+<fact1>Total photos: 100</fact1>
+<fact2>Total album pages: 30</fact2>
+<fact3>First 10 pages: 3 photos each</fact3>
+<fact4>Next 10 pages: 4 photos each</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total number of photos that can be placed on the next 10 pages </step1>
+<formula> photos per page × number of pages </formula>
+<calculation> 4 × 10 = 40 photos </calculation>
+<var> photos_on_next_10_pages : 40 photos </var>
+
+<step2> Calculate the total number of photos that can be placed on the first 10 pages </step2>
+<formula> photos per page × number of pages </formula>
+<calculation> 3 × 10 = 30 photos </calculation>
+<var> photos_on_first_10_pages : 30 photos </var>
+
+<step3> Calculate the number of photos left to be placed on the album </step3>
+<formula> total photos - photos on first 10 pages </formula>
+<calculation> 100 - 30 = 70 photos </calculation>
+<var> photos_left : 70 photos </var>
+
+<step4> Calculate the number of pages that have been used </step4>
+<formula> total pages used so far </formula>
+<calculation> 30 - 10 = 20 pages </calculation>
+<var> pages_used : 20 pages </var>
+
+<step5> Calculate the number of photos that can be placed on each of the remaining pages </step5>
+<formula> photos left / remaining pages </formula>
+<calculation> 70/20 = 3.5 photos </calculation>
+<var> photos_per_remaining_page : 3.5 photos </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 3.5 </output>

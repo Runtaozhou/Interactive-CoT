@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+James runs a TV show and there are <fact1>5 main characters</fact1> and <fact2>4 minor characters</fact2>. He pays the minor characters <fact3>$15,000 each episode</fact3>. He paid the major characters <fact4>three times as much</fact4>. How much does he pay per episode?
+
+## 2. Facts
+
+<fact1>Main characters: 5</fact1>
+<fact2>Minor characters: 4</fact2>
+<fact3>Minor character pay: $15,000 per episode</fact3>
+<fact4>Major character pay multiplier: 3</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total pay for all minor characters</step1>
+<formula>minor_character_pay × number_of_minor_characters</formula>
+<calculation>15000 * 4 = $60,000</calculation>
+<var>minor_characters_total: $60,000</var>
+
+<step2>Calculate how much each major character gets paid</step2>
+<formula>minor_character_pay × major_character_multiplier</formula>
+<calculation>15000 * 3 = $45,000</calculation>
+<var>major_character_pay: $45,000</var>
+
+<step3>Calculate the total pay for all major characters</step3>
+<formula>major_character_pay × number_of_main_characters</formula>
+<calculation>45,000 * 5 = $225,000</calculation>
+<var>major_characters_total: $225,000</var>
+
+<step4>Calculate the total pay per episode</step4>
+<formula>major_characters_total + minor_characters_total</formula>
+<calculation>225,000 + 50,000 = $275,000</calculation>
+<var>total_pay: $275,000</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>275,000</output>

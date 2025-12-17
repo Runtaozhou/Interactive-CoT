@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Troy bakes 2 pans of brownies, cut into 16 pieces per pan. The guests eat all of 1 pan, and 75% of the 2nd pan. One tub of ice cream provides 8 scoops. If all but 4 of the guests eat the brownies ala mode (with 2 scoops of vanilla ice cream), how many tubs of ice cream did the guests eat?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of brownie pieces Troy bakes.
+            <p>Using the formula: pans × pieces per pan</p>
+            <p>2 × 15 = 30 brownie pieces</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many pieces are eaten from the second pan.
+            <p>Using the formula: pieces per pan × percentage eaten</p>
+            <p>15 × 0.75 = 11.25 pieces</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of brownie pieces eaten.
+            <p>Using the formula: first pan pieces + second pan pieces eaten</p>
+            <p>15 + 11.25 = 26.25 pieces</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many guests eat brownies ala mode.
+            <p>Using the formula: total pieces eaten - guests not eating ala mode</p>
+            <p>26.25 - 4 = 22.25</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many scoops of ice cream are eaten.
+            <p>Using the formula: guests eating ala mode × scoops per guest</p>
+            <p>22.25 × 2 = 44.5 scoops</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate how many tubs of ice cream are eaten.
+            <p>Using the formula: total scoops ÷ scoops per tub</p>
+            <p>44.5 ÷ 8 = 5.5625 tubs</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        5.5625
+    </div>
+</body>
+</html>

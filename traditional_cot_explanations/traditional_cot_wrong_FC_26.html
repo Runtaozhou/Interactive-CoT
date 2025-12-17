@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A school needs to paint the classroom, which is 9 meters long, 8 meters wide, and 3 meters high. The classroom has 4 windows, 2 blackboards, and 2 doors. The windows are 1m by 1.5m, the blackboards are 6m by 1m, and the doors are 2m by 1m. It is known that the paint fee is $4.80 per square meter. How much does it cost to paint a classroom?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total surface area of the classroom excluding the floor.
+            <p>We need to find the sum of all wall areas:</p>
+            <p>9 + 8 + 8 + 3 + 3 + 9 + 3 = 43 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the area of one window.
+            <p>Window dimensions: 1m by 1.5m</p>
+            <p>Area = length × width = 1 × 1.5 = 1.5 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the area of all windows.
+            <p>Total window area = one window area × number of windows</p>
+            <p>= 1.5 × 4 = 6 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the area of one blackboard.
+            <p>Blackboard dimensions: 6m by 1m</p>
+            <p>Area = length × width = 6 × 1 = 6 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the area of all blackboards.
+            <p>Total blackboard area = one blackboard area × number of blackboards</p>
+            <p>= 6 × 2 = 12 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the area of one door.
+            <p>Door dimensions: 2m by 1m</p>
+            <p>Area = length × width = 2 × 1 = 2 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the area of all doors.
+            <p>Total door area = one door area × number of doors</p>
+            <p>= 2 × 2 = 4 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Calculate the area that needs to be painted.
+            <p>Paintable area = total surface area - all windows area - all blackboards area - all doors area</p>
+            <p>= 43 - 6 - 12 - 4 = 21 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 9:</span> Calculate the total cost of painting.
+            <p>Total cost = paintable area × paint fee per square meter</p>
+            <p>= 21 × $4.80 = $100.80</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        $100.8
+    </div>
+</body>
+</html>

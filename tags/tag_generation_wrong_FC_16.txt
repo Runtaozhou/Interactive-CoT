@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+<fact1>Raj's house has an area equal to 1,110 square feet.</fact1> It has <fact2>4 bedrooms that each measure 11 x 11 feet.</fact2> There are <fact3>2 bathrooms that are 6 x 8 feet each.</fact3> The kitchen and living area complete the home and they have the same sized area. How many square feet is the area of the kitchen?
+
+## 2. Facts
+
+<fact1>Total house area: 1,110 square feet</fact1>
+<fact2>Bedrooms: 4 rooms, each 11 x 11 feet</fact2>
+<fact3>Bathrooms: 2 rooms, each 6 x 8 feet</fact3>
+
+## 3. Steps
+
+<step1> Calculate the area of one bedroom </step1>
+<formula> length + width + length + width </formula>
+<calculation> 11 + 11 + 11 + 11 = 44 square feet </calculation>
+<var> one_bedroom_area : 44 square feet </var>
+
+<step2> Calculate the total area of all bedrooms </step2>
+<formula> one_bedroom_area × 4 </formula>
+<calculation> 44 * 4 = 176 square feet </calculation>
+<var> all_bedrooms_area : 176 square feet </var>
+
+<step3> Calculate the area of one bathroom </step3>
+<formula> length × width </formula>
+<calculation> 6 * 8 = 48 square feet </calculation>
+<var> one_bathroom_area : 48 square feet </var>
+
+<step4> Calculate the total area of all bathrooms </step4>
+<formula> one_bathroom_area × 2 </formula>
+<calculation> 2 * 48 = 96 square feet </calculation>
+<var> all_bathrooms_area : 96 square feet </var>
+
+<step5> Calculate the combined area of all bedrooms and bathrooms </step5>
+<formula> all_bedrooms_area + all_bathrooms_area </formula>
+<calculation> 176 + 96 = 272 square feet </calculation>
+<var> bedrooms_and_bathrooms_area : 272 square feet </var>
+
+<step6> Calculate the combined area of kitchen and living room </step6>
+<formula> total_house_area - bedrooms_and_bathrooms_area </formula>
+<calculation> 1,110 - 272 = 838 </calculation>
+<var> kitchen_and_living_area : 838 square feet </var>
+
+<step7> Calculate the area of the kitchen </step7>
+<formula> kitchen_and_living_area ÷ 2 </formula>
+<calculation> 838/2 = 419 </calculation>
+<var> kitchen_area : 419 square feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 419 </output>

@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+Iris' family is planning a surprise birthday party for her. The party will include her <fact1>3 uncles</fact1> and <fact2>4 aunts</fact2> who have <fact3>a son and daughter each</fact3> as well as her <fact4>brother</fact4> and <fact5>mother</fact5>. In total, how many people are coming to Iris' birthday party?
+
+## 2. Facts
+
+<fact1>Number of uncles: 3</fact1>
+<fact2>Number of aunts: 4</fact2>
+<fact3>Each aunt and uncle has: 2 children (1 son and 1 daughter)</fact3>
+<fact4>Iris has: 1 brother</fact4>
+<fact5>Iris has: 1 mother</fact5>
+
+## 3. Steps
+
+<step1> Each of her aunts and uncles have a family unit of 1 son + 1 daughter + 1 aunt/uncle = 3 people. </step1>
+<formula> 1 son + 1 daughter + 1 aunt/uncle </formula>
+<calculation> 1 + 1 + 1 = 3 </calculation>
+<var>people_per_family_unit: 3</var>
+
+<step2> Iris has a total of 3 uncles + 4 aunts = 7 aunts or uncles in these family units. </step2>
+<formula> uncles + aunts </formula>
+<calculation> 3 + 4 = 7 </calculation>
+<var>total_aunts_uncles: 7</var>
+
+<step3> So among her aunts, uncles, and cousins, there will be 7 family units * 3 people in each family unit = 21 people. </step3>
+<formula> family_units * people_per_family_unit </formula>
+<calculation> 7 * 3 = 21 </calculation>
+<var>total_relatives: 21</var>
+
+<step4> Including her mother and brother, there will be a total of 21 people + 1 mother + 1 brother = 23 people coming to her party. </step4>
+<formula> total_relatives + mother + brother </formula>
+<calculation> 21 + 1 + 1 = 23 </calculation>
+<var>total_people: 23</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>23</output>

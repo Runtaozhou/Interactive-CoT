@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Every day, Lou works out by running three miles on a circular track that is one-quarter of a mile long.</fact1> <fact2>His wife, Rosie, also runs on the same track at the same time as her husband, but she runs at twice the speed of her husband.</fact2> During their workout, how many times does Rosie circle the track?
+
+## 2. Facts
+
+<fact1>Lou's running distance: 3 miles</fact1>
+<fact1>Track length: 1/4 mile</fact1>
+<fact2>Rosie's speed: 2 times Lou's speed</fact2>
+
+## 3. Steps
+
+<step1> If Lou runs 3 miles during his workout on a track that is 1/4 miles long, then he circles the track 3/(1/4)=12 times. </step1>
+<formula> number of circles = distance / track length </formula>
+<calculation> 3 ÷ (1/4) = 12 </calculation>
+<var> lou_circles : 12 </var>
+
+<step2> If Rosie runs twice as fast as Lou, then over the same time period, she runs 3*2=6 miles. </step2>
+<formula> rosie_distance = lou_distance * speed_ratio </formula>
+<calculation> 3 * 2 = 6 </calculation>
+<var> rosie_distance : 6 miles </var>
+
+<step3> If Rosie runs 6 miles on the 1/4 mile track, then she circles the track 6/(1/4)=24 times. </step3>
+<formula> rosie_circles = rosie_distance / track_length </formula>
+<calculation> 6 ÷ (1/4) = 24 </calculation>
+<var> rosie_circles : 24 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output>24</output>

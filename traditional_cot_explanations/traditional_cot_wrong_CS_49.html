@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Chris's internet bill is $45 per month for 100 GB and $0.25 for every 1 GB over. His bill for this month is $65. How many GB over was Chris charged for on this bill?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Set up an equation where G represents the number of GB over the limit. We know the base cost is $45 and each GB over costs $0.25, so the total bill can be represented as:
+            <br>
+            $0.25G + $45 = $65
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Isolate the variable by subtracting $45 from both sides of the equation:
+            <br>
+            $0.25G + $45 - $45 = $65 - $45
+            <br>
+            $0.25G = $20
+            <br>
+            This means the overage cost is $20.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Divide both sides by $0.25 to solve for G:
+            <br>
+            $0.25G/$0.25 = $25/$0.25
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the final answer:
+            <br>
+            G = $25/$0.25
+            <br>
+            G = 100 GB
+            <br>
+            Therefore, Chris was charged for 100 GB over his limit.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        100
+    </div>
+</body>
+</html>

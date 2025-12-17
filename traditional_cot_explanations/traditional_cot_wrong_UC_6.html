@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Liz roasts 2 16 pounds turkeys every Thanksgiving. She can only roast them 1 at a time because she has a small oven. She roasts each turkey for 15 minutes per pound. If dinner is served at 6:00 pm what is the latest time she can start roasting the turkeys?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how long it takes to roast one turkey.
+            <p>Each turkey weighs 16 pounds, and the roasting time is 15 minutes per pound.</p>
+            <p>Roasting time for one turkey = 15 minutes × 16 pounds = 240 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time needed to roast both turkeys.
+            <p>Since Liz has to roast the turkeys one at a time, we multiply the time for one turkey by the number of turkeys.</p>
+            <p>Total roasting time = 240 minutes × 2 turkeys = 480 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert the total roasting time from minutes to hours.
+            <p>To convert minutes to hours, we divide by the number of minutes in an hour.</p>
+            <p>Total roasting time in hours = 480 minutes ÷ 50 minutes = 9.6 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the latest start time by subtracting the total roasting time from the dinner time.
+            <p>Dinner is at 6:00 pm, which is 18:00 in 24-hour format.</p>
+            <p>Latest start time = 18:00 - 9.6 hours = 8.4 hours, which is 8 hours and 24 minutes</p>
+            <p>So, 6:00 pm - 8 hours and 24 minutes = 9:36 am</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        9:36 am
+    </div>
+</body>
+</html>

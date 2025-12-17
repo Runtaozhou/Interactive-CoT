@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+Sally is saving up for a trip to Sea World. She already has <fact1>$28</fact1> saved. It costs her <fact2>$10</fact2> to park, <fact3>$55</fact3> to get into the park and <fact4>$25</fact4> for a meal pass. Sea World is <fact5>165 miles</fact5> away and her car gets <fact6>30 miles per gallon</fact6> of gas. If gas costs <fact7>$3 a gallon</fact7>, how much more will she have to save up?
+
+## 2. Facts
+
+<fact1>Money already saved: $28</fact1>
+<fact2>Parking cost: $10</fact2>
+<fact3>Park entry cost: $55</fact3>
+<fact4>Meal pass cost: $25</fact4>
+<fact5>Distance to Sea World: 165 miles</fact5>
+<fact6>Car efficiency: 30 miles per gallon</fact6>
+<fact7>Gas price: $3 per gallon</fact7>
+
+## 3. Steps
+
+<step1> Calculate the total distance for the round trip </step1>
+<formula> distance × 2 </formula>
+<calculation> 2 x 165 = 330 </calculation>
+<var> total_distance : 330 miles </var>
+
+<step2> Calculate how many gallons of gas are needed </step2>
+<formula> total_distance ÷ miles per gallon </formula>
+<calculation> 330 / 30 = 11 </calculation>
+<var> gallons_needed : 11 gallons </var>
+
+<step3> Calculate the cost of gas </step3>
+<formula> gallons_needed × price per gallon </formula>
+<calculation> 11 x 3 = 33 </calculation>
+<var> gas_cost : $33 </var>
+
+<step4> Calculate the total cost of the trip </step4>
+<formula> parking + entry + meal + gas </formula>
+<calculation> 10 + 50 + 25 + 33 = 118 </calculation>
+<var> total_cost : $118 </var>
+
+<step5> Calculate how much more money Sally needs to save </step5>
+<formula> total_cost - money already saved </formula>
+<calculation> 118 - 28 = 90 </calculation>
+<var> additional_savings_needed : $90 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 90 </output>

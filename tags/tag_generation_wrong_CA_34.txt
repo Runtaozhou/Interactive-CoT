@@ -1,0 +1,57 @@
+## 1. Problem statement
+
+<fact1>Steve bought $25 worth of groceries.</fact1> He bought <fact2>a gallon of milk for $3</fact2>, <fact3>two boxes of cereal for $3.5 each</fact3>, <fact4>4 bananas for $.25 each</fact4>, <fact5>four apples that cost $.5 each</fact5> and a number of boxes of cookies. <fact6>The cookies cost twice as much per box as the gallon of milk.</fact6> How many boxes of cookies did he get?
+
+## 2. Facts
+
+<fact1>Total grocery cost: $25</fact1>
+<fact2>Gallon of milk cost: $3</fact2>
+<fact3>Cereal boxes: 2 boxes at $3.5 each</fact3>
+<fact4>Bananas: 4 at $0.25 each</fact4>
+<fact5>Apples: 4 at $0.5 each</fact5>
+<fact6>Cookie box cost: twice the cost of milk</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total cost of cereal </step1>
+<formula> number of cereal boxes × cost per box </formula>
+<calculation> 2 x 3.5 = 7 </calculation>
+<var> cereal_cost : $7 </var>
+
+<step2> Calculate the total cost of bananas </step2>
+<formula> number of bananas × cost per banana </formula>
+<calculation> 4 x .25 = 1 </calculation>
+<var> banana_cost : $1 </var>
+
+<step3> Calculate the total cost of apples </step3>
+<formula> number of apples × cost per apple </formula>
+<calculation> 4 x .5 = 2 </calculation>
+<var> apple_cost : $2 </var>
+
+<step4> Calculate the cost of everything except cookies </step4>
+<formula> milk cost + cereal cost + banana cost + apple cost </formula>
+<calculation> 3 + 7 + 1 + 2 = 11 </calculation>
+<var> non_cookie_cost : $11 </var>
+
+<step5> Calculate the amount spent on cookies </step5>
+<formula> total cost - non-cookie cost </formula>
+<calculation> 25 - 11 = 14 </calculation>
+<var> cookie_cost : $14 </var>
+
+<step6> Calculate the cost of one box of cookies </step6>
+<formula> milk cost × 2 </formula>
+<calculation> 3 x 2 = 6 </calculation>
+<var> cost_per_cookie_box : $6 </var>
+
+<step7> Calculate the number of cookie boxes purchased </step7>
+<formula> total cookie cost ÷ cost per cookie box </formula>
+<calculation> 14 / 6 = 2.33 </calculation>
+<var> number_of_cookie_boxes : 2.33 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 2.33 </output>

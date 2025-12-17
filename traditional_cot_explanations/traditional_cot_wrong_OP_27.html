@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Corey's age based on James's age.
+            <p>Since James is 10 years old and is 1 year younger than Corey, we can calculate Corey's age:</p>
+            <p>Corey's age = James's age + 1</p>
+            <p>Corey's age = 10 + 1 = 11 years old</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Amy's age based on Corey's age.
+            <p>We know that Amy is 2 years younger than Corey, so:</p>
+            <p>Amy's age = Corey's age - 2</p>
+            <p>Amy's age = 11 - 2 = 9 years old</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Jackson's age based on Amy's age.
+            <p>We know that Amy is 5 years older than Jackson, so:</p>
+            <p>Jackson's age = Amy's age - 5</p>
+            <p>Jackson's age = 9 - 5 = 4 years old</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2
+    </div>
+</body>
+</html>

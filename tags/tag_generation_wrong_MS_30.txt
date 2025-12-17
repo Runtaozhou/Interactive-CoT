@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+<fact1>Marcus has received a commission for as many paintings as possible.</fact1> Marcus plans out his drawings so that his client can receive some of the paintings as soon as possible but it is still going to take a long time. On <fact2>the first day, he paints 2 paintings.</fact2> He then paints every day and each day, he paints twice as many paintings as he painted the day before. If <fact3>he paints for 5 days</fact3>, how many paintings will he have painted in total?
+
+## 2. Facts
+
+<fact1>Commission: as many paintings as possible</fact1>
+<fact2>First day paintings: 2 paintings</fact2>
+<fact3>Total painting days: 5 days</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many paintings Marcus paints on the second day</step1>
+<formula>First day paintings × 2</formula>
+<calculation>2 paintings * 2 = 4 paintings</calculation>
+<var>day_2_paintings: 4 paintings</var>
+
+<step2>Calculate how many paintings Marcus paints on the third day</step2>
+<formula>Second day paintings × 2</formula>
+<calculation>4 paintings * 2 = 8 paintings</calculation>
+<var>day_3_paintings: 8 paintings</var>
+
+<step3>Calculate how many paintings Marcus paints on the fourth day</step3>
+<formula>Third day paintings × 2</formula>
+<calculation>8 paintings * 2 = 16 paintings</calculation>
+<var>day_4_paintings: 16 paintings</var>
+
+<step4>Calculate how many paintings Marcus paints on the fifth day</step4>
+<formula>Fourth day paintings × 2</formula>
+<calculation>16 paintings * 2 = 32 paintings</calculation>
+<var>day_5_paintings: 32 paintings</var>
+
+<step5>Add up all the paintings from all five days to find the total</step5>
+<formula>day_1_paintings + day_2_paintings + day_3_paintings + day_4_paintings + day_5_paintings</formula>
+<calculation>2 + 4 + 8 + 16 + 32 = 62 paintings</calculation>
+<var>total_paintings: 62 paintings</var>
+
+## 4. Wrongsteps
+
+<wrongstep>5</wrongstep>
+
+## 5. Output
+
+<output>62</output>

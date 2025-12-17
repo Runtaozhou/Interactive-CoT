@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Monika went out for the day and spent some money. She went to the mall and spent <fact1>$250</fact1>. Then, she went to the movies and watched <fact2>3 movies back to back that each cost $24</fact2>. Then she stopped by the farmer's market on her way home and got <fact3>20 bags of beans at $1.25/bag</fact3>. How much money did Monika spend throughout her day?
+
+## 2. Facts
+
+<fact1>Mall spending: $250</fact1>
+<fact2>Movies: 3 movies at $24 each</fact2>
+<fact3>Beans: 20 bags at $1.25 per bag</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much Monika spent at the movies </step1>
+<formula> number of movies × cost per movie </formula>
+<calculation> 24 * 3 = 72 dollars </calculation>
+<var> movie_cost : $72 </var>
+
+<step2> Add the cost of drinks that Monika bought at the movies </step2>
+<formula> movie_cost + (number of movies × drink cost) </formula>
+<calculation> 72 + 3 * 3 = 81 dollars </calculation>
+<var> total_movie_cost : $81 </var>
+
+<step3> Calculate how much Monika spent at the farmers market </step3>
+<formula> number of bags × cost per bag </formula>
+<calculation> 20 * 1.25 = 25 dollars </calculation>
+<var> farmers_market_cost : $25 </var>
+
+<step4> Calculate the total amount Monika spent throughout the day </step4>
+<formula> mall_cost + total_movie_cost + farmers_market_cost </formula>
+<calculation> 250 + 81 + 25 = 356 dollars </calculation>
+<var> total_spending : $356 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 356 </output>

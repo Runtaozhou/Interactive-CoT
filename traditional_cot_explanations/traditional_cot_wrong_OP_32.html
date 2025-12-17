@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Leo had 400 marbles in a jar. He packed the marbles with ten marbles in each pack, and he gave some of them to his two friends, Manny and Neil. He gave Manny 1/4 of the number of packs of marbles, Neil received 1/8 of the number of packs of marbles, and he kept the rest. How many packs of marbles did Leo keep?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of packs Leo had initially.
+            <p>We need to divide the total number of marbles by the number of marbles in each pack:</p>
+            <p>Total packs = 400 ÷ 10 = 40 packs</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many packs Manny received.
+            <p>Manny received 1/4 of the total number of packs:</p>
+            <p>Manny's packs = 40 × 1/4 = 10 packs</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many packs Neil received.
+            <p>Neil received 1/8 of the total number of packs:</p>
+            <p>Neil's packs = 40 × 1/8 = 5 packs</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of packs Leo gave away.
+            <p>We need to find the total number of packs Leo gave to his friends:</p>
+            <p>Total packs given away = Manny's packs - Neil's packs = 10 - 5 = 5 packs</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many packs Leo kept.
+            <p>We can find how many packs Leo kept by subtracting the total given away from the initial number of packs:</p>
+            <p>Leo's packs = 40 - 5 = 35 packs</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        35
+    </div>
+</body>
+</html>

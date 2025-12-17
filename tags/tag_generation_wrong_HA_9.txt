@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+A group of science students went on a field trip. They took <fact1>9 vans</fact1> and <fact2>10 buses</fact2>. There were <fact3>8 people in each van</fact3> and <fact4>27 people on each bus</fact4>. How many people went on the field trip?
+
+## 2. Facts
+
+<fact1>Number of vans: 9</fact1>
+<fact2>Number of buses: 10</fact2>
+<fact3>People per van: 8</fact3>
+<fact4>People per bus: 27</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total number of people in the vans</step1>
+<formula>Number of vans × People per van</formula>
+<calculation>9 vans * 8 people = 72 people</calculation>
+<var>people_in_vans: 72 people</var>
+
+<step2>Calculate the total number of students in the buses</step2>
+<formula>Number of buses × People per bus</formula>
+<calculation>10 buses * 27 people = 270 people</calculation>
+<var>people_in_buses: 270 people</var>
+
+<step3>Calculate the total number of teachers on the buses</step3>
+<formula>Number of buses × Teachers per bus</formula>
+<calculation>10 buses * 2 teachers = 20 teachers</calculation>
+<var>teachers_in_buses: 20 teachers</var>
+
+<step4>Calculate the total number of people on the field trip</step4>
+<formula>People in vans + People in buses + Teachers in buses</formula>
+<calculation>72 + 270 + 20 = 362 people</calculation>
+<var>total_people: 362 people</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>362</output>

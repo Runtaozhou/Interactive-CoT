@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+There are <fact1>50 marbles</fact1> in a box which has a mixture of white, red and blue marbles. There were originally <fact2>20 white marbles</fact2> and an equal number of red and blue marbles. Jack removes a number of marbles equal to double the difference between the number of white marbles and the number of blue marbles. How many marbles are left in the box?
+
+## 2. Facts
+
+<fact1>Total marbles: 50</fact1>
+<fact2>White marbles: 20</fact2>
+
+## 3. Steps
+
+<step1> Calculate the number of red and blue marbles combined </step1>
+<formula> total_marbles - white_marbles </formula>
+<calculation> 50 - 20 = 30 </calculation>
+<var> red_and_blue_marbles : 30 </var>
+
+<step2> Find the number of each color (red and blue) since they are equal </step2>
+<formula> red_and_blue_marbles / 2 </formula>
+<calculation> 30 / 2 = 15 </calculation>
+<var> blue_marbles : 15 </var>
+<var> red_marbles : 15 </var>
+
+<step3> Calculate the difference between white and blue marbles </step3>
+<formula> white_marbles - blue_marbles </formula>
+<calculation> 20 - 15 = 5 </calculation>
+<var> marble_difference : 5 </var>
+
+<step4> Double the difference to find how many marbles Jack removes </step4>
+<formula> marble_difference * 2 </formula>
+<calculation> 5 * 2 = 16 </calculation>
+<var> marbles_removed : 16 </var>
+
+<step5> Calculate how many marbles remain in the box </step5>
+<formula> total_marbles - marbles_removed </formula>
+<calculation> 50 - 16 = 34 </calculation>
+<var> marbles_remaining : 34 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 34 </output>

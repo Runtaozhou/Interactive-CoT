@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+<fact1>Lisa sold three and a half boxes of chocolate bars</fact1>, and <fact2>Peter sold four and a half boxes</fact2>. <fact3>They sold 64 chocolate bars together</fact3>. How many chocolate bars are in a box?
+
+## 2. Facts
+
+<fact1>Lisa's boxes sold: 3 1/2 boxes</fact1>
+<fact2>Peter's boxes sold: 4 1/2 boxes</fact2>
+<fact3>Total chocolate bars sold: 64 bars</fact3>
+
+## 3. Steps
+
+<step1>Define a variable to represent the number of chocolate bars in a box</step1>
+<formula></formula>
+<calculation></calculation>
+<var>B : number of chocolate bars in a box</var>
+
+<step2>Calculate how many chocolate bars Lisa sold</step2>
+<formula>Lisa's boxes × B</formula>
+<calculation>3 1/2 × B = 3 1/2 * B bars</calculation>
+<var>Lisa_bars : 3 1/2 * B bars</var>
+
+<step3>Calculate how many chocolate bars Peter sold</step3>
+<formula>Peter's boxes × B</formula>
+<calculation>4 1/2 × B = 4 1/2 * B bars</calculation>
+<var>Peter_bars : 4 1/2 * B bars</var>
+
+<step4>Set up an equation based on the total number of bars sold</step4>
+<formula>Lisa_bars - Peter_bars = -64</formula>
+<calculation>3 1/2 * B - 4 1/2 * B = -1B = -64 bars</calculation>
+<var>equation : -1B = -64</var>
+
+<step5>Solve for B to find the number of chocolate bars in a box</step5>
+<formula>B = -64 / -1</formula>
+<calculation>B = -64 / -1 = 64</calculation>
+<var>B : 64 chocolate bars</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>64</output>

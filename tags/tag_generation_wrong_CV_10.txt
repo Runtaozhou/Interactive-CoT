@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+<fact1>14 less than two times the number of koi fish in the pond is 64</fact1>. How many koi fish will you find in the pond?
+
+## 2. Facts
+
+<fact1>14 less than two times the number of koi fish is 64</fact1>
+
+## 3. Steps
+
+<step1> Define a variable to represent the number of koi fish in the pond </step1>
+<formula></formula>
+<calculation></calculation>
+<var>k : number of koi fish in the pond</var>
+
+<step2> Set up the equation based on the problem statement </step2>
+<formula>14-2*k=68</formula>
+<calculation>14-2*k=68</calculation>
+<var>equation : 14-2*k=68</var>
+
+<step3> Rearrange the equation to isolate the term with k </step3>
+<formula>2*k=68+14=82</formula>
+<calculation>68+14=82</calculation>
+<var>2k : 82</var>
+
+<step4> Simplify the equation </step4>
+<formula>2k=82</formula>
+<calculation>2k=82</calculation>
+<var>2k : 82</var>
+
+<step5> Solve for k by dividing both sides by 2 </step5>
+<formula>k=82/2=41</formula>
+<calculation>82/2=41</calculation>
+<var>k : 41</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>41</output>

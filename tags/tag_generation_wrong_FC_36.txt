@@ -1,0 +1,71 @@
+## 1. Problem statement
+
+A school needs to paint the classroom, which is <fact1>9 meters long</fact1>, <fact2>8 meters wide</fact2>, and <fact3>3 meters high</fact3>. The classroom has <fact4>4 windows</fact4>, <fact5>2 blackboards</fact5>, and <fact6>2 doors</fact6>. The windows are <fact7>1m by 1.5m</fact7>, the blackboards are <fact8>6m by 1m</fact8>, and the doors are <fact9>2m by 1m</fact9>. It is known that the paint fee is <fact10>$4.80 per square meter</fact10>. How much does it cost to paint a classroom?
+
+## 2. Facts
+
+<fact1>Length: 9 meters</fact1>
+<fact2>Width: 8 meters</fact2>
+<fact3>Height: 3 meters</fact3>
+<fact4>Number of windows: 4</fact4>
+<fact5>Number of blackboards: 2</fact5>
+<fact6>Number of doors: 2</fact6>
+<fact7>Window dimensions: 1m by 1.5m</fact7>
+<fact8>Blackboard dimensions: 6m by 1m</fact8>
+<fact9>Door dimensions: 2m by 1m</fact9>
+<fact10>Paint fee: $4.80 per square meter</fact10>
+
+## 3. Steps
+
+<step1> Calculate the total surface perimeter of the classroom excluding the floor </step1>
+<formula> (length + width) * 2 + width * height * 2 + length * height * 2 </formula>
+<calculation> (9 + 8) * 2 + 8 * 3 * 2 + 9 * 3 * 2 = 90 meters </calculation>
+<var> total_surface_perimeter : 90 meters </var>
+
+<step2> Calculate the area of one window </step2>
+<formula> window length * window width </formula>
+<calculation> 1 * 1.5 = 1.5 square meters </calculation>
+<var> one_window_area : 1.5 square meters </var>
+
+<step3> Calculate the total area of all windows </step3>
+<formula> number of windows * one window area </formula>
+<calculation> 4 * 1.5 = 6 square meters </calculation>
+<var> total_windows_area : 6 square meters </var>
+
+<step4> Calculate the area of one blackboard </step4>
+<formula> blackboard length * blackboard width </formula>
+<calculation> 6 * 1 = 6 square meters </calculation>
+<var> one_blackboard_area : 6 square meters </var>
+
+<step5> Calculate the total area of all blackboards </step5>
+<formula> number of blackboards * one blackboard area </formula>
+<calculation> 2 * 6 = 12 square meters </calculation>
+<var> total_blackboards_area : 12 square meters </var>
+
+<step6> Calculate the area of one door </step6>
+<formula> door length * door width </formula>
+<calculation> 2 * 1 = 2 square meters </calculation>
+<var> one_door_area : 2 square meters </var>
+
+<step7> Calculate the total area of all doors </step7>
+<formula> number of doors * one door area </formula>
+<calculation> 2 * 2 = 4 square meters </calculation>
+<var> total_doors_area : 4 square meters </var>
+
+<step8> Calculate the perimeter that needs to be painted </step8>
+<formula> total surface perimeter - total windows area - total blackboards area - total doors area </formula>
+<calculation> 90 - 6 - 12 - 4 = 68 meters </calculation>
+<var> paintable_perimeter : 68 meters </var>
+
+<step9> Calculate the total cost of painting the classroom </step9>
+<formula> paintable perimeter * paint fee per square meter </formula>
+<calculation> 68 * 4.8 = $326.4 </calculation>
+<var> total_cost : $326.4 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 326.4 </output>

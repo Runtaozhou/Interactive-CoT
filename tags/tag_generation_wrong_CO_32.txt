@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Mitch is a freelancer, she works <fact1>5 hours every day from Monday to Friday</fact1> and <fact2>3 hours every Saturday and Sunday</fact2>. If she earns <fact3>$3 per hour</fact3> and <fact4>earns double on weekends</fact4>, how much does she earn every week?
+
+## 2. Facts
+
+<fact1>Weekday hours: 5 hours per day, Monday to Friday</fact1>
+<fact2>Weekend hours: 3 hours per day, Saturday and Sunday</fact2>
+<fact3>Weekday rate: $3 per hour</fact3>
+<fact4>Weekend rate: double the weekday rate</fact4>
+
+## 3. Steps
+
+<step1> Calculate how much Mitch earns per weekday </step1>
+<formula> hours per day × hourly rate </formula>
+<calculation> 5 × $3 = $15 </calculation>
+<var> daily_weekday_earnings : $15 </var>
+
+<step2> Calculate how much Mitch earns for all weekdays </step2>
+<formula> daily_weekday_earnings × number of weekdays </formula>
+<calculation> $15 × 5 = $75 </calculation>
+<var> total_weekday_earnings : $75 </var>
+
+<step3> Calculate Mitch's hourly rate on weekends </step3>
+<formula> weekday rate × 2 </formula>
+<calculation> $3 × 2 = $6 </calculation>
+<var> weekend_hourly_rate : $6 </var>
+
+<step4> Calculate how much Mitch earns for her weekend hours </step4>
+<formula> weekend_hourly_rate × hours per weekend day </formula>
+<calculation> $6 × 3 = $18 </calculation>
+<var> daily_weekend_earnings : $18 </var>
+
+<step5> Calculate total weekend earnings </step5>
+<formula> daily_weekend_earnings × number of weekend days </formula>
+<calculation> $18 × 1 = $18 </calculation>
+<var> total_weekend_earnings : $18 </var>
+
+<step6> Calculate total weekly earnings </step6>
+<formula> total_weekday_earnings + total_weekend_earnings </formula>
+<calculation> $75 + $18 = $93 </calculation>
+<var> weekly_earnings : $93 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 93 </output>

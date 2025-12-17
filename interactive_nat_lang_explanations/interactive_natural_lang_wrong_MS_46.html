@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-initial-coins {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-additional-coins {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-total-quarters {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-additional-nickels {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-total-nickels {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-coins-without-dimes {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-total-coins {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">4</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>
+                    <span id="fact1"><span class="highlight var-initial-coins">Linda's bag has 2 dimes, 6 quarters, and 5 nickels.</span></span> 
+                    <span id="fact2"><span class="highlight var-additional-coins">Her mother gives her 2 more dimes, 10 quarters, and twice as many nickels as she has.</span></span> 
+                    How many coins does she have altogether?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-initial-coins">Initial coins: 2 dimes, 6 quarters, 5 nickels</span></p>
+                <p><span class="highlight var-additional-coins">Additional coins: 2 dimes, 10 quarters, twice as many nickels as she has</span></p>
+                <h3>What we need to find</h3>
+                <p>The total number of coins Linda has altogether.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    Calculate the total number of quarters after Linda's mother gives her more: <div class="formula">initial quarters + additional quarters</div> = <span class="highlight var-initial-coins">6</span> + <span class="highlight var-additional-coins">10</span> = <span class="highlight var-total-quarters">16 quarters</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Calculate how many additional nickels Linda's mother gives her: <div class="formula">initial nickels × 2</div> = <span class="highlight var-initial-coins">5</span> × 2 = <span class="highlight var-additional-nickels">10 nickels</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Calculate the total number of nickels after Linda's mother gives her more: <div class="formula">initial nickels + additional nickels</div> = <span class="highlight var-initial-coins">5</span> + <span class="highlight var-additional-nickels">10</span> = <span class="highlight var-total-nickels">15 nickels</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Calculate the total number of coins without counting dimes: <div class="formula">total_quarters + total_nickels</div> = <span class="highlight var-total-quarters">16</span> + <span class="highlight var-total-nickels">15</span> = <span class="highlight var-coins-without-dimes">31 coins</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Calculate the total number of coins by adding the dimes: <div class="formula">coins_without_dimes + initial dimes</div> = <span class="highlight var-coins-without-dimes">31</span> + <span class="highlight var-initial-coins">2</span> = <span class="highlight var-total-coins">33 coins</span>
+                    </div>
+                </div>
+                <div class="step final-answer"><div class="step-content"><strong>Final Answer:</strong> <span class="highlight var-total-coins">33</span></div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

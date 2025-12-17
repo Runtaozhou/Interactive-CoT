@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Radhika got a new gaming system and asked everyone to get her games as gifts to add to the games she already has that she bought with her gaming system. On <fact1>Christmas, she is given 12 new video games</fact1>. On her <fact2>birthday in February, she is given 8 more video games</fact2>. Radhika already owned <fact3>1/2 the number of games as what she was given on Christmas and her birthday</fact3>. How many video games does she own now?
+
+## 2. Facts
+
+<fact1>Christmas gifts: 12 new video games</fact1>
+<fact2>Birthday gifts: 8 more video games</fact2>
+<fact3>Previously owned: 1/2 the number of games given as gifts</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of video games Radhika received as gifts </step1>
+<formula> Christmas gifts + Birthday gifts </formula>
+<calculation> 12 + 8 = 20 video games </calculation>
+<var> total_gifts : 20 video games </var>
+
+<step2> Calculate how many video games Radhika already owned </step2>
+<formula> Total gifts × 1/2 </formula>
+<calculation> 20 / 2 = 10 video games </calculation>
+<var> already_owned : 10 video games </var>
+
+<step3> Calculate the total number of video games Radhika has now </step3>
+<formula> Total gifts + Already owned </formula>
+<calculation> 20 + 15 = 35 video games </calculation>
+<var> total_games : 35 video games </var>
+
+<step4> State the final answer </step4>
+<formula></formula>
+<calculation></calculation>
+<var> final_answer : 35 video games </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 35 </output>

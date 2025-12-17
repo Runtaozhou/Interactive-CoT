@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Boston had .5 feet of snow on the first day of winter.</fact1> The next day they got an <fact2>additional 8 inches.</fact2> Over the next <fact3>2 days, 2 inches of the snow melted.</fact3> On the fifth day, they received <fact4>another 2 times the amount of snow they received on the first day.</fact4> How many feet of snow do they now have?
+
+## 2. Facts
+
+<fact1>First day snow: .5 feet</fact1>
+<fact2>Second day additional snow: 8 inches</fact2>
+<fact3>Snow melted over next 2 days: 2 inches</fact3>
+<fact4>Fifth day snow: 2 times the first day amount</fact4>
+
+## 3. Steps
+
+<step1> Convert feet to inches for the first day of snow </step1>
+<formula> 10 inches * .5 feet </formula>
+<calculation> 10 * .5 = 5 inches </calculation>
+<var> first_day_snow : 5 inches </var>
+
+<step2> Add the snow from the first and second days </step2>
+<formula> first_day_snow + second_day_snow </formula>
+<calculation> 5 + 8 = 13 inches </calculation>
+<var> total_after_second_day : 13 inches </var>
+
+<step3> Subtract the melted snow from the total </step3>
+<formula> total_after_second_day - melted_snow </formula>
+<calculation> 13 - 2 = 11 inches </calculation>
+<var> total_after_melting : 11 inches </var>
+
+<step4> Calculate the amount of snow received on the fifth day </step4>
+<formula> 2 * first_day_snow </formula>
+<calculation> 2 * 5 = 10 inches </calculation>
+<var> fifth_day_snow : 10 inches </var>
+
+<step5> Add the fifth day snow to the total after melting </step5>
+<formula> total_after_melting + fifth_day_snow </formula>
+<calculation> 11 + 10 = 21 inches </calculation>
+<var> total_inches : 21 inches </var>
+
+<step6> Convert the total inches to feet </step6>
+<formula> total_inches / 10 </formula>
+<calculation> 21 / 10 = 2.1 feet </calculation>
+<var> total_feet : 2.1 feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 2.1 </output>

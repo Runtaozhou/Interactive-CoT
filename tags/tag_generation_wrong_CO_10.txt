@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+A cobbler can mend <fact1>3 pairs of shoes in an hour</fact1>. From Monday to Thursday, the cobbler works for <fact2>8 hours each day</fact2>, and on Friday, he only works from <fact3>8am to 11am</fact3>. How many pairs of shoes can the cobbler mend in a week?
+
+## 2. Facts
+
+<fact1>Cobbler's rate: 3 pairs of shoes per hour</fact1>
+<fact2>Work hours Monday-Thursday: 8 hours per day</fact2>
+<fact3>Friday work hours: 8am to 11am</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many pairs of shoes the cobbler can mend in one day from Monday to Thursday </step1>
+<formula> pairs per hour × hours per day </formula>
+<calculation> 3 × 8 = 24 pairs of shoes a day </calculation>
+<var> daily_pairs_mon_to_thu : 24 pairs </var>
+
+<step2> Calculate the total pairs of shoes mended from Monday to Thursday </step2>
+<formula> daily_pairs_mon_to_thu × number of days </formula>
+<calculation> 24 × 3 = 72 pairs of shoes </calculation>
+<var> mon_to_thu_total : 72 pairs </var>
+
+<step3> Calculate how many hours the cobbler works on Friday </step3>
+<formula> end time - start time </formula>
+<calculation> 11 - 8 = 3 hours </calculation>
+<var> friday_hours : 3 hours </var>
+
+<step4> Calculate how many pairs of shoes the cobbler can mend on Friday </step4>
+<formula> pairs per hour × friday_hours </formula>
+<calculation> 3 × 3 = 9 pairs of shoes </calculation>
+<var> friday_pairs : 9 pairs </var>
+
+<step5> Calculate the total pairs of shoes mended in a week </step5>
+<formula> mon_to_thu_total + friday_pairs </formula>
+<calculation> 72 + 9 = 81 pairs of shoes </calculation>
+<var> weekly_total : 81 pairs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 81 </output>

@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Scout delivers groceries on the weekends. His <fact1>base pay is $10.00 an hour</fact1>. He also <fact2>earns a $5.00 tip per customer</fact2> that he delivers groceries to. On <fact3>Saturday he worked 4 hours and delivered groceries to 5 people</fact3>. <fact4>Sunday he worked 5 hours and delivered groceries to 8 people</fact4>. How much did he make over the weekend?
+
+## 2. Facts
+
+<fact1>Base pay: $10.00 an hour</fact1>
+<fact2>Tip per customer: $5.00</fact2>
+<fact3>Saturday: 4 hours worked, 5 deliveries</fact3>
+<fact4>Sunday: 5 hours worked, 8 deliveries</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total hours worked over the weekend </step1>
+<formula> Saturday hours + Sunday hours </formula>
+<calculation> 4 + 5 = 9 hours </calculation>
+<var> total_hours : 9 hours </var>
+
+<step2> Calculate the base pay for all hours worked </step2>
+<formula> hourly rate × total hours </formula>
+<calculation> 10 * 9 = $90.00 </calculation>
+<var> base_pay : $90.00 </var>
+
+<step3> Calculate the total number of deliveries made </step3>
+<formula> Saturday deliveries + Sunday deliveries </formula>
+<calculation> 5 + 8 = 13 deliveries </calculation>
+<var> total_deliveries : 13 deliveries </var>
+
+<step4> Calculate the tip income including the promotion bonus </step4>
+<formula> (tip per delivery × total deliveries) + promotion bonus </formula>
+<calculation> 5 * 13 + 10 = $75.00 </calculation>
+<var> tip_income : $75.00 </var>
+
+<step5> Calculate the total income for the weekend </step5>
+<formula> base pay + tip income </formula>
+<calculation> 90 + 75 = $165.00 </calculation>
+<var> total_income : $165.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 165 </output>

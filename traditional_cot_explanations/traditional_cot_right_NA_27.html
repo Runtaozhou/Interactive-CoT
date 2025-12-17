@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Tim spends 6 hours each day at work answering phones. It takes him 15 minutes to deal with a call. How many calls does he deal with during his 5 day work week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert hours to minutes to find total minutes spent on calls per day.
+            <p>We need to convert Tim's 6 hours of daily work time into minutes:</p>
+            <p>6 hours × 60 minutes = 360 minutes</p>
+            <p>Tim spends 360 minutes each day answering phones.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many calls Tim can handle per day.
+            <p>Since each call takes 15 minutes, we can find the number of calls per day by dividing the total minutes by the time per call:</p>
+            <p>360 minutes ÷ 15 minutes per call = 24 calls</p>
+            <p>Tim can handle 24 calls each day.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of calls in a work week.
+            <p>To find the total number of calls Tim handles in a 5-day work week, we multiply the daily calls by the number of work days:</p>
+            <p>24 calls per day × 5 days = 120 calls</p>
+            <p>Tim handles 120 calls during his work week.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        120
+    </div>
+</body>
+</html>

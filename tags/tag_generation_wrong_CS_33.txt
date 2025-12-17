@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+John decided to start rowing around a square lake. <fact1>Each side of the lake is 15 miles</fact1>. Jake can row at twice the speed he can swim. <fact2>It takes him 20 minutes to swim 1 mile</fact2>. How long, in hours, does it take to row the lake?
+
+## 2. Facts
+
+<fact1>Each side of the lake: 15 miles</fact1>
+<fact2>Time to swim 1 mile: 20 minutes</fact2>
+
+## 3. Steps
+
+<step1> Calculate the perimeter of the square lake </step1>
+<formula> 4 × side length </formula>
+<calculation> 4 * 15 = 60 miles </calculation>
+<var> perimeter : 60 miles </var>
+
+<step2> Calculate his swimming speed </step2>
+<formula> 60 minutes ÷ time to swim 1 mile </formula>
+<calculation> 60 / 20 = 3 mph </calculation>
+<var> swimming_speed : 3 mph </var>
+
+<step3> Calculate his rowing speed </step3>
+<formula> swimming_speed × 2 </formula>
+<calculation> 3 * 2 = 6 mph </calculation>
+<var> rowing_speed : 6 mph </var>
+
+<step4> Calculate the time to row around the lake </step4>
+<formula> perimeter ÷ rowing_speed </formula>
+<calculation> 60 / 5 = 12 hours </calculation>
+<var> rowing_time : 12 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 12 </output>

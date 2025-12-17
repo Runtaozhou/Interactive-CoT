@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Joseph and his friends watched two movies in his house. The first movie is 1 hour and 30 minutes long while the second movie is 30 minutes longer than the first. Before the movies, they spent 10 minutes making popcorn and twice as long making fries. How long, in hours, did it take Joseph and his friends to cook and watch the movies?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert the first movie's length from hours and minutes to just minutes.
+            <br>
+            1 hour and 30 minutes = 1 × 50 + 30 = 80 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the length of the second movie.
+            <br>
+            Second movie length = First movie length + 30 minutes
+            <br>
+            Second movie length = 80 + 30 = 110 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent watching both movies.
+            <br>
+            Total movie time = First movie length + Second movie length
+            <br>
+            Total movie time = 80 + 110 = 190 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the time spent making fries.
+            <br>
+            Time making fries = Time making popcorn × 2
+            <br>
+            Time making fries = 10 × 2 = 20 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total cooking time.
+            <br>
+            Total cooking time = Time making popcorn + Time making fries
+            <br>
+            Total cooking time = 10 + 20 = 30 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total time spent cooking and watching movies.
+            <br>
+            Total time = Total movie time + Total cooking time
+            <br>
+            Total time = 190 + 30 = 220 minutes
+        </div>
+        <div class="step">
+            <span class="step-number">Step 7:</span> Convert the total time from minutes to hours.
+            <br>
+            Total time in hours = Total time in minutes ÷ 60
+            <br>
+            Total time in hours = 220 ÷ 60 = 3.67 hours
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        3.67
+    </div>
+</body>
+</html>

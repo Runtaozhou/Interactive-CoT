@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Every Sunday, Sean picks up <fact1>1 almond croissant and 1 salami and cheese croissant that are $4.50 each</fact1>. He also grabs <fact2>a plain croissant for $3.00</fact2> and <fact3>a loaf of focaccia for $4.00</fact3>. On his way home he stops and picks up <fact4>2 lattes for $2.50 each</fact4>. How much did he spend?
+
+## 2. Facts
+
+<fact1>Almond croissant and salami and cheese croissant: $4.50 each</fact1>
+<fact2>Plain croissant: $3.00</fact2>
+<fact3>Loaf of focaccia: $4.00</fact3>
+<fact4>Lattes: $2.50 each</fact4>
+
+## 3. Steps
+
+<step1> Calculate the cost of the flavored croissants </step1>
+<formula> 2 × $4.50 </formula>
+<calculation> 2 * $4.50 = $9.00 </calculation>
+<var> flavored_croissants_cost : $9.00 </var>
+
+<step2> Calculate the cost of the lattes </step2>
+<formula> 2 × $2.50 </formula>
+<calculation> 2 * $2.50 = $5.00 </calculation>
+<var> lattes_cost : $5.00 </var>
+
+<step3> Recalculate the cost of lattes with an additional latte </step3>
+<formula> 2 × $2.50 + $2.50 </formula>
+<calculation> 2 * $2.50 + $2.50 = $7.50 </calculation>
+<var> new_lattes_cost : $7.50 </var>
+
+<step4> Calculate the total cost of all items </step4>
+<formula> flavored_croissants_cost + new_lattes_cost + plain_croissant_cost + focaccia_cost </formula>
+<calculation> $9.00 + $7.50 + $3.00 + $4.00 = $23.50 </calculation>
+<var> total_cost : $23.50 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 23.50 </output>

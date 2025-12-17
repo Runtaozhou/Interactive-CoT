@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+A baker bakes <fact1>5 loaves of bread an hour</fact1> in one oven. He has <fact2>4 ovens</fact2>. From Monday to Friday, he bakes for <fact3>5 hours</fact3>, but on Saturday and Sunday, he only bakes for <fact4>2 hours</fact4>. How many loaves of bread does the baker bake in <fact5>3 weeks</fact5>?
+
+## 2. Facts
+
+<fact1>Loaves per hour per oven: 5</fact1>
+<fact2>Number of ovens: 4</fact2>
+<fact3>Hours baking Monday-Friday: 5</fact3>
+<fact4>Hours baking Saturday-Sunday: 2</fact4>
+<fact5>Number of weeks: 3</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many loaves the baker can bake in one hour using all ovens </step1>
+<formula> loaves_per_hour_per_oven × number_of_ovens </formula>
+<calculation> 5 × 4 = 20 loaves of bread </calculation>
+<var> loaves_per_hour : 20 loaves </var>
+
+<step2> Calculate how many loaves the baker bakes each weekday (Monday to Friday) </step2>
+<formula> hours_baking_weekday × loaves_per_hour </formula>
+<calculation> 5 × 20 = 100 loaves of bread per day </calculation>
+<var> loaves_per_weekday : 100 loaves </var>
+
+<step3> Calculate the total loaves baked on all weekdays (Monday to Friday) </step3>
+<formula> loaves_per_weekday × number_of_weekdays </formula>
+<calculation> 100 × 5 = 500 loaves of bread </calculation>
+<var> loaves_weekdays_total : 500 loaves </var>
+
+<step4> Calculate how many loaves the baker bakes each weekend day (Saturday and Sunday) </step4>
+<formula> hours_baking_weekend × loaves_per_hour </formula>
+<calculation> 2 × 20 = 40 loaves of bread per day </calculation>
+<var> loaves_per_weekend_day : 40 loaves </var>
+
+<step5> Calculate the total loaves baked on Saturday </step5>
+<formula> loaves_per_weekend_day × number_of_saturdays </formula>
+<calculation> 40 × 1 = 40 loaves of bread </calculation>
+<var> loaves_saturday : 40 loaves </var>
+
+<step6> Calculate the total loaves baked in one week </step6>
+<formula> loaves_weekdays_total + loaves_saturday </formula>
+<calculation> 500 + 40 = 540 loaves of bread </calculation>
+<var> loaves_per_week : 540 loaves </var>
+
+<step7> Calculate the total loaves baked in three weeks </step7>
+<formula> loaves_per_week × number_of_weeks </formula>
+<calculation> 540 × 3 = 1620 loaves of bread </calculation>
+<var> total_loaves : 1620 loaves </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 1620 </output>

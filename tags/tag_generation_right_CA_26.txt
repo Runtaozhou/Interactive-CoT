@@ -1,0 +1,62 @@
+## 1. Problem statement
+
+<fact1>Janice can type 6 sentences per minute.</fact1> Today at work, Janice continued working on a paper she started typing yesterday. <fact2>She typed for 20 minutes</fact2>, took a break, and <fact3>typed 15 minutes longer</fact3>. <fact4>She then had to erase 40 sentences she had typed incorrectly.</fact4> After a meeting, <fact5>she typed for 18 minutes more</fact5>. <fact6>In all, the paper had 536 sentences by the end of today.</fact6> How many sentences did she start with today?
+
+## 2. Facts
+
+<fact1>Typing speed: 6 sentences per minute</fact1>
+<fact2>First typing session: 20 minutes</fact2>
+<fact3>Second typing session: 15 minutes</fact3>
+<fact4>Erased sentences: 40 sentences</fact4>
+<fact5>Third typing session: 18 minutes</fact5>
+<fact6>Final sentence count: 536 sentences</fact6>
+
+## 3. Steps
+
+<step1> Janice had X sentences from yesterday already typed to start with today. </step1>
+<formula></formula>
+<calculation></calculation>
+<var>X : unknown starting sentences</var>
+
+<step2> Janice typed 6 * 20 = 120 sentences before her break. </step2>
+<formula>typing_speed * time</formula>
+<calculation>6 * 20 = 120</calculation>
+<var>first_session : 120 sentences</var>
+
+<step3> She typed 6 * 15 = 90 sentences after her break. </step3>
+<formula>typing_speed * time</formula>
+<calculation>6 * 15 = 90</calculation>
+<var>second_session : 90 sentences</var>
+
+<step4> She typed 6 * 18 = 108 sentences after her meeting. </step4>
+<formula>typing_speed * time</formula>
+<calculation>6 * 18 = 108</calculation>
+<var>third_session : 108 sentences</var>
+
+<step5> Therefore, she typed 120 + 90 + 108 = 318 sentences today in all. </step5>
+<formula>first_session + second_session + third_session</formula>
+<calculation>120 + 90 + 108 = 318</calculation>
+<var>total_typed_today : 318 sentences</var>
+
+<step6> She had to erase 40 sentences, so she had 318 - 40 = 278 sentences that she typed today left. </step6>
+<formula>total_typed_today - erased_sentences</formula>
+<calculation>318 - 40 = 278</calculation>
+<var>net_added_today : 278 sentences</var>
+
+<step7> The paper had X + 278 = 536 sentences at the end of today. </step7>
+<formula>starting_sentences + net_added_today = final_count</formula>
+<calculation>X + 278 = 536</calculation>
+<var>final_count : 536 sentences</var>
+
+<step8> Thus, she had X = 536 - 278 = 258 sentences typed on the paper to start with today. </step8>
+<formula>final_count - net_added_today</formula>
+<calculation>536 - 278 = 258</calculation>
+<var>X : 258 sentences</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>258</output>

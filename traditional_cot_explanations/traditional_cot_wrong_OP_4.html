@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Shelly makes braided keychains for her friends at school. Each keychain takes 12 inches of thread to braid. This year, she made six friends in classes and half that number from after-school clubs. She wants to make each of them a keychain. How many inches of thread does Shelly need?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of friends from after-school clubs.
+            <p>We need to find how many friends Shelly has from after-school clubs. The problem states that she has half the number of friends from after-school clubs as she does from classes.</p>
+            <p>Friends from after-school clubs = Friends in classes × 2</p>
+            <p>Friends from after-school clubs = 6 × 2 = 12</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the total number of friends.
+            <p>Now we need to add the number of friends from classes and the number of friends from after-school clubs.</p>
+            <p>Total friends = Friends in classes + Friends from after-school clubs</p>
+            <p>Total friends = 6 + 12 = 18</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total thread needed for all keychains.
+            <p>Each keychain requires 12 inches of thread, and Shelly wants to make one for each friend.</p>
+            <p>Total thread needed = Total friends × Thread per keychain</p>
+            <p>Total thread needed = 18 × 12 = 216 inches</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        216
+    </div>
+</body>
+</html>

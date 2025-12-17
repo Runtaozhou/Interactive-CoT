@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Abel leaves for a vacation destination 1000 miles away driving 50 miles per hour. An hour later Alice leaves from the same point for the same destination, traveling 40 miles per hour. How much earlier does Abel reach the destination in minutes?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how long it takes Abel to reach the destination.
+            <p>Using the formula: distance ÷ speed</p>
+            <p>1000 miles ÷ 50 miles per hour = 20 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how long it takes Alice to reach the destination.
+            <p>Using the formula: distance ÷ speed</p>
+            <p>1000 miles ÷ 40 miles per hour = 25 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert Abel's travel time to minutes.
+            <p>Using the formula: hours × minutes per hour</p>
+            <p>20 × 50 = 1000 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert Alice's travel time to minutes.
+            <p>Using the formula: hours × minutes per hour</p>
+            <p>25 × 50 = 1250 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the time difference if they left simultaneously.
+            <p>Using the formula: alice_minutes - abel_minutes</p>
+            <p>1250 - 1000 = 250 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Add Abel's head start to find the actual time difference.
+            <p>Using the formula: time_diff_simultaneous + head start in minutes</p>
+            <p>250 + 50 = 300 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        300
+    </div>
+</body>
+</html>

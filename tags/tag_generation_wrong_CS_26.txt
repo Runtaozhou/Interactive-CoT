@@ -1,0 +1,64 @@
+## 1. Problem statement
+
+<fact1>Together Lily, David, and Bodhi collected 43 insects.</fact1> <fact2>Lily found 7 more than David.</fact2> <fact3>David found half of what Bodhi found.</fact3> How many insects did Lily find?
+
+## 2. Facts
+
+<fact1>Total insects collected: 43</fact1>
+<fact2>Lily found 7 more insects than David</fact2>
+<fact3>David found half of Bodhi's insects</fact3>
+
+## 3. Steps
+
+<step1> Define B as the number of insects Bodhi collected </step1>
+<formula></formula>
+<calculation></calculation>
+<var>B : number of insects Bodhi collected</var>
+
+<step2> Express David's insects in terms of B </step2>
+<formula>David = B/2</formula>
+<calculation></calculation>
+<var>David : B/2 insects</var>
+
+<step3> Express Lily's insects in terms of David's (and thus B) </step3>
+<formula>Lily = B/2 + 7</formula>
+<calculation></calculation>
+<var>Lily : B/2 + 7 insects</var>
+
+<step4> Set up equation using the total number of insects </step4>
+<formula>B + B/2 + 7 = 43</formula>
+<calculation></calculation>
+<var></var>
+
+<step5> Simplify the equation </step5>
+<formula>2B + B = 36</formula>
+<calculation></calculation>
+<var></var>
+
+<step6> Solve for B </step6>
+<formula>3B = 36</formula>
+<calculation>B = 12 insects</calculation>
+<var>B : 12 insects</var>
+
+<step7> Calculate how many insects David found </step7>
+<formula>David = B/2</formula>
+<calculation>David = 12/2 = 6 insects</calculation>
+<var>David : 6 insects</var>
+
+<step8> Calculate how many insects Lily found </step8>
+<formula>Lily = David + 7</formula>
+<calculation>Lily = 6 + 7 = 13 insects</calculation>
+<var>Lily : 13 insects</var>
+
+<step9> State the final answer </step9>
+<formula></formula>
+<calculation>Lily found 13 insects</calculation>
+<var></var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>13</output>

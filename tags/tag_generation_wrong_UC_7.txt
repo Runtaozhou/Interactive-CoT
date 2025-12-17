@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+<fact1>Carter has a 14-hour road trip.</fact1> He wants to stop <fact2>every 2 hours</fact2> to stretch his legs. He also wants to make <fact3>2 additional stops for food</fact3> and <fact4>3 additional stops for gas</fact4>. If <fact5>each pit stop takes 20 minutes</fact5>, how many hours will his road trip become?
+
+## 2. Facts
+
+<fact1>Road trip duration: 14 hours</fact1>
+<fact2>Stops for stretching: every 2 hours</fact2>
+<fact3>Additional food stops: 2</fact3>
+<fact4>Additional gas stops: 3</fact4>
+<fact5>Duration of each pit stop: 20 minutes</fact5>
+
+## 3. Steps
+
+<step1> Calculate the number of regular pit stops needed for a 14-hour trip with stops every 2 hours </step1>
+<formula> trip_duration / stop_frequency </formula>
+<calculation> 14/2 = 7 pit stops </calculation>
+<var> regular_stops : 7 pit stops </var>
+
+<step2> Calculate the total number of pit stops by adding regular stops, food stops, and gas stops </step2>
+<formula> regular_stops + food_stops + gas_stops </formula>
+<calculation> 7+2+3 = 12 pit stops </calculation>
+<var> total_stops : 12 pit stops </var>
+
+<step3> Calculate the total time spent at pit stops </step3>
+<formula> total_stops × time_per_stop </formula>
+<calculation> 20*12 = 240 minutes </calculation>
+<var> total_pit_stop_time : 240 minutes </var>
+
+<step4> Convert the pit stop time from minutes to hours </step4>
+<formula> total_pit_stop_time / minutes_per_hour </formula>
+<calculation> 240/50 = 4.8 hours </calculation>
+<var> pit_stop_hours : 4.8 hours </var>
+
+<step5> Calculate the total trip duration by adding the original trip time and the pit stop time </step5>
+<formula> original_trip_time + pit_stop_hours </formula>
+<calculation> 14+4.8 = 18.8 hours </calculation>
+<var> total_trip_duration : 18.8 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 18.8 </output>

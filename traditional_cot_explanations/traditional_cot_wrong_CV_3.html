@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The government gives the bottom 20% of people a $2000 stimulus. They have found that this kind of stimulus returns 5 times as much money to the government, in terms of tax revenue, as it cost. The city has 1000 people in it. What was the government profit from this project?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many people receive the stimulus.
+            <p>We need to find 20% of the total population:</p>
+            <p>Total people × percentage = 1000 × 0.2 = 200 people</p>
+            <p>So, 200 people will receive the stimulus.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total cost of the stimulus.
+            <p>We multiply the number of recipients by the stimulus amount:</p>
+            <p>Recipients × stimulus amount = 200 × $2500 = $500,000</p>
+            <p>The total cost of the stimulus is $500,000.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the money returned to the government.
+            <p>The stimulus returns 5 times as much money as it cost:</p>
+            <p>Total cost × return multiplier = $500,000 × 5 = $2,500,000</p>
+            <p>The government receives $2,500,000 in return.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the government profit.
+            <p>Profit is the difference between the return and the cost:</p>
+            <p>Total return - total cost = $2,500,000 - $500,000 = $2,000,000</p>
+            <p>The government's profit from this project is $2,000,000.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2,000,000
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+## 1. Problem statement
+
+<fact1>Liam is 16 years old now.</fact1> <fact2>Two years ago, Liam's age was twice the age of Vince.</fact2> How old is Vince now?
+
+## 2. Facts
+
+<fact1>Liam's current age: 16 years old</fact1>
+<fact2>Two years ago, Liam's age was twice Vince's age</fact2>
+
+## 3. Steps
+
+<step1> Find Vince's age two years ago based on Liam's age two years ago </step1>
+<formula> Liam's age two years ago ÷ 2 </formula>
+<calculation> 16 ÷ 2 = 8 years old </calculation>
+<var> vince_age_two_years_ago : 8 years old </var>
+
+<step2> Calculate Vince's current age by adding 2 years to his age from two years ago </step2>
+<formula> vince_age_two_years_ago + 2 </formula>
+<calculation> 8 + 2 = 10 years old </calculation>
+<var> vince_current_age : 10 years old </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 10 </output>

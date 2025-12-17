@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+Val has <fact1>three times as many dimes as nickels</fact1>. If she accidentally finds <fact2>twice as many nickels as she has</fact2> in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had <fact3>20 nickels</fact3> before finding the new ones from her brother's treasure box?
+
+## 2. Facts
+
+<fact1>Dimes to nickels ratio: 3 times</fact1>
+<fact2>Found nickels: 2 times her current amount</fact2>
+<fact3>Starting nickels: 20</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many more nickels Val finds in her brother's treasure box</step1>
+<formula>starting nickels × 2</formula>
+<calculation>2 * 20 = 40</calculation>
+<var>found_nickels: 40</var>
+
+<step2>Calculate the total number of nickels Val has after finding the new ones</step2>
+<formula>starting nickels + found_nickels</formula>
+<calculation>40 + 20 = 60</calculation>
+<var>total_nickels: 60</var>
+
+<step3>Calculate the value of all the nickels Val has</step3>
+<formula>total_nickels × $0.05</formula>
+<calculation>60 * 0.05 = $3</calculation>
+<var>nickels_value: $3</var>
+
+<step4>Calculate how many dimes Val has</step4>
+<formula>starting nickels × 4</formula>
+<calculation>4 * 20 = 80</calculation>
+<var>total_dimes: 80</var>
+
+<step5>Calculate the value of all the dimes Val has</step5>
+<formula>total_dimes × $0.10</formula>
+<calculation>80 * $0.10 = $8</calculation>
+<var>dimes_value: $8</var>
+
+<step6>Calculate the total value of all the money Val has</step6>
+<formula>dimes_value + nickels_value</formula>
+<calculation>$8 + $3 = $11</calculation>
+<var>total_value: $11</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>11</output>

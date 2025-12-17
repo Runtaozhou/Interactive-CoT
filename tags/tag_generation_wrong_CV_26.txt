@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+Carolyn works for a delivery service company that hires on a contract basis. In <fact1>May, they hired 40 employees</fact1>, paying <fact2>each employee $15 per hour</fact2> for a <fact3>40-hour workweek</fact3>. In <fact4>June, 1/4 of the employees' contracts expired</fact4>. Calculate the total amount of money the company paid to the employees in the two months.
+
+## 2. Facts
+
+<fact1>May employees: 40 employees</fact1>
+<fact2>Hourly rate: $15 per hour</fact2>
+<fact3>Weekly hours: 40 hours</fact3>
+<fact4>June contract expiration: 1/4 of employees</fact4>
+
+## 3. Steps
+
+<step1> Calculate the weekly pay for each employee </step1>
+<formula> hourly_rate × weekly_hours </formula>
+<calculation> $15 * 40 = $600 per week </calculation>
+<var> weekly_pay : $600 per week </var>
+
+<step2> Calculate the monthly pay for each employee </step2>
+<formula> weekly_pay × 4 weeks </formula>
+<calculation> 4 weeks * $600 per week = $2400 </calculation>
+<var> monthly_pay : $2400 </var>
+
+<step3> Calculate the total amount paid to employees in May </step3>
+<formula> number_of_employees × monthly_pay </formula>
+<calculation> 35 * $2400 = $84000 </calculation>
+<var> may_total : $84000 </var>
+
+<step4> Calculate how many employees' contracts expired in June </step4>
+<formula> total_employees × expiration_rate </formula>
+<calculation> 1/4 * 40 = 10 employees </calculation>
+<var> expired_contracts : 10 employees </var>
+
+<step5> Calculate the number of employees with valid contracts in June </step5>
+<formula> total_employees - expired_contracts </formula>
+<calculation> 40 - 10 = 30 employees </calculation>
+<var> june_employees : 30 employees </var>
+
+<step6> Calculate the total amount paid to employees in June </step6>
+<formula> june_employees × monthly_pay </formula>
+<calculation> 30 * $2400 = $72000 </calculation>
+<var> june_total : $72000 </var>
+
+<step7> Calculate the total amount paid over both months </step7>
+<formula> may_total + june_total </formula>
+<calculation> $72000 + $84000 = $156000 </calculation>
+<var> total_payment : $156000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 156000 </output>

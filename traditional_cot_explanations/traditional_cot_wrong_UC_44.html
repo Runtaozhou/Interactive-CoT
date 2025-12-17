@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The Parker family needs to leave the house by 5 pm for a dinner party. Mrs. Parker was waiting to get into the bathroom at 2:30 pm. Her oldest daughter used the bathroom for 45 minutes and her youngest daughter used the bathroom for another 30 minutes. Then her husband used it for 20 minutes. How much time will Mrs. Parker have to use the bathroom to leave on time?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the time difference between when Mrs. Parker was waiting and when they need to leave.
+            <p>Departure time - Waiting time = 5:00 pm - 2:30 pm = 2.5 hours</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Convert the available time from hours to minutes.
+            <p>Available time in hours × minutes per hour = 2.5 hours × 50 = 125 minutes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time used by family members.
+            <p>Oldest daughter's time + youngest daughter's time + husband's time = 45 + 30 + 20 = 95 minutes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate Mrs. Parker's available bathroom time.
+            <p>Available time in minutes - family bathroom time = 125 minutes - 95 minutes = 30 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        30
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Iris' family is planning a surprise birthday party for her. The party will include <fact1>her 3 uncles and 4 aunts who have a son and daughter each</fact1> as well as <fact2>her brother and mother</fact2>. In total, how many people are coming to Iris' birthday party?
+
+## 2. Facts
+
+<fact1>Her 3 uncles and 4 aunts who have a son and daughter each</fact1>
+<fact2>Her brother and mother</fact2>
+
+## 3. Steps
+
+<step1> Calculate the size of each aunt’s and uncle’s family.</step1>
+<formula> 1 son + 1 daughter + 1 aunt/uncle </formula>
+<calculation> 1 + 1 + 1 = 3 people </calculation>
+<var> family_unit_size : 3 people </var>
+
+<step2> Calculate the total number of aunts and uncles in Iris’s family </step2>
+<formula> uncles + aunts </formula>
+<calculation> 3 + 4 = 7 aunts or uncles </calculation>
+<var> total_aunts_uncles : 7 </var>
+
+<step3> Calculate the total number of people in each aunt’s and uncle’s family. </step3>
+<formula> total_aunts_uncles × family_unit_size </formula>
+<calculation> 7 family units * 3 people = 21 people </calculation>
+<var> total_extended_family : 21 people </var>
+
+<step4> Calculate the total number of people, including her mother and brother </step4>
+<formula> total_extended_family + mother + brother </formula>
+<calculation> 21 people + 1 + 1 = 23 people </calculation>
+<var> total_attendees : 23 people </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 23 </output>

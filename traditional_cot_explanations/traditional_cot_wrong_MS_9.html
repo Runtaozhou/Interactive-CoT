@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The last time Bob cut his hair he cut it to 6 inches. His hair is now 36 inches long. If hair grows at a rate of .5 inches per month how many years did it take him to grow out his hair?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much his hair grew in total.
+            <p>We need to find the total growth by taking the current length minus the initial length.</p>
+            <p>Current length = 36 inches</p>
+            <p>Initial length = 6 inches</p>
+            <p>Total growth = 36 inches - 6 inches = 30 inches</p>
+            <p>However, the calculation shows: 36 inches * 12 months/year = 432 inches</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many months it took for his hair to grow that much.
+            <p>We divide the total growth by the growth rate per month.</p>
+            <p>Total growth = 432 inches</p>
+            <p>Growth rate = 0.5 inches/month</p>
+            <p>Months taken = 432 inches ÷ 0.5 inches/month = 864 months</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert the months to years.
+            <p>We divide the number of months by 12 (months per year).</p>
+            <p>Months taken = 864 months</p>
+            <p>Years taken = 864 months ÷ 12 months/year = 72 years</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        72
+    </div>
+</body>
+</html>

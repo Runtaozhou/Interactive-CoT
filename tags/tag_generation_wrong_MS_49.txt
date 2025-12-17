@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+Francis' family has <fact1>2 ukuleles</fact1>, <fact2>4 guitars</fact2>, and a certain number of violins. Each <fact3>ukulele has 4 strings</fact3>. Each <fact4>guitar has 6 strings</fact4>. Each <fact5>violin has 4 strings</fact5>. If the <fact6>total number of strings among the ukuleles, guitars, and violins is 40 strings</fact6>, how many violins does Francis' family have?
+
+## 2. Facts
+
+<fact1>Number of ukuleles: 2</fact1>
+<fact2>Number of guitars: 4</fact2>
+<fact3>Strings per ukulele: 4</fact3>
+<fact4>Strings per guitar: 6</fact4>
+<fact5>Strings per violin: 4</fact5>
+<fact6>Total number of strings: 40</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total number of strings from the guitars </step1>
+<formula> Number of guitars × Strings per guitar </formula>
+<calculation> 4 * 6 = 24 strings </calculation>
+<var> guitar_strings : 24 strings </var>
+
+<step2> Find the number of strings from the violins by subtracting guitar strings from the total </step2>
+<formula> Total strings - Guitar strings </formula>
+<calculation> 40 - 24 = 16 strings </calculation>
+<var> violin_strings : 16 strings </var>
+
+<step3> Calculate the number of violins by dividing the violin strings by strings per violin </step3>
+<formula> Violin strings ÷ Strings per violin </formula>
+<calculation> 16 / 4 = 4 violins </calculation>
+<var> number_of_violins : 4 violins </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 4 </output>

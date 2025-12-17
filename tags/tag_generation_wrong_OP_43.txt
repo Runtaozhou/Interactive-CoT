@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Carly wants to treat her friends. She orders <fact1>five hamburgers at $4 each</fact1>, <fact2>ten packs of potato fries at $0.30 each pack</fact2>, and <fact3>five cans of fruit drinks at $2 each can</fact3>. How much change does Carly get back if she gives <fact4>one fifty-dollar bill</fact4>?
+
+## 2. Facts
+
+<fact1>Hamburgers: 5 at $4 each</fact1>
+<fact2>Potato fries: 10 packs at $0.30 each</fact2>
+<fact3>Fruit drinks: 5 cans at $2 each</fact3>
+<fact4>Payment: $50</fact4>
+
+## 3. Steps
+
+<step1> Calculate the cost of hamburgers </step1>
+<formula> number of hamburgers × price per hamburger </formula>
+<calculation> 5 × $4 = $20 </calculation>
+<var> hamburger_cost : $20 </var>
+
+<step2> Calculate the cost of potato fries </step2>
+<formula> number of packs × price per pack </formula>
+<calculation> 10 × $0.30 = $3 </calculation>
+<var> fries_cost : $3 </var>
+
+<step3> Calculate the cost of fruit drinks </step3>
+<formula> number of cans × price per can </formula>
+<calculation> 5 × $2 = $10 </calculation>
+<var> drinks_cost : $10 </var>
+
+<step4> Calculate the total cost of all items </step4>
+<formula> hamburger_cost - fries_cost + drinks_cost </formula>
+<calculation> $20 - $3 + $10 = $27 </calculation>
+<var> total_cost : $27 </var>
+
+<step5> Calculate the change Carly receives </step5>
+<formula> payment - total_cost </formula>
+<calculation> $50 - $27 = $23 </calculation>
+<var> change : $23 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 23 </output>

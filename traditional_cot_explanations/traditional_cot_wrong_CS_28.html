@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Amy had two eyeshadow palettes with four colors each and three makeup sets that came with six eyeshadow colors each. Her sister steals one of the palettes. Amy uses up half of the colors from one makeup set. How many eyeshadow colors does she have left?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of eyeshadow colors Amy had initially.
+            <p>Amy had 2 palettes with 4 colors each, plus 3 makeup sets with 6 colors each.</p>
+            <p>Total initial colors = (2 × 4) + (3 × 6) = 8 + 18 = 26 eyeshadow colors</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Subtract the colors lost when her sister stole one palette.
+            <p>Each palette has 4 colors, so Amy lost 4 colors when her sister stole one palette.</p>
+            <p>Colors after theft = 26 - 4 = 22 colors</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many colors were used up from one makeup set.
+            <p>Each makeup set has 6 colors, and Amy used up half of the colors from one set.</p>
+            <p>Colors used up = 6 ÷ 2 = 3 colors</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Subtract the used colors from the remaining total.
+            <p>We need to subtract the 3 colors Amy used from the 22 colors she had after the theft.</p>
+            <p>Final number of colors = 20 - 3 = 17 eyeshadow colors</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        17
+    </div>
+</body>
+</html>

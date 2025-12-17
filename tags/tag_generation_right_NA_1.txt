@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+<fact1>It takes 1 hour for refrigerated dough to come to room temperature.</fact1> <fact2>It takes 15 minutes to shape the dough</fact2> and <fact3>2 hours to proof.</fact3> <fact4>The bread takes 30 minutes to bake</fact4> and <fact5>15 minutes to cool.</fact5> <fact6>If the bakery opens at 6:00 am</fact6>, what is the latest time the head baker can make it to the store to start working?
+
+## 2. Facts
+
+<fact1>Time for dough to reach room temperature: 1 hour</fact1>
+<fact2>Time to shape dough: 15 minutes</fact2>
+<fact3>Proofing time: 2 hours</fact3>
+<fact4>Baking time: 30 minutes</fact4>
+<fact5>Cooling time: 15 minutes</fact5>
+<fact6>Bakery opening time: 6:00 am</fact6>
+
+## 3. Steps
+
+<step1> Calculate the time needed for dough to reach room temperature and proof </step1>
+<formula> room_temp_time + proofing_time </formula>
+<calculation> 1 + 2 = 3 hours </calculation>
+<var> initial_prep_time : 3 hours </var>
+
+<step2> Calculate the total time for shaping, baking, and cooling </step2>
+<formula> shaping_time + baking_time + cooling_time </formula>
+<calculation> 15 + 30 + 15 = 60 minutes </calculation>
+<var> final_prep_time_minutes : 60 minutes </var>
+
+<step3> Convert the final preparation time from minutes to hours </step3>
+<formula> final_prep_time_minutes ÷ minutes_per_hour </formula>
+<calculation> 60 ÷ 60 = 1 hour </calculation>
+<var> final_prep_time_hours : 1 hour </var>
+
+<step4> Calculate the total preparation time </step4>
+<formula> initial_prep_time + final_prep_time_hours </formula>
+<calculation> 3 + 1 = 4 hours </calculation>
+<var> total_prep_time : 4 hours </var>
+
+<step5> Calculate the latest arrival time for the baker </step5>
+<formula> opening_time - total_prep_time </formula>
+<calculation> 6 - 4 = 2:00 am </calculation>
+<var> latest_arrival_time : 2:00 am </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 2:00 am </output>

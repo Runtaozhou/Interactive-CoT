@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+Emily has 4 kids named Amy, Jackson, Corey, and James. <fact1>Amy is 5 years older than Jackson</fact1> and <fact2>2 years younger than Corey</fact2>. If <fact3>James is 10</fact3> and is <fact4>1 year younger than Corey</fact4>, how old is Jackson?
+
+## 2. Facts
+
+<fact1>Amy is 5 years older than Jackson</fact1>
+<fact2>Amy is 2 years younger than Corey</fact2>
+<fact3>James's age: 10 years</fact3>
+<fact4>James is 1 year younger than Corey</fact4>
+
+## 3. Steps
+
+<step1> Calculate Corey's age based on James's age </step1>
+<formula> Corey's age = James's age - 1 </formula>
+<calculation> 10 - 1 = 9 years old </calculation>
+<var> corey_age : 9 years </var>
+
+<step2> Calculate Amy's age based on Corey's age </step2>
+<formula> Amy's age = Corey's age - 2 </formula>
+<calculation> 9 - 2 = 7 years old </calculation>
+<var> amy_age : 7 years </var>
+
+<step3> Calculate Jackson's age based on Amy's age </step3>
+<formula> Jackson's age = Amy's age - 5 </formula>
+<calculation> 7 - 5 = 2 years old </calculation>
+<var> jackson_age : 2 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 2 </output>

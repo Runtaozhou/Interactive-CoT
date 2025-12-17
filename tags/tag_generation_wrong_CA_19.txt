@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+There are <fact1>325 students in a local high school</fact1>. <fact2>40 percent of the students have glasses</fact2>, how many students do not have glasses?
+
+## 2. Facts
+
+<fact1>Total students: 325</fact1>
+<fact2>Percentage of students with glasses: 40%</fact2>
+
+## 3. Steps
+
+<step1> Calculate the percentage of students who do not have glasses </step1>
+<formula> 100% - percentage with glasses </formula>
+<calculation> 100% - 40% = 60% </calculation>
+<var> percentage_without_glasses : 60% </var>
+
+<step2> Find 10% of the total number of students </step2>
+<formula> total students × 0.10 </formula>
+<calculation> 325 × 0.10 = 32.5 </calculation>
+<var> ten_percent : 32.5 students </var>
+
+<step3> Multiply the 10% value by 6 to get 60% (students without glasses) </step3>
+<formula> ten_percent × 6 </formula>
+<calculation> 32.5 × 6 = 190 students </calculation>
+<var> students_without_glasses : 190 students </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 190 </output>

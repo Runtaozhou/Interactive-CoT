@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+The teacher decided to rewards his students with extra recess on report card day if they got good grades. Students normally get <fact1>20 minutes for recess</fact1>. He told the students that <fact2>every A got them 2 extra minutes of recess</fact2>. <fact3>Every B got them one extra minute</fact3>. <fact4>Every C got them zero extra minutes</fact4>, but <fact5>every D got them 1 less minute</fact5>. When report cards came out there were <fact6>10 As</fact6>, <fact7>12 Bs</fact7>, <fact8>14 Cs</fact8>, and <fact9>5 Ds</fact9>. In total, how much recess would the students get that day?
+
+## 2. Facts
+
+<fact1>Normal recess time: 20 minutes</fact1>
+<fact2>Extra minutes per A: 2 minutes</fact2>
+<fact3>Extra minutes per B: 1 minute</fact3>
+<fact4>Extra minutes per C: 0 minutes</fact4>
+<fact5>Minutes lost per D: 1 minute</fact5>
+<fact6>Number of As: 10</fact6>
+<fact7>Number of Bs: 12</fact7>
+<fact8>Number of Cs: 14</fact8>
+<fact9>Number of Ds: 5</fact9>
+
+## 3. Steps
+
+<step1> Start with the normal recess time </step1>
+<formula> </formula>
+<calculation> </calculation>
+<var> base_recess : 20 minutes </var>
+
+<step2> Calculate extra minutes from As </step2>
+<formula> number of As × extra minutes per A </formula>
+<calculation> 10 × 2 = 20 minutes </calculation>
+<var> extra_from_As : 20 minutes </var>
+
+<step3> Calculate extra minutes from Bs </step3>
+<formula> number of Bs × extra minutes per B </formula>
+<calculation> 12 × 1 = 12 minutes </calculation>
+<var> extra_from_Bs : 12 minutes </var>
+
+<step4> Calculate extra minutes from Cs </step4>
+<formula> number of Cs × extra minutes per C </formula>
+<calculation> 14 × 0 = 0 minutes </calculation>
+<var> extra_from_Cs : 0 minutes </var>
+
+<step5> Calculate minutes lost from Ds </step5>
+<formula> number of Ds × minutes lost per D </formula>
+<calculation> 5 × 1 = 7 minutes </calculation>
+<var> lost_from_Ds : 7 minutes </var>
+
+<step6> Calculate total recess time </step6>
+<formula> base_recess + extra_from_As + extra_from_Bs - lost_from_Ds </formula>
+<calculation> 20 + 20 + 12 - 7 = 45 minutes </calculation>
+<var> total_recess : 45 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 45 </output>

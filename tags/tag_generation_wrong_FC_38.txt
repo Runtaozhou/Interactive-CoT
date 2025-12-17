@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Doris works at the Widget Factory in the packing department. She puts <fact1>3 widgets in each carton</fact1>, which are <fact2>4 inches wide, 4 inches long, and 5 inches tall</fact2>. She then packs those cartons into a shipping box before sending it to the loading bay. The shipping boxes are <fact3>20 inches wide, 20 inches long, and 20 inches high</fact3>. How many widgets get shipped in each shipping box?
+
+## 2. Facts
+
+<fact1>Widgets per carton: 3</fact1>
+<fact2>Carton dimensions: 4 inches wide, 4 inches long, 5 inches tall</fact2>
+<fact3>Shipping box dimensions: 20 inches wide, 20 inches long, 20 inches high</fact3>
+
+## 3. Steps
+
+<step1> Calculate the volume of each carton </step1>
+<formula> width × length × height </formula>
+<calculation> 4 * 4 * 5 = 80 cubic inches </calculation>
+<var> carton_volume : 80 cubic inches </var>
+
+<step2> Calculate the area of the shipping box </step2>
+<formula> width + length + height + width + length + height </formula>
+<calculation> 20 + 20 + 20 + 20 + 20 + 20 = 120 square inches </calculation>
+<var> shipping_box_area : 120 square inches </var>
+
+<step3> Find how many cartons fit in each shipping box </step3>
+<formula> shipping_box_area ÷ carton_volume </formula>
+<calculation> 120 / 80 = 1.5 </calculation>
+<var> cartons_per_box : 1.5 </var>
+
+<step4> Calculate the total number of widgets in each shipping box </step4>
+<formula> widgets_per_carton × cartons_per_box </formula>
+<calculation> 3 * 1.5 = 4.5 </calculation>
+<var> widgets_per_box : 4.5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 4.5 </output>

@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+In a national park, the number of redwoods is <fact1>20% more than the number of pines</fact1>. If there are <fact2>600 pines</fact2> in the national park, calculate the total number of pines and redwoods that are there.
+
+## 2. Facts
+
+<fact1>Redwoods percentage: 20% more than pines</fact1>
+<fact2>Number of pines: 600</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many less redwoods there are compared to pines </step1>
+<formula> percentage * number of pines </formula>
+<calculation> 20/100 * 600 = 120 </calculation>
+<var> redwood_difference : 120 </var>
+
+<step2> Calculate the number of redwoods in the park </step2>
+<formula> pines - redwood_difference </formula>
+<calculation> 600 - 120 = 480 </calculation>
+<var> redwoods : 480 </var>
+
+<step3> Calculate the total number of pines and redwoods </step3>
+<formula> redwoods + pines </formula>
+<calculation> 480 + 600 = 1080 </calculation>
+<var> total_trees : 1080 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 1080 </output>

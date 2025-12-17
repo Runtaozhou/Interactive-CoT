@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Tom's puts 30 miles per day on his bike for the first 183 days of the year.</fact1> <fact2>For the rest of the days of the year he goes 35 miles per day.</fact2> How many miles does he drive for the year?
+
+## 2. Facts
+
+<fact1>Miles per day (first part of year): 30 miles</fact1>
+<fact1>Number of days (first part): 183 days</fact1>
+<fact2>Miles per day (rest of year): 35 miles</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many days are left in the year </step1>
+<formula> 365 - first_part_days </formula>
+<calculation> 365 - 183 = 182 days </calculation>
+<var> remaining_days : 182 days </var>
+
+<step2> Calculate the miles driven in the remaining days </step2>
+<formula> miles_per_day * remaining_days </formula>
+<calculation> 30 * 182 = 5460 miles </calculation>
+<var> miles_second_part : 5460 miles </var>
+
+<step3> Calculate the total miles driven throughout the year </step3>
+<formula> (first_part_days * miles_per_day_first) + miles_second_part </formula>
+<calculation> 183 * 30 + 5460 = 11,460 miles </calculation>
+<var> total_miles : 11,460 miles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 11,460 </output>

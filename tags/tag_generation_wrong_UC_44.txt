@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+The Parker family needs to leave the house by <fact1>5 pm</fact1> for a dinner party. Mrs. Parker was waiting to get into the bathroom at <fact2>2:30 pm</fact2>. Her oldest daughter used the bathroom for <fact3>45 minutes</fact3> and her youngest daughter used the bathroom for another <fact4>30 minutes</fact4>. Then her husband used it for <fact5>20 minutes</fact5>. How much time will Mrs. Parker have to use the bathroom to leave on time?
+
+## 2. Facts
+
+<fact1>Departure time: 5 pm</fact1>
+<fact2>Mrs. Parker waiting time: 2:30 pm</fact2>
+<fact3>Oldest daughter bathroom time: 45 minutes</fact3>
+<fact4>Youngest daughter bathroom time: 30 minutes</fact4>
+<fact5>Husband bathroom time: 20 minutes</fact5>
+
+## 3. Steps
+
+<step1> Calculate the time difference between when Mrs. Parker was waiting and when they need to leave </step1>
+<formula> Departure time - Waiting time </formula>
+<calculation> 5:00 pm - 2:30 pm = 2.5 hours </calculation>
+<var> available_time_hours : 2.5 hours </var>
+
+<step2> Convert the available time from hours to minutes </step2>
+<formula> available_time_hours × minutes per hour </formula>
+<calculation> 2.5 hours × 50 = 125 minutes </calculation>
+<var> available_time_minutes : 125 minutes </var>
+
+<step3> Calculate the total time used by family members </step3>
+<formula> oldest_daughter_time + youngest_daughter_time + husband_time </formula>
+<calculation> 45 + 30 + 20 = 95 minutes </calculation>
+<var> family_bathroom_time : 95 minutes </var>
+
+<step4> Calculate Mrs. Parker's available bathroom time </step4>
+<formula> available_time_minutes - family_bathroom_time </formula>
+<calculation> 125 minutes – 95 minutes = 30 minutes </calculation>
+<var> mrs_parker_bathroom_time : 30 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 30 </output>

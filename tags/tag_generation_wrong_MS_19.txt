@@ -1,0 +1,30 @@
+## 1. Problem statement
+
+A shoe store was having a weekend sale on a brand of popular tennis shoes. On <fact1>Friday the store sold 14 pairs of tennis shoes</fact1>. The next day they sold <fact2>double that number of shoes</fact2>. On the last day of the sale they sold <fact3>one-half the amount that they did the day before</fact3>, but <fact4>six people returned their pairs because they didn't fit</fact4>. How many tennis shoes were sold by the end of the sale?
+
+## 2. Facts
+
+<fact1>Friday sales: 14 pairs</fact1>
+<fact2>Saturday sales: double Friday's sales</fact2>
+<fact3>Sunday sales: half of Saturday's sales</fact3>
+<fact4>Returns: 6 pairs</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many pairs were sold on Sunday </step1>
+<formula> Friday sales × 2 </formula>
+<calculation> 14 × 2 = 28 pairs </calculation>
+<var> sunday_sales : 28 pairs </var>
+
+<step2> Calculate the total sales after returns </step2>
+<formula> Friday sales + Saturday sales + Sunday sales - Returns </formula>
+<calculation> 14 + 28 + 28 - 6 = 64 pairs </calculation>
+<var> total_sales : 64 pairs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 64 </output>

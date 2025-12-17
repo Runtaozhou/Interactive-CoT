@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+An organization trying to save endangered species of turtles has taken twice more hawksbill turtles than the number of green turtles into a conservation center. If <fact1>the number of green turtles is 800</fact1>, calculate the number of turtles that have been taken into the conservation center.
+
+## 2. Facts
+
+<fact1>Number of green turtles: 800</fact1>
+
+## 3. Steps
+
+<step1> Calculate how many more hawksbill turtles there are than green turtles </step1>
+<formula> green_turtles * 2 </formula>
+<calculation> 2 * 800 = 1600 </calculation>
+<var> more_hawksbill_turtles : 1600 </var>
+
+<step2> Calculate the number of loggerhead turtles </step2>
+<formula> green_turtles / 2 </formula>
+<calculation> 800 / 2 = 400 </calculation>
+<var> loggerhead_turtles : 400 </var>
+
+<step3> Calculate the total number of hawksbill turtles </step3>
+<formula> green_turtles + more_hawksbill_turtles </formula>
+<calculation> 800 + 1600 = 2400 </calculation>
+<var> hawksbill_turtles : 2400 </var>
+
+<step4> Calculate the total number of turtles in the conservation center </step4>
+<formula> hawksbill_turtles + green_turtles + loggerhead_turtles </formula>
+<calculation> 2400 + 800 + 400 = 3600 </calculation>
+<var> total_turtles : 3600 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 3600 </output>

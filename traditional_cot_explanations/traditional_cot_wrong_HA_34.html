@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Linda is painting her bedroom. Her bedroom has 4 walls, with the room being 20 feet wide by 20 feet long by 8 feet tall. One wall has a 3-foot by 7-foot doorway. A second wall has a 6-foot by 4-foot window. A third wall has a 5-foot by 7-foot doorway to a walk-in-closet. And the fourth wall is completely solid. What is the total area of wall space that Linda will have to paint?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the area of the solid wall.
+            <p>Using the formula: height × width</p>
+            <p>8 ft. × 20 ft. = 160 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the area of the doorway.
+            <p>Using the formula: height × width</p>
+            <p>3 ft. × 7 ft. = 21 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the area of the window.
+            <p>Using the formula: height × width</p>
+            <p>6 ft. × 4 ft. = 24 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the area of the closet door.
+            <p>Using the formula: height × width</p>
+            <p>5 ft. × 7 ft. = 35 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total area that doesn't need painting.
+            <p>Using the formula: doorway_area + window_area + closet_door_area + painting_area</p>
+            <p>21 sq. ft + 24 sq. ft. + 35 sq. ft. + 4 sq. ft. = 84 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total wall area before subtracting non-paintable areas.
+            <p>Using the formula: number of walls × solid_wall_area</p>
+            <p>4 × 160 sq. ft. = 640 sq. ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total area Linda will have to paint.
+            <p>Using the formula: total_wall_area - non_paintable_area</p>
+            <p>640 sq. ft. - 84 sq. ft. = 556 sq. ft.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        556
+    </div>
+</body>
+</html>

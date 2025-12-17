@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A fixer uses 30% of the nails in a container to repair the kitchen. He also used 70% of the remaining nails in the container to repair the fence. If there were 400 nails in the container, how many nails are remaining?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many nails were used to fix the kitchen.
+            <p>We need to find 30% of the total 400 nails:</p>
+            <p>30/100 × 400 = 120 nails</p>
+            <p>So, 120 nails were used for the kitchen repair.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many nails remain after fixing the kitchen.
+            <p>We subtract the nails used for the kitchen from the total:</p>
+            <p>400 - 120 = 280 nails</p>
+            <p>After the kitchen repair, 280 nails remain in the container.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many nails were used to fix the fence.
+            <p>The fixer used 70% of the remaining 280 nails for the fence:</p>
+            <p>70/100 × 280 = 196 nails</p>
+            <p>So, 196 nails were used for the fence repair.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the final number of remaining nails.
+            <p>We subtract the nails used for the fence from the nails that remained after the kitchen repair:</p>
+            <p>280 - 190 = 90 nails</p>
+            <p>Therefore, 90 nails remain in the container after both repairs.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        90
+    </div>
+</body>
+</html>

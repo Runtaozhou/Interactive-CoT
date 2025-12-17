@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John's dog has a litter of 8 puppies. He gives away half of them. He keeps one of the remaining puppies. He then takes the remaining puppies and sells them each for $600. He had to give the owner of the stud $300. How much money does he profit?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many puppies are left after giving half away.
+            <p>John starts with 8 puppies and gives away half of them.</p>
+            <p>8 ÷ 2 = 4 puppies remaining</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many puppies are available to sell after keeping one.
+            <p>From the 4 remaining puppies, John keeps 1 for himself.</p>
+            <p>4 - 1 = 3 puppies available to sell</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total money made from selling the puppies.
+            <p>John sells each of the 3 puppies for $600.</p>
+            <p>3 × $600 = $1,800 total sales</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the profit after paying the stud owner.
+            <p>John needs to pay the stud owner $300 from his sales.</p>
+            <p>$1,800 - $300 = $1,500 profit</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1500
+    </div>
+</body>
+</html>

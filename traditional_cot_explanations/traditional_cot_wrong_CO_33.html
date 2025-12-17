@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Suzie and 5 of her friends decide to rent an Airbnb at Lake Tahoe for 4 days from Thursday to Sunday. The rental rate for weekdays is $420 per day. The weekend rental rate is $540 per day. They all decide to split the rental evenly. How much does each person have to pay?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the cost for weekdays (Thursday and Friday).
+            <p>We need to multiply the weekday rate by the number of weekdays:</p>
+            <p>$420 × 2 = $840</p>
+            <p>So the cost for weekdays is $840.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the cost for weekend days (Saturday and Sunday).
+            <p>We need to multiply the weekend rate by the number of weekend days:</p>
+            <p>$540 × 1 = $540</p>
+            <p>So the cost for weekend days is $540.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total cost of the rental.
+            <p>We add the weekday cost and the weekend cost:</p>
+            <p>$840 + $540 = $1380</p>
+            <p>So the total cost of the rental is $1380.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the cost per person.
+            <p>We divide the total cost by the total number of people (Suzie and her 5 friends = 6 people):</p>
+            <p>$1380 ÷ 6 = $230</p>
+            <p>So each person has to pay $230.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        $230
+    </div>
+</body>
+</html>

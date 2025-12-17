@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Julia is performing in her high school musical this weekend and her family wants to come to the show. Tickets are $12 for adults and $10 for children. If her mom, dad, grandma, and three little sisters come to the show, how much will the total be for their tickets?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the cost for the adults.
+            <p>We need to multiply the adult ticket price by the number of adults attending.</p>
+            <p>Adult ticket price: $12</p>
+            <p>Number of adults: 3 (mom, dad, grandma)</p>
+            <p>$12/adult × 3 adults = $36</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Recalculate the cost for adults including Julia's uncle.
+            <p>We need to recalculate with 4 adults instead of 3.</p>
+            <p>Adult ticket price: $12</p>
+            <p>Number of adults: 4</p>
+            <p>$12/adult × 4 adults = $48</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the cost for the children.
+            <p>We need to multiply the child ticket price by the number of children attending.</p>
+            <p>Child ticket price: $10</p>
+            <p>Number of children: 3 (three little sisters)</p>
+            <p>$10/child × 3 children = $30</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total cost.
+            <p>We add the cost for adults and the cost for children.</p>
+            <p>Adult cost: $48</p>
+            <p>Child cost: $30</p>
+            <p>$48 + $30 = $78</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        $78
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Monika went out for the day and spent some money. She went to the mall and spent $250. Then, she went to the movies and watched 3 movies back to back that each cost $24. Then she stopped by the farmer's market on her way home and got 20 bags of beans at $1.25/bag. How much money did Monika spend throughout her day?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much Monika spent at the movies.
+            <p>We need to multiply the number of movies by the cost per movie:</p>
+            <p>3 movies × $24 per movie = $72</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Add the cost of drinks that Monika bought at the movies.
+            <p>We need to add the movie cost to the cost of drinks (one drink per movie):</p>
+            <p>$72 + (3 movies × $3 per drink) = $72 + $9 = $81</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how much Monika spent at the farmers market.
+            <p>We need to multiply the number of bags by the cost per bag:</p>
+            <p>20 bags × $1.25 per bag = $25</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total amount Monika spent throughout the day.
+            <p>We need to add all the expenses:</p>
+            <p>Mall cost + Total movie cost + Farmers market cost = $250 + $81 + $25 = $356</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        356
+    </div>
+</body>
+</html>

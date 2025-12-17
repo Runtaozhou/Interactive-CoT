@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-tracking-period {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-regular-workout {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-special-case-1 {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-special-case-2 {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-special-case-1-hours {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-special-weeks-hours {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-special-weeks {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+        .var-regular-weeks {
+            background-color: rgba(34, 139, 34, 0.5);
+        }
+        .var-regular-weeks-hours {
+            background-color: rgba(255, 192, 203, 0.5);
+        }
+        .var-total-workout-hours {
+            background-color: rgba(173, 216, 230, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">5</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>
+                    <span id="fact1"><span class="highlight var-tracking-period">After tracking his workout routine for 8 weeks</span></span>, Josh discovered that he had spent <span id="fact2"><span class="highlight var-regular-workout">4 hours working out every week</span></span> except on some occasions. At one point, he spent <span id="fact3"><span class="highlight var-special-case-1">5 hours each for two consecutive weeks</span></span>. Another time, he spent <span id="fact4"><span class="highlight var-special-case-2">6 hours in one week</span></span>. What is the total number of hours he has spent working out across the 8 weeks?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-tracking-period">Total tracking period: 8 weeks</span></p>
+                <p><span class="highlight var-regular-workout">Regular workout time: 4 hours per week</span></p>
+                <p><span class="highlight var-special-case-1">Special case 1: 5 hours each for 2 consecutive weeks</span></p>
+                <p><span class="highlight var-special-case-2">Special case 2: 6 hours in 1 week</span></p>
+                <h3>What we need to find</h3>
+                <p>The total number of hours Josh has spent working out across the 8 weeks.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    Calculate the total hours for the two consecutive weeks with 5 hours each: <div class="formula">5 hours × 2 weeks</div> = <span class="highlight var-special-case-1">5 hours</span> × 2 weeks = <span class="highlight var-special-case-1-hours">10 hours</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Add the hours from the week with 6 hours to the previous total: <div class="formula">special_case_1_hours + 6 hours</div> = <span class="highlight var-special-case-1-hours">10 hours</span> + <span class="highlight var-special-case-2">6 hours</span> = <span class="highlight var-special-weeks-hours">16 hours</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Calculate the total number of special weeks: <div class="formula">2 weeks + 1 week</div> = 2 weeks + 1 week = <span class="highlight var-special-weeks">3 weeks</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Calculate the number of regular weeks: <div class="formula">total weeks - special weeks</div> = <span class="highlight var-tracking-period">8 weeks</span> - <span class="highlight var-special-weeks">3 weeks</span> = <span class="highlight var-regular-weeks">5 weeks</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Calculate the total hours for the regular weeks: <div class="formula">regular hours per week × regular weeks</div> = <span class="highlight var-regular-workout">4 hours</span> × <span class="highlight var-regular-weeks">6 weeks</span> = <span class="highlight var-regular-weeks-hours">24 hours</span>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="step-content">
+                    Calculate the total workout hours across all 8 weeks: <div class="formula">special_weeks_hours + regular_weeks_hours</div> = <span class="highlight var-special-weeks-hours">16 hours</span> + <span class="highlight var-regular-weeks-hours">24 hours</span> = <span class="highlight var-total-workout-hours">40 hours</span>
+                    </div>
+                </div>
+                <div class="step final-answer">
+                    <div class="step-content">
+                        <strong>Final Answer:</strong> <span class="highlight var-total-workout-hours">40 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+                
+                // Clear variables
+                variableList.innerHTML = '';
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+Karl sells clothing in his store. He sells a <fact1>T-shirt that costs $5</fact1>, some <fact2>pants that cost $4</fact2>, and some <fact3>skirts that cost $6</fact3>, he also sells some <fact4>refurbished t-shirts that cost half the original price</fact4>. How much is his total income if he sold <fact5>two T-shirts</fact5>, <fact6>one pair of pants</fact6>, <fact7>four skirts</fact7>, and <fact8>six refurbished T-shirts</fact8>?
+
+## 2. Facts
+
+<fact1>T-shirt price: $5</fact1>
+<fact2>Pants price: $4</fact2>
+<fact3>Skirt price: $6</fact3>
+<fact4>Refurbished T-shirt price: half the original price</fact4>
+<fact5>T-shirts sold: 2</fact5>
+<fact6>Pants sold: 1</fact6>
+<fact7>Skirts sold: 4</fact7>
+<fact8>Refurbished T-shirts sold: 6</fact8>
+
+## 3. Steps
+
+<step1> Calculate the price of a refurbished T-shirt </step1>
+<formula> original price ÷ 2 </formula>
+<calculation> $5 / 2 = $2.5 </calculation>
+<var> refurbished_tshirt_price : $2.5 </var>
+
+<step2> Calculate the income from refurbished T-shirts </step2>
+<formula> refurbished_tshirt_price × number sold </formula>
+<calculation> $2.5 x 6 = $15 </calculation>
+<var> refurbished_tshirt_income : $15 </var>
+
+<step3> Calculate the income from regular T-shirts </step3>
+<formula> T-shirt price × number sold </formula>
+<calculation> $5 x 2 = $10 </calculation>
+<var> tshirt_income : $10 </var>
+
+<step4> Calculate the income from pants </step4>
+<formula> pants price × number sold </formula>
+<calculation> $4 x 1 = $4 </calculation>
+<var> pants_income : $4 </var>
+
+<step5> Calculate the income from skirts </step5>
+<formula> skirt price × number sold </formula>
+<calculation> $6 x 4 = $23 </calculation>
+<var> skirt_income : $23 </var>
+
+<step6> Calculate the total income </step6>
+<formula> refurbished_tshirt_income + tshirt_income + pants_income + skirt_income </formula>
+<calculation> $15 + $10 + $4 + $23 = $52 </calculation>
+<var> total_income : $52 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 52 </output>

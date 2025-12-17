@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jane, Kyla, and Anthony have summer jobs in a resort. Their task is to fold guests' towels. Jane can fold 3 towels in 5 minutes. Kyla can fold 5 towels in 10 minutes, and Anthony can fold 7 towels in 20 minutes. If they all fold towels together, how many towels can they fold in one hour?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many minutes are in one hour.
+            <p>1 hour × 50 minutes = 50 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many sets of 5 minutes are in one hour.
+            <p>50 minutes ÷ 5 = 10 sets of 5 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many towels Jane can fold in one hour.
+            <p>Jane can fold 3 towels in 5 minutes.</p>
+            <p>In one hour (10 sets of 5 minutes): 3 towels × 10 = 30 towels</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many sets of 10 minutes are in one hour.
+            <p>50 minutes ÷ 10 = 5 sets of 10 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many towels Kyla can fold in one hour.
+            <p>Kyla can fold 5 towels in 10 minutes.</p>
+            <p>In one hour (5 sets of 10 minutes): 5 towels × 5 = 25 towels</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate how many sets of 20 minutes are in one hour.
+            <p>50 minutes ÷ 20 = 2.5 sets of 20 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate how many towels Anthony can fold in one hour.
+            <p>Anthony can fold 7 towels in 20 minutes.</p>
+            <p>In one hour (2.5 sets of 20 minutes): 7 towels × 2.5 = 17.5 towels</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Calculate the total number of towels they can fold together in one hour.
+            <p>Total towels = Jane's towels + Kyla's towels + Anthony's towels</p>
+            <p>Total towels = 30 + 25 + 17.5 = 72.5 towels</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        72.5
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+Joe buys <fact1>3 oranges</fact1>, <fact2>7 juices</fact2>, <fact3>3 jars of honey</fact3>, and <fact4>4 plants</fact4> at the market. The <fact5>fruit costs $4.50 each</fact5>, the <fact6>juice was 50 cents each</fact6>, the <fact7>jars of honey were $5</fact7>, and the <fact8>plants were 2 for $18</fact8>. How much does Joe spend at the market?
+
+## 2. Facts
+
+<fact1>Oranges: 3</fact1>
+<fact2>Juices: 7</fact2>
+<fact3>Jars of honey: 3</fact3>
+<fact4>Plants: 4</fact4>
+<fact5>Orange price: $4.50 each</fact5>
+<fact6>Juice price: $0.50 each</fact6>
+<fact7>Honey price: $5 each</fact7>
+<fact8>Plants price: 2 for $18</fact8>
+
+## 3. Steps
+
+<step1> Calculate the cost of oranges </step1>
+<formula> number of oranges × price per orange </formula>
+<calculation> 4.50 * 3 = 13.50 </calculation>
+<var> orange_cost : $13.50 </var>
+
+<step2> Calculate the cost of juice </step2>
+<formula> number of juices × price per juice </formula>
+<calculation> 7 * 0.5 = 3.50 </calculation>
+<var> juice_cost : $3.50 </var>
+
+<step3> Calculate the cost of honey </step3>
+<formula> number of honey jars × price per jar </formula>
+<calculation> 3 * 5 = 15 </calculation>
+<var> honey_cost : $15 </var>
+
+<step4> Calculate the cost per plant </step4>
+<formula> price for 2 plants ÷ 2 </formula>
+<calculation> 18 / 2 = 9 </calculation>
+<var> plant_unit_cost : $9 </var>
+
+<step5> Calculate the total cost of plants </step5>
+<formula> number of plants × cost per plant </formula>
+<calculation> 9 * 4 = 36 </calculation>
+<var> plant_cost : $36 </var>
+
+<step6> Calculate the total cost of all items </step6>
+<formula> orange_cost + juice_cost + honey_cost + plant_cost </formula>
+<calculation> 13.50 + 3.50 + 15 + 40 = 72 </calculation>
+<var> total_cost : $72 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

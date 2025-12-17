@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        In a set of magicians cards, there are 15 red cards, and 60% more green cards. Yellow cards are as many, as the sum of red and green cards. How many cards of all mentioned colors are there?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many more green cards there are than red cards.
+            <p>We know there are 60% more green cards than red cards.</p>
+            <p>Number of additional green cards = 60/100 × 15 = 9</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the total number of green cards.
+            <p>We need to subtract the additional green cards from the red cards.</p>
+            <p>Number of green cards = 15 - 9 = 6</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of yellow cards.
+            <p>Yellow cards are equal to the sum of red and green cards.</p>
+            <p>Number of yellow cards = 15 + 6 = 21</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Find the total number of cards of all colors.
+            <p>Total cards = Yellow cards + Red cards + Green cards</p>
+            <p>Total cards = 21 + 15 + 6 = 42</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        42
+    </div>
+</body>
+</html>

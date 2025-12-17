@@ -1,0 +1,53 @@
+## 1. Problem statement
+
+<fact1>Tom and Devin have been teaching for a total of 70 years.</fact1> <fact2>Devin has been teaching for 5 less than half the number of years that Tom has.</fact2> How many years has Tom been teaching?
+
+## 2. Facts
+
+<fact1>Total teaching years: 70 years</fact1>
+<fact2>Devin's teaching years: 5 less than half of Tom's years</fact2>
+
+## 3. Steps
+
+<step1> Define a variable for Tom's teaching years </step1>
+<formula> </formula>
+<calculation> </calculation>
+<var> x : Tom's teaching years </var>
+
+<step2> Express Devin's teaching years in terms of Tom's </step2>
+<formula> (1/2)x - 5 </formula>
+<calculation> </calculation>
+<var> Devin's years : (1/2)x - 5 </var>
+
+<step3> Set up an equation using the total years </step3>
+<formula> 70 = x + ((1/2)x - 5) </formula>
+<calculation> </calculation>
+<var> </var>
+
+<step4> Simplify the equation </step4>
+<formula> 70 = (3/2)x - 5 </formula>
+<calculation> </calculation>
+<var> </var>
+
+<step5> Add 5 to both sides </step5>
+<formula> 80 = (3/2)x </formula>
+<calculation> 70 + 5 = 75, not 80 </calculation>
+<var> </var>
+
+<step6> Solve for x </step6>
+<formula> x = 80 ÷ (3/2) </formula>
+<calculation> x = 80 ÷ (3/2) = 53.333333333333336 </calculation>
+<var> x : 53.333333333333336 </var>
+
+<step7> State the final answer </step7>
+<formula> </formula>
+<calculation> </calculation>
+<var> Tom's teaching years : 53.333333333333336 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 53.333333333333336 </output>

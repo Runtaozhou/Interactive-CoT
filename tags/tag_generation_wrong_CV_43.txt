@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Carolyn buys a silverware set with <fact1>6 knives</fact1>, <fact2>12 forks</fact2>, and <fact3>three times as many spoons as knives</fact3>. Then her friend trades her <fact4>10 knives for 6 spoons</fact4>. What percentage of Carolyn's silverware is knives?
+
+## 2. Facts
+
+<fact1>Initial knives: 6</fact1>
+<fact2>Forks: 12</fact2>
+<fact3>Spoons ratio: 3 times knives</fact3>
+<fact4>Trade: 10 knives for 6 spoons</fact4>
+
+## 3. Steps
+
+<step1> First find the final number of knives Carolyn has </step1>
+<formula> initial knives + traded knives </formula>
+<calculation> 10 knives + 5 knives = 15 knives </calculation>
+<var> final_knives : 15 knives </var>
+
+<step2> Then find the initial number of spoons Carolyn has </step2>
+<formula> initial knives × spoon ratio </formula>
+<calculation> 6 knives * 3 spoons/knife = 18 spoons </calculation>
+<var> initial_spoons : 18 spoons </var>
+
+<step3> Then find the final number of spoons Carolyn has </step3>
+<formula> initial spoons - traded spoons </formula>
+<calculation> 18 spoons - 6 spoons = 12 spoons </calculation>
+<var> final_spoons : 12 spoons </var>
+
+<step4> Then find the total final amount of silverware Carolyn has </step4>
+<formula> final spoons + final knives + forks </formula>
+<calculation> 12 spoons + 15 knives + 12 forks = 39 pieces </calculation>
+<var> total_silverware : 39 pieces </var>
+
+<step5> Then divide the number of knives by the total number of pieces and multiply by 100% to express the answer as a percentage </step5>
+<formula> (final knives ÷ total silverware) × 100% </formula>
+<calculation> 15 knives / 39 pieces * 100% = 38.46% </calculation>
+<var> knife_percentage : 38.46% </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 38.46 </output>

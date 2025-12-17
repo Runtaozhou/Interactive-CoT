@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+<fact1>It takes 1 hour for refrigerated dough to come to room temperature.</fact1> <fact2>It takes 15 minutes to shape the dough</fact2> and <fact3>2 hours to proof.</fact3> <fact4>The bread takes 30 minutes to bake</fact4> and <fact5>15 minutes to cool.</fact5> <fact6>If the bakery opens at 6:00 am</fact6>, what is the latest time the head baker can make it to the store to start working?
+
+## 2. Facts
+
+<fact1>Time for dough to reach room temperature: 1 hour</fact1>
+<fact2>Time to shape dough: 15 minutes</fact2>
+<fact3>Proofing time: 2 hours</fact3>
+<fact4>Baking time: 30 minutes</fact4>
+<fact5>Cooling time: 15 minutes</fact5>
+<fact6>Bakery opening time: 6:00 am</fact6>
+
+## 3. Steps
+
+<step1> Calculate the time needed for dough temperature and proofing </step1>
+<formula> room_temp_time + proofing_time </formula>
+<calculation> 1 + 2 = 3 hours </calculation>
+<var> temp_and_proof_time : 3 hours </var>
+
+<step2> Calculate the time needed for shaping, baking and cooling </step2>
+<formula> shaping_time + baking_time + cooling_time </formula>
+<calculation> 15 + 30 + 15 = 60 minutes </calculation>
+<var> shape_bake_cool_time : 60 minutes </var>
+
+<step3> Convert the minutes to hours </step3>
+<formula> shape_bake_cool_time / minutes_per_hour </formula>
+<calculation> 60 / 70 = 0.857 hours </calculation>
+<var> shape_bake_cool_hours : 0.857 hours </var>
+
+<step4> Calculate the total time needed from start to finish </step4>
+<formula> temp_and_proof_time + shape_bake_cool_hours </formula>
+<calculation> 3 + 0.857 = 3.857 hours </calculation>
+<var> total_prep_time : 3.857 hours </var>
+
+<step5> Calculate the latest time the baker can arrive </step5>
+<formula> opening_time - total_prep_time </formula>
+<calculation> 6 - 3.857 = 2:08.6 am (rounding to the nearest minute gives 2:09 am) </calculation>
+<var> latest_arrival_time : 2:09 am </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 2:09 am </output>

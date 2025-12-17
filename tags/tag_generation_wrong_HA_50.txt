@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+Hash has nine more than half as many toys as Bill has. If <fact1>Bill has 60 toys</fact1>, how many total toys do the boys have?
+
+## 2. Facts
+
+<fact1>Bill has 60 toys</fact1>
+
+## 3. Steps
+
+<step1> Calculate half of Bill's toys </step1>
+<formula> Bill's toys ÷ 2 </formula>
+<calculation> 60 toys / 2 = 30 toys </calculation>
+<var> half_bills_toys : 30 toys </var>
+
+<step2> Calculate Hash's toys by adding 9 to half of Bill's toys </step2>
+<formula> half_bills_toys + 9 </formula>
+<calculation> 30 toys + 9 toys = 39 toys </calculation>
+<var> hash_toys : 39 toys </var>
+
+<step3> Add 5 more toys to Hash's collection </step3>
+<formula> hash_toys + 5 </formula>
+<calculation> 39 toys + 5 toys = 44 toys </calculation>
+<var> hash_new_total : 44 toys </var>
+
+<step4> Calculate the total toys both boys have </step4>
+<formula> Bill's toys + hash_new_total </formula>
+<calculation> 60 toys + 44 toys = 104 toys </calculation>
+<var> total_toys : 104 toys </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 104 </output>

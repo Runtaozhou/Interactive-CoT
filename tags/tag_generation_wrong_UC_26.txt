@@ -1,0 +1,70 @@
+## 1. Problem statement
+
+Angelo and Melanie want to plan how many hours over the next week they should study together for their test next week. They have <fact1>2 chapters of their textbook to study</fact1> and <fact2>4 worksheets to memorize</fact2>. They figure out that they should dedicate <fact3>3 hours to each chapter</fact3> of their textbook and <fact4>1.5 hours for each worksheet</fact4>. If they plan to study <fact5>no more than 4 hours each day</fact5>, how many days should they plan to study total over the next week if they take a <fact6>10-minute break every hour</fact6>, include <fact7>3 10-minute snack breaks each day</fact7>, and <fact8>30 minutes for lunch each day</fact8>?
+
+## 2. Facts
+
+<fact1>Textbook chapters: 2</fact1>
+<fact2>Worksheets: 4</fact2>
+<fact3>Hours per chapter: 3</fact3>
+<fact4>Hours per worksheet: 1.5</fact4>
+<fact5>Maximum study hours per day: 4</fact5>
+<fact6>Break duration: 10 minutes per hour</fact6>
+<fact7>Snack breaks: 3 breaks of 10 minutes each day</fact7>
+<fact8>Lunch break: 30 minutes each day</fact8>
+
+## 3. Steps
+
+<step1> Calculate the total hours needed for textbook chapters </step1>
+<formula> hours per chapter × number of chapters </formula>
+<calculation> 3 hours x 2 chapters = 6 hours total </calculation>
+<var> textbook_hours : 6 hours </var>
+
+<step2> Calculate the total hours needed for worksheets </step2>
+<formula> hours per worksheet × number of worksheets </formula>
+<calculation> 1.5 hours x 4 worksheets = 6 hours total </calculation>
+<var> worksheet_hours : 6 hours </var>
+
+<step3> Calculate the total study hours needed </step3>
+<formula> textbook_hours + worksheet_hours </formula>
+<calculation> 12 / 4 = 3 days </calculation>
+<var> total_study_hours : 12 hours </var>
+<var> initial_days_needed : 3 days </var>
+
+<step4> Calculate the additional time needed for hourly breaks </step4>
+<formula> total study hours × break time per hour </formula>
+<calculation> 12 total hours x 15 minutes = 180 extra minutes for breaks </calculation>
+<var> hourly_break_minutes : 180 minutes </var>
+
+<step5> Calculate the time needed for snack breaks </step5>
+<formula> number of snack breaks × time per snack break </formula>
+<calculation> 3 x 15 minutes = 45 minutes </calculation>
+<var> snack_break_minutes : 45 minutes </var>
+
+<step6> Calculate the total additional time needed for all breaks and lunch </step6>
+<formula> hourly break minutes + snack break minutes + lunch minutes </formula>
+<calculation> 180 minutes for breaks + 45 minutes for snack breaks + 30 minutes for lunch = 255 minutes, or 255 / 50 minutes per hour = 5.1 extra hours </calculation>
+<var> total_break_hours : 5.1 hours </var>
+
+<step7> Calculate the total hours needed including breaks </step7>
+<formula> total study hours + total break hours </formula>
+<calculation> 12 hours to study + 5.1 hours of breaks = 17.1 hours total </calculation>
+<var> total_hours_with_breaks : 17.1 hours </var>
+
+<step8> Calculate the number of days needed based on maximum hours per day </step8>
+<formula> total hours with breaks ÷ maximum hours per day </formula>
+<calculation> 17.1 hours / 4 hours each day = 4.275 </calculation>
+<var> days_needed_decimal : 4.275 days </var>
+
+<step9> Round up to find the total days needed </step9>
+<formula> ceiling(days_needed_decimal) </formula>
+<calculation> They will need to plan to study 5 days to allow for all the time they need </calculation>
+<var> days_needed : 5 days </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 5 </output>

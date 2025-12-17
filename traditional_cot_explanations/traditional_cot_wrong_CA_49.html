@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Out of the 80 students who took the biology exam, only 2/5 of them managed to score 100%. If a score below 80% qualified as failing, and 50 percent of the remaining students who didn't score 100% managed to score over 80%, calculate the number of students who failed the exam.
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of students who scored 100%
+            <p>We need to find how many students scored 100% on the exam.</p>
+            <p>Total students × Fraction scoring 100% = 80 × 2/5 = 32 students</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the number of students who did not score 100%
+            <p>We need to determine how many students scored less than 100%.</p>
+            <p>Total students - Students with 100% = 80 - 32 = 48 students</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of students who scored over 80% but below 100%
+            <p>We know that 50% of the remaining students scored over 80% but below 100%.</p>
+            <p>Percentage of remaining students scoring over 80% × Students without 100% = 50/100 × 48 = 23 students</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of students who failed (scored below 80%)
+            <p>Now we can find how many students failed the exam by subtracting those who scored over 80% from those who didn't score 100%.</p>
+            <p>Students without 100% - Students over 80% = 48 - 23 = 25 students</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        25
+    </div>
+</body>
+</html>

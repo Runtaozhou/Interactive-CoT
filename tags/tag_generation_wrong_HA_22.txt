@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+John decides to start collecting art. He pays the same price for his first <fact1>3 pieces of art</fact1> and the total price came to <fact2>$45,000</fact2>. The next piece of art was <fact3>50% more expensive</fact3> than those. How much did all the art cost?
+
+## 2. Facts
+
+<fact1>First pieces of art: 3</fact1>
+<fact2>Total price for first 3 pieces: $45,000</fact2>
+<fact3>Next piece price increase: 50%</fact3>
+
+## 3. Steps
+
+<step1> Calculate the cost of each of the first 3 pieces of art </step1>
+<formula> total_price / number_of_pieces </formula>
+<calculation> 45000 / 3 = $15,000 </calculation>
+<var> price_per_piece : $15,000 </var>
+
+<step2> Calculate how much more expensive the next piece was </step2>
+<formula> price_per_piece * 0.5 </formula>
+<calculation> 15,000 * 0.5 = $7,500 </calculation>
+<var> price_increase : $7,500 </var>
+
+<step3> Calculate the cost of the fourth piece including delivery service </step3>
+<formula> price_per_piece + price_increase + delivery_fee </formula>
+<calculation> 15,000 + 7,500 + 2,500 = $22,500 </calculation>
+<var> fourth_piece_cost : $22,500 </var>
+
+<step4> Calculate the total cost of all art pieces </step4>
+<formula> first_three_pieces_cost + fourth_piece_cost + delivery_fee </formula>
+<calculation> 45,000 + 22,500 + 2,500 = $70,000 </calculation>
+<var> total_cost : $70,000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 70,000 </output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Meghan had money in the following denomination: <fact1>2 $100 bills</fact1>, <fact2>5 $50 bills</fact2>, and <fact3>10 $10 bills</fact3>. How much money did he have altogether?
+
+## 2. Facts
+
+<fact1>$100 bills: 2</fact1>
+<fact2>$50 bills: 5</fact2>
+<fact3>$10 bills: 10</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total value of $100 bills </step1>
+<formula> Number of $100 bills × $100 </formula>
+<calculation> 2 × $100 = $200 </calculation>
+<var> hundred_dollar_value : $200 </var>
+
+<step2> Calculate the total value of $50 bills </step2>
+<formula> Number of $50 bills × $50 </formula>
+<calculation> 5 × $50 = $250 </calculation>
+<var> fifty_dollar_value : $250 </var>
+
+<step3> Calculate the total value of $10 bills </step3>
+<formula> Number of $10 bills × $10 </formula>
+<calculation> 10 × $10 = $100 </calculation>
+<var> ten_dollar_value : $100 </var>
+
+<step4> Add all values including a $20 bill found in pocket </step4>
+<formula> hundred_dollar_value + fifty_dollar_value + ten_dollar_value + $20 </formula>
+<calculation> $200 + $250 + $100 + $20 = $570 </calculation>
+<var> total_money : $570 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 570 </output>

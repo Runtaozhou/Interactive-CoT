@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+A party of <fact1>4</fact1> order <fact2>3 dozen oysters on the half shell for $15.00 a dozen</fact2>, <fact3>2 pounds of steamed shrimp for $14.00 a pound</fact3> and <fact4>2 pounds of fried clams for $13.50 a pound</fact4>. If they split the bill equally, how much will they each owe?
+
+## 2. Facts
+
+<fact1>Number of people: 4</fact1>
+<fact2>Oysters: 3 dozen at $15.00 per dozen</fact2>
+<fact3>Shrimp: 2 pounds at $14.00 per pound</fact3>
+<fact4>Fried clams: 2 pounds at $13.50 per pound</fact4>
+
+## 3. Steps
+
+<step1> They ordered 3 dozen oysters at $15.00 a dozen so that's 3*15 = $45.00 </step1>
+<formula> 3 × $15.00 </formula>
+<calculation> 3 × 15 = 45 </calculation>
+<var> oyster_cost: $45.00 </var>
+
+<step2> They ordered 2 pounds of shrimp for $14.00 a pound so that's 2*14 = $28.00 </step2>
+<formula> 2 × $14.00 </formula>
+<calculation> 2 × 14 = 28 </calculation>
+<var> shrimp_cost: $28.00 </var>
+
+<step3> They ordered 2 pounds of fried clams for $13.50 a pound so that's 2*13.50 = $27.00 </step3>
+<formula> 2 × $13.50 </formula>
+<calculation> 2 × 13.50 = 27 </calculation>
+<var> clam_cost: $27.00 </var>
+
+<step4> All total their bill comes to 45+28+27 = $100.00 </step4>
+<formula> $45.00 + $28.00 + $27.00 </formula>
+<calculation> 45 + 28 + 27 = 100 </calculation>
+<var> total_bill: $100.00 </var>
+
+<step5> Their bill was $100.00 and they are splitting it equally amongst 4 people so they each owe 100/4 = $25.00 </step5>
+<formula> $100.00 ÷ 4 </formula>
+<calculation> 100 ÷ 4 = 25 </calculation>
+<var> cost_per_person: $25.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output>25</output>

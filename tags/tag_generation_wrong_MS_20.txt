@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Shawn collected <fact1>40 plain pebbles</fact1>. He painted <fact2>9 pebbles red</fact2> and <fact3>13 pebbles blue</fact3>. He then divided the remaining pebbles equally into <fact4>3 groups</fact4>, and painted them purple, yellow, and green. What is the difference between the number of blue and yellow pebbles?
+
+## 2. Facts
+
+<fact1>Total pebbles: 40</fact1>
+<fact2>Red pebbles: 9</fact2>
+<fact3>Blue pebbles: 13</fact3>
+<fact4>Number of groups for remaining pebbles: 3</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many pebbles were painted red and other colors </step1>
+<formula> Total pebbles - Red pebbles </formula>
+<calculation> 40 - 9 = 31 </calculation>
+<var> non_red_pebbles : 31 </var>
+
+<step2> Determine how many groups the remaining pebbles were divided into </step2>
+<formula> </formula>
+<calculation> </calculation>
+<var> number_of_groups : 4 </var>
+
+<step3> Calculate how many pebbles were painted yellow </step3>
+<formula> non_red_pebbles / number_of_groups </formula>
+<calculation> 31/4 = 7.75, which rounds up to 8 </calculation>
+<var> yellow_pebbles : 8 </var>
+
+<step4> Find the difference between blue and yellow pebbles </step4>
+<formula> Blue pebbles - Yellow pebbles </formula>
+<calculation> 13 - 8 = 5 </calculation>
+<var> difference : 5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5 </output>

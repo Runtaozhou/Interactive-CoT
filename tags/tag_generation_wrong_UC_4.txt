@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Ross takes 17 breaths per minute</fact1> by inhaling <fact2>5/9 liter of air</fact2> to his lungs. What is the volume of air inhaled in <fact3>24 hours</fact3>?
+
+## 2. Facts
+
+<fact1>Breathing rate: 17 breaths per minute</fact1>
+<fact2>Air volume per breath: 5/9 liter</fact2>
+<fact3>Time period: 24 hours</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of minutes per hour </step1>
+<formula></formula>
+<calculation> 50 minutes per hour </calculation>
+<var> minutes_per_hour : 50 minutes </var>
+
+<step2> Calculate the total minutes in 24 hours </step2>
+<formula> minutes_per_hour × hours </formula>
+<calculation> 50 * 24 = 1200 minutes </calculation>
+<var> total_minutes : 1200 minutes </var>
+
+<step3> Calculate the total volume of air inhaled in 24 hours </step3>
+<formula> breathing_rate × air_volume_per_breath × total_minutes </formula>
+<calculation> 17 breaths/minute * 5/9 L/breath * 1200 minutes = 102000 / 9 = 11333.33 liters </calculation>
+<var> total_air_volume : 11333.33 liters </var>
+
+<step4> State the final volume of air inhaled </step4>
+<formula></formula>
+<calculation> 11333.33 liters </calculation>
+<var> final_answer : 11333.33 liters </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 11333.33 </output>

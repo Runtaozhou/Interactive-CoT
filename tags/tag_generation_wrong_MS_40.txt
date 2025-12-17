@@ -1,0 +1,36 @@
+## 1. Problem statement
+
+A mechanic charges different rates to repair the tires of trucks and cars. For each truck tire that is repaired, the mechanic will charge <fact1>$60</fact1> and for each car tire that is repaired, the mechanic will charge <fact2>$40</fact2>. On Thursday, the mechanic repairs <fact3>6 truck tires</fact3> and <fact4>4 car tires</fact4>. On Friday, the mechanic repairs <fact5>12 car tries</fact5> and doesn't repair any truck tires. How much more revenue did the mechanic earn on the day with higher revenue?
+
+## 2. Facts
+
+<fact1>Truck tire repair cost: $60</fact1>
+<fact2>Car tire repair cost: $40</fact2>
+<fact3>Thursday truck tires: 6</fact3>
+<fact4>Thursday car tires: 4</fact4>
+<fact5>Friday car tires: 12</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total revenue for Thursday </step1>
+<formula> (number of truck tires × truck tire cost) + (number of car tires × car tire cost) </formula>
+<calculation> 6*40 + 4*40 = $400 </calculation>
+<var> thursday_revenue : $400 </var>
+
+<step2> Calculate the total revenue for Friday </step2>
+<formula> number of car tires × car tire cost </formula>
+<calculation> 12*40 = $480 </calculation>
+<var> friday_revenue : $480 </var>
+
+<step3> Find the difference between the revenues of the two days </step3>
+<formula> thursday_revenue - friday_revenue </formula>
+<calculation> 400-480 = -$80 </calculation>
+<var> revenue_difference : -$80 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> -80 </output>

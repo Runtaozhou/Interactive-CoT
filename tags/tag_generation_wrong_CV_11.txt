@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+<fact1>Josh had 100 gummy bear candies.</fact1> He decided to give <fact2>his 3 siblings 10 candies each.</fact2> Then he gave <fact3>half of the remaining candies</fact3> to his best friend. If he only wants to eat <fact4>16 gummy bear candies</fact4>, how many candies are left to be shared with others?
+
+## 2. Facts
+
+<fact1>Initial candies: 100</fact1>
+<fact2>Siblings: 3, each getting 10 candies</fact2>
+<fact3>Fraction given to best friend: 1/2 of remaining</fact3>
+<fact4>Candies Josh wants to eat: 16</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total number of candies given to siblings</step1>
+<formula>Number of siblings × Candies per sibling</formula>
+<calculation>3 × 10 = 30 candies</calculation>
+<var>candies_to_siblings: 30</var>
+
+<step2>Calculate the remaining candies after giving to siblings</step2>
+<formula>Initial candies - Candies to siblings</formula>
+<calculation>110 - 30 = 80 candies</calculation>
+<var>remaining_after_siblings: 80</var>
+
+<step3>Calculate candies given to best friend</step3>
+<formula>Remaining after siblings × 1/2</formula>
+<calculation>80/2 = 40 candies</calculation>
+<var>candies_to_friend: 40</var>
+
+<step4>Calculate candies left after giving to best friend</step4>
+<formula>Remaining after siblings - Candies to friend</formula>
+<calculation>80 - 40 = 40 candies</calculation>
+<var>remaining_after_friend: 40</var>
+
+<step5>Calculate candies left to share with others</step5>
+<formula>Remaining after friend - Candies Josh wants to eat</formula>
+<calculation>40 - 16 = 24 candies</calculation>
+<var>candies_to_share: 24</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>24</output>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The length of a rectangle is four times its width. If the area is 100 m². what is the length of the rectangle?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Define variables for the length and width of the rectangle.
+            <p>Let's denote the length of the rectangle as L and the width as W.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Express the relationship between length and width.
+            <p>Since the length is four times the width, we can write:</p>
+            <p>L = 4 × W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Use the area to write an equation.
+            <p>The area of the rectangle is 100 m², so:</p>
+            <p>100 = L + W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Substitute the length expression into the area equation.
+            <p>Substituting L = 4 × W into the area equation:</p>
+            <p>100 = 4 × W + W = 5 × W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Solve for the width.
+            <p>From the equation 5 × W = 100, we can find W:</p>
+            <p>W = 100 ÷ 5 = 20</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the length using the width.
+            <p>Now that we know W = 20, we can find the length:</p>
+            <p>L = 4 × W = 4 × 20 = 80 m</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        80
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Dream's car consumes <fact1>4 gallons of gas per mile</fact1>. If she drives <fact2>400 miles today</fact2> and <fact3>200 more miles tomorrow than today</fact3>, how many gallons of gas will the car consume?
+
+## 2. Facts
+
+<fact1>Gas consumption: 4 gallons per mile</fact1>
+<fact2>Distance today: 400 miles</fact2>
+<fact3>Additional distance tomorrow: 200 miles more than today</fact3>
+
+## 3. Steps
+
+<step1> Calculate the gas consumption for today's drive </step1>
+<formula> gas consumption per mile × miles driven today </formula>
+<calculation> 4 * 400 = 1600 gallons </calculation>
+<var> today_gas : 1600 gallons </var>
+
+<step2> Calculate the total distance for tomorrow </step2>
+<formula> today's distance + additional distance </formula>
+<calculation> 300 + 400 = 700 miles </calculation>
+<var> tomorrow_distance : 700 miles </var>
+
+<step3> Calculate the gas consumption for tomorrow's drive </step3>
+<formula> gas consumption per mile × tomorrow's distance </formula>
+<calculation> 4 * 700 = 2800 gallons </calculation>
+<var> tomorrow_gas : 2800 gallons </var>
+
+<step4> Calculate the total gas consumption for both days </step4>
+<formula> today's gas consumption + tomorrow's gas consumption </formula>
+<calculation> 2800 + 1600 = 4400 gallons </calculation>
+<var> total_gas : 4400 gallons </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 4400 </output>

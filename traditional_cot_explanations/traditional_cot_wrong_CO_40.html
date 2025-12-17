@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Lisa has 36 candies. On Mondays and Wednesdays, she eats 2 candies for each day and on the other days of the week she eats 1 candy for each day. How many weeks does it take for Lisa to eat all of the candies?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many candies Lisa eats on Mondays and Wednesdays.
+            <p>Lisa eats 2 candies on each of these days, and there are 2 such days in a week.</p>
+            <p>2 candies × 2 days = 4 candies per week from Mondays and Wednesdays</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many candies Lisa eats on the other days of the week (Thursday to Sunday).
+            <p>Lisa eats 1 candy on each of these days, and there are 4 such days in a week.</p>
+            <p>1 candy × 4 days = 4 candies per week from other days</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total candies Lisa eats in a week.
+            <p>We add the candies eaten on Mondays and Wednesdays to the candies eaten on other days.</p>
+            <p>4 candies + 4 candies = 8 candies per week</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many weeks it takes to eat all candies.
+            <p>We divide the total number of candies by the number of candies eaten per week.</p>
+            <p>36 candies ÷ 8 candies per week = 4.5 weeks</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        4.5
+    </div>
+</body>
+</html>

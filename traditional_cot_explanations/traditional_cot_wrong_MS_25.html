@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Tom bought 10 packages of miniature racing cars. Each package contains five cars. He gave each of his two nephews 1/5 of the cars. How many miniature racing cars are left with Tom?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many cars Tom gave to each nephew.
+            <p>We need to find out how many packages each nephew received.</p>
+            <p>Total packages × Fraction given = 10 × 1/5 = 2 packages per nephew</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of cars given to both nephews.
+            <p>Now we need to find the total number of packages given to both nephews.</p>
+            <p>Packages per nephew × number of nephews = 2 × 2 = 4 packages total</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many cars Tom has left.
+            <p>We can now determine how many packages Tom has left after giving some to his nephews.</p>
+            <p>Total packages - total packages given = 10 - 4 = 6 packages left with Tom</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        6
+    </div>
+</body>
+</html>

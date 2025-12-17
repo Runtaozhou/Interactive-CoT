@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+Candy has a chair rental business. During <fact1>the weekdays, 60 chairs are rented each day</fact1>; but during <fact2>weekends, 100 chairs are rented each day</fact2>. If this continues, how many chairs in total will Candy be able to rent out in <fact3>two 4-week months</fact3>?
+
+## 2. Facts
+
+<fact1>Weekday rentals: 60 chairs per day</fact1>
+<fact2>Weekend rentals: 100 chairs per day</fact2>
+<fact3>Time period: two 4-week months</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total chairs rented during weekdays in a week </step1>
+<formula> weekday_chairs × 5 </formula>
+<calculation> 60 × 5 = 300 chairs </calculation>
+<var> weekday_chairs_per_week : 300 chairs </var>
+
+<step2> Calculate the total chairs rented during weekends in a week </step2>
+<formula> weekend_chairs × 2 </formula>
+<calculation> 100 × 2 = 200 chairs </calculation>
+<var> weekend_chairs_per_week : 200 chairs </var>
+
+<step3> Calculate the total chairs rented in a week </step3>
+<formula> weekday_chairs_per_week + weekend_chairs_per_week </formula>
+<calculation> 300 + 200 = 500 chairs </calculation>
+<var> chairs_per_week : 500 chairs </var>
+
+<step4> Calculate the total chairs rented in a month </step4>
+<formula> chairs_per_week × 4 </formula>
+<calculation> 500 × 4 = 1950 chairs </calculation>
+<var> chairs_per_month : 1950 chairs </var>
+
+<step5> Calculate the total chairs rented in two months </step5>
+<formula> chairs_per_month × 2 </formula>
+<calculation> 1950 × 2 = 3900 chairs </calculation>
+<var> total_chairs : 3900 chairs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 3900 </output>

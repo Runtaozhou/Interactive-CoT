@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Isabella has three times as many green houses as yellow houses. She also has 40 fewer yellow houses than red houses. If she has 90 green houses, how many of her houses are not yellow?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of yellow houses based on the number of green houses.
+            <p>Since Isabella has three times as many green houses as yellow houses, we can find the number of yellow houses by dividing the number of green houses by 3.</p>
+            <p>Yellow houses = Green houses ÷ 3 = 90 ÷ 3 = 30</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of blue houses based on the number of yellow houses.
+            <p>We need to find the number of blue houses using the yellow houses.</p>
+            <p>Blue houses = Yellow houses - 40 = 30 - 40 = -10</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of houses that are not yellow.
+            <p>To find the number of houses that are not yellow, we add the blue houses and green houses.</p>
+            <p>Non-yellow houses = Blue houses + Green houses = -10 + 90 = 80</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        80
+    </div>
+</body>
+</html>

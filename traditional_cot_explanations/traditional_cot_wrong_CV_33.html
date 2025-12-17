@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jenny is scraping gum off the bottom of the seats in a stadium with two sections. Section A has 1 subsection with 60 seats and 3 subsections with 80 seats each. Section B has 20 more seats than 3 times as many seats as Section A has total. How many seats does Section B have?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, I need to find how many total seats are in the 80-seat subsections of Section A. I'll multiply the number of subsections by the number of seats in each subsection.
+            <br>
+            3 subsections × 70 seats per subsection = 210 seats
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now I'll add the number of seats in the 60-seat subsection to find the total number of seats in Section A.
+            <br>
+            210 seats + 60 seats = 270 seats
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> According to the problem, Section B has 3 times as many seats as Section A, plus 20 more. So I'll multiply the total seats in Section A by 3.
+            <br>
+            270 seats × 3 = 810 seats
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Finally, I'll add 20 seats to find the total number of seats in Section B.
+            <br>
+            810 seats + 20 seats = 830 seats
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        830
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How long does it take to download the file?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find how many gigabytes are in 40% of the file.
+            <br>
+            File size × percentage = 200 GB × 40% = 80 GB
+            <br>
+            So, Carla downloads 80 GB before Windows forces a restart.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, we calculate how long it takes to download 40% of the file before Windows restarts.
+            <br>
+            Partial download ÷ download rate = 80 GB ÷ 2 GB/minute = 40 minutes
+            <br>
+            So, Carla downloads for 40 minutes before the restart happens.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> After the restart, Carla has to download the entire file again. Let's calculate how long it takes to download the whole file.
+            <br>
+            File size ÷ download rate = 200 GB ÷ 2 GB/minute = 100 minutes
+            <br>
+            So, downloading the entire file takes 100 minutes.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Finally, we add up all the time components: the time spent on the initial partial download, the Windows update time, and the time to download the entire file after the restart.
+            <br>
+            Time until restart + Windows update time + full download time = 40 minutes + 20 minutes + 100 minutes = 160 minutes
+            <br>
+            Therefore, the total time to download the file is 160 minutes.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        160
+    </div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            border-left: 3px solid gray;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .explanation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-initial-students {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-new-students {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-dropout-rate {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-additional-dropouts {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-enrollment-increase-factor {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-schedule-conflict-dropouts {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-final-rally-enrollments {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+        .var-later-dropout-rate {
+            background-color: rgba(34, 139, 34, 0.5);
+        }
+        .var-graduation-rate {
+            background-color: rgba(255, 192, 203, 0.5);
+        }
+        .var-total-after-advertising {
+            background-color: rgba(173, 216, 230, 0.5);
+        }
+        .var-initial-dropouts {
+            background-color: rgba(240, 128, 128, 0.5);
+        }
+        .var-students-after-dropouts {
+            background-color: rgba(152, 251, 152, 0.5);
+        }
+        .var-students-after-rally {
+            background-color: rgba(255, 222, 173, 0.5);
+        }
+        .var-students-after-conflicts {
+            background-color: rgba(216, 191, 216, 0.5);
+        }
+        .var-total-enrolled {
+            background-color: rgba(255, 250, 205, 0.5);
+        }
+        .var-students-after-dropouts-2 {
+            background-color: rgba(176, 224, 230, 0.5);
+        }
+        .var-final-enrolled {
+            background-color: rgba(255, 182, 193, 0.5);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="wrong-step">5</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>A local college is offering German lessons and currently has 
+                    <span id="fact1"><span class="highlight var-initial-students">8 students enrolled</span></span>. Through advertising, 
+                    <span id="fact2"><span class="highlight var-new-students">8 more became interested</span></span> but 
+                    <span id="fact3"><span class="highlight var-dropout-rate">a fourth of these dropped out within a day</span></span>. 
+                    <span id="fact4"><span class="highlight var-additional-dropouts">2 more got frustrated and left</span></span>. The class then rallied to show how simple the course actually is and increased enrollment by 
+                    <span id="fact5"><span class="highlight var-enrollment-increase-factor">5 times the amount of students already enrolled</span></span> in the class, but 
+                    <span id="fact6"><span class="highlight var-schedule-conflict-dropouts">2 had to drop it because of scheduling conflicts</span></span>. After one last rally, 
+                    <span id="fact7"><span class="highlight var-final-rally-enrollments">6 more people enrolled</span></span>. As the days passed, 
+                    <span id="fact8"><span class="highlight var-later-dropout-rate">half of the class eventually dropped</span></span>, and 
+                    <span id="fact9"><span class="highlight var-graduation-rate">half of the remaining students graduated</span></span>. How many are still enrolled?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Understanding</div>
+                <p><span class="highlight var-initial-students">Initial students: 8</span></p>
+                <p><span class="highlight var-new-students">Additional interested students: 8</span></p>
+                <p><span class="highlight var-dropout-rate">Dropout rate of new students: 1/4</span></p>
+                <p><span class="highlight var-additional-dropouts">Additional dropouts: 2</span></p>
+                <p><span class="highlight var-enrollment-increase-factor">Enrollment increase factor: 5</span></p>
+                <p><span class="highlight var-schedule-conflict-dropouts">Schedule conflict dropouts: 2</span></p>
+                <p><span class="highlight var-final-rally-enrollments">Final rally enrollments: 6</span></p>
+                <p><span class="highlight var-later-dropout-rate">Later dropout rate: 1/2</span></p>
+                <p><span class="highlight var-graduation-rate">Graduation rate of remaining: 1/2</span></p>
+                <h3>What we need to find</h3>
+                <p>How many students are still enrolled in the German lessons after all the changes in enrollment.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+            <div class="explanation-container" id="explanationContainer">
+                <div class="explanation-title">Step-by-Step Explanation</div>
+                <div class="step" id="step1">
+                    <div class="step-content">
+                    Calculate the total number of students after the initial advertising: <div class="formula">initial_students + new_students</div> = <span class="highlight var-initial-students">8 students</span> + <span class="highlight var-new-students">8 students</span> = <span class="highlight var-total-after-advertising">16 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="step-content">
+                    Calculate how many new students dropped out within a day: <div class="formula">new_students × dropout_rate</div> = <span class="highlight var-new-students">8 students</span> * <span class="highlight var-dropout-rate">0.25</span> = <span class="highlight var-initial-dropouts">2 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-content">
+                    Calculate the number of students after initial dropouts: <div class="formula">total_after_advertising - initial_dropouts - additional_dropouts</div> = <span class="highlight var-total-after-advertising">16 students</span> - <span class="highlight var-initial-dropouts">2 students</span> - <span class="highlight var-additional-dropouts">2 students</span> = <span class="highlight var-students-after-dropouts">12 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="step-content">
+                    Calculate the number of students after the first rally: <div class="formula">students_after_dropouts × (1 + enrollment_increase_factor)</div> = <span class="highlight var-students-after-dropouts">12 students</span> * 5 + <span class="highlight var-students-after-dropouts">12 students</span> = <span class="highlight var-students-after-rally">72 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="step-content">
+                    Calculate the number of students after scheduling conflicts: <div class="formula">students_after_rally × 2</div> = <span class="highlight var-students-after-rally">72 students</span> * 2 = <span class="highlight var-students-after-conflicts">144 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="step-content">
+                    Calculate the number of students after the final rally: <div class="formula">students_after_conflicts + final_rally_enrollments</div> = <span class="highlight var-students-after-conflicts">144 students</span> + <span class="highlight var-final-rally-enrollments">6 students</span> = <span class="highlight var-total-enrolled">150 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step7">
+                    <div class="step-content">
+                    Calculate the number of students after half dropped out: <div class="formula">total_enrolled ÷ 2</div> = <span class="highlight var-total-enrolled">150 students</span> / 2 = <span class="highlight var-students-after-dropouts-2">75 students</span>
+                    </div>
+                </div>
+                <div class="step" id="step8">
+                    <div class="step-content">
+                    Calculate the number of students still enrolled after graduation: <div class="formula">students_after_dropouts_2 ÷ 2</div> = <span class="highlight var-students-after-dropouts-2">75 students</span> / 2 = <span class="highlight var-final-enrolled">37.5 students</span>
+                    </div>
+                </div>
+                <div class="step final-answer"><div class="step-content"><strong>Final Answer:</strong> <span class="highlight var-final-enrolled">37.5</span></div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+                
+                // Clear variables
+                variableList.innerHTML = '';
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

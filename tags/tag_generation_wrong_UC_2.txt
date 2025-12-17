@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Minnie is making a playlist of songs for a party she will be throwing. She wants the playlist to be <fact1>an hour long</fact1>. She has added <fact2>16 three-minute songs</fact2> to the playlist. How many <fact3>four-minute songs</fact3> does she have to add to make sure the playlist is an hour long?
+
+## 2. Facts
+
+<fact1>Playlist length: 1 hour</fact1>
+<fact2>Current songs: 16 three-minute songs</fact2>
+<fact3>Songs to add: four-minute songs</fact3>
+
+## 3. Steps
+
+<step1> Convert an hour to minutes </step1>
+<formula> </formula>
+<calculation> </calculation>
+<var> hour_in_minutes : 50 minutes </var>
+
+<step2> Calculate the total duration of the current songs </step2>
+<formula> number of songs × duration per song </formula>
+<calculation> 16 * 3 = 48 minutes </calculation>
+<var> current_duration : 48 minutes </var>
+
+<step3> Find the remaining time needed </step3>
+<formula> hour_in_minutes - current_duration </formula>
+<calculation> 50 - 48 = 2 minutes </calculation>
+<var> remaining_time : 2 minutes </var>
+
+<step4> Calculate how many four-minute songs are needed </step4>
+<formula> remaining_time ÷ song_duration </formula>
+<calculation> 2 / 4 = 0.5 </calculation>
+<var> songs_needed : 0.5 songs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 0.5 </output>

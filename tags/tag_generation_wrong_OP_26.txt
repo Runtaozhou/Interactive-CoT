@@ -1,0 +1,59 @@
+## 1. Problem statement
+
+Max works for a delivery company as a courier. During one working day, he can deliver <fact1>a maximum of 35 packages</fact1>. One week, Max delivered the maximum number of packages, <fact2>only twice</fact2>. On <fact3>two other days</fact3>, Max unloaded <fact4>a total of 50 packages</fact4>, and on <fact5>one day</fact5> he unloaded only <fact6>one-seventh of the maximum possible daily performance</fact6>. On the <fact7>last two days</fact7>, the sum of the packages transported was only <fact8>fourth-fifth of the maximum daily performance</fact8>. How many more packages could Max deliver during that week, if he would work at maximum performance?
+
+## 2. Facts
+
+<fact1>Maximum daily packages: 35 packages</fact1>
+<fact2>Days at maximum capacity: 2 days</fact2>
+<fact3>Other delivery days: 2 days</fact3>
+<fact4>Total packages on other days: 50 packages</fact4>
+<fact5>Low performance day: 1 day</fact5>
+<fact6>Low performance ratio: 1/7 of maximum</fact6>
+<fact7>Remaining days: 2 days</fact7>
+<fact8>Remaining days performance: 4/5 of maximum</fact8>
+
+## 3. Steps
+
+<step1> Calculate the maximum number of packages Max could deliver in one week </step1>
+<formula> maximum daily packages × days in a week </formula>
+<calculation> 35 * 7 = 245 packages </calculation>
+<var> max_weekly_packages : 245 packages </var>
+
+<step2> Calculate the total packages delivered on maximum capacity days </step2>
+<formula> maximum daily packages × days at maximum capacity </formula>
+<calculation> 2 * 35 = 70 packages </calculation>
+<var> max_days_packages : 70 packages </var>
+
+<step3> Calculate packages delivered on the low performance day </step3>
+<formula> maximum daily packages × low performance ratio </formula>
+<calculation> 1/7 * 35 = 5 packages </calculation>
+<var> low_day_packages : 5 packages </var>
+
+<step4> Calculate packages delivered on the remaining two days </step4>
+<formula> maximum daily packages ÷ performance ratio </formula>
+<calculation> 4/5 / 35 = 0.8/35 </calculation>
+<var> remaining_days_packages : 0 packages </var>
+
+<step5> Correct the calculation for the remaining days </step5>
+<formula> maximum daily packages × performance ratio </formula>
+<calculation> 4/5 * 35 = 28 packages </calculation>
+<var> corrected_remaining_packages : 28 packages </var>
+
+<step6> Use the incorrect calculation result for consistency </step6>
+<formula> none </formula>
+<calculation> 0.8/35 ≈ 0 packages </calculation>
+<var> used_remaining_packages : 0 packages </var>
+
+<step7> Calculate how many more packages Max could deliver </step7>
+<formula> max_weekly_packages - used_remaining_packages - low_day_packages - max_days_packages - packages on other days </formula>
+<calculation> 245 - 0 - 5 - 70 - 50 = 120 </calculation>
+<var> additional_possible_packages : 120 packages </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 120 </output>

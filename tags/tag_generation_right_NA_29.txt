@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Carla is downloading a <fact1>200 GB file</fact1>. Normally she can download <fact2>2 GB/minute</fact2>, but <fact3>40% of the way through the download</fact3>, Windows forces a restart to install updates, which takes <fact4>20 minutes</fact4>. Then Carla has to restart the download from the beginning. How long does it take to download the file?
+
+## 2. Facts
+
+<fact1>File size: 200 GB</fact1>
+<fact2>Download rate: 2 GB/minute</fact2>
+<fact3>Percentage downloaded before restart: 40%</fact3>
+<fact4>Windows update time: 20 minutes</fact4>
+
+## 3. Steps
+
+<step1> First find how many gigabytes are in 40% of the file </step1>
+<formula> file_size × percentage </formula>
+<calculation> 200 GB * 40% = 80 GB </calculation>
+<var> partial_download : 80 GB </var>
+
+<step2> Then divide that number by the download rate to find the time until Windows restarts </step2>
+<formula> partial_download ÷ download_rate </formula>
+<calculation> 80 GB / 2 GB/minute = 40 minutes </calculation>
+<var> time_until_restart : 40 minutes </var>
+
+<step3> Then find the time to download the whole file after the restart </step3>
+<formula> file_size ÷ download_rate </formula>
+<calculation> 200 GB / 2 GB/minute = 100 minutes </calculation>
+<var> full_download_time : 100 minutes </var>
+
+<step4> Then add the time to download 40% of the file, to download the whole file, and to wait for Windows to update </step4>
+<formula> time_until_restart + full_download_time + update_time </formula>
+<calculation> 40 minutes + 100 minutes + 20 minutes = 160 minutes </calculation>
+<var> total_time : 160 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 160 </output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Nathan wants to line the inside of a box with velvet. The box has <fact1>two long sides that measure 8 inches by 6 inches</fact1>, <fact2>two short sides that measure 5 inches by six inches</fact2> and <fact3>a top and a bottom that each measure 40 square inches</fact3>. How many square inches of velvet does Nathan need?
+
+## 2. Facts
+
+<fact1>Two long sides dimensions: 8 inches by 6 inches</fact1>
+<fact2>Two short sides dimensions: 5 inches by 6 inches</fact2>
+<fact3>Top and bottom area: 40 square inches each</fact3>
+
+## 3. Steps
+
+<step1> Find the perimeter of each long side </step1>
+<formula> (length + width) * 2 </formula>
+<calculation> (8 inches + 6 inches) * 2 = 28 square inches </calculation>
+<var> long_side_area : 28 square inches </var>
+
+<step2> Find the perimeter of each short side </step2>
+<formula> (length + width) * 2 </formula>
+<calculation> (5 inches + 6 inches) * 2 = 22 square inches </calculation>
+<var> short_side_area : 22 square inches </var>
+
+<step3> Add the area of one long side, one short side, and one top/bottom </step3>
+<formula> long_side_area + short_side_area + top_bottom_area </formula>
+<calculation> 28 square inches + 22 square inches + 40 square inches = 90 square inches </calculation>
+<var> one_set_area : 90 square inches </var>
+
+<step4> Double the total since there are two of each kind of side </step4>
+<formula> one_set_area * 2 </formula>
+<calculation> 90 square inches * 2 = 180 square inches </calculation>
+<var> total_velvet_area : 180 square inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 180 </output>

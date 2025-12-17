@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Eddie can bake 3 pies a day.</fact1> <fact2>His sister can bake 6 pies a day</fact2> while <fact3>his mother can bake 8 pies a day.</fact3> <fact4>How many pies will they be able to bake in 7 days?</fact4>
+
+## 2. Facts
+
+<fact1>Eddie's daily pie production: 3 pies</fact1>
+<fact2>Sister's daily pie production: 6 pies</fact2>
+<fact3>Mother's daily pie production: 8 pies</fact3>
+<fact4>Number of days: 7</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many pies Eddie can bake in 7 days </step1>
+<formula> Eddie's daily production × number of days </formula>
+<calculation> 3 × 7 = 21 pies </calculation>
+<var> eddie_pies : 21 pies </var>
+
+<step2> Calculate how many pies Eddie's sister can bake in 7 days </step2>
+<formula> Sister's daily production × number of days </formula>
+<calculation> 6 × 7 = 42 pies </calculation>
+<var> sister_pies : 42 pies </var>
+
+<step3> Calculate how many pies Eddie's mother can bake in 7 days </step3>
+<formula> Mother's daily production × number of days </formula>
+<calculation> 8 × 7 = 56 pies </calculation>
+<var> mother_pies : 56 pies </var>
+
+<step4> Add up all the pies to find the total </step4>
+<formula> eddie_pies + sister_pies + mother_pies </formula>
+<calculation> 3*7 + 42 + 56 = 119 pies </calculation>
+<var> total_pies : 119 pies </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 119 </output>

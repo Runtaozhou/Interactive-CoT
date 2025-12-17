@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Bobby buys two packets of candy. He eats two candies every day from Monday through Friday and takes one each during the remaining days of the week. If it takes him 3 such weeks to finish the 2 packets, how many candies are in a packet?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many candies Bobby eats from Monday through Friday.
+            <p>Bobby eats 2 candies per day for 5 days (Monday through Friday).</p>
+            <p>2 candies × 5 days = 10 candies</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many candies Bobby eats on the remaining day of the week.
+            <p>Bobby eats 1 candy per day for 1 day (the remaining day of the week).</p>
+            <p>1 candy × 1 day = 1 candy</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total candies consumed in one week.
+            <p>Add the candies eaten on weekdays and weekend:</p>
+            <p>10 candies + 1 candy = 11 candies per week</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total candies consumed in three weeks.
+            <p>Multiply the weekly consumption by the number of weeks:</p>
+            <p>11 candies × 3 weeks = 33 candies total</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many candies are in one packet.
+            <p>Divide the total number of candies by the number of packets:</p>
+            <p>33 candies ÷ 2 packets = 16.5 candies per packet</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        16.5
+    </div>
+</body>
+</html>

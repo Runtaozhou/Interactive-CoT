@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+It takes a dog groomer <fact1>10 minutes to dry a short-haired dog like a beagle</fact1>. It takes him <fact2>twice as long to dry a full-haired, fluffy dog like a german shepherd</fact2>. One morning, he has <fact3>6 short-haired dogs to dry</fact3> and <fact4>9 full-haired dogs to dry</fact4>. How many hours does it take him to dry all of the dogs?
+
+## 2. Facts
+
+<fact1>Short-haired dog drying time: 10 minutes</fact1>
+<fact2>Full-haired dog drying time: twice as long as short-haired</fact2>
+<fact3>Number of short-haired dogs: 6</fact3>
+<fact4>Number of full-haired dogs: 9</fact4>
+
+## 3. Steps
+
+<step1> Calculate the time needed to dry a full-haired dog </step1>
+<formula> short_haired_time × 2 </formula>
+<calculation> 10 * 2 = 20 minutes </calculation>
+<var> full_haired_time : 20 minutes </var>
+
+<step2> Calculate the total time needed for all short-haired dogs </step2>
+<formula> number_of_short_haired × short_haired_time </formula>
+<calculation> 6 * 10 = 60 minutes </calculation>
+<var> total_short_haired_time : 60 minutes </var>
+
+<step3> Calculate the total time needed for all full-haired dogs </step3>
+<formula> number_of_full_haired × full_haired_time </formula>
+<calculation> 9 * 20 = 180 minutes </calculation>
+<var> total_full_haired_time : 180 minutes </var>
+
+<step4> Calculate the total time needed for all dogs </step4>
+<formula> total_short_haired_time + total_full_haired_time </formula>
+<calculation> 60 + 180 = 240 minutes </calculation>
+<var> total_minutes : 240 minutes </var>
+
+<step5> Convert the total time from minutes to hours </step5>
+<formula> total_minutes ÷ minutes_per_hour </formula>
+<calculation> 240 / 50 = 4.8 hours </calculation>
+<var> total_hours : 4.8 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 4.8 </output>

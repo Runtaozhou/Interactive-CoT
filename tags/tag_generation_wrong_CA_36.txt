@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+Jackson wants to go on a shopping spree, so his mom says she will give him some spending money if he does extra chores. She promises <fact1>$5 per hour</fact1> spent on chores. Jackson spends <fact2>2 hours</fact2> vacuuming, and decides to do this <fact3>twice</fact3>. He also spends <fact4>0.5 hours</fact4> washing dishes, and <fact5>three times</fact5> as long cleaning the bathroom. How much spending money has Jackson earned?
+
+## 2. Facts
+
+<fact1>Pay rate: $5 per hour</fact1>
+<fact2>Time spent vacuuming (once): 2 hours</fact2>
+<fact3>Number of times vacuuming: 2</fact3>
+<fact4>Time spent washing dishes: 0.5 hours</fact4>
+<fact5>Bathroom cleaning time multiplier: 3 times</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total time Jackson spent vacuuming </step1>
+<formula> vacuuming_time × number_of_times </formula>
+<calculation> 2 * 2 = 4 hours </calculation>
+<var> total_vacuuming_time : 4 hours </var>
+
+<step2> Calculate the money earned from vacuuming </step2>
+<formula> total_vacuuming_time × hourly_rate </formula>
+<calculation> 4 * $5 = $20 </calculation>
+<var> vacuuming_money : $20 </var>
+
+<step3> Calculate the money earned from washing dishes </step3>
+<formula> dish_washing_time × hourly_rate </formula>
+<calculation> 0.5 * $5 = $2.5 </calculation>
+<var> dishes_money : $2.5 </var>
+
+<step4> Calculate the time spent cleaning the bathroom </step4>
+<formula> dish_washing_time × bathroom_multiplier </formula>
+<calculation> 0.5 * 3 = 1.5 hours </calculation>
+<var> bathroom_time : 1.5 hours </var>
+
+<step5> Calculate the money earned from cleaning the bathroom </step5>
+<formula> bathroom_time × hourly_rate </formula>
+<calculation> 1.5 * $5 = $9 </calculation>
+<var> bathroom_money : $9 </var>
+
+<step6> Calculate the total money earned from all chores </step6>
+<formula> vacuuming_money + dishes_money + bathroom_money </formula>
+<calculation> $20 + $2.5 + $9 = $31.5 </calculation>
+<var> total_money : $31.5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 31.5 </output>

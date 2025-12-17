@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+<fact1>Valerie needs to put stamps on the envelopes she is about to mail.</fact1> She has thank you cards for each of her grandmother, uncle and aunt for the birthday presents they sent. <fact2>She also has to pay the water bill and the electric bill separately.</fact2> <fact3>She wants to send three more mail-in rebates than she does bills</fact3> and <fact4>she has twice as many job applications as rebates to mail.</fact4> <fact5>How many stamps does she need if everything needs 1 stamp except the electric bill, which needs 2?</fact5>
+
+## 2. Facts
+
+<fact1>Stamps needed per envelope: 1 (except electric bill)</fact1>
+<fact2>Number of bills: 2 (water and electric)</fact2>
+<fact3>Rebates: 3 more than bills</fact3>
+<fact4>Job applications: 2 times rebates</fact4>
+<fact5>Electric bill stamps: 2</fact5>
+
+## 3. Steps
+
+<step1> Valerie has to send a thank you card to each of 3 people, so she has 3 * 1 = 3 thank you cards to mail. </step1>
+<formula> 3 * 1 </formula>
+<calculation> 3 * 1 = 3 </calculation>
+<var> thank_you_cards : 3 </var>
+
+<step2> She has 2 bills to mail. </step2>
+<formula> </formula>
+<calculation> </calculation>
+<var> bills : 2 </var>
+
+<step3> She has 3 more rebates than bills, so 3 + 2 = 5 mail-in rebates to mail. </step3>
+<formula> bills + 3 </formula>
+<calculation> 2 + 3 = 5 </calculation>
+<var> rebates : 5 </var>
+
+<step4> She has twice as many job applications as rebates, so she has 2 * 5 = 10 applications to mail. </step4>
+<formula> 2 * rebates </formula>
+<calculation> 2 * 5 = 10 </calculation>
+<var> applications : 10 </var>
+
+<step5> She has 3 + 2 + 5 + 10 = 20 pieces of mail to send. </step5>
+<formula> thank_you_cards + bills + rebates + applications </formula>
+<calculation> 3 + 2 + 5 + 10 = 20 </calculation>
+<var> total_mail : 20 </var>
+
+<step6> The electric bill needs an extra stamp, so she needs 20 + 1 = 21 stamps. </step6>
+<formula> total_mail + 1 </formula>
+<calculation> 20 + 1 = 21 </calculation>
+<var> total_stamps : 21 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output>21</output>

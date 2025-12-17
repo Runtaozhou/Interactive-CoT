@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+<fact1>Marge had a winning lottery ticket for $12006</fact1> and wanted to spend some of it wisely before using on any fun things. She paid <fact2>half of the lottery amount</fact2> for the taxes on her winnings, then put <fact3>a third of the leftover money</fact3> towards her student loans. She put <fact4>$1000 in savings</fact4> and invested <fact5>a fifth of that amount</fact5> in the stock market. How many dollars does she have left for fun?
+
+## 2. Facts
+
+<fact1>Lottery winnings: $12006</fact1>
+<fact2>Tax rate: 1/2 of winnings</fact2>
+<fact3>Student loan payment: 1/3 of after-tax money</fact3>
+<fact4>Savings amount: $1000</fact4>
+<fact5>Investment amount: 1/5 of savings</fact5>
+
+## 3. Steps
+
+<step1> Calculate how much money Marge has left after paying taxes </step1>
+<formula> lottery_winnings / 2 </formula>
+<calculation> 12000 / 2 = $6000 </calculation>
+<var> after_tax : $6000 </var>
+
+<step2> Calculate how much Marge paid for student loans </step2>
+<formula> after_tax / 3 </formula>
+<calculation> 6000 / 3 = $2000 </calculation>
+<var> student_loan_payment : $2000 </var>
+
+<step3> Calculate how much money Marge has left after paying student loans </step3>
+<formula> after_tax - student_loan_payment </formula>
+<calculation> 6000 - 2000 = $4000 </calculation>
+<var> after_loans : $4000 </var>
+
+<step4> Calculate how much money Marge has left after putting money in savings </step4>
+<formula> after_loans - savings </formula>
+<calculation> 4000 - 1000 = $3000 </calculation>
+<var> after_savings : $3000 </var>
+
+<step5> Calculate how much Marge invested in the stock market </step5>
+<formula> savings / 5 </formula>
+<calculation> 1000 / 5 = $200 </calculation>
+<var> investment : $200 </var>
+
+<step6> Calculate how much money Marge has left for fun </step6>
+<formula> after_savings - investment </formula>
+<calculation> 3000 - 200 = $2800 </calculation>
+<var> money_for_fun : $2800 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 2800 </output>

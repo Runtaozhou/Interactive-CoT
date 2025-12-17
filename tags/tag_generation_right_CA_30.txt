@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+Karl sells clothing in his store. <fact1>He sells a T-shirt that costs $5</fact1>, <fact2>some pants that cost $4</fact2>, and <fact3>some skirts that cost $6</fact3>, <fact4>he also sells some refurbished t-shirts that cost half the original price</fact4>. How much is his total income if he sold <fact5>two T-shirts</fact5>, <fact6>one pair of pants</fact6>, <fact7>four skirts</fact7>, and <fact8>six refurbished T-shirts</fact8>?
+
+## 2. Facts
+
+<fact1>T-shirt cost: $5</fact1>
+<fact2>Pants cost: $4</fact2>
+<fact3>Skirt cost: $6</fact3>
+<fact4>Refurbished T-shirt cost: half of original price</fact4>
+<fact5>Number of T-shirts sold: 2</fact5>
+<fact6>Number of pants sold: 1</fact6>
+<fact7>Number of skirts sold: 4</fact7>
+<fact8>Number of refurbished T-shirts sold: 6</fact8>
+
+## 3. Steps
+
+<step1> Calculate the cost of a refurbished T-shirt </step1>
+<formula> Original price / 2 </formula>
+<calculation> $5 / 2 = $2.5 </calculation>
+<var> refurbished_tshirt_cost: $2.5 </var>
+
+<step2> Calculate the income from refurbished T-shirts </step2>
+<formula> Refurbished T-shirt cost × Number of refurbished T-shirts sold </formula>
+<calculation> $2.5 × 6 = $15 </calculation>
+<var> refurbished_tshirt_income: $15 </var>
+
+<step3> Calculate the income from T-shirts </step3>
+<formula> T-shirt cost × Number of T-shirts sold </formula>
+<calculation> $5 × 2 = $10 </calculation>
+<var> tshirt_income: $10 </var>
+
+<step4> Calculate the income from pants </step4>
+<formula> Pants cost × Number of pants sold </formula>
+<calculation> $4 × 1 = $4 </calculation>
+<var> pants_income: $4 </var>
+
+<step5> Calculate the income from skirts </step5>
+<formula> Skirt cost × Number of skirts sold </formula>
+<calculation> $6 × 4 = $24 </calculation>
+<var> skirt_income: $24 </var>
+
+<step6> Calculate the total income </step6>
+<formula> Refurbished T-shirt income + T-shirt income + Pants income + Skirt income </formula>
+<calculation> $15 + $10 + $4 + $24 = $53 </calculation>
+<var> total_income: $53 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output>53</output>

@@ -1,0 +1,30 @@
+## 1. Problem statement
+
+<fact1>A gallon of whole milk that normally costs $3 is now sold at $2</fact1>. <fact2>A box of cereal was sold at a discount of $1</fact2>. How much will you save via discounts if you buy <fact3>3 gallons of whole milk</fact3> and <fact4>5 boxes of cereal</fact4>?
+
+## 2. Facts
+
+<fact1>Milk normal price: $3, sale price: $2</fact1>
+<fact2>Cereal discount: $1 per box</fact2>
+<fact3>Milk quantity: 3 gallons</fact3>
+<fact4>Cereal quantity: 5 boxes</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total discount for the cereal boxes</step1>
+<formula>discount per box × number of boxes</formula>
+<calculation>$1/box × 5 boxes = $5</calculation>
+<var>cereal_discount: $5</var>
+
+<step2>Calculate the total savings from both milk and cereal</step2>
+<formula>milk discount + cereal discount</formula>
+<calculation>$3 + $5 = $8</calculation>
+<var>total_savings: $8</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>8</output>

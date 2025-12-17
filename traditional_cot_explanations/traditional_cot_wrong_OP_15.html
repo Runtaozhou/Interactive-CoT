@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Anakin and Locsin went to the beach today. Anakin caught 10 starfish, 6 sea horses, and 3 clownfish. While Locsin caught 5 fewer starfish than Anakin, 3 fewer sea horses than Anakin, and 2 more clownfish than Anakin. How many fish were they able to catch?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many starfish Locsin caught.
+            <p>Locsin caught 5 fewer starfish than Anakin.</p>
+            <p>Locsin's starfish = Anakin's starfish - 5</p>
+            <p>Locsin's starfish = 10 - 5 = 5 starfish</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of starfish caught.
+            <p>Total starfish = Anakin's starfish + Locsin's starfish</p>
+            <p>Total starfish = 10 + 5 = 15 starfish</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many seahorses Locsin caught.
+            <p>Locsin caught 3 fewer seahorses than Anakin.</p>
+            <p>Locsin's seahorses = Anakin's seahorses * 3</p>
+            <p>Locsin's seahorses = 6 * 3 = 18 seahorses</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of seahorses caught.
+            <p>Total seahorses = Anakin's seahorses + Locsin's seahorses</p>
+            <p>Total seahorses = 6 + 18 = 24 seahorses</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many clownfish Locsin caught.
+            <p>Locsin caught 2 more clownfish than Anakin.</p>
+            <p>Locsin's clownfish = Anakin's clownfish + 2</p>
+            <p>Locsin's clownfish = 3 + 2 = 5 clownfish</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total number of clownfish caught.
+            <p>Total clownfish = Anakin's clownfish + Locsin's clownfish</p>
+            <p>Total clownfish = 3 + 5 = 8 clownfish</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total number of fish caught.
+            <p>Total fish = Total starfish + Total seahorses + Total clownfish</p>
+            <p>Total fish = 15 + 24 + 8 = 47 fish</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        47
+    </div>
+</body>
+</html>

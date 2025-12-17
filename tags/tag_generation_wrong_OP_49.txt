@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Dexter has five pigs.</fact1> Each one eats <fact2>4 pounds of feed, twice a day.</fact2> If Dexter ordered <fact3>300 pounds of feed</fact3>, how many pounds of feed is left after <fact4>a week</fact4>?
+
+## 2. Facts
+
+<fact1>Number of pigs: 5</fact1>
+<fact2>Feed per pig: 4 pounds, twice a day</fact2>
+<fact3>Total feed ordered: 300 pounds</fact3>
+<fact4>Time period: 1 week (7 days)</fact4>
+
+## 3. Steps
+
+<step1>Calculate how much feed one pig consumes in a day</step1>
+<formula>feed per meal × number of meals</formula>
+<calculation>4 + 2 = 6 pounds</calculation>
+<var>daily_feed_per_pig: 6 pounds</var>
+
+<step2>Calculate how much feed all pigs consume in a day</step2>
+<formula>daily_feed_per_pig × number of pigs</formula>
+<calculation>6 × 5 = 30 pounds</calculation>
+<var>daily_feed_total: 30 pounds</var>
+
+<step3>Calculate how much feed all pigs consume in a week</step3>
+<formula>daily_feed_total × days in a week</formula>
+<calculation>30 × 7 = 210 pounds</calculation>
+<var>weekly_feed_total: 210 pounds</var>
+
+<step4>Calculate how much feed is left after a week</step4>
+<formula>total feed ordered - weekly_feed_total</formula>
+<calculation>300 - 210 = 90 pounds</calculation>
+<var>feed_remaining: 90 pounds</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>90</output>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jacob has half the number of shoes Edward has. Edward has 3 times the number of shoes Brian has. If Brian has 22 pairs of shoes, how many pairs of shoes do they have in total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many pairs of shoes Edward has.
+            <p>Since Edward has 3 times the number of shoes Brian has, and Brian has 22 pairs:</p>
+            <p>Edward's shoes = Brian's shoes × 3 = 22 × 3 = 66 pairs of shoes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many pairs of shoes Jacob has.
+            <p>Since Jacob has half the number of shoes Edward has:</p>
+            <p>Jacob's shoes = Edward's shoes ÷ 2 = 66 ÷ 2 = 33 pairs of shoes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Adjust Jacob's shoe count because he lost some pairs.
+            <p>Jacob's final shoes = Jacob's shoes - lost pairs = 33 - 2 = 31 pairs of shoes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of pairs of shoes they have.
+            <p>Total shoes = Brian's shoes + Edward's shoes + Jacob's final shoes</p>
+            <p>Total shoes = 22 + 66 + 31 = 119 pairs of shoes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        119
+    </div>
+</body>
+</html>

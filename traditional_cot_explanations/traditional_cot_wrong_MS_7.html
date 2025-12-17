@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A small theater company sells tickets to a show. They have a 400 seat theater and fill to 80% capacity. Each ticket cost $30. They repeated the same performance 2 other days. How much did they make?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the daily revenue from ticket sales
+            <p>We need to find how much money the theater makes in one day.</p>
+            <p>Theater capacity × ticket price = 400 * $30 = $12,000</p>
+            <p>So the daily revenue is $12,000.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of days of performance
+            <p>The problem states they repeated the performance 2 other days.</p>
+            <p>Additional days + 1 = 2 + 1 = 3 days</p>
+            <p>So there were a total of 3 days of performances.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total revenue from all performances
+            <p>Now we can find the total revenue by multiplying the daily revenue by the total number of days.</p>
+            <p>Daily revenue × total days = $12,000 * 3 = $36,000</p>
+            <p>Therefore, the theater company made a total of $36,000 from all performances.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        36,000
+    </div>
+</body>
+</html>

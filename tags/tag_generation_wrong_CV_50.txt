@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+Georgia is working on a math test with <fact1>75 problems</fact1> on it. After <fact2>20 minutes</fact2> she has completed <fact3>10 problems</fact3>. After another <fact4>20 minutes</fact4>, she has completed twice as many problems. She has <fact5>40 minutes</fact5> to complete the rest of the test. How many problems does she have left to solve?
+
+## 2. Facts
+
+<fact1>Total problems: 75</fact1>
+<fact2>First time period: 20 minutes</fact2>
+<fact3>Problems completed in first period: 10</fact3>
+<fact4>Second time period: 20 minutes</fact4>
+<fact5>Remaining time: 40 minutes</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many problems remain after the first 20 minutes </step1>
+<formula> total_problems - problems_completed_first_period </formula>
+<calculation> 75 - 10 = 65 problems </calculation>
+<var> remaining_after_first_period : 65 problems </var>
+
+<step2> Calculate how many problems Georgia completed in the second 20 minutes </step2>
+<formula> problems_completed_first_period × 2 </formula>
+<calculation> 15 × 2 = 30 </calculation>
+<var> problems_completed_second_period : 30 problems </var>
+
+<step3> Calculate the total number of problems completed so far </step3>
+<formula> problems_completed_first_period + problems_completed_second_period </formula>
+<calculation> 10 + 30 = 40 problems </calculation>
+<var> total_problems_completed : 40 problems </var>
+
+<step4> Calculate how many problems are left to solve </step4>
+<formula> total_problems - total_problems_completed </formula>
+<calculation> 75 - 40 = 35 problems </calculation>
+<var> problems_left : 35 problems </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 35 </output>

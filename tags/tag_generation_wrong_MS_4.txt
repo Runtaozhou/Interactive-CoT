@@ -1,0 +1,29 @@
+## 1. Problem statement
+
+Ellis is going to take a road trip with her family. <fact1>There will be four people total: Ellis, her mother, her sister, and her aunt.</fact1> <fact2>They will be on the road to their destination for 8 hours and drive 8 hours to return home.</fact2> <fact3>Every hour each person will want to drink 1/2 a bottle of water.</fact3> How many water bottles will Ellis' family need total?
+
+## 2. Facts
+
+<fact1>Number of people: 4</fact1>
+<fact2>Total travel time: 8 hours each way (16 hours total)</fact2>
+<fact3>Water consumption: 1/2 bottle per person per hour</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of water bottles needed per person for the entire trip </step1>
+<formula> Water consumption per hour × total hours × 2 (round trip) </formula>
+<calculation> 1/2 a bottle × 8 hours going and 8 hours coming home = 8 bottles for one trip. Therefore, for a round trip, it is 8 bottles × 2 = 16 bottles per person. </calculation>
+<var> bottles_per_person : 16 bottles </var>
+
+<step2> Calculate the total number of water bottles needed for all people </step2>
+<formula> bottles_per_person × number of people </formula>
+<calculation> 16 total water bottles for each person × 4 people = 64 total water bottles </calculation>
+<var> total_bottles : 64 bottles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 64 </output>

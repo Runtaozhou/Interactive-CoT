@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>After tracking his workout routine for 8 weeks</fact1>, Josh discovered that he had spent <fact2>4 hours working out every week</fact2> except on some occasions. At one point, he spent <fact3>5 hours each for two consecutive weeks</fact3>. Another time, he spent <fact4>6 hours in one week</fact4>. What is the total number of hours he has spent working out across the 8 weeks?
+
+## 2. Facts
+
+<fact1>Total tracking period: 8 weeks</fact1>
+<fact2>Regular workout time: 4 hours per week</fact2>
+<fact3>Special case 1: 5 hours each for 2 consecutive weeks</fact3>
+<fact4>Special case 2: 6 hours in 1 week</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total hours for the two consecutive weeks with 5 hours each </step1>
+<formula> 5 hours × 2 weeks </formula>
+<calculation> 5*2 = 10 hours </calculation>
+<var> special_case_1_hours : 10 hours </var>
+
+<step2> Add the hours from the week with 6 hours to the previous total </step2>
+<formula> special_case_1_hours + 6 hours </formula>
+<calculation> 10+6 = 16 hours </calculation>
+<var> special_weeks_hours : 16 hours </var>
+
+<step3> Calculate the total number of special weeks </step3>
+<formula> 2 weeks + 1 week </formula>
+<calculation> 2+1 = 3 weeks </calculation>
+<var> special_weeks : 3 weeks </var>
+
+<step4> Calculate the number of regular weeks </step4>
+<formula> total weeks - special weeks </formula>
+<calculation> 8-3 = 5 weeks </calculation>
+<var> regular_weeks : 5 weeks </var>
+
+<step5> Calculate the total hours for the regular weeks </step5>
+<formula> regular hours per week × regular weeks </formula>
+<calculation> 4*6 = 24 hours </calculation>
+<var> regular_weeks_hours : 24 hours </var>
+
+<step6> Calculate the total workout hours across all 8 weeks </step6>
+<formula> special_weeks_hours + regular_weeks_hours </formula>
+<calculation> 16+24 = 40 hours </calculation>
+<var> total_workout_hours : 40 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 40 </output>

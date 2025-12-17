@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Amy had two eyeshadow palettes with four colors each</fact1> and <fact2>three makeup sets that came with six eyeshadow colors each</fact2>. Her sister steals one of the palettes. Amy uses up <fact3>half of the colors from one makeup set</fact3>. How many eyeshadow colors does she have left?
+
+## 2. Facts
+
+<fact1>Eyeshadow palettes: 2 with 4 colors each</fact1>
+<fact2>Makeup sets: 3 with 6 colors each</fact2>
+<fact3>Used up: half of the colors from one makeup set</fact3>
+
+## 3. Steps
+
+<step1>Calculate the total number of eyeshadow colors Amy had initially</step1>
+<formula>palettes × colors_per_palette + makeup_sets × colors_per_set</formula>
+<calculation>2 * 4 + 3 * 6 = 8 + 18 = 26 eyeshadow colors</calculation>
+<var>initial_colors: 26</var>
+
+<step2>Subtract the colors lost when her sister stole one palette</step2>
+<formula>initial_colors - colors_per_palette</formula>
+<calculation>26 - 4 = 22 colors</calculation>
+<var>colors_after_theft: 22</var>
+
+<step3>Calculate how many colors were used up from one makeup set</step3>
+<formula>colors_per_set ÷ 2</formula>
+<calculation>6 / 2 = 3 colors</calculation>
+<var>colors_used: 3</var>
+
+<step4>Subtract the used colors from the remaining total</step4>
+<formula>colors_after_theft - colors_used</formula>
+<calculation>20 - 3 = 17 eyeshadow colors</calculation>
+<var>final_colors: 17</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>17</output>

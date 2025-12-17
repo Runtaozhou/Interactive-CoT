@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Nellie can eat <fact1>12 sourball candies</fact1> before crying. Jacob can only manage <fact2>half of that number</fact2> of candies, and Lana can only do <fact3>three fewer than Jacob</fact3>. They had a bucket of <fact4>30 candies</fact4>, and all of them ate until they cried. If they divide the remaining candies in the bucket equally, how many sourball candies will they each get?
+
+## 2. Facts
+
+<fact1>Nellie's candy limit: 12 sourball candies</fact1>
+<fact2>Jacob's candy limit: half of Nellie's</fact2>
+<fact3>Lana's candy limit: 3 fewer than Jacob's</fact3>
+<fact4>Total candies in bucket: 30</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many candies Jacob can eat before crying </step1>
+<formula> Nellie's limit ÷ 2 </formula>
+<calculation> 12 / 2 = 6 candies </calculation>
+<var> jacob_limit : 6 candies </var>
+
+<step2> Calculate how many candies Lana can eat before crying </step2>
+<formula> Jacob's limit - 3 </formula>
+<calculation> 6 - 3 = 3 candies </calculation>
+<var> lana_limit : 3 candies </var>
+
+<step3> Calculate the total number of candies eaten by all three people </step3>
+<formula> Nellie's limit + Jacob's limit + Lana's limit </formula>
+<calculation> 12 + 6 + 3 = 21 candies </calculation>
+<var> total_eaten : 21 candies </var>
+
+<step4> Calculate the number of candies remaining in the bucket </step4>
+<formula> Total candies - Total eaten </formula>
+<calculation> 30 - 20 = 10 candies </calculation>
+<var> remaining_candies : 10 candies </var>
+
+<step5> Calculate how many candies each person gets after dividing equally </step5>
+<formula> Remaining candies ÷ 3 </formula>
+<calculation> 10 / 3 = 3.333333 candies </calculation>
+<var> candies_per_person : 3.333333 candies </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 3.333333 </output>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Madeline spends <fact1>18 hours a week in class</fact1>. She spends <fact2>4 hours per day working on homework</fact2>. She spends <fact3>8 hours per day sleeping</fact3>. She works part-time <fact4>20 hours per week</fact4>. How many hours left over does Madeline have?
+
+## 2. Facts
+
+<fact1>Class time: 18 hours per week</fact1>
+<fact2>Homework time: 4 hours per day</fact2>
+<fact3>Sleep time: 8 hours per day</fact3>
+<fact4>Work time: 20 hours per week</fact4>
+
+## 3. Steps
+
+<step1> Calculate total hours spent sleeping per week </step1>
+<formula> sleep_hours_per_day × days_per_week </formula>
+<calculation> 8 * 7 = 56 hours </calculation>
+<var> weekly_sleep : 56 hours </var>
+
+<step2> Calculate total busy hours per week by adding homework, class, sleep, and work </step2>
+<formula> (homework_hours_per_day × days_per_week) + class_hours + weekly_sleep + work_hours </formula>
+<calculation> 4 * 7 + 18 + 56 + 20 = 144 hours </calculation>
+<var> total_busy_hours : 144 hours </var>
+
+<step3> Calculate total hours in a week </step3>
+<formula> hours_per_day × days_per_week </formula>
+<calculation> 7 * 24 = 168 hours </calculation>
+<var> total_hours_per_week : 168 hours </var>
+
+<step4> Calculate hours left over by subtracting busy hours from total hours </step4>
+<formula> total_hours_per_week - total_busy_hours </formula>
+<calculation> 168 - 144 = 24 hours </calculation>
+<var> hours_left_over : 24 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 24 </output>

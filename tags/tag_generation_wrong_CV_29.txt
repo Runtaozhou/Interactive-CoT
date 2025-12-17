@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Susan is taking a two week vacation. She works <fact1>five days a week</fact1> and has <fact2>six days of paid vacation</fact2>. The rest of her workdays will be unpaid vacation time. She gets paid <fact3>$15 per hour</fact3> and works <fact4>8 hours a day</fact4>. How much pay will she miss on her vacation?
+
+## 2. Facts
+
+<fact1>Work days per week: 5 days</fact1>
+<fact2>Paid vacation days: 6 days</fact2>
+<fact3>Hourly pay: $15</fact3>
+<fact4>Hours worked per day: 8 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total number of workdays in two weeks </step1>
+<formula> days per week × number of weeks </formula>
+<calculation> 5 * 2 = 10 days </calculation>
+<var> total_workdays : 10 days </var>
+
+<step2> Calculate the number of unpaid vacation days </step2>
+<formula> total workdays - paid vacation days </formula>
+<calculation> 10 - 6 = 4 days </calculation>
+<var> unpaid_days : 4 days </var>
+
+<step3> Calculate Susan's daily pay </step3>
+<formula> hourly pay × hours per day </formula>
+<calculation> 20 * 8 = $160 per day </calculation>
+<var> daily_pay : $160 </var>
+
+<step4> Calculate the total pay Susan will miss </step4>
+<formula> daily pay × unpaid vacation days </formula>
+<calculation> 160 * 4 = $640 </calculation>
+<var> missed_pay : $640 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 640 </output>

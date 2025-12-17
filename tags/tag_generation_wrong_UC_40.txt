@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Mike gets paid 100 dollars a week.</fact1> He decides to spend half of that at an arcade. He spends <fact2>10 dollars at the arcade on food</fact2> and uses the rest on arcade tokens. He can play for <fact3>1 hour for $8</fact3>. How many minutes can he play?
+
+## 2. Facts
+
+<fact1>Weekly pay: 100 dollars</fact1>
+<fact2>Food expense: 10 dollars</fact2>
+<fact3>Play rate: 1 hour for $8</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much Mike spends at the arcade </step1>
+<formula> weekly_pay * 0.5 </formula>
+<calculation> 100 * 0.5 = $50 </calculation>
+<var> arcade_budget : $50 </var>
+
+<step2> Calculate how much Mike has left for tokens after food </step2>
+<formula> arcade_budget - food_expense </formula>
+<calculation> 50 - 10 = $40 </calculation>
+<var> token_budget : $40 </var>
+
+<step3> Calculate how many hours Mike can play </step3>
+<formula> token_budget / hourly_rate </formula>
+<calculation> 40 / 8 = 5 hours </calculation>
+<var> play_hours : 5 hours </var>
+
+<step4> Convert hours to minutes </step4>
+<formula> play_hours * minutes_per_hour </formula>
+<calculation> 5 * 50 = 250 minutes </calculation>
+<var> play_minutes : 250 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 250 </output>

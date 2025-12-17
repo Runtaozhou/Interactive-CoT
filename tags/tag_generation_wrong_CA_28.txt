@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+John climbs 3 staircases. <fact1>The first staircase has 20 steps.</fact1> <fact2>The next has twice as many steps as the first.</fact2> <fact3>The final staircase has 10 fewer steps than the second one.</fact3> <fact4>Each step is 0.5 feet.</fact4> How many feet did he climb?
+
+## 2. Facts
+
+<fact1>First staircase steps: 20 steps</fact1>
+<fact2>Second staircase: twice as many steps as the first</fact2>
+<fact3>Final staircase: 10 fewer steps than the second</fact3>
+<fact4>Height of each step: 0.5 feet</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of steps in the second staircase </step1>
+<formula> first_staircase_steps × 2 </formula>
+<calculation> 20 * 2 = 40 steps </calculation>
+<var> second_staircase_steps : 40 steps </var>
+
+<step2> Calculate the number of steps in the third staircase </step2>
+<formula> second_staircase_steps - 10 </formula>
+<calculation> 40 - 10 = 30 steps </calculation>
+<var> third_staircase_steps : 30 steps </var>
+
+<step3> Calculate the total number of steps climbed </step3>
+<formula> first_staircase_steps + second_staircase_steps + third_staircase_steps </formula>
+<calculation> 20 + 40 + 30 = 90 steps </calculation>
+<var> total_steps : 90 steps </var>
+
+<step4> Convert the total steps to feet </step4>
+<formula> total_steps × step_height </formula>
+<calculation> 90 * 0.5 = 50 feet </calculation>
+<var> total_height : 50 feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 50 </output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+A convenience store sold <fact1>100 bags of chips in a month</fact1>. In the <fact2>first week, 15 bags of chips were sold</fact2>. In the <fact3>second week, thrice as many bags of chips were sold</fact3>. There was an equal number of chips sold in the third and fourth week. How many chips was each sold in the third and fourth week?
+
+## 2. Facts
+
+<fact1>Total bags of chips sold in a month: 100</fact1>
+<fact2>Bags of chips sold in first week: 15</fact2>
+<fact3>Bags of chips sold in second week: thrice as many as first week</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many bags of chips were sold in the second week </step1>
+<formula> first_week_sales × 3 </formula>
+<calculation> 15 × 3 = 45 bags of chips </calculation>
+<var> second_week_sales : 45 bags of chips </var>
+
+<step2> Find the total number of bags sold in the first and second week combined </step2>
+<formula> first_week_sales + second_week_sales </formula>
+<calculation> 15 + 45 = 60 bags of chips </calculation>
+<var> first_two_weeks_sales : 60 bags of chips </var>
+
+<step3> Calculate the total number of bags sold in the third and fourth week combined </step3>
+<formula> total_sales - first_two_weeks_sales </formula>
+<calculation> 100 - 60 = 50 bags of chips </calculation>
+<var> last_two_weeks_sales : 50 bags of chips </var>
+
+<step4> Determine how many bags were sold in each of the third and fourth weeks </step4>
+<formula> last_two_weeks_sales ÷ 2 </formula>
+<calculation> 50 ÷ 2 = 25 bags of chips </calculation>
+<var> each_last_week_sales : 25 bags of chips </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 25 </output>

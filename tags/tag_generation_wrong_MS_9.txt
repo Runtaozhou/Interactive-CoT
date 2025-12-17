@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+The last time Bob cut his hair he cut it to <fact1>6 inches</fact1>. His hair is now <fact2>36 inches</fact2> long. If hair grows at a rate of <fact3>.5 inches per month</fact3> how many years did it take him to grow out his hair?
+
+## 2. Facts
+
+<fact1>Initial hair length: 6 inches</fact1>
+<fact2>Current hair length: 36 inches</fact2>
+<fact3>Hair growth rate: 0.5 inches per month</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much his hair grew in total </step1>
+<formula> current length - initial length </formula>
+<calculation> 36 inches * 12 months/year = 432 inches </calculation>
+<var> hair_growth : 432 inches </var>
+
+<step2> Calculate how many months it took for his hair to grow that much </step2>
+<formula> total growth ÷ growth rate </formula>
+<calculation> 432 inches / 0.5 inches/month = 864 months </calculation>
+<var> months_taken : 864 months </var>
+
+<step3> Convert the months to years </step3>
+<formula> months ÷ months per year </formula>
+<calculation> 864 months / 12 months/year = 72 years </calculation>
+<var> years_taken : 72 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

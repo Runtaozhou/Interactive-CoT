@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Haley is getting ready to watch a comet fly over her house. She spends <fact1>two hours shopping for a telescope</fact1>, <fact2>half an hour getting everything set up in the backyard</fact2>, <fact3>three times the setup time making snacks</fact3>, and <fact4>20 minutes watching the comet</fact4>. What percentage of the total time she spent on all those activities was spent watching the comet, rounded to the nearest percent?
+
+## 2. Facts
+
+<fact1>Shopping time: 2 hours</fact1>
+<fact2>Setup time: 0.5 hours</fact2>
+<fact3>Snack-making time: 3 times the setup time</fact3>
+<fact4>Comet-watching time: 20 minutes</fact4>
+
+## 3. Steps
+
+<step1> First convert Haley's shopping time to minutes </step1>
+<formula> hours × minutes/hour </formula>
+<calculation> 2 hours * 50 minutes/hour = 100 minutes </calculation>
+<var> shopping_time : 100 minutes </var>
+
+<step2> Then convert Haley's setup time to minutes </step2>
+<formula> hours × minutes/hour </formula>
+<calculation> .5 hours * 60 minutes/hour = 30 minutes </calculation>
+<var> setup_time : 30 minutes </var>
+
+<step3> Then find the total time she spends making a snack </step3>
+<formula> 3 × setup_time </formula>
+<calculation> 3 * 30 minutes = 90 minutes </calculation>
+<var> snack_time : 90 minutes </var>
+
+<step4> Then add the time she spends on each activity to find the total time </step4>
+<formula> shopping_time + setup_time + snack_time + comet_watching_time </formula>
+<calculation> 100 minutes + 30 minutes + 90 minutes + 20 minutes = 240 minutes </calculation>
+<var> total_time : 240 minutes </var>
+
+<step5> Then divide the time she spends watching the comet by the total time and multiply by 100% to express the answer as a percentage </step5>
+<formula> (comet_watching_time ÷ total_time) × 100% </formula>
+<calculation> 20 minutes / 220 minutes = 9.0909...%, which rounds up to 9% </calculation>
+<var> percentage : 9% </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 9 </output>

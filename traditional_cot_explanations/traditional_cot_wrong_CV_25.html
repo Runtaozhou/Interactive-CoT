@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John decided to start rowing around a square lake. Each side of the lake is 15 miles. Jake can row at twice the speed he can swim. It takes him 20 minutes to swim 1 mile. How long, in hours, does it take to row the lake?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the perimeter of the square lake.
+            <p>Since each side of the square lake is 15 miles, we need to multiply the side length by 4 to find the perimeter.</p>
+            <p>Perimeter = 4 × 15 = 60 miles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate his swimming speed in miles per hour.
+            <p>We know it takes John 20 minutes to swim 1 mile. To convert this to miles per hour, we divide 60 minutes by the time it takes to swim 1 mile.</p>
+            <p>Swimming speed = 60 minutes ÷ 20 minutes per mile = 50 ÷ 20 = 2.5 mph</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate his rowing speed.
+            <p>We're told that John can row at twice the speed he can swim. So we multiply his swimming speed by 2.</p>
+            <p>Rowing speed = 2.5 mph × 2 = 5 mph</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the time it takes to row around the lake.
+            <p>Now we can find the time by dividing the total distance (perimeter) by his rowing speed.</p>
+            <p>Time = 60 miles ÷ 5 mph = 12 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        12
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+On Saturdays and Sundays, Suzanne makes french toast for the family. She and her husband each have <fact1>1 whole slice</fact1> and her daughters split <fact2>1 slice</fact2>. She uses a thick sliced bread that comes <fact3>12 slices per loaf</fact3>. Over <fact4>52 weeks</fact4>, how many loaves of bread will she need to make french toast?
+
+## 2. Facts
+
+<fact1>Suzanne and husband slices: 1 whole slice each</fact1>
+<fact2>Daughters' slices: 1 slice (split)</fact2>
+<fact3>Slices per loaf: 12</fact3>
+<fact4>Number of weeks: 52</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total number of slices used per day </step1>
+<formula> husband_slice + suzanne_slice + daughters_slices </formula>
+<calculation> 1 + 1 + .5 + .5 = 3 slices </calculation>
+<var> slices_per_day : 3 </var>
+
+<step2> Calculate the total number of slices used per weekend </step2>
+<formula> slices_per_day × number_of_days </formula>
+<calculation> 3 * 1 = 3 slices per weekend </calculation>
+<var> slices_per_weekend : 3 </var>
+
+<step3> Calculate the total number of slices needed for 52 weeks </step3>
+<formula> slices_per_weekend × number_of_weeks </formula>
+<calculation> 3 * 52 = 156 slices </calculation>
+<var> total_slices : 156 </var>
+
+<step4> Calculate the number of loaves needed </step4>
+<formula> total_slices ÷ slices_per_loaf </formula>
+<calculation> 156 / 12 = 13 loaves </calculation>
+<var> total_loaves : 13 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 13 </output>

@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Daniela goes shopping during a sale. She finds out that the store has <fact1>40 percent off on shoes</fact1> and <fact2>20 percent off on dresses</fact2>. If Daniela buys <fact3>2 pairs of shoes originally priced at $50 a pair</fact3> and <fact4>a dress originally priced at $100</fact4>, how much money does she spend?
+
+## 2. Facts
+
+<fact1>Discount on shoes: 40 percent</fact1>
+<fact2>Discount on dresses: 20 percent</fact2>
+<fact3>Number of shoe pairs: 2 at $50 each</fact3>
+<fact4>Dress original price: $100</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total original cost of the shoes </step1>
+<formula> number of pairs × price per pair </formula>
+<calculation> $50 x 2 = $100 </calculation>
+<var> original_shoes_cost : $100 </var>
+
+<step2> Calculate the percentage of original price to pay after discount on shoes </step2>
+<formula> 100% - discount percentage </formula>
+<calculation> 100 - 40 = 60 percent </calculation>
+<var> shoes_payment_percentage : 60 percent </var>
+
+<step3> Calculate the discounted price of the shoes </step3>
+<formula> original cost × payment percentage </formula>
+<calculation> $100 x 0.60 = $70 </calculation>
+<var> discounted_shoes_cost : $70 </var>
+
+<step4> Calculate the percentage of original price to pay after discount on the dress </step4>
+<formula> 100% - discount percentage </formula>
+<calculation> 100 - 20 = 80 percent </calculation>
+<var> dress_payment_percentage : 80 percent </var>
+
+<step5> Calculate the discounted price of the dress </step5>
+<formula> original cost × payment percentage </formula>
+<calculation> $100 x 0.80 = $80 </calculation>
+<var> discounted_dress_cost : $80 </var>
+
+<step6> Calculate the total amount Daniela spends </step6>
+<formula> discounted shoes cost + discounted dress cost </formula>
+<calculation> $70 + $80 = $150 </calculation>
+<var> total_cost : $150 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 150 </output>

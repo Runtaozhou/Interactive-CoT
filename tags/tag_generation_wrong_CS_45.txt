@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Lionel went to the grocery store and bought <fact1>14 boxes of Graham crackers</fact1> and <fact2>15 packets of Oreos</fact2>. To make an Oreo cheesecake, Lionel needs <fact3>2 boxes of Graham crackers</fact3> and <fact4>3 packets of Oreos</fact4>. After making the maximum number of Oreo cheesecakes he can with the ingredients he bought, how many boxes of Graham crackers would he have left over?
+
+## 2. Facts
+
+<fact1>Graham crackers bought: 14 boxes</fact1>
+<fact2>Oreos bought: 15 packets</fact2>
+<fact3>Graham crackers needed per cheesecake: 2 boxes</fact3>
+<fact4>Oreos needed per cheesecake: 3 packets</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many cheesecakes Lionel can make with the Graham crackers </step1>
+<formula> Graham crackers bought ÷ Graham crackers needed per cheesecake </formula>
+<calculation> 14 ÷ 2 = 7 </calculation>
+<var> max_cheesecakes_graham : 7 </var>
+
+<step2> Calculate how many cheesecakes Lionel can make with the Oreos </step2>
+<formula> Oreos bought ÷ Oreos needed per cheesecake </formula>
+<calculation> 15 ÷ 3 = 5 </calculation>
+<var> max_cheesecakes_oreos : 5 </var>
+
+<step3> Determine the maximum number of cheesecakes Lionel can make </step3>
+<formula> </formula>
+<calculation> </calculation>
+<var> max_cheesecakes : 5 </var>
+
+<step4> Calculate how many boxes of Graham crackers are needed for the maximum number of cheesecakes </step4>
+<formula> Graham crackers needed per cheesecake × max_cheesecakes </formula>
+<calculation> 2 × 5 = 10 </calculation>
+<var> graham_crackers_used : 10 </var>
+
+<step5> Calculate how many boxes of Graham crackers are left over </step5>
+<formula> Graham crackers bought - graham_crackers_used </formula>
+<calculation> 14 - 8 = 6 </calculation>
+<var> graham_crackers_leftover : 6 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 6 </output>

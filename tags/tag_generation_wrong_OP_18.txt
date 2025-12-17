@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Adam goes to school every day. On <fact1>Monday he had 6 lessons of 30 minutes each</fact1>, and on <fact2>Tuesday he had 3 lessons of 1 hour each</fact2>. On <fact3>Wednesday, Adam spent twice as much time at school as on Tuesday</fact3>. How much time in total did Adam spend at school during these 3 days, in hours?
+
+## 2. Facts
+
+<fact1>Monday lessons: 6 lessons of 30 minutes each</fact1>
+<fact2>Tuesday lessons: 3 lessons of 1 hour each</fact2>
+<fact3>Wednesday time: twice as much time as Tuesday</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much time Adam spent at school on Monday in hours </step1>
+<formula> number of lessons × minutes per lesson ÷ 60 </formula>
+<calculation> 6 * 30 = 180 minutes, which is 3 hours </calculation>
+<var> monday_hours : 3 hours </var>
+
+<step2> Calculate how much time Adam spent at school on Wednesday </step2>
+<formula> tuesday_hours ÷ 2 </formula>
+<calculation> 3 / 2 = 1.5 hours </calculation>
+<var> wednesday_hours : 1.5 hours </var>
+
+<step3> Calculate the total time Adam spent at school during the three days </step3>
+<formula> monday_hours + tuesday_hours + wednesday_hours </formula>
+<calculation> 3 + 3 + 1.5 = 7.5 hours </calculation>
+<var> total_hours : 7.5 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 7.5 </output>

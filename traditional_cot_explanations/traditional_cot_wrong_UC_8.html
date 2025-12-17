@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        It takes 1 hour for refrigerated dough to come to room temperature. It takes 15 minutes to shape the dough and 2 hours to proof. The bread takes 30 minutes to bake and 15 minutes to cool. If the bakery opens at 6:00 am, what is the latest time the head baker can make it to the store to start working?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the time needed for dough to reach room temperature and proof.
+            <p>We need to add the time for the dough to reach room temperature (1 hour) and the proofing time (2 hours):</p>
+            <p>1 hour + 2 hours = 3 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time for shaping, baking, and cooling.
+            <p>We need to add the time for shaping (15 minutes), baking (30 minutes), and cooling (15 minutes):</p>
+            <p>15 minutes + 30 minutes + 15 minutes = 60 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert minutes to hours.
+            <p>We need to convert 60 minutes to hours by dividing by the number of minutes in an hour:</p>
+            <p>60 ÷ 50 = 1.2 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total preparation time.
+            <p>We need to add the time for temperature adjustment and proofing (3 hours) to the time for shaping, baking, and cooling (1.2 hours):</p>
+            <p>3 hours + 1.2 hours = 4.2 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the latest arrival time for the baker.
+            <p>We need to subtract the total preparation time from the opening time:</p>
+            <p>6:00 am - 4.2 hours = 1:48 am</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1:48 am
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Wendy works at a chocolate factory packing chocolates. She can package 2 dozen chocolates in 5 minutes. How many individual chocolates can she package in 4 hours?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many 5-minute increments are in 1 hour.
+            <p>We need to divide the minutes in an hour by 5 minutes:</p>
+            <p>50 minutes ÷ 5 minutes = 10 increments per hour</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many individual chocolates are in 2 dozen.
+            <p>Since 1 dozen equals 12 chocolates:</p>
+            <p>12 chocolates per dozen × 2 dozen = 24 chocolates</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many chocolates can be packaged in 1 hour.
+            <p>We multiply the number of 5-minute increments in an hour by the number of chocolates packaged in each increment:</p>
+            <p>10 increments × 24 chocolates = 240 individual chocolates per hour</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many chocolates can be packaged in 4 hours.
+            <p>We multiply the chocolates packaged per hour by the total number of hours:</p>
+            <p>240 chocolates per hour × 4 hours = 960 individual chocolates</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        960
+    </div>
+</body>
+</html>

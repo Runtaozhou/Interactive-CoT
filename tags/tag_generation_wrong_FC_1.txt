@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+Jackson is laying tile in a courtyard that measures <fact1>10 feet by 25 feet</fact1>. He needs <fact2>4 tiles per square foot</fact2> of space. <fact3>40% of the tiles are green marble that costs $3/tile</fact3>, and <fact4>the rest are red tile that costs $1.50/tile</fact4>. How much does he pay total for tile?
+
+## 2. Facts
+
+<fact1>Courtyard dimensions: 10 feet by 25 feet</fact1>
+<fact2>Tiles needed: 4 tiles per square foot</fact2>
+<fact3>Green marble tiles: 40% at $3/tile</fact3>
+<fact4>Red tiles: 60% at $1.50/tile</fact4>
+
+## 3. Steps
+
+<step1> First find the area of the courtyard </step1>
+<formula> length + width </formula>
+<calculation> 10 feet + 25 feet = 35 feet </calculation>
+<var> courtyard_area : 35 feet </var>
+
+<step2> Then multiply the area by the number of tiles per square foot to find the total number of tiles needed </step2>
+<formula> courtyard_area × tiles per square foot </formula>
+<calculation> 35 feet * 4 tiles/square foot = 140 tiles </calculation>
+<var> total_tiles : 140 tiles </var>
+
+<step3> Then multiply the number of tiles by the percentage that are green to find the total number of green tiles </step3>
+<formula> total_tiles × percentage of green tiles </formula>
+<calculation> 140 tiles * 40% = 56 tiles </calculation>
+<var> green_tiles : 56 tiles </var>
+
+<step4> Subtract that number from the total number of tiles to find the number of red tiles </step4>
+<formula> total_tiles - green_tiles </formula>
+<calculation> 140 tiles - 56 tiles = 84 tiles </calculation>
+<var> red_tiles : 84 tiles </var>
+
+<step5> Multiply the number of red tiles by the price per red tile to find the cost of the red tiles </step5>
+<formula> red_tiles × price per red tile </formula>
+<calculation> 84 tiles * $1.50/tile = $126 </calculation>
+<var> red_tiles_cost : $126 </var>
+
+<step6> Multiply the number of green tiles by the price per green tile to find the cost of the green tiles </step6>
+<formula> green_tiles × price per green tile </formula>
+<calculation> 56 tiles * $3.00/tile = $168 </calculation>
+<var> green_tiles_cost : $168 </var>
+
+<step7> Then add the cost of each type of tile to find the total cost </step7>
+<formula> red_tiles_cost + green_tiles_cost </formula>
+<calculation> $126 + $168 = $294 </calculation>
+<var> total_cost : $294 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 294 </output>

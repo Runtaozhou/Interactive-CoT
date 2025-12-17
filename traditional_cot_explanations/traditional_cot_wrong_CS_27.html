@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        There are enough provisions in a castle to feed 300 people for 90 days. After 30 days, 100 people leave the castle. How many more days are left until all the food runs out?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the remaining food after 30 days
+            <p>We need to determine how many days of food are left after the first 30 days have passed.</p>
+            <p>Total days of food initially: 90 days</p>
+            <p>Days already passed: 30 days</p>
+            <p>Remaining days for the original group: 90 days - 30 days = 60 days</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of people remaining in the castle
+            <p>After 30 days, 100 people leave the castle.</p>
+            <p>Original number of people: 300 people</p>
+            <p>People who left: 100 people</p>
+            <p>Remaining people: 300 - 100 = 200 people</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the food consumption rate of the smaller group relative to the original group
+            <p>With fewer people, the food will last longer. We need to calculate the ratio of consumption.</p>
+            <p>Consumption rate = Remaining people / Original people</p>
+            <p>Consumption rate = 200/300 = 2/3</p>
+            <p>This means the remaining group consumes food at 2/3 the rate of the original group.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how long the remaining food will last for the smaller group
+            <p>Since the consumption rate is now 2/3 of the original, the food will last longer.</p>
+            <p>Days until food runs out = Remaining days for original group / Consumption rate</p>
+            <p>Days until food runs out = 70 days / (2/3) = 105 more days</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        105
+    </div>
+</body>
+</html>

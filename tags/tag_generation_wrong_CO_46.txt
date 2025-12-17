@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+In a week, <fact1>450 cars drove through a toll booth</fact1>. <fact2>Fifty vehicles went through the toll booth on Monday</fact2> and the same number of vehicles drove through the toll booth on Tuesday. On each of Wednesday and Thursday, <fact3>twice the number of cars that passed through the toll booth on Monday</fact3> went through the toll booth. If, for the remaining of the days of the week, an equal number of vehicles passed through the toll booth, calculate the total number of cars that passed the toll both in each of the remaining days.
+
+## 2. Facts
+
+<fact1>Total cars in a week: 450</fact1>
+<fact2>Cars on Monday: 50</fact2>
+<fact3>Cars on Wednesday and Thursday: 2 times Monday's cars</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of cars that went through the toll booth on Monday and Tuesday </step1>
+<formula> Monday cars + Tuesday cars </formula>
+<calculation> 50 + 50 = 100 cars </calculation>
+<var> monday_tuesday_total : 100 cars </var>
+
+<step2> Calculate the number of cars that went through the toll booth on Wednesday </step2>
+<formula> 2 × Monday cars </formula>
+<calculation> 2 × 50 = 100 cars </calculation>
+<var> wednesday_cars : 100 cars </var>
+
+<step3> Calculate the total number of cars that went through the toll booth on Wednesday and Thursday </step3>
+<formula> Wednesday cars + Thursday cars </formula>
+<calculation> 100 + 100 = 200 cars </calculation>
+<var> wednesday_thursday_total : 200 cars </var>
+
+<step4> Calculate the total number of cars that passed through the toll booth from Monday to Thursday </step4>
+<formula> Monday-Tuesday total + Wednesday-Thursday total </formula>
+<calculation> 200 + 100 = 300 cars </calculation>
+<var> monday_to_thursday_total : 300 cars </var>
+
+<step5> Calculate the number of cars that went through the toll booth on the remaining days </step5>
+<formula> Total cars - Monday to Thursday total </formula>
+<calculation> 450 - 300 = 150 cars </calculation>
+<var> remaining_days_total : 150 cars </var>
+
+<step6> Calculate the number of cars that went through the toll booth on each of the remaining days </step6>
+<formula> Remaining days total ÷ Number of remaining days </formula>
+<calculation> 150 ÷ 2 = 75 cars </calculation>
+<var> each_remaining_day : 75 cars </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 75 </output>

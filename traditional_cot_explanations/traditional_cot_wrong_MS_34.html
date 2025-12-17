@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Joseph had socks of many different colors. His dresser drawer was filled to overflowing with red, blue, black, and white socks. Uncertain of how many pairs he had of each color, he began to sort his socks. He discovered that he had three more pairs of blue socks than he had pairs of black socks. He had one less pair of red socks than he had pairs of white socks. He had twice as many blue socks as he had of red socks. And he counted a total of 6 red socks. What is the total number of Joseph's socks?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, let's determine the number of blue socks based on the information about red socks. We know that Joseph has twice as many blue socks as red socks, and he has 6 red socks in total.
+            <br>
+            Blue socks = 2 × Red socks
+            <br>
+            Blue socks = 2 × 6 = 12
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, let's calculate the number of white socks based on their relationship with red socks. We know that Joseph has one less pair of red socks than white socks.
+            <br>
+            White socks = Red socks - 2
+            <br>
+            White socks = 6 - 2 = 4
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Next, we need to find the number of pairs of black socks based on their relationship with blue socks. We know that Joseph has three more pairs of blue socks than black socks.
+            <br>
+            Black sock pairs = Red socks/2 - 3
+            <br>
+            Black sock pairs = 6/2 - 3 = 0
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now, let's calculate the total number of black socks by multiplying the number of pairs by 2.
+            <br>
+            Black socks = Black sock pairs × 2
+            <br>
+            Black socks = 0 × 2 = 0
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, we can calculate the total number of socks by adding all the socks of different colors.
+            <br>
+            Total socks = Red socks + Blue socks + White socks + Black socks
+            <br>
+            Total socks = 6 + 12 + 4 + 0 = 22
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        22
+    </div>
+</body>
+</html>

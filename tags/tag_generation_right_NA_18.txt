@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Christina walks <fact1>7km to school every day from Monday to Friday</fact1>. She returns home covering the same distance. Last Friday her mother asked her to pass by her friend, which is <fact2>another 2km away from the school in the opposite distance from home</fact2>. How many kilometers did Christina cover that week?
+
+## 2. Facts
+
+<fact1>Distance to school: 7km every day from Monday to Friday</fact1>
+<fact2>Distance to friend: 2km away from school</fact2>
+
+## 3. Steps
+
+<step1> Calculate the distance for one round trip to school </step1>
+<formula> distance to school × 2 </formula>
+<calculation> 2 * 7 km = 14km </calculation>
+<var> daily_distance : 14km </var>
+
+<step2> Calculate the total distance for the week (Monday to Friday) </step2>
+<formula> daily_distance × number of days </formula>
+<calculation> 14 km/day * 5 days/week = 70km </calculation>
+<var> weekly_distance : 70km </var>
+
+<step3> Calculate the extra distance to visit her friend </step3>
+<formula> distance to friend × 2 </formula>
+<calculation> 2 km * 2 = 4km </calculation>
+<var> extra_distance : 4km </var>
+
+<step4> Calculate the total distance for the week including the visit to her friend </step4>
+<formula> weekly_distance + extra_distance </formula>
+<calculation> 70 km + 4 km = 74 km </calculation>
+<var> total_distance : 74 km </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 74 </output>

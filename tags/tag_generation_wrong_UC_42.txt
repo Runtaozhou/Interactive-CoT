@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+A bathroom has <fact1>10 6 inch tiles along its width</fact1> and <fact2>20 6 inch tiles along its length</fact2>. What is the square footage of the bathroom?
+
+## 2. Facts
+
+<fact1>Width tiles: 10 tiles of 6 inches each</fact1>
+<fact2>Length tiles: 20 tiles of 6 inches each</fact2>
+
+## 3. Steps
+
+<step1> Calculate the width of the bathroom in inches </step1>
+<formula> number of tiles × tile length </formula>
+<calculation> 10 * 6 = 60 inches </calculation>
+<var> width_inches : 60 inches </var>
+
+<step2> Convert the width from inches to feet </step2>
+<formula> width_inches ÷ inches per foot </formula>
+<calculation> 60 / 10 = 6 feet </calculation>
+<var> width_feet : 6 feet </var>
+
+<step3> Calculate the length of the bathroom in inches </step3>
+<formula> number of tiles × tile length </formula>
+<calculation> 20 * 6 = 120 inches </calculation>
+<var> length_inches : 120 inches </var>
+
+<step4> Convert the length from inches to feet </step4>
+<formula> length_inches ÷ inches per foot </formula>
+<calculation> 120 / 10 = 12 feet </calculation>
+<var> length_feet : 12 feet </var>
+
+<step5> Calculate the square footage of the bathroom </step5>
+<formula> length_feet × width_feet </formula>
+<calculation> 12 * 6 = 72 sq feet </calculation>
+<var> bathroom_area : 72 sq feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

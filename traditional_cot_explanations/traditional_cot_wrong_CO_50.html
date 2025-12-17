@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Ludwig works 7 days a week and he usually works half of the day during Friday, Saturday, and Sunday. If his daily salary is $10, how much does he earn every week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Ludwig's earnings from Monday to Thursday.
+            <p>We know that Ludwig's daily salary is $10, and he works full days from Monday to Thursday (4 days).</p>
+            <p>Earnings from Monday to Thursday = Daily salary × Number of days</p>
+            <p>Earnings from Monday to Thursday = $10 × 4 = $40</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Ludwig's daily earnings for Friday, Saturday, and Sunday.
+            <p>During these days, Ludwig works half days, so his daily earnings are half of his regular daily salary.</p>
+            <p>Weekend daily earnings = Daily salary ÷ 2</p>
+            <p>Weekend daily earnings = $10 ÷ 2 = $5 per day</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Ludwig's total earnings for Friday, Saturday, and Sunday.
+            <p>We need to multiply the weekend daily earnings by the number of weekend days.</p>
+            <p>Weekend total earnings = Weekend daily earnings × Number of weekend days</p>
+            <p>Weekend total earnings = $5 × 2 = $10</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate Ludwig's total weekly earnings.
+            <p>We add the earnings from Monday to Thursday to the earnings from Friday to Sunday.</p>
+            <p>Total weekly earnings = Weekday earnings + Weekend total earnings</p>
+            <p>Total weekly earnings = $40 + $10 = $50</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        50
+    </div>
+</body>
+</html>

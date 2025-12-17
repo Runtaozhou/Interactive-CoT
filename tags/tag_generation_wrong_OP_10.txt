@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Andy gets a cavity for every <fact1>4 candy canes</fact1> he eats. He gets <fact2>2 candy canes</fact2> from his parents and <fact3>3 candy canes each from 4 teachers</fact3>. Then he uses his allowance to buy <fact4>1/7 as many candy canes as he was given</fact4>. How many cavities does he get from eating all his candy canes?
+
+## 2. Facts
+
+<fact1>Candy canes per cavity: 4</fact1>
+<fact2>Candy canes from parents: 2</fact2>
+<fact3>Candy canes from teachers: 3 each from 4 teachers</fact3>
+<fact4>Ratio of bought to given candy canes: 1/7</fact4>
+
+## 3. Steps
+
+<step1> First find how many candy canes Andy gets from his teachers </step1>
+<formula> candy canes per teacher × number of teachers </formula>
+<calculation> 3 canes/teacher * 4 teachers = 12 canes </calculation>
+<var> teacher_canes : 12 canes </var>
+
+<step2> Then add the number of candy canes he gets from his parents </step2>
+<formula> teacher_canes + parent_canes </formula>
+<calculation> 12 canes + 2 canes = 14 canes </calculation>
+<var> total_given_canes : 14 canes </var>
+
+<step3> Then multiply that number by 7 to find the number of canes he buys </step3>
+<formula> total_given_canes × 7 </formula>
+<calculation> 14 canes * 7 = 98 canes </calculation>
+<var> bought_canes : 98 canes </var>
+
+<step4> Then add the number of candy canes he gets from each source to find the total number </step4>
+<formula> bought_canes + total_given_canes </formula>
+<calculation> 98 canes + 14 canes = 112 canes </calculation>
+<var> total_canes : 112 canes </var>
+
+<step5> Then divide the total number of candy canes by the number of candy canes it takes to get one cavity to find the number of cavities Andy gets </step5>
+<formula> total_canes ÷ canes_per_cavity </formula>
+<calculation> 112 canes / 4 canes/cavity = 28 cavities </calculation>
+<var> total_cavities : 28 cavities </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 28 </output>

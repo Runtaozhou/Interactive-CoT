@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+Emily goes fishing and has a very busy day. She catches <fact1>4 trout</fact1>, <fact2>3 catfish</fact2>, and <fact3>5 bluegills</fact3>. If the <fact4>trout weigh 2 pounds each</fact4>, the <fact5>catfish weigh 1.5 pounds each</fact5>, and the <fact6>bluegills weigh 2.5 pounds each</fact6>, how many total pounds of fish did she catch?
+
+## 2. Facts
+
+<fact1>Number of trout: 4</fact1>
+<fact2>Number of catfish: 3</fact2>
+<fact3>Number of bluegills: 5</fact3>
+<fact4>Weight of each trout: 2 pounds</fact4>
+<fact5>Weight of each catfish: 1.5 pounds</fact5>
+<fact6>Weight of each bluegill: 2.5 pounds</fact6>
+
+## 3. Steps
+
+<step1>Calculate the total weight of trout</step1>
+<formula>Number of trout × Weight per trout</formula>
+<calculation>4 × 2 = 8</calculation>
+<var>trout_weight: 8 pounds</var>
+
+<step2>Calculate the total weight of catfish</step2>
+<formula>Number of catfish × Weight per catfish</formula>
+<calculation>3 × 1.5 = 4.5</calculation>
+<var>catfish_weight: 4.5 pounds</var>
+
+<step3>Calculate the total weight of bluegill</step3>
+<formula>Number of bluegill × Weight per bluegill</formula>
+<calculation>5 × 2.5 = 12.5</calculation>
+<var>bluegill_weight: 15 pounds</var>
+
+<step4>Add all the weights together to find the total</step4>
+<formula>trout_weight + catfish_weight + bluegill_weight</formula>
+<calculation>8 + 4.5 + 15 = 27.5</calculation>
+<var>total_weight: 27.5 pounds</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>27.5</output>

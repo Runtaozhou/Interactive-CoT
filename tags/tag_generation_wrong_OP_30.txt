@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Frank picked 36 apples.</fact1> <fact2>Susan picked 3 times as many apples as Frank.</fact2> <fact3>Susan gave out half of her apples</fact3>, and <fact4>Frank sold a third of his</fact4>, how many in total do they have left?
+
+## 2. Facts
+
+<fact1>Frank's apples: 36</fact1>
+<fact2>Susan picked: 3 times as many as Frank</fact2>
+<fact3>Susan gave out: 1/2 of her apples</fact3>
+<fact4>Frank sold: 1/3 of his apples</fact4>
+
+## 3. Steps
+
+<step1>Calculate how many apples Susan picked</step1>
+<formula>Frank's apples × 3</formula>
+<calculation>3 × 36 = 108 apples</calculation>
+<var>susan_apples: 108 apples</var>
+
+<step2>Calculate how many apples Susan gave out</step2>
+<formula>susan_apples ÷ (1/2)</formula>
+<calculation>108 ÷ (1/2) = 216 apples</calculation>
+<var>susan_gave_out: 216 apples</var>
+
+<step3>Calculate how many apples Susan has left</step3>
+<formula>susan_apples - susan_gave_out</formula>
+<calculation>108 - 216 = -108 apples</calculation>
+<var>susan_left: -108 apples</var>
+
+<step4>Calculate how many apples Frank sold</step4>
+<formula>Frank's apples × (1/3)</formula>
+<calculation>36 × (1/3) = 12 apples</calculation>
+<var>frank_sold: 12 apples</var>
+
+<step5>Calculate how many apples Frank has left</step5>
+<formula>Frank's apples - frank_sold</formula>
+<calculation>36 - 12 = 24 apples</calculation>
+<var>frank_left: 24 apples</var>
+
+<step6>Calculate the total number of apples they have left</step6>
+<formula>susan_left + frank_left</formula>
+<calculation>-108 + 24 = -84 apples</calculation>
+<var>total_apples_left: -84 apples</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>-84</output>

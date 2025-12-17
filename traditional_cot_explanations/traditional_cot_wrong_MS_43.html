@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A man decides to try and do everything off his bucket list while he is still young and fit enough to finish it all. One of his goals was to climb the seven summits. He realizes first he has to get in shape to do it and it takes him 2 years of working out to get healthy enough to take up mountain climbing. He then spends twice that long learning how to be a technically proficient mountain climber. After that he starts with the simplest mountain on the list and climbs them all. He spends 5 months climbing each mountain. After that he takes 13 months learning to dive and dives through all the caves he wants in 2 years. How much time did it take to get through all these goals?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total time spent climbing all seven mountains.
+            <p>Since there are 7 mountains to climb and each mountain takes 5 months to climb:</p>
+            <p>Total climbing time = 7 mountains × 5 months = 35 months</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Add the time spent learning to dive to the climbing time.
+            <p>The man spent 13 months learning to dive, so we add this to the climbing time:</p>
+            <p>Climbing time + diving learning time = 35 months + 13 months = 48 months</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert the months to years.
+            <p>To convert months to years, we divide by 12:</p>
+            <p>48 months ÷ 12 = 4 years</p>
+            <p>So the time spent climbing mountains and learning to dive is 4 years.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time for all activities.
+            <p>Now we add up all the time periods:</p>
+            <p>- Time to get in shape: 2 years</p>
+            <p>- Time to learn mountain climbing: 2 × 2 = 4 years</p>
+            <p>- Time climbing mountains and learning to dive: 4 years</p>
+            <p>- Time diving in caves: 2 years</p>
+            <p>Total time = 2 + 4 + 2 + 2 = 10 years</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        10
+    </div>
+</body>
+</html>

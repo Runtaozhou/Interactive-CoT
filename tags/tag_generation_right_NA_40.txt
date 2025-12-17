@@ -1,0 +1,57 @@
+## 1. Problem statement
+
+<fact1>Jeremy is driving 600 miles to visit his parents.</fact1> <fact2>His average speed for this trip is 50 miles per hour.</fact2> Every two hours of driving, he makes a rest stop for <fact3>15 minutes.</fact3> <fact4>His car gets 18 miles per gallon of gas</fact4>, and <fact5>his gas indicator comes on when he's used 15 gallons</fact5>, at which point he stops to refill, which takes <fact6>10 minutes.</fact6> How long, in minutes, does he take to get to his parents' house, if he starts out with a full tank of gas?
+
+## 2. Facts
+
+<fact1>Distance to parents: 600 miles</fact1>
+<fact2>Average speed: 50 miles per hour</fact2>
+<fact3>Rest stop duration: 15 minutes</fact3>
+<fact4>Fuel efficiency: 18 miles per gallon</fact4>
+<fact5>Refill trigger: 15 gallons</fact5>
+<fact6>Refill time: 10 minutes</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total driving time in minutes </step1>
+<formula> distance / speed * minutes per hour </formula>
+<calculation> 600 miles / 50 miles per hour = 12 hours * 60 minutes per hour = 720 minutes </calculation>
+<var> driving_time : 720 minutes </var>
+
+<step2> Determine the number of rest stops needed </step2>
+<formula> driving hours / 2 </formula>
+<calculation> 12 hours / 2 hours = 6 rest stops </calculation>
+<var> rest_stops : 5 rest stops </var>
+
+<step3> Calculate the total time spent at rest stops </step3>
+<formula> number of rest stops * time per rest stop </formula>
+<calculation> 5 rest stops * 15 minutes per rest stop = 75 minutes </calculation>
+<var> rest_time : 75 minutes </var>
+
+<step4> Calculate the distance between refueling stops </step4>
+<formula> fuel efficiency * refill trigger </formula>
+<calculation> 18 miles per gallon * 15 gallons = 270 miles </calculation>
+<var> refuel_distance : 270 miles </var>
+
+<step5> Determine the number of refueling stops needed </step5>
+<formula> total distance / refuel distance </formula>
+<calculation> 600 miles / 270 miles per refuel = 2.22 refuels </calculation>
+<var> refuel_stops : 2 refuels </var>
+
+<step6> Calculate the total time spent refueling </step6>
+<formula> number of refuels * time per refuel </formula>
+<calculation> 2 refuels * 10 minute per refuel = 20 minutes </calculation>
+<var> refuel_time : 20 minutes </var>
+
+<step7> Calculate the total trip time </step7>
+<formula> driving time + rest time + refuel time </formula>
+<calculation> 720 minutes driving + 75 minutes resting + 20 minutes refueling = 815 minutes </calculation>
+<var> total_time : 815 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 815 </output>

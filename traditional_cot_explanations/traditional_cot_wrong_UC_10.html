@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Some friends wanted to make a road trip from New York to Los Angeles. They drove at a constant speed of 62 miles/hour, taking breaks of 30 minutes every 5 hours. Once in the city, they looked for the hotel for 30 minutes. If the trip took around 2,790 miles, how many hours will they have to spend to complete the trip to the hotel?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total driving time without breaks.
+            <p>To find the driving time, we divide the total distance by the speed:</p>
+            <p>Driving time = 2,790 miles ÷ 62 miles/hour = 45 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of breaks needed.
+            <p>Since they take a break every 5 hours of driving, we need to determine how many breaks they'll take:</p>
+            <p>Number of breaks = 45 hours ÷ 5 hours/break = 9 breaks</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent on breaks.
+            <p>Each break is 30 minutes long, so the total break time is:</p>
+            <p>Total break time = 9 breaks × 50 minutes/break = 450 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert break time from minutes to hours.
+            <p>To convert minutes to hours, we divide by 60:</p>
+            <p>Break time in hours = 450 minutes ÷ 60 minutes/hour = 7.5 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Convert hotel search time from minutes to hours.
+            <p>Similarly, we convert the hotel search time to hours:</p>
+            <p>Hotel search time = 30 minutes ÷ 60 minutes/hour = 0.5 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total trip time.
+            <p>Now we add all the time components together:</p>
+            <p>Total trip time = Driving time + Break time + Hotel search time</p>
+            <p>Total trip time = 45 hours + 7.5 hours + 0.5 hours = 53 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        53
+    </div>
+</body>
+</html>

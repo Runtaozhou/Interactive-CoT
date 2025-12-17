@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>John's dog has a litter of 8 puppies.</fact1> He gives away half of them. He keeps one of the remaining puppies. He then takes the remaining puppies and sells them each for <fact2>$600</fact2>. He had to give the owner of the stud <fact3>$300</fact3>. How much money does he profit?
+
+## 2. Facts
+
+<fact1>Number of puppies: 8</fact1>
+<fact2>Selling price per puppy: $600</fact2>
+<fact3>Payment to stud owner: $300</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many puppies John has left after giving half away</step1>
+<formula>total_puppies / 2</formula>
+<calculation>8 / 2 = 4</calculation>
+<var>remaining_puppies: 4</var>
+
+<step2>Calculate how many puppies John sells after keeping one</step2>
+<formula>remaining_puppies - 1</formula>
+<calculation>4 - 1 = 3</calculation>
+<var>puppies_to_sell: 3</var>
+
+<step3>Calculate how much money John makes from selling the puppies</step3>
+<formula>puppies_to_sell * price_per_puppy</formula>
+<calculation>3 * 500 = $1500</calculation>
+<var>total_sales: $1500</var>
+
+<step4>Calculate John's profit after paying the stud owner</step4>
+<formula>total_sales - stud_fee</formula>
+<calculation>1500 - 300 = $1200</calculation>
+<var>profit: $1200</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>1200</output>

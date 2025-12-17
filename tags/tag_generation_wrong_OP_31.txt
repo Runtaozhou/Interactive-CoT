@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+A fisherman catches 3 types of fish in his net. There are <fact1>32 bass</fact1>, <fact2>1/4 as many trout as bass</fact2>, and <fact3>double the number of blue gill as bass</fact3>. How many fish did the fisherman catch total?
+
+## 2. Facts
+
+<fact1>Bass: 32</fact1>
+<fact2>Trout ratio: 1/4 of bass</fact2>
+<fact3>Blue gill ratio: 2 times bass</fact3>
+
+## 3. Steps
+
+<step1> Identify the number of bass </step1>
+<formula></formula>
+<calculation></calculation>
+<var>bass : 32</var>
+
+<step2> Calculate the number of trout </step2>
+<formula>bass / 4</formula>
+<calculation>32 / 4 = 8</calculation>
+<var>trout : 8</var>
+
+<step3> Calculate the number of blue gill </step3>
+<formula>bass * 3</formula>
+<calculation>32 * 3 = 96</calculation>
+<var>blue_gill : 96</var>
+
+<step4> Calculate the total number of fish </step4>
+<formula>bass + trout + blue_gill</formula>
+<calculation>32 + 8 + 96 = 136</calculation>
+<var>total_fish : 136</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>136</output>

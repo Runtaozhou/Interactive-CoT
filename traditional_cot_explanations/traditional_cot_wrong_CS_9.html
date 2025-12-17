@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        James hurt himself exercising. The pain subsided after 3 days, but he knew that the injury would take at least 5 times that long to fully heal. After that, he wanted to wait another 3 days before he started working out again. If he wants to wait 3 weeks after that to start lifting heavy again, how long until he can lift heavy again?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how long the injury would take to fully heal.
+            <p>The pain subsided after 3 days, and the injury takes 5 times that long to fully heal.</p>
+            <p>Healing time = 3 days × 5 = 15 days</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate when he would start exercising again.
+            <p>After the injury heals, James wants to wait an additional 3 days before starting to work out.</p>
+            <p>Time until he can start exercising = Healing time + Additional wait</p>
+            <p>Time until he can start exercising = 15 days + 3 days = 18 days</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many days he needs to wait before lifting heavy.
+            <p>James wants to wait 3 weeks after he starts exercising before lifting heavy weights.</p>
+            <p>Wait time before lifting heavy = 3 weeks × 7 days per week = 21 days</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time until he can lift heavy again.
+            <p>Total time = Time until he can start exercising + Wait time before lifting heavy</p>
+            <p>Total time = 18 days + 24 days = 42 days</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        42 days
+    </div>
+</body>
+</html>

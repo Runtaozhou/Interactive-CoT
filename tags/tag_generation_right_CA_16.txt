@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+The teacher decided to rewards his students with extra recess on report card day if they got good grades. Students normally get <fact1>20 minutes</fact1> for recess. He told the students that every A got them <fact2>2 extra minutes</fact2> of recess. Every B got them <fact3>one extra minute</fact3>. Every C got them <fact4>zero extra minutes</fact4>, but every D got them <fact5>1 less minute</fact5>. When report cards came out there were <fact6>10 As</fact6>, <fact7>12 Bs</fact7>, <fact8>14 Cs</fact8>, and <fact9>5 Ds</fact9>. In total, how much recess would the students get that day?
+
+## 2. Facts
+
+<fact1>Normal recess time: 20 minutes</fact1>
+<fact2>Extra minutes per A: 2</fact2>
+<fact3>Extra minutes per B: 1</fact3>
+<fact4>Extra minutes per C: 0</fact4>
+<fact5>Minutes lost per D: 1</fact5>
+<fact6>Number of As: 10</fact6>
+<fact7>Number of Bs: 12</fact7>
+<fact8>Number of Cs: 14</fact8>
+<fact9>Number of Ds: 5</fact9>
+
+## 3. Steps
+
+<step1> The students have 20 minutes to start. </step1>
+<formula></formula>
+<calculation></calculation>
+<var>base_recess: 20</var>
+
+<step2> They get 20 minutes added for the As because 10 times 2 equals 20 </step2>
+<formula>As × minutes_per_A</formula>
+<calculation>10 × 2 = 20</calculation>
+<var>extra_from_As: 20</var>
+
+<step3> They get 12 minutes added for the Bs because 12 times 1 equals 12 </step3>
+<formula>Bs × minutes_per_B</formula>
+<calculation>12 × 1 = 12</calculation>
+<var>extra_from_Bs: 12</var>
+
+<step4> They get no minutes added or subtracted for the Cs because 14 times 0 equals 0. </step4>
+<formula>Cs × minutes_per_C</formula>
+<calculation>14 × 0 = 0</calculation>
+<var>extra_from_Cs: 0</var>
+
+<step5> They get 5 minutes taken away for the Ds because 5 times 1 equals 5. </step5>
+<formula>Ds × minutes_lost_per_D</formula>
+<calculation>5 × 1 = 5</calculation>
+<var>lost_from_Ds: 5</var>
+
+<step6> In total, they get 47 minutes of recess because 20 plus 20 plus 12 minus 5 equals 47. </step6>
+<formula>base_recess + extra_from_As + extra_from_Bs - lost_from_Ds</formula>
+<calculation>20 + 20 + 12 - 5 = 47</calculation>
+<var>total_recess: 47</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>47</output>

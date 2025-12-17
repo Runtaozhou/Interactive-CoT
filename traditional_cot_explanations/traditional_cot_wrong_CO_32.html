@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mitch is a freelancer, she works 5 hours every day from Monday to Friday and 3 hours every Saturday and Sunday. If she earns $3 per hour and earns double on weekends, how much does she earn every week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much Mitch earns per weekday.
+            <p>We need to multiply the hours worked per weekday by the hourly rate:</p>
+            <p>5 hours × $3 per hour = $15 per weekday</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much Mitch earns for all weekdays.
+            <p>We multiply the daily weekday earnings by the number of weekdays (Monday to Friday):</p>
+            <p>$15 per day × 5 days = $75 total weekday earnings</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Mitch's hourly rate on weekends.
+            <p>Since Mitch earns double on weekends, we multiply the weekday rate by 2:</p>
+            <p>$3 per hour × 2 = $6 per hour on weekends</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how much Mitch earns for her weekend hours.
+            <p>We multiply the weekend hourly rate by the hours worked per weekend day:</p>
+            <p>$6 per hour × 3 hours = $18 per weekend day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate total weekend earnings.
+            <p>We multiply the daily weekend earnings by the number of weekend days:</p>
+            <p>$18 per day × 1 day = $18 total weekend earnings</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate total weekly earnings.
+            <p>We add the total weekday earnings and the total weekend earnings:</p>
+            <p>$75 (weekday earnings) + $18 (weekend earnings) = $93 total weekly earnings</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        93
+    </div>
+</body>
+</html>

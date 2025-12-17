@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Martha collected 90 cans</fact1> while Diego collected <fact2>10 more than half the cans collected by Martha</fact2>. If <fact3>both of them should collect a total of 150 cans</fact3> for their project, how many more cans do they need to collect?
+
+## 2. Facts
+
+<fact1>Martha's cans: 90 cans</fact1>
+<fact2>Diego's cans: 10 more than half of Martha's cans</fact2>
+<fact3>Total cans needed: 150 cans</fact3>
+
+## 3. Steps
+
+<step1>Calculate half the cans collected by Martha</step1>
+<formula>Martha's cans ÷ 2</formula>
+<calculation>80/2 = 40</calculation>
+<var>half_martha_cans: 40 cans</var>
+
+<step2>Calculate how many cans Diego collected</step2>
+<formula>half_martha_cans + 10</formula>
+<calculation>40 + 10 = 50 cans</calculation>
+<var>diego_cans: 50 cans</var>
+
+<step3>Calculate the total cans they have collected so far</step3>
+<formula>Martha's cans + diego_cans</formula>
+<calculation>90 + 50 = 140 cans</calculation>
+<var>total_collected: 140 cans</var>
+
+<step4>Calculate how many more cans they need to collect</step4>
+<formula>Total cans needed - total_collected</formula>
+<calculation>150 - 140 = 10 cans</calculation>
+<var>more_cans_needed: 10 cans</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>10</output>

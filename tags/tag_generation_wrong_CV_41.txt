@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+A child is making a pyramid by stacking some blocks. <fact1>In the first row, he has 9 blocks.</fact1> <fact2>For the next rows, he has 2 less than the blocks he has from its bottom row.</fact2> <fact3>The pyramid has 5 levels.</fact3> How many blocks did he use in all?
+
+## 2. Facts
+
+<fact1>First row blocks: 9</fact1>
+<fact2>Each subsequent row has 2 fewer blocks than the row below it</fact2>
+<fact3>Total number of levels: 5</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of blocks in the second row </step1>
+<formula> first_row_blocks - 2 </formula>
+<calculation> 8 - 2 = 6 blocks </calculation>
+<var> second_row_blocks : 6 </var>
+
+<step2> Calculate the number of blocks in the third row </step2>
+<formula> second_row_blocks - 2 </formula>
+<calculation> 6 - 2 = 4 blocks </calculation>
+<var> third_row_blocks : 4 </var>
+
+<step3> Calculate the number of blocks in the fourth row </step3>
+<formula> third_row_blocks - 2 </formula>
+<calculation> 4 - 2 = 2 blocks </calculation>
+<var> fourth_row_blocks : 2 </var>
+
+<step4> Calculate the number of blocks in the fifth row </step4>
+<formula> fourth_row_blocks - 2 </formula>
+<calculation> 2 - 2 = 0 block </calculation>
+<var> fifth_row_blocks : 0 </var>
+
+<step5> Add up all blocks to find the total </step5>
+<formula> first_row_blocks + second_row_blocks + third_row_blocks + fourth_row_blocks + fifth_row_blocks </formula>
+<calculation> 9 + 6 + 4 + 2 + 0 = 21 blocks </calculation>
+<var> total_blocks : 21 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 21 </output>

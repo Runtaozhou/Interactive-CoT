@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+<fact1>Sandra saved $10 for sweets</fact1>. <fact2>Her mother gave her an additional $4</fact2>, and <fact3>her father twice as much as her mother</fact3>. <fact4>One candy costs $0.5</fact4>, and <fact5>one jelly bean $0.2</fact5>. She wants to buy <fact6>14 candies</fact6> and <fact7>20 jelly beans</fact7>. How much money will she be left with after the purchase?
+
+## 2. Facts
+
+<fact1>Sandra's savings: $10</fact1>
+<fact2>Money from mother: $4</fact2>
+<fact3>Money from father: 2 times mother's amount</fact3>
+<fact4>Cost of one candy: $0.5</fact4>
+<fact5>Cost of one jelly bean: $0.2</fact5>
+<fact6>Number of candies to buy: 14</fact6>
+<fact7>Number of jelly beans to buy: 20</fact7>
+
+## 3. Steps
+
+<step1>Sandra's father gave her $4 * 2 = $8.</step1>
+<formula>father_money = mother_money * 2</formula>
+<calculation>$4 * 2 = $8</calculation>
+<var>father_money: $8</var>
+
+<step2>So Sandra has in total $8 + $4 + $10 = $22.</step2>
+<formula>total_money = father_money + mother_money + savings</formula>
+<calculation>$8 + $4 + $10 = $22</calculation>
+<var>total_money: $22</var>
+
+<step3>She wants 14 candies, so she is going to pay 14 candies * $0.50/candy = $7 for them.</step3>
+<formula>candy_cost = number_of_candies * cost_per_candy</formula>
+<calculation>14 * $0.50 = $7</calculation>
+<var>candy_cost: $7</var>
+
+<step4>She wants also 20 jellybeans, and they're going to cost 20 jellybeans * $0.20/jellybean = $4.</step4>
+<formula>jellybean_cost = number_of_jellybeans * cost_per_jellybean</formula>
+<calculation>20 * $0.20 = $4</calculation>
+<var>jellybean_cost: $4</var>
+
+<step5>So after the purchase, she will be left with $22 - $4 - $7 = $11.</step5>
+<formula>money_left = total_money - jellybean_cost - candy_cost</formula>
+<calculation>$22 - $4 - $7 = $11</calculation>
+<var>money_left: $11</var>
+
+## 4. Wrongsteps
+
+<wrongstep>5</wrongstep>
+
+## 5. Output
+
+<output>11</output>

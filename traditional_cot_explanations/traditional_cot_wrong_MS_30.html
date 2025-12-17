@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Marcus has received a commission for as many paintings as possible. Marcus plans out his drawings so that his client can receive some of the paintings as soon as possible but it is still going to take a long time. On the first day, he paints 2 paintings. He then paints every day and each day, he paints twice as many paintings as he painted the day before. If he paints for 5 days, how many paintings will he have painted in total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many paintings Marcus paints on the second day.
+            <p>Since Marcus paints twice as many paintings each day as the day before, and he painted 2 paintings on the first day:</p>
+            <p>Second day paintings = First day paintings × 2 = 2 × 2 = 4 paintings</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many paintings Marcus paints on the third day.
+            <p>Following the same pattern, Marcus will paint twice as many as the second day:</p>
+            <p>Third day paintings = Second day paintings × 2 = 4 × 2 = 8 paintings</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many paintings Marcus paints on the fourth day.
+            <p>Again, doubling the previous day's output:</p>
+            <p>Fourth day paintings = Third day paintings × 2 = 8 × 2 = 16 paintings</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many paintings Marcus paints on the fifth day.
+            <p>Continuing the pattern:</p>
+            <p>Fifth day paintings = Fourth day paintings × 2 = 16 × 2 = 32 paintings</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Add up all the paintings from all five days to find the total.
+            <p>Total paintings = Day 1 + Day 2 + Day 3 + Day 4 + Day 5</p>
+            <p>Total paintings = 2 + 4 + 8 + 16 + 32 = 62 paintings</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        62
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+James has a small tree outside his window with <fact1>30 branches</fact1> with <fact2>90 twigs per branch</fact2>. <fact3>30% of the twigs sprout 4 leaves</fact3> and the rest sprout <fact4>5 leaves</fact4>. How many leaves are on the tree total?
+
+## 2. Facts
+
+<fact1>Branches: 30</fact1>
+<fact2>Twigs per branch: 90</fact2>
+<fact3>Percentage of twigs with 4 leaves: 30%</fact3>
+<fact4>Leaves per remaining twigs: 5</fact4>
+
+## 3. Steps
+
+<step1> First find the total number of twigs on the tree </step1>
+<formula> branches × twigs per branch </formula>
+<calculation> 30 branches * 90 twigs/branch = 2700 twigs </calculation>
+<var> total_twigs : 2700 twigs </var>
+
+<step2> Then multiply that number by 30% to find how many twigs have 4 leaves </step2>
+<formula> total_twigs × 30% </formula>
+<calculation> 2700 twigs * 30% = 810 twigs </calculation>
+<var> twigs_with_4_leaves : 810 twigs </var>
+
+<step3> Then subtract that number from the total number of twigs to find how many have 5 leaves </step3>
+<formula> total_twigs - twigs_with_4_leaves </formula>
+<calculation> 2700 twigs - 800 twigs = 1900 twigs </calculation>
+<var> twigs_with_5_leaves : 1900 twigs </var>
+
+<step4> Then multiply that number by 5 to find the number of leaves on the 5-leaved twigs </step4>
+<formula> twigs_with_5_leaves × 5 leaves per twig </formula>
+<calculation> 1900 twigs * 5 leaves/twig = 9500 leaves </calculation>
+<var> leaves_from_5_leaf_twigs : 9500 leaves </var>
+
+<step5> Then multiply the number of 4-leaved twigs by 4 to find the total number of leaves they have </step5>
+<formula> twigs_with_4_leaves × 4 leaves per twig </formula>
+<calculation> 810 twigs * 4 leaves/twig = 3240 leaves </calculation>
+<var> leaves_from_4_leaf_twigs : 3240 leaves </var>
+
+<step6> Then add the two groups of leaves to find the total number of leaves </step6>
+<formula> leaves_from_5_leaf_twigs + leaves_from_4_leaf_twigs </formula>
+<calculation> 9500 leaves + 3240 leaves = 12740 leaves </calculation>
+<var> total_leaves : 12740 leaves </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 12740 </output>

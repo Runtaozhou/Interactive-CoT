@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Timmy's parents have a 2 car garage, which has both cars inside it. Also inside is a riding lawnmower, a bicycle for Timmy as well as each of his parents, a tricycle for Timmy's little brother Joey, and a unicycle that Timmy's dad practices riding on. How many wheels in total are in this garage?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of wheels from the cars.
+            <p>Each car has 4 wheels, and there are 2 cars in the garage.</p>
+            <p>Number of wheels from cars = 4 × 2 = 8 wheels</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Add the wheels from the riding lawnmower.
+            <p>A riding lawnmower typically has 4 wheels.</p>
+            <p>Total wheels so far = 8 + 4 = 12 wheels</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the wheels from all the bicycles.
+            <p>There are 3 bicycles (one for Timmy and one for each of his parents), and each bicycle has 2 wheels.</p>
+            <p>Number of wheels from bicycles = 3 × 2 = 6 wheels</p>
+            <p>Total wheels so far = 12 + 6 = 18 wheels</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Add the wheels from the tricycle and unicycle.
+            <p>A tricycle has 3 wheels, and a unicycle has 1 wheel.</p>
+            <p>Total wheels = 18 + 3 + 1 = 20 wheels</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        20
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Joshua collected 80 rocks</fact1> while Jose collected <fact2>14 fewer rocks</fact2>. Albert has collected <fact3>20 more rocks than Jose</fact3>. How many more rocks did Albert collect than Joshua?
+
+## 2. Facts
+
+<fact1>Joshua's rocks: 80 rocks</fact1>
+<fact2>Jose collected fewer than Joshua: 14 rocks</fact2>
+<fact3>Albert collected more than Jose: 20 rocks</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many rocks Jose collected </step1>
+<formula> Joshua's rocks - difference </formula>
+<calculation> 80 - 14 = 66 rocks </calculation>
+<var> jose_rocks : 66 rocks </var>
+
+<step2> Calculate how many rocks Albert collected </step2>
+<formula> Jose's rocks + difference </formula>
+<calculation> 66 + 20 = 86 rocks </calculation>
+<var> albert_rocks : 86 rocks </var>
+
+<step3> Calculate how many more rocks Albert collected than Joshua </step3>
+<formula> Albert's rocks - Joshua's rocks </formula>
+<calculation> 86 - 80 = 7 rocks </calculation>
+<var> difference_albert_joshua : 7 rocks </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 7 </output>

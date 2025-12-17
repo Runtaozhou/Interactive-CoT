@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        At football tryouts, the coach wanted to see who could throw the ball the farthest. Parker threw the ball 16 yards. Grant threw the ball 25 percent farther than Parker and Kyle threw the ball 2 times farther than Grant. Compared to Parker, how much farther did Kyle throw the ball?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much farther Grant threw compared to Parker.
+            <p>To find this, we need to calculate 25% of Parker's throw distance:</p>
+            <p>Parker's throw × 0.25 = 16 × 0.25 = 4 yards</p>
+            <p>So Grant threw 4 yards farther than Parker.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Grant's total throwing distance.
+            <p>We add Parker's throw distance and the extra distance Grant threw:</p>
+            <p>Parker's throw + Grant's extra distance = 16 + 4 = 20 yards</p>
+            <p>So Grant threw the ball a total of 20 yards.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Kyle's throwing distance.
+            <p>Kyle threw 2 times farther than Grant:</p>
+            <p>Grant's distance × 2 = 20 × 2 = 40 yards</p>
+            <p>So Kyle threw the ball a total of 40 yards.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how much farther Kyle threw compared to Parker.
+            <p>We subtract Parker's throw distance from Kyle's throw distance:</p>
+            <p>Kyle's distance - Parker's distance = 40 - 16 = 20 yards</p>
+            <p>So Kyle threw the ball 20 yards farther than Parker.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        20
+    </div>
+</body>
+</html>

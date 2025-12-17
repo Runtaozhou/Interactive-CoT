@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Jimmy is at the candy store and buys <fact1>2 candy bars for $.75 each</fact1>. He then buys <fact2>4 lollipops that cost $.25 each</fact2>. He spent <fact3>1/6 of the money he earned from shoveling snow</fact3>. If he <fact4>charges $1.5 per driveway</fact4>, how many driveways did he shovel?
+
+## 2. Facts
+
+<fact1>Candy bars: 2 for $0.75 each</fact1>
+<fact2>Lollipops: 4 for $0.25 each</fact2>
+<fact3>Spending ratio: 1/6 of snow shoveling earnings</fact3>
+<fact4>Charge per driveway: $1.5</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total cost of candy bars </step1>
+<formula> number of candy bars × price per candy bar </formula>
+<calculation> 2 x .75 = 1.5 </calculation>
+<var> candy_bar_cost : $1.5 </var>
+
+<step2> Calculate the total cost of lollipops </step2>
+<formula> number of lollipops × price per lollipop </formula>
+<calculation> 4 x .25 = 1 </calculation>
+<var> lollipop_cost : $1 </var>
+
+<step3> Calculate the total amount Jimmy spent at the candy store </step3>
+<formula> candy_bar_cost + lollipop_cost </formula>
+<calculation> 1.5 + 1 = 2.5 </calculation>
+<var> total_spent : $2.5 </var>
+
+<step4> Calculate how much money Jimmy earned from shoveling snow </step4>
+<formula> total_spent × (1/6) </formula>
+<calculation> 2.5 * (1/6) = 0.4166666667 </calculation>
+<var> snow_shoveling_earnings : $15 </var>
+
+<step5> Calculate the number of driveways Jimmy shoveled </step5>
+<formula> snow_shoveling_earnings ÷ charge per driveway </formula>
+<calculation> 0.4166666667 / 1.5 = 0.277777778 </calculation>
+<var> driveways_shoveled : 0.277777778 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 0.277777778 </output>

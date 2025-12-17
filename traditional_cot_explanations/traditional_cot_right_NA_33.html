@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Ted the T-Rex was planning to bring potato salad to the dinosaur picnic. He knows that an adult dinosaur will eat 10 lbs of potato salad, and a child will eat half as much as an adult. If there will be 20 adults and 5 children at the picnic, how many pounds of potato salad does Ted need to bring to the picnic if he hopes to have enough to feed everyone?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much potato salad a child dinosaur eats.
+            <p>Since a child eats half as much as an adult, and an adult eats 10 pounds:</p>
+            <p>Child consumption = Adult consumption ÷ 2 = 10 ÷ 2 = 5 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total amount needed for all adult dinosaurs.
+            <p>Total for adults = Number of adults × Adult consumption = 20 × 10 = 200 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total amount needed for all child dinosaurs.
+            <p>Total for children = Number of children × Child consumption = 5 × 5 = 25 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total amount of potato salad needed.
+            <p>Total potato salad = Adult total + Child total = 200 + 25 = 225 pounds</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        225
+    </div>
+</body>
+</html>

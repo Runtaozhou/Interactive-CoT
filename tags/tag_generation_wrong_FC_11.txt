@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+<fact1>James has a room that is 13 feet by 18 feet.</fact1> He increases <fact2>each dimension by 2 feet.</fact2> He then builds <fact3>3 more rooms of equal size</fact3> and <fact4>1 room of twice that size.</fact4> How much area does he have?
+
+## 2. Facts
+
+<fact1>Original room dimensions: 13 feet by 18 feet</fact1>
+<fact2>Dimension increase: 2 feet</fact2>
+<fact3>Additional equal-sized rooms: 3</fact3>
+<fact4>Larger room multiplier: 2</fact4>
+
+## 3. Steps
+
+<step1> Calculate the new length after increasing it </step1>
+<formula> original length + increase </formula>
+<calculation> 13 + 2 = 15 feet </calculation>
+<var> new_length : 15 feet </var>
+
+<step2> Calculate the new width after increasing it </step2>
+<formula> original width + increase </formula>
+<calculation> 18 + 2 = 20 feet </calculation>
+<var> new_width : 20 feet </var>
+
+<step3> Calculate the area of each room </step3>
+<formula> new_length + new_width + new_length + new_width </formula>
+<calculation> 15 + 20 + 15 + 20 = 70 square feet </calculation>
+<var> room_area : 70 square feet </var>
+
+<step4> Calculate the total number of equal-sized rooms </step4>
+<formula> original room + additional rooms </formula>
+<calculation> 1 + 3 = 4 rooms </calculation>
+<var> total_equal_rooms : 4 </var>
+
+<step5> Calculate the total area of all equal-sized rooms </step5>
+<formula> total_equal_rooms × room_area </formula>
+<calculation> 4 * 70 = 280 square feet </calculation>
+<var> equal_rooms_area : 280 square feet </var>
+
+<step6> Calculate the area of the larger room </step6>
+<formula> room_area × larger room multiplier </formula>
+<calculation> 70 * 2 = 140 square feet </calculation>
+<var> larger_room_area : 140 square feet </var>
+
+<step7> Calculate the total area of all rooms </step7>
+<formula> equal_rooms_area + larger_room_area </formula>
+<calculation> 280 + 140 = 420 square feet </calculation>
+<var> total_area : 420 square feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 420 </output>

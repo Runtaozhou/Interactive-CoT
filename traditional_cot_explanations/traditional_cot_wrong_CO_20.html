@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Emily wants to know how much it rained last week. She sees that it rained 2 inches on Monday morning and 1 more inch later that day. It rained twice that much on Tuesday. It did not rain on Wednesday but on Thursday it rained 1 inch. The biggest storm was on Friday when the total was equal to Monday through Thursday combined. What was the daily average rain total for the week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total rain on Monday.
+            <p>Monday had 2 inches in the morning plus 1 more inch later in the day.</p>
+            <p>Morning rain + afternoon rain = 2 inches + 1 inch = 3 inches</p>
+            <p>So Monday had a total of 3 inches of rain.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total rain on Tuesday.
+            <p>Tuesday's rain was twice Monday's amount.</p>
+            <p>Tuesday rain = 2 × Monday rain = 2 × 3 inches = 6 inches</p>
+            <p>So Tuesday had a total of 6 inches of rain.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total rain across Wednesday and Thursday.
+            <p>Wednesday had no rain, and Thursday had 1 inch of rain.</p>
+            <p>Wednesday rain + Thursday rain = 0 inches + 1 inch = 1 inch</p>
+            <p>So Wednesday and Thursday combined had 1 inch of rain.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total rain on Friday.
+            <p>Friday's rain was equal to Monday through Thursday combined.</p>
+            <p>Friday rain = Monday rain + Tuesday rain + Wednesday/Thursday rain</p>
+            <p>Friday rain = 3 inches + 6 inches + 1 inch = 10 inches</p>
+            <p>So Friday had a total of 10 inches of rain.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total rain from Monday to Thursday.
+            <p>We need to add up all the rain from Monday through Thursday.</p>
+            <p>Monday to Thursday rain = Monday rain + Tuesday rain + Wednesday/Thursday rain</p>
+            <p>Monday to Thursday rain = 3 inches + 6 inches + 1 inch = 10 inches</p>
+            <p>So Monday through Thursday had a total of 20 inches of rain.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the average daily rain for the week.
+            <p>To find the average, we divide the total rain by the number of days.</p>
+            <p>Average daily rain = Monday to Thursday rain ÷ 4 days</p>
+            <p>Average daily rain = 20 inches ÷ 4 days = 5 inches per day</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        5
+    </div>
+</body>
+</html>

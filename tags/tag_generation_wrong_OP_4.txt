@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Shelly makes braided keychains for her friends at school. Each keychain takes <fact1>12 inches of thread</fact1> to braid. This year, she made <fact2>six friends in classes</fact2> and <fact3>half that number from after-school clubs</fact3>. She wants to make each of them a keychain. How many inches of thread does Shelly need?
+
+## 2. Facts
+
+<fact1>Thread per keychain: 12 inches</fact1>
+<fact2>Friends in classes: 6</fact2>
+<fact3>Friends from after-school clubs: half of 6</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of friends from after-school clubs </step1>
+<formula> friends_in_classes * 2 </formula>
+<calculation> 6 * 2 = 12 </calculation>
+<var> friends_from_clubs : 12 </var>
+
+<step2> Find the total number of friends </step2>
+<formula> friends_in_classes + friends_from_clubs </formula>
+<calculation> 6 + 12 = 18 </calculation>
+<var> total_friends : 18 </var>
+
+<step3> Calculate the total thread needed for all keychains </step3>
+<formula> total_friends * thread_per_keychain </formula>
+<calculation> 18 * 12 = 216 </calculation>
+<var> total_thread : 216 inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 216 </output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Rachel weighs 75 pounds</fact1>, <fact2>6 pounds less than Jimmy</fact2> and <fact3>15 pounds more than Adam</fact3>. What is the average weight of the three people, in pounds?
+
+## 2. Facts
+
+<fact1>Rachel's weight: 75 pounds</fact1>
+<fact2>Rachel weighs 6 pounds less than Jimmy</fact2>
+<fact3>Rachel weighs 15 pounds more than Adam</fact3>
+
+## 3. Steps
+
+<step1> Calculate Jimmy's weight based on Rachel's weight </step1>
+<formula> Rachel's weight + 6 </formula>
+<calculation> 75 + 6 = 81 pounds </calculation>
+<var> jimmy_weight : 81 pounds </var>
+
+<step2> Calculate Adam's weight based on Rachel's weight </step2>
+<formula> Rachel's weight - 10 </formula>
+<calculation> 75 - 10 = 65 pounds </calculation>
+<var> adam_weight : 65 pounds </var>
+
+<step3> Find the total weight of all three people </step3>
+<formula> Rachel's weight + Jimmy's weight + Adam's weight </formula>
+<calculation> 75 + 81 + 65 = 221 pounds </calculation>
+<var> total_weight : 221 pounds </var>
+
+<step4> Calculate the average weight by dividing the total by 3 </step4>
+<formula> total_weight ÷ 3 </formula>
+<calculation> 221 ÷ 3 = 73.6666666667 pounds </calculation>
+<var> average_weight : 73.6666666667 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 73.6666666667 </output>

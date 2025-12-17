@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+<fact1>James earns $10 per week as an allowance.</fact1> After saving all his money for <fact2>four weeks</fact2>, he spends <fact3>half of it</fact3> on a new video game. He then spends <fact4>a quarter of what is left</fact4> to buy a new book. How much money does he have left?
+
+## 2. Facts
+
+<fact1>Weekly allowance: $10</fact1>
+<fact2>Saving period: 4 weeks</fact2>
+<fact3>Portion spent on video game: 1/2 of total</fact3>
+<fact4>Portion spent on book: 1/4 of remaining money</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total amount James saved over four weeks </step1>
+<formula> weekly allowance × number of weeks </formula>
+<calculation> $10 * 4 = $40 </calculation>
+<var> total_savings : $40 </var>
+
+<step2> Calculate how much James spent on the video game </step2>
+<formula> total_savings / 2 </formula>
+<calculation> $40 / 2 = $20 </calculation>
+<var> video_game_cost : $20 </var>
+
+<step3> Calculate how much money James has left after buying the video game </step3>
+<formula> total_savings - video_game_cost </formula>
+<calculation> $40 - $20 = $20 </calculation>
+<var> money_after_game : $20 </var>
+
+<step4> Calculate how much James spent on the book </step4>
+<formula> money_after_game / 4 </formula>
+<calculation> $20 / 4 = $5 </calculation>
+<var> book_cost : $5 </var>
+
+<step5> Calculate how much money James has left after buying both items </step5>
+<formula> money_after_game - book_cost </formula>
+<calculation> $20 - $10 = $10 </calculation>
+<var> final_money : $10 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 10 </output>

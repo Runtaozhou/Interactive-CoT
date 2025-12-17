@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Three times the sum of marbles that Atticus, Jensen, and Cruz have is equal to 60. If Atticus has half as many marbles as Jensen, and Atticus has 4 marbles, how many marbles does Cruz have?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of marbles by dividing the triple sum by 3.
+            <br>
+            We know that three times the sum of marbles equals 60.
+            <br>
+            Total marbles = 60 ÷ 3 = 180
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many marbles Jensen has based on Atticus's marbles.
+            <br>
+            Since Atticus has half as many marbles as Jensen, Jensen has twice as many as Atticus.
+            <br>
+            Jensen's marbles = Atticus's marbles × 2 = 4 × 2 = 8 marbles
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the combined marbles of Atticus and Jensen.
+            <br>
+            Atticus and Jensen together have:
+            <br>
+            Atticus's marbles + Jensen's marbles = 4 + 8 = 12 marbles
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate Cruz's marbles by subtracting Atticus and Jensen's marbles from the total.
+            <br>
+            Cruz's marbles = Total marbles - (Atticus's marbles + Jensen's marbles)
+            <br>
+            Cruz's marbles = 180 - 12 = 168 marbles
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        168
+    </div>
+</body>
+</html>

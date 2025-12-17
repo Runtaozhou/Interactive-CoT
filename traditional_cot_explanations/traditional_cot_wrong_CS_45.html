@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Lionel went to the grocery store and bought 14 boxes of Graham crackers and 15 packets of Oreos. To make an Oreo cheesecake, Lionel needs 2 boxes of Graham crackers and 3 packets of Oreos. After making the maximum number of Oreo cheesecakes he can with the ingredients he bought, how many boxes of Graham crackers would he have left over?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many cheesecakes Lionel can make with the Graham crackers.
+            <p>We need to divide the total number of Graham cracker boxes by the number needed per cheesecake:</p>
+            <p>14 ÷ 2 = 7</p>
+            <p>So Lionel can make at most 7 cheesecakes based on the Graham crackers he has.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many cheesecakes Lionel can make with the Oreos.
+            <p>We need to divide the total number of Oreo packets by the number needed per cheesecake:</p>
+            <p>15 ÷ 3 = 5</p>
+            <p>So Lionel can make at most 5 cheesecakes based on the Oreos he has.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Determine the maximum number of cheesecakes Lionel can make.
+            <p>Since Lionel needs both Graham crackers and Oreos to make a cheesecake, he is limited by whichever ingredient allows him to make fewer cheesecakes.</p>
+            <p>He can make 7 cheesecakes with his Graham crackers, but only 5 cheesecakes with his Oreos.</p>
+            <p>Therefore, the maximum number of cheesecakes he can make is 5.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many boxes of Graham crackers are needed for the maximum number of cheesecakes.
+            <p>For each cheesecake, Lionel needs 2 boxes of Graham crackers.</p>
+            <p>For 5 cheesecakes, he needs: 2 × 5 = 10 boxes of Graham crackers.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many boxes of Graham crackers are left over.
+            <p>Lionel bought 14 boxes of Graham crackers and used 10 boxes for the cheesecakes.</p>
+            <p>14 - 10 = 4 boxes of Graham crackers left over.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        6
+    </div>
+</body>
+</html>

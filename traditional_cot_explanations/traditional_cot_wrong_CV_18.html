@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A shady restaurant is charging customers gratuities after taxes without them being aware. If my total bill was $140, the sales tax in my city is 10%, I ordered a NY Striploin for $80, and I ordered a glass of wine for $10, how much did they charge me for gratuities?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total bill before taxes or gratuities.
+            <p>We need to add the cost of the NY Striploin and the glass of wine:</p>
+            <p>NY Striploin cost + wine cost = $80 + $10 = $90</p>
+            <p>So the pre-tax bill is $90.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the taxes paid.
+            <p>We multiply the pre-tax bill by the tax rate:</p>
+            <p>$90 × 15% = $13.5</p>
+            <p>The taxes amount to $13.5.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total bill before gratuities.
+            <p>We add the pre-tax bill and the taxes:</p>
+            <p>$90 + $13.5 = $103.5</p>
+            <p>The bill with tax is $103.5.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the gratuities charged.
+            <p>We subtract the bill with tax from the total bill:</p>
+            <p>$140 - $103.5 = $36.5</p>
+            <p>The gratuities charged amount to $36.5.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        36.5
+    </div>
+</body>
+</html>

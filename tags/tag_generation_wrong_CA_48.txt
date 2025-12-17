@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+A tomato plant has <fact1>100 tomatoes</fact1>. Jane picks <fact2>1/4</fact2> of that number for use in their house. After a week, she goes back and picks <fact3>20 more tomatoes</fact3>, and the following week picks <fact4>twice that number</fact4>. What's the total number of fruits remaining on the tomato plant?
+
+## 2. Facts
+
+<fact1>Initial tomatoes: 100</fact1>
+<fact2>First picking: 1/4 of total</fact2>
+<fact3>Second picking: 20 tomatoes</fact3>
+<fact4>Third picking: twice the second picking</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many tomatoes Jane picks in the first round </step1>
+<formula> total tomatoes × fraction picked </formula>
+<calculation> 1/4 * 100 = 25 tomatoes </calculation>
+<var> first_picking : 25 tomatoes </var>
+
+<step2> Calculate how many tomatoes remain after the first picking </step2>
+<formula> total tomatoes - first picking </formula>
+<calculation> 100 - 25 = 75 tomatoes </calculation>
+<var> remaining_after_first : 75 tomatoes </var>
+
+<step3> Calculate how many tomatoes remain after the second picking </step3>
+<formula> remaining after first picking - second picking </formula>
+<calculation> 75 - 20 = 50 tomatoes </calculation>
+<var> remaining_after_second : 50 tomatoes </var>
+
+<step4> Calculate how many tomatoes Jane picks in the third round </step4>
+<formula> second picking × 2 </formula>
+<calculation> 20 * 2 = 40 tomatoes </calculation>
+<var> third_picking : 40 tomatoes </var>
+
+<step5> Calculate the final number of tomatoes remaining </step5>
+<formula> remaining after second picking - third picking </formula>
+<calculation> 50 - 40 = 10 tomatoes </calculation>
+<var> final_remaining : 10 tomatoes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 10 </output>

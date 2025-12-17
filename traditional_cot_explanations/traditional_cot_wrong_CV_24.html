@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Levi has 5 lemons. Jayden has 6 more lemons than Levi. Jayden has one-third as many lemons as Eli has while Eli has one-half as many lemons as Ian has. How many lemons do they have in all?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many lemons Jayden has.
+            <p>Since Jayden has 6 more lemons than Levi, and Levi has 5 lemons:</p>
+            <p>Jayden's lemons = Levi's lemons + 6 = 5 + 6 = 11 lemons</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many lemons Eli has.
+            <p>Since Jayden has one-third as many lemons as Eli, we need to multiply Jayden's lemons by 3:</p>
+            <p>Eli's lemons = Jayden's lemons × 3 = 8 × 3 = 24 lemons</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many lemons Ian has.
+            <p>Since Eli has one-half as many lemons as Ian, we need to multiply Eli's lemons by 2:</p>
+            <p>Ian's lemons = Eli's lemons × 2 = 24 × 2 = 48 lemons</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of lemons.
+            <p>We add up all the lemons from each person:</p>
+            <p>Total lemons = Levi's lemons + Jayden's lemons + Eli's lemons + Ian's lemons</p>
+            <p>Total lemons = 5 + 11 + 24 + 48 = 88 lemons</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        88
+    </div>
+</body>
+</html>

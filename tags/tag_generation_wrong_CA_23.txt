@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+A pet store owner had <fact1>12 birds</fact1>, <fact2>9 puppies</fact2>, <fact3>5 cats</fact3>, and <fact4>15 spiders</fact4>. <fact5>Half the birds were sold</fact5> and <fact6>3 puppies were adopted</fact6>. Then, someone left the spider enclosure open and <fact7>7 of them went loose</fact7>. How many animals does the pet store owner have left?
+
+## 2. Facts
+
+<fact1>Initial birds: 12</fact1>
+<fact2>Initial puppies: 9</fact2>
+<fact3>Initial cats: 5</fact3>
+<fact4>Initial spiders: 15</fact4>
+<fact5>Birds sold: half</fact5>
+<fact6>Puppies adopted: 3</fact6>
+<fact7>Spiders escaped: 7</fact7>
+
+## 3. Steps
+
+<step1> Calculate how many birds are left after half were sold </step1>
+<formula> initial_birds ÷ 2 </formula>
+<calculation> 12/2 = 6 </calculation>
+<var> birds_left : 6 </var>
+
+<step2> Calculate how many puppies are left after some were adopted </step2>
+<formula> initial_puppies - puppies_adopted </formula>
+<calculation> 9 - 3 = 6 </calculation>
+<var> puppies_left : 6 </var>
+
+<step3> Calculate how many spiders are left after some escaped </step3>
+<formula> initial_spiders - spiders_escaped </formula>
+<calculation> 15 - 7 = 6 </calculation>
+<var> spiders_left : 6 </var>
+
+<step4> Add up all remaining animals to find the total </step4>
+<formula> cats + birds_left + puppies_left + spiders_left </formula>
+<calculation> 5 + 6 + 6 + 6 = 23 </calculation>
+<var> total_animals_left : 23 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 23 </output>

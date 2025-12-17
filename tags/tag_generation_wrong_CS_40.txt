@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+There are <fact1>20 bicycles</fact1>, <fact2>10 cars</fact2> and <fact3>5 motorcycles</fact3> in the garage at Connor's house. How many wheels are there in the garage?
+
+## 2. Facts
+
+<fact1>Number of bicycles: 20</fact1>
+<fact2>Number of cars: 10</fact2>
+<fact3>Number of motorcycles: 5</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of bicycle wheels </step1>
+<formula> number of bicycles × 2 </formula>
+<calculation> 2 × 20 = 40 </calculation>
+<var> bicycle_wheels : 40 </var>
+
+<step2> Calculate the number of car wheels </step2>
+<formula> number of cars × 4 </formula>
+<calculation> 4 × 10 = 40 </calculation>
+<var> car_wheels : 40 </var>
+
+<step3> Calculate the number of motorcycle wheels </step3>
+<formula> number of motorcycles × 2 </formula>
+<calculation> 2 × 5 = 10 </calculation>
+<var> motorcycle_wheels : 10 </var>
+
+<step4> Add up all the wheels to find the total </step4>
+<formula> bicycle_wheels + car_wheels + motorcycle_wheels </formula>
+<calculation> 40 + 40 + 5 = 85 </calculation>
+<var> total_wheels : 85 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 85 </output>

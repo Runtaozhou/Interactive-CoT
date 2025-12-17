@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Donna is trying to figure out if her truck is over a particular bridge's weight limit. The bridge can hold 20,000 pounds. Donna's empty truck weighs 12,000 pounds. She's carrying 20 crates of soda that each weigh 50 pounds, 3 dryers that each weigh 3000 pounds, and twice as much weight in fresh produce as in soda. How much does Donna's fully loaded truck weigh?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the weight of the fresh produce by doubling the weight of the soda.
+            <p>First, we need to find the total weight of the soda: 20 crates × 50 pounds/crate = 1,000 pounds</p>
+            <p>Then, the weight of fresh produce is twice the weight of soda: 1,000 pounds × 2 = 2,000 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total weight of the dryers.
+            <p>The weight of all dryers is: 3 dryers × 3,000 pounds/dryer = 9,000 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the fully loaded truck weight by adding the empty truck weight, fresh produce weight, and dryers weight.
+            <p>Fully loaded truck weight = Empty truck weight + Fresh produce weight + Dryers weight</p>
+            <p>Fully loaded truck weight = 12,000 pounds + 2,000 pounds + 9,000 pounds = 23,000 pounds</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        23000
+    </div>
+</body>
+</html>

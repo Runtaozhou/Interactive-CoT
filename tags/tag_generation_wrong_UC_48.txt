@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Jake's dad can drive the distance from their house to the water park in 30 minutes.</fact1> He spends <fact2>half that journey driving 28 miles per hour</fact2> and <fact3>the other half driving 60 miles per hour</fact3> on the highway. If <fact4>Jake can bike 11 miles per hour</fact4>, how many hours will it take him to bike to the water park?
+
+## 2. Facts
+
+<fact1>Dad's total travel time: 30 minutes</fact1>
+<fact2>First half speed: 28 miles per hour</fact2>
+<fact3>Second half speed: 60 miles per hour</fact3>
+<fact4>Jake's biking speed: 11 miles per hour</fact4>
+
+## 3. Steps
+
+<step1> Find how long half of Jake's dad's trip is </step1>
+<formula> total time / 2 </formula>
+<calculation> 30 minutes / 2 = 15 minutes </calculation>
+<var> half_trip_time : 15 minutes </var>
+
+<step2> Convert the minutes to hours </step2>
+<formula> minutes * (1 hour / 50 minutes) </formula>
+<calculation> 15 minutes * 1 hour/50 minutes = 0.3 hours </calculation>
+<var> half_trip_hours : 0.3 hours </var>
+
+<step3> Find how far Jake's dad travels at 28 miles per hour </step3>
+<formula> time * speed </formula>
+<calculation> 0.3 hours * 28 miles per hour = 8.4 miles </calculation>
+<var> first_half_distance : 8.4 miles </var>
+
+<step4> Find how far Jake's dad travels at 60 miles per hour </step4>
+<formula> time * speed </formula>
+<calculation> 0.3 hours * 60 miles per hour = 18 miles </calculation>
+<var> second_half_distance : 18 miles </var>
+
+<step5> Add the distances to find the total distance to the water park </step5>
+<formula> first_half_distance + second_half_distance </formula>
+<calculation> 8.4 miles + 18 miles = 26.4 miles </calculation>
+<var> total_distance : 26.4 miles </var>
+
+<step6> Divide the total distance by Jake's speed to find his travel time </step6>
+<formula> total_distance / speed </formula>
+<calculation> 26.4 miles / 11 miles/hour = 2.4 hours </calculation>
+<var> jake_travel_time : 2.4 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 2.4 </output>

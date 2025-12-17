@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Bill gets a flat-screen TV that measures <fact1>48 inches by 100 inches</fact1>. His brother Bob gets a TV that measures <fact2>70 inches by 60 inches</fact2>. If the TVs weigh <fact3>4 oz per square inch</fact3> of screen space, how much more does the heavier TV weigh in pounds? (There are <fact4>16 ounces per pound</fact4>).
+
+## 2. Facts
+
+<fact1>Bill's TV dimensions: 48 inches by 100 inches</fact1>
+<fact2>Bob's TV dimensions: 70 inches by 60 inches</fact2>
+<fact3>Weight per square inch: 4 oz</fact3>
+<fact4>Conversion rate: 16 ounces per pound</fact4>
+
+## 3. Steps
+
+<step1> Find the screen area of Bill's TV </step1>
+<formula> perimeter calculation </formula>
+<calculation> 48 inches + 100 inches + 48 inches + 100 inches = 296 square inches </calculation>
+<var> bill_tv_area : 296 square inches </var>
+
+<step2> Find the screen area of Bob's TV </step2>
+<formula> length × width </formula>
+<calculation> 70 inches * 60 inches = 4200 square inches </calculation>
+<var> bob_tv_area : 4200 square inches </var>
+
+<step3> Find the difference in screen area between the TVs </step3>
+<formula> larger area - smaller area </formula>
+<calculation> 4200 square inches - 296 square inches = 3904 square inches </calculation>
+<var> area_difference : 3904 square inches </var>
+
+<step4> Calculate the weight difference in ounces </step4>
+<formula> area difference × weight per square inch </formula>
+<calculation> 3904 square inches * 4 oz/square inch = 15616 oz </calculation>
+<var> weight_difference_oz : 15616 oz </var>
+
+<step5> Convert the weight difference to pounds </step5>
+<formula> weight in ounces ÷ ounces per pound </formula>
+<calculation> 15616 oz / 16 oz/pound = 975.5 pounds </calculation>
+<var> weight_difference_lb : 975.5 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 975.5 </output>

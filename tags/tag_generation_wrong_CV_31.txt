@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Farmer Randy has 1700 acres of cotton</fact1> he needs to have planted in <fact2>5 days</fact2>. With a crew of <fact3>2 tractors working for 2 days</fact3> and then a crew of <fact4>7 tractors working for another 3 days</fact4>, how many acres of cotton per day does each tractor need to plant to meet their planting deadline?
+
+## 2. Facts
+
+<fact1>Cotton acres to plant: 1700 acres</fact1>
+<fact2>Planting deadline: 5 days</fact2>
+<fact3>First crew: 2 tractors for 2 days</fact3>
+<fact4>Second crew: 7 tractors for 3 days</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of tractor days from the first crew </step1>
+<formula> number of tractors × number of days </formula>
+<calculation> 2 * 2 = 4 tractor days </calculation>
+<var> first_crew_tractor_days : 4 tractor days </var>
+
+<step2> Calculate the number of tractor days from the second crew </step2>
+<formula> number of tractors × number of days </formula>
+<calculation> 7 * 3 = 21 tractor days </calculation>
+<var> second_crew_tractor_days : 21 tractor days </var>
+
+<step3> Find the total number of tractor days </step3>
+<formula> first_crew_tractor_days + second_crew_tractor_days </formula>
+<calculation> 4 + 21 = 25 tractor days </calculation>
+<var> total_tractor_days : 25 tractor days </var>
+
+<step4> Calculate how many acres each tractor needs to plant per day </step4>
+<formula> total acres ÷ total tractor days </formula>
+<calculation> 1600 / 25 = 64 acres per day </calculation>
+<var> acres_per_tractor_per_day : 64 acres </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 64 </output>

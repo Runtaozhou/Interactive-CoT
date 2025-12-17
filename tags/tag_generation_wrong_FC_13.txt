@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+The size of a <fact1>bathroom is 96 sq ft</fact1>. If the <fact2>width of the bathroom is 8 feet</fact2> and the owner wants to <fact3>extend it by 2 feet on each side</fact3>, what is the new area of the bathroom?
+
+## 2. Facts
+
+<fact1>Original bathroom area: 96 sq ft</fact1>
+<fact2>Original width: 8 feet</fact2>
+<fact3>Extension: 2 feet on each side</fact3>
+
+## 3. Steps
+
+<step1> Calculate the original length of the bathroom using the area and width </step1>
+<formula> length = area ÷ width </formula>
+<calculation> 96 sq ft / 8 ft = 12 ft </calculation>
+<var> original_length : 12 ft </var>
+
+<step2> Calculate the new length by adding the extensions to both sides </step2>
+<formula> new_length = original_length + extension on one side + extension on other side </formula>
+<calculation> 12ft + 2 ft + 2 ft = 16 ft </calculation>
+<var> new_length : 16 ft </var>
+
+<step3> Calculate the new width by adding the extensions to both sides </step3>
+<formula> new_width = original_width + extension on one side + extension on other side </formula>
+<calculation> 8 ft + 2 ft + 2 ft = 12 ft </calculation>
+<var> new_width : 12 ft </var>
+
+<step4> Calculate the new area by multiplying the new length and new width </step4>
+<formula> new_area = new_length × new_width </formula>
+<calculation> 16ft x 12 ft = 192 sq ft </calculation>
+<var> new_area : 192 sq ft </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 192 </output>

@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+<fact1>Three cats sat on a fence, meowing at the moon.</fact1> <fact2>The first cat meowed 3 times per minute.</fact2> <fact3>The second cat meowed twice as frequently as the first cat.</fact3> <fact4>And the third cat meowed at one-third the frequency of the second cat.</fact4> What is the combined total number of meows the three cats make in <fact5>5 minutes</fact5>?
+
+## 2. Facts
+
+<fact1>Number of cats: 3</fact1>
+<fact2>First cat meow rate: 3 times per minute</fact2>
+<fact3>Second cat meow rate: twice as frequently as first cat</fact3>
+<fact4>Third cat meow rate: one-third the frequency of second cat</fact4>
+<fact5>Time period: 5 minutes</fact5>
+
+## 3. Steps
+
+<step1>Calculate how frequently the second cat meows per minute</step1>
+<formula>first_cat_rate × 2</formula>
+<calculation>3 × 2 = 6 meows per minute</calculation>
+<var>second_cat_rate: 6 meows per minute</var>
+
+<step2>Calculate how frequently the third cat meows per minute</step2>
+<formula>second_cat_rate ÷ 3</formula>
+<calculation>6 ÷ 3 = 2 meows per minute</calculation>
+<var>third_cat_rate: 2 meows per minute</var>
+
+<step3>Calculate the combined meow rate per minute for all three cats</step3>
+<formula>first_cat_rate + second_cat_rate + third_cat_rate</formula>
+<calculation>3 + 6 + 2 = 11 meows per minute</calculation>
+<var>combined_rate: 11 meows per minute</var>
+
+<step4>Calculate the total number of meows in 5 minutes</step4>
+<formula>combined_rate × time</formula>
+<calculation>5 × 12 = 60 meows</calculation>
+<var>total_meows: 60 meows</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>60</output>

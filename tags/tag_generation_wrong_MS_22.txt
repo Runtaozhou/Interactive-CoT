@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Anna goes trick-or-treating in a subdivision where she gets <fact1>14 pieces of candy per house</fact1>. Her brother Billy goes trick-or-tricking in a neighboring subdivision where he gets <fact2>11 pieces of candy per house</fact2>. If the <fact3>first subdivision has 60 houses</fact3> and the <fact4>second subdivision has 75 houses</fact4>, how many more pieces of candy does Anna get?
+
+## 2. Facts
+
+<fact1>Anna's candy per house: 14 pieces</fact1>
+<fact2>Billy's candy per house: 11 pieces</fact2>
+<fact3>Houses in first subdivision: 60 houses</fact3>
+<fact4>Houses in second subdivision: 75 houses</fact4>
+
+## 3. Steps
+
+<step1> First find the total number of pieces of candy Billy gets </step1>
+<formula> candy per house × number of houses </formula>
+<calculation> 11 pieces/house * 75 houses = 825 pieces </calculation>
+<var> billy_total_candy : 825 pieces </var>
+
+<step2> Then subtract the number of houses in the second subdivision from the number in the first subdivision to find the house difference </step2>
+<formula> first subdivision houses - second subdivision houses </formula>
+<calculation> 60 houses - 75 houses = -15 houses </calculation>
+<var> house_difference : -15 houses </var>
+
+<step3> Since Anna gets 14 pieces per house, multiply the house difference by the number of pieces Anna gets per house </step3>
+<formula> house difference × candy per house </formula>
+<calculation> -15 houses * 14 pieces/house = -210 pieces </calculation>
+<var> anna_candy_difference : -210 pieces </var>
+
+<step4> Then subtract this from the total number of pieces Billy gets to find the difference </step4>
+<formula> billy_total_candy - anna_candy_difference </formula>
+<calculation> 825 pieces - (-210) pieces = 1035 pieces </calculation>
+<var> candy_difference : 1035 pieces </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 1035 </output>

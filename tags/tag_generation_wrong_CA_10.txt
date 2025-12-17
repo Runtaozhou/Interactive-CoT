@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Two stores sell the same model of smartphone, but they offer it at different prices and with different discounts. <fact1>Store A lists the smartphone at a full price of $125</fact1> and <fact2>offers an additional discount of 8%</fact2>. <fact3>Store B lists the same smartphone for $130</fact3> and <fact4>offers an additional discount of 10%</fact4>. After both stores' discounts are applied, how much cheaper is store A's smartphone than store B's smartphone?
+
+## 2. Facts
+
+<fact1>Store A full price: $125</fact1>
+<fact2>Store A discount: 8%</fact2>
+<fact3>Store B full price: $130</fact3>
+<fact4>Store B discount: 10%</fact4>
+
+## 3. Steps
+
+<step1> Calculate the discount amount for Store A </step1>
+<formula> Store A price × discount percentage / 100 </formula>
+<calculation> $125 × 8/100 = $10 </calculation>
+<var> store_A_discount : $10 </var>
+
+<step2> Calculate the final price at Store A after discount </step2>
+<formula> Store A price - Store A discount </formula>
+<calculation> $125 - $10 = $115 </calculation>
+<var> store_A_final_price : $115 </var>
+
+<step3> Calculate the discount amount for Store B </step3>
+<formula> Store B price × discount percentage / 100 </formula>
+<calculation> $130 × 10/100 = $13 </calculation>
+<var> store_B_discount : $13 </var>
+
+<step4> Calculate the final price at Store B after discount </step4>
+<formula> Store B price - Store B discount </formula>
+<calculation> $130 - $13 = $120 </calculation>
+<var> store_B_final_price : $120 </var>
+
+<step5> Find the price difference between Store B and Store A </step5>
+<formula> Store B final price - Store A final price </formula>
+<calculation> $120 - $115 = $5 </calculation>
+<var> price_difference : $5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 5 </output>

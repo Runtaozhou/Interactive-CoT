@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+The Llesis family drove and hiked <fact1>6 hours</fact1> to their vacation spot. They drove an average of <fact2>50 miles per hour</fact2> and hiked an average of <fact3>5 miles per hour</fact3> less than half their speed when they drive. If it took them <fact4>1.5 hours</fact4> to hike, how far was their vacation spot?
+
+## 2. Facts
+
+<fact1>Total travel time: 6 hours</fact1>
+<fact2>Driving speed: 50 miles per hour</fact2>
+<fact3>Hiking speed reduction: 5 miles per hour</fact3>
+<fact4>Hiking time: 1.5 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate half the average speed of Llesis family driving </step1>
+<formula> driving_speed / 2 </formula>
+<calculation> 60 / 2 = 30 miles per hour </calculation>
+<var> half_driving_speed : 30 miles per hour </var>
+
+<step2> Calculate their average hiking speed </step2>
+<formula> half_driving_speed - hiking_speed_reduction </formula>
+<calculation> 30 - 5 = 25 miles per hour </calculation>
+<var> hiking_speed : 25 miles per hour </var>
+
+<step3> Calculate the distance hiked </step3>
+<formula> hiking_speed × hiking_time </formula>
+<calculation> 25 × 1.5 = 37.5 miles </calculation>
+<var> hiking_distance : 37.5 miles </var>
+
+<step4> Calculate the time spent driving </step4>
+<formula> total_time - hiking_time </formula>
+<calculation> 6 - 1.5 = 4.5 hours </calculation>
+<var> driving_time : 4.5 hours </var>
+
+<step5> Calculate the distance driven </step5>
+<formula> driving_speed × driving_time </formula>
+<calculation> 50 × 4.5 = 225 miles </calculation>
+<var> driving_distance : 225 miles </var>
+
+<step6> Calculate the total distance to the vacation spot </step6>
+<formula> hiking_distance + driving_distance </formula>
+<calculation> 37.5 + 225 = 262.5 miles </calculation>
+<var> total_distance : 262.5 miles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 262.5 </output>

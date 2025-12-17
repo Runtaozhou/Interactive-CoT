@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Valerie earns $5000 per month</fact1>, <fact2>1/2 of what her brother earns</fact2>. If <fact3>their mother earns twice their combined salary</fact3>, what's the total amount of money they all have together?
+
+## 2. Facts
+
+<fact1>Valerie's monthly earnings: $5000</fact1>
+<fact2>Valerie earns 1/2 of her brother's earnings</fact2>
+<fact3>Mother earns twice the combined salary of Valerie and her brother</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much Valerie's brother earns </step1>
+<formula> Valerie's earnings × 2 </formula>
+<calculation> 2 / $5000 = $1000 </calculation>
+<var> brother_earnings : $1000 </var>
+
+<step2> Calculate the combined salary of Valerie and her brother </step2>
+<formula> Valerie's earnings + brother's earnings </formula>
+<calculation> $5000 + $1000 = $6000 </calculation>
+<var> combined_salary : $6000 </var>
+
+<step3> Calculate their mother's earnings </step3>
+<formula> combined salary × 2 </formula>
+<calculation> 2 × $6000 = $12000 </calculation>
+<var> mother_earnings : $12000 </var>
+
+<step4> Calculate the total amount of money they all have together </step4>
+<formula> combined salary + mother's earnings </formula>
+<calculation> $6000 + $12000 = $18000 </calculation>
+<var> total_money : $18000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 18000 </output>

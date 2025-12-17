@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Julia is performing in her high school musical this weekend and her family wants to come to the show. <fact1>Tickets are $12 for adults</fact1> and <fact2>$10 for children</fact2>. If her <fact3>mom, dad, grandma, and three little sisters</fact3> come to the show, how much will the total be for their tickets?
+
+## 2. Facts
+
+<fact1>Adult ticket price: $12</fact1>
+<fact2>Child ticket price: $10</fact2>
+<fact3>Attendees: 3 adults (mom, dad, grandma) and 3 children (little sisters)</fact3>
+
+## 3. Steps
+
+<step1>Calculate the cost for the adults</step1>
+<formula>adult price × number of adults</formula>
+<calculation>$12/adult × 3 adults = $36</calculation>
+<var>adult_cost: $36</var>
+
+<step2>Recalculate the cost for adults including Julia's uncle</step2>
+<formula>adult price × number of adults</formula>
+<calculation>$12/adult × 4 adults = $48</calculation>
+<var>adult_cost: $48</var>
+
+<step3>Calculate the cost for the children</step3>
+<formula>child price × number of children</formula>
+<calculation>$10/child × 3 children = $30</calculation>
+<var>child_cost: $30</var>
+
+<step4>Calculate the total cost</step4>
+<formula>adult_cost + child_cost</formula>
+<calculation>$48 + $30 = $78</calculation>
+<var>total_cost: $78</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>78</output>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Pablo made 4 stacks of toy blocks. The first stack was 5 blocks tall. The second stack was 2 blocks taller than the first. The third stack was 5 blocks shorter than the second stack, and the last stack was 5 blocks taller than the third stack. How many toy blocks did Pablo use in all?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the height of the second stack.
+            <p>The second stack is 2 blocks taller than the first stack.</p>
+            <p>First stack height = 5 blocks</p>
+            <p>Second stack height = 5 + 2 = 7 blocks</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the height of the third stack.
+            <p>The third stack is 5 blocks shorter than the second stack.</p>
+            <p>Second stack height = 7 blocks</p>
+            <p>Third stack height = 7 - 5 = 2 blocks</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the height of the last stack.
+            <p>The last stack is 5 blocks taller than the third stack.</p>
+            <p>Third stack height = 2 blocks</p>
+            <p>Last stack height = 2 + 5 = 7 blocks</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Add up all blocks to find the total.
+            <p>Total blocks = First stack + Second stack + Third stack + Last stack</p>
+            <p>Total blocks = 5 + 7 + 3 + 7 = 22 blocks</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        22
+    </div>
+</body>
+</html>

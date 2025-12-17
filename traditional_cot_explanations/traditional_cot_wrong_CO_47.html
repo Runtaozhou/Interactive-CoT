@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        It's exam season and Tristan has several exams to prepare for. On Monday, he studies for 4 hours then studies for twice this long on Tuesday. On Wednesday, Thursday, and Friday he studies for 3 hours each day. He wants to study for a total of 25 hours over the week and divides the remaining amount of study time evenly between Saturday and Sunday. How many hours does Tristan spend studying on Saturday?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many hours Tristan studies on Tuesday.
+            <p>Since Tristan studies twice as long on Tuesday as he does on Monday, we multiply Monday's hours by 2:</p>
+            <p>Tuesday hours = 4 hours × 2 = 8 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total hours studied in the first five days.
+            <p>We need to add up all the hours from Monday through Friday:</p>
+            <p>Total weekday hours = Monday + Tuesday + Wednesday + Thursday + Friday</p>
+            <p>Total weekday hours = 4 hours + 8 hours + 3 hours + 3 hours + 3 hours = 21 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the remaining hours to be divided between Saturday and Sunday.
+            <p>Tristan wants to study for a total of 25 hours, so we subtract the weekday hours from the total:</p>
+            <p>Remaining weekend hours = 25 hours - 21 hours = 4 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Determine how many hours Tristan studies on Saturday.
+            <p>The remaining 4 hours need to be divided evenly between Saturday and Sunday.</p>
+            <p>Saturday hours = 4 hours ÷ 1 = 4 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        4
+    </div>
+</body>
+</html>

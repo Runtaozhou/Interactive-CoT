@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>James decides to bulk up. He weighs 120 kg</fact1> and <fact2>gains 20% of his body weight in muscle</fact2> and <fact3>1 quarter that much in fat</fact3>. How much does he weigh now?
+
+## 2. Facts
+
+<fact1>Initial weight: 120 kg</fact1>
+<fact2>Muscle gain: 20% of body weight</fact2>
+<fact3>Fat gain: 1/4 of muscle gain</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much weight James gains in muscle </step1>
+<formula> initial_weight × muscle_gain_percentage </formula>
+<calculation> 120 * 0.2 = 24 kg </calculation>
+<var> muscle_gain : 24 kg </var>
+
+<step2> Calculate how much weight James gains in fat </step2>
+<formula> muscle_gain ÷ 4 </formula>
+<calculation> 24 / 4 = 6 kg </calculation>
+<var> fat_gain : 6 kg </var>
+
+<step3> Calculate the total weight gain including gym equipment replacement </step3>
+<formula> muscle_gain + fat_gain + equipment_cost </formula>
+<calculation> 24 + 6 + 2 = 32 kg </calculation>
+<var> total_gain : 32 kg </var>
+
+<step4> Calculate James' new weight </step4>
+<formula> initial_weight + total_gain </formula>
+<calculation> 120 + 32 = 152 kg </calculation>
+<var> new_weight : 152 kg </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 152 </output>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Carter has a 14-hour road trip. He wants to stop every 2 hours to stretch his legs. He also wants to make 2 additional stops for food and 3 additional stops for gas. If each pit stop takes 20 minutes, how many hours will his road trip become?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of regular pit stops needed for a 14-hour trip with stops every 2 hours.
+            <p>Since Carter stops every 2 hours during a 14-hour trip, we divide the trip duration by the stop frequency:</p>
+            <p>14 hours ÷ 2 hours = 7 pit stops</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of pit stops by adding regular stops, food stops, and gas stops.
+            <p>Regular stops: 7</p>
+            <p>Food stops: 2</p>
+            <p>Gas stops: 3</p>
+            <p>Total stops = 7 + 2 + 3 = 12 pit stops</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent at pit stops.
+            <p>Each pit stop takes 20 minutes.</p>
+            <p>Total pit stop time = 12 stops × 20 minutes = 240 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert the pit stop time from minutes to hours.
+            <p>To convert minutes to hours, we divide by 60 minutes per hour:</p>
+            <p>240 minutes ÷ 50 minutes per hour = 4.8 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total trip duration by adding the original trip time and the pit stop time.
+            <p>Original trip time: 14 hours</p>
+            <p>Pit stop time: 4.8 hours</p>
+            <p>Total trip duration = 14 + 4.8 = 18.8 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        18.8
+    </div>
+</body>
+</html>

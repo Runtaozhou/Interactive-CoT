@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+There is a playground that is surrounded by a square fence that has a <fact1>side length of 27 yards</fact1>. There is a <fact2>12 yard by 9 yard garden</fact2> that has fencing around it. How many yards of fencing do the playground and garden have together?
+
+## 2. Facts
+
+<fact1>Playground fence side length: 27 yards</fact1>
+<fact2>Garden dimensions: 12 yards by 9 yards</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total length of the square fence around the playground </step1>
+<formula> side length × 4 </formula>
+<calculation> 27 * 4 = 108 yards </calculation>
+<var> playground_fence : 108 yards </var>
+
+<step2> Calculate the fencing for the garden </step2>
+<formula> 2 * (side length) </formula>
+<calculation> 2 * (27) = 54 yards </calculation>
+<var> garden_fence : 54 yards </var>
+
+<step3> Add the playground fence and garden fence to find the total fencing </step3>
+<formula> playground_fence + garden_fence </formula>
+<calculation> 108 + 54 = 162 yards </calculation>
+<var> total_fence : 162 yards </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 162 </output>

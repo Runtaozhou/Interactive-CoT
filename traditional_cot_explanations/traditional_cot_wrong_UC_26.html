@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Angelo and Melanie want to plan how many hours over the next week they should study together for their test next week. They have 2 chapters of their textbook to study and 4 worksheets to memorize. They figure out that they should dedicate 3 hours to each chapter of their textbook and 1.5 hours for each worksheet. If they plan to study no more than 4 hours each day, how many days should they plan to study total over the next week if they take a 10-minute break every hour, include 3 10-minute snack breaks each day, and 30 minutes for lunch each day?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total hours needed for textbook chapters.
+            <p>We need to multiply the hours per chapter by the number of chapters:</p>
+            <p>3 hours × 2 chapters = 6 hours total for textbook chapters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total hours needed for worksheets.
+            <p>We need to multiply the hours per worksheet by the number of worksheets:</p>
+            <p>1.5 hours × 4 worksheets = 6 hours total for worksheets</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total study hours needed.
+            <p>We add the hours needed for textbook chapters and worksheets:</p>
+            <p>6 hours (textbook) + 6 hours (worksheets) = 12 hours total study time</p>
+            <p>If they study 4 hours per day: 12 ÷ 4 = 3 days initially needed</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the additional time needed for hourly breaks.
+            <p>For each hour of study, they take a 10-minute break:</p>
+            <p>12 total study hours × 10 minutes = 120 minutes for hourly breaks</p>
+            <p>Note: The calculation shows 180 minutes, which would be 15 minutes per hour instead of 10 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the time needed for snack breaks.
+            <p>They take 3 snack breaks of 10 minutes each day:</p>
+            <p>3 snack breaks × 10 minutes = 30 minutes for snack breaks</p>
+            <p>Note: The calculation shows 45 minutes, which would be 15 minutes per snack break instead of 10 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total additional time needed for all breaks and lunch.
+            <p>We add all the break times together:</p>
+            <p>180 minutes (hourly breaks) + 45 minutes (snack breaks) + 30 minutes (lunch) = 255 minutes</p>
+            <p>Converting to hours: 255 ÷ 60 = 4.25 hours for breaks</p>
+            <p>Note: The calculation shows 5.1 hours.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total hours needed including breaks.
+            <p>We add the study hours and break hours:</p>
+            <p>12 hours (study) + 5.1 hours (breaks) = 17.1 hours total</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Calculate the number of days needed based on maximum hours per day.
+            <p>We divide the total hours by the maximum hours per day:</p>
+            <p>17.1 hours ÷ 4 hours per day = 4.275 days</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 9:</span> Round up to find the total days needed.
+            <p>Since they can't study for a partial day, we round up to the next whole day:</p>
+            <p>4.275 rounds up to 5 days</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        5
+    </div>
+</body>
+</html>

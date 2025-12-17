@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Daniela goes shopping during a sale. She finds out that the store has 40 percent off on shoes and 20 percent off on dresses. If Daniela buys 2 pairs of shoes originally priced at $50 a pair and a dress originally priced at $100, how much money does she spend?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total original cost of the shoes.
+            <p>We need to multiply the number of pairs by the price per pair:</p>
+            <p>$50 × 2 = $100</p>
+            <p>The original cost of the shoes is $100.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the percentage of original price to pay after discount on shoes.
+            <p>We subtract the discount percentage from 100%:</p>
+            <p>100% - 40% = 60%</p>
+            <p>After the discount, Daniela will pay 60% of the original price for the shoes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the discounted price of the shoes.
+            <p>We multiply the original cost by the payment percentage:</p>
+            <p>$100 × 0.60 = $70</p>
+            <p>The discounted price of the shoes is $70.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the percentage of original price to pay after discount on the dress.
+            <p>We subtract the discount percentage from 100%:</p>
+            <p>100% - 20% = 80%</p>
+            <p>After the discount, Daniela will pay 80% of the original price for the dress.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the discounted price of the dress.
+            <p>We multiply the original cost by the payment percentage:</p>
+            <p>$100 × 0.80 = $80</p>
+            <p>The discounted price of the dress is $80.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total amount Daniela spends.
+            <p>We add the discounted cost of the shoes and the discounted cost of the dress:</p>
+            <p>$70 + $80 = $150</p>
+            <p>The total amount Daniela spends is $150.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        150
+    </div>
+</body>
+</html>

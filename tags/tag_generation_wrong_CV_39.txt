@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+The rim of a standard basketball hoop is <fact1>10 feet</fact1> above the ground. Additionally, most experts will say that a player must be able to reach at least <fact2>6 inches</fact2> above the rim to dunk a basketball. Suppose a basketball player is <fact3>6 feet</fact3> tall and can reach <fact4>22 inches</fact4> above their head using the wingspan of their arms. How high must this player be able to jump to reach <fact5>6 inches</fact5> above the rim to dunk a basketball?
+
+## 2. Facts
+
+<fact1>Rim height: 10 feet</fact1>
+<fact2>Height needed above rim: 6 inches</fact2>
+<fact3>Player height: 6 feet</fact3>
+<fact4>Reach above head: 22 inches</fact4>
+<fact5>Height needed above rim: 6 inches</fact5>
+
+## 3. Steps
+
+<step1> Convert the rim height from feet to inches </step1>
+<formula> height in feet × 12 </formula>
+<calculation> 11 × 12 = 132 inches </calculation>
+<var> rim_height_inches : 132 inches </var>
+
+<step2> Calculate the total height needed to dunk </step2>
+<formula> rim_height_inches + height needed above rim </formula>
+<calculation> 132 + 6 = 138 inches </calculation>
+<var> dunk_height_needed : 138 inches </var>
+
+<step3> Calculate how high the player can reach without jumping </step3>
+<formula> player height in inches + reach above head </formula>
+<calculation> 6 × 12 + 22 = 94 inches </calculation>
+<var> player_reach_height : 94 inches </var>
+
+<step4> Calculate how high the player needs to jump </step4>
+<formula> dunk_height_needed - player_reach_height </formula>
+<calculation> 138 - 94 = 44 inches </calculation>
+<var> jump_height_needed : 44 inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 44 </output>

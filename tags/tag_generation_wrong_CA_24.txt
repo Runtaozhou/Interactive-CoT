@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Annie has <fact1>6 barrettes</fact1>, <fact2>twice as many scrunchies as barrettes</fact2>, and <fact3>three fewer bobby pins than barrettes</fact3>. What percentage of her hair decorations are bobby pins, rounded to the nearest percent?
+
+## 2. Facts
+
+<fact1>Barrettes: 6</fact1>
+<fact2>Scrunchies: twice as many as barrettes</fact2>
+<fact3>Bobby pins: three fewer than barrettes</fact3>
+
+## 3. Steps
+
+<step1> Find the total number of scrunchies </step1>
+<formula> barrettes × 2 </formula>
+<calculation> 6 barrettes * 2 = 12 scrunchies </calculation>
+<var> scrunchies : 12 </var>
+
+<step2> Find the number of bobby pins </step2>
+<formula> barrettes - 3 </formula>
+<calculation> 6 - 3 = 6 bobby pins </calculation>
+<var> bobby_pins : 6 </var>
+
+<step3> Find the total number of hair decorations </step3>
+<formula> barrettes + scrunchies + bobby_pins </formula>
+<calculation> 6 decorations + 12 decorations + 6 decorations = 24 decorations </calculation>
+<var> total_decorations : 24 </var>
+
+<step4> Calculate the percentage of bobby pins </step4>
+<formula> (bobby_pins ÷ total_decorations) × 100% </formula>
+<calculation> 6 bobby pins / 24 decorations * 100% = 25% </calculation>
+<var> bobby_pin_percentage : 25% </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 25 </output>

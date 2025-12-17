@@ -1,0 +1,57 @@
+## 1. Problem statement
+
+Prudence was starting a cupcake business. She figured that <fact1>each cupcake cost $0.75 to make</fact1>. <fact2>The first 2 dozen that she made burnt</fact2> and she had to throw them out. The next 2 came out perfectly and <fact3>she ended up eating 5 cupcakes right away</fact3>. <fact4>Later that day she made 2 more dozen cupcakes</fact4> and <fact5>decided to eat 4 more</fact5>. <fact6>If she sells the remaining cupcakes at $2.00 each</fact6>, how much is her net profit?
+
+## 2. Facts
+
+<fact1>Cost per cupcake: $0.75</fact1>
+<fact2>First burnt batch: 2 dozen</fact2>
+<fact3>First eating: 5 cupcakes</fact3>
+<fact4>Second batch: 2 dozen</fact4>
+<fact5>Second eating: 4 cupcakes</fact5>
+<fact6>Selling price: $2.00 each</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total number of dozen cupcakes made </step1>
+<formula> burnt_dozen + first_batch_dozen + second_batch_dozen </formula>
+<calculation> 2 + 2 + 2 = 6 dozen cupcakes </calculation>
+<var> total_dozen : 6 dozen </var>
+
+<step2> Convert dozens to individual cupcakes </step2>
+<formula> total_dozen × 12 </formula>
+<calculation> 6 * 12 = 72 cupcakes </calculation>
+<var> total_cupcakes : 72 cupcakes </var>
+
+<step3> Calculate how many cupcakes were burnt </step3>
+<formula> burnt_dozen × 12 </formula>
+<calculation> 2 * 12 = 24 cupcakes </calculation>
+<var> burnt_cupcakes : 24 cupcakes </var>
+
+<step4> Calculate how many cupcakes remain after losses </step4>
+<formula> total_cupcakes - burnt_cupcakes - first_eating - second_eating </formula>
+<calculation> 72 - 24 - 5 - 4 = 39 cupcakes </calculation>
+<var> remaining_cupcakes : 39 cupcakes </var>
+
+<step5> Calculate the revenue from selling the remaining cupcakes </step5>
+<formula> remaining_cupcakes × selling_price </formula>
+<calculation> 39 * $2.00 = $78.00 </calculation>
+<var> revenue : $78.00 </var>
+
+<step6> Calculate the total cost of making all cupcakes </step6>
+<formula> total_cupcakes × cost_per_cupcake </formula>
+<calculation> 70 * $0.75 = $52.50 </calculation>
+<var> total_cost : $52.50 </var>
+
+<step7> Calculate the net profit </step7>
+<formula> revenue - total_cost </formula>
+<calculation> $78.00 - $52.50 = $25.50 </calculation>
+<var> net_profit : $25.50 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 25.50 </output>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Marc bought 5 model cars that cost $20 each</fact1> and <fact2>5 bottles of paint that cost $10 each</fact2>. He also bought <fact3>5 paintbrushes that cost $2 each</fact3>. How much did Marc spend in total?
+
+## 2. Facts
+
+<fact1>Model cars: 5 at $20 each</fact1>
+<fact2>Bottles of paint: 5 at $10 each</fact2>
+<fact3>Paintbrushes: 5 at $2 each</fact3>
+
+## 3. Steps
+
+<step1>Calculate the total cost of the model cars</step1>
+<formula>number of cars × cost per car</formula>
+<calculation>$20 × 5 = $100</calculation>
+<var>model_cars_cost: $100</var>
+
+<step2>Calculate the total cost of the bottles of paint</step2>
+<formula>number of bottles × cost per bottle</formula>
+<calculation>$10 × 5 = $50</calculation>
+<var>paint_bottles_cost: $50</var>
+
+<step3>Calculate the total cost of the paintbrushes and add the cost of a model display case</step3>
+<formula>number of paintbrushes × cost per paintbrush + display case cost</formula>
+<calculation>$2 × 5 = $10, plus $30 for the display case</calculation>
+<var>paintbrushes_cost: $10</var>
+<var>display_case_cost: $30</var>
+
+<step4>Calculate the total amount Marc spent</step4>
+<formula>model_cars_cost + paint_bottles_cost + paintbrushes_cost + display_case_cost</formula>
+<calculation>$100 + $50 + $10 + $30 = $190</calculation>
+<var>total_cost: $190</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>190</output>

@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+A store decides to shut down and sell all of its inventory. They have <fact1>2000 different items</fact1> which would normally retail for <fact2>$50</fact2>. They are offering an <fact3>80% discount</fact3> and manage to sell <fact4>90% of the items</fact4>. They owed <fact5>$15000 to their creditors</fact5>. How much money do they have left after the sale?
+
+## 2. Facts
+
+<fact1>Total items: 2000</fact1>
+<fact2>Normal retail price: $50</fact2>
+<fact3>Discount: 80%</fact3>
+<fact4>Percentage of items sold: 90%</fact4>
+<fact5>Money owed to creditors: $15000</fact5>
+
+## 3. Steps
+
+<step1>Calculate the number of items sold</step1>
+<formula>Total items × Percentage sold</formula>
+<calculation>2000 * 0.9 = 1800 items</calculation>
+<var>items_sold: 1800 items</var>
+
+<step2>Calculate the discount amount per item</step2>
+<formula>Normal price / Discount percentage</formula>
+<calculation>50 / 0.8 = $62.50</calculation>
+<var>discount_amount: $62.50</var>
+
+<step3>Calculate the selling price per item after discount</step3>
+<formula>Normal price - Discount amount</formula>
+<calculation>50 - 62.50 = $-12.50</calculation>
+<var>selling_price: $-12.50</var>
+
+<step4>Calculate the total revenue from the sale</step4>
+<formula>Items sold × Selling price</formula>
+<calculation>1800 * -12.50 = $-22,500</calculation>
+<var>total_revenue: $-22,500</var>
+
+<step5>Calculate the money left after paying creditors</step5>
+<formula>Total revenue - Money owed</formula>
+<calculation>-22,500 - 15,000 = $-37,500</calculation>
+<var>money_left: $-37,500</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>-37500</output>

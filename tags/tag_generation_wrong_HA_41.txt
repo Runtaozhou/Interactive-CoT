@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Mark just got a new puppy that cost <fact1>$10</fact1>. He also bought enough food for <fact2>3 weeks</fact2>. He knows the puppy eats <fact3>1/3 cup of food a day</fact3>. A bag of food with <fact4>3.5 cups costs $2</fact4>. How much did all of this cost him?
+
+## 2. Facts
+
+<fact1>Puppy cost: $10</fact1>
+<fact2>Food needed for: 3 weeks</fact2>
+<fact3>Daily food consumption: 1/3 cup</fact3>
+<fact4>Bag of 3.5 cups costs: $2</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of days in 3 weeks </step1>
+<formula> weeks × days per week </formula>
+<calculation> 3 × 7 = 21 </calculation>
+<var> days : 21 </var>
+
+<step2> Calculate the total amount of food needed </step2>
+<formula> days × daily food consumption </formula>
+<calculation> 21 × (1/3) = 7 </calculation>
+<var> total_food_needed : 7 cups </var>
+
+<step3> Calculate the number of bags needed </step3>
+<formula> total_food_needed ÷ cups per bag </formula>
+<calculation> 7 ÷ 3.5 = 2 </calculation>
+<var> bags_needed : 2 </var>
+
+<step4> Calculate the cost of the food </step4>
+<formula> bags_needed × cost per bag </formula>
+<calculation> 2 × 2 = 4 </calculation>
+<var> food_cost : $4 </var>
+
+<step5> Calculate the total cost including the puppy and a toy </step5>
+<formula> puppy cost + food cost + toy cost </formula>
+<calculation> 10 + 4 + 5 = 19 </calculation>
+<var> total_cost : $19 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 19 </output>

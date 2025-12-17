@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Levi has 5 lemons.</fact1> <fact2>Jayden has 6 more lemons than Levi.</fact2> <fact3>Jayden has one-third as many lemons as Eli has</fact3> while <fact4>Eli has one-half as many lemons as Ian has.</fact4> How many lemons do they have in all?
+
+## 2. Facts
+
+<fact1>Levi's lemons: 5</fact1>
+<fact2>Jayden's additional lemons: 6</fact2>
+<fact3>Jayden's lemons: 1/3 of Eli's lemons</fact3>
+<fact4>Eli's lemons: 1/2 of Ian's lemons</fact4>
+
+## 3. Steps
+
+<step1>Calculate how many lemons Jayden has</step1>
+<formula>Levi's lemons + additional lemons</formula>
+<calculation>5 + 6 = 11 lemons</calculation>
+<var>jayden_lemons: 11 lemons</var>
+
+<step2>Calculate how many lemons Eli has</step2>
+<formula>Jayden's lemons × 3</formula>
+<calculation>8 × 3 = 24 lemons</calculation>
+<var>eli_lemons: 24 lemons</var>
+
+<step3>Calculate how many lemons Ian has</step3>
+<formula>Eli's lemons × 2</formula>
+<calculation>24 × 2 = 48 lemons</calculation>
+<var>ian_lemons: 48 lemons</var>
+
+<step4>Calculate the total number of lemons</step4>
+<formula>Levi's lemons + Jayden's lemons + Eli's lemons + Ian's lemons</formula>
+<calculation>5 + 11 + 24 + 48 = 88 lemons</calculation>
+<var>total_lemons: 88 lemons</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>88</output>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A basic manicure starts at $35 while a pedicure starts at $40. A certain salon offers 20% off if you get both. Suppose Karen chooses to do both and would also like to add nail art on each of her fingers, which costs $3 per nail. How much would she pay in all?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total cost for both manicure and pedicure.
+            <p>Manicure cost + Pedicure cost = $35 + $40 = $75</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the discount amount.
+            <p>Discount amount = Total cost × Discount rate = $75 × 0.2 = $15</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the discounted price for both services.
+            <p>Discounted price = Total cost - Discount amount = $75 - $15 = $60</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the cost of nail art for all fingers.
+            <p>Cost of nail art = Cost per nail × Number of fingers = $3 × 10 = $30</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total cost.
+            <p>Total cost = Discounted price + Nail art cost = $60 + $25 = $85</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        85
+    </div>
+</body>
+</html>

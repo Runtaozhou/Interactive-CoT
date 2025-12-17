@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+At a convention, <fact1>16 of 36 delegates</fact1> arrived with pre-printed name badges. <fact2>Half of the remaining delegates</fact2> made their own, hand-written name badges. How many delegates were not wearing name badges?
+
+## 2. Facts
+
+<fact1>Delegates with pre-printed badges: 16 of 36</fact1>
+<fact2>Proportion of remaining delegates with hand-written badges: 1/2</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many delegates did not have pre-printed name badges </step1>
+<formula> total_delegates - delegates_with_preprinted </formula>
+<calculation> 36 - 16 = 20 </calculation>
+<var> delegates_without_preprinted : 20 </var>
+
+<step2> Calculate how many delegates made hand-written badges </step2>
+<formula> delegates_without_preprinted / 2 </formula>
+<calculation> 20 / 2 = 10 </calculation>
+<var> delegates_with_handwritten : 10 </var>
+
+<step3> Calculate how many delegates had no badge at all </step3>
+<formula> delegates_without_preprinted - delegates_with_handwritten </formula>
+<calculation> 20 - 10 = 10 </calculation>
+<var> delegates_with_no_badge : 10 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 10 </output>

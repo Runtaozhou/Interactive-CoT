@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+<fact1>Alden had 50 nephews ten years ago.</fact1> This is half the number of nephews Alden has now. <fact2>Vihaan has 60 more nephews than Alden now</fact2>, how many nephews do the two have altogether?
+
+## 2. Facts
+
+<fact1>Alden's nephews 10 years ago: 50</fact1>
+<fact2>Vihaan has 60 more nephews than Alden now</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many nephews Alden has now </step1>
+<formula> nephews_10_years_ago × 2 </formula>
+<calculation> 50 * 2 = 100 nephews </calculation>
+<var> alden_nephews_now : 100 nephews </var>
+
+<step2> Calculate how many nephews Vihaan has now </step2>
+<formula> alden_nephews_now + 60 </formula>
+<calculation> 100 + 60 = 160 nephews </calculation>
+<var> vihaan_nephews : 160 nephews </var>
+
+<step3> Calculate the total number of nephews both have </step3>
+<formula> vihaan_nephews + alden_nephews_now </formula>
+<calculation> 160 + 90 = 250 nephews </calculation>
+<var> total_nephews : 250 nephews </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 250 </output>

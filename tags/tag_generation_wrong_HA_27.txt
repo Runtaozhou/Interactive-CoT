@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+In the baking contest, <fact1>three times as many people voted for the unicorn cake compared to the witch cake</fact1>, and <fact2>the number of votes for the dragon cake was 25 more than the number of votes for the witch cake</fact2>. If <fact3>7 people voted for the witch cake</fact3>, how many votes were cast total?
+
+## 2. Facts
+
+<fact1>Unicorn cake votes: 3 times witch cake votes</fact1>
+<fact2>Dragon cake votes: 25 more than witch cake votes</fact2>
+<fact3>Witch cake votes: 7</fact3>
+
+## 3. Steps
+
+<step1> First find the number of votes for the unicorn cake </step1>
+<formula> witch_cake_votes × 3 </formula>
+<calculation> 7 votes * 3 = 21 votes </calculation>
+<var> unicorn_cake_votes : 21 votes </var>
+
+<step2> Then find the number of votes for the dragon cake </step2>
+<formula> witch_cake_votes + 25 </formula>
+<calculation> 25 votes + 7 votes = 32 votes </calculation>
+<var> dragon_cake_votes : 32 votes </var>
+
+<step3> Add the number of votes for each cake plus the blank votes to find the total number of votes </step3>
+<formula> unicorn_cake_votes + dragon_cake_votes + witch_cake_votes + blank_votes </formula>
+<calculation> 21 votes + 32 votes + 7 votes + 5 blank votes = 65 votes </calculation>
+<var> total_votes : 65 votes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 65 </output>

@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+<fact1>Ryanne is 7 years older than Hezekiah.</fact1> Together <fact2>Ryanne's and Hezekiah's ages equal 15 years.</fact2> How many years old is Hezekiah?
+
+## 2. Facts
+
+<fact1>Ryanne is 7 years older than Hezekiah</fact1>
+<fact2>Ryanne's and Hezekiah's ages equal 15 years</fact2>
+
+## 3. Steps
+
+<step1> Define a variable for Hezekiah's age </step1>
+<formula> H = Hezekiah's age </formula>
+<calculation></calculation>
+<var> H : Hezekiah's age </var>
+
+<step2> Express Ryanne's age in terms of Hezekiah's age </step2>
+<formula> Ryanne = H + 5 </formula>
+<calculation></calculation>
+<var> Ryanne : H + 5 </var>
+
+<step3> Set up an equation using the sum of their ages </step3>
+<formula> 2H + 5 = 15 </formula>
+<calculation></calculation>
+<var></var>
+
+<step4> Isolate the variable by subtracting 5 from both sides </step4>
+<formula> 2H = 10 </formula>
+<calculation></calculation>
+<var></var>
+
+<step5> Solve for H by dividing both sides by 2 </step5>
+<formula> H = 5 </formula>
+<calculation></calculation>
+<var> H : 5 </var>
+
+<step6> State the final answer </step6>
+<formula></formula>
+<calculation></calculation>
+<var> Hezekiah's age : 5 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 5 </output>

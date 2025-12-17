@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+A van is delivering <fact1>180 bottles of drinks</fact1> to a neighborhood, and each bottle contains either cider or beer or a mixture of two. Out of the <fact1>180 bottles</fact1>, <fact2>40 contain only cider</fact2>, <fact3>80 contain only beer</fact3>, and the rest are a mixture of the two drinks. If the delivery man gives half the number of each bottle of drink to the first house, how many bottles does the first house get?
+
+## 2. Facts
+
+<fact1>Total bottles: 180</fact1>
+<fact2>Bottles with only cider: 40</fact2>
+<fact3>Bottles with only beer: 80</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of bottles containing only cider or only beer </step1>
+<formula> cider_bottles + beer_bottles </formula>
+<calculation> 40 + 80 = 120 </calculation>
+<var> single_drink_bottles : 120 </var>
+
+<step2> Find the number of bottles containing a mixture of the two drinks </step2>
+<formula> total_bottles - single_drink_bottles </formula>
+<calculation> 180 - 120 = 60 </calculation>
+<var> mixed_bottles : 60 </var>
+
+<step3> Calculate the number of cider-only bottles given to the first house </step3>
+<formula> cider_bottles × 1/2 </formula>
+<calculation> 40 × 1/2 = 20 </calculation>
+<var> first_house_cider : 20 </var>
+
+<step4> Calculate the number of beer-only bottles given to the first house </step4>
+<formula> beer_bottles × 1/2 </formula>
+<calculation> 80 × 1/2 = 40 </calculation>
+<var> first_house_beer : 40 </var>
+
+<step5> Calculate the total number of single-drink bottles given to the first house </step5>
+<formula> first_house_beer + first_house_cider </formula>
+<calculation> 40 + 20 = 60 </calculation>
+<var> first_house_single_drinks : 60 </var>
+
+<step6> Calculate the number of mixed-drink bottles given to the first house </step6>
+<formula> mixed_bottles × 1/2 </formula>
+<calculation> 60 × 1/2 = 25 </calculation>
+<var> first_house_mixed : 25 </var>
+
+<step7> Calculate the total number of bottles given to the first house </step7>
+<formula> first_house_single_drinks + first_house_mixed </formula>
+<calculation> 60 + 25 = 85 </calculation>
+<var> first_house_total : 85 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 85 </output>

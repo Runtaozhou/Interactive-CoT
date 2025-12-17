@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jimmy wants to order a pizza at a new place. The large pizza costs $10.00 and is cut into 8 slices. The first topping costs $2.00, the next 2 toppings cost $1.00 each and the rest of the toppings cost $0.50. If he orders a large pizza with pepperoni, sausage, ham, olives, mushrooms, bell peppers and pineapple. How much will his pizza cost per slice?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to calculate the cost of the pizza plus the first topping (pepperoni).
+            <br>
+            Base pizza cost + First topping cost = $10.00 + $2.00 = $12.00
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, we calculate the cost of the next two toppings (sausage and ham).
+            <br>
+            2 toppings × $1.00 each = 2 × $1.00 = $2.00
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now, we calculate the cost of the remaining toppings (olives, mushrooms, bell peppers and pineapple).
+            <br>
+            4 toppings × $0.50 each = 4 × $0.50 = $1.00
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> We can now calculate the total cost of the pizza with all toppings.
+            <br>
+            Initial cost + Second tier cost + Remaining toppings cost = $12.00 + $2.00 + $1.00 = $15.00
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, we calculate the cost per slice by dividing the total cost by the number of slices.
+            <br>
+            Total pizza cost ÷ Number of slices = $15.00 ÷ 8 = $1.88
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1.88
+    </div>
+</body>
+</html>

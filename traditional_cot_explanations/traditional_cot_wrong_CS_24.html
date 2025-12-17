@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Roger bought a house for $100,000. He was able to pay 20% down, and his parents paid off an additional 30% of the remaining balance. How much money does Roger still owe on his house?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Roger's down payment.
+            <p>We need to find how much Roger paid as a down payment by multiplying the house price by the down payment percentage.</p>
+            <p>Down payment = $100,000 × 20% = $100,000 × 0.20 = $20,000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the remaining balance after down payment.
+            <p>We subtract the down payment from the house price to find the remaining balance.</p>
+            <p>Remaining balance = $100,000 - $20,000 = $80,000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the amount Roger's parents paid.
+            <p>Roger's parents paid 30% of the remaining balance after the down payment.</p>
+            <p>Parents' payment = $80,000 × 30% = $80,000 × 0.30 = $24,000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the final amount Roger still owes.
+            <p>We subtract the parents' payment from the remaining balance to find how much Roger still owes.</p>
+            <p>Final amount owed = $80,000 - $25,000 = $55,000</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        55000
+    </div>
+</body>
+</html>

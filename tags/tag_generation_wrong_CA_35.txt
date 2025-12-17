@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Martin went on an <fact1>eight-hour business trip</fact1>. During the first half of the trip, he traveled at a speed of <fact2>70 kilometers per hour</fact2> and during the second half at a speed of <fact3>85 kilometers per hour</fact3>. How many kilometers did he travel during the journey?
+
+## 2. Facts
+
+<fact1>Trip duration: 8 hours</fact1>
+<fact2>First half speed: 70 kilometers per hour</fact2>
+<fact3>Second half speed: 85 kilometers per hour</fact3>
+
+## 3. Steps
+
+<step1> Calculate the duration of half the trip </step1>
+<formula> total_time × 0.5 </formula>
+<calculation> 8 * 0.5 = 4 hours </calculation>
+<var> half_trip_duration : 4 hours </var>
+
+<step2> Calculate the distance traveled during the first half of the trip </step2>
+<formula> half_trip_duration × first_half_speed </formula>
+<calculation> 4 * 70 = 280 kilometers </calculation>
+<var> first_half_distance : 280 kilometers </var>
+
+<step3> Calculate the distance traveled during the second half of the trip </step3>
+<formula> half_trip_duration × second_half_speed </formula>
+<calculation> 4 * 85 = 320 kilometers </calculation>
+<var> second_half_distance : 320 kilometers </var>
+
+<step4> Calculate the total distance traveled during the trip </step4>
+<formula> first_half_distance + second_half_distance </formula>
+<calculation> 280 + 320 = 600 kilometers </calculation>
+<var> total_distance : 600 kilometers </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 600 </output>

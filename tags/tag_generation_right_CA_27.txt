@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+<fact1>Alice made 52 friendship bracelets over spring break to sell at school.</fact1> <fact2>It only cost her $3.00 in materials to make these bracelets.</fact2> <fact3>During the break, she gave 8 of her bracelets away.</fact3> <fact4>Back at school, she sells all of the remaining bracelets at $0.25 each.</fact4> How much profit did she make (money earned after paying initial costs) on the sale of her bracelets?
+
+## 2. Facts
+
+<fact1>Total bracelets made: 52</fact1>
+<fact2>Cost of materials: $3.00</fact2>
+<fact3>Bracelets given away: 8</fact3>
+<fact4>Selling price per bracelet: $0.25</fact4>
+
+## 3. Steps
+
+<step1> She made 52 bracelets but gave 8 away so she had 52-8 = 44 bracelets left. </step1>
+<formula> total_bracelets - given_away = remaining_bracelets </formula>
+<calculation> 52 - 8 = 44 </calculation>
+<var> remaining_bracelets: 44 </var>
+
+<step2> She sold 44 bracelets at $0.25 each for a total of 44 * .25 = $11.00 </step2>
+<formula> remaining_bracelets * price_per_bracelet = total_sales </formula>
+<calculation> 44 * 0.25 = $11.00 </calculation>
+<var> total_sales: $11.00 </var>
+
+<step3> She made $11.00 but she spent $3.00 on the supplies. So her profit would be 11-3 = $8.00 </step3>
+<formula> total_sales - cost_of_materials = profit </formula>
+<calculation> 11 - 3 = $8.00 </calculation>
+<var> profit: $8.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output>8</output>

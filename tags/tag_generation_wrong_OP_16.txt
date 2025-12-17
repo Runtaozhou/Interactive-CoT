@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. <fact1>The tattered jeans cost $28</fact1> while <fact2>the jogger jeans cost $6 less than the tattered jeans</fact2>. <fact3>He saved a total of $6</fact3>. If <fact4>he saved 1/3 of the total savings from the jogger jeans</fact4> and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?
+
+## 2. Facts
+
+<fact1>Tattered jeans cost: $28</fact1>
+<fact2>Jogger jeans cost: $6 less than tattered jeans</fact2>
+<fact3>Total savings: $6</fact3>
+<fact4>Savings from jogger jeans: 1/3 of total savings</fact4>
+
+## 3. Steps
+
+<step1> Calculate how much Cole saved on the jogger jeans </step1>
+<formula> Total savings × 1/3 </formula>
+<calculation> $6 × 1/3 = $2 </calculation>
+<var> jogger_savings : $2 </var>
+
+<step2> Calculate how much Cole saved on the tattered jeans </step2>
+<formula> Total savings + jogger_savings </formula>
+<calculation> $6 + $2 = $8 </calculation>
+<var> tattered_savings : $8 </var>
+
+<step3> Calculate the sale price of the jogger jeans </step3>
+<formula> Tattered jeans price - $6 </formula>
+<calculation> $28 - $6 = $22 </calculation>
+<var> jogger_sale_price : $22 </var>
+
+<step4> Note the sale price of the tattered jeans </step4>
+<formula> None </formula>
+<calculation> None </calculation>
+<var> tattered_sale_price : $28 </var>
+
+<step5> Calculate the original price of the tattered jeans </step5>
+<formula> Tattered sale price + tattered savings </formula>
+<calculation> $28 + $8 = $36 </calculation>
+<var> tattered_original_price : $36 </var>
+
+<step6> Calculate the original price of the jogger jeans </step6>
+<formula> Jogger sale price + jogger savings </formula>
+<calculation> $22 + $2 = $24 </calculation>
+<var> jogger_original_price : $24 </var>
+
+<step7> Calculate how much more the jogger jeans originally cost than the tattered jeans </step7>
+<formula> Tattered original price - jogger original price </formula>
+<calculation> $36 - $24 = $12 </calculation>
+<var> price_difference : $12 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 12 </output>

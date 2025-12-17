@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+There are <fact1>10 6-ounce glasses</fact1> that are only <fact2>4/5 full</fact2> of water. How many ounces of water are needed to fill to the brim all those <fact1>10 glasses</fact1>?
+
+## 2. Facts
+
+<fact1>Number of glasses: 10 6-ounce glasses</fact1>
+<fact2>Portion filled: 4/5</fact2>
+
+## 3. Steps
+
+<step1> Calculate how much water is in each glass </step1>
+<formula> glass capacity × portion filled </formula>
+<calculation> 6 × 4/5 = 24/5 ounces </calculation>
+<var> water_per_glass : 24/5 ounces </var>
+
+<step2> Calculate the total amount of water currently in all glasses </step2>
+<formula> water_per_glass × number of glasses </formula>
+<calculation> 24/5 × 10 = 48 ounces </calculation>
+<var> total_current_water : 48 ounces </var>
+
+<step3> Calculate the total capacity of all glasses when filled to the brim </step3>
+<formula> glass capacity × number of glasses </formula>
+<calculation> 10 × 6 = 60 ounces </calculation>
+<var> total_capacity : 60 ounces </var>
+
+<step4> Calculate how much more water is needed to fill all glasses </step4>
+<formula> total_capacity - total_current_water </formula>
+<calculation> 60 - 48 = 12 ounces </calculation>
+<var> additional_water_needed : 12 ounces </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 12 </output>

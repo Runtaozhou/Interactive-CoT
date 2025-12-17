@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+John builds a box. <fact1>The box is 26 inches by 26 inches by 14 inches</fact1>. <fact2>The walls are 1 inch thick on each side</fact2>. How much is the internal volume in cubic feet?
+
+## 2. Facts
+
+<fact1>Box dimensions: 26 inches by 26 inches by 14 inches</fact1>
+<fact2>Wall thickness: 1 inch on each side</fact2>
+
+## 3. Steps
+
+<step1> Calculate how much the walls reduce each dimension </step1>
+<formula> thickness × 2 </formula>
+<calculation> 1 inch * 2 = 2 inches </calculation>
+<var> wall_reduction : 2 inches </var>
+
+<step2> Find the internal length of the longer sides </step2>
+<formula> external length - wall_reduction </formula>
+<calculation> 26 inches - 2 inches = 24 inches </calculation>
+<var> internal_length : 24 inches </var>
+
+<step3> Convert the internal length to feet </step3>
+<formula> internal_length ÷ 12 </formula>
+<calculation> 24 inches / 12 = 2 feet </calculation>
+<var> internal_length_feet : 2 feet </var>
+
+<step4> Find the internal length of the smaller dimension </step4>
+<formula> external smaller dimension - wall_reduction </formula>
+<calculation> 14 inches - 2 inches = 12 inches </calculation>
+<var> internal_height : 12 inches </var>
+
+<step5> Convert the internal height to feet </step5>
+<formula> internal_height ÷ 12 </formula>
+<calculation> 12 inches / 12 = 1 foot </calculation>
+<var> internal_height_feet : 1 foot </var>
+
+<step6> Calculate the internal volume </step6>
+<formula> (internal_length_feet × internal_length_feet) + (internal_length_feet × internal_height_feet) + (internal_height_feet × internal_length_feet) </formula>
+<calculation> (2 feet * 2 feet) + (2 feet * 1 foot) + (1 foot * 2 feet) = 8 cubic feet </calculation>
+<var> internal_volume : 8 cubic feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 8 </output>

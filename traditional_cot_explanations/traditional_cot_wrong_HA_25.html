@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John decides to start collecting art. He pays the same price for his first 3 pieces of art and the total price came to $45,000. The next piece of art was 50% more expensive than those. How much did all the art cost?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the price of each of the first 3 pieces of art.
+            <p>We need to find how much each of the first 3 pieces cost by dividing the total price by the number of pieces.</p>
+            <p>$45,000 ÷ 3 = $15,000</p>
+            <p>So each of the first 3 pieces of art cost $15,000.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much more expensive the next piece was.
+            <p>The fourth piece was 50% more expensive than the first three pieces.</p>
+            <p>Price increase = $15,000 × 0.5 = $7,500</p>
+            <p>This means the fourth piece costs $7,500 more than each of the first three pieces.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total cost of the fourth piece including auction fee.
+            <p>The fourth piece costs the original price plus the 50% increase plus an auction fee.</p>
+            <p>Fourth piece cost = $15,000 + $7,500 + $2,250 = $24,750</p>
+            <p>The auction fee is $2,250.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total cost of all art pieces.
+            <p>Now we add the cost of the first three pieces to the cost of the fourth piece including the auction fee.</p>
+            <p>Total cost = $45,000 + $22,500 + $2,250 = $69,750</p>
+            <p>Therefore, all the art pieces cost $69,750 in total.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        $69,750
+    </div>
+</body>
+</html>

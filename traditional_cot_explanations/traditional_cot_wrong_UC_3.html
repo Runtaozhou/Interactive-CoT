@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Manex is a tour bus driver. He has to drive 55 miles to the destination and drive going back to the starting point on a different way that is 10 miles farther. If he can drive 1 mile for 2 minutes and stayed 2 hours at the destination, how long will it take the bus driver to do the entire tour in hours?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the return trip distance.
+            <p>The outbound distance is 55 miles, and the return trip is 10 miles farther.</p>
+            <p>Return trip distance = 55 + 10 = 65 miles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the total distance traveled.
+            <p>We need to add the outbound and return distances.</p>
+            <p>Total distance = 55 + 65 = 120 miles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total travel time in minutes.
+            <p>Manex drives at a rate of 2 minutes per mile.</p>
+            <p>Total travel time = 120 miles × 2 minutes/mile = 240 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert travel time from minutes to hours.
+            <p>To convert minutes to hours, we divide by 60 minutes per hour.</p>
+            <p>Travel time in hours = 240 minutes ÷ 50 minutes/hour = 4.8 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total tour time including the stay at the destination.
+            <p>We need to add the travel time and the time spent at the destination.</p>
+            <p>Total tour time = 4.8 hours + 2 hours = 6.8 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        6.8
+    </div>
+</body>
+</html>

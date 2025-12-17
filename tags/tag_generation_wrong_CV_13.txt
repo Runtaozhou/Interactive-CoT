@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Lionel walked 4 miles.</fact1> <fact2>Esther walked 975 yards</fact2> and <fact3>Niklaus walked 1287 feet.</fact3> How many combined feet did the friends walk?
+
+## 2. Facts
+
+<fact1>Lionel's distance: 4 miles</fact1>
+<fact2>Esther's distance: 975 yards</fact2>
+<fact3>Niklaus's distance: 1287 feet</fact3>
+
+## 3. Steps
+
+<step1> Convert Lionel's miles to feet </step1>
+<formula> miles × feet per mile </formula>
+<calculation> 3 * 5280 = 15840 feet </calculation>
+<var> lionel_feet : 15840 feet </var>
+
+<step2> Convert Esther's yards to feet </step2>
+<formula> yards × feet per yard </formula>
+<calculation> 975 * 3 = 2925 feet </calculation>
+<var> esther_feet : 2925 feet </var>
+
+<step3> Add all distances in feet </step3>
+<formula> lionel_feet + esther_feet + niklaus_feet </formula>
+<calculation> 15840 + 2925 + 1287 = 21052 feet </calculation>
+<var> total_feet : 21052 feet </var>
+
+<step4> State the final answer </step4>
+<formula></formula>
+<calculation></calculation>
+<var> final_answer : 21052 feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 21052 </output>

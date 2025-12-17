@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Carl buys index cards for his class. He gives <fact1>each student 10 index cards</fact1>. He teaches <fact2>6 periods a day</fact2> and <fact3>each class has 30 students</fact3>. If a <fact4>50 pack of index cards cost $3</fact4> how much did he spend on them all?
+
+## 2. Facts
+
+<fact1>Index cards per student: 10</fact1>
+<fact2>Periods per day: 6</fact2>
+<fact3>Students per class: 30</fact3>
+<fact4>Cost of 50 index cards: $3</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total number of students </step1>
+<formula> students per class × periods </formula>
+<calculation> 30 * 6 = 180 students </calculation>
+<var> total_students : 180 students </var>
+
+<step2> Calculate the total number of index cards needed </step2>
+<formula> total_students × index cards per student </formula>
+<calculation> 180 * 10 = 1800 index cards </calculation>
+<var> total_index_cards : 1800 index cards </var>
+
+<step3> Calculate the number of index cards to buy </step3>
+<formula> total_index_cards × pack size </formula>
+<calculation> 1800 * 50 = 90000 index cards </calculation>
+<var> index_cards_to_buy : 90000 index cards </var>
+
+<step4> Calculate the total cost </step4>
+<formula> index_cards_to_buy × cost per pack </formula>
+<calculation> 90000 * 3 = $270,000 </calculation>
+<var> total_cost : $270,000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 270000 </output>

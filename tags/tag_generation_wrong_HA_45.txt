@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Wynter went to her local town bike shop to buy her sister a bicycle as her birthday gift. While at the shop, Wynter counted <fact1>50 bicycles</fact1> and <fact2>20 tricycles</fact2>. How many wheels in total did the vehicles she saw have?
+
+## 2. Facts
+
+<fact1>Number of bicycles: 50</fact1>
+<fact2>Number of tricycles: 20</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total number of wheels from bicycles </step1>
+<formula> number of bicycles × wheels per bicycle </formula>
+<calculation> 50 bikes * 2 wheels/bike = 100 wheels </calculation>
+<var> bicycle_wheels : 100 wheels </var>
+
+<step2> Calculate the total number of wheels from tricycles </step2>
+<formula> number of tricycles × wheels per tricycle </formula>
+<calculation> 20 trikes * 3 wheels/trike = 60 wheels </calculation>
+<var> tricycle_wheels : 60 wheels </var>
+
+<step3> Adjust the number of bicycle wheels for repairs </step3>
+<formula> bicycle_wheels - wheels missing from repairs </formula>
+<calculation> 100 wheels - 2 wheels = 98 wheels </calculation>
+<var> adjusted_bicycle_wheels : 98 wheels </var>
+
+<step4> Calculate the total number of wheels </step4>
+<formula> adjusted_bicycle_wheels + tricycle_wheels </formula>
+<calculation> 98 wheels + 60 wheels = 158 wheels </calculation>
+<var> total_wheels : 158 wheels </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 158 </output>

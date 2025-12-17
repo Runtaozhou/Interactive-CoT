@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+<fact1>It took Dad 5 more than twice as long to vacuum upstairs then to vacuum downstairs.</fact1> <fact2>He vacuumed for a total of 38 minutes.</fact2> How many minutes did he vacuum upstairs?
+
+## 2. Facts
+
+<fact1>Dad's upstairs vacuuming time: 5 more than twice the downstairs time</fact1>
+<fact2>Total vacuuming time: 38 minutes</fact2>
+
+## 3. Steps
+
+<step1> Define a variable for the time to vacuum downstairs </step1>
+<formula></formula>
+<calculation></calculation>
+<var>D : time in minutes to vacuum downstairs</var>
+
+<step2> Express the time to vacuum upstairs in terms of D </step2>
+<formula>2D + 5</formula>
+<calculation></calculation>
+<var>Upstairs : 2D + 5 minutes</var>
+
+<step3> Set up an equation for the total time </step3>
+<formula>D + (2D + 5) = 38</formula>
+<calculation>3D + 5 = 38</calculation>
+<var>Total_time : 38 minutes</var>
+
+<step4> Solve for D </step4>
+<formula>D = (38 - 5) ÷ 3</formula>
+<calculation>D = 38 / 3</calculation>
+<var>D : 38 / 3 minutes</var>
+
+<step5> Calculate the time spent vacuuming upstairs </step5>
+<formula>Upstairs = 2D + 5</formula>
+<calculation>(2 * (38 / 3)) + 5 = 29 minutes</calculation>
+<var>Upstairs : 29 minutes</var>
+
+<step6> State the final answer </step6>
+<formula></formula>
+<calculation></calculation>
+<var>Upstairs_time : 29 minutes</var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 29 </output>

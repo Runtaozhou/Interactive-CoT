@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        At a convention, 16 of 36 delegates arrived with pre-printed name badges. Half of the remaining delegates made their own, hand-written name badges. How many delegates were not wearing name badges?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many delegates did not have pre-printed name badges.
+            <p>We need to subtract the number of delegates with pre-printed badges from the total number of delegates:</p>
+            <p>Total delegates - Delegates with pre-printed badges = 36 - 16 = 20</p>
+            <p>So, 20 delegates did not have pre-printed name badges.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many delegates made hand-written badges.
+            <p>We know that half of the remaining delegates (those without pre-printed badges) made their own hand-written badges:</p>
+            <p>Delegates without pre-printed badges ÷ 2 = 20 ÷ 2 = 10</p>
+            <p>Therefore, 10 delegates had hand-written name badges.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many delegates had no name badge.
+            <p>We need to find how many delegates had neither pre-printed nor hand-written badges:</p>
+            <p>25 - Delegates with hand-written badges = 25 - 10 = 15</p>
+            <p>So, 15 delegates were not wearing any name badges.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        15
+    </div>
+</body>
+</html>

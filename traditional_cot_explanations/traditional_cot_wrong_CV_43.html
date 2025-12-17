@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Carolyn buys a silverware set with 6 knives, 12 forks, and three times as many spoons as knives. Then her friend trades her 10 knives for 6 spoons. What percentage of Carolyn's silverware is knives?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the final number of knives Carolyn has.
+            <p>We need to add the initial knives and the traded knives:</p>
+            <p>Initial knives + Traded knives = 10 knives + 5 knives = 15 knives</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then find the initial number of spoons Carolyn has.
+            <p>We know that Carolyn has three times as many spoons as knives initially:</p>
+            <p>Initial spoons = Initial knives × 3 = 6 knives × 3 = 18 spoons</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then find the final number of spoons Carolyn has.
+            <p>We need to subtract the traded spoons from the initial spoons:</p>
+            <p>Final spoons = Initial spoons - Traded spoons = 18 spoons - 6 spoons = 12 spoons</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then find the total final amount of silverware Carolyn has.
+            <p>We add all the silverware pieces together:</p>
+            <p>Total silverware = Final spoons + Final knives + Forks = 12 spoons + 15 knives + 12 forks = 39 pieces</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Then divide the number of knives by the total number of pieces and multiply by 100% to express the answer as a percentage.
+            <p>Percentage of knives = (Final knives ÷ Total silverware) × 100%</p>
+            <p>Percentage of knives = (15 knives ÷ 39 pieces) × 100% = 38.46%</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        38.46
+    </div>
+</body>
+</html>

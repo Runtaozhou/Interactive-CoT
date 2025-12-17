@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+<fact1>Jackson's mom promises $5 per hour spent on chores.</fact1>
+<fact2>Jackson spends 2 hours vacuuming, and decides to do this twice.</fact2>
+<fact3>He also spends 0.5 hours washing dishes.</fact3>
+<fact4>He spends three times as long cleaning the bathroom as washing dishes.</fact4>
+
+## 2. Facts
+
+<fact1>Rate per hour: $5</fact1>
+<fact2>Hours vacuuming (each time): 2</fact2>
+<fact2>Number of times vacuuming: 2</fact2>
+<fact3>Hours washing dishes: 0.5</fact3>
+<fact4>Bathroom cleaning multiplier: 3</fact4>
+
+## 3. Steps
+
+<step1>Jackson spent a total of 2 * 2 = 4 hours vacuuming.</step1>
+<formula>hours_vacuuming = vacuuming_time * number_of_times</formula>
+<calculation>2 * 2 = 4</calculation>
+<var>hours_vacuuming: 4</var>
+
+<step2>This means he earned 4 * $5 = 20 dollars from vacuuming.</step2>
+<formula>vacuuming_money = hours_vacuuming * rate_per_hour</formula>
+<calculation>4 * $5 = $20</calculation>
+<var>vacuuming_money: $20</var>
+
+<step3>He earned 0.5 * $5 = 2.5 dollars from washing dishes.</step3>
+<formula>dishes_money = dishes_time * rate_per_hour</formula>
+<calculation>0.5 * $5 = $2.5</calculation>
+<var>dishes_money: $2.5</var>
+
+<step4>Cleaning the bathroom took three times as long as the dishes, so he spent 0.5 * 3 = 1.5 hours in the bathroom.</step4>
+<formula>bathroom_time = dishes_time * bathroom_multiplier</formula>
+<calculation>0.5 * 3 = 1.5</calculation>
+<var>bathroom_time: 1.5</var>
+
+<step5>This means he earned 1.5 * $5 = $7.5 from cleaning the bathroom.</step5>
+<formula>bathroom_money = bathroom_time * rate_per_hour</formula>
+<calculation>1.5 * $5 = $7.5</calculation>
+<var>bathroom_money: $7.5</var>
+
+<step6>In total, he has earned $20 + $2.5 + $7.5 = $30.</step6>
+<formula>total_money = vacuuming_money + dishes_money + bathroom_money</formula>
+<calculation>$20 + $2.5 + $7.5 = $30</calculation>
+<var>total_money: $30</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>30</output>

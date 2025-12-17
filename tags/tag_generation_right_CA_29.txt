@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+Bethany loved riding horses. She rode <fact1>1 hour</fact1> after school every <fact2>Monday, Wednesday, and Friday</fact2>. On <fact3>Tuesday and Thursday</fact3>, she rode for <fact4>30 min</fact4> and on <fact5>Saturdays</fact5>, she could ride for <fact6>2 hours</fact6>. How many hours in total did she ride over a <fact7>2 week</fact7> period?
+
+## 2. Facts
+
+<fact1>Hours ridden on Monday, Wednesday, Friday: 1 hour each</fact1>
+<fact2>Days ridden for 1 hour: Monday, Wednesday, Friday</fact2>
+<fact3>Days ridden for 30 minutes: Tuesday, Thursday</fact3>
+<fact4>Time ridden on Tuesday and Thursday: 30 minutes each</fact4>
+<fact5>Day ridden for 2 hours: Saturday</fact5>
+<fact6>Hours ridden on Saturday: 2 hours</fact6>
+<fact7>Time period: 2 weeks</fact7>
+
+## 3. Steps
+
+<step1> She rode 1 hour every Monday, Wednesday and Friday each week so every week she rode 1*3 = 3 hours </step1>
+<formula> 1 hour × 3 days </formula>
+<calculation> 1 × 3 = 3 </calculation>
+<var>hours_mon_wed_fri : 3 hours</var>
+
+<step2> She rode 30 min on Tuesday and Thursday each week for a total of 30*2 = 60 min or 1 hour </step2>
+<formula> 30 minutes × 2 days </formula>
+<calculation> 30 × 2 = 60 minutes = 1 hour </calculation>
+<var>hours_tue_thu : 1 hour</var>
+
+<step3> On Mon, Wed & Friday she rode 3 hours, 1 hour total on Tue and Thur and 2 hours on Sat for a total of 3+1+2 = 6 hours </step3>
+<formula> hours_mon_wed_fri + hours_tue_thu + hours_saturday </formula>
+<calculation> 3 + 1 + 2 = 6 </calculation>
+<var>hours_per_week : 6 hours</var>
+
+<step4> She rode 6 hours per week for 2 weeks so in total she rode 6*2 = 12 hours </step4>
+<formula> hours_per_week × number_of_weeks </formula>
+<calculation> 6 × 2 = 12 </calculation>
+<var>total_hours : 12 hours</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>12</output>

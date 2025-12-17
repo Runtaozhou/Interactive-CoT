@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+<fact1>Lou Senior took 3 cookies out of the cookie jar and ate them.</fact1> Since he didn't get caught by his wife, he went back the next day and <fact2>took another 3 cookies out of the jar.</fact2> But after eating <fact3>just one of the cookies</fact3>, he felt guilty about it and <fact4>put the other two cookies back.</fact4> His son, Louie Junior saw that his Dad was eating cookies. So, <fact5>Louie Junior took seven cookies out of the jar</fact5> and hid them in his bedroom for later. The next morning, Debra, Lou's wife looked into the cookie jar and reacted by accusing her husband of eating <fact6>half of the cookies out of the cookie jar.</fact6> How many cookies remained in the jar?
+
+## 2. Facts
+
+<fact1>Lou Senior took: 3 cookies</fact1>
+<fact2>Lou Senior took again: 3 cookies</fact2>
+<fact3>Lou Senior ate from second batch: 1 cookie</fact3>
+<fact4>Lou Senior returned: 2 cookies</fact4>
+<fact5>Louie Junior took: 7 cookies</fact5>
+<fact6>Portion missing according to Debra: 1/2</fact6>
+
+## 3. Steps
+
+<step1> Calculate how many cookies Lou Sr removed in total </step1>
+<formula> cookies taken - cookies returned </formula>
+<calculation> 3 - 2 = 1 cookie </calculation>
+<var> lou_sr_cookies : 1 cookie </var>
+
+<step2> Calculate the total number of cookies removed from the jar </step2>
+<formula> lou_sr_cookies + louie_jr_cookies </formula>
+<calculation> 1 + 7 = 8 cookies </calculation>
+<var> total_cookies_removed : 8 cookies </var>
+
+<step3> Determine how many cookies remain in the jar </step3>
+<formula> total_cookies_removed = remaining_cookies </formula>
+<calculation> 8 missing = 8 remaining cookies </calculation>
+<var> remaining_cookies : 8 cookies </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 8 </output>

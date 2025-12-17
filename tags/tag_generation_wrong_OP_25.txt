@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+Lucille made an agreement with her mom that she would earn <fact1>six cents for every weed</fact1> she pulled in her mom's garden. There are <fact2>eleven weeds in the flower bed</fact2>, <fact3>fourteen in the vegetable patch</fact3>, and <fact4>thirty-two in the grass around the fruit trees</fact4>. Lucille weeded the flower bed, the vegetable patch, and half the grass before she took a break. She bought a soda for <fact5>99 cents</fact5> on her break with some of her earnings. How many cents does Lucille have left?
+
+## 2. Facts
+
+<fact1>Payment per weed: 6 cents</fact1>
+<fact2>Weeds in flower bed: 11</fact2>
+<fact3>Weeds in vegetable patch: 14</fact3>
+<fact4>Weeds in grass around fruit trees: 32</fact4>
+<fact5>Soda cost: 99 cents</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many weeds Lucille pulled from the grass </step1>
+<formula> total grass weeds ÷ 2 </formula>
+<calculation> 32 / 2 = 16 weeds </calculation>
+<var> grass_weeds_pulled : 16 weeds </var>
+
+<step2> Find the total number of weeds Lucille pulled </step2>
+<formula> flower bed weeds + vegetable patch weeds + grass weeds pulled </formula>
+<calculation> 11 + 14 + 16 = 41 weeds </calculation>
+<var> total_weeds_pulled : 41 weeds </var>
+
+<step3> Calculate how much money Lucille earned </step3>
+<formula> total weeds pulled × payment per weed </formula>
+<calculation> 41 * 6 = 246 cents </calculation>
+<var> total_earnings : 246 cents </var>
+
+<step4> Calculate how much money Lucille has left after buying the soda </step4>
+<formula> total earnings ÷ soda cost </formula>
+<calculation> 246 / 99 = 2 cents </calculation>
+<var> money_left : 2 cents </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 2 </output>

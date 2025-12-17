@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+Nick is choosing between two jobs. <fact1>Job A pays $15 an hour for 2000 hours a year</fact1>, and is in a state with <fact2>a 20% total tax rate</fact2>. <fact3>Job B pays $42,000 a year</fact3> and is in a state that charges <fact4>$6,000 in property tax</fact4> and <fact5>a 10% tax rate on net income after property tax</fact5>. How much more money will Nick make at the job with a higher net pay rate, compared to the other job?
+
+## 2. Facts
+
+<fact1>Job A pay: $15 an hour for 2000 hours a year</fact1>
+<fact2>Job A tax rate: 20%</fact2>
+<fact3>Job B annual pay: $42,000</fact3>
+<fact4>Job B property tax: $6,000</fact4>
+<fact5>Job B income tax rate: 10% on income after property tax</fact5>
+
+## 3. Steps
+
+<step1> Calculate the gross annual salary for Job A </step1>
+<formula> hourly rate × annual hours </formula>
+<calculation> 2000 hours * $15/hour = $30,000 </calculation>
+<var> job_a_gross : $30,000 </var>
+
+<step2> Calculate the amount of taxes Nick pays at Job A </step2>
+<formula> tax rate × gross salary </formula>
+<calculation> .2 * $30,000 = $6,000 </calculation>
+<var> job_a_taxes : $6,000 </var>
+
+<step3> Calculate Nick's net pay at Job A </step3>
+<formula> gross salary - taxes </formula>
+<calculation> $30,000 - $6,000 = $24,000 </calculation>
+<var> job_a_net : $24,000 </var>
+
+<step4> Calculate Job B income after property tax </step4>
+<formula> gross salary - property tax </formula>
+<calculation> $42,000 - $6,000 = $36,000 </calculation>
+<var> job_b_after_property_tax : $36,000 </var>
+
+<step5> Calculate income tax at Job B </step5>
+<formula> income after property tax × income tax rate </formula>
+<calculation> $36,000 * 10% = $3,600 </calculation>
+<var> job_b_income_tax : $3,600 </var>
+
+<step6> Calculate net income at Job B </step6>
+<formula> income after property tax - income tax </formula>
+<calculation> $36,000 - $3,600 = $32,400 </calculation>
+<var> job_b_net : $32,400 </var>
+
+<step7> Calculate the difference between the higher and lower net income </step7>
+<formula> higher net income - lower net income </formula>
+<calculation> $32,400 - $20,000 = $12,400 </calculation>
+<var> net_income_difference : $12,400 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 7 </wrongstep>
+
+## 5. Output
+
+<output> 12400 </output>

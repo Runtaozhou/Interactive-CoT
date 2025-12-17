@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jackson is laying tile in a courtyard that measures 10 feet by 25 feet. He needs 4 tiles per square foot of space. 40% of the tiles are green marble that costs $3/tile, and the rest are red tile that costs $1.50/tile. How much does he pay total for tile?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the perimeter of the courtyard.
+            <p>Using the formula: length + width + length + width</p>
+            <p>10 feet + 25 feet + 10 feet + 25 feet = 70 feet</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then multiply the perimeter by the number of tiles per square foot to find the total number of tiles needed.
+            <p>70 feet × 4 tiles/square foot = 280 tiles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then multiply the number of tiles by the percentage that are green to find the total number of green tiles.
+            <p>280 tiles × 40% = 112 tiles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Subtract that number from the total number of tiles to find the number of red tiles.
+            <p>280 tiles - 112 tiles = 168 tiles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Multiply the number of red tiles by the price per red tile to find the cost of the red tiles.
+            <p>168 tiles × $1.50/tile = $252</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 6:</span> Multiply the number of green tiles by the price per green tile to find the cost of the green tiles.
+            <p>112 tiles × $3.00/tile = $336</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 7:</span> Then add the cost of each type of tile to find the total cost.
+            <p>$252 + $336 = $588</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        588
+    </div>
+</body>
+</html>

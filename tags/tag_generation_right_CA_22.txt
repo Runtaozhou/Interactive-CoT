@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+Jimmy wants to order a pizza at a new place. <fact1>The large pizza costs $10.00</fact1> and is <fact2>cut into 8 slices</fact2>. <fact3>The first topping costs $2.00</fact3>, <fact4>the next 2 toppings cost $1.00 each</fact4> and <fact5>the rest of the toppings cost $0.50</fact5>. If he orders a large pizza with pepperoni, sausage, ham, olives, mushrooms, bell peppers and pineapple. How much will his pizza cost per slice?
+
+## 2. Facts
+
+<fact1>Large pizza cost: $10.00</fact1>
+<fact2>Number of slices: 8</fact2>
+<fact3>First topping cost: $2.00</fact3>
+<fact4>Next 2 toppings cost: $1.00 each</fact4>
+<fact5>Remaining toppings cost: $0.50 each</fact5>
+
+## 3. Steps
+
+<step1> The pizza costs $10 and the first topping, pepperoni costs $2 so right now it costs 10+2 = $12.00 </step1>
+<formula> base_cost + first_topping = initial_cost </formula>
+<calculation> 10 + 2 = 12 </calculation>
+<var> initial_cost: $12.00 </var>
+
+<step2> The next 2 toppings, sausage and ham, cost $1.00 each so 2*1 = $2.00 </step2>
+<formula> num_middle_toppings * cost_per_middle_topping = middle_toppings_cost </formula>
+<calculation> 2 * 1 = 2 </calculation>
+<var> middle_toppings_cost: $2.00 </var>
+
+<step3> The remaining toppings, olives, mushrooms, bell peppers and pineapple, cost $0.50 each so they cost 4*.50 = $2.00 </step3>
+<formula> num_remaining_toppings * cost_per_remaining_topping = remaining_toppings_cost </formula>
+<calculation> 4 * 0.50 = 2 </calculation>
+<var> remaining_toppings_cost: $2.00 </var>
+
+<step4> All total, Jimmy's pizza costs 12+2+2 = $16.00 </step4>
+<formula> initial_cost + middle_toppings_cost + remaining_toppings_cost = total_cost </formula>
+<calculation> 12 + 2 + 2 = 16 </calculation>
+<var> total_cost: $16.00 </var>
+
+<step5> The pizza is sliced into 8 pieces and the pizza costs $16 so each slice costs 16/8= $2.00 a slice </step5>
+<formula> total_cost / number_of_slices = cost_per_slice </formula>
+<calculation> 16 / 8 = 2 </calculation>
+<var> cost_per_slice: $2.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output>2.00</output>

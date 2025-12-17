@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+<fact1>Mr. Callen bought 10 paintings at $40 each</fact1> and <fact2>8 wooden toys at $20 each</fact2> from the crafts store to resell at a profit. However, when he sold the items, <fact3>the selling price of a painting was 10% less</fact3> and <fact4>the selling price of a hat 15% less</fact4>. Calculate the total loss Mr. Callen made from the sale of the items.
+
+## 2. Facts
+
+<fact1>Number of paintings: 10, cost per painting: $40</fact1>
+<fact2>Number of wooden toys: 8, cost per wooden toy: $20</fact2>
+<fact3>Painting selling price reduction: 10%</fact3>
+<fact4>Hat selling price reduction: 15%</fact4>
+
+## 3. Steps
+
+<step1> Calculate the loss per painting </step1>
+<formula> loss per painting = (discount percentage/100) * cost per painting </formula>
+<calculation> 10/100 * $30 = $3 </calculation>
+<var> loss_per_painting : $3 </var>
+
+<step2> Calculate the total loss from selling all paintings </step2>
+<formula> total painting loss = number of paintings * loss per painting </formula>
+<calculation> 10 * $3 = $30 </calculation>
+<var> total_painting_loss : $30 </var>
+
+<step3> Calculate the loss per wooden toy </step3>
+<formula> loss per wooden toy = (discount percentage/100) * cost per wooden toy </formula>
+<calculation> 15/100 * 20 = $3 </calculation>
+<var> loss_per_toy : $3 </var>
+
+<step4> Calculate the total loss from selling all wooden toys </step4>
+<formula> total toy loss = number of wooden toys * loss per toy </formula>
+<calculation> 3 * 8 = $24 </calculation>
+<var> total_toy_loss : $24 </var>
+
+<step5> Calculate the total loss from all items </step5>
+<formula> total loss = total painting loss + total toy loss </formula>
+<calculation> $30 + $24 = $54 </calculation>
+<var> total_loss : $54 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 54 </output>

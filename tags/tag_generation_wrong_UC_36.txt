@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+Joseph and his friends watched two movies in his house. <fact1>The first movie is 1 hour and 30 minutes long</fact1> while <fact2>the second movie is 30 minutes longer than the first</fact2>. Before the movies, <fact3>they spent 10 minutes making popcorn</fact3> and <fact4>twice as long making fries</fact4>. How long, in hours, did it take Joseph and his friends to cook and watch the movies?
+
+## 2. Facts
+
+<fact1>First movie length: 1 hour and 30 minutes</fact1>
+<fact2>Second movie: 30 minutes longer than the first</fact2>
+<fact3>Time making popcorn: 10 minutes</fact3>
+<fact4>Time making fries: twice as long as making popcorn</fact4>
+
+## 3. Steps
+
+<step1> Convert the first movie's length to minutes </step1>
+<formula> hours × 60 + minutes </formula>
+<calculation> 60 + 30 = 90 minutes </calculation>
+<var> first_movie_length : 90 minutes </var>
+
+<step2> Calculate the length of the second movie </step2>
+<formula> first_movie_length + 30 </formula>
+<calculation> 90 + 30 = 120 minutes </calculation>
+<var> second_movie_length : 120 minutes </var>
+
+<step3> Calculate the total time spent watching both movies </step3>
+<formula> first_movie_length + second_movie_length </formula>
+<calculation> 90 + 120 = 210 minutes </calculation>
+<var> total_movie_time : 210 minutes </var>
+
+<step4> Calculate the time spent making fries </step4>
+<formula> popcorn_time × 2 </formula>
+<calculation> 10 × 2 = 20 minutes </calculation>
+<var> fries_time : 20 minutes </var>
+
+<step5> Calculate the total cooking time </step5>
+<formula> popcorn_time + fries_time </formula>
+<calculation> 10 + 20 = 30 minutes </calculation>
+<var> total_cooking_time : 30 minutes </var>
+
+<step6> Calculate the total time spent cooking and watching movies </step6>
+<formula> total_movie_time + total_cooking_time </formula>
+<calculation> 210 + 30 = 240 minutes </calculation>
+<var> total_time_minutes : 240 minutes </var>
+
+<step7> Convert the total time from minutes to hours </step7>
+<formula> total_time_minutes ÷ 60 </formula>
+<calculation> 240/50 = 4.8 hours </calculation>
+<var> total_time_hours : 4.8 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 7 </wrongstep>
+
+## 5. Output
+
+<output> 4.8 </output>

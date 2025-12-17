@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Liz roasts <fact1>2 16 pounds turkeys</fact1> every Thanksgiving. She can only roast them <fact2>1 at a time</fact2> because she has a small oven. She roasts each turkey for <fact3>15 minutes per pound</fact3>. If dinner is served at <fact4>6:00 pm</fact4> what is the latest time she can start roasting the turkeys?
+
+## 2. Facts
+
+<fact1>Number and weight of turkeys: 2 turkeys of 16 pounds each</fact1>
+<fact2>Turkeys that can be roasted at once: 1</fact2>
+<fact3>Roasting time: 15 minutes per pound</fact3>
+<fact4>Dinner time: 6:00 pm</fact4>
+
+## 3. Steps
+
+<step1> Calculate how long it takes to roast one turkey </step1>
+<formula> roasting time per pound × turkey weight </formula>
+<calculation> 15*16 = 240 minutes </calculation>
+<var> one_turkey_time : 240 minutes </var>
+
+<step2> Calculate the total time needed to roast both turkeys </step2>
+<formula> one_turkey_time × number of turkeys </formula>
+<calculation> 2*240 = 480 minutes </calculation>
+<var> total_roasting_time : 480 minutes </var>
+
+<step3> Convert the total roasting time from minutes to hours </step3>
+<formula> total_roasting_time ÷ minutes per hour </formula>
+<calculation> 480/60 = 8 hours </calculation>
+<var> total_roasting_hours : 8 hours </var>
+
+<step4> Calculate the latest start time by subtracting the total roasting hours from the dinner time </step4>
+<formula> dinner time - total_roasting_hours </formula>
+<calculation> 18 - 8 = 10:00 am </calculation>
+<var> latest_start_time : 10:00 am </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 10:00 am </output>

@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+At Kaleb's Restaurant, a group with <fact1>six adults</fact1> and <fact2>two children</fact2> came in to eat. If each <fact3>adult meal cost six dollars</fact3> and each <fact4>children's meal was $4</fact4>, and <fact5>every person ordered a soda for $2</fact5> how much was the bill?
+
+## 2. Facts
+
+<fact1>Number of adults: 6</fact1>
+<fact2>Number of children: 2</fact2>
+<fact3>Cost per adult meal: $6</fact3>
+<fact4>Cost per children's meal: $4</fact4>
+<fact5>Cost per soda: $2</fact5>
+
+## 3. Steps
+
+<step1>Calculate the cost for children's meals</step1>
+<formula>Number of children × Cost per children's meal</formula>
+<calculation>2 children * $4 = $8</calculation>
+<var>children_meal_cost: $8</var>
+
+<step2>Calculate the total number of people ordering drinks</step2>
+<formula>Number of adults + Number of children</formula>
+<calculation>6 + 2 = 8</calculation>
+<var>total_people: 8</var>
+
+<step3>Calculate the cost for all drinks</step3>
+<formula>Total people × Cost per soda</formula>
+<calculation>8 people * $2 = $16</calculation>
+<var>drink_cost: $16</var>
+
+<step4>Calculate the total cost of the meal</step4>
+<formula>Adult meal cost + Children meal cost + Drink cost</formula>
+<calculation>$6 + $8 + $16 = $30</calculation>
+<var>total_bill: $30</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>30</output>

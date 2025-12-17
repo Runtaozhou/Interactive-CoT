@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">6</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        While Joanne is gathering apples from her family's orchard, her sister comes outside to help her. Joanne gathers 30 apples from the tallest trees, half this amount from the shortest trees, and more apples from the average trees. Compared with Joanne, her sister gathers twice as many apples from the tallest trees and 3 times as many apples from the shortest trees. She doesn't take any from the average trees. If the sisters have gathered a combined total of 500 apples, how many apples did Joanne gather from the average trees?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many apples Joanne gathered from the shortest trees.
+            <p>Since Joanne gathered half as many apples from the shortest trees as from the tallest trees:</p>
+            <p>Joanne's shortest trees apples = 30 apples ÷ 2 = 15 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many apples her sister gathered from the tallest trees.
+            <p>Her sister gathered twice as many apples from the tallest trees as Joanne did:</p>
+            <p>Sister's tallest trees apples = 30 apples × 2 = 60 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many apples her sister gathered from the shortest trees.
+            <p>Her sister gathered 3 times as many apples from the shortest trees as Joanne did:</p>
+            <p>Sister's shortest trees apples = 15 apples × 3 = 45 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total apples her sister gathered.
+            <p>Sister's total apples = Sister's tallest trees apples + Sister's shortest trees apples</p>
+            <p>Sister's total apples = 60 apples + 45 apples = 105 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many apples Joanne gathered from tallest and shortest trees.
+            <p>Joanne's tallest and shortest trees apples = Joanne's tallest trees apples + Joanne's shortest trees apples</p>
+            <p>Joanne's tallest and shortest trees apples = 30 apples + 15 apples = 45 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the combined total of apples gathered so far.
+            <p>Apples gathered so far = Sister's total apples + Joanne's tallest and shortest trees apples</p>
+            <p>Apples gathered so far = 105 apples + 45 apples = 140 apples</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate how many apples Joanne must have gathered from the average trees.
+            <p>Joanne's average trees apples = Total apples - Apples gathered so far</p>
+            <p>Joanne's average trees apples = 500 apples - 140 apples = 360 apples</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        360
+    </div>
+</body>
+</html>

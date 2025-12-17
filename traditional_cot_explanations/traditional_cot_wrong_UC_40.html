@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mike gets paid 100 dollars a week. He decides to spend half of that at an arcade. He spends 10 dollars at the arcade on food and uses the rest on arcade tokens. He can play for 1 hour for $8. How many minutes can he play?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much Mike spends at the arcade.
+            <p>Mike gets paid $100 per week and decides to spend half of that at the arcade.</p>
+            <p>Arcade budget = $100 × 0.5 = $50</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much Mike has left for tokens after food.
+            <p>Mike spends $10 on food at the arcade, so we need to subtract this from his arcade budget.</p>
+            <p>Token budget = $50 - $10 = $40</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many hours Mike can play.
+            <p>Mike can play for 1 hour for $8. With his token budget of $40, we can calculate how many hours he can play.</p>
+            <p>Play hours = $40 ÷ $8 = 5 hours</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert hours to minutes.
+            <p>To find out how many minutes Mike can play, we need to convert 5 hours to minutes.</p>
+            <p>Play minutes = 5 hours × 50 minutes per hour = 250 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        250
+    </div>
+</body>
+</html>

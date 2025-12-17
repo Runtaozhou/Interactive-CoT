@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John climbs 3 staircases. The first staircase has 20 steps. The next has twice as many steps as the first. The final staircase has 10 fewer steps than the second one. Each step is 0.5 feet. How many feet did he climb?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of steps in the second staircase.
+            <p>The second staircase has twice as many steps as the first staircase.</p>
+            <p>First staircase steps = 20 steps</p>
+            <p>Second staircase steps = 20 × 2 = 40 steps</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of steps in the third staircase.
+            <p>The third staircase has 10 fewer steps than the second staircase.</p>
+            <p>Second staircase steps = 40 steps</p>
+            <p>Third staircase steps = 40 - 10 = 30 steps</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of steps climbed.
+            <p>We need to add up all the steps from the three staircases.</p>
+            <p>Total steps = First staircase + Second staircase + Third staircase</p>
+            <p>Total steps = 20 + 40 + 30 = 90 steps</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert the total steps to feet.
+            <p>Each step is 0.5 feet high.</p>
+            <p>Total height = Total steps × Step height</p>
+            <p>Total height = 90 × 0.5 = 50 feet</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        50
+    </div>
+</body>
+</html>

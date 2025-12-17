@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+While Joanne is gathering apples from her family's orchard, her sister comes outside to help her. Joanne gathers <fact1>30 apples from the tallest trees</fact1>, <fact2>half this amount from the shortest trees</fact2>, and more apples from the average trees. Compared with Joanne, her sister gathers <fact3>twice as many apples from the tallest trees</fact3> and <fact4>3 times as many apples from the shortest trees</fact4>. She doesn't take any from the average trees. If the sisters have gathered a <fact5>combined total of 500 apples</fact5>, how many apples did Joanne gather from the average trees?
+
+## 2. Facts
+
+<fact1>Joanne's tallest trees apples: 30 apples</fact1>
+<fact2>Joanne's shortest trees apples: half of 30</fact2>
+<fact3>Sister's tallest trees apples: twice Joanne's amount</fact3>
+<fact4>Sister's shortest trees apples: 3 times Joanne's amount</fact4>
+<fact5>Total apples gathered: 500 apples</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many apples Joanne gathered from the shortest trees </step1>
+<formula> tallest_trees_apples ÷ 2 </formula>
+<calculation> 30 apples / 2 = 15 apples </calculation>
+<var> joanne_shortest : 15 apples </var>
+
+<step2> Calculate how many apples her sister gathered from the tallest trees </step2>
+<formula> tallest_trees_apples × 2 </formula>
+<calculation> 30 apples * 2 = 60 apples </calculation>
+<var> sister_tallest : 60 apples </var>
+
+<step3> Calculate how many apples her sister gathered from the shortest trees </step3>
+<formula> joanne_shortest × 3 </formula>
+<calculation> 15 apples * 3 = 45 apples </calculation>
+<var> sister_shortest : 45 apples </var>
+
+<step4> Calculate the total apples her sister gathered </step4>
+<formula> sister_tallest + sister_shortest </formula>
+<calculation> 60 + 45 = 105 apples </calculation>
+<var> sister_total : 105 apples </var>
+
+<step5> Calculate how many apples Joanne gathered from tallest and shortest trees </step5>
+<formula> tallest_trees_apples + joanne_shortest </formula>
+<calculation> 30 + 15 = 45 apples </calculation>
+<var> joanne_tallest_shortest : 45 apples </var>
+
+<step6> Calculate the combined total of apples gathered so far </step6>
+<formula> sister_total + joanne_tallest_shortest </formula>
+<calculation> 105 + 45 = 140 apples </calculation>
+<var> apples_so_far : 140 apples </var>
+
+<step7> Calculate how many apples Joanne must have gathered from the average trees </step7>
+<formula> total_apples - apples_so_far </formula>
+<calculation> 500 total apples – 140 apples so far = 360 apples </calculation>
+<var> joanne_average : 360 apples </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 360 </output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Julia's internet speed is <fact1>20 MBps (megabytes per second)</fact1>. How many songs she can download in <fact2>half an hour</fact2> if the size per song is <fact3>5MB</fact3>?
+
+## 2. Facts
+
+<fact1>Internet speed: 20 MBps</fact1>
+<fact2>Time available: 1/2 hour</fact2>
+<fact3>Song size: 5MB</fact3>
+
+## 3. Steps
+
+<step1> Convert half an hour to minutes </step1>
+<formula> 1/2 * 50 </formula>
+<calculation> 1/2 * 50 = 25 minutes </calculation>
+<var> time_in_minutes : 25 minutes </var>
+
+<step2> Convert minutes to seconds </step2>
+<formula> time_in_minutes * 60 </formula>
+<calculation> 25 * 60 = 1500 seconds </calculation>
+<var> time_in_seconds : 1500 seconds </var>
+
+<step3> Calculate how long it takes to download one song </step3>
+<formula> song_size / internet_speed </formula>
+<calculation> 5/20 = 1/4 seconds </calculation>
+<var> time_per_song : 1/4 seconds </var>
+
+<step4> Calculate how many songs can be downloaded in the available time </step4>
+<formula> time_in_seconds / time_per_song </formula>
+<calculation> 1500/(1/4) = 1500 * 4 = 6000 songs </calculation>
+<var> total_songs : 6000 songs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 6000 </output>

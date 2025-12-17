@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Trevor and Joe were working together to finish a <fact1>500 piece puzzle</fact1>. They put the border together first and that was <fact2>75 pieces</fact2>. Trevor was able to place <fact3>105 pieces</fact3> of the puzzle. Joe was able to place <fact4>three times</fact4> the number of puzzle pieces as Trevor. How many puzzle pieces are missing?
+
+## 2. Facts
+
+<fact1>Total puzzle pieces: 500</fact1>
+<fact2>Border pieces: 75</fact2>
+<fact3>Trevor's pieces: 105</fact3>
+<fact4>Joe's pieces: 3 times Trevor's</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of pieces left after placing the border </step1>
+<formula> Total pieces + Border pieces </formula>
+<calculation> 500 + 75 = 575 pieces </calculation>
+<var> pieces_left : 575 </var>
+
+<step2> Calculate how many pieces Joe placed </step2>
+<formula> Trevor's pieces × 3 </formula>
+<calculation> 105 × 3 = 315 pieces </calculation>
+<var> joe_pieces : 315 </var>
+
+<step3> Calculate the total pieces placed by Trevor and Joe </step3>
+<formula> Trevor's pieces + Joe's pieces </formula>
+<calculation> 105 + 315 = 420 pieces </calculation>
+<var> total_placed : 420 </var>
+
+<step4> Calculate the number of missing pieces </step4>
+<formula> Pieces left - Total placed </formula>
+<calculation> 575 - 420 = 155 pieces </calculation>
+<var> missing_pieces : 155 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 155 </output>

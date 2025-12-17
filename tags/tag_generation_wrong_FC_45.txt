@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+<fact1>John has 3 boxes.</fact1> Each box is <fact2>5 inches by 6 inches by 4 inches.</fact2> The walls are <fact3>1 inch thick.</fact3> What is the total inner volume of all 3 boxes?
+
+## 2. Facts
+
+<fact1>Number of boxes: 3</fact1>
+<fact2>Box dimensions: 5 inches by 6 inches by 4 inches</fact2>
+<fact3>Wall thickness: 1 inch</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much the walls subtract from each dimension </step1>
+<formula> 2 * wall thickness </formula>
+<calculation> 2 * 1 = 2 inches </calculation>
+<var> dimension_reduction : 2 inches </var>
+
+<step2> Calculate the inner width of each box </step2>
+<formula> width - dimension_reduction </formula>
+<calculation> 5 - 2 = 3 inches </calculation>
+<var> inner_width : 3 inches </var>
+
+<step3> Calculate the inner height of each box </step3>
+<formula> height - dimension_reduction </formula>
+<calculation> 6 - 2 = 4 inches </calculation>
+<var> inner_height : 4 inches </var>
+
+<step4> Calculate the inner depth of each box </step4>
+<formula> depth - dimension_reduction </formula>
+<calculation> 4 - 2 = 2 inches </calculation>
+<var> inner_depth : 2 inches </var>
+
+<step5> Calculate the inner volume of one box </step5>
+<formula> 2*(inner_width+inner_height+inner_width+inner_height)+2*(inner_depth+inner_width+inner_depth+inner_width)+2*(inner_width+inner_depth+inner_width+inner_depth) </formula>
+<calculation> 2*(3+4+3+4)+2*(4+2+4+2)+2*(3+2+3+2)=100 cubic inches </calculation>
+<var> inner_volume_one_box : 100 cubic inches </var>
+
+<step6> Calculate the total inner volume of all boxes </step6>
+<formula> number_of_boxes * inner_volume_one_box </formula>
+<calculation> 3 * 100 = 300 cubic inches </calculation>
+<var> total_inner_volume : 300 cubic inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 300 </output>

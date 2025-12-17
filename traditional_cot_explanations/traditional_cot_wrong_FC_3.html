@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        One logger can cut down 6 trees per day. The forest is a rectangle measuring 4 miles by 6 miles, and each square mile has 600 trees. If there are 30 days in each month, how many months will it take 8 loggers to cut down all the trees?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the total area of the forest.
+            <p>Using the formula for perimeter = 2 × length + 2 × width</p>
+            <p>4 miles + 4 miles + 6 miles + 6 miles = 20 square miles</p>
+            <p>So the forest area is 20 square miles.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then find the total number of trees in that area.
+            <p>We multiply the forest area by the tree density:</p>
+            <p>600 trees/square mile × 20 square miles = 12000 trees</p>
+            <p>So there are 12000 trees in total.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then find the number of trees all the loggers can cut down in one day.
+            <p>We multiply the number of loggers by the trees each logger can cut per day:</p>
+            <p>8 loggers × 6 trees/logger = 48 trees</p>
+            <p>So all loggers together can cut down 48 trees per day.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then divide the total number of trees by the number cut down per day to find the number of days it takes to clear the forest.
+            <p>Total trees ÷ trees cut per day:</p>
+            <p>12000 trees ÷ 48 trees/day = 250 days</p>
+            <p>So it will take 250 days to cut down all the trees.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Then divide the time in days by the number of days per month to find the time in months.
+            <p>Total days ÷ days per month:</p>
+            <p>250 days ÷ 30 days/month = 8.33333333333 months</p>
+            <p>So it will take approximately 8.33333333333 months to cut down all the trees.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        8.33333333333
+    </div>
+</body>
+</html>

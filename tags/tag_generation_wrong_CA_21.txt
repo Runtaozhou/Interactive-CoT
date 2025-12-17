@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+<fact1>Ms. Warren ran at 6 mph for 20 minutes.</fact1> After the run, <fact2>she walked at 2 mph for 30 minutes.</fact2> How many miles did she run and walk in total?
+
+## 2. Facts
+
+<fact1>Running speed and time: 6 mph for 20 minutes</fact1>
+<fact2>Walking speed and time: 2 mph for 30 minutes</fact2>
+
+## 3. Steps
+
+<step1> Convert running time from minutes to hours </step1>
+<formula> minutes ÷ 60 </formula>
+<calculation> 20/60 = 1/3 of an hour </calculation>
+<var> running_time_hours : 1/3 hour </var>
+
+<step2> Calculate the distance Ms. Warren ran </step2>
+<formula> speed × time </formula>
+<calculation> 6/3 = 3 miles </calculation>
+<var> running_distance : 3 miles </var>
+
+<step3> Convert walking time from minutes to hours </step3>
+<formula> minutes ÷ 60 </formula>
+<calculation> 30/60 = 1/2 of an hour </calculation>
+<var> walking_time_hours : 1/2 hour </var>
+
+<step4> Calculate the distance Ms. Warren walked </step4>
+<formula> speed × time </formula>
+<calculation> 2/2 = 1 mile </calculation>
+<var> walking_distance : 1 mile </var>
+
+<step5> Add the running and walking distances to find the total distance </step5>
+<formula> running_distance + walking_distance </formula>
+<calculation> 3 + 1 = 4 miles </calculation>
+<var> total_distance : 4 miles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 4 </output>

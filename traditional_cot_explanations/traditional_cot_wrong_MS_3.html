@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Lou Senior took 3 cookies out of the cookie jar and ate them. Since he didn't get caught by his wife, he went back the next day and took another 3 cookies out of the jar. But after eating just one of the cookies, he felt guilty about it and put the other two cookies back. His son, Louie Junior saw that his Dad was eating cookies. So, Louie Junior took seven cookies out of the jar and hid them in his bedroom for later. The next morning, Debra, Lou's wife looked into the cookie jar and reacted by accusing her husband of eating half of the cookies out of the cookie jar. How many cookies remained in the jar?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many cookies Lou Sr removed in total.
+            <p>First, Lou Sr took 3 cookies and ate them all. Then he took another 3 cookies but only ate 1 and returned 2. So from the second batch, he only kept 1 cookie (3 - 2 = 1).</p>
+            <p>Therefore, Lou Sr removed a total of 1 cookie from the jar.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of cookies removed from the jar.
+            <p>Lou Sr removed 1 cookie, and Louie Jr took 7 cookies.</p>
+            <p>Total cookies removed = 1 + 7 = 8 cookies</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Determine how many cookies remain in the jar.
+            <p>Since 8 cookies were removed from the jar, and this represents half of the original amount (according to Debra), the remaining cookies must also be 8.</p>
+            <p>Therefore, there are 8 cookies remaining in the jar.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        8
+    </div>
+</body>
+</html>

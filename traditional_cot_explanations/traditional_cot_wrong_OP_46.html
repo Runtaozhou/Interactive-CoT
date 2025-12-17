@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A house's living room, dining room and kitchen take up 1,000 sq ft. The house also has a guest bedroom and a master bedroom suite. If the guest bedroom is a quarter of the size of the master bedroom suite, and the house is 2,300 sq ft total, how large is the master bedroom suite?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total area for bedrooms by subtracting non-bedroom areas from total house area.
+            <p>We need to find how much space is available for the bedrooms by subtracting the living room, dining room, and kitchen area from the total house area.</p>
+            <p>Total house area × non-bedroom area = 2300 × 1000 = 2,300,000 sq ft</p>
+            <p>So the bedroom area is 2,300,000 sq ft.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Define the master bedroom suite size as a variable.
+            <p>Let's call the master bedroom suite size x.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Express the guest bedroom size in terms of the master bedroom suite.
+            <p>Since the guest bedroom is a quarter of the size of the master bedroom suite, we can express it as:</p>
+            <p>Guest bedroom size = 0.25 × master suite size = 0.25x</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total bedroom area as the sum of both bedrooms.
+            <p>Total bedroom area = master suite size + guest bedroom size</p>
+            <p>Total bedroom area = x + 0.25x = 1.25x</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Set up equation where total bedroom area equals the available space for bedrooms.
+            <p>We can set up the equation:</p>
+            <p>1.25x = 2,300,000</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Solve for the master bedroom suite size.
+            <p>x = 2,300,000 ÷ 1.25 = 1,840,000 sq ft</p>
+            <p>Therefore, the master bedroom suite size is 1,840,000 sq ft.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1840000
+    </div>
+</body>
+</html>

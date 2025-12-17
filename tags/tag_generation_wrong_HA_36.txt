@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+There are <fact1>15 cats</fact1> in a shelter. <fact2>One-third</fact2> were adopted, and were replaced with <fact3>twice the amount</fact3> that were adopted. Later on, <fact4>twice as many dogs</fact4> showed up as there are cats. How many total animals are there in the shelter?
+
+## 2. Facts
+
+<fact1>Initial cats: 15</fact1>
+<fact2>Fraction adopted: 1/3</fact2>
+<fact3>Replacement ratio: 2 times adopted</fact3>
+<fact4>Dogs ratio: 2 times current cats</fact4>
+
+## 3. Steps
+
+<step1>Calculate how many cats were adopted</step1>
+<formula>Initial cats × Fraction adopted</formula>
+<calculation>15/3 = 5 cats</calculation>
+<var>cats_adopted: 5 cats</var>
+
+<step2>Calculate how many cats remained after adoption</step2>
+<formula>Initial cats - cats_adopted</formula>
+<calculation>15 - 5 = 10 cats</calculation>
+<var>cats_remaining: 10 cats</var>
+
+<step3>Calculate how many new cats were added to the shelter</step3>
+<formula>cats_adopted × 2 + additional cats</formula>
+<calculation>5 × 2 = 10 more cats, plus 3 additional cats</calculation>
+<var>new_cats: 13 cats</var>
+
+<step4>Calculate the total number of cats in the shelter</step4>
+<formula>cats_remaining + new_cats</formula>
+<calculation>10 + 10 + 3 = 23 cats</calculation>
+<var>total_cats: 23 cats</var>
+
+<step5>Calculate how many dogs showed up</step5>
+<formula>total_cats × 2</formula>
+<calculation>23 × 2 = 46 dogs</calculation>
+<var>total_dogs: 46 dogs</var>
+
+<step6>Calculate the total number of animals in the shelter</step6>
+<formula>total_cats + total_dogs</formula>
+<calculation>23 + 46 = 69 animals</calculation>
+<var>total_animals: 69 animals</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>69</output>

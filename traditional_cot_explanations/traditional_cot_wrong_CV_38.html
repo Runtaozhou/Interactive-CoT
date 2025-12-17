@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Baking in batches of 65 cupcakes, Carla made 45 batches of cupcakes for her daughter's birthday party. She then took 5 cupcakes from each batch, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, calculate the number of cupcakes that each of Carla's daughter's friends ate.
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to calculate how many cupcakes remain in each batch after Carla fed some to her dogs.
+            <br>
+            Cupcakes per batch - Cupcakes taken from each batch = 65 - 5 = 60 cupcakes
+            <br>
+            So there are 60 cupcakes remaining in each batch.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, we calculate the total number of cupcakes available for the party.
+            <br>
+            Number of batches × Remaining cupcakes per batch = 50 * 60 = 3000 cupcakes
+            <br>
+            So there are 3000 cupcakes available for the party.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now, we need to calculate the total number of people sharing the cupcakes.
+            <br>
+            Number of friends + Daughter = 19 + 1 = 20 people
+            <br>
+            So there are 20 people sharing the cupcakes.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Finally, we calculate how many cupcakes each person received.
+            <br>
+            Total cupcakes ÷ Total people = 3000 ÷ 20 = 150 cupcakes
+            <br>
+            So each person, including Carla's daughter, received 150 cupcakes.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        150
+    </div>
+</body>
+</html>

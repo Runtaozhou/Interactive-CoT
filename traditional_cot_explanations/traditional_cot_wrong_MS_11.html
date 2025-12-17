@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jude bought three chairs for his house, all at the same price. He also bought a table that costs $50 and two sets of plates at $20 for each set. After giving the cashier $130, Jude got a $4 change. How much did each of the chairs cost?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total amount Jude paid.
+            <p>To find this, we subtract the change received from the amount given to the cashier:</p>
+            <p>Amount given - Change received = $130 - $4 = $126</p>
+            <p>So Jude paid a total of $126.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the cost of the chairs and plates by subtracting the table cost.
+            <p>We know the table costs $50, so:</p>
+            <p>Total paid - Table cost = $126 - $50 = $76</p>
+            <p>The combined cost of the chairs and plates is $76.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the cost of the chairs by subtracting the cost of one set of plates.
+            <p>Each set of plates costs $20, and Jude bought 2 sets, so the total cost of plates is $40.</p>
+            <p>Chairs and plates cost - Plates cost = $76 - $40 = $36</p>
+            <p>The total cost of all chairs is $36.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the cost of each chair.
+            <p>Since Jude bought 3 chairs at the same price, we divide the total cost of chairs by 3:</p>
+            <p>Chairs cost ÷ Number of chairs = $36 ÷ 3 = $12</p>
+            <p>Each chair costs $12.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        18.67
+    </div>
+</body>
+</html>

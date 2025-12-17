@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        At the same store, Peter bought 2 pairs of pants and 5 shirts for $62 total, and Jessica bought 2 shirts for $20 total. Each pair of pants cost the same price, and each shirt cost the same price. How much does 1 pair of pants cost?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the cost of one shirt using Jessica's purchase.
+            <p>Since Jessica bought 2 shirts for $20 total, we can find the cost of one shirt by dividing:</p>
+            <p>$20 ÷ 2 shirts = $10 per shirt</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Set up an equation using Peter's purchase with X as the cost of one pair of pants.
+            <p>Peter bought 2 pairs of pants and 5 shirts for $62 total.</p>
+            <p>If we let X represent the cost of one pair of pants, we can write:</p>
+            <p>2X + 5 × shirt_cost = total cost</p>
+            <p>2X + 5 shirts × $10/shirt = $62</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Isolate the variable by subtracting the cost of shirts from both sides.
+            <p>2X + 5 × $10 - 5 × $10 = $62 - 5 × $10</p>
+            <p>2X = $22</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Solve for X by dividing both sides by 2.
+            <p>2X ÷ 2 = $22 ÷ 2</p>
+            <p>X = $11</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        11
+    </div>
+</body>
+</html>

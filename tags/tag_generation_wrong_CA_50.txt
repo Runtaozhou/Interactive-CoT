@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Lidia has a collection of books. Her collection is <fact1>four times bigger than the collection which her friend Susan has</fact1>. In total <fact2>Susan and Lidia, both have 3000 books</fact2>. How many books does Susan have in her collection?
+
+## 2. Facts
+
+<fact1>Lidia's collection: 4 times Susan's collection</fact1>
+<fact2>Total books: 3000</fact2>
+
+## 3. Steps
+
+<step1> Define a variable for Susan's collection </step1>
+<formula> x = Susan's collection </formula>
+<calculation></calculation>
+<var> Susan's books : x </var>
+
+<step2> Express the total number of books in terms of x </step2>
+<formula> 4*x + x = 3000 </formula>
+<calculation> 4*x + x = 3000 </calculation>
+<var> Total books : 3000 </var>
+
+<step3> Simplify the equation </step3>
+<formula> 5*x = 3000 </formula>
+<calculation> 5*x = 3000 </calculation>
+<var> Simplified equation : 5*x = 3000 </var>
+
+<step4> Solve for x to find Susan's collection </step4>
+<formula> x = 3000/5 </formula>
+<calculation> x = 500 </calculation>
+<var> Susan's books : 500 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 500 </output>

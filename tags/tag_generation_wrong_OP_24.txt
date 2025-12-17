@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>4 friends are running a 4 x 100 relay race.</fact1> Mary ran first and took twice as long as Susan. Susan ran second and she took <fact2>10 seconds</fact2> longer than Jen. Jen ran third and finished in <fact3>30 seconds</fact3>. Tiffany ran the last leg and finished in <fact4>7 seconds</fact4> less than Mary. How many seconds did it take the team to finish the race?
+
+## 2. Facts
+
+<fact1>Number of friends in relay race: 4</fact1>
+<fact2>Susan's time compared to Jen: 10 seconds longer</fact2>
+<fact3>Jen's time: 30 seconds</fact3>
+<fact4>Tiffany's time compared to Mary: 7 seconds less</fact4>
+
+## 3. Steps
+
+<step1> Calculate Susan's time based on Jen's time </step1>
+<formula> Jen's time + 10 seconds </formula>
+<calculation> 30 seconds + 10 seconds = 40 seconds </calculation>
+<var> susan_time : 40 seconds </var>
+
+<step2> Calculate Mary's time based on Susan's time </step2>
+<formula> Susan's time * 2 </formula>
+<calculation> 40 seconds * 2 = 80 seconds </calculation>
+<var> mary_time : 80 seconds </var>
+
+<step3> Calculate Tiffany's time based on Mary's time </step3>
+<formula> Mary's time / 7 seconds </formula>
+<calculation> 80 seconds / 7 seconds = 11.43 seconds </calculation>
+<var> tiffany_time : 11.43 seconds </var>
+
+<step4> Calculate the total time for the team </step4>
+<formula> Mary's time + Susan's time + Jen's time + Tiffany's time </formula>
+<calculation> 80 seconds + 40 seconds + 30 seconds + 11.43 seconds = 161.43 seconds </calculation>
+<var> total_time : 161.43 seconds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 161.43 </output>

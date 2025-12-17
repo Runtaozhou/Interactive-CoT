@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Julia collects old watches. She owns <fact1>20 silver watches</fact1>, and <fact2>three times as many bronze watches</fact2>. She decided to buy gold watches to add to her collection, a number that represents <fact3>10% of all the watches she owns</fact3>. How many watches does Julia own after this purchase?
+
+## 2. Facts
+
+<fact1>Silver watches: 20</fact1>
+<fact2>Bronze watches: 3 times silver watches</fact2>
+<fact3>Gold watches to buy: 10% of all watches</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many bronze watches Julia owns</step1>
+<formula>Silver watches × 3</formula>
+<calculation>20 × 3 = 60 bronze watches</calculation>
+<var>bronze_watches: 60</var>
+
+<step2>Calculate the total number of silver and bronze watches</step2>
+<formula>60 - 20</formula>
+<calculation>60 - 20 = 40 total silver and bronze watches</calculation>
+<var>total_silver_bronze: 40</var>
+
+<step3>Calculate how many gold watches Julia will buy</step3>
+<formula>Total silver and bronze watches × 10/100</formula>
+<calculation>40 × 10/100 = 4 watches</calculation>
+<var>gold_watches: 4</var>
+
+<step4>Calculate the total number of watches Julia owns after the purchase</step4>
+<formula>Silver watches + Bronze watches + Gold watches</formula>
+<calculation>20 + 60 + 4 = 84 watches</calculation>
+<var>total_watches: 84</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>84</output>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Bethany loved riding horses. She rode 1 hour after school every Monday, Wednesday, and Friday. On Tuesday and Thursday, she rode for 30 min and on Saturdays, she could ride for 2 hours. How many hours in total did she ride over a 2 week period?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many hours Bethany rode on Monday, Wednesday, and Friday each week.
+            <p>We need to multiply the hours per day by the number of days:</p>
+            <p>1 hour × 3 days = 3 hours</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many hours Bethany rode on Tuesday and Thursday each week.
+            <p>We need to calculate the total minutes and convert to hours:</p>
+            <p>30 minutes × 2 days = 60 minutes = 1 hour</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total hours Bethany rode in one week.
+            <p>We add the hours from Monday/Wednesday/Friday, Tuesday/Thursday, and Saturday:</p>
+            <p>3 hours + 1 hour + 2 hours = 6 hours per week</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total hours Bethany rode over the 2-week period.
+            <p>We multiply the weekly hours by the number of weeks:</p>
+            <p>6 hours × 2 weeks = 11 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        11
+    </div>
+</body>
+</html>

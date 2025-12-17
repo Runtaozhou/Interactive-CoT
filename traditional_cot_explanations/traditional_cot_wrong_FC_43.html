@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The building has 42 storage units that are a total of 5040 square feet. Twenty of the units are 8 by 4 feet each. If the remaining units are all the same size, what is the area, in square feet, for one of the remaining units?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the perimeter of one of the 20 units.
+            <p>The perimeter of one unit is: 8 + 4 + 8 + 4 = 24 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total area of the 20 units.
+            <p>Total area of 20 units = unit area × 20 = 24 × 20 = 480 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the remaining area for the other units.
+            <p>Remaining area = total area - area of 20 units = 5040 - 480 = 4560 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of remaining units.
+            <p>Remaining units = total units - 20 = 42 - 20 = 22 units</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the area of one remaining unit.
+            <p>Area of one remaining unit = remaining area ÷ remaining units = 4560 ÷ 22 = 207.27 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> State the final answer.
+            <p>One of the remaining units is 207.27 square feet.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        207.27
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Micah bought envelopes to send, and depending on the weight of the envelope he will need more stamps. If an envelope weighs more than 5 pounds, he will need 5 stamps. If it weighs less than that, it will only need 2 stamps. If he bought 52 stamps with 6 envelopes that weigh less than 5 pounds, how many envelopes in total did Micah need to buy?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of stamps needed for the light envelopes.
+            <p>We know that Micah has 6 light envelopes (weighing less than 5 pounds), and each light envelope needs 2 stamps.</p>
+            <p>Number of stamps for light envelopes = 6 × 2 = 12 stamps</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the remaining stamps after accounting for light envelopes.
+            <p>Micah bought a total of 52 stamps, and 12 of those are used for the light envelopes.</p>
+            <p>Remaining stamps = 52 - 12 = 40 stamps</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Account for international envelope stamps and calculate heavy envelopes.
+            <p>From the remaining 40 stamps, we need to subtract 10 stamps for international envelopes.</p>
+            <p>Stamps available for heavy envelopes = 40 - 10 = 30 stamps</p>
+            <p>Each heavy envelope (weighing more than 5 pounds) needs 5 stamps.</p>
+            <p>Number of heavy envelopes = 30 ÷ 5 = 6 envelopes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of envelopes.
+            <p>Now we can find the total number of envelopes by adding the light and heavy envelopes.</p>
+            <p>Total envelopes = 6 + 6 = 12 envelopes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        12
+    </div>
+</body>
+</html>

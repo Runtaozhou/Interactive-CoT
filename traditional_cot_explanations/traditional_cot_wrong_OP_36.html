@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A local college is offering German lessons and currently has 8 students enrolled. Through advertising, 8 more became interested but a fourth of these dropped out within a day. 2 more got frustrated and left. The class then rallied to show how simple the course actually is and increased enrollment by 5 times the amount of students already enrolled in the class, but 2 had to drop it because of scheduling conflicts. After one last rally, 6 more people enrolled. As the days passed, half of the class eventually dropped, and half of the remaining students graduated. How many are still enrolled?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of students after the initial advertising.
+            <p>We start with 8 students, and 8 more became interested through advertising.</p>
+            <p>Initial students + New interested students = 8 + 8 = 16 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many new students dropped out within a day.
+            <p>A fourth (25%) of the 8 new interested students dropped out within a day.</p>
+            <p>New students × Dropout rate = 8 × 0.25 = 2 students dropped out</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of students after initial dropouts.
+            <p>From our 16 students, 2 dropped out within a day, and 2 more got frustrated and left.</p>
+            <p>Total after advertising - Initial dropouts - Additional dropouts = 16 - 2 - 2 = 12 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of students after the first rally.
+            <p>The enrollment increased by 5 times the amount of students already enrolled (12 students).</p>
+            <p>Students after dropouts × (1 + Enrollment increase factor) = 12 × 5 + 12 = 72 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the number of students after scheduling conflicts.
+            <p>After the rally, 2 students had to drop due to scheduling conflicts.</p>
+            <p>Students after rally × 2 = 72 × 2 = 144 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the number of students after the final rally.
+            <p>After the final rally, 6 more people enrolled.</p>
+            <p>Students after conflicts + Final rally enrollments = 144 + 6 = 150 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the number of students after half dropped out.
+            <p>As days passed, half of the class eventually dropped out.</p>
+            <p>Total enrolled ÷ 2 = 150 ÷ 2 = 75 students</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Calculate the number of students still enrolled after graduation.
+            <p>Half of the remaining students graduated, leaving the other half still enrolled.</p>
+            <p>Students after dropouts ÷ 2 = 75 ÷ 2 = 37.5 students</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        37.5
+    </div>
+</body>
+</html>

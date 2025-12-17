@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Amanda is figuring out how many bags of grass seed she needs to buy to cover a new lot the city is turning into a park. The lot measures 120 feet by 60 feet. One section that measures 40 feet by 40 feet will be covered with concrete, and the rest needs to be covered in grass seeds. Each bag of grass seeds covers 56 square feet. How many bags of grass seeds does Amanda need?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find the total area of the lot by multiplying its length and width.
+            <br>
+            Area of lot = Length × Width = 120 ft × 60 ft = 7,200 square feet
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, we need to find the perimeter of the square covered in concrete.
+            <br>
+            Perimeter of concrete section = 4 × side length = 4 × 40 ft = 160 ft
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now we subtract the concrete area from the total area to find the grassy area.
+            <br>
+            Grass area = Lot area - Concrete perimeter = 7,200 sq ft - 160 ft = 7,040 sq ft
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Finally, we divide the grass area by the coverage per bag to find the number of bags needed.
+            <br>
+            Number of bags = Grass area ÷ Coverage per bag = 7,040 sq ft ÷ 56 sq ft/bag = 125.71 bags
+            <br>
+            Since Amanda can't buy a partial bag, she needs to round up to 126 bags.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        126
+    </div>
+</body>
+</html>

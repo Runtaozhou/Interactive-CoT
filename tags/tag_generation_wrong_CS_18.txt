@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+Bob grew corn in his garden this year and ended up with <fact1>50 bushels</fact1>. This is way too much for him to eat, so he gave some of it away to his friends. His friend Terry took <fact2>8 bushels</fact2>, while Jerry only took <fact3>3</fact3>. He gave <fact4>12 bushels</fact4> to his friend Linda, who runs a food pantry. His neighbor Stacy doesn't eat much corn, but she still accepted <fact5>21 ears</fact5> of corn from him. If each bushel contained <fact6>14 ears</fact6> of corn, how many ears of corn does Bob have left?
+
+## 2. Facts
+
+<fact1>Initial corn: 50 bushels</fact1>
+<fact2>Terry took: 8 bushels</fact2>
+<fact3>Jerry took: 3 bushels</fact3>
+<fact4>Linda took: 12 bushels</fact4>
+<fact5>Stacy took: 21 ears</fact5>
+<fact6>Ears per bushel: 14 ears</fact6>
+
+## 3. Steps
+
+<step1>Convert Stacy's ears of corn to bushels</step1>
+<formula>ears ÷ ears per bushel</formula>
+<calculation>21 ears ÷ 14 ears/bushel = 1.5 bushels</calculation>
+<var>stacy_bushels: 1.5 bushels</var>
+
+<step2>Calculate the total bushels Bob gave away</step2>
+<formula>Terry's bushels + Jerry's bushels + Linda's bushels + Stacy's bushels</formula>
+<calculation>8 bushels + 3 bushels + 12 bushels + 2 bushels = 25 bushels</calculation>
+<var>total_given_away: 25 bushels</var>
+
+<step3>Calculate how many bushels Bob has left</step3>
+<formula>Initial bushels - bushels given away</formula>
+<calculation>50 bushels - 25 bushels = 25 bushels</calculation>
+<var>remaining_bushels: 25 bushels</var>
+
+<step4>Convert remaining bushels to ears of corn</step4>
+<formula>Remaining bushels × ears per bushel</formula>
+<calculation>25 bushels × 14 ears per bushel = 350 ears</calculation>
+<var>remaining_ears: 350 ears</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>350</output>

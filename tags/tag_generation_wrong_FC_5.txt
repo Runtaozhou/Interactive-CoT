@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+Mary is making a model sailboat. She wants to add three sails: <fact1>a rectangular sail that measures 5 inches by 8 inches</fact1> and two right triangular sails, <fact2>one that's 3 inches long at the bottom and 4 inches tall</fact2> and <fact3>one that's 4 inches long at the bottom and 6 inches tall</fact3>. (Remember you can find the area of a triangle by dividing the area of a square with the same height and length by 2). How many square inches of canvas does she need total?
+
+## 2. Facts
+
+<fact1>Rectangular sail dimensions: 5 inches by 8 inches</fact1>
+<fact2>First triangular sail dimensions: 3 inches long at bottom and 4 inches tall</fact2>
+<fact3>Second triangular sail dimensions: 4 inches long at bottom and 6 inches tall</fact3>
+
+## 3. Steps
+
+<step1> First find the area of the rectangular sail </step1>
+<formula> length × width </formula>
+<calculation> 5 inches * 8 inches = 40 square inches </calculation>
+<var> rectangular_sail_area : 40 square inches </var>
+
+<step2> Then find the perimeter of a square sail with the same height and length as the first triangular sail </step2>
+<formula> side1 + side2 + side3 + side4 </formula>
+<calculation> 3 inches + 4 inches + 3 inches + 4 inches = 14 square inches </calculation>
+<var> first_triangle_perimeter : 14 square inches </var>
+
+<step3> Then divide the perimeter in two to find the area of the triangular sail </step3>
+<formula> first_triangle_perimeter ÷ 2 </formula>
+<calculation> 14 square inches / 2 = 7 square inches </calculation>
+<var> first_triangular_sail_area : 7 square inches </var>
+
+<step4> Then find the area of a square sail with the same height and length as the second triangular sail </step4>
+<formula> length × height </formula>
+<calculation> 4 inches * 6 inches = 24 square inches </calculation>
+<var> second_triangle_square_area : 24 square inches </var>
+
+<step5> Then divide the area in two to find the area of the triangular sail </step5>
+<formula> second_triangle_square_area ÷ 2 </formula>
+<calculation> 24 square inches / 2 = 12 square inches </calculation>
+<var> second_triangular_sail_area : 12 square inches </var>
+
+<step6> Then add up the areas of all the sails to find the total amount of canvas needed </step6>
+<formula> first_triangular_sail_area + second_triangular_sail_area + rectangular_sail_area </formula>
+<calculation> 7 square inches + 12 square inches + 40 square inches = 59 square inches </calculation>
+<var> total_canvas_needed : 59 square inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 59 </output>

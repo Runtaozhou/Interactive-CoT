@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Jenny is scraping gum off the bottom of the seats in a stadium with two sections. <fact1>Section A has 1 subsection with 60 seats</fact1> and <fact2>3 subsections with 80 seats each</fact2>. <fact3>Section B has 20 more seats than 3 times as many seats as Section A has total</fact3>. How many seats does Section B have?
+
+## 2. Facts
+
+<fact1>Section A subsection 1: 60 seats</fact1>
+<fact2>Section A subsections 2-4: 3 subsections with 80 seats each</fact2>
+<fact3>Section B seats: 20 more seats than 3 times Section A's total</fact3>
+
+## 3. Steps
+
+<step1> First find how many total seats are in the 80-seat subsections </step1>
+<formula> number of subsections × seats per subsection </formula>
+<calculation> 70 seats/subsection * 3 subsections = 210 seats </calculation>
+<var> subsections_seats : 210 seats </var>
+
+<step2> Then add the number of seats in the 60-seat section to find the total number of seats in Section A </step2>
+<formula> subsections_seats + seats in 60-seat section </formula>
+<calculation> 210 seats + 60 seats = 270 seats </calculation>
+<var> section_A_total : 270 seats </var>
+
+<step3> Then triple that number </step3>
+<formula> section_A_total × 3 </formula>
+<calculation> 270 seats * 3 = 810 seats </calculation>
+<var> triple_section_A : 810 seats </var>
+
+<step4> Then add 20 seats to find the total number of seats in Section B </step4>
+<formula> triple_section_A + 20 </formula>
+<calculation> 810 seats + 20 seats = 830 seats </calculation>
+<var> section_B_total : 830 seats </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 830 </output>

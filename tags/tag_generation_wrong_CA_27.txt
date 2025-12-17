@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+<fact1>Alice made 52 friendship bracelets over spring break to sell at school.</fact1> It only cost her <fact2>$3.00 in materials</fact2> to make these bracelets. During the break, she gave <fact3>8 of her bracelets away</fact3>. Back at school, she sells all of the remaining bracelets at <fact4>$0.25 each</fact4>. How much profit did she make (money earned after paying initial costs) on the sale of her bracelets?
+
+## 2. Facts
+
+<fact1>Total bracelets made: 52</fact1>
+<fact2>Cost of materials: $3.00</fact2>
+<fact3>Bracelets given away: 8</fact3>
+<fact4>Selling price per bracelet: $0.25</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many bracelets Alice had left to sell after giving some away </step1>
+<formula> total_bracelets - bracelets_given_away </formula>
+<calculation> 52 - 8 = 44 bracelets </calculation>
+<var> bracelets_to_sell : 44 bracelets </var>
+
+<step2> Calculate the total money earned from selling the remaining bracelets </step2>
+<formula> bracelets_to_sell * price_per_bracelet </formula>
+<calculation> 44 * .25 = $10.00 </calculation>
+<var> total_sales : $10.00 </var>
+
+<step3> Calculate the profit by subtracting the initial cost from the total sales </step3>
+<formula> total_sales - initial_cost </formula>
+<calculation> 10 - 3 = $7.00 </calculation>
+<var> profit : $7.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 7 </output>

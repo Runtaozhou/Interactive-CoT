@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Rebecca bought 2 pies for the holiday weekend. Each pie was sliced into 8 slices. Rebecca ate 1 slice of each pie. Her family and friends ate 50% of the remaining pies over the weekend. On Sunday evening Rebecca and her husband each had another slice of pie. How many slices are remaining?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of slices from all pies.
+            <p>We have 2 pies, with 8 slices per pie.</p>
+            <p>Total slices = 2 × 8 = 16 slices</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Subtract the slices Rebecca initially ate.
+            <p>Rebecca ate 1 slice from each pie, so she ate 2 slices in total.</p>
+            <p>Remaining slices = 16 - 2 = 14 slices</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many slices family and friends ate.
+            <p>Family and friends ate 50% of the remaining 14 slices.</p>
+            <p>Slices eaten by family and friends = 14 × 0.50 = 7 slices</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate remaining slices after family and friends ate.
+            <p>Remaining slices = 14 - 7 = 7 slices</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Subtract the slices eaten by Rebecca and her husband on Sunday.
+            <p>On Sunday, Rebecca and her husband each had a slice of pie, so they ate 2 slices in total.</p>
+            <p>Final remaining slices = 7 - 3 = 4 slices</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        4
+    </div>
+</body>
+</html>

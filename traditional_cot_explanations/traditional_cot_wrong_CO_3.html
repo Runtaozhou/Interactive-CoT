@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Danivan Drugstore has 4500 bottles of hand sanitizer gel in inventory at the beginning of the week. On Monday 2445 bottles were sold, on Tuesday 900 bottles were sold, and 50 bottles each day for the rest of the week were sold (from Wednesday until Sunday). On Saturday, the supplier delivers an order for 650 bottles. How many bottles of sanitizer gel does the Drugstore have at the end of the week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total bottles sold on Monday and Tuesday.
+            <p>Monday sales + Tuesday sales = 2445 + 900 = 3345 bottles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total bottles sold from Wednesday to Sunday.
+            <p>Daily sales × Number of days = 4 * 50 = 200 bottles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total bottles sold in the week.
+            <p>Monday-Tuesday sales + Wednesday-Sunday sales = 3345 + 200 = 3545 bottles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the remaining inventory before delivery.
+            <p>Starting inventory - Total sales = 4500 - 3545 = 955 bottles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the final inventory after delivery.
+            <p>Remaining inventory + Saturday delivery = 955 + 650 = 1605 bottles</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1605
+    </div>
+</body>
+</html>

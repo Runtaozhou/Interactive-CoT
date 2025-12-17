@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+Troy bakes <fact1>2 pans of brownies, cut into 16 pieces per pan</fact1>. The guests eat <fact2>all of 1 pan</fact2>, and <fact3>75% of the 2nd pan</fact3>. <fact4>One tub of ice cream provides 8 scoops</fact4>. If <fact5>all but 4 of the guests eat the brownies ala mode (with 2 scoops of vanilla ice cream)</fact5>, how many tubs of ice cream did the guests eat?
+
+## 2. Facts
+
+<fact1>Brownies: 2 pans with 16 pieces per pan</fact1>
+<fact2>Eaten from first pan: 16 pieces</fact2>
+<fact3>Eaten from second pan: 75%</fact3>
+<fact4>Ice cream: 8 scoops per tub</fact4>
+<fact5>Guests eating ala mode: all but 4, with 2 scoops each</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total number of brownie pieces Troy bakes </step1>
+<formula> pans × pieces per pan </formula>
+<calculation> 2 × 15 = 30 brownie pieces </calculation>
+<var> total_pieces : 30 brownie pieces </var>
+
+<step2> Calculate how many pieces are eaten from the second pan </step2>
+<formula> pieces per pan × percentage eaten </formula>
+<calculation> 15 × 0.75 = 11.25 pieces </calculation>
+<var> second_pan_eaten : 11.25 pieces </var>
+
+<step3> Calculate the total number of brownie pieces eaten </step3>
+<formula> first pan pieces + second pan pieces eaten </formula>
+<calculation> 15 + 11.25 = 26.25 pieces </calculation>
+<var> total_pieces_eaten : 26.25 pieces </var>
+
+<step4> Calculate how many guests eat brownies ala mode </step4>
+<formula> total pieces eaten - guests not eating ala mode </formula>
+<calculation> 26.25 - 4 = 22.25 </calculation>
+<var> guests_ala_mode : 22.25 </var>
+
+<step5> Calculate how many scoops of ice cream are eaten </step5>
+<formula> guests eating ala mode × scoops per guest </formula>
+<calculation> 22.25 × 2 = 44.5 scoops </calculation>
+<var> total_scoops : 44.5 scoops </var>
+
+<step6> Calculate how many tubs of ice cream are eaten </step6>
+<formula> total scoops ÷ scoops per tub </formula>
+<calculation> 44.5 ÷ 8 = 5.5625 tubs </calculation>
+<var> ice_cream_tubs : 5.5625 tubs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5.5625 </output>

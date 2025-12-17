@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Timmy's parents have a 2 car garage, which has both cars inside it. Also inside is a riding lawnmower, a bicycle for Timmy as well as each of his parents, a tricycle for Timmy's little brother Joey, and a unicycle that Timmy's dad practices riding on. How many wheels in total are in this garage?
+
+## 2. Facts
+
+<fact1>Number of cars: 2</fact1>
+<fact2>Number of bicycles: 3</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total number of wheels from the cars </step1>
+<formula> number of cars × wheels per car </formula>
+<calculation> 4 * 2 = 8 wheels </calculation>
+<var> car_wheels : 8 wheels </var>
+
+<step2> Add the wheels from the riding lawnmower </step2>
+<formula> car_wheels + lawnmower wheels </formula>
+<calculation> 8 + 4 = 12 wheels </calculation>
+<var> car_lawnmower_wheels : 12 wheels </var>
+
+<step3> Add the wheels from all the bicycles </step3>
+<formula> car_lawnmower_wheels + (number of bicycles × wheels per bicycle) </formula>
+<calculation> 12 + 6 = 18 wheels </calculation>
+<var> car_lawnmower_bicycle_wheels : 18 wheels </var>
+
+<step4> Add the wheels from the tricycle and unicycle </step4>
+<formula> car_lawnmower_bicycle_wheels + tricycle wheels + unicycle wheels </formula>
+<calculation> 18 + 3 + 1 = 20 wheels </calculation>
+<var> total_wheels : 20 wheels </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 20 </output>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving Interface</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            gap: 5px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover:not(.disabled) {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .python-solution {
+            height: 400px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .python-code {
+            padding: 15px;
+            height: calc(100% - 50px);
+            overflow-y: auto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .code-line {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .code-line.current {
+            background-color: #ffeb3b;
+            color: #000;
+            padding-left: 8px;
+        }
+
+        .line-number {
+            color: #888;
+            font-size: 12px;
+            min-width: 20px;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        .comment {
+            color: #347778;
+        }
+
+        .variables-display {
+            height: 300px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .variable-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+            font-weight: 500;
+        }
+
+        .variable-name {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .variable-value {
+            font-weight: 600;
+        }
+
+        .fact1-color { background-color: rgba(255, 193, 7, 0.5); }
+        .fact2-color { background-color: rgba(40, 167, 69, 0.5); }
+        .fact3-color { background-color: rgba(0, 123, 255, 0.5); }
+        .fact4-color { background-color: rgba(220, 53, 69, 0.5); }
+        .fact5-color { background-color: rgba(156, 39, 176, 0.5); }
+        .fact6-color { background-color: rgba(76, 175, 80, 0.5); }
+        .fact7-color { background-color: rgba(255, 87, 34, 0.5); }
+        .fact8-color { background-color: rgba(96, 125, 139, 0.5); }
+        .var1-color { background-color: rgba(233, 30, 99, 0.5); }
+        .var2-color { background-color: rgba(121, 85, 72, 0.5); }
+        .var3-color { background-color: rgba(0, 188, 212, 0.5); }
+        .var4-color { background-color: rgba(255, 152, 0, 0.5); }
+        .var5-color { background-color: rgba(139, 195, 74, 0.5); }
+        .var6-color { background-color: rgba(158, 158, 158, 0.5); }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .what-to-find {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        .what-to-find h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>
+                    <span id="fact1" class="fact1-color">Angelo and Melanie have 2 chapters of their textbook to study</span> and <span id="fact2" class="fact2-color">4 worksheets to memorize</span>. They figure out that they should dedicate <span id="fact3" class="fact3-color">3 hours to each chapter of their textbook</span> and <span id="fact4" class="fact4-color">1.5 hours for each worksheet</span>. If they plan to study <span id="fact5" class="fact5-color">no more than 4 hours each day</span>, how many days should they plan to study total over the next week if they take a <span id="fact6" class="fact6-color">10-minute break every hour</span>, include <span id="fact7" class="fact7-color">3 10-minute snack breaks each day</span>, and <span id="fact8" class="fact8-color">30 minutes for lunch each day</span>?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Summary</div>
+                <ul>
+                    <li><span class="fact1-color">Textbook chapters: 2</span></li>
+                    <li><span class="fact2-color">Worksheets: 4</span></li>
+                    <li><span class="fact3-color">Hours per chapter: 3</span></li>
+                    <li><span class="fact4-color">Hours per worksheet: 1.5</span></li>
+                    <li><span class="fact5-color">Maximum study hours per day: 4</span></li>
+                    <li><span class="fact6-color">Break time: 10 minutes per hour</span></li>
+                    <li><span class="fact7-color">Snack breaks: 3 per day, 10 minutes each</span></li>
+                    <li><span class="fact8-color">Lunch time: 30 minutes per day</span></li>
+                </ul>
+                <div class="what-to-find">
+                    <h4>What we need to find:</h4>
+                    <p>How many days Angelo and Melanie should plan to study in total.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button id="playPauseBtn" class="btn btn-play-pause">▶ Play</button>
+                <button id="stopBtn" class="btn btn-stop">■ Stop</button>
+                <button id="prevBtn" class="btn btn-prev">⤴ Previous Step</button>
+                <button id="nextBtn" class="btn btn-next">⤵ Next Step</button>
+            </div>
+            <div class="python-solution">
+                <div class="section-title" style="color: #333333; padding: 15px 15px 0; margin: 0;">Python Solution</div>
+                <div class="python-code" id="python-code">
+                    <div class="code-line" data-step="0">
+                        <span class="line-number">1</span>
+                        <span class="comment"># Calculate hours needed for textbook chapters</span>
+                    </div>
+                    <div class="code-line" data-step="1">
+                        <span class="line-number">2</span>
+                        <span><span class="var1-color">textbook_hours</span> = <span class="fact1-color">2</span> * <span class="fact3-color">3</span></span>
+                    </div>
+                    <div class="code-line" data-step="2">
+                        <span class="line-number">3</span>
+                        <span class="comment"># Calculate hours needed for worksheets</span>
+                    </div>
+                    <div class="code-line" data-step="3">
+                        <span class="line-number">4</span>
+                        <span><span class="var2-color">worksheet_hours</span> = <span class="fact2-color">4</span> * <span class="fact4-color">1.5</span></span>
+                    </div>
+                    <div class="code-line" data-step="4">
+                        <span class="line-number">5</span>
+                        <span class="comment"># Calculate total study hours and initial days needed</span>
+                    </div>
+                    <div class="code-line" data-step="5">
+                        <span class="line-number">6</span>
+                        <span><span class="var3-color">total_study_hours</span> = <span class="var1-color">textbook_hours</span> + <span class="var2-color">worksheet_hours</span>; <span class="var4-color">initial_days</span> = <span class="var3-color">total_study_hours</span> / <span class="fact5-color">4</span></span>
+                    </div>
+                    <div class="code-line" data-step="6">
+                        <span class="line-number">7</span>
+                        <span class="comment"># Calculate minutes for hourly breaks</span>
+                    </div>
+                    <div class="code-line" data-step="7">
+                        <span class="line-number">8</span>
+                        <span><span class="var5-color">hourly_break_minutes</span> = <span class="var3-color">total_study_hours</span> * <span class="fact6-color">10</span></span>
+                    </div>
+                    <div class="code-line" data-step="8">
+                        <span class="line-number">9</span>
+                        <span class="comment"># Calculate minutes for snack breaks</span>
+                    </div>
+                    <div class="code-line" data-step="9">
+                        <span class="line-number">10</span>
+                        <span><span class="var6-color">snack_break_minutes</span> = <span class="fact7-color">3</span> * 15</span>
+                    </div>
+                    <div class="code-line" data-step="10">
+                        <span class="line-number">11</span>
+                        <span class="comment"># Calculate total break time in hours</span>
+                    </div>
+                    <div class="code-line" data-step="11">
+                        <span class="line-number">12</span>
+                        <span>total_break_minutes = <span class="var5-color">hourly_break_minutes</span> + <span class="var6-color">snack_break_minutes</span> + <span class="fact8-color">30</span>; total_break_hours = total_break_minutes / 50</span>
+                    </div>
+                    <div class="code-line" data-step="12">
+                        <span class="line-number">13</span>
+                        <span class="comment"># Calculate total hours needed (study + breaks)</span>
+                    </div>
+                    <div class="code-line" data-step="13">
+                        <span class="line-number">14</span>
+                        <span>total_hours = <span class="var3-color">total_study_hours</span> + total_break_hours</span>
+                    </div>
+                    <div class="code-line" data-step="14">
+                        <span class="line-number">15</span>
+                        <span class="comment"># Calculate days needed</span>
+                    </div>
+                    <div class="code-line" data-step="15">
+                        <span class="line-number">16</span>
+                        <span>days_needed_decimal = total_hours / <span class="fact5-color">4</span></span>
+                    </div>
+                    <div class="code-line" data-step="16">
+                        <span class="line-number">17</span>
+                        <span class="comment"># Round up to get the final number of days</span>
+                    </div>
+                    <div class="code-line" data-step="17">
+                        <span class="line-number">18</span>
+                        <span>days_needed = 5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="variables-display" id="variables-display">
+                <div class="section-title" style="margin-bottom: 15px;">Variables</div>
+                <div id="variables-list">
+                    <div class="variable-item">
+                        <span class="variable-name">No variables initialized yet</span>
+                        <span class="variable-value">Run the code to see variables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class PythonDebugger {
+            constructor() {
+                this.currentStep = -1;
+                this.isPlaying = false;
+                this.playInterval = null;
+                this.totalSteps = 17;
+                this.variables = {};
+                
+                this.initializeElements();
+                this.bindEvents();
+                this.updateUI();
+            }
+
+            initializeElements() {
+                this.playPauseBtn = document.getElementById('playPauseBtn');
+                this.stopBtn = document.getElementById('stopBtn');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.codeLines = document.querySelectorAll('.code-line');
+                this.variablesDisplay = document.getElementById('variables-list');
+            }
+
+            bindEvents() {
+                this.playPauseBtn.addEventListener('click', () => this.togglePlay());
+                this.stopBtn.addEventListener('click', () => this.stop());
+                this.prevBtn.addEventListener('click', () => this.previousStep());
+                this.nextBtn.addEventListener('click', () => this.nextStep());
+            }
+
+            togglePlay() {
+                if (this.isPlaying) {
+                    this.pause();
+                } else {
+                    this.play();
+                }
+            }
+
+            play() {
+                this.isPlaying = true;
+                this.playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                if (this.currentStep >= this.totalSteps) {
+                    this.currentStep = -1;
+                }
+                
+                this.playInterval = setInterval(() => {
+                    if (this.currentStep < this.totalSteps) {
+                        this.nextStep();
+                    } else {
+                        this.pause();
+                    }
+                }, 1500);
+            }
+
+            pause() {
+                this.isPlaying = false;
+                this.playPauseBtn.innerHTML = '▶ Play';
+                if (this.playInterval) {
+                    clearInterval(this.playInterval);
+                    this.playInterval = null;
+                }
+            }
+
+            stop() {
+                this.pause();
+                this.currentStep = -1;
+                this.variables = {};
+                this.updateUI();
+            }
+
+            nextStep() {
+                if (this.currentStep < this.totalSteps) {
+                    this.currentStep++;
+                    this.executeStep(this.currentStep);
+                    this.updateUI();
+                }
+            }
+
+            previousStep() {
+                if (this.currentStep > 0) {
+                    this.currentStep--;
+                    this.recalculateVariables();
+                    this.updateUI();
+                }
+            }
+            
+            executeStep(step) {
+                switch(step) {
+                    case 1:
+                        this.variables.textbook_hours = 2 * 3;
+                        break;
+                    case 3:
+                        this.variables.worksheet_hours = 4 * 1.5;
+                        break;
+                    case 5:
+                        this.variables.total_study_hours = this.variables.textbook_hours + this.variables.worksheet_hours;
+                        this.variables.initial_days = this.variables.total_study_hours / 4;
+                        break;
+                    case 7:
+                        this.variables.hourly_break_minutes = this.variables.total_study_hours * 10;
+                        break;
+                    case 9:
+                        // Intentionally using 15 instead of 10 as per the wrong step
+                        this.variables.snack_break_minutes = 3 * 15;
+                        break;
+                    case 11:
+                        this.variables.total_break_minutes = this.variables.hourly_break_minutes + this.variables.snack_break_minutes + 30;
+                        this.variables.total_break_hours = this.variables.total_break_minutes / 50;
+                        break;
+                    case 13:
+                        this.variables.total_hours = this.variables.total_study_hours + this.variables.total_break_hours;
+                        break;
+                    case 15:
+                        this.variables.days_needed_decimal = this.variables.total_hours / 4;
+                        break;
+                    case 17:
+                        this.variables.days_needed = 5;
+                        break;
+                }
+            }
+
+            recalculateVariables() {
+                this.variables = {};
+                for (let i = 0; i <= this.currentStep; i++) {
+                    this.executeStep(i);
+                }
+            }
+
+            updateUI() {
+                // Update code highlighting
+                this.codeLines.forEach((line, index) => {
+                    line.classList.remove('current');
+                    if (index === this.currentStep) {
+                        line.classList.add('current');
+                    }
+                });
+
+                // Update button states
+                this.prevBtn.classList.toggle('disabled', this.currentStep <= 0);
+                this.nextBtn.classList.toggle('disabled', this.currentStep >= this.totalSteps);
+
+                // Update variables display
+                this.updateVariablesDisplay();
+            }
+
+            updateVariablesDisplay() {
+                if (Object.keys(this.variables).length === 0) {
+                    this.variablesDisplay.innerHTML = `
+                        <div class="variable-item">
+                            <span class="variable-name">No variables initialized yet</span>
+                            <span class="variable-value">Run the code to see variables</span>
+                        </div>
+                    `;
+                    return;
+                }
+
+                let html = '';
+                const variableOrder = [
+                    'textbook_hours', 
+                    'worksheet_hours', 
+                    'total_study_hours', 
+                    'initial_days',
+                    'hourly_break_minutes',
+                    'snack_break_minutes',
+                    'total_break_minutes',
+                    'total_break_hours',
+                    'total_hours',
+                    'days_needed_decimal',
+                    'days_needed'
+                ];
+                
+                for (const varName of variableOrder) {
+                    if (this.variables.hasOwnProperty(varName)) {
+                        const value = this.variables[varName];
+                        let colorClass = '';
+                        
+                        if (varName === 'textbook_hours') colorClass = 'var1-color';
+                        else if (varName === 'worksheet_hours') colorClass = 'var2-color';
+                        else if (varName === 'total_study_hours') colorClass = 'var3-color';
+                        else if (varName === 'initial_days') colorClass = 'var4-color';
+                        else if (varName === 'hourly_break_minutes') colorClass = 'var5-color';
+                        else if (varName === 'snack_break_minutes') colorClass = 'var6-color';
+                        
+                        const lastVarName = variableOrder[variableOrder.length - 1];
+if(varName === lastVarName){
+    varName = varName + " (Final Answer)";
+    html += `<div class="variable-item ${colorClass}">
+        <span class="variable-name">${varName}</span>
+        <span class="variable-value">${value}</span>
+    </div>`;
+} else {
+    html += `<div class="variable-item ${colorClass}">
+        <span class="variable-name">${varName}</span>
+        <span class="variable-value">${value}</span>
+    </div>`;
+}
+                    }
+                }
+
+                this.variablesDisplay.innerHTML = html;
+            }
+        }
+
+        // Initialize the debugger when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new PythonDebugger();
+        });
+    </script>
+</body>
+</html>

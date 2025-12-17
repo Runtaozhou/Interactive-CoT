@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+An airport has only 2 planes that fly multiple times a day. Each day, the first plane goes to Greece for <fact1>three-quarters of its flights</fact1>, and the remaining flights are split equally between flights to France and flights to Germany. The other plane flies exclusively to Poland, and its <fact2>44 trips</fact2> only amount to <fact3>half the number of trips</fact3> the first plane makes throughout each day. How many flights to France does the first plane take in one day?
+
+## 2. Facts
+
+<fact1>First plane's flights to Greece: three-quarters of its flights</fact1>
+<fact2>Second plane's trips to Poland: 44 trips</fact2>
+<fact3>Second plane's trips: half the number of first plane's trips</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many flights the first plane makes based on the second plane's flights </step1>
+<formula> second_plane_flights × 2 </formula>
+<calculation> 44 flights * 2 = 88 flights </calculation>
+<var> first_plane_flights : 88 flights </var>
+
+<step2> Find what fraction of the first plane's flights go to France or Germany </step2>
+<formula> 1 - 3/4 </formula>
+<calculation> 1 - 3/4 = 1/4 </calculation>
+<var> fraction_to_france_and_germany : 1/4 </var>
+
+<step3> Calculate the total number of flights to France or Germany </step3>
+<formula> first_plane_flights / 4 </formula>
+<calculation> 88 daily flights / 4 = 24 flights </calculation>
+<var> flights_to_france_and_germany : 24 flights </var>
+
+<step4> Calculate the number of flights to France by dividing the France and Germany flights equally </step4>
+<formula> flights_to_france_and_germany / 2 </formula>
+<calculation> 24 flights / 2 = 12 flights </calculation>
+<var> flights_to_france : 12 flights </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 12 </output>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Nathan wants to line the inside of a box with velvet. The box has two long sides that measure 8 inches by 6 inches, two short sides that measure 5 inches by six inches and a top and a bottom that each measure 40 square inches. How many square inches of velvet does Nathan need?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Find the perimeter of each long side.
+            <p>Using the formula: (length + width) * 2</p>
+            <p>Calculation: (8 inches + 6 inches) * 2 = 28 square inches</p>
+            <p>The area of each long side is 28 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the perimeter of each short side.
+            <p>Using the formula: (length + width) * 2</p>
+            <p>Calculation: (5 inches + 6 inches) * 2 = 22 square inches</p>
+            <p>The area of each short side is 22 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the area of one long side, one short side, and one top/bottom.
+            <p>Using the formula: long_side_area + short_side_area + top_bottom_area</p>
+            <p>Calculation: 28 square inches + 22 square inches + 40 square inches = 90 square inches</p>
+            <p>The area of one set (one long side, one short side, and one top/bottom) is 90 square inches.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Double the total since there are two of each kind of side.
+            <p>Using the formula: one_set_area * 2</p>
+            <p>Calculation: 90 square inches * 2 = 180 square inches</p>
+            <p>The total area of velvet needed is 180 square inches.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        180
+    </div>
+</body>
+</html>

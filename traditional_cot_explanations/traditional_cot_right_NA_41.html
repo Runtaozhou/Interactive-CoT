@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A bathroom has 10 6 inch tiles along its width and 20 6 inch tiles along its length. What is the square footage of the bathroom?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total width of the bathroom in inches.
+            <p>We know there are 10 tiles along the width, and each tile is 6 inches.</p>
+            <p>Width in inches = Number of tiles × Tile length = 10 × 6 = 60 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Convert the width from inches to feet.
+            <p>To convert inches to feet, we divide by 12 (since 1 foot = 12 inches).</p>
+            <p>Width in feet = 60 inches ÷ 12 = 5 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total length of the bathroom in inches.
+            <p>We know there are 20 tiles along the length, and each tile is 6 inches.</p>
+            <p>Length in inches = Number of tiles × Tile length = 20 × 6 = 120 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert the length from inches to feet.
+            <p>To convert inches to feet, we divide by 12.</p>
+            <p>Length in feet = 120 inches ÷ 12 = 10 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the square footage of the bathroom.
+            <p>The area is calculated by multiplying the length by the width.</p>
+            <p>Area = Length × Width = 10 feet × 5 feet = 50 square feet</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        50
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        James decides to bulk up. He weighs 120 kg and gains 20% of his body weight in muscle and 1 quarter that much in fat. How much does he weigh now?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much weight James gains in muscle.
+            <p>James gains 20% of his initial body weight in muscle.</p>
+            <p>Muscle gain = 120 kg × 0.2 = 24 kg</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much weight James gains in fat.
+            <p>James gains 1/4 of his muscle gain in fat.</p>
+            <p>Fat gain = 24 kg ÷ 4 = 6 kg</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate total weight gain including weight gain supplement.
+            <p>Total weight gain = Muscle gain + Fat gain + Supplement weight</p>
+            <p>Total weight gain = 24 kg + 6 kg + 5 kg = 35 kg</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate James' new body weight.
+            <p>New weight = Initial weight + Total weight gain</p>
+            <p>New weight = 120 kg + 35 kg = 155 kg</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        155
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Three-quarters of the oil from a 4000-liter tank (that was initially full)</fact1> was poured into a <fact2>20000-liter capacity tanker</fact2> that already had <fact3>3000 liters of oil</fact3>. How many more liters of oil would be needed to make the large tanker half-full?
+
+## 2. Facts
+
+<fact1>Initial tank: 4000 liters, three-quarters removed</fact1>
+<fact2>Large tanker capacity: 20000 liters</fact2>
+<fact3>Large tanker initial oil: 3000 liters</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much oil was poured from the initial tank </step1>
+<formula> initial_tank_volume * (3/4) </formula>
+<calculation> 4000*(3/4) = 3000 liters </calculation>
+<var> oil_poured : 3000 liters </var>
+
+<step2> Calculate the total amount of oil now in the large tanker </step2>
+<formula> initial_oil + oil_poured </formula>
+<calculation> 3000*3000 = 9000000 liters </calculation>
+<var> current_oil : 9000000 liters </var>
+
+<step3> Calculate how much oil is needed for the large tanker to be half full </step3>
+<formula> tanker_capacity * (1/2) </formula>
+<calculation> (1/2)*20000 = 10000 liters </calculation>
+<var> half_capacity : 10000 liters </var>
+
+<step4> Calculate how much more oil is needed to reach half capacity </step4>
+<formula> half_capacity - current_oil </formula>
+<calculation> 10000-9000000 = -8990000 liters </calculation>
+<var> additional_oil_needed : -8990000 liters </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> -8990000 </output>

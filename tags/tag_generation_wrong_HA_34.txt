@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+Linda is painting her bedroom. Her bedroom has <fact1>4 walls</fact1>, with the room being <fact2>20 feet wide by 20 feet long by 8 feet tall</fact2>. One wall has a <fact3>3-foot by 7-foot doorway</fact3>. A second wall has a <fact4>6-foot by 4-foot window</fact4>. A third wall has a <fact5>5-foot by 7-foot doorway</fact5> to a walk-in-closet. And the fourth wall is completely solid. What is the total area of wall space that Linda will have to paint?
+
+## 2. Facts
+
+<fact1>Number of walls: 4</fact1>
+<fact2>Room dimensions: 20 feet wide by 20 feet long by 8 feet tall</fact2>
+<fact3>Doorway dimensions: 3 feet by 7 feet</fact3>
+<fact4>Window dimensions: 6 feet by 4 feet</fact4>
+<fact5>Closet doorway dimensions: 5 feet by 7 feet</fact5>
+
+## 3. Steps
+
+<step1>Calculate the area of the solid wall</step1>
+<formula>height × width</formula>
+<calculation>8 ft. * 20 ft. = 160 sq. ft.</calculation>
+<var>solid_wall_area: 160 sq. ft.</var>
+
+<step2>Calculate the area of the doorway</step2>
+<formula>height × width</formula>
+<calculation>3 ft. * 7 ft. = 21 sq. ft.</calculation>
+<var>doorway_area: 21 sq. ft.</var>
+
+<step3>Calculate the area of the window</step3>
+<formula>height × width</formula>
+<calculation>6 ft. * 4 ft. = 24 sq. ft.</calculation>
+<var>window_area: 24 sq. ft.</var>
+
+<step4>Calculate the area of the closet door</step4>
+<formula>height × width</formula>
+<calculation>5 ft. * 7 ft. = 35 sq. ft.</calculation>
+<var>closet_door_area: 35 sq. ft.</var>
+
+<step5>Calculate the total area that doesn't need painting</step5>
+<formula>doorway_area + window_area + closet_door_area + painting_area</formula>
+<calculation>21 sq. ft + 24 sq. ft. + 35 sq. ft. + 4 sq. ft. = 84 sq. ft.</calculation>
+<var>non_paintable_area: 84 sq. ft.</var>
+
+<step6>Calculate the total wall area before subtracting non-paintable areas</step6>
+<formula>number of walls × solid_wall_area</formula>
+<calculation>4 * 160 sq. ft. = 640 sq. ft.</calculation>
+<var>total_wall_area: 640 sq. ft.</var>
+
+<step7>Calculate the total area Linda will have to paint</step7>
+<formula>total_wall_area - non_paintable_area</formula>
+<calculation>640 sq. ft. - 84 sq. ft. = 556 sq. ft.</calculation>
+<var>paintable_area: 556 sq. ft.</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>556</output>

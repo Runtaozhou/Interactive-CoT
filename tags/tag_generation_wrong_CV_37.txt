@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Tony exercises every morning by <fact1>walking 3 miles carrying a 25-pound backpack</fact1>, then he <fact2>runs another 10 miles without the backpack</fact2>. If he <fact3>walks at a speed of 3 miles per hour</fact3> and <fact4>runs at a speed of 5 miles per hour</fact4>, how many hours each week does he spend exercising?
+
+## 2. Facts
+
+<fact1>Walking distance: 3 miles with 25-pound backpack</fact1>
+<fact2>Running distance: 10 miles without backpack</fact2>
+<fact3>Walking speed: 3 miles per hour</fact3>
+<fact4>Running speed: 5 miles per hour</fact4>
+
+## 3. Steps
+
+<step1> Calculate the time Tony spends walking each day </step1>
+<formula> distance ÷ speed </formula>
+<calculation> 3 ÷ 4 = 0.75 hour </calculation>
+<var> daily_walking_time : 0.75 hour </var>
+
+<step2> Calculate the time Tony spends running each day </step2>
+<formula> distance ÷ speed </formula>
+<calculation> 10 ÷ 5 = 2 hours </calculation>
+<var> daily_running_time : 2 hours </var>
+
+<step3> Calculate the total daily exercise time </step3>
+<formula> daily_walking_time + daily_running_time </formula>
+<calculation> 0.75 + 2 = 2.75 hours </calculation>
+<var> daily_total_time : 2.75 hours </var>
+
+<step4> Calculate the weekly exercise time </step4>
+<formula> daily_total_time × 7 days </formula>
+<calculation> 2.75 × 7 = 19.25 hours </calculation>
+<var> weekly_total_time : 19.25 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 19.25 </output>

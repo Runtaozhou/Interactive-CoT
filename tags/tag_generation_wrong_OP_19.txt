@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Isabella has <fact1>three times as many green houses as yellow houses</fact1>. She also has <fact2>40 fewer yellow houses than red houses</fact2>. If she has <fact3>90 green houses</fact3>, how many of her houses are not yellow?
+
+## 2. Facts
+
+<fact1>Green houses: 3 times yellow houses</fact1>
+<fact2>Yellow houses: 40 fewer than red houses</fact2>
+<fact3>Green houses: 90</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of yellow houses based on the number of green houses </step1>
+<formula> green_houses ÷ 3 </formula>
+<calculation> 90 ÷ 3 = 30 </calculation>
+<var> yellow_houses : 30 </var>
+
+<step2> Calculate the number of blue houses based on the number of yellow houses </step2>
+<formula> yellow_houses - 40 </formula>
+<calculation> 30 - 40 = -10 </calculation>
+<var> blue_houses : -10 </var>
+
+<step3> Calculate the total number of houses that are not yellow </step3>
+<formula> blue_houses + green_houses </formula>
+<calculation> -10 + 90 = 80 </calculation>
+<var> non_yellow_houses : 80 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 80 </output>

@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+A bowl of fruit holds <fact1>18 peaches</fact1>. <fact2>Four of the peaches are ripe</fact2> and <fact3>two more ripen every day</fact3>, but on <fact4>the third day three are eaten</fact4>. How many more ripe peaches than unripe peaches are in the bowl after <fact5>five days</fact5>?
+
+## 2. Facts
+
+<fact1>Total peaches: 18</fact1>
+<fact2>Initially ripe peaches: 4</fact2>
+<fact3>Ripening rate: 2 per day</fact3>
+<fact4>Peaches eaten on day 3: 3</fact4>
+<fact5>Time period: 5 days</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many peaches will ripen in 5 days </step1>
+<formula> days × ripening_rate </formula>
+<calculation> 5 * 2 = 10 peaches </calculation>
+<var> newly_ripened : 10 peaches </var>
+
+<step2> Add the newly ripened peaches to the initially ripe ones </step2>
+<formula> initially_ripe + newly_ripened </formula>
+<calculation> 4 + 10 = 14 peaches </calculation>
+<var> total_ripened : 14 peaches </var>
+
+<step3> Subtract the eaten peaches from the ripe ones </step3>
+<formula> total_ripened - eaten </formula>
+<calculation> 14 - 2 = 12 peaches </calculation>
+<var> ripe_peaches : 12 peaches </var>
+
+<step4> Calculate the number of unripe peaches left </step4>
+<formula> total_peaches - ripe_peaches </formula>
+<calculation> 18 - 12 = 6 peaches </calculation>
+<var> unripe_peaches : 6 peaches </var>
+
+<step5> Find the difference between ripe and unripe peaches </step5>
+<formula> ripe_peaches - unripe_peaches </formula>
+<calculation> 12 - 6 = 6 peaches </calculation>
+<var> difference : 6 peaches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 6 </output>

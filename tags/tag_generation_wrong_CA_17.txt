@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Hot dog buns come in packages of 8.</fact1> For the school picnic, <fact2>Mr. Gates bought 30 packages of hot dog buns.</fact2> He has <fact3>four classes with 30 students in each class.</fact3> How many hot dog buns can each of Mr. Gates' students get?
+
+## 2. Facts
+
+<fact1>Hot dog buns per package: 8</fact1>
+<fact2>Number of packages bought: 30</fact2>
+<fact3>Number of classes: 4 with 30 students each</fact3>
+
+## 3. Steps
+
+<step1>Calculate the total number of hot dog buns Mr. Gates bought</step1>
+<formula>Number of packages × Buns per package</formula>
+<calculation>30 × 8 = 240 hot dog buns</calculation>
+<var>total_buns: 240 hot dog buns</var>
+
+<step2>Calculate the total number of students in Mr. Gates' classes</step2>
+<formula>Number of classes × Students per class</formula>
+<calculation>4 × 30 = 160 students</calculation>
+<var>total_students: 160 students</var>
+
+<step3>Calculate how many hot dog buns each student can get</step3>
+<formula>Total buns ÷ Total students</formula>
+<calculation>240 ÷ 160 = 1.5 hot dog buns</calculation>
+<var>buns_per_student: 1.5 hot dog buns</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>1.5</output>

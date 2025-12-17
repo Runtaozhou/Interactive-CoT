@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+<fact1>A basket of green food costs $25</fact1> and <fact2>a basket of red food costs $18</fact2>. If you buy <fact3>3 baskets of green food</fact3> and <fact4>red food</fact4>, how much will you have to pay in total if you get <fact5>$2 off for each basket of red food</fact5>?
+
+## 2. Facts
+
+<fact1>Cost of green food basket: $25</fact1>
+<fact2>Cost of red food basket: $18</fact2>
+<fact3>Number of green food baskets: 3</fact3>
+<fact4>Number of red food baskets: 3</fact4>
+<fact5>Discount per red food basket: $2</fact5>
+
+## 3. Steps
+
+<step1> The 3 baskets of green food will cost $25 x 3 = $75. </step1>
+<formula> cost_green = price_green × number_green </formula>
+<calculation> $25 × 3 = $75 </calculation>
+<var> cost_green: $75 </var>
+
+<step2> The 3 baskets of red food will cost $18 x 3 = $54. </step2>
+<formula> cost_red = price_red × number_red </formula>
+<calculation> $18 × 3 = $54 </calculation>
+<var> cost_red: $54 </var>
+
+<step3> There will be $2 x 3 = $6 off for the baskets of red food. </step3>
+<formula> total_discount = discount_per_basket × number_red </formula>
+<calculation> $2 × 3 = $6 </calculation>
+<var> total_discount: $6 </var>
+
+<step4> So, the 3 baskets of red food will now cost $54 - $6 = $48. </step4>
+<formula> discounted_cost_red = cost_red - total_discount </formula>
+<calculation> $54 - $6 = $48 </calculation>
+<var> discounted_cost_red: $48 </var>
+
+<step5> You will have to pay $75 + $48 = $123 for all the baskets of food. </step5>
+<formula> total_cost = cost_green + discounted_cost_red </formula>
+<calculation> $75 + $48 = $123 </calculation>
+<var> total_cost: $123 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output>123</output>

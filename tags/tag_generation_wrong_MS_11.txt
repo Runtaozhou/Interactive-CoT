@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+Jude bought <fact1>three chairs for his house, all at the same price</fact1>. He also bought <fact2>a table that costs $50</fact2> and <fact3>two sets of plates at $20 for each set</fact3>. After giving <fact4>the cashier $130</fact4>, Jude got <fact5>a $4 change</fact5>. How much did each of the chairs cost?
+
+## 2. Facts
+
+<fact1>Number of chairs: 3</fact1>
+<fact2>Table cost: $50</fact2>
+<fact3>Plates cost: $20 per set, 2 sets</fact3>
+<fact4>Amount given to cashier: $130</fact4>
+<fact5>Change received: $4</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total amount Jude paid </step1>
+<formula> Amount given - Change received </formula>
+<calculation> $130 - $4 = $126 </calculation>
+<var> total_paid : $126 </var>
+
+<step2> Calculate the cost of the chairs and plates by subtracting the table cost </step2>
+<formula> Total paid - Table cost </formula>
+<calculation> $126 - $50 = $76 </calculation>
+<var> chairs_and_plates_cost : $76 </var>
+
+<step3> Calculate the cost of the chairs by subtracting the cost of one set of plates </step3>
+<formula> Chairs and plates cost - One set of plates cost </formula>
+<calculation> $76 - $20 = $56 </calculation>
+<var> chairs_cost : $56 </var>
+
+<step4> Calculate the cost of each chair </step4>
+<formula> Chairs cost ÷ Number of chairs </formula>
+<calculation> $56/3 = $18.67 </calculation>
+<var> each_chair_cost : $18.67 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 18.67 </output>

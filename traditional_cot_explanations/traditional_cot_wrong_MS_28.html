@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Tom's puts 30 miles per day on his bike for the first 183 days of the year. For the rest of the days of the year he goes 35 miles per day. How many miles does he drive for the year?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many days are left in the year.
+            <p>We know that Tom bikes for the first 183 days of the year. To find the remaining days, we subtract 183 from the total days in a year (365).</p>
+            <p>365 - 183 = 182 days</p>
+            <p>So there are 182 days remaining in the year.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the miles driven in the remaining days.
+            <p>For the remaining 182 days, Tom bikes 30 miles per day.</p>
+            <p>30 miles/day × 182 days = 5,460 miles</p>
+            <p>So Tom bikes 5,460 miles during the remaining 182 days of the year.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total miles driven throughout the year.
+            <p>Now we need to add the miles from the first 183 days to the miles from the remaining 182 days.</p>
+            <p>For the first 183 days: 183 days × 30 miles/day = 5,490 miles</p>
+            <p>Total miles = 5,490 + 5,460 = 11,460 miles</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        11,460
+    </div>
+</body>
+</html>

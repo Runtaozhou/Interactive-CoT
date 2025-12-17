@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Annie has 6 barrettes, twice as many scrunchies as barrettes, and three fewer bobby pins than barrettes. What percentage of her hair decorations are bobby pins, rounded to the nearest percent?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Find the total number of scrunchies.
+            <p>Since Annie has twice as many scrunchies as barrettes, we multiply the number of barrettes by 2:</p>
+            <p>6 barrettes × 2 = 12 scrunchies</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the number of bobby pins.
+            <p>Annie has three fewer bobby pins than barrettes, so we subtract 3 from the number of barrettes:</p>
+            <p>6 - 3 = 6 bobby pins</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Find the total number of hair decorations.
+            <p>We add up all the hair decorations:</p>
+            <p>Barrettes + Scrunchies + Bobby pins = 6 + 12 + 6 = 24 total hair decorations</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the percentage of bobby pins.
+            <p>To find the percentage, we divide the number of bobby pins by the total number of decorations and multiply by 100%:</p>
+            <p>(6 bobby pins ÷ 24 total decorations) × 100% = 25%</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        25
+    </div>
+</body>
+</html>

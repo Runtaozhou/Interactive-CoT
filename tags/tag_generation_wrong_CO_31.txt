@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Bobby buys <fact1>two packets of candy</fact1>. He eats <fact2>two candies every day from Monday through Friday</fact2> and takes <fact3>one each during the remaining days of the week</fact3>. If it takes him <fact4>3 such weeks</fact4> to finish the 2 packets, how many candies are in a packet?
+
+## 2. Facts
+
+<fact1>Number of packets: 2</fact1>
+<fact2>Candies eaten Monday-Friday: 2 per day</fact2>
+<fact3>Candies eaten on remaining days: 1 per day</fact3>
+<fact4>Weeks to finish: 3</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many candies Bobby eats from Monday through Friday </step1>
+<formula> candies per day × number of days </formula>
+<calculation> 2 * 5 = 10 candies </calculation>
+<var> weekday_candies : 10 candies </var>
+
+<step2> Calculate how many candies Bobby eats on the remaining day of the week </step2>
+<formula> candies per day × number of days </formula>
+<calculation> 1 * 1 = 1 candy </calculation>
+<var> weekend_candies : 1 candy </var>
+
+<step3> Calculate the total candies consumed in one week </step3>
+<formula> weekday_candies + weekend_candies </formula>
+<calculation> 10 + 1 = 11 candies </calculation>
+<var> weekly_consumption : 11 candies </var>
+
+<step4> Calculate the total candies consumed in three weeks </step4>
+<formula> weekly_consumption × number of weeks </formula>
+<calculation> 3 * 11 = 33 candies </calculation>
+<var> total_candies : 33 candies </var>
+
+<step5> Calculate how many candies are in one packet </step5>
+<formula> total_candies ÷ number of packets </formula>
+<calculation> 33 / 2 = 16.5 candies </calculation>
+<var> candies_per_packet : 16.5 candies </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 16.5 </output>

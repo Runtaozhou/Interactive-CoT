@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+It's exam season and Tristan has several exams to prepare for. On <fact1>Monday, he studies for 4 hours</fact1> then studies for <fact2>twice this long on Tuesday</fact2>. On <fact3>Wednesday, Thursday, and Friday he studies for 3 hours each day</fact3>. He wants to study for a <fact4>total of 25 hours</fact4> over the week and divides the remaining amount of study time evenly between Saturday and Sunday. How many hours does Tristan spend studying on Saturday?
+
+## 2. Facts
+
+<fact1>Monday study time: 4 hours</fact1>
+<fact2>Tuesday study time: twice Monday's time</fact2>
+<fact3>Wednesday, Thursday, Friday study time: 3 hours each day</fact3>
+<fact4>Total planned study time: 25 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many hours Tristan studies on Tuesday </step1>
+<formula> Monday hours × 2 </formula>
+<calculation> 4 hours * 2 = 8 hours </calculation>
+<var> tuesday_hours : 8 hours </var>
+
+<step2> Calculate the total hours studied in the first five days </step2>
+<formula> Monday + Tuesday + Wednesday + Thursday + Friday </formula>
+<calculation> 4 hours + 8 hours + 3 hours + 3 hours + 3 hours = 21 hours </calculation>
+<var> weekday_hours : 21 hours </var>
+
+<step3> Calculate the remaining hours to be divided between Saturday and Sunday </step3>
+<formula> Total planned hours - Weekday hours </formula>
+<calculation> 25 hours - 21 hours = 4 hours </calculation>
+<var> weekend_hours : 4 hours </var>
+
+<step4> Calculate how many hours Tristan studies on Saturday </step4>
+<formula> Weekend hours ÷ 1 </formula>
+<calculation> 4 hours / 1 = 4 hours </calculation>
+<var> saturday_hours : 4 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 4 </output>

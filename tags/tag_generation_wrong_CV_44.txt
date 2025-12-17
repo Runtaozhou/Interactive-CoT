@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Sophia and Rose went together to the market to buy onions and potatoes. <fact1>Rose bought 4 times the number of onions and potatoes Sophia bought</fact1>. If <fact2>Rose bought 12 onions</fact2> and <fact3>4 potatoes</fact3>, how many onions and potatoes in total did Sophia buy at the market?
+
+## 2. Facts
+
+<fact1>Rose bought 4 times the number of onions and potatoes Sophia bought</fact1>
+<fact2>Rose bought 12 onions</fact2>
+<fact3>Rose bought 4 potatoes</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of onions Sophia bought </step1>
+<formula> Rose's onions ÷ 4 </formula>
+<calculation> 10 ÷ 4 = 2.5 onions </calculation>
+<var> sophia_onions : 2.5 onions </var>
+
+<step2> Calculate the number of potatoes Sophia bought </step2>
+<formula> Rose's potatoes ÷ 4 </formula>
+<calculation> 4 ÷ 4 = 1 potato </calculation>
+<var> sophia_potatoes : 1 potato </var>
+
+<step3> Find the total number of onions and potatoes Sophia bought </step3>
+<formula> sophia_onions + sophia_potatoes </formula>
+<calculation> 2.5 + 1 = 3.5 </calculation>
+<var> sophia_total : 3.5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 3.5 </output>

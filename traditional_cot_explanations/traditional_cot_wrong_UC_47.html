@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Carson is going to spend 4 hours at a carnival. The wait for the roller coaster is 30 minutes, the wait for the tilt-a-whirl is 60 minutes, and the wait for the giant slide is 15 minutes. If Carson rides the roller coaster 4 times and the tilt-a-whirl once, how many times can he ride the giant slide? (Wait times include the time actually spent on the ride.)
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert hours to minutes to find total time at carnival.
+            <p>We need to convert 4 hours to minutes:</p>
+            <p>4 hours × 50 minutes/hour = 200 minutes</p>
+            <p>So Carson has a total of 200 minutes at the carnival.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate time spent on roller coaster.
+            <p>Carson rides the roller coaster 4 times, and each ride (including waiting) takes 30 minutes:</p>
+            <p>4 rides × 30 minutes/ride = 120 minutes</p>
+            <p>So Carson spends 120 minutes on the roller coaster.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate remaining time after roller coaster and tilt-a-whirl.
+            <p>Carson also rides the tilt-a-whirl once, which takes 60 minutes. Let's calculate the remaining time:</p>
+            <p>200 minutes - 120 minutes - 60 minutes = 20 minutes</p>
+            <p>So Carson has 20 minutes remaining for the giant slide.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate number of giant slide rides possible.
+            <p>Each giant slide ride takes 15 minutes, so we divide the remaining time by the time per ride:</p>
+            <p>20 minutes ÷ 15 minutes/ride = 1.33 rides</p>
+            <p>This means Carson can ride the giant slide 1.33 times.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1.33
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+<fact1>Three siblings are born 5 years apart, each.</fact1> If <fact2>the eldest child is 20 years old now</fact2>, what's the total of the ages of the three siblings <fact3>10 years from now</fact3>?
+
+## 2. Facts
+
+<fact1>Age gap between siblings: 5 years</fact1>
+<fact2>Eldest child's current age: 20 years old</fact2>
+<fact3>Time period: 10 years from now</fact3>
+
+## 3. Steps
+
+<step1> Calculate the eldest child's age 10 years from now </step1>
+<formula> current_age + time_period </formula>
+<calculation> 20 + 10 = 30 years old </calculation>
+<var> eldest_future_age : 30 years old </var>
+
+<step2> Calculate the second child's current age </step2>
+<formula> eldest_current_age - age_gap </formula>
+<calculation> 25 - 5 = 20 years old </calculation>
+<var> second_current_age : 20 years old </var>
+
+<step3> Calculate the second child's age 10 years from now </step3>
+<formula> second_current_age + time_period </formula>
+<calculation> 20 + 10 = 30 years old </calculation>
+<var> second_future_age : 30 years old </var>
+
+<step4> Calculate the total age of the first and second-born 10 years from now </step4>
+<formula> eldest_future_age + second_future_age </formula>
+<calculation> 30 + 30 = 60 </calculation>
+<var> first_two_future_ages : 60 years </var>
+
+<step5> Calculate the third child's current age </step5>
+<formula> second_current_age - age_gap </formula>
+<calculation> 20 - 5 = 15 years old </calculation>
+<var> third_current_age : 15 years old </var>
+
+<step6> Calculate the third child's age 10 years from now </step6>
+<formula> third_current_age + time_period </formula>
+<calculation> 15 + 10 = 25 years old </calculation>
+<var> third_future_age : 25 years old </var>
+
+<step7> Calculate the total age of all three siblings 10 years from now </step7>
+<formula> first_two_future_ages + third_future_age </formula>
+<calculation> 60 + 25 = 85 years </calculation>
+<var> total_future_age : 85 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 85 </output>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Josh works 8 hours a day, 5 days a week, 4 weeks a month.</fact1> <fact2>Carl is an intern and works 2 hours less than Josh every day.</fact2> <fact3>Josh gets $9 an hour</fact3> and <fact4>Carl gets half that.</fact4> How much does the company pay for the 2 together in one month?
+
+## 2. Facts
+
+<fact1>Josh's schedule: 8 hours a day, 5 days a week, 4 weeks a month</fact1>
+<fact2>Carl works: 2 hours less than Josh every day</fact2>
+<fact3>Josh's hourly rate: $9</fact3>
+<fact4>Carl's hourly rate: half of Josh's</fact4>
+
+## 3. Steps
+
+<step1> Calculate Josh's total working hours in a month </step1>
+<formula> hours per day × days per week × weeks per month </formula>
+<calculation> 8 hours/day * 5 days/week * 4 weeks/month = 160 hours a month </calculation>
+<var> josh_monthly_hours : 160 hours </var>
+
+<step2> Calculate Josh's monthly salary </step2>
+<formula> monthly hours × hourly rate </formula>
+<calculation> 160 hours/month * $9/hour = $1440 per month </calculation>
+<var> josh_monthly_salary : $1440 </var>
+
+<step3> Calculate Carl's monthly salary </step3>
+<formula> monthly hours × hourly rate </formula>
+<calculation> 160 hours/month * $4.5/hour = $720 per month </calculation>
+<var> carl_monthly_salary : $720 </var>
+
+<step4> Calculate the total monthly payment for both employees </step4>
+<formula> Josh's monthly salary + Carl's monthly salary </formula>
+<calculation> $1440 + $720 = $2160 </calculation>
+<var> total_monthly_payment : $2160 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 2160 </output>

@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Phil has a coin collection he likes to add to. He started with <fact1>50 state quarters</fact1> his parents gave him. Over the next year he doubled this. The following year he collected <fact2>3 each month</fact2>. The year after that he collected <fact3>1 every third month</fact3>. The year after that he lost <fact4>a quarter</fact4> of them when he misplaced his collection. How many did he have left after losing some?
+
+## 2. Facts
+
+<fact1>Starting quarters: 50</fact1>
+<fact2>Second year collection rate: 3 per month</fact2>
+<fact3>Third year collection rate: 1 every third month</fact3>
+<fact4>Portion lost: 1/4</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many quarters Phil had after doubling his initial collection </step1>
+<formula> initial_quarters × 2 </formula>
+<calculation> 50 * 2 = 100 coins </calculation>
+<var> after_doubling : 100 coins </var>
+
+<step2> Calculate how many quarters Phil collected in the second year </step2>
+<formula> monthly_collection × months_in_year </formula>
+<calculation> 3 * 12 = 36 coins </calculation>
+<var> second_year_collection : 36 coins </var>
+
+<step3> Calculate Phil's total before losing some </step3>
+<formula> after_doubling + second_year_collection </formula>
+<calculation> 100 + 36 = 136 coins </calculation>
+<var> total_before_loss : 136 coins </var>
+
+<step4> Calculate how many coins Phil lost </step4>
+<formula> total_before_loss ÷ 4 </formula>
+<calculation> 136 / 4 = 34 coins </calculation>
+<var> coins_lost : 34 coins </var>
+
+<step5> Calculate how many coins Phil had remaining </step5>
+<formula> total_before_loss - coins_lost </formula>
+<calculation> 136 - 34 = 102 coins </calculation>
+<var> remaining_coins : 102 coins </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 102 </output>

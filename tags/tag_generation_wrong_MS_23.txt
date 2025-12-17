@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+The math questions in a contest are divided into three rounds: easy, average, and hard. There are corresponding points given for each round. That is <fact1>2, 3, and 5 points for every correct answer in the easy, average, and hard rounds</fact1>, respectively. Suppose <fact2>Kim got 6 correct answers in the easy</fact2>; <fact3>2 correct answers in the average</fact3>; and <fact4>4 correct answers in the difficult round</fact4>, what are her total points in the contest?
+
+## 2. Facts
+
+<fact1>Points per round: 2 points (easy), 3 points (average), 5 points (hard)</fact1>
+<fact2>Kim's correct answers in easy round: 6</fact2>
+<fact3>Kim's correct answers in average round: 2</fact3>
+<fact4>Kim's correct answers in difficult round: 4</fact4>
+
+## 3. Steps
+
+<step1> Calculate Kim's points in the easy round </step1>
+<formula> easy_correct_answers × points_per_easy_question </formula>
+<calculation> 6 × 2 = 12 points </calculation>
+<var> easy_round_points : 12 points </var>
+
+<step2> Calculate Kim's points in the average round </step2>
+<formula> average_correct_answers × points_per_average_question </formula>
+<calculation> 2 points/round × 3 rounds = 6 points </calculation>
+<var> average_round_points : 6 points </var>
+
+<step3> Calculate Kim's points in the difficult round </step3>
+<formula> difficult_correct_answers × points_per_difficult_question </formula>
+<calculation> 4 points/round × 5 rounds = 20 points </calculation>
+<var> difficult_round_points : 20 points </var>
+
+<step4> Calculate the total points from all rounds </step4>
+<formula> easy_round_points + average_round_points + difficult_round_points </formula>
+<calculation> 6*2 points + 6 points + 20 points = 32 points </calculation>
+<var> total_points : 32 points </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 32 </output>

@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Manex is a tour bus driver. He has to drive <fact1>55 miles to the destination</fact1> and drive going back to the starting point on a different way that is <fact2>10 miles farther</fact2>. If he can drive <fact3>1 mile for 2 minutes</fact3> and stayed <fact4>2 hours at the destination</fact4>, how long will it take the bus driver to do the entire tour in hours?
+
+## 2. Facts
+
+<fact1>Distance to destination: 55 miles</fact1>
+<fact2>Return trip additional distance: 10 miles</fact2>
+<fact3>Driving speed: 1 mile per 2 minutes</fact3>
+<fact4>Time spent at destination: 2 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate the return trip distance </step1>
+<formula> outbound_distance + additional_distance </formula>
+<calculation> 55 + 10 = 65 miles </calculation>
+<var> return_distance : 65 miles </var>
+
+<step2> Find the total distance traveled </step2>
+<formula> outbound_distance + return_distance </formula>
+<calculation> 55 + 65 = 120 miles </calculation>
+<var> total_distance : 120 miles </var>
+
+<step3> Calculate the total travel time in minutes </step3>
+<formula> total_distance × time_per_mile </formula>
+<calculation> 120 × 2 = 240 minutes </calculation>
+<var> travel_time_minutes : 240 minutes </var>
+
+<step4> Convert travel time from minutes to hours </step4>
+<formula> travel_time_minutes ÷ minutes_per_hour </formula>
+<calculation> 240/50 = 4.8 hours </calculation>
+<var> travel_time_hours : 4.8 hours </var>
+
+<step5> Calculate the total tour time including the stay at the destination </step5>
+<formula> travel_time_hours + destination_stay_time </formula>
+<calculation> 4.8 + 2 = 6.8 hours </calculation>
+<var> total_tour_time : 6.8 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 6.8 </output>

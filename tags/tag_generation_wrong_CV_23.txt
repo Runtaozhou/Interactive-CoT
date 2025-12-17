@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+Building one birdhouse requires <fact1>7 planks</fact1> and <fact2>20 nails</fact2>. If <fact3>1 nail costs $0.05</fact3>, and <fact4>one plank costs $3</fact4>, what is the cost, in dollars, to build <fact5>4 birdhouses</fact5>?
+
+## 2. Facts
+
+<fact1>Planks per birdhouse: 7</fact1>
+<fact2>Nails per birdhouse: 20</fact2>
+<fact3>Cost per nail: $0.05</fact3>
+<fact4>Cost per plank: $3</fact4>
+<fact5>Number of birdhouses: 4</fact5>
+
+## 3. Steps
+
+<step1> Calculate the cost of planks for one birdhouse </step1>
+<formula> number of planks × cost per plank </formula>
+<calculation> 7 * 4 = $28 </calculation>
+<var> plank_cost_per_birdhouse : $28 </var>
+
+<step2> Calculate the cost of nails for one birdhouse </step2>
+<formula> number of nails × cost per nail </formula>
+<calculation> 20 * 0.05 = $1 </calculation>
+<var> nail_cost_per_birdhouse : $1 </var>
+
+<step3> Find the total cost for one birdhouse </step3>
+<formula> plank_cost_per_birdhouse + nail_cost_per_birdhouse </formula>
+<calculation> 28 + 1 = $29 </calculation>
+<var> cost_per_birdhouse : $29 </var>
+
+<step4> Calculate the total cost for all birdhouses </step4>
+<formula> number of birdhouses × cost_per_birdhouse </formula>
+<calculation> 4 * 29 = $116 </calculation>
+<var> total_cost : $116 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 116 </output>

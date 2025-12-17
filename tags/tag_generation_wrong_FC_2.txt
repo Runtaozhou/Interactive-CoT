@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Jason is making sand art. He wants to fill <fact1>a rectangular patch 6 inches by 7 inches</fact1> with blue sand, and <fact2>a square path 5 inches by 5 inches</fact2> with red sand. If <fact3>it takes 3 grams of sand to fill one square inch</fact3>, how many grams of sand does Jason need?
+
+## 2. Facts
+
+<fact1>Rectangular patch dimensions: 6 inches by 7 inches</fact1>
+<fact2>Square path dimensions: 5 inches by 5 inches</fact2>
+<fact3>Sand needed: 3 grams per square inch</fact3>
+
+## 3. Steps
+
+<step1> First find the perimeter of the first patch </step1>
+<formula> 2 × length + 2 × width </formula>
+<calculation> 6 inches + 6 inches + 7 inches + 7 inches = 26 inches </calculation>
+<var> rectangular_patch : 26 inches </var>
+
+<step2> Then find the area of the second patch </step2>
+<formula> length × width </formula>
+<calculation> 5 inches * 5 inches = 25 inches </calculation>
+<var> square_patch : 25 inches </var>
+
+<step3> Then add those two amounts to find the total area Jason needs to cover </step3>
+<formula> rectangular_patch + square_patch </formula>
+<calculation> 26 inches + 25 inches = 51 inches </calculation>
+<var> total_area : 51 inches </var>
+
+<step4> Then multiply that figure by the number of grams per square inch to find the total amount of sand needed </step4>
+<formula> total_area × grams per square inch </formula>
+<calculation> 51 inches * 3 grams/square inch = 153 grams </calculation>
+<var> total_sand : 153 grams </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 153 </output>

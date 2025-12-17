@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+The government gives the <fact1>bottom 20% of people a $2000 stimulus</fact1>. They have found that <fact2>this kind of stimulus returns 5 times as much money to the government</fact2>, in terms of tax revenue, as it cost. The <fact3>city has 1000 people</fact3> in it. What was the government profit from this project?
+
+## 2. Facts
+
+<fact1>Bottom 20% of people receive: $2000 stimulus</fact1>
+<fact2>Return on stimulus: 5 times the cost</fact2>
+<fact3>City population: 1000 people</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many people receive the stimulus </step1>
+<formula> total_people × percentage </formula>
+<calculation> 1000 * 0.2 = 200 people </calculation>
+<var> recipients : 200 people </var>
+
+<step2> Calculate the total cost of the stimulus </step2>
+<formula> recipients × stimulus_amount </formula>
+<calculation> 200 * 2500 = $500,000 </calculation>
+<var> total_cost : $500,000 </var>
+
+<step3> Calculate the money returned to the government </step3>
+<formula> total_cost × return_multiplier </formula>
+<calculation> 5 * 500000 = $2,500,000 </calculation>
+<var> total_return : $2,500,000 </var>
+
+<step4> Calculate the government profit </step4>
+<formula> total_return - total_cost </formula>
+<calculation> 2,500,000 - 500,000 = $2,000,000 </calculation>
+<var> profit : $2,000,000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 2,000,000 </output>

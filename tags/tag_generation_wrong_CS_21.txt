@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+Donna worked <fact1>2 hours every morning walking dogs in her neighborhood for $10.00 an hour</fact1>. <fact2>5 days a week, after school, she worked at a card shop for 2 hours and made $12.50 an hour</fact2>. On the weekends, she usually made <fact3>$10.00 an hour babysitting and was guaranteed 4 hours every Saturday from her neighbor</fact3>. How much money did she make over 7 days?
+
+## 2. Facts
+
+<fact1>Dog walking: 2 hours every morning at $10.00 an hour</fact1>
+<fact2>Card shop: 5 days a week, 2 hours per day at $12.50 an hour</fact2>
+<fact3>Babysitting: 4 hours every Saturday at $10.00 an hour</fact3>
+
+## 3. Steps
+
+<step1> Calculate how much Donna makes each morning walking dogs </step1>
+<formula> hourly rate × hours </formula>
+<calculation> 10*2 = $20.00 </calculation>
+<var> daily_dog_walking : $20.00 </var>
+
+<step2> Calculate how much Donna makes in a week from walking dogs </step2>
+<formula> daily_dog_walking × days per week </formula>
+<calculation> 7*20 = $140.00 </calculation>
+<var> weekly_dog_walking : $140.00 </var>
+
+<step3> Calculate how much Donna makes each day at the card shop </step3>
+<formula> hourly rate × hours </formula>
+<calculation> 12.5*2 = $25.00 </calculation>
+<var> daily_card_shop : $25.00 </var>
+
+<step4> Calculate how much Donna makes in a week from the card shop </step4>
+<formula> daily_card_shop × days per week </formula>
+<calculation> 5*25 = $125.00 </calculation>
+<var> weekly_card_shop : $125.00 </var>
+
+<step5> Calculate how much Donna makes from babysitting on Saturday </step5>
+<formula> hourly rate × hours </formula>
+<calculation> 4*10 = $40.00 </calculation>
+<var> babysitting : $40.00 </var>
+
+<step6> Calculate Donna's total weekly income </step6>
+<formula> weekly_dog_walking + weekly_card_shop + babysitting </formula>
+<calculation> 140+135+40 = $315.00 </calculation>
+<var> total_weekly_income : $315.00 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 315 </output>

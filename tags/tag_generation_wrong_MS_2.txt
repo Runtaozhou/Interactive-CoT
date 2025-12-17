@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+For a school fundraiser, <fact1>Tory needs to sell 50 packs of cookies</fact1>. So far, he has sold <fact2>12 packs to his grandmother</fact2>, <fact3>7 packs to his uncle</fact3>, and <fact4>5 packs to a neighbor</fact4>. How many more packs of cookies does Tory need to sell?
+
+## 2. Facts
+
+<fact1>Total packs needed: 50 packs</fact1>
+<fact2>Packs sold to grandmother: 12 packs</fact2>
+<fact3>Packs sold to uncle: 7 packs</fact3>
+<fact4>Packs sold to neighbor: 5 packs</fact4>
+
+## 3. Steps
+
+<step1>Count how many packs Tory sold to his grandmother</step1>
+<formula></formula>
+<calculation></calculation>
+<var>grandmother_packs: 12 packs</var>
+
+<step2>Calculate the total number of packs Tory has sold so far</step2>
+<formula>grandmother_packs + neighbor_packs</formula>
+<calculation>12 packs + 5 packs = 17 packs</calculation>
+<var>total_sold: 17 packs</var>
+
+<step3>Calculate how many more packs Tory needs to sell</step3>
+<formula>total_needed - total_sold</formula>
+<calculation>50 packs - 17 packs = 33 packs</calculation>
+<var>packs_remaining: 33 packs</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>33</output>

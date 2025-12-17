@@ -1,0 +1,29 @@
+## 1. Problem statement
+
+<fact1>Brian's friend Bobby has 5 fewer than 3 times as many video games as Brian does.</fact1> <fact2>If Brian has 20 video games</fact2> but <fact3>lost 5</fact3> right before the comparison was made, how many does Bobby have?
+
+## 2. Facts
+
+<fact1>Bobby has 5 fewer than 3 times as many video games as Brian</fact1>
+<fact2>Brian has 20 video games</fact2>
+<fact3>Brian lost 5 video games before comparison</fact3>
+
+## 3. Steps
+
+<step1> Calculate three times Brian's video games </step1>
+<formula> Brian's games × 3 </formula>
+<calculation> 20 * 3 = 60 </calculation>
+<var> three_times_brian : 60 games </var>
+
+<step2> Subtract 5 from the previous total to find Bobby's games </step2>
+<formula> three_times_brian - 5 </formula>
+<calculation> 60 - 5 = 55 games </calculation>
+<var> bobby_games : 55 games </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 55 </output>

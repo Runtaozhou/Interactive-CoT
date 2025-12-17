@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+A shady restaurant is charging customers gratuities after taxes without them being aware. If <fact1>my total bill was $140</fact1>, <fact2>the sales tax in my city is 10%</fact2>, <fact3>I ordered a NY Striploin for $80</fact3>, and <fact4>I ordered a glass of wine for $10</fact4>, how much did they charge me for gratuities?
+
+## 2. Facts
+
+<fact1>Total bill: $140</fact1>
+<fact2>Sales tax: 10%</fact2>
+<fact3>NY Striploin: $80</fact3>
+<fact4>Glass of wine: $10</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total bill before taxes or gratuities </step1>
+<formula> NY Striploin cost + wine cost </formula>
+<calculation> $80 + $10 = $90 </calculation>
+<var> pre_tax_bill : $90 </var>
+
+<step2> Calculate the taxes paid </step2>
+<formula> pre_tax_bill × tax rate </formula>
+<calculation> $90 * 15% = $13.5 </calculation>
+<var> taxes : $13.5 </var>
+
+<step3> Calculate the total bill before gratuities </step3>
+<formula> pre_tax_bill + taxes </formula>
+<calculation> $90 + $13.5 = $103.5 </calculation>
+<var> bill_with_tax : $103.5 </var>
+
+<step4> Calculate the gratuities charged </step4>
+<formula> total bill - bill with tax </formula>
+<calculation> $140 - $103.5 = $36.5 </calculation>
+<var> gratuities : $36.5 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 36.5 </output>

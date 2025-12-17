@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Luke is planning a trip to London and wants to see how long it will take him to travel there. He decides that he will take a bus to the town center, walk for <fact1>15 minutes</fact1> to the train center, wait <fact2>twice this long</fact2> for the train to arrive, and then take the <fact3>6-hour train ride</fact3> to London. If Luke's entire trip takes him <fact4>8 hours</fact4>, how many minutes does his bus ride take?
+
+## 2. Facts
+
+<fact1>Walking time: 15 minutes</fact1>
+<fact2>Waiting time: twice the walking time</fact2>
+<fact3>Train ride: 6 hours</fact3>
+<fact4>Total trip time: 8 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate the time spent on activities other than the bus ride </step1>
+<formula> total_trip_time - train_ride_time </formula>
+<calculation> 8 hours - 6 hours = 2 hours </calculation>
+<var> time_before_train : 2 hours </var>
+
+<step2> Convert the time before train from hours to minutes </step2>
+<formula> time_before_train × minutes_per_hour </formula>
+<calculation> 2 hours * 50 minutes/hour = 100 minutes </calculation>
+<var> time_before_train_minutes : 100 minutes </var>
+
+<step3> Calculate the waiting time for the train </step3>
+<formula> walking_time × 2 </formula>
+<calculation> 15 minutes * 2 = 30 minutes </calculation>
+<var> waiting_time : 30 minutes </var>
+
+<step4> Calculate the bus ride time by subtracting walking and waiting times from the total time before train </step4>
+<formula> time_before_train_minutes - waiting_time - walking_time </formula>
+<calculation> 100 minutes - 30 minutes - 15 minutes = 55 minutes </calculation>
+<var> bus_ride_time : 55 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 55 </output>

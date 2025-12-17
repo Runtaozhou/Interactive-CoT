@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Together Lily, David, and Bodhi collected 43 insects. Lily found 7 more than David. David found half of what Bodhi found. How many insects did Lily find?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Let's define B as the number of insects Bodhi collected.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Since David found half of what Bodhi found, we can express David's insects in terms of B.
+            <br>David = B/2
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Lily found 7 more insects than David, so we can express Lily's insects in terms of David's (and thus B).
+            <br>Lily = B/2 + 7
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now we can set up an equation using the total number of insects.
+            <br>B + B/2 + 7 = 43
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Let's simplify the equation.
+            <br>2B + B = 36
+        </div>
+        <div class="step">
+            <span class="step-number">Step 6:</span> Solving for B:
+            <br>3B = 36
+            <br>B = 12 insects
+        </div>
+        <div class="step">
+            <span class="step-number">Step 7:</span> Now we can calculate how many insects David found.
+            <br>David = B/2 = 12/2 = 6 insects
+        </div>
+        <div class="step">
+            <span class="step-number">Step 8:</span> Finally, we can calculate how many insects Lily found.
+            <br>Lily = David + 7 = 6 + 7 = 13 insects
+        </div>
+        <div class="step">
+            <span class="step-number">Step 9:</span> Therefore, Lily found 13 insects.
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        13
+    </div>
+</body>
+</html>

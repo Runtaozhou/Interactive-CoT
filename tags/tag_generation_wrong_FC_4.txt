@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Bob is building a vegetable garden. It is <fact1>220 feet long by 120 feet wide</fact1>. <fact2>Half of the garden is going to be tilled land</fact2>. <fact3>A third of the rest of it will have trellises for vining plants</fact3>, and the rest will be devoted to raised beds. How big will the raised bed section of the garden be?
+
+## 2. Facts
+
+<fact1>Garden dimensions: 220 feet long by 120 feet wide</fact1>
+<fact2>Tilled land: 1/2 of garden</fact2>
+<fact3>Trellises: 1/3 of remaining land</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total area of the garden </step1>
+<formula> perimeter = 2 × length + 2 × width </formula>
+<calculation> 220 + 120 + 220 + 120 = 680 square feet </calculation>
+<var> garden_area : 680 square feet </var>
+
+<step2> Calculate the area for tilled land and the remaining area </step2>
+<formula> garden_area ÷ 2 </formula>
+<calculation> 680 / 2 = 340 square feet </calculation>
+<var> tilled_land : 340 square feet </var>
+<var> remaining_land : 340 square feet </var>
+
+<step3> Calculate the fraction of remaining land for raised beds </step3>
+<formula> 1 - (1/3) </formula>
+<calculation> 1 - 1/3 = 2/3 </calculation>
+<var> raised_bed_fraction : 2/3 </var>
+
+<step4> Calculate the area of the raised beds </step4>
+<formula> remaining_land × raised_bed_fraction </formula>
+<calculation> 340 square feet * (2 / 3) = 226.67 square feet </calculation>
+<var> raised_bed_area : 226.67 square feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 226.67 </output>

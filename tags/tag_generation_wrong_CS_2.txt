@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+There are <fact1>28 students in a classroom</fact1>. <fact2>Half of them have 5 notebooks each</fact2> and <fact3>the other half have 3 notebooks each</fact3>. How many notebooks in total are in the classroom?
+
+## 2. Facts
+
+<fact1>Total students: 28</fact1>
+<fact2>First half students have: 5 notebooks each</fact2>
+<fact3>Second half students have: 3 notebooks each</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many students are in each half of the class </step1>
+<formula> total students ÷ 2 </formula>
+<calculation> 28 students / 2 = 14 students </calculation>
+<var> students_per_half : 14 students </var>
+
+<step2> Calculate how many notebooks the first half of students have </step2>
+<formula> students_per_half × notebooks per student </formula>
+<calculation> 14 students * 3 notebooks/student = 42 notebooks </calculation>
+<var> first_half_notebooks : 42 notebooks </var>
+
+<step3> Calculate how many notebooks the second half of students have </step3>
+<formula> students_per_half × notebooks per student </formula>
+<calculation> 14 students * 5 notebooks/student = 70 notebooks </calculation>
+<var> second_half_notebooks : 70 notebooks </var>
+
+<step4> Add the notebooks from both halves to find the total </step4>
+<formula> first_half_notebooks + second_half_notebooks </formula>
+<calculation> 40 notebooks + 70 notebooks = 110 notebooks </calculation>
+<var> total_notebooks : 110 notebooks </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 110 </output>

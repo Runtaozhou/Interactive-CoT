@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A school is buying virus protection software to cover 50 devices. One software package costs $40 and covers up to 5 devices. The other software package costs $60 and covers up to 10 devices. How much money, in dollars, can the school save by buying the $60 software package instead of the $40 software package?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many $40 packages are needed.
+            <p>We need to divide the total number of devices by the number of devices each package covers:</p>
+            <p>50 ÷ 5 = 10 packages</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total cost for the $40 packages.
+            <p>We multiply the number of packages needed by the cost per package:</p>
+            <p>10 × $40 = $400</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many $60 packages are needed.
+            <p>We divide the total number of devices by the number of devices each package covers:</p>
+            <p>50 ÷ 10 = 5 packages</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total cost for the $60 packages.
+            <p>We multiply the number of packages needed by the cost per package:</p>
+            <p>5 × $60 = $300</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the savings by using the $60 packages.
+            <p>We subtract the total cost of $60 packages from the total cost of $40 packages:</p>
+            <p>$400 - $300 = $100</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        300
+    </div>
+</body>
+</html>

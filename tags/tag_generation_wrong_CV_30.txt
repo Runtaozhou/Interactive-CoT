@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+<fact1>Seth is twice as old as Brooke.</fact1> <fact2>In 2 years, the sum of their ages will be 28.</fact2> How old is Seth?
+
+## 2. Facts
+
+<fact1>Seth's age: twice Brooke's age</fact1>
+<fact2>In 2 years, sum of ages: 28</fact2>
+
+## 3. Steps
+
+<step1> Set up an equation where x represents Brooke's age and 2x represents Seth's age, noting that in three years their ages sum to 28 </step1>
+<formula> (2x + 3) + (x + 3) = 28 </formula>
+<calculation></calculation>
+<var> Brooke's age: x </var>
+<var> Seth's age: 2x </var>
+
+<step2> Add all values together to form a simplified equation </step2>
+<formula> 3x + 6 = 28 </formula>
+<calculation> 3x + 6 = 28 </calculation>
+<var></var>
+
+<step3> Subtract 6 from each side of the equation </step3>
+<formula> 3x + 6 - 6 = 28 - 6 </formula>
+<calculation> 3x = 22 </calculation>
+<var></var>
+
+<step4> Divide each side by 3 to solve for x </step4>
+<formula> x = 22/3 </formula>
+<calculation> x = 22/3 </calculation>
+<var> Brooke's age: 7.33 </var>
+
+<step5> Determine Brooke's age from the value of x </step5>
+<formula></formula>
+<calculation> x = 22/3 ≈ 7.33 </calculation>
+<var> Brooke's age: 7.33 </var>
+
+<step6> Calculate Seth's age by doubling Brooke's age </step6>
+<formula> Seth's age = 2 × Brooke's age </formula>
+<calculation> 7.33 × 2 = 14.67 </calculation>
+<var> Seth's age: 14.67 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 14.67 </output>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+James decides to sell <fact1>80% of his toys</fact1>. He bought them for <fact2>$20 each</fact2> and sells them for <fact3>$30 each</fact3>. If he had <fact4>200 toys</fact4> how much more money did he have compared to before he bought them?
+
+## 2. Facts
+
+<fact1>Percentage of toys sold: 80%</fact1>
+<fact2>Purchase price per toy: $20</fact2>
+<fact3>Selling price per toy: $30</fact3>
+<fact4>Total number of toys: 200</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total cost of buying all the toys </step1>
+<formula> purchase price per toy × total number of toys </formula>
+<calculation> 20 * 200 = $4000 </calculation>
+<var> total_cost : $4000 </var>
+
+<step2> Calculate the number of toys sold </step2>
+<formula> total number of toys × percentage sold </formula>
+<calculation> 200 * 0.8 = 160 toys </calculation>
+<var> toys_sold : 160 toys </var>
+
+<step3> Calculate the money made from selling the toys </step3>
+<formula> toys sold × selling price per toy </formula>
+<calculation> 160 * 30 = $4800 </calculation>
+<var> money_made : $4800 </var>
+
+<step4> Calculate the profit ratio </step4>
+<formula> money made ÷ total cost </formula>
+<calculation> 4800 / 4000 = $1.2 profit </calculation>
+<var> profit_ratio : $1.2 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 1.2 </output>

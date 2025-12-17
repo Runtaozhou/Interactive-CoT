@@ -1,0 +1,27 @@
+## 1. Problem statement
+
+On <fact1>Tuesday, 12,000 ice cream cones were sold</fact1>. On Wednesday, the number of ice cream cones sold was double the amount sold on Tuesday. How many ice cream cones have been sold in total?
+
+## 2. Facts
+
+<fact1>Tuesday ice cream sales: 12,000 cones</fact1>
+
+## 3. Steps
+
+<step1> Calculate the number of ice cream cones sold on Wednesday </step1>
+<formula> Tuesday sales × 2 </formula>
+<calculation> 12,000 * 2 = 24,000 ice cream cones </calculation>
+<var> wednesday_sales : 24,000 ice cream cones </var>
+
+<step2> Find the total number of ice cream cones sold on both days </step2>
+<formula> Tuesday sales + Wednesday sales </formula>
+<calculation> 12,000 + 24,000 = 36,000 ice cream cones </calculation>
+<var> total_sales : 36,000 ice cream cones </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 36,000 </output>

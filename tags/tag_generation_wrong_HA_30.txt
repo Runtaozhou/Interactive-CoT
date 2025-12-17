@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+<fact1>Boris has 24 books</fact1> and he donates a fourth of his books to the library. <fact2>Cameron has 30 books</fact2> and he donates a third of his books to the library. After donating their books, how many books in total do Boris and Cameron have together?
+
+## 2. Facts
+
+<fact1>Boris's books: 24 books</fact1>
+<fact2>Cameron's books: 30 books</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many books Boris donates </step1>
+<formula> Boris's books ÷ 4 </formula>
+<calculation> 24 / 4 = 6 books </calculation>
+<var> boris_donated : 6 books </var>
+
+<step2> Calculate how many books Boris has left after donation </step2>
+<formula> Boris's books - boris_donated </formula>
+<calculation> 24 - 6 = 18 books </calculation>
+<var> boris_remaining : 18 books </var>
+
+<step3> Add the additional books Boris found at home </step3>
+<formula> boris_remaining + 2 </formula>
+<calculation> 18 + 2 = 20 books </calculation>
+<var> boris_final : 20 books </var>
+
+<step4> Calculate how many books Cameron donates </step4>
+<formula> Cameron's books ÷ 3 </formula>
+<calculation> 30 / 3 = 10 books </calculation>
+<var> cameron_donated : 10 books </var>
+
+<step5> Calculate how many books Cameron has left after donation </step5>
+<formula> Cameron's books - cameron_donated </formula>
+<calculation> 30 - 10 = 20 books </calculation>
+<var> cameron_remaining : 20 books </var>
+
+<step6> Calculate the total number of books Boris and Cameron have together </step6>
+<formula> boris_final + cameron_remaining </formula>
+<calculation> 20 + 20 = 40 books </calculation>
+<var> total_books : 40 books </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 40 </output>

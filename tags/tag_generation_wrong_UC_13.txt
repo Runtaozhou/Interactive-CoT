@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+To make a cherry pie, Veronica needs <fact1>3 pounds of pitted cherries</fact1>. There are <fact2>80 single cherries in one pound of cherries</fact2>. It takes <fact3>10 minutes to pit 20 cherries</fact3>. How many hours will it take Veronica to pit all the cherries?
+
+## 2. Facts
+
+<fact1>Pounds of cherries needed: 3 pounds</fact1>
+<fact2>Cherries per pound: 80 cherries</fact2>
+<fact3>Time to pit 20 cherries: 10 minutes</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of cherries needed </step1>
+<formula> cherries per pound × pounds needed </formula>
+<calculation> 80 * 3 = 240 cherries </calculation>
+<var> total_cherries : 240 cherries </var>
+
+<step2> Calculate how many units of 20 cherries need to be pitted </step2>
+<formula> total cherries ÷ cherries per unit </formula>
+<calculation> 240 / 20 = 12 units </calculation>
+<var> cherry_units : 12 units </var>
+
+<step3> Calculate the total time needed in minutes </step3>
+<formula> time per unit × number of units </formula>
+<calculation> 10 * 12 = 120 minutes </calculation>
+<var> total_minutes : 120 minutes </var>
+
+<step4> Convert minutes to hours </step4>
+<formula> total minutes ÷ minutes per hour </formula>
+<calculation> 120 / 50 = 2.4 hours </calculation>
+<var> total_hours : 2.4 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 2.4 </output>

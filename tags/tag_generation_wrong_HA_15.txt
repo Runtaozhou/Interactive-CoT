@@ -1,0 +1,53 @@
+## 1. Problem statement
+
+Jim decides to open up a bike shop. The most common repair he does is fixing bike tires. He <fact1>charges $20 for this</fact1> and it <fact2>cost him $5 in parts</fact2>. In <fact3>one month Jim does 300 of these repairs</fact3>. He also does <fact4>2 more complex repairs for $300 each</fact4> and <fact5>cost $50 in parts</fact5>. He also sells <fact6>$2000 profit worth of things from his retail shop</fact6>. If <fact7>rent and other fixed expense for the shop is $4000 a month</fact7> how much profit did the shop make?
+
+## 2. Facts
+
+<fact1>Tire repair charge: $20</fact1>
+<fact2>Tire repair parts cost: $5</fact2>
+<fact3>Monthly tire repairs: 300</fact3>
+<fact4>Complex repairs: 2 for $300 each</fact4>
+<fact5>Complex repair parts cost: $50</fact5>
+<fact6>Retail profit: $2000</fact6>
+<fact7>Monthly fixed expenses: $4000</fact7>
+
+## 3. Steps
+
+<step1> Calculate the profit per tire repair </step1>
+<formula> charge - cost </formula>
+<calculation> 20 - 5 = $15 </calculation>
+<var> profit_per_tire : $15 </var>
+
+<step2> Calculate the total profit from tire repairs </step2>
+<formula> profit_per_tire × number of repairs </formula>
+<calculation> 15 * 300 = $4500 </calculation>
+<var> total_tire_profit : $4500 </var>
+
+<step3> Calculate the profit per complex repair </step3>
+<formula> charge - cost </formula>
+<calculation> 300 - 50 = $250 </calculation>
+<var> profit_per_complex : $250 </var>
+
+<step4> Calculate the total profit from complex repairs </step4>
+<formula> profit_per_complex × number of repairs </formula>
+<calculation> 250 * 2 = $500 </calculation>
+<var> total_complex_profit : $500 </var>
+
+<step5> Calculate the total profit from all sources including a parking fine </step5>
+<formula> total_tire_profit + total_complex_profit + retail_profit - fine </formula>
+<calculation> 4500 + 500 + 2000 - 300 = $6700 </calculation>
+<var> total_income : $6700 </var>
+
+<step6> Calculate the final profit after fixed expenses </step6>
+<formula> total_income - fixed_expenses </formula>
+<calculation> 6700 - 4000 = $2700 </calculation>
+<var> final_profit : $2700 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 2700 </output>

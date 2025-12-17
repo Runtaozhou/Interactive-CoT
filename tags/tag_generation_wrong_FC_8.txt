@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+<fact1>One logger can cut down 6 trees per day.</fact1> The forest is a rectangle measuring <fact2>4 miles by 6 miles</fact2>, and each square mile has <fact3>600 trees</fact3>. If there are <fact4>30 days in each month</fact4>, how many months will it take <fact5>8 loggers</fact5> to cut down all the trees?
+
+## 2. Facts
+
+<fact1>One logger's capacity: 6 trees per day</fact1>
+<fact2>Forest dimensions: 4 miles by 6 miles</fact2>
+<fact3>Tree density: 600 trees per square mile</fact3>
+<fact4>Month length: 30 days</fact4>
+<fact5>Number of loggers: 8</fact5>
+
+## 3. Steps
+
+<step1> First find the total area of the forest </step1>
+<formula> perimeter = 2 × length + 2 × width </formula>
+<calculation> 4 miles + 4 miles + 6 miles + 6 miles = 20 square miles </calculation>
+<var> forest_area : 20 square miles </var>
+
+<step2> Then find the total number of trees in that area </step2>
+<formula> forest_area × tree density </formula>
+<calculation> 600 trees/square mile * 20 square miles = 12000 trees </calculation>
+<var> total_trees : 12000 trees </var>
+
+<step3> Then find the number of trees all the loggers can cut down in one day </step3>
+<formula> number of loggers × trees per logger per day </formula>
+<calculation> 8 loggers * 6 trees/logger = 48 trees </calculation>
+<var> daily_cutting_capacity : 48 trees </var>
+
+<step4> Then divide the total number of trees by the number cut down per day to find the number of days it takes to clear the forest </step4>
+<formula> total_trees ÷ daily_cutting_capacity </formula>
+<calculation> 12000 trees / 48 trees/day = 250 days </calculation>
+<var> total_days : 250 days </var>
+
+<step5> Then divide the time in days by the number of days per month to find the time in months </step5>
+<formula> total_days ÷ days per month </formula>
+<calculation> 250 days / 30 days/month = 8.33 months </calculation>
+<var> total_months : 8.33 months </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 8.33 </output>

@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+<fact1>Danivan Drugstore has 4500 bottles of hand sanitizer gel in inventory at the beginning of the week.</fact1> On Monday <fact2>2445 bottles were sold</fact2>, on Tuesday <fact3>900 bottles were sold</fact3>, and <fact4>50 bottles each day for the rest of the week were sold (from Wednesday until Sunday)</fact4>. On Saturday, <fact5>the supplier delivers an order for 650 bottles</fact5>. How many bottles of sanitizer gel does the Drugstore have at the end of the week?
+
+## 2. Facts
+
+<fact1>Starting inventory: 4500 bottles</fact1>
+<fact2>Monday sales: 2445 bottles</fact2>
+<fact3>Tuesday sales: 900 bottles</fact3>
+<fact4>Sales Wednesday to Sunday: 50 bottles per day</fact4>
+<fact5>Saturday delivery: 650 bottles</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total bottles sold on Monday and Tuesday </step1>
+<formula> Monday sales + Tuesday sales </formula>
+<calculation> 2445 + 900 = 3345 bottles </calculation>
+<var> mon_tue_sales : 3345 bottles </var>
+
+<step2> Calculate the total bottles sold from Wednesday to Sunday </step2>
+<formula> Daily sales × Number of days </formula>
+<calculation> 4 * 50 = 200 bottles </calculation>
+<var> wed_sun_sales : 200 bottles </var>
+
+<step3> Calculate the total bottles sold during the week </step3>
+<formula> Monday-Tuesday sales + Wednesday-Sunday sales </formula>
+<calculation> 3345 + 200 = 3545 bottles </calculation>
+<var> total_sales : 3545 bottles </var>
+
+<step4> Calculate the remaining inventory before Saturday delivery </step4>
+<formula> Starting inventory - Total sales </formula>
+<calculation> 4500 - 3545 = 955 bottles </calculation>
+<var> remaining_inventory : 955 bottles </var>
+
+<step5> Calculate the final inventory after Saturday delivery </step5>
+<formula> Remaining inventory + Saturday delivery </formula>
+<calculation> 955 + 650 = 1605 bottles </calculation>
+<var> final_inventory : 1605 bottles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 1605 </output>

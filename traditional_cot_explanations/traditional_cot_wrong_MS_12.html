@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Alyssa took 100 photos on vacation. She wants to put them in a photo album with 30 pages. She can place 3 photos each on the first 10 pages. Then she can place 4 photos each on the next 10 pages. If she wants to put an equal number of photos on each of the remaining pages of the album, how many photos can she place on each page?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of photos that can be placed on the next 10 pages.
+            <p>Using the formula: photos per page × number of pages</p>
+            <p>4 × 10 = 40 photos</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of photos that can be placed on the first 10 pages.
+            <p>Using the formula: photos per page × number of pages</p>
+            <p>3 × 10 = 30 photos</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of photos left to be placed on the album.
+            <p>Using the formula: total photos - photos on first 10 pages</p>
+            <p>100 - 30 = 70 photos</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of pages that have been used.
+            <p>Using the formula: total pages used so far</p>
+            <p>30 - 10 = 20 pages</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the number of photos that can be placed on each of the remaining pages.
+            <p>Using the formula: photos left / remaining pages</p>
+            <p>70/20 = 3.5 photos</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        3.5
+    </div>
+</body>
+</html>

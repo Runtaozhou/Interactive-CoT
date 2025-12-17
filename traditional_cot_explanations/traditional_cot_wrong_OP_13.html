@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Valerie earns $5000 per month, 1/2 of what her brother earns. If their mother earns twice their combined salary, what's the total amount of money they all have together?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much Valerie's brother earns.
+            <p>Since Valerie earns 1/2 of what her brother earns, her brother earns twice as much as Valerie.</p>
+            <p>Brother's earnings = Valerie's earnings × 2</p>
+            <p>Brother's earnings = $5000 × 2 = $10000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the combined salary of Valerie and her brother.
+            <p>Combined salary = Valerie's earnings + brother's earnings</p>
+            <p>Combined salary = $5000 + $10000 = $15000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate their mother's earnings.
+            <p>Mother's earnings = combined salary × 2</p>
+            <p>Mother's earnings = $15000 × 2 = $30000</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total amount of money they all have together.
+            <p>Total money = combined salary + mother's earnings</p>
+            <p>Total money = $15000 + $30000 = $45000</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        18000
+    </div>
+</body>
+</html>

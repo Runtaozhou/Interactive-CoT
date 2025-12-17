@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+A school is planning a community outreach program. <fact1>Each classroom must raise $200 for this activity.</fact1> Classroom A has raised <fact2>$20 from each of two families</fact2>, <fact3>$10 from each of eight families</fact3>, and <fact4>$5 from each of ten families</fact4>. How much more money does Classroom A need in order to reach the goal?
+
+## 2. Facts
+
+<fact1>Goal amount: $200</fact1>
+<fact2>Amount from first group: $20 from each of 2 families</fact2>
+<fact3>Amount from second group: $10 from each of 8 families</fact3>
+<fact4>Amount from third group: $5 from each of 10 families</fact4>
+
+## 3. Steps
+
+<step1>Calculate the amount raised from eight families who gave $10 each</step1>
+<formula>number of families × amount per family</formula>
+<calculation>8 × $10 = $80</calculation>
+<var>amount_from_second_group: $80</var>
+
+<step2>Calculate the amount raised from ten families who gave $5 each</step2>
+<formula>number of families × amount per family</formula>
+<calculation>10 × $5 = $50</calculation>
+<var>amount_from_third_group: $50</var>
+
+<step3>Calculate the total amount raised so far</step3>
+<formula>amount_from_second_group + amount_from_third_group</formula>
+<calculation>$80 + $50 = $130</calculation>
+<var>total_raised: $130</var>
+
+<step4>Calculate how much more money is needed to reach the goal</step4>
+<formula>goal_amount - total_raised</formula>
+<calculation>$200 - $130 = $70</calculation>
+<var>amount_needed: $70</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>70</output>

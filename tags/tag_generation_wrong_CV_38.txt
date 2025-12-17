@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Baking in batches of <fact1>65 cupcakes</fact1>, Carla made <fact2>45 batches</fact2> of cupcakes for her daughter's birthday party. She then took <fact3>5 cupcakes</fact3> from each batch, and fed them to her dogs. If Carla's daughter had <fact4>19 friends</fact4> and they shared the remaining cupcakes equally among them, including the daughter, calculate the number of cupcakes that each of Carla's daughter's friends ate.
+
+## 2. Facts
+
+<fact1>Cupcakes per batch: 65</fact1>
+<fact2>Number of batches: 45</fact2>
+<fact3>Cupcakes taken from each batch: 5</fact3>
+<fact4>Number of friends: 19</fact4>
+
+## 3. Steps
+
+<step1>Calculate how many cupcakes remain in each batch after Carla fed some to her dogs</step1>
+<formula>Cupcakes per batch - Cupcakes taken from each batch</formula>
+<calculation>65 - 5 = 60 cupcakes</calculation>
+<var>remaining_cupcakes_per_batch: 60 cupcakes</var>
+
+<step2>Calculate the total number of cupcakes available for the party</step2>
+<formula>Number of batches × Remaining cupcakes per batch</formula>
+<calculation>50 * 60 = 3000 cupcakes</calculation>
+<var>total_cupcakes: 3000 cupcakes</var>
+
+<step3>Calculate the total number of people sharing the cupcakes</step3>
+<formula>Number of friends + Daughter</formula>
+<calculation>19 + 1 = 20 people</calculation>
+<var>total_people: 20 people</var>
+
+<step4>Calculate how many cupcakes each person received</step4>
+<formula>Total cupcakes ÷ Total people</formula>
+<calculation>3000 ÷ 20 = 150 cupcakes</calculation>
+<var>cupcakes_per_person: 150 cupcakes</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>150</output>

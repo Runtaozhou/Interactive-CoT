@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Lisa has 36 candies.</fact1> On Mondays and Wednesdays, she eats <fact2>2 candies for each day</fact2> and on the other days of the week she eats <fact3>1 candy for each day</fact3>. How many weeks does it take for Lisa to eat all of the candies?
+
+## 2. Facts
+
+<fact1>Total candies: 36</fact1>
+<fact2>Candies eaten on Monday and Wednesday: 2 per day</fact2>
+<fact3>Candies eaten on other days: 1 per day</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many candies Lisa eats on Mondays and Wednesdays</step1>
+<formula>candies per day × number of days</formula>
+<calculation>2 * 2 = 4 candies</calculation>
+<var>monday_wednesday_candies: 4 candies</var>
+
+<step2>Calculate how many candies Lisa eats on the other days of the week</step2>
+<formula>candies per day × number of days</formula>
+<calculation>4 * 1 = 4 candies</calculation>
+<var>other_days_candies: 4 candies</var>
+
+<step3>Calculate the total candies Lisa eats in a week</step3>
+<formula>monday_wednesday_candies + other_days_candies</formula>
+<calculation>4 + 4 = 8 candies</calculation>
+<var>weekly_candies: 8 candies</var>
+
+<step4>Calculate how many weeks it takes to eat all candies</step4>
+<formula>total candies ÷ weekly candies</formula>
+<calculation>36 / 8 = 4.5 weeks</calculation>
+<var>total_weeks: 4.5 weeks</var>
+
+## 4. Wrongsteps
+
+<wrongstep>2</wrongstep>
+
+## 5. Output
+
+<output>4.5</output>

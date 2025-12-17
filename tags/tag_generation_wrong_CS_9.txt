@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>James hurt himself exercising. The pain subsided after 3 days</fact1>, but he knew that <fact2>the injury would take at least 5 times that long to fully heal</fact2>. After that, <fact3>he wanted to wait another 3 days before he started working out again</fact3>. If <fact4>he wants to wait 3 weeks after that to start lifting heavy again</fact4>, how long until he can lift heavy again?
+
+## 2. Facts
+
+<fact1>Pain subsided after: 3 days</fact1>
+<fact2>Injury healing time: 5 times pain subsiding time</fact2>
+<fact3>Additional wait before working out: 3 days</fact3>
+<fact4>Wait before lifting heavy: 3 weeks</fact4>
+
+## 3. Steps
+
+<step1>Calculate how long the injury would take to fully heal</step1>
+<formula>Pain subsided days × 5</formula>
+<calculation>3 * 5 = 15 days</calculation>
+<var>healing_time: 15 days</var>
+
+<step2>Calculate when he would start exercising again</step2>
+<formula>Healing time + Additional wait</formula>
+<calculation>15 + 3 = 18 days</calculation>
+<var>exercise_start_time: 18 days</var>
+
+<step3>Calculate how many days he needs to wait before lifting heavy</step3>
+<formula>3 weeks × 7 days per week</formula>
+<calculation>3 * 7 = 21 days</calculation>
+<var>heavy_lifting_wait: 21 days</var>
+
+<step4>Calculate the total time until he can lift heavy again</step4>
+<formula>Exercise start time + Heavy lifting wait</formula>
+<calculation>18 + 24 = 42 days</calculation>
+<var>total_wait: 42 days</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>42</output>

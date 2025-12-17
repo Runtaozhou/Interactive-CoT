@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The length of a rectangle is four times its width. If the area is 100 m². what is the length of the rectangle?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, let's define variables for the length and width of the rectangle.
+            <p>Let L = length of rectangle</p>
+            <p>Let W = width of rectangle</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> We know that the length is four times the width, so we can express this relationship as:
+            <p>L = 4 × W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Using the area information, we can write an equation:
+            <p>100 = L + W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now we can substitute the expression for length into the area equation:
+            <p>100 = 4×W + W = 5W</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Solving for the width:
+            <p>5W = 100</p>
+            <p>W = 20</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Now we can calculate the length using the width:
+            <p>L = 4 × W</p>
+            <p>L = 4 × 20 = 80 m</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        80
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+There are enough provisions in a castle to feed <fact1>300 people for 90 days</fact1>. After <fact2>30 days</fact2>, <fact3>100 people leave the castle</fact3>. How many more days are left until all the food runs out?
+
+## 2. Facts
+
+<fact1>Initial provisions: enough for 300 people for 90 days</fact1>
+<fact2>Time passed: 30 days</fact2>
+<fact3>People who leave: 100 people</fact3>
+
+## 3. Steps
+
+<step1> Calculate the remaining food after 30 days </step1>
+<formula> total_days - days_passed </formula>
+<calculation> 90 days - 30 days = 60 days </calculation>
+<var> remaining_days_for_original_group : 60 days </var>
+
+<step2> Calculate the number of people remaining in the castle </step2>
+<formula> original_people - people_who_left </formula>
+<calculation> 300 - 100 = 200 people </calculation>
+<var> remaining_people : 200 people </var>
+
+<step3> Calculate the food consumption rate of the smaller group relative to the original group </step3>
+<formula> remaining_people / original_people </formula>
+<calculation> 200/300 = 2/3 </calculation>
+<var> consumption_rate : 2/3 </var>
+
+<step4> Calculate how long the remaining food will last for the smaller group </step4>
+<formula> remaining_days_for_original_group / consumption_rate </formula>
+<calculation> 70 days / (2/3) = 105 more days </calculation>
+<var> days_until_food_runs_out : 105 days </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 105 </output>

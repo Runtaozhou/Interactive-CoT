@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+In a set of magicians cards, there are <fact1>15 red cards</fact1>, and <fact2>60% more green cards</fact2>. Yellow cards are as many, as the sum of red and green cards. How many cards of all mentioned colors are there?
+
+## 2. Facts
+
+<fact1>Red cards: 15</fact1>
+<fact2>Green cards: 60% more than red cards</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many more green cards there are than red cards </step1>
+<formula> percentage_increase * red_cards </formula>
+<calculation> 60/100 * 15 = 9 </calculation>
+<var> more_green_cards : 9 </var>
+
+<step2> Find the total number of green cards </step2>
+<formula> red_cards - more_green_cards </formula>
+<calculation> 15 - 9 = 6 </calculation>
+<var> green_cards : 6 </var>
+
+<step3> Calculate the number of yellow cards </step3>
+<formula> red_cards + green_cards </formula>
+<calculation> 15 + 6 = 21 </calculation>
+<var> yellow_cards : 21 </var>
+
+<step4> Find the total number of cards of all colors </step4>
+<formula> yellow_cards + red_cards + green_cards </formula>
+<calculation> 21 + 21 = 42 </calculation>
+<var> total_cards : 42 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 42 </output>

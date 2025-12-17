@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+<fact1>Zion is 8 years old</fact1> and his dad is <fact2>3 more than 4 times his age</fact2>. <fact3>In 10 years</fact3>, how many years older is Zion's dad than him?
+
+## 2. Facts
+
+<fact1>Zion's current age: 8 years</fact1>
+<fact2>Dad's age: 3 more than 4 times Zion's age</fact2>
+<fact3>Time elapsed: 10 years</fact3>
+
+## 3. Steps
+
+<step1>Calculate four times Zion's age</step1>
+<formula>Zion's age × 4</formula>
+<calculation>8 × 4 = 32</calculation>
+<var>four_times_zion_age: 32 years</var>
+
+<step2>Calculate Zion's dad's current age</step2>
+<formula>four_times_zion_age + 3</formula>
+<calculation>32 + 3 = 35</calculation>
+<var>dad_current_age: 35 years</var>
+
+<step3>Calculate Zion's age in 10 years</step3>
+<formula>Zion's current age + 10</formula>
+<calculation>5 + 10 = 15</calculation>
+<var>zion_future_age: 15 years</var>
+
+<step4>Calculate Zion's dad's age in 10 years</step4>
+<formula>dad_current_age + 10</formula>
+<calculation>35 + 10 = 45</calculation>
+<var>dad_future_age: 45 years</var>
+
+<step5>Calculate the age difference in 10 years</step5>
+<formula>dad_future_age - zion_future_age</formula>
+<calculation>45 - 15 = 30</calculation>
+<var>future_age_difference: 30 years</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>30</output>

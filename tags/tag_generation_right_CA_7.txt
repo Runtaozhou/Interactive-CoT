@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+<fact1>A convenience store sold 100 bags of chips in a month.</fact1> <fact2>In the first week, 15 bags of chips were sold.</fact2> <fact3>In the second week, thrice as many bags of chips were sold.</fact3> <fact4>There was an equal number of chips sold in the third and fourth week.</fact4>
+
+## 2. Facts
+
+<fact1>Total bags of chips sold in a month: 100</fact1>
+<fact2>Bags of chips sold in first week: 15</fact2>
+<fact3>Bags of chips sold in second week: thrice as many as first week</fact3>
+<fact4>Bags of chips sold in third week equals bags of chips sold in fourth week</fact4>
+
+## 3. Steps
+
+<step1> In the second week, 15 x 3 = 45 bags of chips were sold. </step1>
+<formula> second_week = first_week × 3 </formula>
+<calculation> 15 × 3 = 45 </calculation>
+<var>second_week: 45</var>
+
+<step2> So there was a total of 45 + 15 = 60 bags of chips sold on the first and second week. </step2>
+<formula> first_two_weeks = first_week + second_week </formula>
+<calculation> 45 + 15 = 60 </calculation>
+<var>first_two_weeks: 60</var>
+
+<step3> Thus, a total of 100 - 60 = 40 bags of chips were sold on the third and fourth week. </step3>
+<formula> last_two_weeks = total - first_two_weeks </formula>
+<calculation> 100 - 60 = 40 </calculation>
+<var>last_two_weeks: 40</var>
+
+<step4> Therefore, 40/2 = 20 bags of chips were each sold on the third and fourth week. </step4>
+<formula> third_week = fourth_week = last_two_weeks ÷ 2 </formula>
+<calculation> 40 ÷ 2 = 20 </calculation>
+<var>third_week: 20</var>
+<var>fourth_week: 20</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>20</output>

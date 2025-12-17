@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Chris's internet bill is <fact1>$45 per month for 100 GB</fact1> and <fact2>$0.25 for every 1 GB over</fact2>. His bill for this month is <fact3>$65</fact3>. How many GB over was Chris charged for on this bill?
+
+## 2. Facts
+
+<fact1>Base internet cost: $45 per month for 100 GB</fact1>
+<fact2>Overage charge: $0.25 per GB</fact2>
+<fact3>Total bill: $65</fact3>
+
+## 3. Steps
+
+<step1> Set up an equation where G represents the number of GB over the limit </step1>
+<formula> $0.25G + $45 = $65 </formula>
+<calculation></calculation>
+<var> G : number of GB over limit </var>
+
+<step2> Isolate the variable by subtracting $45 from both sides </step2>
+<formula> $0.25G + $45 - $45 = $65 - $45 </formula>
+<calculation> $0.25G = $20 </calculation>
+<var> overage_cost : $20 </var>
+
+<step3> Divide both sides by $0.25 to solve for G </step3>
+<formula> $0.25G/$0.25 = $25/$0.25 </formula>
+<calculation></calculation>
+<var></var>
+
+<step4> Calculate the final answer </step4>
+<formula> G = $25/$0.25 </formula>
+<calculation> G = 100 GB </calculation>
+<var> GB_over : 100 GB </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 100 </output>

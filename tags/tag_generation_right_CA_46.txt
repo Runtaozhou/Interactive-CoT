@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Daniela goes shopping during a sale. She finds out that the store has <fact1>40 percent off on shoes</fact1> and <fact2>20 percent off on dresses</fact2>. If Daniela buys <fact3>2 pairs of shoes originally priced at $50 a pair</fact3> and <fact4>a dress originally priced at $100</fact4>, how much money does she spend?
+
+## 2. Facts
+
+<fact1>Discount on shoes: 40%</fact1>
+<fact2>Discount on dresses: 20%</fact2>
+<fact3>Number of shoe pairs: 2, price per pair: $50</fact3>
+<fact4>Number of dresses: 1, price: $100</fact4>
+
+## 3. Steps
+
+<step1> Two pairs of shoes at $50 a pair costs $50 x 2 = $100. </step1>
+<formula> original_shoes_cost = price_per_pair × number_of_pairs </formula>
+<calculation> $50 × 2 = $100 </calculation>
+<var> original_shoes_cost: $100 </var>
+
+<step2> The shoes are discounted by 40 percent so she only pays 100 - 40 = 60 percent of the original price. </step2>
+<formula> shoes_discount_percentage = 100% - 40% </formula>
+<calculation> 100 - 40 = 60 </calculation>
+<var> shoes_discount_percentage: 60% </var>
+
+<step3> Therefore the two pairs of shoes cost $100 x 0.60 = $60. </step3>
+<formula> discounted_shoes_cost = original_shoes_cost × shoes_discount_percentage </formula>
+<calculation> $100 × 0.60 = $60 </calculation>
+<var> discounted_shoes_cost: $60 </var>
+
+<step4> The dress is discounted by 20 percent so she only pays 100 - 20 = 80 percent of the original price. </step4>
+<formula> dress_discount_percentage = 100% - 20% </formula>
+<calculation> 100 - 20 = 80 </calculation>
+<var> dress_discount_percentage: 80% </var>
+
+<step5> Therefore the dress costs $100 x 0.80 = $80. </step5>
+<formula> discounted_dress_cost = original_dress_cost × dress_discount_percentage </formula>
+<calculation> $100 × 0.80 = $80 </calculation>
+<var> discounted_dress_cost: $80 </var>
+
+<step6> In total Daniela spends $60 + $80 = $140 for two pairs of shoes and a dress. </step6>
+<formula> total_cost = discounted_shoes_cost + discounted_dress_cost </formula>
+<calculation> $60 + $80 = $140 </calculation>
+<var> total_cost: $140 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output>140</output>

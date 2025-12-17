@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A radio show plays for 3 hours a day. They split their show into talking segments, ad breaks, and songs. Talking segments last 10 minutes each, ad breaks last 5 minutes each and songs are played throughout the rest of the show. If the radio show includes 3 talking segments and 5 ad breaks in today's show, how long, in minutes, does the show play songs?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert the total show time from hours to minutes.
+            <p>We need to convert 3 hours into minutes:</p>
+            <p>3 hours × 60 minutes = 180 minutes</p>
+            <p>So the total show time is 180 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time spent on talking segments.
+            <p>We know there are 3 talking segments, each lasting 10 minutes:</p>
+            <p>3 talking segments × 10 minutes = 30 minutes</p>
+            <p>So the total time spent on talking segments is 30 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent on ad breaks.
+            <p>We know there are 5 ad breaks, each lasting 5 minutes:</p>
+            <p>5 ad breaks × 5 minutes = 25 minutes</p>
+            <p>So the total time spent on ad breaks is 25 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Find the total time used for talking and ads.
+            <p>We add the time spent on talking segments and ad breaks:</p>
+            <p>30 minutes + 25 minutes = 55 minutes</p>
+            <p>So the total time used for non-song content is 55 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the remaining time for songs.
+            <p>We subtract the non-song time from the total show time:</p>
+            <p>180 minutes – 55 minutes = 125 minutes</p>
+            <p>So the time spent playing songs is 125 minutes.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        125
+    </div>
+</body>
+</html>

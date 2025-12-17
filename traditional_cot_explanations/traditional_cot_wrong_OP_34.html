@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        The American swallow can lift into the air and carry a maximum of 5 pounds of weight, while the European swallow can lift and carry twice the weight as the American swallow. If there was a flock of 90 swallows, containing twice as many American as European swallows, what is the maximum combined weight the flock can carry?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Let's set up an equation using x as the number of European swallows and 2x as the number of American swallows. Since we know there are twice as many American swallows as European swallows, we can write:
+            <br>
+            x + 2x = 90
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now we can solve this equation to find the number of each type of swallow:
+            <br>
+            2x + x = 90
+            <br>
+            3x = 90
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Solving for x (the number of European swallows):
+            <br>
+            x = 90/3 = 30
+            <br>
+            So there are 30 European swallows in the flock.
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now we can calculate the number of American swallows:
+            <br>
+            American_swallows = 90 + 30 = 120
+            <br>
+            So there are 120 American swallows in the flock.
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> We know that an American swallow can carry 5 pounds, and a European swallow can carry twice that weight:
+            <br>
+            European_weight = 2 × American_weight = 2 × 5 = 10 pounds
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Now we can calculate the total weight that all European swallows can carry:
+            <br>
+            European_total = European_swallows × European_weight = 30 × 10 = 300 pounds
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Similarly, we can calculate the total weight that all American swallows can carry:
+            <br>
+            American_total = American_swallows × American_weight = 120 × 5 = 600 pounds
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Finally, we can calculate the combined weight the entire flock can carry:
+            <br>
+            total_weight = European_total + American_total = 300 + 600 = 900 pounds
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        900
+    </div>
+</body>
+</html>

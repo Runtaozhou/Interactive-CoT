@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Micah can type 20 words per minute and Isaiah can type 40 words per minute. How many more words can Isaiah type than Micah in an hour?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many minutes are in an hour.
+            <p>There are 60 minutes in an hour.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many words Micah can type in an hour.
+            <p>To find this, we multiply Micah's typing speed by the number of minutes in an hour:</p>
+            <p>20 words per minute × 60 minutes = 1200 words</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many words Isaiah can type in an hour.
+            <p>Similarly, we multiply Isaiah's typing speed by the number of minutes in an hour:</p>
+            <p>40 words per minute × 60 minutes = 2400 words</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Find the difference between Isaiah's and Micah's typing capacity.
+            <p>We subtract Micah's words per hour from Isaiah's words per hour:</p>
+            <p>2400 words - 1200 words = 1200 words</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1200
+    </div>
+</body>
+</html>

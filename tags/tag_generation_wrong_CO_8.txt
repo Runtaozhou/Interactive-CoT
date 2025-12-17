@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+Scott runs <fact1>3 miles every Monday through Wednesday</fact1>. Then he runs <fact2>twice as far he ran on Monday every Thursday and Friday</fact2>. How many miles will he run in a month with <fact3>4 weeks</fact3>?
+
+## 2. Facts
+
+<fact1>Miles run Monday through Wednesday: 3 miles per day</fact1>
+<fact2>Miles run Thursday and Friday: twice Monday's miles</fact2>
+<fact3>Number of weeks in the month: 4 weeks</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many miles Scott runs on Thursday and Friday </step1>
+<formula> Monday's miles × 2 </formula>
+<calculation> 3 × 2 = 6 miles </calculation>
+<var> daily_miles_thu_fri : 6 miles </var>
+
+<step2> Calculate the total miles Scott runs Monday through Wednesday in a week </step2>
+<formula> daily miles × number of days </formula>
+<calculation> 3 × 3 = 9 miles </calculation>
+<var> weekly_miles_mon_wed : 9 miles </var>
+
+<step3> Calculate the total miles Scott runs Thursday to Friday in a week </step3>
+<formula> daily_miles_thu_fri × number of days </formula>
+<calculation> 6 × 3 = 18 miles </calculation>
+<var> weekly_miles_thu_fri : 18 miles </var>
+
+<step4> Calculate the total miles Scott runs in a week </step4>
+<formula> weekly_miles_mon_wed + weekly_miles_thu_fri </formula>
+<calculation> 9 + 18 = 27 miles </calculation>
+<var> weekly_total_miles : 27 miles </var>
+
+<step5> Calculate the total miles Scott runs in a month </step5>
+<formula> weekly_total_miles × number of weeks </formula>
+<calculation> 27 × 4 = 108 miles </calculation>
+<var> monthly_total_miles : 108 miles </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 108 </output>

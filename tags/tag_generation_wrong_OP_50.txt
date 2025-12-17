@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Tim's website got 100 visitors a day for the first 6 days</fact1> and then on the last day of the week it got twice as many visitors as every other day combined. If he gets <fact2>$.01 per visit</fact2> how much did he make that week?
+
+## 2. Facts
+
+<fact1>Visitors per day for first 6 days: 100</fact1>
+<fact2>Income per visit: $0.01</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total number of visitors for the first 6 days </step1>
+<formula> visitors per day × number of days </formula>
+<calculation> 6 * 100 = 600 visits </calculation>
+<var> first_six_days_visitors : 600 visits </var>
+
+<step2> Calculate the number of visitors on the 7th day </step2>
+<formula> first_six_days_visitors × 2 </formula>
+<calculation> 600 * 2 = 1200 visitors </calculation>
+<var> seventh_day_visitors : 1200 visitors </var>
+
+<step3> Calculate the total number of visitors for the week </step3>
+<formula> seventh_day_visitors / first_six_days_visitors </formula>
+<calculation> 1200 / 600 = 2 visitors </calculation>
+<var> total_visitors : 2 visitors </var>
+
+<step4> Calculate the total income for the week </step4>
+<formula> total_visitors × income per visit </formula>
+<calculation> 2 * .01 = $0.02 </calculation>
+<var> total_income : $0.02 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 0.02 </output>

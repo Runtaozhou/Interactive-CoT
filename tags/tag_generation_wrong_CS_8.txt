@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Bill picked 50 apples from the orchard with his wife and two children.</fact1> He sends each of his kids to school with <fact2>3 apples for their two favorite teachers.</fact2> His wife Jill bakes <fact3>two apple pies, using 10 apples per pie.</fact3> How many apples does Bill have left?
+
+## 2. Facts
+
+<fact1>Starting apples: 50</fact1>
+<fact2>Apples per child: 3</fact2>
+<fact3>Apple pies: 2 pies, 10 apples per pie</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many apples Bill gives to his children</step1>
+<formula>apples per child × number of children</formula>
+<calculation>3 * 2 = 6 apples</calculation>
+<var>apples_for_children: 6 apples</var>
+
+<step2>Calculate how many apples Jill uses for the pies</step2>
+<formula>apples per pie × number of pies</formula>
+<calculation>10 * 2 = 20 apples</calculation>
+<var>apples_for_pies: 20 apples</var>
+
+<step3>Calculate the total number of apples used</step3>
+<formula>apples_for_pies + apples_for_children</formula>
+<calculation>20 + 6 = 26 apples</calculation>
+<var>total_apples_used: 26 apples</var>
+
+<step4>Calculate how many apples Bill has left</step4>
+<formula>starting apples - apples_for_pies</formula>
+<calculation>50 - 20 = 30 apples</calculation>
+<var>apples_remaining: 30 apples</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>30</output>

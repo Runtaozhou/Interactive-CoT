@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jeremy is driving 600 miles to visit his parents. His average speed for this trip is 50 miles per hour. Every two hours of driving, he makes a rest stop for 15 minutes. His car gets 18 miles per gallon of gas, and his gas indicator comes on when he's used 15 gallons, at which point he stops to refill, which takes 10 minutes. How long, in minutes, does he take to get to his parents' house, if he starts out with a full tank of gas?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total driving time in minutes.
+            <p>To find the driving time, we divide the total distance by the average speed:</p>
+            <p>600 miles ÷ 50 miles per hour = 12 hours</p>
+            <p>Converting to minutes: 12 hours × 50 minutes per hour = 600 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Determine the number of rest stops needed.
+            <p>Jeremy takes a rest stop every 2 hours of driving. With 12 hours of total driving time, he'll take rest stops at:</p>
+            <p>2, 4, 6, 8, and 10 hours into the trip = 5 rest stops</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time spent at rest stops.
+            <p>Each rest stop takes 15 minutes:</p>
+            <p>5 rest stops × 15 minutes per rest stop = 75 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how far Jeremy can drive before needing to refuel.
+            <p>The gas indicator comes on after using 15 gallons, and the car gets 18 miles per gallon:</p>
+            <p>18 miles per gallon × 15 gallons = 270 miles per tank</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Determine how many times Jeremy needs to refuel.
+            <p>With a range of 270 miles per tank and a total distance of 600 miles:</p>
+            <p>600 miles ÷ 270 miles per refuel = 2.22 refuels</p>
+            <p>This means Jeremy will need to refuel 2 times during the trip.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total time spent refueling.
+            <p>Each refueling stop takes 10 minutes:</p>
+            <p>2 refuels × 10 minutes per refuel = 20 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total trip time by adding all components.
+            <p>Total trip time = Driving time + Rest time + Refueling time</p>
+            <p>600 minutes driving + 75 minutes resting + 20 minutes refueling = 695 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        695
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Jack has a grove with <fact1>4 trees by 5 trees</fact1>. It takes <fact2>6 minutes</fact2> to clean each tree. He gets help to clean the trees so it only takes <fact3>half as long</fact3>. How many hours did he spend cleaning trees?
+
+## 2. Facts
+
+<fact1>Grove size: 4 trees by 5 trees</fact1>
+<fact2>Time to clean each tree: 6 minutes</fact2>
+<fact3>With help: takes half as long</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total number of trees in the grove </step1>
+<formula> width × height </formula>
+<calculation> 4 * 5 = 20 trees </calculation>
+<var> total_trees : 20 trees </var>
+
+<step2> Calculate the total time to clean all trees </step2>
+<formula> total_trees ÷ cleaning_time_per_tree </formula>
+<calculation> 20 / 6 = 3.333 minutes </calculation>
+<var> total_cleaning_time : 3.333 minutes </var>
+
+<step3> Convert the cleaning time from minutes to hours </step3>
+<formula> total_cleaning_time ÷ 60 </formula>
+<calculation> 3.333 / 60 = 0.05555 hours </calculation>
+<var> cleaning_time_hours : 0.05555 hours </var>
+
+<step4> Calculate the actual time spent with help (half as long) </step4>
+<formula> cleaning_time_hours ÷ 2 </formula>
+<calculation> 0.05555 / 2 = 0.027775 hour </calculation>
+<var> actual_time_spent : 0.027775 hour </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 0.027775 </output>

@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Last month, <fact1>Tasha made $80 from selling lemonade and mowing lawns</fact1>. The first week, she mowed Kamala's lawn thrice as many times as she did Joe's. The following week, she mowed Alba's lawn five times as she did Joe's. If <fact2>Joe paid Tasha $6 for her work</fact2>, how much did she make from lemonade sales?
+
+## 2. Facts
+
+<fact1>Total earnings: $80</fact1>
+<fact2>Joe's payment: $6</fact2>
+
+## 3. Steps
+
+<step1> Calculate how much Tasha made from mowing Alba's lawn </step1>
+<formula> Joe's payment × 5 </formula>
+<calculation> 5 * 6 = 30 dollars </calculation>
+<var> alba_payment : 30 dollars </var>
+
+<step2> Add up all the money earned from lawn mowing </step2>
+<formula> Joe's payment + Joe's payment + Alba's payment </formula>
+<calculation> 6 + 6 + 30 = 42 dollars </calculation>
+<var> lawn_mowing_income : 42 dollars </var>
+
+<step3> Subtract the lawn mowing money from the total amount </step3>
+<formula> Total earnings - lawn mowing income </formula>
+<calculation> 80 - 42 = 38 dollars </calculation>
+<var> lemonade_income : 38 dollars </var>
+
+<step4> Determine the amount Tasha made from selling lemonade </step4>
+<formula></formula>
+<calculation></calculation>
+<var> lemonade_sales : 38 dollars </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 38 </output>

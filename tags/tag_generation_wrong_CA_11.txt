@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+A school is buying virus protection software to cover <fact1>50 devices</fact1>. One software package costs <fact2>$40 and covers up to 5 devices</fact2>. The other software package costs <fact3>$60 and covers up to 10 devices</fact3>. How much money, in dollars, can the school save by buying the $60 software package instead of the $40 software package?
+
+## 2. Facts
+
+<fact1>Total devices: 50</fact1>
+<fact2>First package: $40 for 5 devices</fact2>
+<fact3>Second package: $60 for 10 devices</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many $40 packages are needed </step1>
+<formula> total_devices ÷ devices_per_package </formula>
+<calculation> 50 ÷ 5 = 10 </calculation>
+<var> packages_needed_40 : 10 </var>
+
+<step2> Calculate the total cost for the $40 packages </step2>
+<formula> packages_needed_40 × cost_per_package </formula>
+<calculation> 10 × $40 = $400 </calculation>
+<var> total_cost_40 : $400 </var>
+
+<step3> Calculate how many $60 packages are needed </step3>
+<formula> total_devices ÷ devices_per_package </formula>
+<calculation> 50 ÷ 10 = 5 </calculation>
+<var> packages_needed_60 : 5 </var>
+
+<step4> Calculate the total cost for the $60 packages </step4>
+<formula> packages_needed_60 × cost_per_package </formula>
+<calculation> 5 × $60 = $300 </calculation>
+<var> total_cost_60 : $300 </var>
+
+<step5> Calculate the savings by using the $60 packages </step5>
+<formula> total_cost_40 - total_cost_60 </formula>
+<calculation> $400 - $100 = $300 </calculation>
+<var> savings : $300 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 300 </output>

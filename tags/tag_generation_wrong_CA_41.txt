@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+On a highway, the total number of vehicles passing is <fact1>300</fact1>. If the number of cars on the highway is <fact2>twice the number of trucks</fact2>, find out the total number of trucks on the highway?
+
+## 2. Facts
+
+<fact1>Total vehicles: 300</fact1>
+<fact2>Number of cars: twice the number of trucks</fact2>
+
+## 3. Steps
+
+<step1> Define the number of trucks as a variable and express cars in terms of trucks </step1>
+<formula> cars = 2 × trucks </formula>
+<calculation></calculation>
+<var> t : number of trucks </var>
+<var> cars : 2t </var>
+
+<step2> Set up an equation for the total number of vehicles </step2>
+<formula> cars + trucks = total vehicles </formula>
+<calculation> 2t + t = 300 </calculation>
+<var> total_vehicles : 300 </var>
+
+<step3> Simplify the equation to solve for the number of trucks </step3>
+<formula> 2t + t = 300 </formula>
+<calculation> 3t = 300 </calculation>
+<var> simplified_equation : 3t = 300 </var>
+
+<step4> Solve for the number of trucks </step4>
+<formula> t = 300/3 </formula>
+<calculation> t = 300/3 </calculation>
+<var> t : 300/3 </var>
+
+<step5> Calculate the final answer </step5>
+<formula> t = 300/3 </formula>
+<calculation> t = 50 </calculation>
+<var> t : 50 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 50 </output>

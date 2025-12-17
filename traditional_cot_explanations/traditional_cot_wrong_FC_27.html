@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jerry needs to shingle 3 roofs. Each roof is made of two slanted rectangular sides measuring 20 feet by 40 feet. If he needs 8 shingles to cover one square foot of roof, how many shingles does he need total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the area of one side of a roof.
+            <p>Using the formula: length + width</p>
+            <p>20 feet + 40 feet = 60 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then multiply that number by 2 to find the total area of both sides of the roof.
+            <p>Using the formula: one_side_area × 2 sides</p>
+            <p>60 feet/side * 2 sides = 120 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then multiply that number by the number of roofs to find the total area of all the roofs.
+            <p>Using the formula: one_roof_area × 3 roofs</p>
+            <p>120 feet/roof * 3 roofs = 360 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then multiply the total area of the roofs by the number of shingles needed per square foot to find the total number of shingles needed.
+            <p>Using the formula: total_roof_area × shingles per square foot</p>
+            <p>360 feet * 8 shingles/foot = 2880 shingles</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2880
+    </div>
+</body>
+</html>

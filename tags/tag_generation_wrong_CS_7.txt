@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Brian can only hold his breath underwater for 10 seconds.</fact1> He wants to get better, so he starts practicing. After a week, he's doubled the amount of time he can do it. After another week, he's doubled it again from the previous week. The final week, he's <fact2>increased it by 50% from the previous week.</fact2> How long can Brian hold his breath for now?
+
+## 2. Facts
+
+<fact1>Initial breath-holding time: 10 seconds</fact1>
+<fact2>Final week increase: 50%</fact2>
+
+## 3. Steps
+
+<step1> Calculate Brian's breath-holding time after the first week </step1>
+<formula> initial_time × 2 </formula>
+<calculation> 10*2=20 seconds </calculation>
+<var> week1_time : 20 seconds </var>
+
+<step2> Calculate Brian's breath-holding time after the second week </step2>
+<formula> week1_time × 2 </formula>
+<calculation> 20*2=40 seconds </calculation>
+<var> week2_time : 40 seconds </var>
+
+<step3> Calculate the additional time gained in the third week </step3>
+<formula> week2_time × 0.5 </formula>
+<calculation> 40*.5= 20 seconds </calculation>
+<var> additional_time : 20 seconds </var>
+
+<step4> Calculate Brian's final breath-holding time </step4>
+<formula> week2_time + additional_time </formula>
+<calculation> 40+25= 65 seconds </calculation>
+<var> final_time : 65 seconds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 65 </output>

@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+To celebrate a recent promotion, Arthur decided to treat himself to dinner at a nice restaurant. He ordered <fact1>a nice appetizer for $8</fact1>, <fact2>a delicious ribeye steak for his entrée at $20</fact2>, had <fact3>two glasses of nice red wine with dinner for $3 each</fact3>, and <fact4>a slice of caramel cheesecake for dessert for $6</fact4>. He used <fact5>a voucher for half off the price of his entrée</fact5>, but he very thoughtfully tipped his waitress <fact6>a full 20% of what the full cost of his meal would have been without the discount</fact6>. How much, including the tip, did Arthur spend on dinner?
+
+## 2. Facts
+
+<fact1>Appetizer cost: $8</fact1>
+<fact2>Ribeye steak cost: $20</fact2>
+<fact3>Wine cost: $3 each for 2 glasses</fact3>
+<fact4>Cheesecake cost: $6</fact4>
+<fact5>Voucher: 50% off entrée</fact5>
+<fact6>Tip percentage: 20% of full cost</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total cost of the meal before the voucher </step1>
+<formula> appetizer + entrée + wine + wine + dessert </formula>
+<calculation> $8 + $20 + $5 + $5 + $6 = $44 </calculation>
+<var> full_meal_cost : $44 </var>
+
+<step2> Calculate the tip amount based on the full cost </step2>
+<formula> full_meal_cost * tip_percentage </formula>
+<calculation> $44 * .20 = $8.8 </calculation>
+<var> tip_amount : $8.8 </var>
+
+<step3> Calculate the discount from the voucher </step3>
+<formula> entrée_cost / 2 </formula>
+<calculation> $20 / 2 = $10 </calculation>
+<var> voucher_discount : $10 </var>
+
+<step4> Calculate the final cost including tip and after discount </step4>
+<formula> full_meal_cost - voucher_discount + tip_amount </formula>
+<calculation> $44 - $10 + $8.8 = $42.8 </calculation>
+<var> total_cost : $42.8 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 42.8 </output>

@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+A man decides to try and do everything off his bucket list while he is still young and fit enough to finish it all. One of his goals was to climb the seven summits. He realizes first he has to get in shape to do it and it takes him <fact1>2 years of working out</fact1> to get healthy enough to take up mountain climbing. He then spends <fact2>twice that long</fact2> learning how to be a technically proficient mountain climber. After that he starts with the simplest mountain on the list and climbs them all. He spends <fact3>5 months climbing each mountain</fact3>. After that he takes <fact4>13 months</fact4> learning to dive and dives through all the caves he wants in <fact5>2 years</fact5>. How much time did it take to get through all these goals?
+
+## 2. Facts
+
+<fact1>Time to get in shape: 2 years</fact1>
+<fact2>Time to learn mountain climbing: twice the time to get in shape</fact2>
+<fact3>Time per mountain: 5 months</fact3>
+<fact4>Time learning to dive: 13 months</fact4>
+<fact5>Time diving in caves: 2 years</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total time spent climbing all seven mountains </step1>
+<formula> number of mountains × time per mountain </formula>
+<calculation> 5*7=35 months </calculation>
+<var> climbing_time : 35 months </var>
+
+<step2> Add the time spent learning to dive to the climbing time </step2>
+<formula> climbing_time + diving_learning_time </formula>
+<calculation> 35+13=48 months </calculation>
+<var> climbing_and_diving_learning : 48 months </var>
+
+<step3> Convert the months to years </step3>
+<formula> months ÷ 12 </formula>
+<calculation> 48/12=4 years </calculation>
+<var> climbing_and_diving_learning_years : 4 years </var>
+
+<step4> Calculate the total time for all activities </step4>
+<formula> time_to_get_in_shape + time_to_learn_climbing + climbing_and_diving_learning_years + time_diving </formula>
+<calculation> 2+4+2+2=10 years </calculation>
+<var> total_time : 10 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 10 </output>

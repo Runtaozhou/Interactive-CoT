@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        There are 50 marbles in a box which has a mixture of white, red and blue marbles. There were originally 20 white marbles and an equal number of red and blue marbles. Jack removes a number of marbles equal to double the difference between the number of white marbles and the number of blue marbles. How many marbles are left in the box?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of red and blue marbles combined.
+            <p>Total marbles - White marbles = Red and blue marbles combined</p>
+            <p>50 - 20 = 30 marbles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the number of each color (red and blue) since they are equal.
+            <p>Red and blue marbles combined ÷ 2 = Number of each color</p>
+            <p>30 ÷ 2 = 15 marbles of each color</p>
+            <p>So there are 15 blue marbles and 15 red marbles.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the difference between white and blue marbles.
+            <p>White marbles - Blue marbles = Difference</p>
+            <p>20 - 15 = 5 marbles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Double the difference to find how many marbles Jack removes.
+            <p>Marble difference × 2 = Marbles removed</p>
+            <p>5 × 2 = 16 marbles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many marbles remain in the box.
+            <p>Total marbles - Marbles removed = Marbles remaining</p>
+            <p>50 - 16 = 34 marbles</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        34
+    </div>
+</body>
+</html>

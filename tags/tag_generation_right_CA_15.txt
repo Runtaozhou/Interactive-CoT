@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Maddox and Theo both bought 3 Polaroid Cameras</fact1>, each sold at <fact2>$20 per camera</fact2> from Amazon, and decided to sell them on eBay. Maddox sold his cameras at <fact3>$28 each</fact3>, while Theo sold his cameras at <fact4>$23 each</fact4>. How much more profit did Maddox get from the sale of his cameras than Theo?
+
+## 2. Facts
+
+<fact1>Number of cameras bought by each person: 3</fact1>
+<fact2>Cost per camera: $20</fact2>
+<fact3>Maddox's selling price per camera: $28</fact3>
+<fact4>Theo's selling price per camera: $23</fact4>
+
+## 3. Steps
+
+<step1>The total cost of buying 3 cameras from Amazon for both Maddox and Theo was 3*$20=$60</step1>
+<formula>3 × $20</formula>
+<calculation>3 × $20 = $60</calculation>
+<var>total_cost_each: $60</var>
+
+<step2>Maddox sold his cameras at $28 each, for a total of $28*3=$84</step2>
+<formula>$28 × 3</formula>
+<calculation>$28 × 3 = $84</calculation>
+<var>maddox_revenue: $84</var>
+
+<step3>Maddox made a profit of $84-$60=$24 from the sale of his cameras.</step3>
+<formula>maddox_revenue - total_cost_each</formula>
+<calculation>$84 - $60 = $24</calculation>
+<var>maddox_profit: $24</var>
+
+<step4>Theo sold his cameras on eBay for $23*3=$69</step4>
+<formula>$23 × 3</formula>
+<calculation>$23 × 3 = $69</calculation>
+<var>theo_revenue: $69</var>
+
+<step5>Theo made a profit of $69-$60=$9</step5>
+<formula>theo_revenue - total_cost_each</formula>
+<calculation>$69 - $60 = $9</calculation>
+<var>theo_profit: $9</var>
+
+<step6>Maddox made $24-$9=$15 more profit than Theo from the sale of his cameras.</step6>
+<formula>maddox_profit - theo_profit</formula>
+<calculation>$24 - $9 = $15</calculation>
+<var>profit_difference: $15</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>15</output>

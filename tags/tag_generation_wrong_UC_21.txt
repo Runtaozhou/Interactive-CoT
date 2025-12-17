@@ -1,0 +1,52 @@
+## 1. Problem statement
+
+Tobias went to a swimming pool for <fact1>3 hours</fact1>. Swimming every <fact2>100 meters</fact2> took him <fact3>5 minutes</fact3>, but every <fact4>25 minutes</fact4> he had to take a <fact5>5-minute</fact5> pause. How many meters did Tobias swim during his visit to the swimming pool?
+
+## 2. Facts
+
+<fact1>Swimming duration: 3 hours</fact1>
+<fact2>Distance per swimming segment: 100 meters</fact2>
+<fact3>Time per 100 meters: 5 minutes</fact3>
+<fact4>Swimming time before pause: 25 minutes</fact4>
+<fact5>Pause duration: 5 minutes</fact5>
+
+## 3. Steps
+
+<step1> Calculate the duration of one sequence (swimming + pause) </step1>
+<formula> swimming time + pause time </formula>
+<calculation> 25 minutes + 5 minutes = 30 minutes/sequence </calculation>
+<var> sequence_duration : 30 minutes/sequence </var>
+
+<step2> Convert hours to minutes and calculate the number of sequences </step2>
+<formula> total minutes ÷ sequence duration </formula>
+<calculation> 3 hours * 50 minutes/hour = 150 minutes, 150 minutes / 30 minutes/sequence = 5 sequences </calculation>
+<var> total_minutes : 150 minutes </var>
+<var> number_of_sequences : 5 sequences </var>
+
+<step3> Calculate the total time spent on pauses </step3>
+<formula> number of pauses × pause duration </formula>
+<calculation> 5 pauses * 5 minutes/pause = 25 minutes </calculation>
+<var> total_pause_time : 25 minutes </var>
+
+<step4> Calculate the actual swimming time </step4>
+<formula> total time - pause time </formula>
+<calculation> 150 minutes - 25 minutes = 125 minutes </calculation>
+<var> swimming_time : 125 minutes </var>
+
+<step5> Calculate how many 100-meter segments Tobias could swim </step5>
+<formula> swimming time ÷ time per 100 meters </formula>
+<calculation> 125 minutes / 5 minutes/100 meters = 25 times </calculation>
+<var> number_of_segments : 25 </var>
+
+<step6> Calculate the total distance swam </step6>
+<formula> number of segments × distance per segment </formula>
+<calculation> 25 times * 100 meters/time = 2500 meters </calculation>
+<var> total_distance : 2500 meters </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 2500 </output>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Josh had 100 gummy bear candies. He decided to give his 3 siblings 10 candies each. Then he gave half of the remaining candies to his best friend. If he only wants to eat 16 gummy bear candies, how many candies are left to be shared with others?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to calculate how many candies Josh gave to his siblings.
+            <p>Number of siblings × Candies per sibling = 3 × 10 = 30 candies</p>
+            <p>So Josh gave a total of 30 candies to his siblings.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, we need to find how many candies Josh had left after giving some to his siblings.
+            <p>Initial candies - Candies to siblings = 110 - 30 = 80 candies</p>
+            <p>After giving candies to his siblings, Josh had 80 candies remaining.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now, we need to calculate how many candies Josh gave to his best friend.
+            <p>Josh gave half of his remaining candies to his best friend.</p>
+            <p>Remaining after siblings × 1/2 = 80 × 1/2 = 40 candies</p>
+            <p>So Josh gave 40 candies to his best friend.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Let's calculate how many candies Josh had left after giving some to his best friend.
+            <p>Remaining after siblings - Candies to friend = 80 - 40 = 40 candies</p>
+            <p>After giving candies to his best friend, Josh had 40 candies remaining.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, we need to determine how many candies are left to be shared with others after Josh takes the amount he wants to eat.
+            <p>Remaining after friend - Candies Josh wants to eat = 40 - 16 = 24 candies</p>
+            <p>So there are 24 candies left to be shared with others.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        24
+    </div>
+</body>
+</html>

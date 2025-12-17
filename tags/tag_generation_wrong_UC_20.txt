@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Abel leaves for a vacation destination <fact1>1000 miles away</fact1> driving <fact2>50 miles per hour</fact2>. <fact3>An hour later</fact3> Alice leaves from the same point for the same destination, traveling <fact4>40 miles per hour</fact4>. How much earlier does Abel reach the destination in minutes?
+
+## 2. Facts
+
+<fact1>Distance to destination: 1000 miles</fact1>
+<fact2>Abel's speed: 50 miles per hour</fact2>
+<fact3>Alice's delay: 1 hour</fact3>
+<fact4>Alice's speed: 40 miles per hour</fact4>
+
+## 3. Steps
+
+<step1> Calculate how long it takes Abel to reach the destination </step1>
+<formula> distance ÷ speed </formula>
+<calculation> 1000 ÷ 50 = 20 hours </calculation>
+<var> abel_time : 20 hours </var>
+
+<step2> Calculate how long it takes Alice to reach the destination </step2>
+<formula> distance ÷ speed </formula>
+<calculation> 1000 ÷ 40 = 25 hours </calculation>
+<var> alice_time : 25 hours </var>
+
+<step3> Convert Abel's travel time to minutes </step3>
+<formula> hours × minutes per hour </formula>
+<calculation> 20 × 50 = 1000 minutes </calculation>
+<var> abel_minutes : 1000 minutes </var>
+
+<step4> Convert Alice's travel time to minutes </step4>
+<formula> hours × minutes per hour </formula>
+<calculation> 25 × 60 = 1500 minutes </calculation>
+<var> alice_minutes : 1500 minutes </var>
+
+<step5> Calculate the time difference if they left simultaneously </step5>
+<formula> alice_minutes - abel_minutes </formula>
+<calculation> 1500 - 1000 = 500 minutes </calculation>
+<var> time_diff_simultaneous : 500 minutes </var>
+
+<step6> Add Abel's head start to find the actual time difference </step6>
+<formula> time_diff_simultaneous + head_start_minutes </formula>
+<calculation> 500 + 60 = 560 minutes </calculation>
+<var> actual_time_diff : 560 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 560 </output>

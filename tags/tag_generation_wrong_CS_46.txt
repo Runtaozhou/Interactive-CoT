@@ -1,0 +1,53 @@
+## 1. Problem statement
+
+<fact1>Tom buys 20 shares of a stock that costs $3 each.</fact1> He sells <fact2>10 of those shares for $4 each.</fact2> The rest of the shares end up doubling in value. How much profit does he make?
+
+## 2. Facts
+
+<fact1>Shares bought: 20 shares at $3 each</fact1>
+<fact2>Shares sold: 10 shares at $4 each</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total cost of buying the shares </step1>
+<formula> number of shares × price per share </formula>
+<calculation> 3 * 20 = $60 </calculation>
+<var> total_cost : $60 </var>
+
+<step2> Calculate the revenue from selling the first batch of shares </step2>
+<formula> number of shares sold × selling price </formula>
+<calculation> 10 * 4 = $40 </calculation>
+<var> first_sale_revenue : $40 </var>
+
+<step3> Calculate how many shares are left </step3>
+<formula> total shares - shares sold </formula>
+<calculation> 20 - 10 = 10 </calculation>
+<var> remaining_shares : 10 </var>
+
+<step4> Calculate the new price of the remaining shares after doubling </step4>
+<formula> original price × 2 </formula>
+<calculation> 3 * 2 = $6 </calculation>
+<var> doubled_price : $6 </var>
+
+<step5> Calculate the revenue from selling the remaining shares </step5>
+<formula> remaining shares × doubled price </formula>
+<calculation> 10 * 6 = $60 </calculation>
+<var> second_sale_revenue : $60 </var>
+
+<step6> Calculate the total revenue from both sales </step6>
+<formula> first sale revenue + second sale revenue </formula>
+<calculation> 60 + 45 = $105 </calculation>
+<var> total_revenue : $105 </var>
+
+<step7> Calculate the profit by subtracting the cost from the revenue </step7>
+<formula> total revenue - total cost </formula>
+<calculation> 105 - 60 = $45 </calculation>
+<var> profit : $45 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 6 </wrongstep>
+
+## 5. Output
+
+<output> 45 </output>

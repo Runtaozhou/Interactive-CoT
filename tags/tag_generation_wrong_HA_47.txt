@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+Micah bought envelopes to send, and depending on the weight of the envelope he will need more stamps. If an envelope weighs more than <fact1>5 pounds</fact1>, he will need <fact2>5 stamps</fact2>. If it weighs less than that, it will only need <fact3>2 stamps</fact3>. If he bought <fact4>52 stamps</fact4> with <fact5>6 envelopes</fact5> that weigh less than 5 pounds, how many envelopes in total did Micah need to buy?
+
+## 2. Facts
+
+<fact1>Weight threshold: 5 pounds</fact1>
+<fact2>Stamps needed for heavy envelopes: 5 stamps</fact2>
+<fact3>Stamps needed for light envelopes: 2 stamps</fact3>
+<fact4>Total stamps bought: 52 stamps</fact4>
+<fact5>Number of light envelopes: 6 envelopes</fact5>
+
+## 3. Steps
+
+<step1> Calculate the number of stamps needed for the light envelopes </step1>
+<formula> light_envelopes × stamps_per_light_envelope </formula>
+<calculation> 6 * 2 = 12 stamps </calculation>
+<var> light_envelope_stamps : 12 stamps </var>
+
+<step2> Find the remaining stamps after accounting for light envelopes </step2>
+<formula> total_stamps - light_envelope_stamps </formula>
+<calculation> 52 - 12 = 40 stamps </calculation>
+<var> remaining_stamps : 40 stamps </var>
+
+<step3> Account for international envelope stamps and calculate heavy envelopes </step3>
+<formula> (remaining_stamps - international_stamps) ÷ stamps_per_heavy_envelope </formula>
+<calculation> (40 - 10) / 5 = 6 envelopes </calculation>
+<var> international_stamps : 10 stamps </var>
+<var> heavy_envelopes : 6 envelopes </var>
+
+<step4> Calculate the total number of envelopes </step4>
+<formula> light_envelopes + heavy_envelopes </formula>
+<calculation> 6 + 6 = 12 envelopes </calculation>
+<var> total_envelopes : 12 envelopes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 12 </output>

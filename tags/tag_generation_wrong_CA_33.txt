@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Yoque borrowed money from her sister. She promised to pay it back in <fact1>11 months</fact1> including an additional <fact2>10% of the money she borrowed</fact2>. If she pays <fact3>$15 per month</fact3>, how much money did she borrow?
+
+## 2. Facts
+
+<fact1>Repayment period: 11 months</fact1>
+<fact2>Additional payment: 10% of borrowed amount</fact2>
+<fact3>Monthly payment: $15</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total amount Yoque will pay over 11 months </step1>
+<formula> monthly payment × number of months </formula>
+<calculation> $15 × 11 = $165 </calculation>
+<var> total_payment : $165 </var>
+
+<step2> Determine what percentage of the borrowed amount the total payment represents </step2>
+<formula> original percentage + additional percentage </formula>
+<calculation> 100% + 10% = 110% </calculation>
+<var> repayment_percentage : 110% </var>
+
+<step3> Calculate the value of 1% of the borrowed amount </step3>
+<formula> total payment ÷ repayment percentage </formula>
+<calculation> $165 ÷ 110 = $1.50 </calculation>
+<var> one_percent : $1.50 </var>
+
+<step4> Calculate the original borrowed amount </step4>
+<formula> one percent × 100 </formula>
+<calculation> $1.50 × 100 = $148 </calculation>
+<var> borrowed_amount : $148 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 148 </output>

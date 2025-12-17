@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Three cats sat on a fence, meowing at the moon. The first cat meowed 3 times per minute. The second cat meowed twice as frequently as the first cat. And the third cat meowed at one-third the frequency of the second cat. What is the combined total number of meows the three cats make in 5 minutes?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how frequently the second cat meows per minute.
+            <p>The first cat meows 3 times per minute, and the second cat meows twice as frequently.</p>
+            <p>Second cat's meow rate = 3 × 2 = 6 meows per minute</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how frequently the third cat meows per minute.
+            <p>The third cat meows at one-third the frequency of the second cat.</p>
+            <p>Third cat's meow rate = 6 ÷ 3 = 2 meows per minute</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the combined meow rate per minute for all three cats.
+            <p>We add up the meow rates of all three cats.</p>
+            <p>Combined meow rate = 3 + 6 + 2 = 11 meows per minute</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of meows in 5 minutes.
+            <p>We multiply the combined rate by the total time.</p>
+            <p>Total meows = 5 × 12 = 60 meows</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        60
+    </div>
+</body>
+</html>

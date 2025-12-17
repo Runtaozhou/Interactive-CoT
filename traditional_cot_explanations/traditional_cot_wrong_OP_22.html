@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A store decides to shut down and sell all of its inventory. They have 2000 different items which would normally retail for $50. They are offering an 80% discount and manage to sell 90% of the items. They owed $15000 to their creditors. How much money do they have left after the sale?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of items sold.
+            <p>We need to find how many items were sold by multiplying the total number of items by the percentage sold:</p>
+            <p>Total items × Percentage sold = 2000 × 0.9 = 1800 items</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the discount amount per item.
+            <p>We need to find the discount amount by dividing the normal price by the discount percentage:</p>
+            <p>Normal price / Discount percentage = $50 / 0.8 = $62.50</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the selling price per item after discount.
+            <p>We need to find the selling price after discount by subtracting the discount amount from the normal price:</p>
+            <p>Normal price - Discount amount = $50 - $62.50 = $-12.50</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total revenue from the sale.
+            <p>We need to find the total revenue by multiplying the number of items sold by the selling price:</p>
+            <p>Items sold × Selling price = 1800 × $-12.50 = $-22,500</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the money left after paying creditors.
+            <p>We need to find how much money is left by subtracting the money owed to creditors from the total revenue:</p>
+            <p>Total revenue - Money owed = $-22,500 - $15,000 = $-37,500</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        -37500
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+## 1. Problem statement
+
+<fact1>Dean's mother gave him $28 to go to the toy store.</fact1> Dean bought <fact2>6 toy cars</fact2> and <fact3>5 teddy bears</fact3>. Each <fact4>toy car cost $2</fact4> and each <fact5>teddy bear cost $1</fact5>. His mother then feels generous and decides to <fact6>give him an extra $10</fact6>. How much money does Dean have left?
+
+## 2. Facts
+
+<fact1>Initial money: $28</fact1>
+<fact2>Number of toy cars: 6</fact2>
+<fact3>Number of teddy bears: 5</fact3>
+<fact4>Cost per toy car: $2</fact4>
+<fact5>Cost per teddy bear: $1</fact5>
+<fact6>Extra money: $10</fact6>
+
+## 3. Steps
+
+<step1>Calculate the cost of the teddy bears</step1>
+<formula>Number of teddy bears × Cost per teddy bear</formula>
+<calculation>5 bears × $1/bear = $5</calculation>
+<var>teddy_bear_cost: $5</var>
+
+<step2>Calculate the total money Dean has</step2>
+<formula>Initial money + Extra money</formula>
+<calculation>$28 + $10 = $38</calculation>
+<var>total_money: $38</var>
+
+<step3>Calculate how much money Dean has left</step3>
+<formula>Total money - Teddy bear cost</formula>
+<calculation>$38 - $5 = $33</calculation>
+<var>money_left: $33</var>
+
+## 4. Wrongsteps
+
+<wrongstep>1</wrongstep>
+
+## 5. Output
+
+<output>33</output>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A group of science students went on a field trip. They took 9 vans and 10 buses. There were 8 people in each van and 27 people on each bus. How many people went on the field trip?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of people in the vans.
+            <p>We need to multiply the number of vans by the number of people in each van:</p>
+            <p>9 vans × 8 people per van = 72 people</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total number of people on the buses.
+            <p>We need to multiply the number of buses by the number of people in each bus:</p>
+            <p>10 buses × 27 people per bus = 270 people</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the guide in each bus to the total number of people on buses.
+            <p>We need to add the number of buses to the total people on buses:</p>
+            <p>270 people + 10 guides = 280 people</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total number of people on the field trip.
+            <p>We need to add the people in vans and the total people on buses:</p>
+            <p>72 people + 280 people = 352 people</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        352
+    </div>
+</body>
+</html>

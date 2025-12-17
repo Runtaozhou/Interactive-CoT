@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+On Thursday, Joe caught <fact1>3 pounds of crawfish</fact1>. He caught <fact2>4 times that amount on Friday</fact2> and <fact3>half the amount of his Friday's catch on Saturday</fact3>. If <fact4>1 serving of crawfish is 3 pounds</fact4>, how many servings does he have?
+
+## 2. Facts
+
+<fact1>Thursday's catch: 3 pounds</fact1>
+<fact2>Friday's catch: 4 times Thursday's catch</fact2>
+<fact3>Saturday's catch: half of Friday's catch</fact3>
+<fact4>Serving size: 3 pounds</fact4>
+
+## 3. Steps
+
+<step1> Calculate how much crawfish Joe caught on Friday </step1>
+<formula> Thursday's catch × 4 </formula>
+<calculation> 3*4 = 12 pounds </calculation>
+<var> friday_catch : 12 pounds </var>
+
+<step2> Calculate how much crawfish Joe caught on Saturday </step2>
+<formula> Friday's catch × 2 </formula>
+<calculation> 12*2 = 24 pounds </calculation>
+<var> saturday_catch : 24 pounds </var>
+
+<step3> Calculate the total amount of crawfish Joe caught over the three days </step3>
+<formula> Thursday's catch + Friday's catch + Saturday's catch </formula>
+<calculation> 3+12+24 = 39 pounds </calculation>
+<var> total_catch : 39 pounds </var>
+
+<step4> Calculate how many servings Joe has </step4>
+<formula> Total catch ÷ Serving size </formula>
+<calculation> 39/3 = 13 servings </calculation>
+<var> total_servings : 13 servings </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 13 </output>

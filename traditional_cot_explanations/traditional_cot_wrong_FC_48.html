@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jill is going to resod her front yard. The plot of land in front of her house is 200 feet wide by 50 feet. Her house has a sidewalk that is 3 feet wide and 50 feet long. There are also four flower beds: two right in front of the house that are 4 feet deep by 25 feet long, one that is 10 feet by 12 feet, and a fourth that is 7 feet by 8 feet. How many square feet of sod will she need to cover her yard, minus the sidewalk and flower beds?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total area of the front yard.
+            <p>We need to multiply the width by the length of the yard:</p>
+            <p>200 feet × 50 feet = 10,000 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the area of the sidewalk.
+            <p>The sidewalk dimensions are 3 feet wide by 50 feet long:</p>
+            <p>3 feet × 50 feet = 150 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the area of the two flower beds in front of the house.
+            <p>Each flower bed is 4 feet deep by 25 feet long:</p>
+            <p>Area of one flower bed: 4 feet × 25 feet = 100 square feet</p>
+            <p>Total area of two flower beds: 100 square feet × 2 = 200 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the perimeter of the third flower bed.
+            <p>The third flower bed is 10 feet by 12 feet:</p>
+            <p>Perimeter = 2 × (length + width) = 2 × (10 feet + 12 feet) = 2 × 22 feet = 44 feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the area of the fourth flower bed.
+            <p>The fourth flower bed is 7 feet by 8 feet:</p>
+            <p>7 feet × 8 feet = 56 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total area to subtract from the yard.
+            <p>We need to add the areas of the sidewalk, the front flower beds, the perimeter of the third flower bed, and the area of the fourth flower bed:</p>
+            <p>150 square feet + 200 square feet + 44 square feet + 56 square feet = 450 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the area that needs sod.
+            <p>We subtract the total area to be excluded from the total yard area:</p>
+            <p>10,000 square feet - 450 square feet = 9,550 square feet</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        9550
+    </div>
+</body>
+</html>

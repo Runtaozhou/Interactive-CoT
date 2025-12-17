@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Bill gets a flat-screen TV that measures 48 inches by 100 inches. His brother Bob gets a TV that measures 70 inches by 60 inches. If the TVs weigh 4 oz per square inch of screen space, how much more does the heavier TV weigh in pounds? (There are 16 ounces per pound).
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the screen area of Bill's TV. 
+            <p>Using the formula: length + width</p>
+            <p>48 inches + 100 inches = 148 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then find the screen area of Bob's TV.
+            <p>Using the formula: length × width</p>
+            <p>70 inches × 60 inches = 4200 square inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then subtract the size of the smaller TV from the size of the bigger TV to find the size difference.
+            <p>Bill's TV area - Bob's TV area</p>
+            <p>148 inches - 4200 square inches = -4052 square inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then multiply the size difference by the weight per square inch to find the weight difference.
+            <p>Size difference × weight per square inch</p>
+            <p>-4052 square inches × 4 oz/square inch = -16208 oz</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Then divide the weight difference in ounces by the number of ounces per pound to find the weight difference in pounds.
+            <p>Weight difference in ounces ÷ ounces per pound</p>
+            <p>-16208 oz ÷ 16 oz/pound = -1013 pounds</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        -1013
+    </div>
+</body>
+</html>

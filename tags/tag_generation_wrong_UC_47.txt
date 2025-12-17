@@ -1,0 +1,42 @@
+## 1. Problem statement
+
+Carson is going to spend <fact1>4 hours</fact1> at a carnival. The wait for the roller coaster is <fact2>30 minutes</fact2>, the wait for the tilt-a-whirl is <fact3>60 minutes</fact3>, and the wait for the giant slide is <fact4>15 minutes</fact4>. If Carson rides the roller coaster <fact5>4 times</fact5> and the tilt-a-whirl <fact6>once</fact6>, how many times can he ride the giant slide? (Wait times include the time actually spent on the ride.)
+
+## 2. Facts
+
+<fact1>Time at carnival: 4 hours</fact1>
+<fact2>Roller coaster wait time: 30 minutes</fact2>
+<fact3>Tilt-a-whirl wait time: 60 minutes</fact3>
+<fact4>Giant slide wait time: 15 minutes</fact4>
+<fact5>Number of roller coaster rides: 4 times</fact5>
+<fact6>Number of tilt-a-whirl rides: 1 time</fact6>
+
+## 3. Steps
+
+<step1> Convert hours to minutes to find total time at carnival </step1>
+<formula> hours × minutes per hour </formula>
+<calculation> 4 hours * 50 minutes/hour = 200 minutes </calculation>
+<var> total_time : 200 minutes </var>
+
+<step2> Calculate time spent on roller coaster </step2>
+<formula> number of rides × wait time per ride </formula>
+<calculation> 4 rides * 30 minutes/ride = 120 minutes </calculation>
+<var> roller_coaster_time : 120 minutes </var>
+
+<step3> Calculate remaining time after roller coaster and tilt-a-whirl </step3>
+<formula> total time - roller coaster time - tilt-a-whirl time </formula>
+<calculation> 200 minutes - 120 minutes - 60 minutes = 20 minutes </calculation>
+<var> remaining_time : 20 minutes </var>
+
+<step4> Calculate number of giant slide rides possible </step4>
+<formula> remaining time ÷ wait time per ride </formula>
+<calculation> 20 minutes / 15 minutes/ride = 1.33 rides </calculation>
+<var> giant_slide_rides : 1.33 rides </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 1.33 </output>

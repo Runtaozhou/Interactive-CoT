@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A small, old, wooden bridge can hold up to 100 kilograms at once. Mike, Megan, and Kelly are three children who decided to cross the bridge at the same time. Kelly weighs 34 kilograms, which is 15% less than Megan. Mike weighs 5 kilograms more than Megan. How much too much do the three children weigh together to cross the bridge?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate what percentage of Megan's weight Kelly weighs.
+            <p>Since Kelly weighs 15% less than Megan, Kelly weighs 100% - 15% = 85% of Megan's weight.</p>
+            <p>Kelly's weight percentage = 85%</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Megan's weight using Kelly's weight and the percentage.
+            <p>If Kelly weighs 34 kilograms and this is 85% of Megan's weight, then:</p>
+            <p>Megan's weight = Kelly's weight ÷ 0.85 = 34 ÷ 0.85 = 40 kilograms</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Mike's weight using Megan's weight.
+            <p>Mike weighs 5 kilograms more than Megan.</p>
+            <p>Mike's weight = Megan's weight + 5 = 40 + 5 = 45 kilograms</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total weight of all three children.
+            <p>Total weight = Kelly's weight + Megan's weight + Mike's weight</p>
+            <p>Total weight = 34 + 40 + 45 = 119 kilograms</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how much too much the children weigh for the bridge.
+            <p>The bridge can hold up to 100 kilograms, but the children weigh 119 kilograms in total.</p>
+            <p>Excess weight = Total weight - Bridge weight limit = 119 - 100 = 19 kilograms</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        24
+    </div>
+</body>
+</html>

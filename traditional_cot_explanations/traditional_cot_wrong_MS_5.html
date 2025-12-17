@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Josh works 8 hours a day, 5 days a week, 4 weeks a month. Carl is an intern and works 2 hours less than Josh every day. Josh gets $9 an hour and Carl gets half that. How much does the company pay for the 2 together in one month?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Josh's total working hours in a month.
+            <p>Using the formula: hours per day × days per week × weeks per month</p>
+            <p>Josh works 8 hours/day * 5 days/week * 4 weeks/month = 160 hours a month</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate Josh's monthly salary.
+            <p>Using the formula: monthly hours × hourly rate</p>
+            <p>Josh earns 160 hours/month * $9/hour = $1440 per month</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate Carl's monthly salary.
+            <p>Using the formula: monthly hours × hourly rate</p>
+            <p>Carl earns 160 hours/month * $4.5/hour = $720 per month</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total monthly payment for both employees.
+            <p>Using the formula: Josh's monthly salary + Carl's monthly salary</p>
+            <p>Total payment = $1440 + $720 = $2160</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2160
+    </div>
+</body>
+</html>

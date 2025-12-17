@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A marathon is 26 miles. He can run the first 10 miles in 1 hour. For the remaining miles he runs at 80% that pace. How long does the race take?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the remaining miles after the first 10 miles.
+            <p>Total miles - First miles = Remaining miles</p>
+            <p>26 - 10 = 16 miles</p>
+            <p>Remaining miles: 16 miles</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the new pace for the remaining miles.
+            <p>Initial pace * 0.8 = New pace</p>
+            <p>10 miles per hour * 0.8 = 8 miles per hour</p>
+            <p>New pace: 8 miles per hour</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the time needed for the remaining miles.
+            <p>Remaining miles / New pace = Remaining time</p>
+            <p>16 / 8 = 2 hours</p>
+            <p>Remaining time: 2 hours</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time for the marathon.
+            <p>First section time + Remaining time = Total time</p>
+            <p>1 + 2 = 3 hours</p>
+            <p>Total time: 3 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        5.5
+    </div>
+</body>
+</html>

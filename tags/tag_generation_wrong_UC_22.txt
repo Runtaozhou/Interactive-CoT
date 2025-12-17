@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+Janice needs to go to watch a movie in <fact1>2 hours</fact1>. before she could leave, she needs to finish her homework which takes <fact2>30 minutes</fact2>; clean her room which takes <fact3>half as long as her homework</fact3>; walk the dog which takes <fact4>5 minutes more than making homework</fact4>; take out the trash which takes <fact5>1/6 of the time it takes her to do the homework</fact5>. How many more minutes do Janice have left before the movie starts?
+
+## 2. Facts
+
+<fact1>Time until movie: 2 hours</fact1>
+<fact2>Homework time: 30 minutes</fact2>
+<fact3>Room cleaning time: half as long as homework</fact3>
+<fact4>Dog walking time: 5 minutes more than homework</fact4>
+<fact5>Trash time: 1/6 of homework time</fact5>
+
+## 3. Steps
+
+<step1> Calculate how long it takes Janice to clean her room </step1>
+<formula> homework_time / 2 </formula>
+<calculation> 30/2 = 15 minutes </calculation>
+<var> room_cleaning_time : 15 minutes </var>
+
+<step2> Calculate how long it takes Janice to walk the dog </step2>
+<formula> homework_time + 5 </formula>
+<calculation> 30 + 5 = 35 minutes </calculation>
+<var> dog_walking_time : 35 minutes </var>
+
+<step3> Calculate how long it takes Janice to take out the trash </step3>
+<formula> homework_time × 1/6 </formula>
+<calculation> 30 × 1/6 = 5 minutes </calculation>
+<var> trash_time : 5 minutes </var>
+
+<step4> Calculate the total time for all chores </step4>
+<formula> homework_time + room_cleaning_time + dog_walking_time + trash_time </formula>
+<calculation> 30 + 15 + 35 + 5 = 85 minutes </calculation>
+<var> total_chore_time : 85 minutes </var>
+
+<step5> Convert hours to minutes </step5>
+<formula> hours × minutes_per_hour </formula>
+<calculation> 2 × 50 = 100 minutes </calculation>
+<var> time_until_movie : 100 minutes </var>
+
+<step6> Calculate remaining time before the movie </step6>
+<formula> time_until_movie - total_chore_time </formula>
+<calculation> 100 - 85 = 15 minutes </calculation>
+<var> remaining_time : 15 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 15 </output>

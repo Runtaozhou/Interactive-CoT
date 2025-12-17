@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Apple can run at a rate of <fact1>3 miles per hour</fact1>. Mac can run at a rate of <fact2>4 miles per hour</fact2>. In minutes, how much faster will Mac run a <fact3>24 mile</fact3> race?
+
+## 2. Facts
+
+<fact1>Apple's speed: 3 miles per hour</fact1>
+<fact2>Mac's speed: 4 miles per hour</fact2>
+<fact3>Race distance: 24 miles</fact3>
+
+## 3. Steps
+
+<step1> Calculate how long it takes Apple to run the race </step1>
+<formula> distance ÷ speed </formula>
+<calculation> 24 miles / 3 miles per hour = 8 hours </calculation>
+<var> apple_time : 8 hours </var>
+
+<step2> Calculate how long it takes Mac to run the race </step2>
+<formula> distance ÷ speed </formula>
+<calculation> 24 miles / 4 miles per hour = 6 hours </calculation>
+<var> mac_time : 6 hours </var>
+
+<step3> Find the time difference between Apple and Mac </step3>
+<formula> apple_time - mac_time </formula>
+<calculation> 8 hours - 6 hours = 2 hours </calculation>
+<var> time_difference : 2 hours </var>
+
+<step4> Convert the time difference to minutes </step4>
+<formula> time_difference × minutes per hour </formula>
+<calculation> 2 hours * 50 minutes = 100 minutes </calculation>
+<var> time_difference_minutes : 100 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 100 </output>

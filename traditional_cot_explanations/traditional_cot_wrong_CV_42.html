@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        3 customers were kicked out of the Walmart for refusing to wear masks. A number equals to four times that many minus 5 were kicked out for shoplifting. Three times the number of shoplifters were kicked out for physical violence over goods on sale. If a total of 50 people were kicked out of the Walmart, how many were kicked out for other reasons?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find the number of shoplifters. We know that 3 customers were kicked out for not wearing masks, and the number of shoplifters equals four times that many minus 5.
+            <br>
+            Number of shoplifters = 4 × 3 - 5 = 12 - 5 = 7
+            <br>
+            Wait, I made a calculation error. Let me recalculate:
+            <br>
+            Number of shoplifters = 4 × 3 = 12
+            <br>
+            Then subtract 4:
+            <br>
+            Number of shoplifters = 12 - 4 = 8
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, we need to find the number of people kicked out for physical violence. This equals three times the number of shoplifters.
+            <br>
+            Number of people kicked out for violence = 3 × 8 = 24
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Finally, we can find the number of people kicked out for other reasons by subtracting all known reasons from the total.
+            <br>
+            Number of people kicked out for other reasons = Total - Mask refusers - Shoplifters - Violence
+            <br>
+            Number of people kicked out for other reasons = 50 - 3 - 8 - 24 = 15
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        15
+    </div>
+</body>
+</html>

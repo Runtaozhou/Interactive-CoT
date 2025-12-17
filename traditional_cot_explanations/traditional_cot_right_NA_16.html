@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Bob is tilling a plot of his garden. The plot is 110 feet wide by 120 feet long. His tiller digs a swath two feet wide, and he can till 1 foot of ground in about 2 seconds. How long will it take him to till this plot of land, in minutes?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of rows needed to till the entire width.
+            <p>We need to divide the width of the plot by the width of the tiller:</p>
+            <p>Width of plot ÷ Width of tiller = 110 feet ÷ 2 feet = 55 rows</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total distance Bob will need to till.
+            <p>We multiply the length of each row by the number of rows:</p>
+            <p>Length × Number of rows = 120 feet × 55 rows = 6,600 feet</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time needed in seconds.
+            <p>Since Bob can till 1 foot in 2 seconds, we multiply the total distance by the time per foot:</p>
+            <p>Time per foot × Total distance = 2 seconds × 6,600 feet = 13,200 seconds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert the time from seconds to minutes.
+            <p>We divide the total time in seconds by 60:</p>
+            <p>Total time in seconds ÷ 60 = 13,200 seconds ÷ 60 = 220 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        220
+    </div>
+</body>
+</html>

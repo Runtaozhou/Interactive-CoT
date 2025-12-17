@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+A fixer uses <fact1>30% of the nails in a container</fact1> to repair the kitchen. He also used <fact2>70% of the remaining nails</fact2> in the container to repair the fence. If there were <fact3>400 nails</fact3> in the container, how many nails are remaining?
+
+## 2. Facts
+
+<fact1>Percentage of nails used for kitchen: 30%</fact1>
+<fact2>Percentage of remaining nails used for fence: 70%</fact2>
+<fact3>Total nails in container: 400</fact3>
+
+## 3. Steps
+
+<step1>Calculate how many nails were used to fix the kitchen</step1>
+<formula>Total nails × Percentage used for kitchen</formula>
+<calculation>30/100 × 400 = 120 nails</calculation>
+<var>kitchen_nails : 120 nails</var>
+
+<step2>Calculate how many nails remain after fixing the kitchen</step2>
+<formula>Total nails - Kitchen nails</formula>
+<calculation>400 - 120 = 280 nails</calculation>
+<var>remaining_after_kitchen : 280 nails</var>
+
+<step3>Calculate how many nails were used to fix the fence</step3>
+<formula>Remaining nails × Percentage used for fence</formula>
+<calculation>70/100 × 280 = 196 nails</calculation>
+<var>fence_nails : 196 nails</var>
+
+<step4>Calculate the final number of remaining nails</step4>
+<formula>Remaining after kitchen - Fence nails</formula>
+<calculation>280 - 190 = 90 nails</calculation>
+<var>final_remaining : 90 nails</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>90</output>

@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+For homework, Brooke has <fact1>15 math problems</fact1>, <fact2>6 social studies problems</fact2>, and <fact3>10 science problems</fact3>. He can answer each math problem for <fact4>2 minutes</fact4> while answering each social studies problem takes him <fact5>30 seconds</fact5>. If he can answer each science problem in <fact6>1.5 minutes</fact6>, how long will it take Brooke to answer all his homework?
+
+## 2. Facts
+
+<fact1>Math problems: 15</fact1>
+<fact2>Social studies problems: 6</fact2>
+<fact3>Science problems: 10</fact3>
+<fact4>Time per math problem: 2 minutes</fact4>
+<fact5>Time per social studies problem: 30 seconds</fact5>
+<fact6>Time per science problem: 1.5 minutes</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total time for math problems </step1>
+<formula> number of math problems × time per math problem </formula>
+<calculation> 15 × 2 = 30 minutes </calculation>
+<var> math_time : 30 minutes </var>
+
+<step2> Calculate the total time for social studies problems in seconds </step2>
+<formula> number of social studies problems × time per social studies problem </formula>
+<calculation> 6 × 20 seconds = 120 seconds </calculation>
+<var> social_studies_time_seconds : 120 seconds </var>
+
+<step3> Convert social studies time from seconds to minutes </step3>
+<formula> social_studies_time_seconds ÷ 60 </formula>
+<calculation> 120 ÷ 60 = 2 minutes </calculation>
+<var> social_studies_time : 2 minutes </var>
+
+<step4> Calculate the total time for science problems </step4>
+<formula> number of science problems × time per science problem </formula>
+<calculation> 10 × 1.5 = 15 minutes </calculation>
+<var> science_time : 15 minutes </var>
+
+<step5> Add up all the times to find the total homework time </step5>
+<formula> math_time + social_studies_time + science_time </formula>
+<calculation> 30 + 2 + 15 = 47 minutes </calculation>
+<var> total_homework_time : 47 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 47 </output>

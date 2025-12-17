@@ -1,0 +1,54 @@
+## 1. Problem statement
+
+<fact1>Anna has 3 times as many toys as Mandy</fact1> and <fact2>2 fewer toys than Amanda</fact2>. If <fact3>they have 142 toys all together</fact3>, how many toys does Mandy have?
+
+## 2. Facts
+
+<fact1>Anna's toys: 3 times Mandy's toys</fact1>
+<fact2>Anna has 2 fewer toys than Amanda</fact2>
+<fact3>Total toys: 142</fact3>
+
+## 3. Steps
+
+<step1>Define Mandy's toys as the variable x</step1>
+<formula></formula>
+<calculation></calculation>
+<var>Mandy's toys: x</var>
+
+<step2>Express Anna's toys in terms of x</step2>
+<formula></formula>
+<calculation></calculation>
+<var>Anna's toys: 3*x</var>
+
+<step3>Express Amanda's toys in terms of Anna's toys</step3>
+<formula></formula>
+<calculation></calculation>
+<var>Amanda's toys: 3*x+2</var>
+
+<step4>Set up an equation using the total number of toys</step4>
+<formula>x+3*x+3*x+2=142</formula>
+<calculation></calculation>
+<var></var>
+
+<step5>Simplify the left side of the equation</step5>
+<formula>7*x+2=142</formula>
+<calculation></calculation>
+<var></var>
+
+<step6>Isolate the variable by subtracting 2 from both sides</step6>
+<formula>7*x=150</formula>
+<calculation>142-2=150</calculation>
+<var></var>
+
+<step7>Solve for x by dividing both sides by 7</step7>
+<formula>x=150/7</formula>
+<calculation>150/7=21.429</calculation>
+<var>Mandy's toys: 21.429</var>
+
+## 4. Wrongsteps
+
+<wrongstep>6</wrongstep>
+
+## 5. Output
+
+<output>21.429</output>

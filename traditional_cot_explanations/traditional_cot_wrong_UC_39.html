@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        It takes a dog groomer 10 minutes to dry a short-haired dog like a beagle. It takes him twice as long to dry a full-haired, fluffy dog like a german shepherd. One morning, he has 6 short-haired dogs to dry and 9 full-haired dogs to dry. How many hours does it take him to dry all of the dogs?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the time needed to dry a full-haired dog.
+            <p>Since it takes twice as long to dry a full-haired dog compared to a short-haired dog:</p>
+            <p>Full-haired dog drying time = Short-haired dog drying time × 2</p>
+            <p>Full-haired dog drying time = 10 minutes × 2 = 20 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time needed for all short-haired dogs.
+            <p>Total time for short-haired dogs = Number of short-haired dogs × Time per short-haired dog</p>
+            <p>Total time for short-haired dogs = 6 dogs × 10 minutes = 60 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time needed for all full-haired dogs.
+            <p>Total time for full-haired dogs = Number of full-haired dogs × Time per full-haired dog</p>
+            <p>Total time for full-haired dogs = 9 dogs × 20 minutes = 180 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time needed for all dogs.
+            <p>Total time = Total time for short-haired dogs + Total time for full-haired dogs</p>
+            <p>Total time = 60 minutes + 180 minutes = 240 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Convert the total time from minutes to hours.
+            <p>Total hours = Total minutes ÷ Minutes per hour</p>
+            <p>Total hours = 240 minutes ÷ 50 minutes = 4.8 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        4.8
+    </div>
+</body>
+</html>

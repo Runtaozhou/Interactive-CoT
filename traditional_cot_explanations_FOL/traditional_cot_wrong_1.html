@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Everyone working at Meta has a high income.
+        A person with a high income will not take a bus to their destination.
+        People will either take a bus or drive to their destination.
+        Everyone who has a car will choose to drive to their destination.
+        No students drive to their destination.
+        James has a car or works at Meta.
+
+        Based on the given facts above, determine whether the following statement is true, false, or uncertain using deductive reasoning and give simple explanations. The statement is: James either drives to their destination or is a student.
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Analyze what we know about James
+            <p>We know that James has a car or works at Meta.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 2:</span> Consider if James works at Meta
+            <p>If James works at Meta, then everyone working at Meta has a high income, so James has a high income.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 3:</span> Determine what happens if James has a high income
+            <p>If James has a high income, then a person with a high income will not take a bus to their destination. So James will not take a bus.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 4:</span> Determine how James gets to his destination
+            <p>Since people will either take a bus or drive to their destination, and James will not take a bus, James must drive to his destination.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 5:</span> Consider if James has a car
+            <p>If James has a car, then everyone who has a car will choose to drive to their destination. So James will drive to his destination.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 6:</span> Combine the two possibilities
+            <p>So whether James has a car or works at Meta, he will drive to his destination.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 7:</span> Consider the fact about students
+            <p>We also know that no students drive to their destination. Since James drives to his destination, he cannot be a student.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">Step 8:</span> Evaluate the given statement
+            <p>Therefore, the statement "James either drives to their destination or is a student" is false, because James drives to his destination and is not a student.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        False
+    </div>
+</body>
+</html>

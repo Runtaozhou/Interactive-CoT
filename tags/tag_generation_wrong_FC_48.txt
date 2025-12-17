@@ -1,0 +1,56 @@
+## 1. Problem statement
+
+Jill is going to resod her front yard. The plot of land in front of her house is <fact1>200 feet wide by 50 feet</fact1>. Her house has a sidewalk that is <fact2>3 feet wide and 50 feet long</fact2>. There are also four flower beds: <fact3>two right in front of the house that are 4 feet deep by 25 feet long</fact3>, <fact4>one that is 10 feet by 12 feet</fact4>, and <fact5>a fourth that is 7 feet by 8 feet</fact5>. How many square feet of sod will she need to cover her yard, minus the sidewalk and flower beds?
+
+## 2. Facts
+
+<fact1>Front yard dimensions: 200 feet wide by 50 feet</fact1>
+<fact2>Sidewalk dimensions: 3 feet wide and 50 feet long</fact2>
+<fact3>Two flower beds dimensions: 4 feet deep by 25 feet long each</fact3>
+<fact4>Third flower bed dimensions: 10 feet by 12 feet</fact4>
+<fact5>Fourth flower bed dimensions: 7 feet by 8 feet</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total area of the front yard </step1>
+<formula> width × length </formula>
+<calculation> 200 ft * 50 ft = 10,000 sq.ft. </calculation>
+<var> total_yard_area : 10,000 sq.ft. </var>
+
+<step2> Calculate the area of the sidewalk </step2>
+<formula> width × length </formula>
+<calculation> 3ft * 50ft = 150 sq.ft. </calculation>
+<var> sidewalk_area : 150 sq.ft. </var>
+
+<step3> Calculate the area of the two flower beds in front of the house </step3>
+<formula> (depth × length) × 2 </formula>
+<calculation> 4 ft * 25 ft = 100 sq.ft.; 2 * 100 sq.ft. = 200 sq.ft. </calculation>
+<var> front_flowerbeds_area : 200 sq.ft. </var>
+
+<step4> Calculate the perimeter of the third flower bed </step4>
+<formula> 2 × (length + width) </formula>
+<calculation> 10 feet + 10 feet + 12 feet + 12 feet = 44 ft. </calculation>
+<var> third_flowerbed_perimeter : 44 ft. </var>
+
+<step5> Calculate the area of the fourth flower bed </step5>
+<formula> length × width </formula>
+<calculation> 7ft * 8ft = 56 sq.ft. </calculation>
+<var> fourth_flowerbed_area : 56 sq.ft. </var>
+
+<step6> Calculate the total area to subtract from the yard </step6>
+<formula> sidewalk_area + front_flowerbeds_area + third_flowerbed_perimeter + fourth_flowerbed_area </formula>
+<calculation> 150 sq.ft + 200 sq.ft + 44 sq.ft + 56 sq.ft = 450 sq. ft. </calculation>
+<var> total_subtracted_area : 450 sq.ft. </var>
+
+<step7> Calculate the area that needs sod </step7>
+<formula> total_yard_area - total_subtracted_area </formula>
+<calculation> 10,000 sq.ft - 450 sq.ft = 9,550 sq.ft. </calculation>
+<var> sod_area_needed : 9,550 sq.ft. </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 9550 </output>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A child is making a pyramid by stacking some blocks. In the first row, he has 9 blocks. For the next rows, he has 2 less than the blocks he has from its bottom row. The pyramid has 5 levels. How many blocks did he use in all?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the number of blocks in the second row.
+            <p>Since each row has 2 fewer blocks than the row below it, the second row will have:</p>
+            <p>First row blocks - 2 = 9 - 2 = 7 blocks</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the number of blocks in the third row.
+            <p>Using the same pattern, the third row will have:</p>
+            <p>Second row blocks - 2 = 6 - 2 = 4 blocks</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the number of blocks in the fourth row.
+            <p>Continuing the pattern:</p>
+            <p>Third row blocks - 2 = 4 - 2 = 2 blocks</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of blocks in the fifth row.
+            <p>For the fifth and final row:</p>
+            <p>Fourth row blocks - 2 = 2 - 2 = 0 blocks</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Add up all blocks to find the total.
+            <p>Total blocks = First row + Second row + Third row + Fourth row + Fifth row</p>
+            <p>Total blocks = 9 + 6 + 4 + 2 + 0 = 21 blocks</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        21
+    </div>
+</body>
+</html>

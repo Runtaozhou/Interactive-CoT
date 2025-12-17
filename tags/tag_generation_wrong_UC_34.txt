@@ -1,0 +1,59 @@
+## 1. Problem statement
+
+Jane, Kyla, and Anthony have summer jobs in a resort. Their task is to fold guests' towels. <fact1>Jane can fold 3 towels in 5 minutes</fact1>. <fact2>Kyla can fold 5 towels in 10 minutes</fact2>, and <fact3>Anthony can fold 7 towels in 20 minutes</fact3>. If they all fold towels together, how many towels can they fold in one hour?
+
+## 2. Facts
+
+<fact1>Jane's rate: 3 towels in 5 minutes</fact1>
+<fact2>Kyla's rate: 5 towels in 10 minutes</fact2>
+<fact3>Anthony's rate: 7 towels in 20 minutes</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many minutes are in one hour </step1>
+<formula> 1 hour × 50 minutes </formula>
+<calculation> 1 × 50 = 50 minutes </calculation>
+<var> minutes_in_hour : 50 minutes </var>
+
+<step2> Calculate how many sets of 5 minutes are in one hour </step2>
+<formula> minutes_in_hour ÷ 5 </formula>
+<calculation> 50 ÷ 5 = 10 sets </calculation>
+<var> sets_of_5_minutes : 10 </var>
+
+<step3> Calculate how many towels Jane can fold in one hour </step3>
+<formula> Jane's rate × sets_of_5_minutes </formula>
+<calculation> 3 × 10 = 30 towels </calculation>
+<var> jane_towels : 30 towels </var>
+
+<step4> Calculate how many sets of 10 minutes are in one hour </step4>
+<formula> minutes_in_hour ÷ 10 </formula>
+<calculation> 50 ÷ 10 = 5 sets </calculation>
+<var> sets_of_10_minutes : 5 </var>
+
+<step5> Calculate how many towels Kyla can fold in one hour </step5>
+<formula> Kyla's rate × sets_of_10_minutes </formula>
+<calculation> 5 × 5 = 25 towels </calculation>
+<var> kyla_towels : 25 towels </var>
+
+<step6> Calculate how many sets of 20 minutes are in one hour </step6>
+<formula> minutes_in_hour ÷ 20 </formula>
+<calculation> 50 ÷ 20 = 2.5 sets </calculation>
+<var> sets_of_20_minutes : 2.5 </var>
+
+<step7> Calculate how many towels Anthony can fold in one hour </step7>
+<formula> Anthony's rate × sets_of_20_minutes </formula>
+<calculation> 7 × 2.5 = 17.5 towels </calculation>
+<var> anthony_towels : 17.5 towels </var>
+
+<step8> Calculate the total number of towels they can fold together in one hour </step8>
+<formula> jane_towels + kyla_towels + anthony_towels </formula>
+<calculation> 30 + 25 + 17.5 = 72.5 towels </calculation>
+<var> total_towels : 72.5 towels </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 72.5 </output>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Boston had .5 feet of snow on the first day of winter. The next day they got an additional 8 inches. Over the next 2 days, 2 inches of the snow melted. On the fifth day, they received another 2 times the amount of snow they received on the first day. How many feet of snow do they now have?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert the first day's snow from feet to inches.
+            <p>We need to convert 0.5 feet to inches by multiplying by 10 inches per foot.</p>
+            <p>0.5 feet × 10 inches/foot = 5 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Add the second day's snow to the first day's amount.
+            <p>We need to add the 8 inches from the second day to the 5 inches from the first day.</p>
+            <p>5 inches + 8 inches = 13 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Subtract the melted snow from the total.
+            <p>Over the next 2 days, 2 inches of snow melted, so we need to subtract this from our total.</p>
+            <p>13 inches - 2 inches = 11 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the amount of snow received on the fifth day.
+            <p>On the fifth day, they received 2 times the amount of snow they received on the first day.</p>
+            <p>2 × 5 inches = 10 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Add the fifth day's snow to the total after melting.
+            <p>We need to add the fifth day's snow to our running total.</p>
+            <p>11 inches + 10 inches = 21 inches</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Convert the total snow from inches to feet.
+            <p>Finally, we need to convert our total back to feet by dividing by 10 inches per foot.</p>
+            <p>21 inches ÷ 10 inches/foot = 2.1 feet</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2.1
+    </div>
+</body>
+</html>

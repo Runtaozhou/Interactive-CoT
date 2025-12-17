@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Stefan goes to a restaurant to eat dinner with his family. They order <fact1>an appetizer that costs $10</fact1> and <fact2>4 entrees that are $20 each</fact2>. If they <fact3>tip 20% of the total</fact3> for the waiter, what is the total amount of money that they spend at the restaurant?
+
+## 2. Facts
+
+<fact1>Appetizer cost: $10</fact1>
+<fact2>Entrees: 4 at $20 each</fact2>
+<fact3>Tip percentage: 20%</fact3>
+
+## 3. Steps
+
+<step1>Calculate the total cost of the entrees</step1>
+<formula>number of entrees × cost per entree</formula>
+<calculation>4 * $20 = $80</calculation>
+<var>entrees_cost: $80</var>
+
+<step2>Calculate the total cost of the dinner before tip</step2>
+<formula>entrees_cost + appetizer cost</formula>
+<calculation>$80 + $10 = $90</calculation>
+<var>dinner_cost: $90</var>
+
+<step3>Calculate the tip amount</step3>
+<formula>dinner_cost × tip percentage</formula>
+<calculation>$100 * 0.20 = $20</calculation>
+<var>tip_amount: $20</var>
+
+<step4>Calculate the total cost including tip</step4>
+<formula>dinner_cost + tip_amount</formula>
+<calculation>$90 + $20 = $110</calculation>
+<var>total_cost: $110</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>110</output>

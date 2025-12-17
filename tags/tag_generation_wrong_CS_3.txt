@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Pablo made 4 stacks of toy blocks. <fact1>The first stack was 5 blocks tall.</fact1> <fact2>The second stack was 2 blocks taller than the first.</fact2> <fact3>The third stack was 5 blocks shorter than the second stack</fact3>, and <fact4>the last stack was 5 blocks taller than the third stack.</fact4> How many toy blocks did Pablo use in all?
+
+## 2. Facts
+
+<fact1>First stack height: 5 blocks</fact1>
+<fact2>Second stack: 2 blocks taller than first</fact2>
+<fact3>Third stack: 5 blocks shorter than second</fact3>
+<fact4>Last stack: 5 blocks taller than third</fact4>
+
+## 3. Steps
+
+<step1> Calculate the height of the second stack </step1>
+<formula> first_stack_height + 2 </formula>
+<calculation> 5 + 2 = 7 </calculation>
+<var> second_stack_height : 7 blocks </var>
+
+<step2> Calculate the height of the third stack </step2>
+<formula> second_stack_height - 5 </formula>
+<calculation> 7 - 5 = 2 </calculation>
+<var> third_stack_height : 2 blocks </var>
+
+<step3> Calculate the height of the last stack </step3>
+<formula> third_stack_height + 5 </formula>
+<calculation> 2 + 5 = 7 </calculation>
+<var> last_stack_height : 7 blocks </var>
+
+<step4> Add up all blocks to find the total </step4>
+<formula> first_stack_height + second_stack_height + third_stack_height + last_stack_height </formula>
+<calculation> 5 + 7 + 3 + 7 = 22 </calculation>
+<var> total_blocks : 22 blocks </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 22 </output>

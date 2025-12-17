@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A cobbler can mend 3 pairs of shoes in an hour. From Monday to Thursday, the cobbler works for 8 hours each day, and on Friday, he only works from 8am to 11am. How many pairs of shoes can the cobbler mend in a week?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many pairs of shoes the cobbler can mend in one day from Monday to Thursday.
+            <p>The cobbler can mend 3 pairs of shoes per hour and works 8 hours per day.</p>
+            <p>Pairs per day = 3 pairs/hour × 8 hours = 24 pairs of shoes a day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total pairs of shoes mended from Monday to Thursday.
+            <p>The cobbler works 24 pairs per day for 3 days.</p>
+            <p>Total pairs from Monday to Thursday = 24 pairs × 3 days = 72 pairs of shoes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how many hours the cobbler works on Friday.
+            <p>On Friday, the cobbler works from 8am to 11am.</p>
+            <p>Hours worked on Friday = 11 - 8 = 3 hours</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many pairs of shoes the cobbler can mend on Friday.
+            <p>The cobbler can mend 3 pairs per hour and works for 3 hours on Friday.</p>
+            <p>Pairs on Friday = 3 pairs/hour × 3 hours = 9 pairs of shoes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total pairs of shoes mended in a week.
+            <p>Total pairs in a week = Pairs from Monday to Thursday + Pairs on Friday</p>
+            <p>Total pairs in a week = 72 pairs + 9 pairs = 81 pairs of shoes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        81
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mary is making a model sailboat. She wants to add three sails: a rectangular sail that measures 5 inches by 8 inches and two right triangular sails, one that's 3 inches long at the bottom and 4 inches tall and one that's 4 inches long at the bottom and 6 inches tall. (Remember you can find the area of a triangle by dividing the area of a square with the same height and length by 2). How many square inches of canvas does she need total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to find the area of the rectangular sail. Using the formula for the area of a rectangle (length × width):
+            <br>
+            Area of rectangular sail = 5 inches × 8 inches = 40 square inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, we'll find the perimeter of a square sail with the same height and length as the first triangular sail:
+            <br>
+            Perimeter = 3 inches + 4 inches + 3 inches + 4 inches = 14 square inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then we divide the perimeter in two to find the area of the first triangular sail:
+            <br>
+            Area of first triangular sail = 14 square inches ÷ 2 = 7 square inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Next, we find the area of a square sail with the same height and length as the second triangular sail:
+            <br>
+            Area of square = 4 inches × 6 inches = 24 square inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Then we divide this area in two to find the area of the second triangular sail:
+            <br>
+            Area of second triangular sail = 24 square inches ÷ 2 = 12 square inches
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Finally, we add up the areas of all three sails to find the total amount of canvas needed:
+            <br>
+            Total canvas needed = 7 square inches + 12 square inches + 40 square inches = 59 square inches
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        59
+    </div>
+</body>
+</html>

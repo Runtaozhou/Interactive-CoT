@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Frank went to a shop to buy some food for his breakfast. He bought 10 buns for $0.1 each, two bottles of milk, for $2 each, and a carton of eggs, which was three times more expensive than one bottle of milk. How much did Frank pay for his breakfast shopping?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the cost of the milk bottles.
+            <p>We need to multiply the number of bottles by the price per bottle:</p>
+            <p>2 bottles × $2 per bottle = $4</p>
+            <p>So the total cost of milk is $4.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the cost of the carton of eggs.
+            <p>The carton of eggs costs 3 times the price of one bottle of milk:</p>
+            <p>3 × $2 = $6</p>
+            <p>So the carton of eggs costs $6.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total cost of all items.
+            <p>We need to add the cost of buns, milk, and eggs:</p>
+            <p>Cost of buns: 10 buns × $0.1 each = $1</p>
+            <p>Cost of milk: $4</p>
+            <p>Cost of eggs: $6</p>
+            <p>Total cost: $1 + $4 + $6 = $11</p>
+            <p>Wait, let's double-check: 10 × $0.1 + $4 + $6 = $1 + $4 + $6 = $11</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        15
+    </div>
+</body>
+</html>

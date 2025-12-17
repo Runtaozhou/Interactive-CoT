@@ -1,0 +1,36 @@
+## 1. Problem statement
+
+Donna is trying to figure out if her truck is over a particular bridge's weight limit. <fact1>The bridge can hold 20,000 pounds</fact1>. <fact2>Donna's empty truck weighs 12,000 pounds</fact2>. She's carrying <fact3>20 crates of soda that each weigh 50 pounds</fact3>, <fact4>3 dryers that each weigh 3000 pounds</fact4>, and <fact5>twice as much weight in fresh produce as in soda</fact5>. How much does Donna's fully loaded truck weigh?
+
+## 2. Facts
+
+<fact1>Bridge weight limit: 20,000 pounds</fact1>
+<fact2>Empty truck weight: 12,000 pounds</fact2>
+<fact3>Soda: 20 crates at 50 pounds each</fact3>
+<fact4>Dryers: 3 units at 3000 pounds each</fact4>
+<fact5>Fresh produce weight: twice the weight of soda</fact5>
+
+## 3. Steps
+
+<step1> Calculate the weight of the fresh produce by doubling the weight of the soda </step1>
+<formula> number of crates × weight per crate × 2 </formula>
+<calculation> 20 crates * 50 pounds/crate * 2 = 2000 pounds </calculation>
+<var> fresh_produce_weight : 2000 pounds </var>
+
+<step2> Calculate the total weight of the dryers </step2>
+<formula> number of dryers × weight per dryer </formula>
+<calculation> 3 dryers * 3000 pounds/dryer = 9000 pounds </calculation>
+<var> dryers_weight : 9000 pounds </var>
+
+<step3> Calculate the fully loaded truck weight by adding the empty truck weight, fresh produce weight, and dryers weight </step3>
+<formula> empty truck weight + fresh produce weight + dryers weight </formula>
+<calculation> 12000 pounds + 2000 pounds + 9000 pounds = 23000 pounds </calculation>
+<var> fully_loaded_weight : 23000 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 23000 </output>

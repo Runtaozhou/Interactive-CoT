@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A baker bakes 5 loaves of bread an hour in one oven. He has 4 ovens. From Monday to Friday, he bakes for 5 hours, but on Saturday and Sunday, he only bakes for 2 hours. How many loaves of bread does the baker bake in 3 weeks?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many loaves the baker bakes in one hour using all ovens.
+            <p>The baker bakes 5 loaves per hour per oven, and he has 4 ovens.</p>
+            <p>Loaves per hour = 5 × 4 = 20 loaves of bread</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many loaves the baker bakes per day from Monday to Friday.
+            <p>On weekdays, the baker bakes for 5 hours per day.</p>
+            <p>Loaves per weekday = 5 hours × 20 loaves per hour = 100 loaves of bread per day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total loaves baked from Monday to Friday.
+            <p>There are 5 weekdays (Monday through Friday).</p>
+            <p>Total weekday loaves = 100 loaves per day × 5 days = 500 loaves of bread</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many loaves the baker bakes per day on Saturday and Sunday.
+            <p>On weekends, the baker bakes for only 2 hours per day.</p>
+            <p>Loaves per weekend day = 2 hours × 20 loaves per hour = 40 loaves of bread per day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total loaves baked on Saturday and Sunday.
+            <p>There are 2 weekend days (Saturday and Sunday).</p>
+            <p>Total weekend loaves = 40 loaves per day × 2 days = 80 loaves of bread</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total loaves baked in one week.
+            <p>Total loaves per week = Weekday loaves + Weekend loaves</p>
+            <p>Total loaves per week = 500 + 80 = 580 loaves of bread</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total loaves baked in three weeks.
+            <p>Total loaves in 3 weeks = Loaves per week × Number of weeks</p>
+            <p>Total loaves in 3 weeks = 580 × 3 = 1740 loaves of bread</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1740
+    </div>
+</body>
+</html>

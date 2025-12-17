@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+Steve is building a bench for the playground and needs <fact1>6 lengths of wood that measure 4 feet</fact1> and <fact2>2 lengths of wood that measure 2 feet</fact2>. How many feet of wood does Steve need to buy?
+
+## 2. Facts
+
+<fact1>Long wood pieces: 6 lengths of 4 feet</fact1>
+<fact2>Short wood pieces: 2 lengths of 2 feet</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total length of the long wood pieces </step1>
+<formula> number of pieces × length per piece </formula>
+<calculation> 6 × 4 = 24 feet </calculation>
+<var> long_wood_total : 24 feet </var>
+
+<step2> Calculate the total length of the short wood pieces </step2>
+<formula> number of pieces × length per piece </formula>
+<calculation> 2 × 2 = 6 feet </calculation>
+<var> short_wood_total : 6 feet </var>
+
+<step3> Add the total lengths to find the total amount of wood needed </step3>
+<formula> long_wood_total + short_wood_total </formula>
+<calculation> 24 feet + 6 feet = 30 feet </calculation>
+<var> total_wood_needed : 30 feet </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 30 </output>

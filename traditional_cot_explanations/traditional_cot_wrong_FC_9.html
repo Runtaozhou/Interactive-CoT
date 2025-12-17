@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mark wants to build a pyramid of soda cases that's four levels tall. Each level of the pyramid has a square base where each side is one case longer than the level above it. The top level is just one case. How many cases of soda does Mark need?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to identify what we know about the pyramid. The top level has just 1 case, and each level below increases by 1 case per side. So the top level has a side length of 1 case.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> For the second level, the side length is 1 + 1 = 2 cases. Since this level has a square base, we calculate the number of cases as 2 × 2 = 4 cases.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> For the third level, the side length is 2 + 1 = 3 cases. To find the number of cases in this level, we add the side length four times: 3 + 3 + 3 + 3 = 12 cases.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> For the fourth level (the bottom level), the side length is 3 + 1 = 4 cases. Since this level has a square base, we calculate the number of cases as 4 × 4 = 16 cases.
+        </div>
+        <div class="step">
+            <span class="step-number">Step 5:</span> Now we add up all the cases from each level to find the total:
+            <br>
+            Top level: 1 case
+            <br>
+            Second level: 4 cases
+            <br>
+            Third level: 12 cases
+            <br>
+            Fourth level: 16 cases
+            <br>
+            Total: 1 + 4 + 12 + 16 = 33 cases
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        33
+    </div>
+</body>
+</html>

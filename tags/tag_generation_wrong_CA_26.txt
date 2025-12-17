@@ -1,0 +1,62 @@
+## 1. Problem statement
+
+Janice can type <fact1>6 sentences per minute</fact1>. Today at work, Janice continued working on a paper she started typing yesterday. She typed for <fact2>20 minutes</fact2>, took a break, and typed <fact3>15 minutes</fact3> longer. She then had to erase <fact4>40 sentences</fact4> she had typed incorrectly. After a meeting, she typed for <fact5>18 minutes</fact5> more. In all, the paper had <fact6>536 sentences</fact6> by the end of today. How many sentences did she start with today?
+
+## 2. Facts
+
+<fact1>Typing speed: 6 sentences per minute</fact1>
+<fact2>First typing session: 20 minutes</fact2>
+<fact3>Second typing session: 15 minutes</fact3>
+<fact4>Erased sentences: 40 sentences</fact4>
+<fact5>Third typing session: 18 minutes</fact5>
+<fact6>Total sentences at end: 536 sentences</fact6>
+
+## 3. Steps
+
+<step1> Define the unknown variable as the number of sentences Janice started with today </step1>
+<formula></formula>
+<calculation></calculation>
+<var>X : sentences from yesterday</var>
+
+<step2> Calculate how many sentences Janice typed in her first session </step2>
+<formula>typing speed × time</formula>
+<calculation>6 * 20 = 120 sentences</calculation>
+<var>first_session : 120 sentences</var>
+
+<step3> Calculate how many sentences Janice typed in her second session </step3>
+<formula>typing speed × time</formula>
+<calculation>6 * 15 = 90 sentences</calculation>
+<var>second_session : 90 sentences</var>
+
+<step4> Calculate how many sentences Janice typed in her third session </step4>
+<formula>typing speed × time</formula>
+<calculation>6 * 18 = 100 sentences</calculation>
+<var>third_session : 100 sentences</var>
+
+<step5> Calculate the total number of sentences Janice typed today </step5>
+<formula>first_session + second_session + third_session</formula>
+<calculation>120 + 90 + 100 = 310 sentences</calculation>
+<var>total_typed : 310 sentences</var>
+
+<step6> Calculate the net sentences added today after erasing the incorrect ones </step6>
+<formula>total_typed - erased_sentences</formula>
+<calculation>310 - 40 = 270 sentences</calculation>
+<var>net_added : 270 sentences</var>
+
+<step7> Set up an equation to find the starting number of sentences </step7>
+<formula>starting_sentences + net_added = final_sentences</formula>
+<calculation>X + 270 = 536</calculation>
+<var>equation : X + 270 = 536</var>
+
+<step8> Solve for the number of sentences Janice started with today </step8>
+<formula>X = final_sentences - net_added</formula>
+<calculation>X = 536 - 270 = 266</calculation>
+<var>X : 266 sentences</var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output>266</output>

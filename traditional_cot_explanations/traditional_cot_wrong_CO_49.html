@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Scott runs 3 miles every Monday through Wednesday. Then he runs twice as far he ran on Monday every Thursday and Friday. How many miles will he run in a month with 4 weeks?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many miles Scott runs on Thursday and Friday.
+            <p>Since Scott runs twice as far as Monday on Thursday and Friday, and he runs 3 miles on Monday:</p>
+            <p>Miles on Thursday and Friday = 3 × 2 = 6 miles per day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total miles Scott runs Monday through Wednesday in a week.
+            <p>Scott runs 3 miles per day for 3 days (Monday, Tuesday, Wednesday):</p>
+            <p>Weekly miles (Mon-Wed) = 3 miles × 3 days = 9 miles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total miles Scott runs Thursday and Friday in a week.
+            <p>Scott runs 6 miles per day for 2 days (Thursday, Friday):</p>
+            <p>Weekly miles (Thu-Fri) = 6 miles × 3 days = 18 miles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total miles Scott runs in a week.
+            <p>Add the miles from Monday-Wednesday and Thursday-Friday:</p>
+            <p>Total weekly miles = 9 miles + 18 miles = 27 miles</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total miles Scott runs in a month.
+            <p>Since there are 4 weeks in the month:</p>
+            <p>Total monthly miles = 27 miles × 4 weeks = 108 miles</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        108
+    </div>
+</body>
+</html>

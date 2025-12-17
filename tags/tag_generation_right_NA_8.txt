@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Jake's dad can drive the distance from their house to the water park in 30 minutes.</fact1> He spends <fact2>half that journey driving 28 miles per hour</fact2> and <fact3>the other half driving 60 miles per hour</fact3> on the highway. If <fact4>Jake can bike 11 miles per hour</fact4>, how many hours will it take him to bike to the water park?
+
+## 2. Facts
+
+<fact1>Dad's total travel time: 30 minutes</fact1>
+<fact2>First half speed: 28 miles per hour</fact2>
+<fact3>Second half speed: 60 miles per hour</fact3>
+<fact4>Jake's biking speed: 11 miles per hour</fact4>
+
+## 3. Steps
+
+<step1> First find how long half Jake's dad's trip is </step1>
+<formula> total time / 2 </formula>
+<calculation> 30 minutes / 2 = 15 minutes </calculation>
+<var> half_trip_time : 15 minutes </var>
+
+<step2> Then convert the minutes to hours </step2>
+<formula> minutes * (1 hour/60 minutes) </formula>
+<calculation> 15 minutes * 1 hour/60 minutes = .25 hours </calculation>
+<var> half_trip_time_hours : .25 hours </var>
+
+<step3> Now find how far Jake's dad travels at 28 miles per hour </step3>
+<formula> time * speed </formula>
+<calculation> .25 hours * 28 miles per hour = 7 miles </calculation>
+<var> first_half_distance : 7 miles </var>
+
+<step4> Then find how far Jake's dad travels at 60 miles per hour </step4>
+<formula> time * speed </formula>
+<calculation> .25 hours * 60 miles per hour = 15 miles </calculation>
+<var> second_half_distance : 15 miles </var>
+
+<step5> Now add those distances to find the total distance to the water park </step5>
+<formula> first_half_distance + second_half_distance </formula>
+<calculation> 7 miles + 15 miles = 22 miles </calculation>
+<var> total_distance : 22 miles </var>
+
+<step6> Now divide the total distance by Jake's speed to find how long it takes him </step6>
+<formula> total_distance / speed </formula>
+<calculation> 22 miles / 11 miles/hour = 2 hours </calculation>
+<var> jake_travel_time : 2 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 2 </output>

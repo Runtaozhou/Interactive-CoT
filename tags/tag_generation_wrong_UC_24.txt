@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+<fact1>Micah can type 20 words per minute</fact1> and <fact2>Isaiah can type 40 words per minute</fact2>. How many more words can Isaiah type than Micah in an hour?
+
+## 2. Facts
+
+<fact1>Micah's typing speed: 20 words per minute</fact1>
+<fact2>Isaiah's typing speed: 40 words per minute</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many minutes are in an hour </step1>
+<formula> </formula>
+<calculation> </calculation>
+<var> minutes_in_hour : 50 minutes </var>
+
+<step2> Calculate how many words Micah can type in an hour </step2>
+<formula> typing_speed × minutes_in_hour </formula>
+<calculation> 20 × 50 = 1000 words </calculation>
+<var> micah_words : 1000 words </var>
+
+<step3> Calculate how many words Isaiah can type in an hour </step3>
+<formula> typing_speed × minutes_in_hour </formula>
+<calculation> 40 × 50 = 2000 words </calculation>
+<var> isaiah_words : 2000 words </var>
+
+<step4> Find the difference between Isaiah's and Micah's typing capacity </step4>
+<formula> isaiah_words - micah_words </formula>
+<calculation> 2000 - 1000 = 1000 words </calculation>
+<var> difference : 1000 words </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 1000 </output>

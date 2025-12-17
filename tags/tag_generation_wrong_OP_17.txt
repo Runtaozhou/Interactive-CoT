@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+<fact1>Alberto spent $2457 on a new engine for his car.</fact1> <fact2>Samara spent $25 on oil</fact2>, <fact3>$467 on tires</fact3> and <fact4>$79 on detailing for her car.</fact4> How many more dollars did Alberto spend on his car?
+
+## 2. Facts
+
+<fact1>Alberto's engine cost: $2457</fact1>
+<fact2>Samara's oil cost: $25</fact2>
+<fact3>Samara's tires cost: $467</fact3>
+<fact4>Samara's detailing cost: $79</fact4>
+
+## 3. Steps
+
+<step1> Calculate Samara's total spending by multiplying all her expenses </step1>
+<formula> oil cost × tires cost × detailing cost </formula>
+<calculation> 25 * 467 * 79 = $925225 </calculation>
+<var> samara_total : $925225 </var>
+
+<step2> Find the difference between Alberto's spending and Samara's spending </step2>
+<formula> Alberto's cost - Samara's total </formula>
+<calculation> 2457 - 925225 = $-922768 </calculation>
+<var> difference : $-922768 </var>
+
+<step3> State how much more Alberto spent </step3>
+<formula></formula>
+<calculation></calculation>
+<var> alberto_spent_more : $-922768 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> -922768 </output>

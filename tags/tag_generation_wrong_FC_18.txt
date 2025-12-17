@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Amanda is figuring out how many bags of grass seed she needs to buy to cover a new lot the city is turning into a park. The lot measures <fact1>120 feet by 60 feet</fact1>. One section that measures <fact2>40 feet by 40 feet</fact2> will be covered with concrete, and the rest needs to be covered in grass seeds. Each bag of grass seeds <fact3>covers 56 square feet</fact3>. How many bags of grass seeds does Amanda need?
+
+## 2. Facts
+
+<fact1>Lot dimensions: 120 feet by 60 feet</fact1>
+<fact2>Concrete section dimensions: 40 feet by 40 feet</fact2>
+<fact3>Coverage per bag: 56 square feet</fact3>
+
+## 3. Steps
+
+<step1> First find the area of the lot by multiplying the width and the length </step1>
+<formula> length × width </formula>
+<calculation> 120 ft * 60 ft = 7200 sq ft </calculation>
+<var> lot_area : 7200 sq ft </var>
+
+<step2> Then find the perimeter of the square covered in concrete </step2>
+<formula> 4 × side length </formula>
+<calculation> 40 ft + 40 ft + 40 ft + 40 ft = 160 ft </calculation>
+<var> concrete_perimeter : 160 ft </var>
+
+<step3> Then subtract the concrete area from the total area to find the grassy area </step3>
+<formula> lot_area - concrete_perimeter </formula>
+<calculation> 7200 sq ft - 160 ft = 7040 sq ft </calculation>
+<var> grass_area : 7040 sq ft </var>
+
+<step4> Finally, divide this area by the area each bag covers to find the number of bags </step4>
+<formula> grass_area ÷ coverage per bag </formula>
+<calculation> 7040 sq ft / 56 sq ft/bag = 125.71 bags </calculation>
+<var> bags_needed : 125.71 bags </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 126 </output>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Problem Solver Interface</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .explanation-container, .variables-container {
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .variables-container {
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .highlight {
+            padding: 0 3px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .step {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.2s;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step.active {
+            background-color: #fffacd;
+            border-left: 3px solid #ffd700;
+        }
+
+        .step.active::before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: #ffd700;
+            animation: blink 1s infinite;
+        }
+
+        .breakpoint::before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+
+        .formula {
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline;
+        }
+
+        .variable-list {
+            padding: 10px;
+        }
+
+        .variable-item {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .explanation-title, .variables-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step-content {
+            margin-left: 15px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .wrong-step {
+            display: none;
+        }
+
+        /* Variable colors */
+        .var-total-corn {
+            background-color: rgba(255, 99, 71, 0.5);
+        }
+        .var-terry-took {
+            background-color: rgba(135, 206, 250, 0.5);
+        }
+        .var-jerry-took {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        .var-linda-took {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        .var-stacy-took {
+            background-color: rgba(221, 160, 221, 0.5);
+        }
+        .var-ears-per-bushel {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+        .var-stacy-bushels {
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+        .var-total-given-away {
+            background-color: rgba(34, 139, 34, 0.5);
+        }
+        .var-remaining-bushels {
+            background-color: rgba(255, 192, 203, 0.5);
+        }
+        .var-remaining-ears {
+            background-color: rgba(128, 0, 128, 0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="wrong-step">0</div>
+<div class="container">
+<div class="left-panel">
+<div class="problem-statement">
+<div class="section-title">Problem Statement</div>
+<p>
+                    Bob grew corn in his garden this year and ended up with 
+                    <span id="fact1"><span class="highlight var-total-corn">50 bushels</span></span>. This is way too much for him to eat, so he gave some of it away to his friends. His friend Terry took 
+                    <span id="fact2"><span class="highlight var-terry-took">8 bushels</span></span>, while Jerry only took 
+                    <span id="fact3"><span class="highlight var-jerry-took">3</span></span>. He gave 
+                    <span id="fact4"><span class="highlight var-linda-took">12 bushels</span></span> to his friend Linda, who runs a food pantry. His neighbor Stacy doesn't eat much corn, but she still accepted 
+                    <span id="fact5"><span class="highlight var-stacy-took">21 ears of corn</span></span> from him. If each bushel contained 
+                    <span id="fact6"><span class="highlight var-ears-per-bushel">14 ears of corn</span></span>, how many ears of corn does Bob have left?
+                </p>
+</div>
+<div class="problem-understanding">
+<div class="section-title">Problem Understanding</div>
+<p><span class="highlight var-total-corn">Total corn: 50 bushels</span></p>
+<p><span class="highlight var-terry-took">Terry took: 8 bushels</span></p>
+<p><span class="highlight var-jerry-took">Jerry took: 3 bushels</span></p>
+<p><span class="highlight var-linda-took">Linda took: 12 bushels</span></p>
+<p><span class="highlight var-stacy-took">Stacy took: 21 ears of corn</span></p>
+<p><span class="highlight var-ears-per-bushel">Ears per bushel: 14</span></p>
+<h3>What we need to find</h3>
+<p>How many ears of corn Bob has left after giving some away to his friends.</p>
+</div>
+</div>
+<div class="right-panel">
+<div class="debugger-controls">
+<button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+<button class="btn btn-stop" id="stopBtn">■ Stop</button>
+<button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+<button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+</div>
+<div class="explanation-container" id="explanationContainer">
+<div class="explanation-title">Step-by-Step Explanation</div>
+<div class="step" id="step1">
+<div class="step-content">
+Convert Stacy's ears of corn to bushels: <div class="formula">ears of corn ÷ ears per bushel</div> = <span class="highlight var-stacy-took">21 ears</span> ÷ <span class="highlight var-ears-per-bushel">14 ears/bushel</span> = <span class="highlight var-stacy-bushels">1.5 bushels</span>
+</div>
+</div>
+<div class="step" id="step2">
+<div class="step-content">
+Calculate the total bushels Bob gave away: <div class="formula">Terry's bushels + Jerry's bushels + Linda's bushels + Stacy's bushels</div> = <span class="highlight var-terry-took">8 bushels</span> + <span class="highlight var-jerry-took">3 bushels</span> + <span class="highlight var-linda-took">12 bushels</span> + <span class="highlight var-stacy-bushels">1.5 bushels</span> = <span class="highlight var-total-given-away">24.5 bushels</span>
+</div>
+</div>
+<div class="step" id="step3">
+<div class="step-content">
+Calculate how many bushels Bob has left: <div class="formula">Total bushels - bushels given away</div> = <span class="highlight var-total-corn">50 bushels</span> - <span class="highlight var-total-given-away">24.5 bushels</span> = <span class="highlight var-remaining-bushels">25.5 bushels</span>
+</div>
+</div>
+<div class="step" id="step4">
+<div class="step-content">
+Convert the remaining bushels to ears of corn: <div class="formula">Remaining bushels × ears per bushel</div> = <span class="highlight var-remaining-bushels">25.5 bushels</span> × <span class="highlight var-ears-per-bushel">14 ears per bushel</span> = <span class="highlight var-remaining-ears">357 ears</span>
+</div>
+</div>
+<div class="step final-answer"><div class="step-content"><strong>Final Answer:</strong> <span class="highlight var-remaining-ears">357</span></div></div>
+</div>
+<div class="variables-container">
+<div class="variables-title">Variables</div>
+<div class="variable-list" id="variableList">
+</div>
+</div>
+</div>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const steps = document.querySelectorAll('.step');
+            const variableList = document.getElementById('variableList');
+            const explanationContainer = document.getElementById('explanationContainer');
+            const wrongStepIndex = parseInt(document.querySelector('.wrong-step').textContent) - 1;
+            
+            // State
+            let currentStepIndex = -1;
+            let isPlaying = false;
+            let playInterval = null;
+            let breakpointStep = null;
+            
+            // Initial state
+            prevBtn.classList.add('disabled');
+            
+            // Variables for each step
+            const stepVariables = [
+                [
+                    {name: "stacy_bushels", value: "1.5 bushels", class: "var-stacy-bushels"}
+                ],
+                [
+                    {name: "stacy_bushels", value: "1.5 bushels", class: "var-stacy-bushels"},
+                    {name: "total_given_away", value: "24.5 bushels", class: "var-total-given-away"}
+                ],
+                [
+                    {name: "stacy_bushels", value: "1.5 bushels", class: "var-stacy-bushels"},
+                    {name: "total_given_away", value: "24.5 bushels", class: "var-total-given-away"},
+                    {name: "remaining_bushels", value: "25.5 bushels", class: "var-remaining-bushels"}
+                ],
+                [
+                    {name: "stacy_bushels", value: "1.5 bushels", class: "var-stacy-bushels"},
+                    {name: "total_given_away", value: "24.5 bushels", class: "var-total-given-away"},
+                    {name: "remaining_bushels", value: "25.5 bushels", class: "var-remaining-bushels"},
+                    {name: "remaining_ears", value: "357 ears", class: "var-remaining-ears"}
+                ]
+            ];
+            
+            // Functions
+            function highlightStep(index) {
+                // Remove active class from all steps
+                steps.forEach(step => step.classList.remove('active'));
+                
+                if (index >= 0 && index < steps.length) {
+                    // Add active class to current step
+                    steps[index].classList.add('active');
+                    
+                    // Scroll to the active step
+                    steps[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Update variables
+                    updateVariables(index);
+                    
+                    // Update button states
+                    prevBtn.classList.toggle('disabled', index === 0);
+                    nextBtn.classList.toggle('disabled', index === steps.length - 1);
+                    
+                    // Update current step index
+                    currentStepIndex = index;
+                }
+            }
+            
+            function updateVariables(stepIndex) {
+                // Clear existing variables
+                variableList.innerHTML = '';
+                
+                // Get variables for the current step
+                const currentStepVars = stepVariables[stepIndex];
+                
+                // Add variables
+                currentStepVars.forEach(variable => {
+                    const varItem = document.createElement('div');
+                    varItem.className = `variable-item ${variable.class}`;
+                    varItem.textContent = `${variable.name}: ${variable.value}`;
+                    variableList.appendChild(varItem);
+                });
+            }
+            
+            function playExplanation() {
+                if (currentStepIndex >= steps.length - 1) {
+                    // If at the end, start from beginning
+                    currentStepIndex = -1;
+                }
+                
+                isPlaying = true;
+                playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                // Clear any existing interval
+                clearInterval(playInterval);
+                
+                // Start playing from next step
+                playInterval = setInterval(() => {
+                    const nextIndex = currentStepIndex + 1;
+                    
+                    if (nextIndex < steps.length) {
+                        highlightStep(nextIndex);
+                        
+                        // If we hit a breakpoint, pause
+                        if (breakpointStep === steps[nextIndex]) {
+                            pauseExplanation();
+                        }
+                    } else {
+                        // End of steps, pause
+                        pauseExplanation();
+                    }
+                }, 1500);
+            }
+            
+            function pauseExplanation() {
+                isPlaying = false;
+                playPauseBtn.innerHTML = '▶ Play';
+                clearInterval(playInterval);
+            }
+            
+            function stopExplanation() {
+                pauseExplanation();
+                steps.forEach(step => step.classList.remove('active'));
+                currentStepIndex = -1;
+                prevBtn.classList.add('disabled');
+                nextBtn.classList.remove('disabled');
+                
+                // Clear variables
+                variableList.innerHTML = '';
+            }
+            
+            function nextStep() {
+                if (currentStepIndex < steps.length - 1) {
+                    highlightStep(currentStepIndex + 1);
+                }
+            }
+            
+            function prevStep() {
+                if (currentStepIndex > 0) {
+                    highlightStep(currentStepIndex - 1);
+                }
+            }
+            
+            function toggleBreakpoint(step) {
+                // Remove existing breakpoint
+                if (breakpointStep) {
+                    breakpointStep.classList.remove('breakpoint');
+                }
+                
+                // Set new breakpoint if it's not the same as the current one
+                if (breakpointStep !== step) {
+                    step.classList.add('breakpoint');
+                    breakpointStep = step;
+                } else {
+                    breakpointStep = null;
+                }
+            }
+            
+            // Event Listeners
+            playPauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    pauseExplanation();
+                } else {
+                    playExplanation();
+                }
+            });
+            
+            stopBtn.addEventListener('click', stopExplanation);
+            
+            prevBtn.addEventListener('click', function() {
+                if (!prevBtn.classList.contains('disabled')) {
+                    prevStep();
+                }
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                if (!nextBtn.classList.contains('disabled')) {
+                    nextStep();
+                }
+            });
+            
+            // Add click event for breakpoints
+            steps.forEach(step => {
+                step.addEventListener('click', function(e) {
+                    // Only set breakpoint if not clicking on a highlight
+                    if (!e.target.classList.contains('highlight')) {
+                        toggleBreakpoint(step);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

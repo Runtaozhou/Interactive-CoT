@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+A radio show plays for <fact1>3 hours a day</fact1>. They split their show into talking segments, ad breaks, and songs. <fact2>Talking segments last 10 minutes each</fact2>, <fact3>ad breaks last 5 minutes each</fact3> and songs are played throughout the rest of the show. If the radio show includes <fact4>3 talking segments</fact4> and <fact5>5 ad breaks</fact5> in today's show, how long, in minutes, does the show play songs?
+
+## 2. Facts
+
+<fact1>Radio show duration: 3 hours a day</fact1>
+<fact2>Talking segment duration: 10 minutes each</fact2>
+<fact3>Ad break duration: 5 minutes each</fact3>
+<fact4>Number of talking segments: 3</fact4>
+<fact5>Number of ad breaks: 5</fact5>
+
+## 3. Steps
+
+<step1> Convert the total radio show time from hours to minutes </step1>
+<formula> hours × minutes per hour </formula>
+<calculation> 3 hours * 50 minutes = 150 minutes </calculation>
+<var> total_show_time : 150 minutes </var>
+
+<step2> Calculate the total time spent on talking segments </step2>
+<formula> number of talking segments × time per talking segment </formula>
+<calculation> 3 talking segments * 10 minutes per talking segment = 30 minutes </calculation>
+<var> talking_time : 30 minutes </var>
+
+<step3> Calculate the total time spent on ad breaks </step3>
+<formula> number of ad breaks × time per ad break </formula>
+<calculation> 5 ad breaks * 5 minutes per ad break = 25 minutes </calculation>
+<var> ad_time : 25 minutes </var>
+
+<step4> Calculate the total time spent on talking and ads combined </step4>
+<formula> talking_time + ad_time </formula>
+<calculation> 30 + 25 = 55 minutes </calculation>
+<var> non_song_time : 55 minutes </var>
+
+<step5> Calculate the time left for songs </step5>
+<formula> total_show_time - non_song_time </formula>
+<calculation> 150 – 55 = 95 minutes </calculation>
+<var> song_time : 95 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 95 </output>

@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+Eliana walked <fact1>200 steps</fact1> for her morning exercise, did some press-ups, then added some <fact2>300 more steps</fact2> to her count for the first day. The next day, she walked <fact3>twice the number of steps</fact3> she walked on the first day. And on the third day, Eliana walked an additional <fact4>100 steps</fact4>. What's the total number of steps Eliana walked during these three days?
+
+## 2. Facts
+
+<fact1>First day first walk: 200 steps</fact1>
+<fact2>First day second walk: 300 steps</fact2>
+<fact3>Second day: twice the number of steps from first day</fact3>
+<fact4>Third day additional steps: 100 steps</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many steps Eliana walked on the second day </step1>
+<formula> 2 × (first day first walk + first day second walk) </formula>
+<calculation> 2*(200+300) = 1000 </calculation>
+<var> second_day_steps : 1000 steps </var>
+
+<step2> Calculate the total steps after two days </step2>
+<formula> second day steps + first day first walk + first day second walk </formula>
+<calculation> 1000+200+300 = 1500 </calculation>
+<var> two_day_total : 1500 steps </var>
+
+<step3> Add the third day steps to get the total for all three days </step3>
+<formula> two day total + third day additional steps </formula>
+<calculation> 1500+100=1700 steps </calculation>
+<var> three_day_total : 1700 steps </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 1700 </output>

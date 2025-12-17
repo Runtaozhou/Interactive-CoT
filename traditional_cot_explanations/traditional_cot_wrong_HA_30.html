@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Boris has 24 books and he donates a fourth of his books to the library. Cameron has 30 books and he donates a third of his books to the library. After donating their books, how many books in total do Boris and Cameron have together?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many books Boris donates.
+            <p>Boris has 24 books and donates 1/4 of them.</p>
+            <p>Number of books Boris donates = 24 ÷ 4 = 6 books</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many books Boris has left after donation.
+            <p>Boris's remaining books = Total books - Donated books</p>
+            <p>Boris's remaining books = 24 - 6 = 18 books</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the additional books Boris found at home.
+            <p>Boris's final book count = Remaining books + Additional books</p>
+            <p>Boris's final book count = 18 + 2 = 20 books</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many books Cameron donates.
+            <p>Cameron has 30 books and donates 1/3 of them.</p>
+            <p>Number of books Cameron donates = 30 ÷ 3 = 10 books</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many books Cameron has left after donation.
+            <p>Cameron's remaining books = Total books - Donated books</p>
+            <p>Cameron's remaining books = 30 - 10 = 20 books</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the total number of books Boris and Cameron have together.
+            <p>Total books = Boris's final book count + Cameron's remaining books</p>
+            <p>Total books = 20 + 20 = 40 books</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        40
+    </div>
+</body>
+</html>

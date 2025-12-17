@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+The batting cage sells golf balls by the dozen. They charge <fact1>$30 for 3 dozen</fact1>. <fact2>Dan buys 5 dozen</fact2>, <fact3>Gus buys 2 dozen</fact3>, and <fact4>Chris buys 48 golf balls</fact4>. How many golf balls do they purchase in total, assuming <fact5>12 golf balls are 1 dozen</fact5>?
+
+## 2. Facts
+
+<fact1>Price: $30 for 3 dozen</fact1>
+<fact2>Dan's purchase: 5 dozen</fact2>
+<fact3>Gus's purchase: 2 dozen</fact3>
+<fact4>Chris's purchase: 48 golf balls</fact4>
+<fact5>Conversion: 12 golf balls = 1 dozen</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many golf balls Dan buys </step1>
+<formula> Dan's dozen × balls per dozen </formula>
+<calculation> 5 × 12 = 60 golf balls </calculation>
+<var> dan_balls : 60 golf balls </var>
+
+<step2> Calculate how many golf balls Gus buys </step2>
+<formula> Gus's dozen × balls per dozen </formula>
+<calculation> 2 × 12 = 24 golf balls </calculation>
+<var> gus_balls : 24 golf balls </var>
+
+<step3> Calculate how many golf balls Chris buys </step3>
+<formula> Chris's golf balls + extra dozen </formula>
+<calculation> 48 + 12 = 60 golf balls </calculation>
+<var> chris_balls : 60 golf balls </var>
+
+<step4> Add up all the golf balls to find the total </step4>
+<formula> Dan's balls + Gus's balls + Chris's balls </formula>
+<calculation> 60 + 24 + 60 = 144 golf balls </calculation>
+<var> total_balls : 144 golf balls </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 144 </output>

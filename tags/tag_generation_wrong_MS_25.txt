@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+<fact1>Tom bought 10 packages of miniature racing cars.</fact1> <fact2>Each package contains five cars.</fact2> <fact3>He gave each of his two nephews 1/5 of the cars.</fact3> How many miniature racing cars are left with Tom?
+
+## 2. Facts
+
+<fact1>Number of packages: 10</fact1>
+<fact2>Cars per package: 5</fact2>
+<fact3>Fraction given to each nephew: 1/5</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many cars Tom gave to each nephew </step1>
+<formula> Total packages × Fraction given </formula>
+<calculation> 10 × 1/5 = 2 </calculation>
+<var> cars_per_nephew : 2 </var>
+
+<step2> Calculate the total number of cars given to both nephews </step2>
+<formula> cars_per_nephew × number of nephews </formula>
+<calculation> 2 × 2 = 4 </calculation>
+<var> total_cars_given : 4 </var>
+
+<step3> Calculate how many cars Tom has left </step3>
+<formula> Total packages - total_cars_given </formula>
+<calculation> 10 - 4 = 6 </calculation>
+<var> cars_left : 6 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 6 </output>

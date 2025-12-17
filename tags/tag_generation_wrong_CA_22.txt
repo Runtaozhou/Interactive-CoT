@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+Jimmy wants to order a pizza at a new place. <fact1>The large pizza costs $10.00</fact1> and <fact2>is cut into 8 slices</fact2>. <fact3>The first topping costs $2.00</fact3>, <fact4>the next 2 toppings cost $1.00 each</fact4> and <fact5>the rest of the toppings cost $0.50</fact5>. If he orders a large pizza with pepperoni, sausage, ham, olives, mushrooms, bell peppers and pineapple. How much will his pizza cost per slice?
+
+## 2. Facts
+
+<fact1>Large pizza cost: $10.00</fact1>
+<fact2>Number of slices: 8</fact2>
+<fact3>First topping cost: $2.00</fact3>
+<fact4>Next 2 toppings cost: $1.00 each</fact4>
+<fact5>Remaining toppings cost: $0.50 each</fact5>
+
+## 3. Steps
+
+<step1> Calculate the cost of the pizza plus the first topping (pepperoni) </step1>
+<formula> pizza_cost + first_topping_cost </formula>
+<calculation> 10 + 2 = $12.00 </calculation>
+<var> initial_cost : $12.00 </var>
+
+<step2> Calculate the cost of the next two toppings (sausage and ham) </step2>
+<formula> 2 * second_tier_topping_cost </formula>
+<calculation> 2 * 1 = $2.00 </calculation>
+<var> second_tier_cost : $2.00 </var>
+
+<step3> Calculate the cost of the remaining toppings (olives, mushrooms, bell peppers and pineapple) </step3>
+<formula> 4 * remaining_topping_cost </formula>
+<calculation> 4 * .50 = $1.00 </calculation>
+<var> remaining_toppings_cost : $1.00 </var>
+
+<step4> Calculate the total cost of the pizza with all toppings </step4>
+<formula> initial_cost + second_tier_cost + remaining_toppings_cost </formula>
+<calculation> 12 + 2 + 1 = $15.00 </calculation>
+<var> total_pizza_cost : $15.00 </var>
+
+<step5> Calculate the cost per slice </step5>
+<formula> total_pizza_cost / number_of_slices </formula>
+<calculation> 15 / 8 = $1.88 </calculation>
+<var> cost_per_slice : $1.88 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 1.88 </output>

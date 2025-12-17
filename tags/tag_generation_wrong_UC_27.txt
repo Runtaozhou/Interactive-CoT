@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Wendy works at a chocolate factory packing chocolates. She can package <fact1>2 dozen chocolates in 5 minutes</fact1>. How many individual chocolates can she package in <fact2>4 hours</fact2>?
+
+## 2. Facts
+
+<fact1>Packaging rate: 2 dozen chocolates in 5 minutes</fact1>
+<fact2>Working time: 4 hours</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many 5-minute increments are in 1 hour </step1>
+<formula> minutes in hour / 5 minutes </formula>
+<calculation> 50/5 = 10 </calculation>
+<var> increments_per_hour : 10 </var>
+
+<step2> Calculate how many individual chocolates are in 2 dozen </step2>
+<formula> 12 chocolates per dozen × 2 dozen </formula>
+<calculation> 12*2 = 24 chocolates </calculation>
+<var> chocolates_per_5_minutes : 24 </var>
+
+<step3> Calculate how many chocolates can be packaged in 1 hour </step3>
+<formula> increments_per_hour × chocolates_per_5_minutes </formula>
+<calculation> 10*24 = 240 individual chocolates </calculation>
+<var> chocolates_per_hour : 240 </var>
+
+<step4> Calculate how many chocolates can be packaged in 4 hours </step4>
+<formula> chocolates_per_hour × 4 hours </formula>
+<calculation> 240*4 = 960 individual chocolates </calculation>
+<var> total_chocolates : 960 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 960 </output>

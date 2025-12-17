@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Bob is tilling a plot of his garden. The plot is <fact1>110 feet wide</fact1> by <fact2>120 feet long</fact2>. His tiller digs a swath <fact3>two feet wide</fact3>, and he can till <fact4>1 foot of ground in about 2 seconds</fact4>. How long will it take him to till this plot of land, in minutes?
+
+## 2. Facts
+
+<fact1>Plot width: 110 feet</fact1>
+<fact2>Plot length: 120 feet</fact2>
+<fact3>Tiller width: 2 feet</fact3>
+<fact4>Tilling rate: 1 foot in 2 seconds</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of rows needed to till the entire width </step1>
+<formula> width ÷ tiller width </formula>
+<calculation> 110 / 2 = 55 rows </calculation>
+<var> number_of_rows : 55 rows </var>
+
+<step2> Calculate the total distance Bob will need to till </step2>
+<formula> length × number of rows </formula>
+<calculation> 120 * 55 = 6,600 feet </calculation>
+<var> total_distance : 6,600 feet </var>
+
+<step3> Calculate the total time needed in seconds </step3>
+<formula> time per foot × total distance </formula>
+<calculation> 2 * 6,600 = 13,200 seconds </calculation>
+<var> total_time_seconds : 13,200 seconds </var>
+
+<step4> Convert the time from seconds to minutes </step4>
+<formula> total time in seconds ÷ 60 </formula>
+<calculation> 13,2000 / 60 = 220 minutes </calculation>
+<var> total_time_minutes : 220 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 220 </output>

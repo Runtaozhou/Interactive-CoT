@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Martha collected 90 cans while Diego collected 10 more than half the cans collected by Martha. If both of them should collect a total of 150 cans for their project, how many more cans do they need to collect?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate half the cans collected by Martha.
+            <p>Martha collected 90 cans, so half of that would be:</p>
+            <p>90 ÷ 2 = 45 cans</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many cans Diego collected.
+            <p>Diego collected 10 more than half of Martha's cans:</p>
+            <p>45 + 10 = 55 cans</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total cans they have collected so far.
+            <p>Martha's cans + Diego's cans:</p>
+            <p>90 + 55 = 145 cans</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many more cans they need to collect.
+            <p>Total cans needed - total collected:</p>
+            <p>150 - 145 = 5 cans</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        10
+    </div>
+</body>
+</html>

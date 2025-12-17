@@ -1,0 +1,46 @@
+## 1. Problem statement
+
+Rebecca bought <fact1>2 pies</fact1> for the holiday weekend. Each pie was sliced into <fact2>8 slices</fact2>. Rebecca ate <fact3>1 slice of each pie</fact3>. Her family and friends ate <fact4>50% of the remaining pies</fact4> over the weekend. On Sunday evening Rebecca and her husband each had <fact5>another slice of pie</fact5>. How many slices are remaining?
+
+## 2. Facts
+
+<fact1>Number of pies: 2</fact1>
+<fact2>Slices per pie: 8</fact2>
+<fact3>Rebecca's initial consumption: 1 slice of each pie</fact3>
+<fact4>Family and friends consumption: 50% of remaining pies</fact4>
+<fact5>Sunday evening consumption: 1 slice each for Rebecca and husband</fact5>
+
+## 3. Steps
+
+<step1> Calculate the total number of slices from all pies </step1>
+<formula> number of pies × slices per pie </formula>
+<calculation> 2*8 = 16 slices </calculation>
+<var> total_slices : 16 slices </var>
+
+<step2> Subtract the slices Rebecca initially ate </step2>
+<formula> total_slices - slices eaten by Rebecca </formula>
+<calculation> 16-2 = 14 slices </calculation>
+<var> remaining_after_initial : 14 slices </var>
+
+<step3> Calculate how many slices family and friends ate </step3>
+<formula> remaining_after_initial × percentage eaten </formula>
+<calculation> 14*.50 = 7 slices </calculation>
+<var> family_friends_ate : 7 slices </var>
+
+<step4> Calculate remaining slices after family and friends ate </step4>
+<formula> remaining_after_initial - family_friends_ate </formula>
+<calculation> 14-7 = 7 slices </calculation>
+<var> remaining_before_sunday : 7 slices </var>
+
+<step5> Subtract the slices eaten by Rebecca and her husband on Sunday </step5>
+<formula> remaining_before_sunday - slices eaten on Sunday </formula>
+<calculation> 7-3 = 4 slices </calculation>
+<var> final_remaining : 4 slices </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 4 </output>

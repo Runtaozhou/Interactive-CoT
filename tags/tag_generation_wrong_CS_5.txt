@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+A <fact1>basic manicure starts at $35</fact1> while a <fact2>pedicure starts at $40</fact2>. A certain salon offers <fact3>20% off if you get both</fact3>. Suppose Karen chooses to do both and would also like to add nail art on each of her fingers, which <fact4>costs $3 per nail</fact4>. How much would she pay in all?
+
+## 2. Facts
+
+<fact1>Basic manicure cost: $35</fact1>
+<fact2>Pedicure cost: $40</fact2>
+<fact3>Discount for both services: 20%</fact3>
+<fact4>Nail art cost: $3 per nail</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total cost for both manicure and pedicure </step1>
+<formula> manicure_cost + pedicure_cost </formula>
+<calculation> $35 + $40 = $75 </calculation>
+<var> both_services_cost : $75 </var>
+
+<step2> Calculate the discount amount </step2>
+<formula> both_services_cost * discount_rate </formula>
+<calculation> $75 * 0.2 = $15 </calculation>
+<var> discount_amount : $15 </var>
+
+<step3> Calculate the discounted price for both services </step3>
+<formula> both_services_cost - discount_amount </formula>
+<calculation> $75 - $15 = $60 </calculation>
+<var> discounted_price : $60 </var>
+
+<step4> Calculate the cost of nail art for all fingers </step4>
+<formula> cost_per_nail * number_of_fingers </formula>
+<calculation> $3 * $10 = $30 </calculation>
+<var> nail_art_cost : $30 </var>
+
+<step5> Calculate the total cost </step5>
+<formula> discounted_price + nail_art_cost </formula>
+<calculation> $60 + $25 = $85 </calculation>
+<var> total_cost : $85 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 85 </output>

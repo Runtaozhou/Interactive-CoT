@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+An avant-garde sushi house sells jellyfish for a certain amount and eel for <fact1>nine times that amount</fact1>. If the <fact2>combined cost of one order each kind of sushi is $200</fact2>, how much does the eel cost?
+
+## 2. Facts
+
+<fact1>Eel cost: 9 times jellyfish cost</fact1>
+<fact2>Combined cost: $200</fact2>
+
+## 3. Steps
+
+<step1> Set up variables for the cost of jellyfish and eel, and write equations based on the given information </step1>
+<formula> j + e = $200 and e = 9j </formula>
+<calculation></calculation>
+<var> j : cost of jellyfish </var>
+<var> e : cost of eel </var>
+
+<step2> Substitute the second equation into the first equation </step2>
+<formula> j + 9j = $200 </formula>
+<calculation></calculation>
+
+<step3> Combine like terms to simplify the equation </step3>
+<formula> 10j = $200 </formula>
+<calculation></calculation>
+<var> 10j : $200 </var>
+
+<step4> Solve for j by dividing both sides by 10 </step4>
+<formula> j = $200 ÷ 10 </formula>
+<calculation> $200 ÷ 10 = $20 </calculation>
+<var> j : $20 </var>
+
+<step5> Calculate the cost of eel by substituting the value of j into e = 9j </step5>
+<formula> e = 9j </formula>
+<calculation> e = 9 * $20 = $190 </calculation>
+<var> e : $190 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 190 </output>

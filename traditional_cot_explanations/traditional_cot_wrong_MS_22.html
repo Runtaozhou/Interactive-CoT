@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Anna goes trick-or-treating in a subdivision where she gets 14 pieces of candy per house. Her brother Billy goes trick-or-tricking in a neighboring subdivision where he gets 11 pieces of candy per house. If the first subdivision has 60 houses and the second subdivision has 75 houses, how many more pieces of candy does Anna get?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the total number of pieces of candy Billy gets.
+            <p>We need to multiply the candy per house by the number of houses:</p>
+            <p>11 pieces/house × 75 houses = 825 pieces</p>
+            <p>So Billy gets a total of 825 pieces of candy.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then subtract the number of houses in the second subdivision from the number in the first subdivision to find the house difference.
+            <p>First subdivision houses - second subdivision houses:</p>
+            <p>60 houses - 75 houses = -15 houses</p>
+            <p>The difference in houses is -15 houses.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Since Anna gets 14 pieces per house, multiply the house difference by the number of pieces Anna gets per house.
+            <p>House difference × candy per house:</p>
+            <p>-15 houses × 14 pieces/house = -210 pieces</p>
+            <p>This gives us -210 pieces as Anna's candy difference.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then subtract this from the total number of pieces Billy gets to find the difference.
+            <p>Billy's total candy - Anna's candy difference:</p>
+            <p>825 pieces - (-210) pieces = 1035 pieces</p>
+            <p>The difference in candy is 1035 pieces.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1035
+    </div>
+</body>
+</html>

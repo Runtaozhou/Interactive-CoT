@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+Emily wants to know how much it rained last week. She sees that <fact1>it rained 2 inches on Monday morning and 1 more inch later that day</fact1>. <fact2>It rained twice that much on Tuesday</fact2>. <fact3>It did not rain on Wednesday but on Thursday it rained 1 inch</fact3>. <fact4>The biggest storm was on Friday when the total was equal to Monday through Thursday combined</fact4>. What was the daily average rain total for the week?
+
+## 2. Facts
+
+<fact1>Monday rain: 2 inches in morning, 1 more inch later</fact1>
+<fact2>Tuesday rain: twice Monday's amount</fact2>
+<fact3>Wednesday rain: 0 inches, Thursday rain: 1 inch</fact3>
+<fact4>Friday rain: equal to Monday through Thursday combined</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total rain on Monday </step1>
+<formula> morning rain + afternoon rain </formula>
+<calculation> 2 inches + 1 inches = 3 inches </calculation>
+<var> monday_rain : 3 inches </var>
+
+<step2> Calculate the total rain on Tuesday </step2>
+<formula> 2 × monday_rain </formula>
+<calculation> 2 * 3 inches = 6 inches </calculation>
+<var> tuesday_rain : 6 inches </var>
+
+<step3> Calculate the total rain across Wednesday and Thursday </step3>
+<formula> wednesday_rain + thursday_rain </formula>
+<calculation> 0 inches + 1 inch = 1 inch </calculation>
+<var> wed_thurs_rain : 1 inch </var>
+
+<step4> Calculate the total rain on Friday </step4>
+<formula> monday_rain + tuesday_rain + wed_thurs_rain </formula>
+<calculation> 3 inches + 6 inches + 1 inch = 10 inches </calculation>
+<var> friday_rain : 10 inches </var>
+
+<step5> Calculate the total rain from Monday to Thursday </step5>
+<formula> monday_rain + tuesday_rain + wed_thurs_rain </formula>
+<calculation> 3 inches + 6 inches + 1 inch = 10 inches </calculation>
+<var> mon_to_thurs_rain : 20 inches </var>
+
+<step6> Calculate the average daily rain for the week </step6>
+<formula> mon_to_thurs_rain / 4 days </formula>
+<calculation> 20 inches/4 days = 5 inches </calculation>
+<var> daily_average : 5 inches </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 5 </output>

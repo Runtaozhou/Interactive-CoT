@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Nellie can eat 12 sourball candies before crying. Jacob can only manage half of that number of candies, and Lana can only do three fewer than Jacob. They had a bucket of 30 candies, and all of them ate until they cried. If they divide the remaining candies in the bucket equally, how many sourball candies will they each get?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many candies Jacob can eat before crying.
+            <p>Jacob can eat half of what Nellie can eat.</p>
+            <p>Nellie's limit ÷ 2 = 12 ÷ 2 = 6 candies</p>
+            <p>So Jacob can eat 6 candies before crying.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many candies Lana can eat before crying.
+            <p>Lana can eat 3 fewer candies than Jacob.</p>
+            <p>Jacob's limit - 3 = 6 - 3 = 3 candies</p>
+            <p>So Lana can eat 3 candies before crying.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total number of candies eaten by all three people.
+            <p>We need to add up all the candies eaten by Nellie, Jacob, and Lana.</p>
+            <p>Nellie's limit + Jacob's limit + Lana's limit = 12 + 6 + 3 = 21 candies</p>
+            <p>So they ate a total of 21 candies.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the number of candies remaining in the bucket.
+            <p>We subtract the total eaten from the initial amount in the bucket.</p>
+            <p>Total candies - Total eaten = 30 - 20 = 10 candies</p>
+            <p>So there are 10 candies remaining in the bucket.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many candies each person gets after dividing equally.
+            <p>We divide the remaining candies equally among the three people.</p>
+            <p>Remaining candies ÷ 3 = 10 ÷ 3 = 3.333333 candies</p>
+            <p>So each person will get 3.333333 candies.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        3.333333
+    </div>
+</body>
+</html>

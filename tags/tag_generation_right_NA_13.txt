@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+On the weekend, Tony will walk to the store. On weekdays, he runs to the store. When <fact1>he walks, he goes 2 MPH</fact1>. When <fact2>he runs he goes 10 MPH</fact2>. <fact3>The store is 4 miles away</fact3>. If he goes on Sunday, Tuesday, and Thursday, what is the average time in minutes that he spends to get to the store?
+
+## 2. Facts
+
+<fact1>Walking speed: 2 MPH</fact1>
+<fact2>Running speed: 10 MPH</fact2>
+<fact3>Distance to store: 4 miles</fact3>
+
+## 3. Steps
+
+<step1> Calculate how long it takes Tony to walk to the store on Sunday </step1>
+<formula> distance ÷ walking speed </formula>
+<calculation> 4 / 2 = 2 </calculation>
+<var> sunday_time_hours : 2 hours </var>
+
+<step2> Convert the Sunday walking time from hours to minutes </step2>
+<formula> hours × 60 </formula>
+<calculation> 2 x 60 = 120 </calculation>
+<var> sunday_time_minutes : 120 minutes </var>
+
+<step3> Calculate how long it takes Tony to run to the store on Tuesday and Thursday </step3>
+<formula> distance ÷ running speed </formula>
+<calculation> 4 / 10 = .4 </calculation>
+<var> weekday_time_hours : .4 hours </var>
+
+<step4> Convert the weekday running time from hours to minutes </step4>
+<formula> hours × 60 </formula>
+<calculation> .4 x 60 = 24 </calculation>
+<var> weekday_time_minutes : 24 minutes </var>
+
+<step5> Calculate the total time for all three trips </step5>
+<formula> sunday_time_minutes + weekday_time_minutes + weekday_time_minutes </formula>
+<calculation> 120 + 24 + 24 = 168 </calculation>
+<var> total_time : 168 minutes </var>
+
+<step6> Calculate the average time per trip </step6>
+<formula> total_time ÷ number of trips </formula>
+<calculation> 168 / 3 = 56 </calculation>
+<var> average_time : 56 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 56 </output>

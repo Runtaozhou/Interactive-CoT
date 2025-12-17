@@ -1,0 +1,48 @@
+## 1. Problem statement
+
+A house's living room, dining room and kitchen take up <fact1>1,000 sq ft</fact1>. The house also has a guest bedroom and a master bedroom suite. If the guest bedroom is <fact2>a quarter of the size of the master bedroom suite</fact2>, and the house is <fact3>2,300 sq ft total</fact3>, how large is the master bedroom suite?
+
+## 2. Facts
+
+<fact1>Living room, dining room and kitchen area: 1,000 sq ft</fact1>
+<fact2>Guest bedroom size: 0.25 of master bedroom suite</fact2>
+<fact3>Total house size: 2,300 sq ft</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total area available for bedrooms by subtracting the non-bedroom areas from the total house size </step1>
+<formula> total house size - non-bedroom area </formula>
+<calculation> 2300 - 1000 = 1,300 sq ft </calculation>
+<var> bedroom_area : 1,300 sq ft </var>
+
+<step2> Define the master bedroom suite size as a variable </step2>
+<formula></formula>
+<calculation></calculation>
+<var> master_suite : x </var>
+
+<step3> Express the guest bedroom size in terms of the master bedroom suite </step3>
+<formula> 0.25 × master suite size </formula>
+<calculation></calculation>
+<var> guest_bedroom : 0.25x </var>
+
+<step4> Calculate the total bedroom area in terms of the master bedroom suite </step4>
+<formula> master suite size + guest bedroom size </formula>
+<calculation> x + 0.25x = 1.25x </calculation>
+<var> total_bedroom_area : 1.25x </var>
+
+<step5> Set up an equation using the total bedroom area </step5>
+<formula> total bedroom area = bedroom area available </formula>
+<calculation> 1.25x = 1300 </calculation>
+
+<step6> Solve for the master bedroom suite size </step6>
+<formula> x = bedroom area available ÷ 1.25 </formula>
+<calculation> x = 1300 / 1.25 = 1040 sq ft </calculation>
+<var> master_suite : 1040 sq ft </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 1040 </output>

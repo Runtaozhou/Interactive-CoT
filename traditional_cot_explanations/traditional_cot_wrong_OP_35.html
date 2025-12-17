@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        On Thursday, Joe caught 3 pounds of crawfish. He caught 4 times that amount on Friday and half the amount of his Friday's catch on Saturday. If 1 serving of crawfish is 3 pounds, how many servings does he have?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much crawfish Joe caught on Friday.
+            <p>Friday's catch = Thursday's catch × 4</p>
+            <p>Friday's catch = 3 pounds × 4 = 12 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much crawfish Joe caught on Saturday.
+            <p>Saturday's catch = Friday's catch × 2</p>
+            <p>Saturday's catch = 12 pounds × 2 = 24 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total amount of crawfish Joe caught over the three days.
+            <p>Total catch = Thursday's catch + Friday's catch + Saturday's catch</p>
+            <p>Total catch = 3 pounds + 12 pounds + 24 pounds = 39 pounds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how many servings Joe has.
+            <p>Number of servings = Total catch ÷ Serving size</p>
+            <p>Number of servings = 39 pounds ÷ 3 pounds = 13 servings</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        13
+    </div>
+</body>
+</html>

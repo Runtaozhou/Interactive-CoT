@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+A <fact1>family of 6 (2 adults and 4 kids)</fact1> are to divide a watermelon such that <fact2>each adult gets a slice that is twice as big as that of each kid</fact2>. What percentage of the watermelon does each adult get?
+
+## 2. Facts
+
+<fact1>Family composition: 2 adults and 4 kids (total 6 people)</fact1>
+<fact2>Adult slice size: 2 times kid slice size</fact2>
+
+## 3. Steps
+
+<step1> Define the percentage of watermelon that each adult gets </step1>
+<formula></formula>
+<calculation></calculation>
+<var>x : percentage each adult gets</var>
+
+<step2> Calculate the percentage each kid gets based on the adult's portion </step2>
+<formula>kid's percentage = adult's percentage / 2</formula>
+<calculation>x/2</calculation>
+<var>kid_percentage : x/2</var>
+
+<step3> Express the total watermelon as the sum of all portions </step3>
+<formula>total = 2 adults' portions + 4 kids' portions</formula>
+<calculation>2*x + 4*(x/2)</calculation>
+<var>total_percentage : 2x + 4*(x/2)</var>
+
+<step4> Set up an equation since the total must equal 100% </step4>
+<formula>2x + 4x = 100</formula>
+<calculation>2x + 4x = 100</calculation>
+<var>equation : 2x + 4x = 100</var>
+
+<step5> Solve for x to find the percentage each adult gets </step5>
+<formula>x = 100/6</formula>
+<calculation>x = 100/6 = 16.67</calculation>
+<var>adult_percentage : 16.67%</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>16.67</output>

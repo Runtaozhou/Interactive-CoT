@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+<fact1>Roger bought a house for $100,000.</fact1> He was able to <fact2>pay 20% down</fact2>, and his parents <fact3>paid off an additional 30% of the remaining balance</fact3>. How much money does Roger still owe on his house?
+
+## 2. Facts
+
+<fact1>House price: $100,000</fact1>
+<fact2>Down payment percentage: 20%</fact2>
+<fact3>Parents' payment: 30% of remaining balance</fact3>
+
+## 3. Steps
+
+<step1> Calculate Roger's down payment </step1>
+<formula> house_price * down_payment_percentage </formula>
+<calculation> 100000(.20)=20000$ down payment </calculation>
+<var> down_payment : $20000 </var>
+
+<step2> Calculate the remaining balance after down payment </step2>
+<formula> house_price - down_payment </formula>
+<calculation> 100000-20000=$80000 remaining </calculation>
+<var> remaining_balance : $80000 </var>
+
+<step3> Calculate the amount Roger's parents paid </step3>
+<formula> remaining_balance * parents_payment_percentage </formula>
+<calculation> 80000(.30)=24000 </calculation>
+<var> parents_payment : $24000 </var>
+
+<step4> Calculate the final amount Roger still owes </step4>
+<formula> remaining_balance - parents_payment </formula>
+<calculation> 80000-25000=55000$ </calculation>
+<var> final_balance : $55000 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 55000 </output>

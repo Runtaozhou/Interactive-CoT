@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+Robin wants to buy jelly bracelets for her friends. She decides to buy one bracelet for each letter of the first name of her friends. Her friends are Jessica, Tori, Lily and Patrice. If each jelly bracelet costs <fact1>$2</fact1>, what is the total she will spend in dollars?
+
+## 2. Facts
+
+<fact1>Cost per jelly bracelet: $2</fact1>
+
+## 3. Steps
+
+<step1> There are 7 letters in Jessica. </step1>
+<formula></formula>
+<calculation></calculation>
+<var>jessica_letters: 7</var>
+
+<step2> There are 4 letters in Tori. </step2>
+<formula></formula>
+<calculation></calculation>
+<var>tori_letters: 4</var>
+
+<step3> There are 4 letters in Lily. </step3>
+<formula></formula>
+<calculation></calculation>
+<var>lily_letters: 4</var>
+
+<step4> There are 7 letters in Patrice. </step4>
+<formula></formula>
+<calculation></calculation>
+<var>patrice_letters: 7</var>
+
+<step5> In all this is, 7 + 4 + 4 + 7 = 22 letters and thus 22 bracelets. </step5>
+<formula>jessica_letters + tori_letters + lily_letters + patrice_letters</formula>
+<calculation>7 + 4 + 4 + 7 = 22</calculation>
+<var>total_bracelets: 22</var>
+
+<step6> The total cost is 22 bracelets * $2 = $44 </step6>
+<formula>total_bracelets * cost_per_bracelet</formula>
+<calculation>22 * $2 = $44</calculation>
+<var>total_cost: $44</var>
+
+## 4. Wrongsteps
+
+<wrongstep>6</wrongstep>
+
+## 5. Output
+
+<output>44</output>

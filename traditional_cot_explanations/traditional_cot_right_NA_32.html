@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">0</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        There is a playground that is surrounded by a square fence that has a side length of 27 yards. There is a 12 yard by 9 yard garden that has fencing around it. How many yards of fencing do the playground and garden have together?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total length of the playground fence.
+            <p>Since the playground is surrounded by a square fence with a side length of 27 yards, we need to multiply the side length by 4 to find the total fence length.</p>
+            <p>Playground fence length = 27 yards × 4 = 108 yards</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the perimeter of the garden.
+            <p>The garden has dimensions of 12 yards by 9 yards. To find the perimeter, we use the formula: 2 × (length + width).</p>
+            <p>Garden fence length = 2 × (12 yards + 9 yards) = 2 × 21 yards = 42 yards</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the playground fence and garden fence lengths together.
+            <p>To find the total fencing, we add the playground fence length and the garden fence length.</p>
+            <p>Total fence length = 108 yards + 42 yards = 150 yards</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> State the final answer.
+            <p>The playground and garden have a combined fence length of 150 yards.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        150
+    </div>
+</body>
+</html>

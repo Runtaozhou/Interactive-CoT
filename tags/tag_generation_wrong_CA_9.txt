@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Pam and Fred went to a carnival. <fact1>Pam rode the roller coaster 2 times</fact1> while <fact2>Fred rode it 4 times</fact2>. After that, <fact3>each of them decided to ride the luge 2 times</fact3>. If <fact4>each ride cost 6 tickets</fact4>, how many tickets did they use that day?
+
+## 2. Facts
+
+<fact1>Pam's roller coaster rides: 2 times</fact1>
+<fact2>Fred's roller coaster rides: 4 times</fact2>
+<fact3>Each person's luge rides: 2 times</fact3>
+<fact4>Cost per ride: 6 tickets</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total roller coaster rides </step1>
+<formula> Pam's rides + Fred's rides </formula>
+<calculation> 2 + 4 = 6 times </calculation>
+<var> total_roller_coaster_rides : 6 times </var>
+
+<step2> Calculate the total luge rides </step2>
+<formula> Pam's luge rides + Fred's luge rides </formula>
+<calculation> 2 + 2 = 4 times </calculation>
+<var> total_luge_rides : 4 times </var>
+
+<step3> Calculate the total number of rides </step3>
+<formula> total_roller_coaster_rides + total_luge_rides </formula>
+<calculation> 6 + 4 = 10 times </calculation>
+<var> total_rides : 10 times </var>
+
+<step4> Calculate the total number of tickets used </step4>
+<formula> total_rides × cost per ride </formula>
+<calculation> 10 × 6 = 50 tickets </calculation>
+<var> total_tickets : 50 tickets </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 50 </output>

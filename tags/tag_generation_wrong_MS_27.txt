@@ -1,0 +1,32 @@
+## 1. Problem statement
+
+In 3 years, Jayden will be half of Ernesto's age. If <fact1>Ernesto is 11 years old</fact1>, how many years old is Jayden now?
+
+## 2. Facts
+
+<fact1>Ernesto's age: 11 years old</fact1>
+
+## 3. Steps
+
+<step1> Calculate Jayden's age in 3 years as half of Ernesto's age </step1>
+<formula> Ernesto's age ÷ 2 </formula>
+<calculation> 11 ÷ 2 = 5.5 </calculation>
+<var> jayden_future_age : 5.5 years </var>
+
+<step2> Calculate Jayden's current age by subtracting 3 years from his future age </step2>
+<formula> jayden_future_age - 3 </formula>
+<calculation> 5.5 - 3 = 2.5 </calculation>
+<var> jayden_current_age : 2.5 years </var>
+
+<step3> State Jayden's current age </step3>
+<formula></formula>
+<calculation></calculation>
+<var> jayden_current_age : 2.5 years </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 2.5 </output>

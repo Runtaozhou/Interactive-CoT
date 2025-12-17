@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Christi saw <fact1>twice as many black bears as white bears</fact1> and <fact2>40 more brown bears than black bears</fact2> in a national park. If <fact3>the number of black bears in the park is 60</fact3>, calculate the population of bears in the park.
+
+## 2. Facts
+
+<fact1>Black bears are twice as many as white bears</fact1>
+<fact2>Brown bears are 40 more than black bears</fact2>
+<fact3>Number of black bears: 60</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of brown bears using the number of black bears and the difference between them </step1>
+<formula> black_bears + 40 </formula>
+<calculation> 60 + 40 = 100 brown bears </calculation>
+<var> brown_bears : 100 </var>
+
+<step2> Add 10 baby brown bears that were not counted initially </step2>
+<formula> brown_bears + 10 </formula>
+<calculation> 100 + 10 = 110 baby brown bears </calculation>
+<var> total_brown_bears : 110 </var>
+
+<step3> Calculate the number of white bears using the relationship with black bears </step3>
+<formula> black_bears / 2 </formula>
+<calculation> 60 / 2 = 30 white bears </calculation>
+<var> white_bears : 30 </var>
+
+<step4> Calculate the total population of bears by adding all types of bears </step4>
+<formula> white_bears + black_bears + total_brown_bears </formula>
+<calculation> 30 + 60 + 110 = 200 </calculation>
+<var> total_bears : 200 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 200 </output>

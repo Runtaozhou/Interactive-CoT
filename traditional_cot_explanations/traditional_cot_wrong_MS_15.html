@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Phil has a coin collection he likes to add to. He started with 50 state quarters his parents gave him. Over the next year he doubled this. The following year he collected 3 each month. The year after that he collected 1 every third month. The year after that he lost a quarter of them when he misplaced his collection. How many did he have left after losing some?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, let's calculate how many quarters Phil had after doubling his initial collection. He started with 50 quarters and then doubled this amount.
+            <br>
+            50 × 2 = 100 quarters
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Next, let's calculate how many quarters Phil collected in the second year. He collected 3 quarters each month for 12 months.
+            <br>
+            3 × 12 = 36 quarters
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Now, let's calculate Phil's total before losing some. We add the quarters after doubling and the quarters collected in the second year.
+            <br>
+            100 + 36 = 136 quarters
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Phil lost a quarter of his collection. Let's calculate how many coins he lost.
+            <br>
+            136 ÷ 4 = 34 quarters
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Finally, let's calculate how many coins Phil had remaining after losing some.
+            <br>
+            136 - 34 = 102 quarters
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        102
+    </div>
+</body>
+</html>

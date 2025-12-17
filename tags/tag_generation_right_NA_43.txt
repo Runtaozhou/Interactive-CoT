@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+The bus driver drives <fact1>an average of 2 hours each day, 5 days a week</fact1>. From <fact2>Monday to Wednesday he drove at an average speed of 12 kilometers per hour</fact2>, and from <fact3>Thursday to Friday at an average speed of 9 kilometers per hour</fact3>. How many kilometers did the driver travel during these 5 days?
+
+## 2. Facts
+
+<fact1>Working hours: 2 hours each day, 5 days a week</fact1>
+<fact2>Speed Monday to Wednesday: 12 kilometers per hour</fact2>
+<fact3>Speed Thursday to Friday: 9 kilometers per hour</fact3>
+
+## 3. Steps
+
+<step1> Calculate the total working hours from Monday to Wednesday </step1>
+<formula> number of days × hours per day </formula>
+<calculation> 3 * 2 = 6 hours </calculation>
+<var> mon_to_wed_hours : 6 hours </var>
+
+<step2> Calculate the distance traveled from Monday to Wednesday </step2>
+<formula> hours × speed </formula>
+<calculation> 6 * 12 = 72 kilometers </calculation>
+<var> mon_to_wed_distance : 72 kilometers </var>
+
+<step3> Calculate the total working hours for Thursday and Friday </step3>
+<formula> number of days × hours per day </formula>
+<calculation> 2 * 2 = 4 hours </calculation>
+<var> thu_to_fri_hours : 4 hours </var>
+
+<step4> Calculate the distance traveled on Thursday and Friday </step4>
+<formula> hours × speed </formula>
+<calculation> 4 * 9 = 36 kilometers </calculation>
+<var> thu_to_fri_distance : 36 kilometers </var>
+
+<step5> Calculate the total distance traveled during the five days </step5>
+<formula> mon_to_wed_distance + thu_to_fri_distance </formula>
+<calculation> 72 + 36 = 108 kilometers </calculation>
+<var> total_distance : 108 kilometers </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 108 </output>

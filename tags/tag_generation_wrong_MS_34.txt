@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Joseph had socks of many different colors. His dresser drawer was filled to overflowing with red, blue, black, and white socks. Uncertain of how many pairs he had of each color, he began to sort his socks. He discovered that <fact1>he had three more pairs of blue socks than he had pairs of black socks</fact1>. <fact2>He had one less pair of red socks than he had pairs of white socks</fact2>. <fact3>He had twice as many blue socks as he had of red socks</fact3>. And <fact4>he counted a total of 6 red socks</fact4>. What is the total number of Joseph's socks?
+
+## 2. Facts
+
+<fact1>Blue sock pairs: 3 more than black sock pairs</fact1>
+<fact2>Red sock pairs: 1 less than white sock pairs</fact2>
+<fact3>Blue socks: twice as many as red socks</fact3>
+<fact4>Red socks: 6</fact4>
+
+## 3. Steps
+
+<step1> Calculate the number of blue socks based on the number of red socks </step1>
+<formula> blue_socks = 2 * red_socks </formula>
+<calculation> 2 * 6 = 12 </calculation>
+<var> blue_socks : 12 </var>
+
+<step2> Calculate the number of white socks based on the relationship with red socks </step2>
+<formula> white_socks = red_socks - 2 </formula>
+<calculation> 6 - 2 = 4 </calculation>
+<var> white_socks : 4 </var>
+
+<step3> Calculate the number of pairs of black socks based on the relationship with blue socks </step3>
+<formula> black_sock_pairs = red_socks/2 - 3 </formula>
+<calculation> 6/2 - 3 = 0 </calculation>
+<var> black_sock_pairs : 0 </var>
+
+<step4> Calculate the total number of black socks </step4>
+<formula> black_socks = black_sock_pairs * 2 </formula>
+<calculation> 0 * 2 = 0 </calculation>
+<var> black_socks : 0 </var>
+
+<step5> Calculate the total number of socks by adding all colors </step5>
+<formula> total_socks = red_socks + blue_socks + white_socks + black_socks </formula>
+<calculation> 6 + 12 + 4 + 0 = 22 </calculation>
+<var> total_socks : 22 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 22 </output>

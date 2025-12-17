@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Doris works at the Widget Factory in the packing department. She puts <fact1>3 widgets in each carton</fact1>, which are <fact2>4 inches wide, 4 inches long, and 5 inches tall</fact2>. She then packs those cartons into a shipping box before sending it to the loading bay. The shipping boxes are <fact3>20 inches wide, 20 inches long, and 20 inches high</fact3>. How many widgets get shipped in each shipping box?
+
+## 2. Facts
+
+<fact1>Widgets per carton: 3</fact1>
+<fact2>Carton dimensions: 4 inches wide, 4 inches long, 5 inches tall</fact2>
+<fact3>Shipping box dimensions: 20 inches wide, 20 inches long, 20 inches high</fact3>
+
+## 3. Steps
+
+<step1> Calculate the surface area of each carton </step1>
+<formula> 2*(width*length + width*height + length*height) </formula>
+<calculation> 2*(4*4+4*5+5*4) = 136 square inches </calculation>
+<var> carton_surface_area : 136 square inches </var>
+
+<step2> Calculate the volume of each shipping box </step2>
+<formula> width * length * height </formula>
+<calculation> 20*20*20 = 8000 cubic inches </calculation>
+<var> shipping_box_volume : 8000 cubic inches </var>
+
+<step3> Calculate how many cartons fit in each shipping box </step3>
+<formula> shipping_box_volume / carton_surface_area </formula>
+<calculation> 8000/136 ≈ 58.82 </calculation>
+<var> cartons_per_box : 58 </var>
+
+<step4> Calculate the total number of widgets in each shipping box </step4>
+<formula> widgets_per_carton * cartons_per_box </formula>
+<calculation> 3*58 = 174 </calculation>
+<var> total_widgets : 174 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 174 </output>

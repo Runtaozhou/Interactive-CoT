@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        John had a son James when he was 19. James is now twice as old as his sister Dora, who will turn 12 in 3 years. How old will John's youngest son, who was born when John was 32, be in 3 years?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate Dora's current age.
+            <p>Since Dora will turn 12 in 3 years, her current age is:</p>
+            <p>12 - 3 = 9 years old</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate James' current age based on Dora's age.
+            <p>We know that James is twice as old as Dora. Since Dora is currently 9, James is:</p>
+            <p>9 × 2 = 18 years old</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate John's current age.
+            <p>John was 19 when James was born, so John's current age is:</p>
+            <p>19 + 18 = 37 years old</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the youngest son's current age.
+            <p>John was 32 when his youngest son was born. Since John is now 37, his youngest son is:</p>
+            <p>37 - 32 = 5 years old</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the youngest son's age in 3 years.
+            <p>The youngest son is currently 5 years old, so in 3 years he will be:</p>
+            <p>5 + 3 = 8 years old</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        20
+    </div>
+</body>
+</html>

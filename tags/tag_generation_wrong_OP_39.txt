@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+A marathon is <fact1>26 miles</fact1>. He can run the <fact2>first 10 miles in 1 hour</fact2>. For the remaining miles he runs at <fact3>80% that pace</fact3>. How long does the race take?
+
+## 2. Facts
+
+<fact1>Marathon distance: 26 miles</fact1>
+<fact2>First 10 miles pace: 10 miles in 1 hour</fact2>
+<fact3>Remaining miles pace: 80% of initial pace</fact3>
+
+## 3. Steps
+
+<step1> Calculate the remaining miles after the first 10 miles </step1>
+<formula> total miles + first miles </formula>
+<calculation> 26 + 10 = 36 miles </calculation>
+<var> remaining_miles : 36 miles </var>
+
+<step2> Calculate the new pace for the remaining miles </step2>
+<formula> initial pace * 0.8 </formula>
+<calculation> 10 * 0.8 = 8 miles per hour </calculation>
+<var> new_pace : 8 miles per hour </var>
+
+<step3> Calculate the time needed for the remaining miles </step3>
+<formula> remaining_miles / new_pace </formula>
+<calculation> 36 / 8 = 4.5 hours </calculation>
+<var> remaining_time : 4.5 hours </var>
+
+<step4> Calculate the total time for the marathon </step4>
+<formula> first_section_time + remaining_time </formula>
+<calculation> 1 + 4.5 = 5.5 hours </calculation>
+<var> total_time : 5.5 hours </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 5.5 </output>

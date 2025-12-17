@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Francine has <fact1>five full boxes of crayons</fact1> and <fact2>5 loose crayons</fact2>, and her friend has <fact3>27 loose crayons</fact3>. They need to put all of their loose crayons in a box. How many more boxes do they need if Francine has a total of <fact4>85 crayons</fact4>?
+
+## 2. Facts
+
+<fact1>Francine's full boxes: 5</fact1>
+<fact2>Francine's loose crayons: 5</fact2>
+<fact3>Friend's loose crayons: 27</fact3>
+<fact4>Francine's total crayons: 85</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many crayons are in the boxes </step1>
+<formula> total crayons - loose crayons </formula>
+<calculation> 90 - 5 = 85 crayons </calculation>
+<var> boxed_crayons : 85 crayons </var>
+
+<step2> Find how many crayons are in each box </step2>
+<formula> boxed_crayons ÷ number of boxes </formula>
+<calculation> 85/5 = 17 crayons </calculation>
+<var> crayons_per_box : 17 crayons </var>
+
+<step3> Calculate the total number of loose crayons </step3>
+<formula> Francine's loose crayons + friend's loose crayons </formula>
+<calculation> 5 + 27 = 32 crayons </calculation>
+<var> total_loose_crayons : 32 crayons </var>
+
+<step4> Determine how many boxes are needed for the loose crayons </step4>
+<formula> total_loose_crayons ÷ crayons_per_box </formula>
+<calculation> 32/17 = 1.88 boxes </calculation>
+<var> boxes_needed : 1.88 boxes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 1.88 </output>

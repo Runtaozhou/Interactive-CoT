@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+At the same store, Peter bought <fact1>2 pairs of pants and 5 shirts for $62 total</fact1>, and Jessica bought <fact2>2 shirts for $20 total</fact2>. Each pair of pants cost the same price, and each shirt cost the same price. How much does 1 pair of pants cost?
+
+## 2. Facts
+
+<fact1>Peter's purchase: 2 pairs of pants and 5 shirts for $62 total</fact1>
+<fact2>Jessica's purchase: 2 shirts for $20 total</fact2>
+
+## 3. Steps
+
+<step1> Calculate the cost of one shirt using Jessica's purchase </step1>
+<formula> total cost ÷ number of shirts </formula>
+<calculation> $20 / 2 shirts = $10 </calculation>
+<var> shirt_cost : $10 </var>
+
+<step2> Set up an equation using Peter's purchase with X as the cost of one pair of pants </step2>
+<formula> 2X + 5 × shirt_cost = total cost </formula>
+<calculation> 2*X + 5 shirts * $10/shirt = $62 </calculation>
+<var> X : cost of one pair of pants </var>
+
+<step3> Isolate the variable by subtracting the cost of shirts from both sides </step3>
+<formula> 2X + 5 × shirt_cost - 5 × shirt_cost = total cost - 5 × shirt_cost </formula>
+<calculation> 2*X = $22 </calculation>
+<var> 2X : $22 </var>
+
+<step4> Solve for X by dividing both sides by 2 </step4>
+<formula> 2X ÷ 2 = $22 ÷ 2 </formula>
+<calculation> X = $11 </calculation>
+<var> X : $11 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 11 </output>

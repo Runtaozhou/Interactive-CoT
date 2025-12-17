@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Lucille made an agreement with her mom that she would earn six cents for every weed she pulled in her mom's garden. There are eleven weeds in the flower bed, fourteen in the vegetable patch, and thirty-two in the grass around the fruit trees. Lucille weeded the flower bed, the vegetable patch, and half the grass before she took a break. She bought a soda for 99 cents on her break with some of her earnings. How many cents does Lucille have left?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how many weeds Lucille pulled from the grass.
+            <p>Since Lucille only weeded half the grass, we need to divide the total number of weeds in the grass by 2:</p>
+            <p>32 ÷ 2 = 16 weeds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Find the total number of weeds Lucille pulled.
+            <p>We need to add the weeds from the flower bed, vegetable patch, and the half of the grass that she weeded:</p>
+            <p>11 + 14 + 16 = 41 weeds</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how much money Lucille earned.
+            <p>Lucille earns 6 cents per weed, so we multiply the total number of weeds by 6:</p>
+            <p>41 × 6 = 246 cents</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how much money Lucille has left after buying the soda.
+            <p>To find out how much money Lucille has left, we divide her total earnings by the cost of the soda:</p>
+            <p>246 ÷ 99 = 2 cents</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2
+    </div>
+</body>
+</html>

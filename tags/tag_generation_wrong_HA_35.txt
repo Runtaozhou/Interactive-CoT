@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+The school store had a sale on pencils. <fact1>Ten students bought pencils.</fact1> <fact2>The first two students bought 2 pencils each.</fact2> <fact3>The next six students bought three pencils each</fact3> and <fact4>the last two students only bought one pencil each.</fact4> How many pencils were sold?
+
+## 2. Facts
+
+<fact1>Total students: 10</fact1>
+<fact2>First 2 students: 2 pencils each</fact2>
+<fact3>Next 6 students: 3 pencils each</fact3>
+<fact4>Last 2 students: 1 pencil each</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many pencils the first two students bought </step1>
+<formula> 2 students × 2 pencils </formula>
+<calculation> 2 * 2 = 4 pencils </calculation>
+<var> first_group_pencils : 4 pencils </var>
+
+<step2> Calculate how many pencils the next six students bought </step2>
+<formula> 6 students × 3 pencils </formula>
+<calculation> 6 * 3 = 18 pencils </calculation>
+<var> second_group_pencils : 18 pencils </var>
+
+<step3> Calculate how many pencils the last two students bought </step3>
+<formula> 1 + 1 </formula>
+<calculation> 1 + 1 = 2 pencils </calculation>
+<var> third_group_pencils : 2 pencils </var>
+
+<step4> Add all pencils plus the teacher's pencils to find the total </step4>
+<formula> first_group_pencils + second_group_pencils + third_group_pencils + teacher_pencils </formula>
+<calculation> 4 + 18 + 2 + 3 = 27 pencils </calculation>
+<var> total_pencils : 27 pencils </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 27 </output>

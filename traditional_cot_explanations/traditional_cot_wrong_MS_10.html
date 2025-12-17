@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A school is planning a community outreach program. Each classroom must raise $200 for this activity. Classroom A has raised $20 from each of two families, $10 from each of eight families, and $5 from each of ten families. How much more money does Classroom A need in order to reach the goal?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the amount raised from eight families who gave $10 each.
+            <p>Using the formula: number of families × amount per family</p>
+            <p>8 × $10 = $80</p>
+            <p>So, the amount raised from the second group is $80.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the amount raised from ten families who gave $5 each.
+            <p>Using the formula: number of families × amount per family</p>
+            <p>10 × $5 = $50</p>
+            <p>So, the amount raised from the third group is $50.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total amount raised so far.
+            <p>Using the formula: amount_from_second_group + amount_from_third_group</p>
+            <p>$80 + $50 = $130</p>
+            <p>So, the total amount raised is $130.</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate how much more money is needed to reach the goal.
+            <p>Using the formula: goal_amount - total_raised</p>
+            <p>$200 - $130 = $70</p>
+            <p>So, Classroom A needs $70 more to reach their goal.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        70
+    </div>
+</body>
+</html>

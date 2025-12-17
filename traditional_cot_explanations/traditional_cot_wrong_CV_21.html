@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts store to resell at a profit. However, when he sold the items, the selling price of a painting was 10% less and the selling price of a hat 15% less. Calculate the total loss Mr. Callen made from the sale of the items.
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the loss per painting
+            <p>To find the loss per painting, we need to calculate how much is lost due to the 10% discount.</p>
+            <p>Loss per painting = (discount percentage/100) × cost per painting</p>
+            <p>Loss per painting = 10/100 × $30 = $3</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total loss from selling all paintings
+            <p>Now we need to multiply the loss per painting by the total number of paintings.</p>
+            <p>Total painting loss = number of paintings × loss per painting</p>
+            <p>Total painting loss = 10 × $3 = $30</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the loss per wooden toy
+            <p>Similar to the paintings, we need to calculate the loss per wooden toy due to the 15% discount.</p>
+            <p>Loss per wooden toy = (discount percentage/100) × cost per wooden toy</p>
+            <p>Loss per wooden toy = 15/100 × $20 = $3</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total loss from selling all wooden toys
+            <p>Now we multiply the loss per wooden toy by the total number of wooden toys.</p>
+            <p>Total toy loss = number of wooden toys × loss per toy</p>
+            <p>Total toy loss = 8 × $3 = $24</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total loss from all items
+            <p>Finally, we add the total loss from paintings and the total loss from wooden toys.</p>
+            <p>Total loss = total painting loss + total toy loss</p>
+            <p>Total loss = $30 + $24 = $54</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        54
+    </div>
+</body>
+</html>

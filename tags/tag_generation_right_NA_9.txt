@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+Larry spends <fact1>half an hour twice a day</fact1> walking and playing with his dog. He also spends <fact2>a fifth of an hour every day</fact2> feeding his dog. How many minutes does Larry spend on his dog each day?
+
+## 2. Facts
+
+<fact1>Walking time: half an hour twice a day</fact1>
+<fact2>Feeding time: a fifth of an hour every day</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total time Larry spends walking his dog each day </step1>
+<formula> half hour × 2 </formula>
+<calculation> 30 * 2 = 60 minutes </calculation>
+<var> walking_time : 60 minutes </var>
+
+<step2> Calculate the time Larry spends feeding his dog each day </step2>
+<formula> hour / 5 </formula>
+<calculation> 60 / 5 = 12 minutes </calculation>
+<var> feeding_time : 12 minutes </var>
+
+<step3> Add the walking time and feeding time to find the total time spent on the dog </step3>
+<formula> walking_time + feeding_time </formula>
+<calculation> 60 + 12 = 72 minutes </calculation>
+<var> total_time : 72 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 0 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

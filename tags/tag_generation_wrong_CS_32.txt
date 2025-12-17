@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+Vikki worked <fact1>42 hours</fact1> in one week. Her hourly pay rate is <fact2>$10</fact2>. From her weekly earnings, <fact3>20%</fact3> is deducted as tax, <fact4>5%</fact4> is deducted as insurance cover, and <fact5>$5</fact5> is deducted for union dues. How much money, in dollars, does Vikki take home after deductions?
+
+## 2. Facts
+
+<fact1>Hours worked: 42 hours</fact1>
+<fact2>Hourly pay rate: $10</fact2>
+<fact3>Tax deduction: 20%</fact3>
+<fact4>Insurance deduction: 5%</fact4>
+<fact5>Union dues: $5</fact5>
+
+## 3. Steps
+
+<step1> Calculate Vikki's total earnings for the week </step1>
+<formula> hours × hourly rate </formula>
+<calculation> 10 × $42 = $420 </calculation>
+<var> total_earnings : $420 </var>
+
+<step2> Calculate the tax deduction </step2>
+<formula> total_earnings × tax rate </formula>
+<calculation> $420 × 0.2 = $84 </calculation>
+<var> tax_deduction : $84 </var>
+
+<step3> Calculate the insurance deduction </step3>
+<formula> total_earnings × insurance rate </formula>
+<calculation> $420 × 0.05 = $21 </calculation>
+<var> insurance_deduction : $21 </var>
+
+<step4> Note the union dues deduction </step4>
+<formula> </formula>
+<calculation> $5 </calculation>
+<var> union_dues : $5 </var>
+
+<step5> Calculate the total deductions </step5>
+<formula> tax_deduction + insurance_deduction + union_dues </formula>
+<calculation> $80 + $21 + $5 = $106 </calculation>
+<var> total_deductions : $106 </var>
+
+<step6> Calculate Vikki's take-home pay </step6>
+<formula> total_earnings - total_deductions </formula>
+<calculation> $420 - $106 = $314 </calculation>
+<var> take_home_pay : $314 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 314 </output>

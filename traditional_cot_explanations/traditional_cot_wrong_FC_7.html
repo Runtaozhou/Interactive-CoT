@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Wendi lives on a plot of land that is 200 feet by 900 feet of grassland. She raises rabbits on her property by allowing the rabbits to graze on the grass that grows on her land. If one rabbit can eat enough grass to clear ten square yards of lawn area per day, and Wendi owns 100 rabbits, how many days would it take for Wendi's rabbits to clear all the grass off of her grassland property?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Convert square yards to square feet
+            <p>We need to understand how many square feet are in a square yard:</p>
+            <p>1 square yard = 3 feet × 3 feet = 9 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many square feet ten square yards is
+            <p>Now we need to convert 10 square yards to square feet:</p>
+            <p>10 square yards = 3 + 3 + 3 + 3 = 12 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how much area all rabbits can clear per day
+            <p>Since each rabbit can clear 12 square feet per day (from Step 2), and Wendi has 100 rabbits:</p>
+            <p>Total daily clearing rate = 100 rabbits × 12 square feet = 1,200 square feet per day</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total area of the grassland
+            <p>Wendi's land measures 200 feet by 900 feet:</p>
+            <p>Total area = 200 feet × 900 feet = 180,000 square feet</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate how many days it will take to clear all the grass
+            <p>To find the number of days, we divide the total area by the daily clearing rate:</p>
+            <p>Days to clear = 180,000 square feet ÷ 1,200 square feet per day = 150 days</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        150
+    </div>
+</body>
+</html>

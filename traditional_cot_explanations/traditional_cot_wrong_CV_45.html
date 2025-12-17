@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        For homework, Brooke has 15 math problems, 6 social studies problems, and 10 science problems. He can answer each math problem for 2 minutes while answering each social studies problem takes him 30 seconds. If he can answer each science problem in 1.5 minutes, how long will it take Brooke to answer all his homework?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total time for math problems.
+            <p>We need to multiply the number of math problems by the time each problem takes:</p>
+            <p>15 math problems × 2 minutes per problem = 30 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time for social studies problems in seconds.
+            <p>We need to multiply the number of social studies problems by the time each problem takes:</p>
+            <p>6 social studies problems × 20 seconds per problem = 120 seconds</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert social studies time from seconds to minutes.
+            <p>To convert seconds to minutes, we divide by 60:</p>
+            <p>120 seconds ÷ 60 = 2 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the total time for science problems.
+            <p>We need to multiply the number of science problems by the time each problem takes:</p>
+            <p>10 science problems × 1.5 minutes per problem = 15 minutes</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Add up all the times to find the total homework time.
+            <p>We add the time for math problems, social studies problems, and science problems:</p>
+            <p>30 minutes + 2 minutes + 15 minutes = 47 minutes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        47 minutes
+    </div>
+</body>
+</html>

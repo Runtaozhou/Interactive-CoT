@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>James takes 5 oranges</fact1> and breaks <fact2>each orange into 8 pieces</fact2>. He splits the pieces between <fact3>4 people</fact3>. If <fact4>an orange has 80 calories</fact4> how many calories does each person get?
+
+## 2. Facts
+
+<fact1>Number of oranges: 5</fact1>
+<fact2>Pieces per orange: 8</fact2>
+<fact3>Number of people: 4</fact3>
+<fact4>Calories per orange: 80</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total number of pieces James makes</step1>
+<formula>oranges × pieces per orange</formula>
+<calculation>5 * 8 = 40 pieces</calculation>
+<var>total_pieces: 40 pieces</var>
+
+<step2>Calculate how many pieces each person gets</step2>
+<formula>total_pieces ÷ number of people</formula>
+<calculation>40 / 4 = 10 pieces</calculation>
+<var>pieces_per_person: 10 pieces</var>
+
+<step3>Calculate how many oranges each person gets</step3>
+<formula>pieces_per_person ÷ pieces per orange</formula>
+<calculation>10 / 8 = 1.25 oranges</calculation>
+<var>oranges_per_person: 1.25 oranges</var>
+
+<step4>Calculate the calories each person gets</step4>
+<formula>calories per orange × oranges_per_person</formula>
+<calculation>80 * 1.5 = 120 calories</calculation>
+<var>calories_per_person: 120 calories</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>120</output>

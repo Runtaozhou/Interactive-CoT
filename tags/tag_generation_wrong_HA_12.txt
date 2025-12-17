@@ -1,0 +1,50 @@
+## 1. Problem statement
+
+<fact1>Elmer has a pond that initially contained 2400 pollywogs</fact1>, but these pollywogs matured into toads and left the pond at a constant rate of <fact2>50 pollywogs per day</fact2>. In addition, Elmer has a son named Melvin, who loves to catch pollywogs, remove them from the pond, and release them into a nearby stream. For <fact3>the first 20 days</fact3>, Melvin caught <fact4>10 pollywogs per day</fact4> and released them into the stream. How many days did it take for all of the pollywogs to disappear from the pond?
+
+## 2. Facts
+
+<fact1>Initial pollywogs: 2400</fact1>
+<fact2>Natural departure rate: 50 pollywogs per day</fact2>
+<fact3>Duration of Melvin's catching: 20 days</fact3>
+<fact4>Melvin's catching rate: 10 pollywogs per day</fact4>
+
+## 3. Steps
+
+<step1>Calculate the combined rate of pollywog disappearance for the first 20 days</step1>
+<formula>Natural departure rate + Melvin's catching rate</formula>
+<calculation>50 + 10 = 60 pollywogs per day</calculation>
+<var>combined_rate_first_20_days: 60 pollywogs per day</var>
+
+<step2>Calculate the total number of pollywogs removed during the first 20 days</step2>
+<formula>Combined rate × Number of days</formula>
+<calculation>60 * 20 = 1200 pollywogs</calculation>
+<var>pollywogs_removed_first_20_days: 1200 pollywogs</var>
+
+<step3>Calculate the number of pollywogs remaining after 20 days</step3>
+<formula>Initial pollywogs - Pollywogs removed</formula>
+<calculation>2400 - 1200 = 1200 pollywogs</calculation>
+<var>pollywogs_after_20_days: 1200 pollywogs</var>
+
+<step4>Calculate the new daily disappearance rate after 20 days</step4>
+<formula>Natural departure rate + Elmer's catching rate</formula>
+<calculation>50 + 5 = 55 pollywogs per day</calculation>
+<var>combined_rate_after_20_days: 55 pollywogs per day</var>
+
+<step5>Calculate how many additional days it will take for the remaining pollywogs to disappear</step5>
+<formula>Remaining pollywogs ÷ New disappearance rate</formula>
+<calculation>1200 ÷ 55 = 21.82 days, which rounds up to 22 days</calculation>
+<var>additional_days: 22 days</var>
+
+<step6>Calculate the total number of days for all pollywogs to disappear</step6>
+<formula>First period + Additional days</formula>
+<calculation>20 + 22 = 42 days</calculation>
+<var>total_days: 42 days</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>42</output>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Elmer has a pond that initially contained 2400 pollywogs, but these pollywogs matured into toads and left the pond at a constant rate of 50 pollywogs per day. In addition, Elmer has a son named Melvin, who loves to catch pollywogs, remove them from the pond, and release them into a nearby stream. For the first 20 days, Melvin caught 10 pollywogs per day and released them into the stream. How many days did it take for all of the pollywogs to disappear from the pond?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First, we need to calculate the combined rate at which pollywogs are disappearing from the pond during the first 20 days. This includes both the natural departure rate and Melvin's catching rate.
+            <br>
+            Natural departure rate: 50 pollywogs per day
+            <br>
+            Melvin's catching rate: 10 pollywogs per day
+            <br>
+            Combined rate = 50 + 10 = 60 pollywogs per day
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Now, let's calculate how many pollywogs were removed from the pond during the first 20 days.
+            <br>
+            Total pollywogs removed = Combined rate × Number of days
+            <br>
+            Total pollywogs removed = 60 × 20 = 1200 pollywogs
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> After 20 days, we need to determine how many pollywogs remain in the pond.
+            <br>
+            Remaining pollywogs = Initial pollywogs - Pollywogs removed
+            <br>
+            Remaining pollywogs = 2400 - 1200 = 1200 pollywogs
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Now we need to calculate the new daily disappearance rate after the first 20 days.
+            <br>
+            Natural departure rate: 50 pollywogs per day
+            <br>
+            Elmer's catching rate: 5 pollywogs per day
+            <br>
+            Combined rate = 50 + 5 = 55 pollywogs per day
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> With the new disappearance rate, we can calculate how many additional days it will take for the remaining pollywogs to disappear.
+            <br>
+            Additional days = Remaining pollywogs ÷ New disappearance rate
+            <br>
+            Additional days = 1200 ÷ 55 = 21.82 days
+            <br>
+            Since we can't have a partial day for all pollywogs to disappear, we round up to 22 days.
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Finally, we calculate the total number of days it took for all pollywogs to disappear from the pond.
+            <br>
+            Total days = First period + Additional days
+            <br>
+            Total days = 20 + 22 = 42 days
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        42
+    </div>
+</body>
+</html>

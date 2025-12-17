@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+<fact1>Jack has $43 in his piggy bank.</fact1> He also gets an <fact2>allowance of $10 a week.</fact2> If Jack puts <fact3>half of his allowance</fact3> into his piggy bank every week, after <fact4>8 weeks</fact4> how much will Jack have in his piggy bank?
+
+## 2. Facts
+
+<fact1>Starting amount in piggy bank: $43</fact1>
+<fact2>Weekly allowance: $10</fact2>
+<fact3>Portion of allowance saved: 1/2</fact3>
+<fact4>Number of weeks: 8</fact4>
+
+## 3. Steps
+
+<step1>Calculate how much Jack saves from his allowance each week</step1>
+<formula>allowance ÷ 2</formula>
+<calculation>$10 / 2 = $5.00</calculation>
+<var>weekly_savings_from_allowance: $5.00</var>
+
+<step2>Determine how much extra money Jack finds each week</step2>
+<formula></formula>
+<calculation>$1.00</calculation>
+<var>weekly_found_money: $1.00</var>
+
+<step3>Calculate Jack's total weekly savings</step3>
+<formula>weekly_savings_from_allowance + weekly_found_money</formula>
+<calculation>$5.00 + $1.00 = $6.00</calculation>
+<var>total_weekly_savings: $6.00</var>
+
+<step4>Calculate how much Jack saves over 8 weeks</step4>
+<formula>total_weekly_savings × number_of_weeks</formula>
+<calculation>$6.00 × 8 weeks = $48.00</calculation>
+<var>total_saved_over_8_weeks: $48.00</var>
+
+<step5>Calculate the final amount in Jack's piggy bank</step5>
+<formula>starting_amount + total_saved_over_8_weeks</formula>
+<calculation>$43.00 + $48.00 = $91.00</calculation>
+<var>final_piggy_bank_amount: $91.00</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>91</output>

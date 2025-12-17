@@ -1,0 +1,51 @@
+## 1. Problem statement
+
+There is very little car traffic on Happy Street. During the week, most cars pass it on <fact1>Tuesday - 25</fact1>. On Monday, <fact2>20% less than on Tuesday</fact2>, and on Wednesday, <fact3>2 more cars than on Monday</fact3>. On <fact4>Thursday and Friday, it is about 10 cars each day</fact4>. On the weekend, <fact5>traffic drops to 5 cars per day</fact5>. How many cars travel down Happy Street from Monday through Sunday?
+
+## 2. Facts
+
+<fact1>Tuesday traffic: 25 cars</fact1>
+<fact2>Monday traffic: 20% less than Tuesday</fact2>
+<fact3>Wednesday traffic: 2 more cars than Monday</fact3>
+<fact4>Thursday and Friday traffic: 10 cars each day</fact4>
+<fact5>Weekend traffic: 5 cars per day</fact5>
+
+## 3. Steps
+
+<step1> Calculate how many fewer cars pass on Monday compared to Tuesday </step1>
+<formula> Tuesday traffic × 20% </formula>
+<calculation> 20/100 * 25 = 5 cars </calculation>
+<var> monday_reduction : 5 cars </var>
+
+<step2> Calculate the number of cars on Monday </step2>
+<formula> Tuesday traffic - monday_reduction </formula>
+<calculation> 25 - 5 = 20 cars </calculation>
+<var> monday_traffic : 20 cars </var>
+
+<step3> Calculate the number of cars on Wednesday </step3>
+<formula> monday_traffic + 2 </formula>
+<calculation> 20 + 2 = 22 cars </calculation>
+<var> wednesday_traffic : 22 cars </var>
+
+<step4> Calculate the total number of cars on Thursday and Friday </step4>
+<formula> daily traffic × 2 days </formula>
+<calculation> 10 * 2 = 20 cars </calculation>
+<var> thursday_friday_traffic : 20 cars </var>
+
+<step5> Calculate the total number of cars on the weekend </step5>
+<formula> daily weekend traffic × number of weekend days </formula>
+<calculation> 5 * 1 = 5 cars </calculation>
+<var> weekend_traffic : 5 cars </var>
+
+<step6> Calculate the total number of cars for the entire week </step6>
+<formula> monday_traffic + Tuesday traffic + wednesday_traffic + thursday_friday_traffic + weekend_traffic </formula>
+<calculation> 20 + 25 + 22 + 20 + 5 = 92 cars </calculation>
+<var> total_weekly_traffic : 92 cars </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 5 </wrongstep>
+
+## 5. Output
+
+<output> 92 </output>

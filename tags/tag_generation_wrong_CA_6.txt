@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Leo collects stickers. <fact1>Two years ago, he had 100 stickers in his collection.</fact1> <fact2>Last year, Leo collected 50 stickers.</fact2> <fact3>This year, he collected twice the number of stickers as the previous year.</fact3> How many stickers does Leo have in his collection?
+
+## 2. Facts
+
+<fact1>Two years ago stickers: 100 stickers</fact1>
+<fact2>Last year collected: 50 stickers</fact2>
+<fact3>This year collected: twice the number as previous year</fact3>
+
+## 3. Steps
+
+<step1> Calculate how many stickers Leo had after last year </step1>
+<formula> initial_stickers + last_year_stickers </formula>
+<calculation> 100 + 50 = 150 </calculation>
+<var> stickers_after_last_year : 150 stickers </var>
+
+<step2> Calculate how many stickers Leo collected this year </step2>
+<formula> last_year_stickers × 2 </formula>
+<calculation> 2 x 50 = 120 </calculation>
+<var> this_year_stickers : 120 stickers </var>
+
+<step3> Calculate the total number of stickers in Leo's collection </step3>
+<formula> stickers_after_last_year + this_year_stickers </formula>
+<calculation> 150 + 120 = 270 </calculation>
+<var> total_stickers : 270 stickers </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 270 </output>

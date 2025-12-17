@@ -1,0 +1,38 @@
+## 1. Problem statement
+
+Jacob has half the number of shoes Edward has. Edward has <fact1>3 times the number of shoes Brian has</fact1>. If <fact2>Brian has 22 pairs of shoes</fact2>, how many pairs of shoes do they have in total?
+
+## 2. Facts
+
+<fact1>Edward has 3 times the number of shoes Brian has</fact1>
+<fact2>Brian has 22 pairs of shoes</fact2>
+
+## 3. Steps
+
+<step1> Calculate how many pairs of shoes Edward has </step1>
+<formula> Brian's shoes × 3 </formula>
+<calculation> 3 * 22 = 66 pairs of shoes </calculation>
+<var> edward_shoes : 66 pairs </var>
+
+<step2> Calculate how many pairs of shoes Jacob has </step2>
+<formula> Edward's shoes ÷ 2 </formula>
+<calculation> 66 / 2 = 33 pairs of shoes </calculation>
+<var> jacob_shoes : 33 pairs </var>
+
+<step3> Adjust Jacob's shoe count because he lost some pairs </step3>
+<formula> Jacob's shoes - lost pairs </formula>
+<calculation> 33 - 2 = 31 pairs of shoes </calculation>
+<var> jacob_final_shoes : 31 pairs </var>
+
+<step4> Calculate the total number of pairs of shoes they have </step4>
+<formula> Brian's shoes + Edward's shoes + Jacob's final shoes </formula>
+<calculation> 22 + 66 + 31 = 119 pairs of shoes </calculation>
+<var> total_shoes : 119 pairs </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 119 </output>

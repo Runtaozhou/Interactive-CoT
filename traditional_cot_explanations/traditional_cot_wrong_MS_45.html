@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jake has $5000. He spends $2800 on a new motorcycle, and then spends half of what's left on a concert ticket. Jake then loses a fourth of what he has left. How much money does he have left?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate how much Jake spends on a concert ticket
+            <p>Jake starts with $5000 and spends $2800 on a motorcycle.</p>
+            <p>Money left after buying motorcycle = $5000 - $2800 = $2200</p>
+            <p>Jake spends half of what's left on a concert ticket.</p>
+            <p>Cost of concert ticket = $2200 ÷ 2 = $1100</p>
+            <p>Money left after buying concert ticket = $2200 - $1100 = $1100</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how much money Jake loses
+            <p>Jake loses a fourth of what he has left.</p>
+            <p>Money lost = $1100 ÷ 4 = $275</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate how much money Jake has left
+            <p>Money left = $1100 - $275 = $825</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        1875
+    </div>
+</body>
+</html>

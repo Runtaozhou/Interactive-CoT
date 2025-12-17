@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+<fact1>5 geckos</fact1> on the kitchen window eat <fact2>6 insects each</fact2>. <fact3>3 lizards</fact3> eat <fact4>twice as much as the geckos</fact4>. How many total insects were eaten?
+
+## 2. Facts
+
+<fact1>Number of geckos: 5</fact1>
+<fact2>Insects eaten by each gecko: 6</fact2>
+<fact3>Number of lizards: 3</fact3>
+<fact4>Lizards eat twice as much as geckos</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total number of insects eaten by the geckos</step1>
+<formula>Number of geckos × Insects eaten by each gecko</formula>
+<calculation>5 × 6 = 30</calculation>
+<var>gecko_insects: 30</var>
+
+<step2>Calculate the number of insects eaten by each lizard and then the total for all lizards</step2>
+<formula>Insects eaten by each gecko × 2 × Number of lizards</formula>
+<calculation>3 × 12 = 36</calculation>
+<var>lizard_insects: 36</var>
+
+<step3>Calculate the total number of insects eaten, accounting for the bird</step3>
+<formula>gecko_insects + lizard_insects - bird_insects</formula>
+<calculation>30 + 36 - 4 = 62</calculation>
+<var>total_insects: 62</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>62</output>

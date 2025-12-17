@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        James is building a hall of mirrors. Three of the walls will be completed covered with glass. If two of those walls are 30 feet by 12 feet and the third is 20 feet by 12 feet, how many square feet of glass does he need?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the area of one of the long walls. Using the formula length × width, we calculate:
+            <br>30 feet × 12 feet = 360 square feet
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then double that amount since there are two long walls with the same dimensions. Using the formula long_wall_area × 2, we calculate:
+            <br>360 square feet × 2 = 720 square feet
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Then find the perimeter of the short wall. Using the formula 2 × (length + width), we calculate:
+            <br>20 feet + 12 feet + 20 feet + 12 feet = 64 square feet
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Then add that perimeter to the area of the two long walls to find the total area. Using the formula two_long_walls_area + short_wall_perimeter, we calculate:
+            <br>720 square feet + 64 square feet = 784 square feet
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        784
+    </div>
+</body>
+</html>

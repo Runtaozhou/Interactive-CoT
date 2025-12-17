@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        To make a cherry pie, Veronica needs 3 pounds of pitted cherries. There are 80 single cherries in one pound of cherries. It takes 10 minutes to pit 20 cherries. How many hours will it take Veronica to pit all the cherries?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of cherries needed.
+            <p>We need to multiply the number of cherries per pound by the total pounds needed:</p>
+            <p>80 cherries per pound × 3 pounds = 240 cherries</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate how many units of 20 cherries need to be pitted.
+            <p>We need to divide the total number of cherries by 20 (the number of cherries that can be pitted in one time unit):</p>
+            <p>240 cherries ÷ 20 cherries per unit = 12 units</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total time needed in minutes.
+            <p>We multiply the time per unit (10 minutes) by the number of units (12):</p>
+            <p>10 minutes per unit × 12 units = 120 minutes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Convert minutes to hours.
+            <p>We divide the total minutes by minutes per hour:</p>
+            <p>120 minutes ÷ 50 minutes per hour = 2.4 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        2.4
+    </div>
+</body>
+</html>

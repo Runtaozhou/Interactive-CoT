@@ -1,0 +1,52 @@
+## 1. Problem statement
+
+Sam and Jeff had a skipping competition at recess. The competition was split into <fact1>four rounds</fact1>. Sam completed <fact2>1 more skip than Jeff</fact2> in the first round. Jeff skipped <fact3>3 fewer times than Sam</fact3> in the second round. Jeff skipped <fact4>4 more times than Sam</fact4> in the third round. Jeff got tired and only completed <fact5>half the number of skips as Sam</fact5> in the last round. If <fact6>Sam skipped 16 times in each round</fact6>, what is the average number of skips per round completed by Jeff?
+
+## 2. Facts
+
+<fact1>Number of rounds: 4</fact1>
+<fact2>Sam's skips in round 1: 1 more than Jeff</fact2>
+<fact3>Jeff's skips in round 2: 3 fewer than Sam</fact3>
+<fact4>Jeff's skips in round 3: 4 more than Sam</fact4>
+<fact5>Jeff's skips in round 4: half of Sam's</fact5>
+<fact6>Sam's skips per round: 16</fact6>
+
+## 3. Steps
+
+<step1>Calculate how many skips Jeff completed in round 1</step1>
+<formula>Sam's skips - 1</formula>
+<calculation>16 - 1 = 15</calculation>
+<var>jeff_round1 : 15</var>
+
+<step2>Calculate how many skips Jeff completed in round 2</step2>
+<formula>Sam's skips - 3</formula>
+<calculation>16 - 3 = 13</calculation>
+<var>jeff_round2 : 13</var>
+
+<step3>Calculate how many skips Jeff completed in round 3</step3>
+<formula>Sam's skips + 4</formula>
+<calculation>16 + 4 = 20</calculation>
+<var>jeff_round3 : 20</var>
+
+<step4>Calculate how many skips Jeff completed in round 4</step4>
+<formula>Sam's skips ÷ 2</formula>
+<calculation>16 / 2 = 8</calculation>
+<var>jeff_round4 : 8</var>
+
+<step5>Calculate the total number of skips Jeff completed</step5>
+<formula>jeff_round1 + jeff_round2 + jeff_round3 + jeff_round4</formula>
+<calculation>16 + 13 + 20 + 8 = 57</calculation>
+<var>jeff_total : 57</var>
+
+<step6>Calculate the average number of skips per round for Jeff</step6>
+<formula>jeff_total ÷ number of rounds</formula>
+<calculation>57 / 4 = 14.25</calculation>
+<var>jeff_average : 14.25</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>14.25</output>

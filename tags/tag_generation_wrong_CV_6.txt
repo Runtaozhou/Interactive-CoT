@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>Faith went to a baking shop and bought flour that cost $5</fact1> and <fact2>a cake stand that costs $28</fact2>. She then gave the cashier <fact3>two $20 bills</fact3> and <fact4>$3 in loose coins</fact4>. How much change will she receive?
+
+## 2. Facts
+
+<fact1>Cost of flour: $5</fact1>
+<fact2>Cost of cake stand: $28</fact2>
+<fact3>Payment in bills: two $20 bills</fact3>
+<fact4>Payment in coins: $3</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total cost of the items Faith bought</step1>
+<formula>cost of flour + cost of cake stand</formula>
+<calculation>$28 + $5 = $33</calculation>
+<var>total_cost: $33</var>
+
+<step2>Calculate the amount Faith paid in bills</step2>
+<formula>number of bills × value of each bill</formula>
+<calculation>$20 x 2 = $40</calculation>
+<var>bill_payment: $40</var>
+
+<step3>Calculate the total amount Faith gave to the cashier</step3>
+<formula>bill_payment + coin_payment</formula>
+<calculation>$40 + $4 = $44</calculation>
+<var>total_payment: $44</var>
+
+<step4>Calculate the change Faith will receive</step4>
+<formula>total_payment - total_cost</formula>
+<calculation>$44 - $33 = $11</calculation>
+<var>change: $11</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>11</output>

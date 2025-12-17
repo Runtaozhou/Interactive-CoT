@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        Jack has a grove with 4 trees by 5 trees. It takes 6 minutes to clean each tree. He gets help to clean the trees so it only takes half as long. How many hours did he spend cleaning trees?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total number of trees in the grove.
+            <p>To find the total number of trees, we multiply the width by the height of the grove:</p>
+            <p>4 trees × 5 trees = 20 trees</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the total time to clean all trees.
+            <p>We need to multiply the number of trees by the time it takes to clean each tree:</p>
+            <p>20 trees × 6 minutes = 120 minutes</p>
+            <p>However, the calculation shows: 20 ÷ 6 = 3.333 minutes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Convert the cleaning time from minutes to hours.
+            <p>To convert minutes to hours, we divide by 60:</p>
+            <p>3.333 minutes ÷ 60 = 0.05555 hours</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the actual time spent with help (half as long).
+            <p>Since Jack gets help, the cleaning takes half as long:</p>
+            <p>0.05555 hours ÷ 2 = 0.027775 hours</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        0.027775
+    </div>
+</body>
+</html>

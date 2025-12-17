@@ -1,0 +1,34 @@
+## 1. Problem statement
+
+Ishmael, Ponce, and Jalen measured their weight and realized <fact1>Ishmael was 20 pounds heavier than Ponce</fact1> and that <fact2>Ponce was 10 pounds lighter than Jalen</fact2>. If <fact3>Jalen weighed 160 pounds</fact3>, calculate the average weight of the three?
+
+## 2. Facts
+
+<fact1>Ishmael is 20 pounds heavier than Ponce</fact1>
+<fact2>Ponce is 10 pounds lighter than Jalen</fact2>
+<fact3>Jalen's weight: 160 pounds</fact3>
+
+## 3. Steps
+
+<step1> Calculate Ishmael's weight based on his relation to Ponce </step1>
+<formula> Jalen's weight + 20 </formula>
+<calculation> 160 + 20 = 180 pounds </calculation>
+<var> ishmael_weight : 180 pounds </var>
+
+<step2> Calculate the total weight of all three people </step2>
+<formula> Jalen's weight + Jalen's weight + Ishmael's weight </formula>
+<calculation> 160 + 160 + 180 = 500 pounds </calculation>
+<var> total_weight : 500 pounds </var>
+
+<step3> Calculate the average weight by dividing the total weight by the number of people </step3>
+<formula> total_weight ÷ 3 </formula>
+<calculation> 500 ÷ 3 = 166.67 pounds </calculation>
+<var> average_weight : 166.67 pounds </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 166.67 </output>

@@ -1,0 +1,44 @@
+## 1. Problem statement
+
+Jackie can do <fact1>5 push-ups in 10 seconds</fact1>. How many push-ups can she do in <fact2>one minute</fact2> if she takes <fact3>two 8-second breaks</fact3>?
+
+## 2. Facts
+
+<fact1>Push-ups per 10 seconds: 5</fact1>
+<fact2>Total time: 60 seconds</fact2>
+<fact3>Breaks: 2 breaks of 8 seconds each</fact3>
+
+## 3. Steps
+
+<step1> There are 60 seconds per minute, so Jackie's push-up routine takes 1 * 60 = 60 seconds. </step1>
+<formula> total_time = 1 * 60 </formula>
+<calculation> 1 * 60 = 60 </calculation>
+<var> total_time : 60 seconds </var>
+
+<step2> Her breaks last 2 * 8 = 16 seconds. </step2>
+<formula> break_time = 2 * 8 </formula>
+<calculation> 2 * 8 = 16 </calculation>
+<var> break_time : 16 seconds </var>
+
+<step3> She does push-ups for 60 - 16 = 44 seconds. </step3>
+<formula> push_up_time = total_time - break_time </formula>
+<calculation> 60 - 16 = 44 </calculation>
+<var> push_up_time : 44 seconds </var>
+
+<step4> She can do a push-up in 10 / 5 = 2 seconds. </step4>
+<formula> time_per_pushup = 10 / 5 </formula>
+<calculation> 10 / 5 = 2 </calculation>
+<var> time_per_pushup : 2 seconds </var>
+
+<step5> Therefore, Jackie can do 44 / 2 = 22 push-ups in one minute with breaks. </step5>
+<formula> total_pushups = push_up_time / time_per_pushup </formula>
+<calculation> 44 / 2 = 22 </calculation>
+<var> total_pushups : 22 push-ups </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output>22</output>

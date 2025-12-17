@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Mark wants to build a pyramid of soda cases that's <fact1>four levels tall</fact1>. Each level of the pyramid has a square base where each side is <fact2>one case longer</fact2> than the level above it. <fact3>The top level is just one case</fact3>. How many cases of soda does Mark need?
+
+## 2. Facts
+
+<fact1>Number of levels: 4</fact1>
+<fact2>Each level increases by: 1 case per side</fact2>
+<fact3>Top level: 1 case</fact3>
+
+## 3. Steps
+
+<step1> Identify the top level has one case and determine the side length of the second level </step1>
+<formula></formula>
+<calculation></calculation>
+<var>top_level_cases: 1</var>
+<var>second_level_side_length: 2</var>
+
+<step2> Calculate the number of cases in the second level by finding the area of a square with side length 2 </step2>
+<formula>side length × side length</formula>
+<calculation>2 cases * 2 cases = 4 cases</calculation>
+<var>second_level_cases: 4</var>
+
+<step3> Calculate the number of cases in the third level by finding the area of a square with side length 3 </step3>
+<formula>side length + side length + side length + side length</formula>
+<calculation>3 cases + 3 cases + 3 cases + 3 cases = 12 cases</calculation>
+<var>third_level_cases: 12</var>
+
+<step4> Calculate the number of cases in the fourth level by finding the area of a square with side length 4 </step4>
+<formula>side length × side length</formula>
+<calculation>4 cases * 4 cases = 16 cases</calculation>
+<var>fourth_level_cases: 16</var>
+
+<step5> Add up the number of cases needed for all levels </step5>
+<formula>top_level_cases + second_level_cases + third_level_cases + fourth_level_cases</formula>
+<calculation>1 cases + 4 cases + 12 cases + 16 cases = 33 cases</calculation>
+<var>total_cases: 33</var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output>33</output>

@@ -1,0 +1,33 @@
+## 1. Problem statement
+
+<fact1>Jake has $5000</fact1>. He spends <fact2>$2800 on a new motorcycle</fact2>, and then spends half of what's left on a concert ticket. Jake then loses a fourth of what he has left. How much money does he have left?
+
+## 2. Facts
+
+<fact1>Jake's initial money: $5000</fact1>
+<fact2>Cost of motorcycle: $2800</fact2>
+
+## 3. Steps
+
+<step1> Calculate how much Jake spends on a concert ticket </step1>
+<formula> initial money / 2 </formula>
+<calculation> 5000 / 2 = $2500 </calculation>
+<var> concert_ticket : $2500 </var>
+
+<step2> Calculate how much money Jake loses </step2>
+<formula> concert_ticket / 4 </formula>
+<calculation> 2500 / 4 = $625 </calculation>
+<var> money_lost : $625 </var>
+
+<step3> Calculate how much money Jake has left </step3>
+<formula> concert_ticket - money_lost </formula>
+<calculation> 2500 - 625 = $1875 </calculation>
+<var> money_left : $1875 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 1875 </output>

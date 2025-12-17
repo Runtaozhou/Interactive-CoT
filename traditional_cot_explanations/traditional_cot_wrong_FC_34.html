@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">1</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        A school needs to paint the classroom, which is 9 meters long, 8 meters wide, and 3 meters high. The classroom has 4 windows, 2 blackboards, and 2 doors. The windows are 1m by 1.5m, the blackboards are 6m by 1m, and the doors are 2m by 1m. It is known that the paint fee is $4.80 per square meter. How much does it cost to paint a classroom?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate the total length to be painted around the classroom excluding the floor.
+            <p>We need to find the perimeter of the classroom and multiply by the height:</p>
+            <p>(length + width) × 2 + height × 2 × 2</p>
+            <p>(9 + 8) × 2 + 3 × 2 × 2 = 34 meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate the area of one window.
+            <p>Window dimensions are 1m by 1.5m:</p>
+            <p>1 × 1.5 = 1.5 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate the total area of all windows.
+            <p>There are 4 windows:</p>
+            <p>4 × 1.5 = 6 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate the area of one blackboard.
+            <p>Blackboard dimensions are 6m by 1m:</p>
+            <p>6 × 1 = 6 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate the total area of all blackboards.
+            <p>There are 2 blackboards:</p>
+            <p>2 × 6 = 12 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate the area of one door.
+            <p>Door dimensions are 2m by 1m:</p>
+            <p>2 × 1 = 2 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate the total area of all doors.
+            <p>There are 2 doors:</p>
+            <p>2 × 2 = 4 square meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 8:</span> Calculate the length that needs to be painted.
+            <p>We subtract the areas of windows, blackboards, and doors from the total length:</p>
+            <p>34 - 6 - 12 - 4 = 12 meters</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 9:</span> Calculate the total cost of painting the classroom.
+            <p>Multiply the paintable length by the paint fee per square meter:</p>
+            <p>12 × $4.80 = $57.60</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        $57.6
+    </div>
+</body>
+</html>

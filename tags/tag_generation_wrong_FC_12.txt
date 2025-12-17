@@ -1,0 +1,49 @@
+## 1. Problem statement
+
+The length of a rectangle is <fact1>four times</fact1> its width. If the <fact2>area is 100 m²</fact2>. what is the length of the rectangle?
+
+## 2. Facts
+
+<fact1>Length to width ratio: 4 times</fact1>
+<fact2>Area: 100 m²</fact2>
+
+## 3. Steps
+
+<step1> Define variables for the length and width of the rectangle </step1>
+<formula></formula>
+<calculation></calculation>
+<var>L : length of rectangle</var>
+<var>W : width of rectangle</var>
+
+<step2> Express the relationship between length and width </step2>
+<formula>L = 4*W</formula>
+<calculation></calculation>
+<var>L : 4*W</var>
+
+<step3> Use the area to write an equation </step3>
+<formula>100 = L + W</formula>
+<calculation></calculation>
+<var>area : 100 m²</var>
+
+<step4> Substitute the length in terms of width </step4>
+<formula>100 = 4*W + W = 5*W</formula>
+<calculation>100 = 4*W + W = 5*W</calculation>
+<var>equation : 5*W = 100</var>
+
+<step5> Solve for the width </step5>
+<formula>5*W = 100</formula>
+<calculation>W = 20</calculation>
+<var>W : 20 m</var>
+
+<step6> Calculate the length using the width </step6>
+<formula>L = 4*W</formula>
+<calculation>L = 4*20 = 80 m</calculation>
+<var>L : 80 m</var>
+
+## 4. Wrongsteps
+
+<wrongstep>3</wrongstep>
+
+## 5. Output
+
+<output>80</output>

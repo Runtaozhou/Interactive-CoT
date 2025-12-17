@@ -1,0 +1,55 @@
+## 1. Problem statement
+
+There are <fact1>15 cats</fact1> in a shelter. <fact2>One-third</fact2> were adopted, and were replaced with <fact3>twice the amount</fact3> that were adopted. Later on, <fact4>twice as many dogs</fact4> showed up as there are cats. How many total animals are there in the shelter?
+
+## 2. Facts
+
+<fact1>Initial cats: 15</fact1>
+<fact2>Fraction adopted: 1/3</fact2>
+<fact3>Replacement ratio: 2 times adopted cats</fact3>
+<fact4>Dogs ratio: 2 times current cats</fact4>
+
+## 3. Steps
+
+<step1> Calculate how many cats were adopted </step1>
+<formula> total cats × fraction adopted </formula>
+<calculation> 15/3 = 5 cats </calculation>
+<var> adopted_cats : 5 cats </var>
+
+<step2> Calculate how many cats remained in the shelter </step2>
+<formula> initial cats - adopted cats </formula>
+<calculation> 15 - 5 = 10 cats </calculation>
+<var> remaining_cats : 10 cats </var>
+
+<step3> Calculate how many new cats were added </step3>
+<formula> adopted cats × replacement ratio </formula>
+<calculation> 5 * 2 = 10 cats </calculation>
+<var> new_cats : 10 cats </var>
+
+<step4> Calculate the total number of cats after replacements </step4>
+<formula> remaining cats + new cats </formula>
+<calculation> 10 + 10 = 20 cats </calculation>
+<var> total_cats_after_replacement : 20 cats </var>
+
+<step5> Add more cats from a litter of kittens </step5>
+<formula> total cats after replacement + new kittens </formula>
+<calculation> 20 + 4 = 24 cats </calculation>
+<var> final_cats : 24 cats </var>
+
+<step6> Calculate how many dogs showed up </step6>
+<formula> final cats × dog ratio </formula>
+<calculation> 24 * 2 = 48 dogs </calculation>
+<var> dogs : 48 dogs </var>
+
+<step7> Calculate the total number of animals </step7>
+<formula> final cats + dogs </formula>
+<calculation> 24 + 48 = 72 animals </calculation>
+<var> total_animals : 72 animals </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 4 </wrongstep>
+
+## 5. Output
+
+<output> 72 </output>

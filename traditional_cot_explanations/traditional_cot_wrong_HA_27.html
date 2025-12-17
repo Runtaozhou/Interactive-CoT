@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">3</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        In the baking contest, three times as many people voted for the unicorn cake compared to the witch cake, and the number of votes for the dragon cake was 25 more than the number of votes for the witch cake. If 7 people voted for the witch cake, how many votes were cast total?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> First find the number of votes for the unicorn cake.
+            <p>Since the unicorn cake received 3 times as many votes as the witch cake, and the witch cake received 7 votes:</p>
+            <p>Unicorn cake votes = Witch cake votes × 3 = 7 votes × 3 = 21 votes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 2:</span> Then find the number of votes for the dragon cake.
+            <p>The dragon cake received 25 more votes than the witch cake:</p>
+            <p>Dragon cake votes = Witch cake votes + 25 = 7 votes + 25 votes = 32 votes</p>
+        </div>
+        <div class="step">
+            <span class="step-number">Step 3:</span> Add the number of votes for each cake plus the blank votes to find the total number of votes.
+            <p>Total votes = Unicorn cake votes + Dragon cake votes + Witch cake votes + blank votes</p>
+            <p>Total votes = 21 votes + 32 votes + 7 votes + 5 blank votes = 65 votes</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        65
+    </div>
+</body>
+</html>

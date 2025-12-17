@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSM8K Math Problem Visualization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            background-color: #F5F5F5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-panel {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 2px solid #ddd;
+        }
+
+        .right-panel {
+            width: 70%;
+            background: #F5F5F5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .problem-statement {
+            margin-bottom: 30px;
+        }
+
+        .problem-statement p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #34495e;
+        }
+
+        .problem-understanding {
+            margin-bottom: 20px;
+        }
+
+        .problem-understanding ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .problem-understanding li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+
+        .highlight-number-1 { background-color: #ff634780; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-2 { background-color: #87cefa80; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-3 { background-color: #90ee9080; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-4 { background-color: #ffa50080; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-5 { background-color: #d3a0d380; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-6 { background-color: #ffd90080; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-7 { background-color: #4682b480; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-8 { background-color: #228b2280; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-9 { background-color: #ffc0cb80; padding: 2px 6px; border-radius: 5px; color: black; }
+        .highlight-number-10 { background-color: #dc143c80; padding: 2px 6px; border-radius: 5px; color: black; }
+
+        .debugger-controls {
+            background-color: #f8f9fa;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .debugger-controls button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            color: white;
+            transition: all 0.2s ease;
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .debugger-controls button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .graph-container {
+            flex: 1;
+            position: relative;
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        #math-graph {
+            width: 100%;
+            height: 70%;
+        }
+
+        #step-iframe {
+            width: 100%;
+            height: 30%;
+            border: none;
+            border-top: 1px solid #ddd;
+            background: white;
+        }
+
+        .math-node {
+            cursor: grab;
+            transition: all 0.3s ease;
+        }
+
+        .math-node:active {
+            cursor: grabbing;
+        }
+
+        .math-node.highlighted .node-bg {
+            stroke-width: 4;
+            filter: drop-shadow(0 6px 16px rgba(255, 215, 0, 0.6));
+            stroke: #ffd700;
+        }
+        .wrong-step {
+            display: none;
+        }
+        .math-node .math-eq {
+            display:none;
+        }
+
+        .math-node:hover .math-eq {
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrong-step">4</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>Jill is going to resod her front yard. The plot of land in front of her house is <span id="fact1" class="highlight-number-1">200 feet wide by 50 feet</span>. Her house has a sidewalk that is <span id="fact2" class="highlight-number-2">3 feet wide and 50 feet long</span>. There are also four flower beds: <span id="fact3" class="highlight-number-3">two right in front of the house that are 4 feet deep by 25 feet long</span>, <span id="fact4" class="highlight-number-4">one that is 10 feet by 12 feet</span>, and <span id="fact5" class="highlight-number-5">a fourth that is 7 feet by 8 feet</span>. How many square feet of sod will she need to cover her yard, minus the sidewalk and flower beds?</p>
+            </div>
+
+            <div class="problem-understanding">
+                <div class="section-title">Problem Summary</div>
+                <ul>
+                    <li><span class="highlight-number-1">Front yard dimensions: 200 feet wide by 50 feet</span></li>
+                    <li><span class="highlight-number-2">Sidewalk dimensions: 3 feet wide and 50 feet long</span></li>
+                    <li><span class="highlight-number-3">Two flower beds dimensions: 4 feet deep by 25 feet long each</span></li>
+                    <li><span class="highlight-number-4">Third flower bed dimensions: 10 feet by 12 feet</span></li>
+                    <li><span class="highlight-number-5">Fourth flower bed dimensions: 7 feet by 8 feet</span></li>
+                </ul>
+                <div><strong>Goal:</strong> Calculate the square feet of sod needed to cover the yard, minus the sidewalk and flower beds</div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button class="btn btn-play-pause" id="playPauseBtn">▶ Play</button>
+                <button class="btn btn-stop" id="stopBtn">■ Stop</button>
+                <button class="btn btn-prev" id="prevBtn">⤴ Previous Step</button>
+                <button class="btn btn-next" id="nextBtn">⤵ Next Step</button>
+            </div>
+
+            <div class="graph-container" id="graph-container">
+                <svg id="math-graph" width="100%" height="100%" viewBox="0 0 800 480">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="4" markerHeight="3" refX="4" refY="1.5" orient="auto">
+                            <polygon points="0 0, 4 1.5, 0 3" fill="black" />
+                        </marker>
+                    </defs>
+                </svg>
+                <iframe id="step-iframe" srcdoc="<div style='padding: 20px; font-family: Arial, sans-serif;'>Click Play to start the visualization</div>"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const baseNodes = {
+            frontYardDimensions: { id: 'front-yard-dimensions', x: 100, y: 80, label: 'Front Yard Dimensions', value: '200ft × 50ft', calc: '200 × 50', color: '#ff634780' },
+            totalYardArea: { id: 'total-yard-area', x: 300, y: 80, label: 'Total Yard Area', value: '10,000 sq.ft.', calc: '200 × 50 = 10,000', color: '#4682b480' },
+            sidewalkDimensions: { id: 'sidewalk-dimensions', x: 100, y: 160, label: 'Sidewalk Dimensions', value: '3ft × 50ft', calc: '3 × 50', color: '#87cefa80' },
+            sidewalkArea: { id: 'sidewalk-area', x: 300, y: 160, label: 'Sidewalk Area', value: '150 sq.ft.', calc: '3 × 50 = 150', color: '#ffd90080' },
+            flowerBeds1Dimensions: { id: 'flower-beds-1-dimensions', x: 100, y: 240, label: 'Flower Beds 1 Dimensions', value: '4ft × 25ft × 2', calc: '4 × 25 × 2', color: '#90ee9080' },
+            flowerBeds1Area: { id: 'flower-beds-1-area', x: 300, y: 240, label: 'Flower Beds 1 Area', value: '200 sq.ft.', calc: '4 × 25 × 2 = 200', color: '#ffc0cb80' },
+            flowerBed3Dimensions: { id: 'flower-bed-3-dimensions', x: 100, y: 320, label: 'Flower Bed 3 Dimensions', value: '10ft × 12ft', calc: '10 × 12', color: '#ffa50080' },
+            flowerBed3Perimeter: { id: 'flower-bed-3-perimeter', x: 300, y: 320, label: 'Flower Bed 3 Perimeter', value: '44 ft.', calc: '2 × (10 + 12) = 44', color: '#dc143c80' },
+            flowerBed4Dimensions: { id: 'flower-bed-4-dimensions', x: 100, y: 400, label: 'Flower Bed 4 Dimensions', value: '7ft × 8ft', calc: '7 × 8', color: '#d3a0d380' },
+            flowerBed4Area: { id: 'flower-bed-4-area', x: 300, y: 400, label: 'Flower Bed 4 Area', value: '56 sq.ft.', calc: '7 × 8 = 56', color: '#228b2280' },
+            totalSubtractedArea: { id: 'total-subtracted-area', x: 500, y: 240, label: 'Total Subtracted Area', value: '450 sq.ft.', calc: '150 + 200 + 44 + 56 = 450', color: '#ffa50080' },
+            sodAreaNeeded: { id: 'sod-area-needed', x: 700, y: 240, label: 'Sod Area Needed', value: '9,550 sq.ft.', calc: '10,000 - 450 = 9,550', color: '#90ee9080' }
+        };
+
+        const problemData = {
+            totalSteps: 7,
+            getSteps: () => [
+                {
+                    explanation: "Calculate the total area of the front yard",
+                    calculation: "width × length = 200 ft * 50 ft = 10,000 sq.ft.",
+                    nodes: [{ ...baseNodes.frontYardDimensions, isNew: true }, { ...baseNodes.totalYardArea, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the area of the sidewalk",
+                    calculation: "width × length = 3ft * 50ft = 150 sq.ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           { ...baseNodes.sidewalkDimensions, isNew: true }, { ...baseNodes.sidewalkArea, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the area of the two flower beds in front of the house",
+                    calculation: "(depth × length) × 2 = 4 ft * 25 ft = 100 sq.ft.; 2 * 100 sq.ft. = 200 sq.ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           baseNodes.sidewalkDimensions, baseNodes.sidewalkArea,
+                           { ...baseNodes.flowerBeds1Dimensions, isNew: true }, { ...baseNodes.flowerBeds1Area, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-dimensions', to: 'flower-beds-1-area', operation: '×', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the perimeter of the third flower bed",
+                    calculation: "2 × (length + width) = 10 feet + 10 feet + 12 feet + 12 feet = 44 ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           baseNodes.sidewalkDimensions, baseNodes.sidewalkArea,
+                           baseNodes.flowerBeds1Dimensions, baseNodes.flowerBeds1Area,
+                           { ...baseNodes.flowerBed3Dimensions, isNew: true }, { ...baseNodes.flowerBed3Perimeter, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-dimensions', to: 'flower-beds-1-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-dimensions', to: 'flower-bed-3-perimeter', operation: '×', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the area of the fourth flower bed",
+                    calculation: "length × width = 7ft * 8ft = 56 sq.ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           baseNodes.sidewalkDimensions, baseNodes.sidewalkArea,
+                           baseNodes.flowerBeds1Dimensions, baseNodes.flowerBeds1Area,
+                           baseNodes.flowerBed3Dimensions, baseNodes.flowerBed3Perimeter,
+                           { ...baseNodes.flowerBed4Dimensions, isNew: true }, { ...baseNodes.flowerBed4Area, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-dimensions', to: 'flower-beds-1-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-dimensions', to: 'flower-bed-3-perimeter', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-4-dimensions', to: 'flower-bed-4-area', operation: '×', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the total area to subtract from the yard",
+                    calculation: "sidewalk_area + front_flowerbeds_area + third_flowerbed_perimeter + fourth_flowerbed_area = 150 sq.ft + 200 sq.ft + 44 sq.ft + 56 sq.ft = 450 sq. ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           baseNodes.sidewalkDimensions, baseNodes.sidewalkArea,
+                           baseNodes.flowerBeds1Dimensions, baseNodes.flowerBeds1Area,
+                           baseNodes.flowerBed3Dimensions, baseNodes.flowerBed3Perimeter,
+                           baseNodes.flowerBed4Dimensions, baseNodes.flowerBed4Area,
+                           { ...baseNodes.totalSubtractedArea, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-dimensions', to: 'flower-beds-1-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-dimensions', to: 'flower-bed-3-perimeter', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-4-dimensions', to: 'flower-bed-4-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-perimeter', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-bed-4-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' }
+                    ]
+                },
+                {
+                    explanation: "Calculate the area that needs sod",
+                    calculation: "total_yard_area - total_subtracted_area = 10,000 sq.ft - 450 sq.ft = 9,550 sq.ft.",
+                    nodes: [baseNodes.frontYardDimensions, baseNodes.totalYardArea, 
+                           baseNodes.sidewalkDimensions, baseNodes.sidewalkArea,
+                           baseNodes.flowerBeds1Dimensions, baseNodes.flowerBeds1Area,
+                           baseNodes.flowerBed3Dimensions, baseNodes.flowerBed3Perimeter,
+                           baseNodes.flowerBed4Dimensions, baseNodes.flowerBed4Area,
+                           baseNodes.totalSubtractedArea, { ...baseNodes.sodAreaNeeded, isNew: true }],
+                    connections: [
+                        { from: 'front-yard-dimensions', to: 'total-yard-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-dimensions', to: 'sidewalk-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-dimensions', to: 'flower-beds-1-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-dimensions', to: 'flower-bed-3-perimeter', operation: '×', color: '#D3D3D3' },
+                        { from: 'flower-bed-4-dimensions', to: 'flower-bed-4-area', operation: '×', color: '#D3D3D3' },
+                        { from: 'sidewalk-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-beds-1-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-bed-3-perimeter', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'flower-bed-4-area', to: 'total-subtracted-area', operation: '+', color: '#D3D3D3' },
+                        { from: 'total-yard-area', to: 'sod-area-needed', operation: '-', color: '#D3D3D3' },
+                        { from: 'total-subtracted-area', to: 'sod-area-needed', operation: '-', color: '#D3D3D3' }
+                    ]
+                }
+            ]
+        };
+        let currentStep = 1;
+        let isPlaying = false;
+        let playInterval = null;
+        let draggedNode = null;
+        let nodePositions = {};
+        let formulaOverlay = null;
+        let isDragging = false;
+
+        const svg = document.getElementById('math-graph');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const stepIframe = document.getElementById('step-iframe');
+
+        function initializeVisualization() {
+            updateVisualization();
+            updateButtons();
+        }
+
+        function updateVisualization() {
+            const steps = problemData.getSteps();
+            const step = steps[currentStep - 1];
+            // Clear SVG
+            while (svg.children.length > 1) {
+                svg.removeChild(svg.lastChild);
+            }
+            // Draw connections first
+            step.connections.forEach(conn => {
+                drawConnection(conn, step.nodes);
+            });
+            // Draw nodes
+            step.nodes.forEach(node => {
+                drawNode(node);
+            });
+            // Update step display
+            updateStepDisplay();
+        }
+
+       function drawNode(node) {
+        const pos = nodePositions[node.id] || { x: node.x, y: node.y };
+        const make = (tag, attrs, text) => {
+            const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+            Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+            if (text) el.textContent = text;
+            return el;
+        };
+
+        const group = make('g', { 'data-node-id': node.id });
+        group.classList.add('math-node');
+        // Listen for prevBtn clicks
+
+       const rect = make('rect', {
+            x: pos.x - 60, y: pos.y - 35, width: 120, height: 70, rx: 8,
+            fill: node.color, 'fill-opacity': 1, stroke: node.color, 'stroke-width': 2,
+            class: 'node-bg'
+        });
+
+        const label = make('text', {
+            x: pos.x, y: pos.y - 15, 'text-anchor': 'middle',
+            'dominant-baseline': 'central', 'font-size': 12,
+            'font-weight': 'bold', fill: '#1e293b'
+        }, node.label);
+
+        const value = make('text', {
+            x: pos.x, y: pos.y + 5, 'text-anchor': 'middle',
+            'dominant-baseline': 'central', 'font-size': 14,
+            'font-weight': 'bold', fill: '#1e293b'
+        }, node.value);
+
+        const calc = make('text', {
+            x: pos.x, y: pos.y + 20, 'text-anchor': 'middle',
+            'dominant-baseline': 'central', 'font-size': 12,
+            fill: '#6b7280'
+        }, `(${node.calc})`);
+
+        // Add class to the last text element
+        calc.classList.add('math-eq');
+
+        group.append(rect, label, value, calc);
+
+
+        group.addEventListener('mousedown', e => startDrag(e, node));
+        group.addEventListener('mouseenter', () => highlightDependencies(node.id));
+        group.addEventListener('mouseleave', clearHighlights);
+
+        svg.appendChild(group);
+
+        if (node.isNew && !isDragging) {
+            group.style.transform = 'scale(0)';
+            group.style.transformOrigin = `${pos.x}px ${pos.y}px`;
+            setTimeout(() => {
+            group.style.transition = 'transform 0.5s ease';
+            group.style.transform = 'scale(1)';
+            }, 100);
+        }
+        }
+
+       function drawConnection(conn, nodes) {
+        const from = nodes.find(n => n.id === conn.from);
+        const to = nodes.find(n => n.id === conn.to);
+        if (!from || !to) return;
+
+        const p = id => nodePositions[id] || { x: nodes.find(n => n.id === id).x, y: nodes.find(n => n.id === id).y };
+        const [f, t] = [p(from.id), p(to.id)];
+        [sx, sy, ex, ey] = [f.x + 60, f.y, t.x - 60, t.y];
+
+        if (f.x > t.x){
+            [sx, sy, ex, ey] = [f.x - 60, f.y, t.x + 60, t.y];
+        }
+        if ((Math.abs(f.x - t.x)<=120) ) {
+            [sx, sy, ex, ey] = [f.x, f.y + 35, t.x, t.y - 35]
+            if (f.y > t.y) {
+                [sx, sy, ex, ey] = [f.x, f.y - 35, t.x, t.y + 35]
+            }
+            
+        }
+        const [mx, my] = [(sx + ex) / 2, (sy + ey) / 2];
+
+        const makeEl = (tag, attrs, text) => {
+            const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+            Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+            if (text) el.textContent = text;
+            svg.appendChild(el);
+        };
+
+        makeEl('path', { d: `M ${sx} ${sy} Q ${mx} ${my} ${ex} ${ey}`, stroke: conn.color, 'stroke-opacity': 1, 'stroke-width': 3, fill: "none", 'marker-end': 'url(#arrowhead)' });
+        makeEl('rect', { x: mx - 25, y: my - 12, width: 50, height: 24, rx: 10, fill: conn.color });
+        makeEl('text', { x: mx, y: my, 'text-anchor': 'middle', 'dominant-baseline': 'central', 'font-size': 12, 'font-weight': 'bold', fill: 'black' }, conn.operation + (conn.label ? ' ' + conn.label : ''));
+        }
+
+
+        function updateStepDisplay() {
+            const steps = problemData.getSteps();
+            const step = steps[currentStep - 1];
+            
+            let content = `
+                <div style="padding: 20px; font-family: Arial, sans-serif;">
+                    <div style="background: #FFF3CD; border-left: 3px solid #FFC107; padding: 15px; border-radius: 5px; display: flex;">
+                        <div>
+                         ${step.explanation}
+                         <br></br>
+                        <strong>Calculation:</strong> ${step.calculation} 
+                        </div>
+                        <span style = "color:#adadad; font-size:1.7rem; font-weight:700; padding:2px 10px; border-radius:14px; pointer-events:nonex;margin-left:auto;">${currentStep}</span>
+                    </div>
+                   
+                </div>
+            `;
+
+            if (currentStep === problemData.totalSteps) {
+                content += `
+                    <div style="padding: 0 20px 20px 20px;">
+                        <div style="background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 15px; border-radius: 5px; margin-top: 10px;">
+                            <strong>Final Answer:</strong> Jill will need 9,550 square feet of sod to cover her yard, minus the sidewalk and flower beds.
+                        </div>
+                    </div>
+                `;
+            }
+
+            stepIframe.srcdoc = content;
+        }
+
+        function startDrag(e, node) {
+            isDragging = false;
+            draggedNode = node;
+            const startX = e.clientX;
+            const startY = e.clientY;
+            const startPos = nodePositions[node.id] || { x: node.x, y: node.y };
+
+            function onMouseMove(e) {
+                if (!isDragging && (Math.abs(e.clientX - startX) > 5 || Math.abs(e.clientY - startY) > 5)) {
+                    isDragging = true;
+                }
+                if (isDragging) {
+                    const rect = svg.getBoundingClientRect();
+                    const scaleX = 800 / rect.width;
+                    const scaleY = 480 / rect.height;
+                    
+                    nodePositions[node.id] = {
+                        x: Math.max(-10, Math.min(810, startPos.x + (e.clientX - startX) * scaleX)),
+                        y: Math.max(40, Math.min(440, startPos.y + (e.clientY - startY) * scaleY))
+                    };
+                updateVisualization();
+                }
+            }
+
+            function onMouseUp() {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+                
+                setTimeout(() => { isDragging = false; }, 100);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        }
+
+        function highlightDependencies(nodeId) {
+            const nodes = document.querySelectorAll('.math-node');
+            nodes.forEach(node => {
+                if (node.getAttribute('data-node-id') === nodeId) {
+                    node.classList.add('highlighted');
+                }
+            });
+        }
+
+        function clearHighlights() {
+            const nodes = document.querySelectorAll('.math-node');
+            nodes.forEach(node => {
+                node.classList.remove('highlighted');
+            });
+        }
+
+        function play() {
+            if (isPlaying) return;
+            isPlaying = true;
+            playPauseBtn.textContent = 'Pause';
+            
+            playInterval = setInterval(() => {
+                if (currentStep < problemData.totalSteps) {
+                    nextStep();
+                } else {
+                    stop();
+                }
+            }, 2000);
+        }
+
+        function pause() {
+            if (!isPlaying) return;
+            isPlaying = false;
+            playPauseBtn.textContent = 'Play';
+            if (playInterval) {
+                clearInterval(playInterval);
+                playInterval = null;
+            }
+        }
+
+        function stop() {
+            pause();
+            currentStep = 1;
+            updateVisualization();
+            updateButtons();
+        }
+
+        function nextStep() {
+            if (currentStep < problemData.totalSteps) {
+                currentStep++;
+                updateVisualization();
+                updateButtons();
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateVisualization();
+                updateButtons();
+            }
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = currentStep === 1;
+            nextBtn.disabled = currentStep === problemData.totalSteps;
+            
+            if (isPlaying) {
+                playPauseBtn.textContent = 'Pause';
+            } else {
+                playPauseBtn.textContent = 'Play';
+            }
+        }
+
+        // Event listeners
+        playPauseBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                pause();
+            } else {
+                play();
+            }
+        });
+
+        stopBtn.addEventListener('click', stop);
+        prevBtn.addEventListener('click', prevStep);
+        nextBtn.addEventListener('click', nextStep);
+
+        // Initialize
+        initializeVisualization();
+    </script>
+</body>
+</html>

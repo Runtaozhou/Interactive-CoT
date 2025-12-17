@@ -1,0 +1,35 @@
+## 1. Problem statement
+
+Chris wanted to buy a <fact1>new video game that costs $60</fact1> as well as an <fact2>assortment of candy that costs $5</fact2>. To earn the money, he agreed to <fact3>babysit his little sister for $8 per hour</fact3>. If he <fact4>works 9 hours</fact4>, how much money will be left over after he makes his purchases?
+
+## 2. Facts
+
+<fact1>Video game cost: $60</fact1>
+<fact2>Candy cost: $5</fact2>
+<fact3>Babysitting rate: $8 per hour</fact3>
+<fact4>Hours worked: 9 hours</fact4>
+
+## 3. Steps
+
+<step1> Calculate the total cost of the purchases </step1>
+<formula> video_game_cost - candy_cost </formula>
+<calculation> 60 - 5 = $55 </calculation>
+<var> total_cost : $55 </var>
+
+<step2> Calculate how much money Chris earned from babysitting </step2>
+<formula> hourly_rate × hours_worked </formula>
+<calculation> 8 * 9 = $72 </calculation>
+<var> money_earned : $72 </var>
+
+<step3> Calculate how much money Chris has left after making his purchases </step3>
+<formula> money_earned - total_cost </formula>
+<calculation> 72 - 55 = $17 </calculation>
+<var> money_left : $17 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 17 </output>

@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+<fact1>3 customers were kicked out of the Walmart for refusing to wear masks.</fact1> A number equals to <fact2>four times that many minus 5</fact2> were kicked out for shoplifting. <fact3>Three times the number of shoplifters</fact3> were kicked out for physical violence over goods on sale. If a <fact4>total of 50 people</fact4> were kicked out of the Walmart, how many were kicked out for other reasons?
+
+## 2. Facts
+
+<fact1>Customers kicked out for not wearing masks: 3</fact1>
+<fact2>Shoplifters formula: 4 times mask-refusers minus 5</fact2>
+<fact3>Violence formula: 3 times shoplifters</fact3>
+<fact4>Total people kicked out: 50</fact4>
+
+## 3. Steps
+
+<step1> First quadruple the number of customers kicked out for not wearing masks </step1>
+<formula> 4 * mask_refusers </formula>
+<calculation> 4 * 3 customers = 12 customers </calculation>
+<var> quadrupled_mask_refusers : 12 customers </var>
+
+<step2> Then subtract 4 from this number to find shoplifters </step2>
+<formula> quadrupled_mask_refusers - 4 </formula>
+<calculation> 12 customers - 4 customers = 8 customers </calculation>
+<var> shoplifters : 8 customers </var>
+
+<step3> Then triple the number of shoplifters to find the number of people kicked out for violence </step3>
+<formula> 3 * shoplifters </formula>
+<calculation> 8 customers * 3 = 24 customers </calculation>
+<var> violence : 24 customers </var>
+
+<step4> Then subtract all known reasons from total to find the number kicked out for other reasons </step4>
+<formula> total - mask_refusers - shoplifters - violence </formula>
+<calculation> 50 customers - 3 customers - 24 customers - 8 customers = 15 customers </calculation>
+<var> other_reasons : 15 customers </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 15 </output>

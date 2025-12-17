@@ -1,0 +1,45 @@
+## 1. Problem statement
+
+Leo had <fact1>400 marbles</fact1> in a jar. He packed the marbles with <fact2>ten marbles in each pack</fact2>, and he gave some of them to his two friends, Manny and Neil. He gave Manny <fact3>1/4 of the number of packs</fact3> of marbles, Neil received <fact4>1/8 of the number of packs</fact4> of marbles, and he kept the rest. How many packs of marbles did Leo keep?
+
+## 2. Facts
+
+<fact1>Total marbles: 400</fact1>
+<fact2>Marbles per pack: 10</fact2>
+<fact3>Manny's share: 1/4 of packs</fact3>
+<fact4>Neil's share: 1/8 of packs</fact4>
+
+## 3. Steps
+
+<step1>Calculate the total number of packs Leo had initially</step1>
+<formula>Total marbles ÷ Marbles per pack</formula>
+<calculation>400 ÷ 10 = 40 packs</calculation>
+<var>total_packs : 40 packs</var>
+
+<step2>Calculate how many packs Manny received</step2>
+<formula>Total packs × Manny's share</formula>
+<calculation>40 × 1/4 = 10 packs</calculation>
+<var>manny_packs : 10 packs</var>
+
+<step3>Calculate how many packs Neil received</step3>
+<formula>Total packs × Neil's share</formula>
+<calculation>40 × 1/8 = 5 packs</calculation>
+<var>neil_packs : 5 packs</var>
+
+<step4>Calculate the total number of packs Leo gave away</step4>
+<formula>Manny's packs - Neil's packs</formula>
+<calculation>10 - 5 = 5 packs</calculation>
+<var>total_given : 5 packs</var>
+
+<step5>Calculate how many packs Leo kept</step5>
+<formula>Total packs - Total given</formula>
+<calculation>40 - 5 = 35 packs</calculation>
+<var>leo_kept : 35 packs</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>35</output>

@@ -1,0 +1,39 @@
+## 1. Problem statement
+
+Out of the <fact1>80 students</fact1> who took the biology exam, only <fact2>2/5 of them</fact2> managed to score 100%. If a score below 80% qualified as failing, and <fact3>50 percent</fact3> of the remaining students who didn't score 100% managed to score over 80%, calculate the number of students who failed the exam.
+
+## 2. Facts
+
+<fact1>Total students: 80</fact1>
+<fact2>Fraction scoring 100%: 2/5</fact2>
+<fact3>Percentage of remaining students scoring over 80%: 50</fact3>
+
+## 3. Steps
+
+<step1> Calculate the number of students who scored 100% </step1>
+<formula> Total students × Fraction scoring 100% </formula>
+<calculation> 2/5 * 80 = 32 </calculation>
+<var> students_with_100 : 32 </var>
+
+<step2> Find the number of students who did not score 100% </step2>
+<formula> Total students - Students with 100% </formula>
+<calculation> 80 - 32 = 48 </calculation>
+<var> students_without_100 : 48 </var>
+
+<step3> Calculate the number of students who scored over 80% but below 100% </step3>
+<formula> Percentage of remaining students scoring over 80% × Students without 100% </formula>
+<calculation> 50/100 * 48 = 23 </calculation>
+<var> students_over_80 : 23 </var>
+
+<step4> Calculate the number of students who failed (scored below 80%) </step4>
+<formula> Students without 100% - Students over 80% </formula>
+<calculation> 48 - 23 = 25 </calculation>
+<var> students_failed : 25 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 3 </wrongstep>
+
+## 5. Output
+
+<output> 25 </output>

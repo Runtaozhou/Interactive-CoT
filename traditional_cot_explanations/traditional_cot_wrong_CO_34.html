@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .problem-statement {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2ecc71;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .final-answer {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 4px solid #2ecc71;
+            font-weight: bold;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">5</div>
+    <h2>Problem Statement:</h2>
+    <div class="problem-statement">
+        On Mondays, Wednesdays, and Fridays, college student Kimo has three 1-hour classes each day. On Tuesdays and Thursdays, he has two 2-hour classes each day. In one semester, there are 16 weeks of school. In one semester, how many hours does Kimo spend attending classes?
+    </div>
+    <h2>Step By Step Explanation:</h2>
+    <div class="explanation">
+        <div class="step">
+            <span class="step-number">Step 1:</span> Calculate hours spent in class on a single Monday, Wednesday, or Friday.
+            <p>Number of classes × hours per class = 3 × 1 = 3 hours</p>
+            <p>So Kimo spends 3 hours in class on each Monday, Wednesday, and Friday.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 2:</span> Calculate total hours spent in class on Monday, Wednesday, and Friday each week.
+            <p>Daily hours (MWF) × number of days = 3 × 3 = 9 hours</p>
+            <p>Kimo spends a total of 9 hours in class on Monday, Wednesday, and Friday each week.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 3:</span> Calculate total hours spent in class on Monday, Wednesday, and Friday for the semester.
+            <p>Weekly hours (MWF) × number of weeks = 9 × 16 = 144 hours</p>
+            <p>For the entire semester, Kimo spends 144 hours in class on Mondays, Wednesdays, and Fridays.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 4:</span> Calculate hours spent in class on a single Tuesday or Thursday.
+            <p>Number of classes × hours per class = 2 × 2 = 4 hours</p>
+            <p>So Kimo spends 4 hours in class on each Tuesday and Thursday.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 5:</span> Calculate total hours spent in class on Tuesday and Thursday each week.
+            <p>Daily hours (TTh) × number of days = 4 × 1 = 4 hours</p>
+            <p>Kimo spends a total of 4 hours in class on Tuesday and Thursday each week.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 6:</span> Calculate total hours spent in class on Tuesday and Thursday for the semester.
+            <p>Weekly hours (TTh) × number of weeks = 4 × 16 = 64 hours</p>
+            <p>For the entire semester, Kimo spends 64 hours in class on Tuesdays and Thursdays.</p>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">Step 7:</span> Calculate total hours spent in class for the entire semester.
+            <p>Semester hours (MWF) + semester hours (TTh) = 144 + 64 = 208 hours</p>
+            <p>In total, Kimo spends 208 hours attending classes during the semester.</p>
+        </div>
+    </div>
+
+    <h2>Final Answer:</h2>
+    <div class="final-answer">
+        208
+    </div>
+</body>
+</html>

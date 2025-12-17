@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+<fact1>Linda's bag has 2 dimes, 6 quarters, and 5 nickels.</fact1> <fact2>Her mother gives her 2 more dimes, 10 quarters, and twice as many nickels as she has.</fact2> How many coins does she have altogether?
+
+## 2. Facts
+
+<fact1>Initial coins: 2 dimes, 6 quarters, 5 nickels</fact1>
+<fact2>Additional coins: 2 dimes, 10 quarters, twice as many nickels as she has</fact2>
+
+## 3. Steps
+
+<step1>Calculate the total number of quarters after Linda's mother gives her more</step1>
+<formula>initial quarters + additional quarters</formula>
+<calculation>6 + 10 = 16 quarters</calculation>
+<var>total_quarters: 16 quarters</var>
+
+<step2>Calculate how many additional nickels Linda's mother gives her</step2>
+<formula>initial nickels × 2</formula>
+<calculation>5 × 2 = 10 nickels</calculation>
+<var>additional_nickels: 10 nickels</var>
+
+<step3>Calculate the total number of nickels after Linda's mother gives her more</step3>
+<formula>initial nickels + additional nickels</formula>
+<calculation>5 + 10 = 15 nickels</calculation>
+<var>total_nickels: 15 nickels</var>
+
+<step4>Calculate the total number of coins without counting dimes</step4>
+<formula>total_quarters + total_nickels</formula>
+<calculation>16 + 15 = 31 coins</calculation>
+<var>coins_without_dimes: 31 coins</var>
+
+<step5>Calculate the total number of coins by adding the dimes</step5>
+<formula>coins_without_dimes + initial dimes</formula>
+<calculation>31 + 2 = 33 coins</calculation>
+<var>total_coins: 33 coins</var>
+
+## 4. Wrongsteps
+
+<wrongstep>4</wrongstep>
+
+## 5. Output
+
+<output>33</output>

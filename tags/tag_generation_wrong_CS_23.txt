@@ -1,0 +1,47 @@
+## 1. Problem statement
+
+<fact1>Five food companies sponsored a local food bank.</fact1> <fact2>Foster Farms donated 45 dressed chickens;</fact2> <fact3>American Summits donated twice the number of bottled water than the number of dressed chicken donated by Foster Farms;</fact3> <fact4>Hormel donated three times the number of dressed chickens that Foster Farms donated;</fact4> <fact5>Boudin Butchers donated one-third of the number of dressed chickens that Hormel donated;</fact5> <fact6>Del Monte Foods donated 30 fewer bottles of water than American Summits.</fact6> How many food items did the companies donate in total?
+
+## 2. Facts
+
+<fact1>Number of companies: 5</fact1>
+<fact2>Foster Farms donation: 45 dressed chickens</fact2>
+<fact3>American Summits donation: twice the number of Foster Farms chickens</fact3>
+<fact4>Hormel donation: three times the number of Foster Farms chickens</fact4>
+<fact5>Boudin Butchers donation: one-third of Hormel's donation</fact5>
+<fact6>Del Monte Foods donation: 30 fewer than American Summits</fact6>
+
+## 3. Steps
+
+<step1>Calculate how many bottled waters American Summits donated</step1>
+<formula>Foster Farms chickens × 2</formula>
+<calculation>45 × 2 = 90 bottled waters</calculation>
+<var>american_summits_donation: 90 bottled waters</var>
+
+<step2>Calculate how many spams Hormel donated</step2>
+<formula>Foster Farms chickens × 3</formula>
+<calculation>45 × 3 = 135 spams</calculation>
+<var>hormel_donation: 135 spams</var>
+
+<step3>Calculate how many sourdoughs Boudin Bakery donated</step3>
+<formula>Hormel donation × 1/3</formula>
+<calculation>135 × 1/3 = 45 sourdoughs</calculation>
+<var>boudin_donation: 45 sourdoughs</var>
+
+<step4>Calculate how many canned fruits Del Monte Foods donated</step4>
+<formula>American Summits donation - 30</formula>
+<calculation>90 - 30 = 60 canned fruits</calculation>
+<var>del_monte_donation: 60 canned fruits</var>
+
+<step5>Add up all donations to find the total number of food items</step5>
+<formula>Foster Farms + American Summits + Hormel + Boudin Bakery + Del Monte</formula>
+<calculation>45 + 90 + 135 + 45 + 50 = 365 different food</calculation>
+<var>total_food_items: 365</var>
+
+## 4. Wrongsteps
+
+<wrongstep>5</wrongstep>
+
+## 5. Output
+
+<output>365</output>

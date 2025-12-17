@@ -1,0 +1,43 @@
+## 1. Problem statement
+
+<fact1>Jackie can do 5 push-ups in 10 seconds.</fact1> How many push-ups can she do in one minute if she takes <fact2>two 8-second breaks</fact2>?
+
+## 2. Facts
+
+<fact1>Push-ups: 5 in 10 seconds</fact1>
+<fact2>Breaks: two 8-second breaks</fact2>
+
+## 3. Steps
+
+<step1> Calculate the total time for Jackie's push-up routine </step1>
+<formula> minutes × seconds per minute </formula>
+<calculation> 1 * 60 = 60 seconds </calculation>
+<var> total_time : 60 seconds </var>
+
+<step2> Calculate the total time spent on breaks </step2>
+<formula> number of breaks × break duration </formula>
+<calculation> 2 * 8 = 20 seconds </calculation>
+<var> break_time : 20 seconds </var>
+
+<step3> Calculate the time available for doing push-ups </step3>
+<formula> total_time - break_time </formula>
+<calculation> 60 - 20 = 40 seconds </calculation>
+<var> push_up_time : 40 seconds </var>
+
+<step4> Calculate the time needed for one push-up </step4>
+<formula> time / number of push-ups </formula>
+<calculation> 10 / 5 = 2 seconds </calculation>
+<var> time_per_pushup : 2 seconds </var>
+
+<step5> Calculate the total number of push-ups Jackie can do </step5>
+<formula> push_up_time / time_per_pushup </formula>
+<calculation> 40 / 2 = 20 push-ups </calculation>
+<var> total_pushups : 20 push-ups </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 20 </output>

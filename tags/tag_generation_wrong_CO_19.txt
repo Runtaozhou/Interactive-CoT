@@ -1,0 +1,40 @@
+## 1. Problem statement
+
+Jason sent <fact1>220 text messages on Monday</fact1>, <fact2>half as many text messages on Tuesday</fact2>, and <fact3>50 text messages each day Wednesday through Friday</fact3>. How many text messages did he send on average during those <fact4>five days</fact4>?
+
+## 2. Facts
+
+<fact1>Monday text messages: 220</fact1>
+<fact2>Tuesday text messages: half of Monday's</fact2>
+<fact3>Wednesday-Friday text messages: 50 per day</fact3>
+<fact4>Total days: 5</fact4>
+
+## 3. Steps
+
+<step1> First find how many text messages he sent on Tuesday </step1>
+<formula> Monday messages ÷ 2 </formula>
+<calculation> 220 messages / 2 = 110 messages </calculation>
+<var> tuesday_messages : 110 messages </var>
+
+<step2> Then find how many text messages he sent Wednesday-Friday </step2>
+<formula> daily messages × number of days </formula>
+<calculation> 50 messages/day * 2 days = 100 messages </calculation>
+<var> wed_to_fri_messages : 100 messages </var>
+
+<step3> Then add up all the messages he sent to find the total </step3>
+<formula> Monday messages + Tuesday messages + Wednesday-Friday messages </formula>
+<calculation> 110 messages + 100 messages + 220 messages = 430 messages </calculation>
+<var> total_messages : 430 messages </var>
+
+<step4> Then divide that number by the number of days to find the average number of messages he sent per day </step4>
+<formula> total messages ÷ number of days </formula>
+<calculation> 430 messages / 5 days = 86 messages/day </calculation>
+<var> average_messages : 86 messages/day </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 2 </wrongstep>
+
+## 5. Output
+
+<output> 86 </output>

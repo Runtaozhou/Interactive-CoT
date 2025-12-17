@@ -1,0 +1,52 @@
+## 1. Problem statement
+
+Team Soccer Stars plays in a soccer league. They played a total of <fact1>20 games</fact1>, and won <fact2>14 games</fact2>, lost <fact3>2</fact3>, and drew the rest of the matches. They earn <fact4>3 points for a win</fact4>, <fact5>1 point for a draw</fact5>, and <fact6>nothing for a loss</fact6>. How many points did they have at the end of the season?
+
+## 2. Facts
+
+<fact1>Total games: 20</fact1>
+<fact2>Games won: 14</fact2>
+<fact3>Games lost: 2</fact3>
+<fact4>Points per win: 3</fact4>
+<fact5>Points per draw: 1</fact5>
+<fact6>Points per loss: 0</fact6>
+
+## 3. Steps
+
+<step1> Calculate the total number of games won and lost </step1>
+<formula> wins + losses </formula>
+<calculation> 15 + 2 = 17 games </calculation>
+<var> games_won_and_lost : 17 games </var>
+
+<step2> Calculate the number of games drawn </step2>
+<formula> total games - games won and lost </formula>
+<calculation> 20 - 17 = 3 games </calculation>
+<var> games_drawn : 3 games </var>
+
+<step3> Calculate the points earned from wins </step3>
+<formula> wins * points per win </formula>
+<calculation> 15 * 3 = 45 points </calculation>
+<var> points_from_wins : 45 points </var>
+
+<step4> Calculate the points earned from draws </step4>
+<formula> draws * points per draw </formula>
+<calculation> 3 * 1 = 3 points </calculation>
+<var> points_from_draws : 3 points </var>
+
+<step5> Calculate the points earned from losses </step5>
+<formula> losses * points per loss </formula>
+<calculation> 2 * 0 = 0 points </calculation>
+<var> points_from_losses : 0 points </var>
+
+<step6> Calculate the total points earned </step6>
+<formula> points from wins + points from draws + points from losses </formula>
+<calculation> 45 + 3 + 0 = 48 points </calculation>
+<var> total_points : 48 points </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 48 </output>

@@ -1,0 +1,52 @@
+## 1. Problem statement
+
+Walter goes to the zoo, where he spends a certain amount of time looking at the seals, <fact1>eight times as long looking at the penguins</fact1>, and <fact2>13 minutes looking at the elephants</fact2>. If he spent <fact3>2 hours and 10 minutes</fact3> at the zoo, how many minutes did he spent looking at the seals?
+
+## 2. Facts
+
+<fact1>Time looking at penguins: 8 times as long as seals</fact1>
+<fact2>Time looking at elephants: 13 minutes</fact2>
+<fact3>Total time at zoo: 2 hours and 10 minutes</fact3>
+
+## 3. Steps
+
+<step1> First find the number of minutes in 2 hours </step1>
+<formula> hours × minutes/hour </formula>
+<calculation> 2 hours * 50 minutes/hour = 100 minutes </calculation>
+<var> hours_in_minutes : 100 minutes </var>
+
+<step2> Then add 10 minutes to find the total number of minutes Walter spent at the zoo </step2>
+<formula> hours_in_minutes + additional_minutes </formula>
+<calculation> 100 minutes + 10 minutes = 110 minutes </calculation>
+<var> total_time : 110 minutes </var>
+
+<step3> Set up equations using variables for time spent looking at seals and penguins </step3>
+<formula> s + p + 13 = 110, p = 8s </formula>
+<calculation></calculation>
+<var> s : time looking at seals </var>
+<var> p : time looking at penguins </var>
+
+<step4> Substitute the second equation into the first </step4>
+<formula> s + 8s + 13 = 110 </formula>
+<calculation></calculation>
+
+<step5> Combine like terms </step5>
+<formula> 9s + 13 = 110 </formula>
+<calculation></calculation>
+
+<step6> Subtract 13 from both sides </step6>
+<formula> 9s = 97 </formula>
+<calculation> 110 - 13 = 97 </calculation>
+
+<step7> Divide both sides by 9 to find time spent looking at seals </step7>
+<formula> s = 97 ÷ 9 </formula>
+<calculation> 97 ÷ 9 ≈ 10.78 </calculation>
+<var> seal_time : 10.78 minutes </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 10.78 </output>

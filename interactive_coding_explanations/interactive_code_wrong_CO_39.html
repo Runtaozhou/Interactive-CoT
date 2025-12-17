@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving Interface</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .problem-statement, .problem-understanding {
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .problem-statement {
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .problem-understanding {
+            height: 50%;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .debugger-controls {
+            display: flex;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            gap: 5px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover:not(.disabled) {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .btn-play-pause {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .btn-stop {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .btn-prev, .btn-next {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .python-solution {
+            height: 400px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .python-code {
+            padding: 15px;
+            height: calc(100% - 50px);
+            overflow-y: auto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .code-line {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .code-line.current {
+            background-color: #ffeb3b;
+            color: #000;
+            padding-left: 8px;
+        }
+
+        .line-number {
+            color: #888;
+            font-size: 12px;
+            min-width: 20px;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        .comment {
+            color: #347778;
+        }
+
+        .variables-display {
+            height: 300px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .variable-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+            font-weight: 500;
+        }
+
+        .variable-name {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+
+        .variable-value {
+            font-weight: 600;
+        }
+
+        .fact1-color { background-color: rgba(255, 193, 7, 0.5); }
+        .fact2-color { background-color: rgba(40, 167, 69, 0.5); }
+        .fact3-color { background-color: rgba(0, 123, 255, 0.5); }
+        .fact4-color { background-color: rgba(220, 53, 69, 0.5); }
+        .fact5-color { background-color: rgba(156, 39, 176, 0.5); }
+        .var1-color { background-color: rgba(255, 87, 34, 0.5); }
+        .var2-color { background-color: rgba(96, 125, 139, 0.5); }
+        .var3-color { background-color: rgba(233, 30, 99, 0.5); }
+        .var4-color { background-color: rgba(121, 85, 72, 0.5); }
+        .var5-color { background-color: rgba(76, 175, 80, 0.5); }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .what-to-find {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        .what-to-find h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .wrong-step {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrong-step">2</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="problem-statement">
+                <div class="section-title">Problem Statement</div>
+                <p>
+                    <span id="fact1" class="fact1-color">Danivan Drugstore has 4500 bottles of hand sanitizer gel in inventory at the beginning of the week.</span> <span id="fact2" class="fact2-color">On Monday 2445 bottles were sold</span>, <span id="fact3" class="fact3-color">on Tuesday 900 bottles were sold</span>, and <span id="fact4" class="fact4-color">50 bottles each day for the rest of the week were sold (from Wednesday until Sunday)</span>. <span id="fact5" class="fact5-color">On Saturday, the supplier delivers an order for 650 bottles.</span> How many bottles of sanitizer gel does the Drugstore have at the end of the week?
+                </p>
+            </div>
+            <div class="problem-understanding">
+                <div class="section-title">Problem Summary</div>
+                <ul>
+                    <li><span class="fact1-color">Initial inventory: 4500 bottles</span></li>
+                    <li><span class="fact2-color">Monday sales: 2445 bottles</span></li>
+                    <li><span class="fact3-color">Tuesday sales: 900 bottles</span></li>
+                    <li><span class="fact4-color">Daily sales Wednesday-Sunday: 50 bottles</span></li>
+                    <li><span class="fact5-color">Saturday delivery: 650 bottles</span></li>
+                </ul>
+                <div class="what-to-find">
+                    <h4>What we need to find:</h4>
+                    <p>How many bottles of sanitizer gel the Drugstore has at the end of the week.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="debugger-controls">
+                <button id="playPauseBtn" class="btn btn-play-pause">▶ Play</button>
+                <button id="stopBtn" class="btn btn-stop">■ Stop</button>
+                <button id="prevBtn" class="btn btn-prev">⤴ Previous Step</button>
+                <button id="nextBtn" class="btn btn-next">⤵ Next Step</button>
+            </div>
+            <div class="python-solution">
+                <div class="section-title" style="color: #333333; padding: 15px 15px 0; margin: 0;">Python Solution</div>
+                <div class="python-code" id="python-code">
+                    <div class="code-line" data-step="1">
+                        <span class="line-number">1</span>
+                        <span class="comment"># Calculate sales on Monday and Tuesday</span>
+                    </div>
+                    <div class="code-line" data-step="2">
+                        <span class="line-number">2</span>
+                        <span><span class="var1-color">mon_tue_sales</span> = <span class="fact2-color">2445</span> + <span class="fact3-color">900</span></span>
+                    </div>
+                    <div class="code-line" data-step="3">
+                        <span class="line-number">3</span>
+                        <span class="comment"># Calculate sales from Wednesday to Sunday</span>
+                    </div>
+                    <div class="code-line" data-step="4">
+                        <span class="line-number">4</span>
+                        <span><span class="var2-color">wed_sun_sales</span> = 4 * <span class="fact4-color">50</span></span>
+                    </div>
+                    <div class="code-line" data-step="5">
+                        <span class="line-number">5</span>
+                        <span class="comment"># Calculate total sales for the week</span>
+                    </div>
+                    <div class="code-line" data-step="6">
+                        <span class="line-number">6</span>
+                        <span><span class="var3-color">total_sales</span> = <span class="var1-color">mon_tue_sales</span> + <span class="var2-color">wed_sun_sales</span></span>
+                    </div>
+                    <div class="code-line" data-step="7">
+                        <span class="line-number">7</span>
+                        <span class="comment"># Calculate remaining stock after sales</span>
+                    </div>
+                    <div class="code-line" data-step="8">
+                        <span class="line-number">8</span>
+                        <span><span class="var4-color">remaining_stock</span> = <span class="fact1-color">4500</span> - <span class="var3-color">total_sales</span></span>
+                    </div>
+                    <div class="code-line" data-step="9">
+                        <span class="line-number">9</span>
+                        <span class="comment"># Calculate final stock after Saturday delivery</span>
+                    </div>
+                    <div class="code-line" data-step="10">
+                        <span class="line-number">10</span>
+                        <span><span class="var5-color">final_stock</span> = <span class="var4-color">remaining_stock</span> + <span class="fact5-color">650</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="variables-display" id="variables-display">
+                <div class="section-title" style="margin-bottom: 15px;">Variables</div>
+                <div id="variables-list">
+                    <div class="variable-item">
+                        <span class="variable-name">No variables initialized yet</span>
+                        <span class="variable-value">Run the code to see variables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class PythonDebugger {
+            constructor() {
+                this.currentStep = -1;
+                this.isPlaying = false;
+                this.playInterval = null;
+                this.totalSteps = 10;
+                this.variables = {};
+                
+                this.initializeElements();
+                this.bindEvents();
+                this.updateUI();
+            }
+
+            initializeElements() {
+                this.playPauseBtn = document.getElementById('playPauseBtn');
+                this.stopBtn = document.getElementById('stopBtn');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.codeLines = document.querySelectorAll('.code-line');
+                this.variablesDisplay = document.getElementById('variables-list');
+            }
+
+            bindEvents() {
+                this.playPauseBtn.addEventListener('click', () => this.togglePlay());
+                this.stopBtn.addEventListener('click', () => this.stop());
+                this.prevBtn.addEventListener('click', () => this.previousStep());
+                this.nextBtn.addEventListener('click', () => this.nextStep());
+            }
+
+            togglePlay() {
+                if (this.isPlaying) {
+                    this.pause();
+                } else {
+                    this.play();
+                }
+            }
+
+            play() {
+                this.isPlaying = true;
+                this.playPauseBtn.innerHTML = '❚❚ Pause';
+                
+                if (this.currentStep >= this.totalSteps) {
+                    this.currentStep = -1;
+                }
+                
+                this.playInterval = setInterval(() => {
+                    const nextStep = this.getNextExecutableStep(this.currentStep);
+                    if (nextStep !== null) {
+                        this.currentStep = nextStep;
+                        this.executeStep(this.currentStep);
+                        this.updateUI();
+                    } else {
+                        this.pause();
+                    }
+                }, 1500);
+            }
+
+            pause() {
+                this.isPlaying = false;
+                this.playPauseBtn.innerHTML = '▶ Play';
+                if (this.playInterval) {
+                    clearInterval(this.playInterval);
+                    this.playInterval = null;
+                }
+            }
+
+            stop() {
+                this.pause();
+                this.currentStep = -1;
+                this.variables = {};
+                this.updateUI();
+            }
+
+            nextStep() {
+                const nextStep = this.getNextExecutableStep(this.currentStep);
+                if (nextStep !== null) {
+                    this.currentStep = nextStep;
+                    this.executeStep(this.currentStep);
+                    this.updateUI();
+                }
+            }
+
+            previousStep() {
+                const prevStep = this.getPreviousExecutableStep(this.currentStep);
+                if (prevStep !== null) {
+                    this.currentStep = prevStep;
+                    this.recalculateVariables();
+                    this.updateUI();
+                } else if (this.currentStep !== -1) {
+                    this.currentStep = -1;
+                    this.variables = {};
+                    this.updateUI();
+                }
+            }
+            
+            executeStep(step) {
+                switch(step) {
+                    case 2:
+                        this.variables.mon_tue_sales = 2445 + 900;
+                        break;
+                    case 4:
+                        // This is the wrong step as indicated
+                        this.variables.wed_sun_sales = 4 * 50; // Should be 5 days (Wed-Sun) but using 4 as per the wrong step
+                        break;
+                    case 6:
+                        this.variables.total_sales = this.variables.mon_tue_sales + this.variables.wed_sun_sales;
+                        break;
+                    case 8:
+                        this.variables.remaining_stock = 4500 - this.variables.total_sales;
+                        break;
+                    case 10:
+                        this.variables.final_stock = this.variables.remaining_stock + 650;
+                        break;
+                }
+            }
+            
+            getExecutableSteps() {
+                // Returns only the steps that execute actual code (not comments)
+                return [2, 4, 6, 8, 10];
+            }
+
+            getNextExecutableStep(currentStep) {
+                const executableSteps = this.getExecutableSteps();
+                const currentIndex = executableSteps.indexOf(currentStep);
+                return currentIndex < executableSteps.length - 1 ? executableSteps[currentIndex + 1] : null;
+            }
+
+            getPreviousExecutableStep(currentStep) {
+                const executableSteps = this.getExecutableSteps();
+                const currentIndex = executableSteps.indexOf(currentStep);
+                return currentIndex > 0 ? executableSteps[currentIndex - 1] : null;
+            }
+
+            recalculateVariables() {
+                this.variables = {};
+                const executableSteps = this.getExecutableSteps();
+                for (let step of executableSteps) {
+                    if (step <= this.currentStep) {
+                        this.executeStep(step);
+                    }
+                }
+            }
+
+            updateUI() {
+                // Update code highlighting
+                this.codeLines.forEach((line, index) => {
+                    line.classList.toggle('current', index === this.currentStep);
+                });
+
+                // Update button states
+                const executableSteps = this.getExecutableSteps();
+                const isFirstStep = this.currentStep === -1;
+                const isLastStep = this.currentStep === executableSteps[executableSteps.length - 1];
+                
+                this.prevBtn.classList.toggle('disabled', this.currentStep === -1);
+                this.nextBtn.classList.toggle('disabled', isLastStep);
+
+                // Update variables display
+                this.updateVariablesDisplay();
+            }
+
+            updateVariablesDisplay() {
+                if (Object.keys(this.variables).length === 0) {
+                    this.variablesDisplay.innerHTML = `
+                        <div class="variable-item">
+                            <span class="variable-name">No variables initialized yet</span>
+                            <span class="variable-value">Run the code to see variables</span>
+                        </div>
+                    `;
+                    return;
+                }
+
+                let html = '';
+                const variableOrder = ['mon_tue_sales', 'wed_sun_sales', 'total_sales', 'remaining_stock', 'final_stock'];
+                
+                variableOrder.forEach(varName => {
+                    if (this.variables.hasOwnProperty(varName)) {
+                        const value = this.variables[varName];
+                        const colorClass = this.getVariableColorClass(varName);
+                        
+                        const lastVarName = variableOrder[variableOrder.length - 1];
+if(varName === lastVarName){
+    varName = varName + " (Final Answer)";
+    html += `<div class="variable-item ${colorClass}">
+        <span class="variable-name">${varName}</span>
+        <span class="variable-value">${value}</span>
+    </div>`;
+} else {
+    html += `<div class="variable-item ${colorClass}">
+        <span class="variable-name">${varName}</span>
+        <span class="variable-value">${value}</span>
+    </div>`;
+}
+                    }
+                });
+
+                this.variablesDisplay.innerHTML = html;
+            }
+            
+            getVariableColorClass(varName) {
+                const colorMap = {
+                    'mon_tue_sales': 'var1-color',
+                    'wed_sun_sales': 'var2-color',
+                    'total_sales': 'var3-color',
+                    'remaining_stock': 'var4-color',
+                    'final_stock': 'var5-color'
+                };
+                return colorMap[varName] || '';
+            }
+        }
+
+        // Initialize the debugger when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new PythonDebugger();
+        });
+    </script>
+</body>
+</html>

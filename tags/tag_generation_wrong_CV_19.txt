@@ -1,0 +1,41 @@
+## 1. Problem statement
+
+A <fact1>tub of ice cream costing $13</fact1> is now <fact2>sold at $11</fact2>. A <fact3>packet of milk was sold at a discount of $0.5</fact3>. How much will you save if you <fact4>buy 2 tubs of ice cream</fact4> and <fact5>4 packets of milk</fact5>?
+
+## 2. Facts
+
+<fact1>Original ice cream price: $13</fact1>
+<fact2>New ice cream price: $11</fact2>
+<fact3>Milk discount: $0.5</fact3>
+<fact4>Number of ice cream tubs: 2</fact4>
+<fact5>Number of milk packets: 4</fact5>
+
+## 3. Steps
+
+<step1> Calculate the discount for each tub of ice cream </step1>
+<formula> Original price - New price </formula>
+<calculation> $13 - $10 = $3 </calculation>
+<var> ice_cream_discount : $3 </var>
+
+<step2> Calculate the total discount for all tubs of ice cream </step2>
+<formula> ice_cream_discount × Number of tubs </formula>
+<calculation> $3 × 2 = $6 </calculation>
+<var> total_ice_cream_discount : $6 </var>
+
+<step3> Calculate the total discount for all packets of milk </step3>
+<formula> Milk discount × Number of packets </formula>
+<calculation> $0.5 × 4 = $2 </calculation>
+<var> total_milk_discount : $2 </var>
+
+<step4> Calculate the total savings </step4>
+<formula> total_ice_cream_discount + total_milk_discount </formula>
+<calculation> $6 + $2 = $8 </calculation>
+<var> total_savings : $8 </var>
+
+## 4. Wrongsteps
+
+<wrongstep> 1 </wrongstep>
+
+## 5. Output
+
+<output> 8 </output>
