@@ -7,7 +7,7 @@ Large Language Models often generate long chain-of-thought (CoT) explanations th
 This project introduces **interactive explanation formats**—iCoT, iPoT, and iGraph—to reduce cognitive load and improve reasoning verification.
 
 ### Project Motivation
-![Figure 1](https://github.com/Runtaozhou/Interactive-CoT/blob/main/Figures/teaser.pdf)
+![Figure 1](https://github.com/Runtaozhou/Interactive-CoT/blob/812f2cc73eda60c6956e4ecf5890c7d16e8b1d6d/Figures/teaser.pdf)
 Given a GSM8K question, LLMs typically provide step-by-step reasoning followed by the final answer. However, such output
 presentation is often static and long, posing a higher cognitive load to users and leading to slower and more erroneous answer
 verification. In contrast, we prompt LLMs to generate an interactive HTML/JavaScript application wrapped around the reasoning. This
