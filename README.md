@@ -24,7 +24,7 @@ tagged data and templates are combined to create interactive explanations in iCo
 
 ### Interface Overiew
 ![Figure 3](Figures/interface_display.png)
-Fig. 2. Examples of four explanation formats used in the study: (A) traditional Chain-of-Thought (CoT), (B) interactive Chain-of-
+Examples of four explanation formats used in the study: (A) traditional Chain-of-Thought (CoT), (B) interactive Chain-of-
 Thought (iCoT), (C) interactive Program-of-Thought (iPoT), and (D) interactive Graph (iGraph). Each format presents the same
 reasoning steps in a different modality (textual, structured, code-like, or visual). For consistency, all four formats present the same
 mathematical problem. 
