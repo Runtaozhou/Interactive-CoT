@@ -1,6 +1,6 @@
 # Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces
 
-This repository summarizes the paper **Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces**.
+This repository summarizes the paper [**Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces**](https://arxiv.org/abs/2510.22922).
 
 ## Overview
 Large Language Models often generate long chain-of-thought (CoT) explanations that overwhelm users.  
