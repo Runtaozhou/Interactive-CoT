@@ -31,12 +31,14 @@ mathematical problem.
 
 
 ## Quantative Results
-![Figure 4](Figures/avg_time_by_format.png)![Figure 5](Figures/avg_verfication_accuracy_by_format.png)![Figure 6](Figures/avg_verfication_accuracy_by_format.png)
+![Figure 4](Figures/avg_time_by_format.png)
+![Figure 5](Figures/avg_verfication_accuracy_by_format.png)
+![Figure 6](Figures/avg_verfication_accuracy_by_format.png)
 
 
 
 ## Qualitative Results
-![Figure 7](Figures/survey_result.pdf)
+![Figure 7](Figures/survey_result.png)
 
 ## Key Takeaways
 - Interactive reasoning significantly improves users’ ability to verify LLM reasoning.
