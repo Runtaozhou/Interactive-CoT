@@ -32,13 +32,20 @@ mathematical problem.
 
 ## Quantative Results
 ![Figure 4](Figures/avg_time_by_format.png)
+Response time. Results show that participants were able to respond faster using iGraph.
 ![Figure 5](Figures/avg_verfication_accuracy_by_format.png)
-![Figure 6](Figures/avg_verfication_accuracy_by_format.png)
-
+Verification accuracy. Results show that participants achieve the highest verification accuracy using iGraph
+![Figure 6](Figures/avg_wrong_step_id_accuracy_by_format.png)
+Error localization. Results show that participants were able to detect the exact error step in the LLM’s explanation with higher accuracy using iGraph.
 
 
 ## Qualitative Results
 ![Figure 7](Figures/survey_result.png)
+sPost SurveyQuestionnaire results for comparing different explanation formats using utility questions (G1-G5) and design-based
+questions for iPoT, iCoT, and iGraph (D1-D4). Results from the utility questions show that participants find the interactive formats more
+effective and engaging, reporting improvements in understanding, error detection, engagement, preference, and overall satisfaction
+(G1–G5) compared to the traditional CoT. Similarly, results from the design-based questions indicate that participants across all
+interactive formats consider all four design elements helpful during the experiment. The visualization follows methodology from  For the general measures assessment, we find that iGraph (A) achieves the highest rating as compared to CoT (B), iCoT (C).
 
 ## Key Takeaways
 - Interactive reasoning significantly improves users’ ability to verify LLM reasoning.
