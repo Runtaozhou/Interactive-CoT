@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import sys
 
 
-client = anthropic.Client(api_key="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")
+client = anthropic.Client(api_key="your_own_api_key")
 
 traditional_cot_template_modify = """
 <!DOCTYPE html>

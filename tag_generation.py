@@ -4,7 +4,7 @@ from tqdm import tqdm
 import numpy as np
 import matplotlib.pyplot as plt
 
-client = anthropic.Client(api_key="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")
+client = anthropic.Client(api_key="you_own_api_key")
 
 
 sample_tag = """
