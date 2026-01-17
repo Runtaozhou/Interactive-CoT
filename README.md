@@ -82,7 +82,7 @@ python3 interface_gen.py --interface_type "$interface_type" --error_type "$error
   - `sample_count`: integer between 1 to 50
 
 
-The resulting interactive interface will be stored in interactive_{$interface_type}_explanations. 
+The resulting interactive interface will be stored in interactive_{$interface_type}_explanations directory. 
 
 ## Huggingface Experiment Link: 
 
