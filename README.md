@@ -1,18 +1,19 @@
+<div align="center">    
+
 # Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces
+by [Miles Zhou](https://github.com/Runtaozhou), [Giang Nguyen](https://giangnguyen2412.github.io/about/), [Nikita Kharya](), [Anh Totti Nguyen](https://www.eng.auburn.edu/directory/azn0044), and [Chirag Agarwal](https://chirag-agarwall.github.io/). 
 
-This repository summarizes the paper [**Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces**](https://arxiv.org/abs/2510.22922).
+[![Website](http://img.shields.io/badge/Website-4b44ce.svg)](https://interactive-explanation-llm.vercel.app/)
+[![arXiv](https://img.shields.io/badge/arXiv-2407.06581-b31b1b.svg)](https://arxiv.org/abs/2510.22922)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-red)](https://huggingface.co/datasets/Miles1999/interactive-COT-data)
+</div> 
 
-## Overview
-Large Language Models often generate long chain-of-thought (CoT) explanations that overwhelm users.  
-This project introduces **interactive explanation formats**—iCoT, iPoT, and iGraph—to reduce cognitive load and improve reasoning verification.
-
-### Project Motivation
-![Figure 1](Figures/teaser.png)
-Given a GSM8K question, LLMs typically provide step-by-step reasoning followed by the final answer. However, such output
-presentation is often static and long, posing a higher cognitive load to users and leading to slower and more erroneous answer
-verification. In contrast, we prompt LLMs to generate an interactive HTML/JavaScript application wrapped around the reasoning. This
-interface enables users to verify the reasoning more efficiently via tools of (a) navigation buttons (inspired by those in common IDEs)
-and (b) colored highlights
+<i>
+The reasoning capabilities of Large Language Models (LLMs) have led to their increasing employment in several critical applications, particularly education, where they support problem-solving, tutoring, and personalized study. Chain-of-thought (CoT) reasoning capabilities are well-known to help LLMs decompose a problem into steps and explore the solution spaces more effectively, leading to impressive performance on mathematical and reasoning benchmarks. As the length of CoT tokens per question increases substantially to even thousands of tokens per question, it is unknown how users could comprehend LLM reasoning and detect errors or hallucinations. To address this problem and understand how reasoning can improve human-AI interaction, we present three new interactive reasoning interfaces: interactive CoT (iCoT), interactive Program-of-Thought (iPoT), and interactive Graph (iGraph). That is, we ask LLMs themselves to generate an interactive web interface wrapped around the original CoT content, which may be presented in text (iCoT), graphs (iGraph) or code (iPoT). This interface allows users to interact with and provide a novel experience in reading and validating the reasoning chains of LLMs. Across a study of 125 participants, interactive interfaces significantly improve user performance. Specifically, iGraph users score the highest error detection rate (85.6%), followed by iPoT (82.5%), iCoT (80.6%), all outperforming standard CoT (73.5%). Interactive interfaces also lead to faster user validation time-iGraph users are faster (57.9 secs per question) than the users of iCoT and iPoT (60 secs) and the standard CoT (64.7 secs). A post-study questionnaire shows that users prefer iGraph, citing its superior ability to enable them to follow the LLM's reasoning. We discuss the implications of these results and provide recommendations for the future design of reasoning models.
+</i>
+<div align="center">    
+<img src="figures/teaser.png" alt="Highlighted Chain of Thought Example">
+</div>
 
 ### Project Pipline
 ![Figure 2](Figures/overview.png)
@@ -29,32 +30,59 @@ Thought (iCoT), (C) interactive Program-of-Thought (iPoT), and (D) interactive G
 reasoning steps in a different modality (textual, structured, code-like, or visual). For consistency, all four formats present the same
 mathematical problem. 
 
+# 1. Requirements
+```
+python==3.10.15
+anthropic==0.49.0
+pandas==2.1.4
+tqdm==4.66.4
+numpy==1.26.4
+matplotlib==3.8.0
+```
 
-## Quantative Results
-![Figure 4](Figures/avg_time_by_format.png)
+# 2. How to Generate Intermediate Tagged information
 
-Response time. Results show that participants were able to respond faster using iGraph.
-![Figure 5](Figures/avg_verfication_accuracy_by_format.png)
+Run the following command to execute the script:
 
-Verification accuracy. Results show that participants achieve the highest verification accuracy using iGraph
-![Figure 6](Figures/avg_wrong_step_id_accuracy_by_format.png)
+```bash
+python3 tag_gen.py
+```
 
-Error localization. Results show that participants were able to detect the exact error step in the LLM’s explanation with higher accuracy using iGraph.
+The resulting intermediate tagged information will be saved in the tags directory. 
+
+# 3. How to Generate The complete interactive interfaces
+
+Run the following command to execute the script:
+
+```bash
+python3 interface_gen.py --interface_type "$interface_type" --error_type "$error_type" --correctness "$correctness" --sample_count "$sample_count"
+```
+
+## Parameters:
+- `--interface_type`: Define the type of interfaces:
+  - `cot`, 
+  - `icot`,
+  - `ipot`,
+  - `igraph`,
+- `--error_type`: Specific type of errors that are in the interface
+  - `NA`, (no error)
+  - `CA`, (calculation error)
+  - `CO`, (counting error)
+  - `CS`, (contradictory step)
+  - `CV`, (context value error)
+  - `FC`, (formula confusion error)
+  - `HA`, (hallucination error)
+  - `MS`, (missing step error)
+  - `OP`, (operator error)
+  - `UC`, (unit conversion error)
+- `--correctness"`: the correctness of the expanation:
+  - `right`: the answer is correct, only go with NA error_type. 
+  - `wrong`: the answer is incorrect. 
+- `--sample_count`: integer indicating how many samples you want to generate for each error type
+  - `sample_count`: integer between 1 to 50
 
 
-## Qualitative Results
-![Figure 7](Figures/survey_result.png)
-Post Survey Questionnaire results for comparing different explanation formats using utility questions (G1-G5) and design-based
-questions for iPoT, iCoT, and iGraph (D1-D4). Results from the utility questions show that participants find the interactive formats more
-effective and engaging, reporting improvements in understanding, error detection, engagement, preference, and overall satisfaction
-(G1–G5) compared to the traditional CoT. Similarly, results from the design-based questions indicate that participants across all
-interactive formats consider all four design elements helpful during the experiment. The visualization follows methodology from  For the general measures assessment, we find that iGraph (A) achieves the highest rating as compared to CoT (B), iCoT (C).
-
-## Key Takeaways
-- Interactive reasoning significantly improves users’ ability to verify LLM reasoning.
-- Graph-based explanations outperform standard CoT.
-- Structured, interactive interfaces reduce cognitive load.
-- The approach generalizes to many reasoning domains.
+The resulting intermediate tagged information will be saved in the tags directory. 
 
 ## Huggingface Experiment Link: 
 
