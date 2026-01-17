@@ -12,7 +12,7 @@ by [Miles Zhou](https://github.com/Runtaozhou), [Giang Nguyen](https://giangnguy
 The reasoning capabilities of Large Language Models (LLMs) have led to their increasing employment in several critical applications, particularly education, where they support problem-solving, tutoring, and personalized study. Chain-of-thought (CoT) reasoning capabilities are well-known to help LLMs decompose a problem into steps and explore the solution spaces more effectively, leading to impressive performance on mathematical and reasoning benchmarks. As the length of CoT tokens per question increases substantially to even thousands of tokens per question, it is unknown how users could comprehend LLM reasoning and detect errors or hallucinations. To address this problem and understand how reasoning can improve human-AI interaction, we present three new interactive reasoning interfaces: interactive CoT (iCoT), interactive Program-of-Thought (iPoT), and interactive Graph (iGraph). That is, we ask LLMs themselves to generate an interactive web interface wrapped around the original CoT content, which may be presented in text (iCoT), graphs (iGraph) or code (iPoT). This interface allows users to interact with and provide a novel experience in reading and validating the reasoning chains of LLMs. Across a study of 125 participants, interactive interfaces significantly improve user performance. Specifically, iGraph users score the highest error detection rate (85.6%), followed by iPoT (82.5%), iCoT (80.6%), all outperforming standard CoT (73.5%). Interactive interfaces also lead to faster user validation time-iGraph users are faster (57.9 secs per question) than the users of iCoT and iPoT (60 secs) and the standard CoT (64.7 secs). A post-study questionnaire shows that users prefer iGraph, citing its superior ability to enable them to follow the LLM's reasoning. We discuss the implications of these results and provide recommendations for the future design of reasoning models.
 </i>
 <div align="center">    
-<img src="figures/teaser.png" alt="Highlighted Chain of Thought Example">
+<img src="Figures/interface_display.png" alt="Interactive Chain of Thought Example">
 </div>
 
 ### Project Pipline
@@ -22,13 +22,6 @@ correct and erroneous GSM8K explanations annotated with reasoning tags; (B) Inte
 HTML/CSS templates ensure consistent structure and interactivity across formats; and (C) Explanation Interface Generation, where
 tagged data and templates are combined to create interactive explanations in iCoT, iPoT, and iGraph formats for our user study
 
-
-### Interface Overiew
-![Figure 3](Figures/interface_display.png)
-Examples of four explanation formats used in the study: (A) traditional Chain-of-Thought (CoT), (B) interactive Chain-of-
-Thought (iCoT), (C) interactive Program-of-Thought (iPoT), and (D) interactive Graph (iGraph). Each format presents the same
-reasoning steps in a different modality (textual, structured, code-like, or visual). For consistency, all four formats present the same
-mathematical problem. 
 
 # 1. Requirements
 ```
