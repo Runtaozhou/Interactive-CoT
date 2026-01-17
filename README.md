@@ -23,7 +23,8 @@ HTML/CSS templates ensure consistent structure and interactivity across formats;
 tagged data and templates are combined to create interactive explanations in iCoT, iPoT, and iGraph formats for our user study
 
 
-# 1. Requirements
+# 0. Requirements
+make sure to add the corresponding packages into your virtual environment
 ```
 python==3.10.15
 anthropic==0.49.0
@@ -31,6 +32,12 @@ pandas==2.1.4
 tqdm==4.66.4
 numpy==1.26.4
 matplotlib==3.8.0
+```
+
+# 1. Clone the repo
+
+```bash
+git clone https://github.com/Runtaozhou/Interactive-CoT.git
 ```
 
 # 2. How to Generate Intermediate Tagged information
@@ -75,7 +82,7 @@ python3 interface_gen.py --interface_type "$interface_type" --error_type "$error
   - `sample_count`: integer between 1 to 50
 
 
-The resulting intermediate tagged information will be saved in the tags directory. 
+The resulting interactive interface will be stored in interactive_{$interface_type}_explanations. 
 
 ## Huggingface Experiment Link: 
 
