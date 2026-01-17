@@ -55,7 +55,6 @@ graph,NA,9.147
 cot,NA,24.155
 cot,NA,76.449
 cot,NA,28.834
-coding,NA,301.006
 graph,NA,51.197
 nat,NA,66.846
 nat,NA,14.761
@@ -155,10 +154,8 @@ cot,CA,68.147
 nat,CA,54.764
 nat,CA,23.39
 graph,CA,3.166
-coding,CA,77.718
 cot,CA,65.254
 cot,CA,67.547
-coding,CA,58.932
 graph,CA,131.265
 nat,CA,53.054
 graph,CA,64.067
@@ -214,7 +211,6 @@ nat,CO,92.406
 coding,CO,25.504
 coding,CO,78.132
 graph,CO,77.066
-nat,CO,82.95
 graph,CO,30.095
 nat,CO,69.634
 graph,CO,77.071
@@ -250,7 +246,6 @@ nat,CO,79.7
 coding,CO,74.577
 nat,CO,47.635
 graph,CO,1.37
-coding,CO,89.362
 cot,CO,58.279
 cot,CO,60.503
 cot,CO,48.915
@@ -312,7 +307,6 @@ nat,CV,70.983
 coding,CV,33.121
 coding,CV,96.634
 graph,CV,48.432
-nat,CV,36.532
 nat,CV,14.914
 graph,CV,68.074
 nat,CV,49.009
@@ -356,9 +350,7 @@ nat,CV,37.969
 coding,CV,90.681
 nat,CV,44.047
 graph,CV,1.591
-coding,CV,105.695
 cot,CV,30.083
-coding,CV,28.013
 graph,CV,59.916
 nat,CV,35.083
 nat,CV,137.132
@@ -448,7 +440,6 @@ nat,CS,62.908
 cot,CS,85.931
 coding,CS,139.415
 nat,CS,51.272
-coding,CS,83.559
 cot,CS,83.037
 cot,CS,37.069
 cot,CS,78.35
@@ -503,7 +494,6 @@ nat,MS,42.848
 coding,MS,75.632
 coding,MS,36.265
 graph,MS,34.564
-nat,MS,25.381
 cot,MS,90.334
 cot,MS,56.602
 nat,MS,38.357
@@ -545,11 +535,9 @@ cot,MS,171.739
 nat,MS,85.149
 coding,MS,44.732
 graph,MS,0.781
-coding,MS,60.338
 cot,MS,62.805
 cot,MS,35.516
 cot,MS,45.862
-coding,MS,45.976
 graph,MS,94.398
 nat,MS,57.764
 nat,MS,25.805
@@ -649,11 +637,9 @@ nat,HA,65.735
 coding,HA,33.166
 nat,HA,40.821
 graph,HA,1.4
-coding,HA,60.213
 cot,HA,96.517
 cot,HA,37.813
 cot,HA,72.259
-coding,HA,41.049
 graph,HA,47.914
 nat,HA,59.602
 graph,HA,61.401
@@ -711,7 +697,6 @@ nat,UC,32.899
 coding,UC,72.719
 coding,UC,43.598
 graph,UC,79.232
-nat,UC,177.05
 cot,UC,163.932
 nat,UC,63.718
 graph,UC,90.362
@@ -754,11 +739,9 @@ nat,UC,68.514
 coding,UC,73.932
 nat,UC,28.996
 graph,UC,0.381
-coding,UC,116.822
 cot,UC,41.956
 cot,UC,66.994
 cot,UC,68.905
-coding,UC,70.688
 graph,UC,47.233
 nat,UC,41.604
 nat,UC,60.533
@@ -817,7 +800,6 @@ nat,OP,43.562
 coding,OP,33.632
 coding,OP,46.883
 graph,OP,83.666
-nat,OP,83.833
 nat,OP,16.252
 nat,OP,33.275
 graph,OP,31.81
@@ -855,10 +837,8 @@ nat,OP,51.863
 cot,OP,22.7
 nat,OP,50.194
 graph,OP,241.721
-coding,OP,70.839
 cot,OP,37.917
 cot,OP,84.276
-coding,OP,56.862
 graph,OP,86.112
 nat,OP,37.207
 cot,OP,31.176
@@ -920,7 +900,6 @@ nat,FC,47.712
 coding,FC,79.414
 coding,FC,14.499
 graph,FC,90.385
-nat,FC,55.482
 cot,FC,51.382
 nat,FC,44.734
 graph,FC,66.562
@@ -958,10 +937,8 @@ nat,FC,74.713
 coding,FC,128.749
 nat,FC,84.093
 graph,FC,1.125
-coding,FC,49.779
 cot,FC,31.462
 cot,FC,135.975
-coding,FC,100.923
 graph,FC,47.116
 nat,FC,54.747
 nat,FC,44.09
